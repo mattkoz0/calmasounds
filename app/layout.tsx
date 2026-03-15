@@ -41,12 +41,21 @@ export const metadata: Metadata = {
     siteName: "Calma",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1024,
+        height: 1024,
+        alt: "Calma - Sleep Sounds and Relaxation App",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Calma | Sleep Sounds, Relaxation and Focus App",
     description:
       "Create personalized soundscapes for sleep, relaxation and deep focus with Calma.",
+    images: ["/og-image.png"],
   },
 };
 
