@@ -99,6 +99,46 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 pb-8">
+        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
+          <Image
+            src="/hero-banner.png"
+            alt="Calma app banner"
+            width={1024}
+            height={500}
+            className="h-auto w-full"
+            priority
+          />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            Video demo
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Watch Calma in motion
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            See how Calma looks and feels in real use, from immersive sound mixing
+            to premium wellness features designed for sleep, relaxation and focus.
+          </p>
+        </div>
+
+        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl shadow-black/20">
+          <video
+            className="h-auto w-full rounded-[1.5rem]"
+            controls
+            preload="metadata"
+            playsInline
+          >
+            <source src="/demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
@@ -198,43 +238,48 @@ export default function Home() {
       <section id="features" className="mx-auto max-w-6xl px-6 py-20">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-            Features
+            Why Calma
           </p>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Why people use Calma
+            A calmer experience, designed with intention
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            Calma is built to feel elegant, focused and emotionally light. It helps
+            you create a better sound environment without clutter, friction or visual
+            noise.
+          </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h3 className="text-2xl font-semibold">Personalized sound mixes</h3>
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
+            <h3 className="text-2xl font-semibold">Create your own atmosphere</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Create your own relaxing environment instead of relying on a single
-              generic track. Calma is built around flexibility and simplicity.
+              Mix sounds based on your mood, your routine and your moment. Calma gives
+              you a more personal experience than one-size-fits-all audio apps.
             </p>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h3 className="text-2xl font-semibold">Designed for daily routines</h3>
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
+            <h3 className="text-2xl font-semibold">Feel calmer, not overwhelmed</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Whether it is bedtime, a short evening reset or deep work, Calma
-              fits naturally into everyday moments.
+              The interface is designed to support calm, not distraction. Every screen
+              aims to feel simple, immersive and easy to return to daily.
             </p>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h3 className="text-2xl font-semibold">Simple, immersive interface</h3>
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
+            <h3 className="text-2xl font-semibold">One app, multiple daily rituals</h3>
             <p className="mt-4 leading-7 text-white/70">
-              No clutter, no overwhelm, no noisy experience. Just a calm and
-              polished space focused on audio and atmosphere.
+              Use Calma before sleep, during evening wind-down, while working or when
+              you simply need a softer background for your day.
             </p>
           </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h3 className="text-2xl font-semibold">Sleep, relax and focus in one app</h3>
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
+            <h3 className="text-2xl font-semibold">Built to feel premium and warm</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Calma is not limited to one use case. It supports restful nights,
-              peaceful evenings and productive work sessions.
+              Calma combines a polished look with a gentle emotional tone, helping the
+              app feel like a place you want to come back to.
             </p>
           </div>
         </div>
@@ -289,12 +334,12 @@ export default function Home() {
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             Start now
           </p>
-          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Start building your calmer routine today
-          </h2>
-          <p className="mt-4 leading-7 text-white/70">
-            Discover a beautifully simple app for sleep sounds, daily relaxation
-            and deep focus. Create your own soundscape with Calma.
+            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Download Calma and build a softer daily routine
+            </h2>
+            <p className="mt-4 leading-7 text-white/70">
+            Create personalized soundscapes for better sleep, calmer evenings and deeper
+            focus with a beautifully simple app designed for everyday use.
           </p>
 
           <a
