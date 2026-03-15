@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -93,6 +95,63 @@ export default function Home() {
               Build your own background audio for studying, reading and deep work
               without distracting visuals or clutter.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            App preview
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            See Calma in action
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            Explore the beautifully simple interface of Calma and see how the app
+            helps you build calming soundscapes for sleep, relaxation and focus.
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
+            <Image
+              src="/screenshots/3_en.png"
+              alt="Calma app screenshot 1"
+              width={720}
+              height={1600}
+              className="h-auto w-full rounded-2xl"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
+            <Image
+              src="/screenshots/4_en.png"
+              alt="Calma app screenshot 2"
+              width={720}
+              height={1600}
+              className="h-auto w-full rounded-2xl"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
+            <Image
+              src="/screenshots/5_en.png"
+              alt="Calma app screenshot 3"
+              width={720}
+              height={1600}
+              className="h-auto w-full rounded-2xl"
+            />
+          </div>
+
+          <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
+            <Image
+              src="/screenshots/7_en.png"
+              alt="Calma app screenshot 4"
+              width={720}
+              height={1600}
+              className="h-auto w-full rounded-2xl"
+            />
           </div>
         </div>
       </section>
