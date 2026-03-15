@@ -38,17 +38,19 @@ export default function Home() {
         </h1>
 
         <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a beautifully simple app that helps you create calming audio
-          mixes for sleep, relaxation and deep focus. Build your perfect sound
-          environment in seconds.
+          Calma is a beautifully simple sleep sounds and relaxation app that helps
+          you create personalized audio mixes for better sleep, calmer evenings and
+          deeper focus.
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <a
-            href="#download"
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
-            Get Calma on Google Play
+            Download on Google Play
           </a>
 
           <a
@@ -237,10 +239,12 @@ export default function Home() {
           </p>
 
           <a
-            href="#"
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-block rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
-            Google Play link coming soon
+            Download Calma on Google Play
           </a>
         </div>
       </section>
