@@ -30,7 +30,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto flex min-h-[92vh] max-w-6xl flex-col items-center justify-center px-6 py-20 text-center">
+      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
           Calma • Sleep Sounds & Relax
         </span>
@@ -61,6 +61,18 @@ export default function Home() {
           >
             Explore features
           </a>
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-white/65">
+          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Personalized mixes
+          </span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Sleep • Relax • Focus
+          </span>
+          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+            Beautifully simple experience
+          </span>
         </div>
 
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
@@ -112,7 +124,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             Video demo
@@ -139,7 +151,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             App preview
@@ -196,7 +208,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 py-20">
+      <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             How it works
@@ -235,7 +247,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="features" className="mx-auto max-w-6xl px-6 py-20">
+      <section id="features" className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             Why Calma
@@ -285,7 +297,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="faq" className="mx-auto max-w-5xl px-6 py-20">
+      <section id="faq" className="mx-auto max-w-5xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">FAQ</p>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
@@ -329,8 +341,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="download" className="mx-auto max-w-4xl px-6 py-20 text-center">
-        <div className="rounded-3xl border border-white/10 bg-white/5 p-10 sm:p-12">
+      <section id="download" className="mx-auto max-w-4xl px-6 py-16 text-center">
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             Start now
           </p>
