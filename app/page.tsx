@@ -85,7 +85,7 @@ export default function Home() {
             Sleep • Relax • Focus
           </span>
           <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Beautifully simple experience
+            No subscription pressure
           </span>
         </div>
         <div className="mt-8 flex justify-center">
@@ -137,19 +137,6 @@ export default function Home() {
               without distracting visuals or clutter.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 pb-8">
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl shadow-black/20">
-          <Image
-            src="/hero-banner.png"
-            alt="Calma app banner"
-            width={1024}
-            height={500}
-            className="h-auto w-full"
-            priority
-          />
         </div>
       </section>
 
@@ -288,45 +275,6 @@ export default function Home() {
             <p className="mt-4 leading-7 text-white/70">
               Add a sense of wonder to your routine with a feature that makes daily
               calm feel more meaningful, playful and emotionally rewarding.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="mb-12 text-center">
-          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-            How it works
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            A simple routine in three steps
-          </h2>
-        </div>
-
-        <div className="grid gap-6 md:grid-cols-3">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="text-3xl font-bold text-white/30">01</div>
-            <h3 className="mt-6 text-xl font-semibold">Choose your mood</h3>
-            <p className="mt-3 leading-7 text-white/70">
-              Start with the feeling you want: sleep, relaxation or focus.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="text-3xl font-bold text-white/30">02</div>
-            <h3 className="mt-6 text-xl font-semibold">Build your mix</h3>
-            <p className="mt-3 leading-7 text-white/70">
-              Combine calming sounds into a personalized soundscape that fits your
-              moment.
-            </p>
-          </div>
-
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="text-3xl font-bold text-white/30">03</div>
-            <h3 className="mt-6 text-xl font-semibold">Press play and reset</h3>
-            <p className="mt-3 leading-7 text-white/70">
-              Let the mix support better sleep, a quieter evening or a more
-              focused session.
             </p>
           </div>
         </div>
