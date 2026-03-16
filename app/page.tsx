@@ -5,9 +5,21 @@ export default function Home() {
     <main className="min-h-screen bg-slate-950 text-white">
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <a href="#" className="text-lg font-semibold tracking-wide">
-            Calma
-          </a>
+          <div className="flex items-center gap-3">
+            <a href="/" className="flex items-center">
+              <Image
+                src="/logo.png"
+                alt="Calma logo"
+                width={100}
+                height={100}
+                className="h-[100px] w-[100px] object-contain"
+              />
+            </a>
+
+            <p className="hidden text-sm italic tracking-[0.08em] text-white/60 lg:block">
+              Your calm, by design
+            </p>
+          </div>
 
           <nav className="hidden gap-6 text-sm text-white/70 md:flex">
             <a href="#features" className="transition hover:text-white">
@@ -22,7 +34,9 @@ export default function Home() {
           </nav>
 
           <a
-            href="#download"
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10"
           >
             Get Calma
@@ -45,7 +59,7 @@ export default function Home() {
           deeper focus.
         </p>
 
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
           <a
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
@@ -74,7 +88,22 @@ export default function Home() {
             Beautifully simple experience
           </span>
         </div>
-
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex"
+          >
+            <Image
+              src="/google-play-badge.png"
+              alt="Get it on Google Play"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+            />
+          </a>
+        </div>
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
@@ -436,6 +465,22 @@ export default function Home() {
           >
             Download Calma on Google Play
           </a>
+          <div className="mt-6 flex justify-center">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex"
+            >
+              <Image
+                src="/google-play-badge.png"
+                alt="Get it on Google Play"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+              />
+            </a>
+          </div>
           <p className="mt-4 text-sm text-white/60">
             Looking for a dedicated sleep page?{" "}
             <a
@@ -445,51 +490,7 @@ export default function Home() {
               Explore our sleep sounds app page
             </a>
           </p>
-          <p className="mt-3 text-sm text-white/60">
-            Want something softer for daily unwind?{" "}
-            <a
-              href="/relaxing-sounds"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Explore our relaxing sounds page
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            Need a calmer environment for work or study?{" "}
-            <a
-              href="/focus-sounds-app"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Explore our focus sounds app page
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            Looking for a softer background for sleep and calm?{" "}
-            <a
-              href="/white-noise-app"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Explore our white noise app page
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            Want to build your own personalized soundscape?{" "}
-            <a
-              href="/sound-mixer-app"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Explore our sound mixer app page
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            Want a practical sleep guide?{" "}
-            <a
-              href="/blog/rain-sounds-vs-white-noise"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Read our article on rain sounds vs white noise
-            </a>
-          </p>
+
           <p className="mt-3 text-sm text-white/60">
             Looking for more bedtime ideas?{" "}
             <a
@@ -499,44 +500,26 @@ export default function Home() {
               Read our guide to the best sounds for sleep
             </a>
           </p>
-          <p className="mt-3 text-sm text-white/60">
-            Want a calmer evening routine?{" "}
-            <a
-              href="/blog/how-to-build-a-bedtime-routine"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Read our bedtime routine guide
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            Curious about white noise at night?{" "}
-            <a
-              href="/blog/white-noise-for-sleep"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Read our white noise for sleep guide
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            Need a calmer way to study and focus?{" "}
-            <a
-              href="/blog/best-sounds-for-studying"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              Read our guide to the best sounds for studying
-            </a>
-          </p>
         </div>
       </section>
       <footer className="border-t border-white/10 bg-slate-950">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
           <div>
-            <h3 className="text-lg font-semibold">Calma</h3>
-            <p className="mt-4 max-w-sm leading-7 text-white/60">
-              A beautifully simple app for sleep, relaxation, focus and personalized
-              soundscapes.
-            </p>
+          <div className="flex items-center">
+            <Image
+              src="/logo.png"
+              alt="Calma logo"
+              width={100}
+              height={100}
+              className="h-[100px] w-[100px] object-contain"
+            />
           </div>
+
+          <p className="mt-4 max-w-sm leading-7 text-white/60">
+            A beautifully simple app for sleep, relaxation, focus and personalized
+            soundscapes.
+          </p>
+        </div>
 
           <div>
             <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
