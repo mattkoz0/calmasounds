@@ -490,6 +490,15 @@ export default function Home() {
               Read our article on rain sounds vs white noise
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Looking for more bedtime ideas?{" "}
+            <a
+              href="/blog/best-sounds-for-sleep"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Read our guide to the best sounds for sleep
+            </a>
+          </p>
         </div>
       </section>
     </main>
