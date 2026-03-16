@@ -463,6 +463,15 @@ export default function Home() {
               Explore our focus sounds app page
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Looking for a softer background for sleep and calm?{" "}
+            <a
+              href="/white-noise-app"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Explore our white noise app page
+            </a>
+          </p>
         </div>
       </section>
     </main>
