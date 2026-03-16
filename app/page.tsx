@@ -362,6 +362,15 @@ export default function Home() {
           >
             Download Calma on Google Play
           </a>
+          <p className="mt-4 text-sm text-white/60">
+            Looking for a dedicated sleep page?{" "}
+            <a
+              href="/sleep-sounds-app"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Explore our sleep sounds app page
+            </a>
+          </p>
         </div>
       </section>
     </main>
