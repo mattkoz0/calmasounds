@@ -528,6 +528,118 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <footer className="border-t border-white/10 bg-slate-950">
+        <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
+          <div>
+            <h3 className="text-lg font-semibold">Calma</h3>
+            <p className="mt-4 max-w-sm leading-7 text-white/60">
+              A beautifully simple app for sleep, relaxation, focus and personalized
+              soundscapes.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+              Product
+            </h4>
+            <ul className="mt-4 space-y-3 text-white/70">
+              <li>
+                <a href="/sleep-sounds-app" className="transition hover:text-white">
+                  Sleep sounds app
+                </a>
+              </li>
+              <li>
+                <a href="/relaxing-sounds" className="transition hover:text-white">
+                  Relaxing sounds
+                </a>
+              </li>
+              <li>
+                <a href="/focus-sounds-app" className="transition hover:text-white">
+                  Focus sounds app
+                </a>
+              </li>
+              <li>
+                <a href="/white-noise-app" className="transition hover:text-white">
+                  White noise app
+                </a>
+              </li>
+              <li>
+                <a href="/sound-mixer-app" className="transition hover:text-white">
+                  Sound mixer app
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+              Guides
+            </h4>
+            <ul className="mt-4 space-y-3 text-white/70">
+              <li>
+                <a
+                  href="/blog/rain-sounds-vs-white-noise"
+                  className="transition hover:text-white"
+                >
+                  Rain sounds vs white noise
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog/best-sounds-for-sleep"
+                  className="transition hover:text-white"
+                >
+                  Best sounds for sleep
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog/how-to-build-a-bedtime-routine"
+                  className="transition hover:text-white"
+                >
+                  Bedtime routine guide
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog/white-noise-for-sleep"
+                  className="transition hover:text-white"
+                >
+                  White noise for sleep
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog/best-sounds-for-studying"
+                  className="transition hover:text-white"
+                >
+                  Best sounds for studying
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-white/50 sm:flex-row">
+            <p>© 2026 Calma. All rights reserved.</p>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <a href="/" className="transition hover:text-white">
+                Home
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white"
+              >
+                Google Play
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
