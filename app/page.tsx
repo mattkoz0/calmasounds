@@ -508,6 +508,24 @@ export default function Home() {
               Read our bedtime routine guide
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Curious about white noise at night?{" "}
+            <a
+              href="/blog/white-noise-for-sleep"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Read our white noise for sleep guide
+            </a>
+          </p>
+          <p className="mt-3 text-sm text-white/60">
+            Need a calmer way to study and focus?{" "}
+            <a
+              href="/blog/best-sounds-for-studying"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Read our guide to the best sounds for studying
+            </a>
+          </p>
         </div>
       </section>
     </main>
