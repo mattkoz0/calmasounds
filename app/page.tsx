@@ -481,6 +481,15 @@ export default function Home() {
               Explore our sound mixer app page
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Want a practical sleep guide?{" "}
+            <a
+              href="/blog/rain-sounds-vs-white-noise"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Read our article on rain sounds vs white noise
+            </a>
+          </p>
         </div>
       </section>
     </main>
