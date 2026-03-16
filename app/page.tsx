@@ -499,6 +499,15 @@ export default function Home() {
               Read our guide to the best sounds for sleep
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Want a calmer evening routine?{" "}
+            <a
+              href="/blog/how-to-build-a-bedtime-routine"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Read our bedtime routine guide
+            </a>
+          </p>
         </div>
       </section>
     </main>
