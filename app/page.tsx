@@ -472,6 +472,15 @@ export default function Home() {
               Explore our white noise app page
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Want to build your own personalized soundscape?{" "}
+            <a
+              href="/sound-mixer-app"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Explore our sound mixer app page
+            </a>
+          </p>
         </div>
       </section>
     </main>
