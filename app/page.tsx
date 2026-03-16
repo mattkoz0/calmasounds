@@ -297,6 +297,80 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            Explore more
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Discover Calma by intention
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            Explore dedicated pages for sleep, relaxation and focus to find the side
+            of Calma that fits your routine best.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <a
+            href="/sleep-sounds-app"
+            className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
+          >
+            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              Sleep
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold">
+              Sleep sounds app
+            </h3>
+            <p className="mt-4 leading-7 text-white/70">
+              Explore how Calma supports calmer nights, bedtime routines and
+              personalized sleep soundscapes.
+            </p>
+            <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
+              Explore sleep page →
+            </span>
+          </a>
+
+          <a
+            href="/relaxing-sounds"
+            className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
+          >
+            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              Relax
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold">
+              Relaxing sounds
+            </h3>
+            <p className="mt-4 leading-7 text-white/70">
+              Discover a softer side of Calma built for peaceful evenings, emotional
+              reset and calming daily rituals.
+            </p>
+            <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
+              Explore relaxing page →
+            </span>
+          </a>
+
+          <a
+            href="/focus-sounds-app"
+            className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
+          >
+            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              Focus
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold">
+              Focus sounds app
+            </h3>
+            <p className="mt-4 leading-7 text-white/70">
+              See how Calma helps create a calmer environment for deep work,
+              concentration and study sessions.
+            </p>
+            <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
+              Explore focus page →
+            </span>
+          </a>
+        </div>
+      </section>
+
       <section id="faq" className="mx-auto max-w-5xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">FAQ</p>
