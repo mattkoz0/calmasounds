@@ -240,6 +240,62 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            Signature features
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            More than just sleep sounds
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            Calma goes beyond simple playback with immersive features designed to make
+            your routines feel more personal, calming and memorable.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-violet-500/10 to-white/5 p-8">
+            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              Brainwave Lab
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold">
+              Tune your state with immersive audio experiments
+            </h3>
+            <p className="mt-4 leading-7 text-white/70">
+              Explore a more advanced side of calm with sound experiences designed for
+              sleep, focus and deeper mental reset.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-cyan-400/10 to-white/5 p-8">
+            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              Guided Breathing
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold">
+              Breathe with a softer rhythm
+            </h3>
+            <p className="mt-4 leading-7 text-white/70">
+              Gentle visual breathing guidance helps turn the app into a calming
+              ritual, not just a passive audio player.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-fuchsia-500/10 to-white/5 p-8">
+            <p className="text-sm uppercase tracking-[0.2em] text-white/50">
+              Night Sky Ritual
+            </p>
+            <h3 className="mt-4 text-2xl font-semibold">
+              A quiet moment of discovery
+            </h3>
+            <p className="mt-4 leading-7 text-white/70">
+              Add a sense of wonder to your routine with a feature that makes daily
+              calm feel more meaningful, playful and emotionally rewarding.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
             How it works
           </p>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
