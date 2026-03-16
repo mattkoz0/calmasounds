@@ -380,6 +380,15 @@ export default function Home() {
               Explore our relaxing sounds page
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Need a calmer environment for work or study?{" "}
+            <a
+              href="/focus-sounds-app"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Explore our focus sounds app page
+            </a>
+          </p>
         </div>
       </section>
     </main>
