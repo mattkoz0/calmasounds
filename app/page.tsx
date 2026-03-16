@@ -371,6 +371,15 @@ export default function Home() {
               Explore our sleep sounds app page
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Want something softer for daily unwind?{" "}
+            <a
+              href="/relaxing-sounds"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Explore our relaxing sounds page
+            </a>
+          </p>
         </div>
       </section>
     </main>
