@@ -611,18 +611,58 @@ export default function Home() {
           <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-6 text-sm text-white/50 sm:flex-row">
             <p>© 2026 Calma. All rights reserved.</p>
 
-            <div className="flex flex-wrap items-center gap-4">
-              <a href="/" className="transition hover:text-white">
-                Home
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="transition hover:text-white"
-              >
-                Google Play
-              </a>
+            <div className="flex flex-col items-center gap-2 sm:items-end">
+              <div className="flex flex-wrap items-center justify-center gap-4">
+                <a href="/" className="transition hover:text-white">
+                  Home
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  Google Play
+                </a>
+                <a href="/bio" className="transition hover:text-white">
+                  All links
+                </a>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center gap-4 text-white/40">
+                <a
+                  href="https://www.tiktok.com/@.calma.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  TikTok
+                </a>
+                <a
+                  href="https://www.instagram.com/calma.app.official"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://www.youtube.com/@CalmaApp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  YouTube
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61580760185966"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-white"
+                >
+                  Facebook
+                </a>
+              </div>
             </div>
           </div>
         </div>
