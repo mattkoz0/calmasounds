@@ -504,6 +504,15 @@ export default function Home() {
               Read our guide to the best sounds for sleep
             </a>
           </p>
+          <p className="mt-3 text-sm text-white/60">
+            Curious about brainwave-style audio?{" "}
+            <a
+              href="/blog/binaural-beats-for-sleep-and-focus"
+              className="text-white underline underline-offset-4 transition hover:text-white/80"
+            >
+              Read our binaural beats guide
+            </a>
+          </p>
         </div>
       </section>
       <footer className="border-t border-white/10 bg-slate-950">
@@ -601,6 +610,14 @@ export default function Home() {
                   className="transition hover:text-white"
                 >
                   Best sounds for studying
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog/binaural-beats-for-sleep-and-focus"
+                  className="transition hover:text-white"
+                >
+                  Binaural beats for sleep and focus
                 </a>
               </li>
             </ul>
