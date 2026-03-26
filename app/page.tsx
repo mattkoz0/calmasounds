@@ -1,4 +1,29 @@
+import type { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Calma | Sleep Sounds, Relaxation and Focus",
+  description:
+    "Calma helps you create personalized soundscapes for better sleep, relaxation and deeper focus.",
+  alternates: {
+    canonical: "https://www.calmasounds.com/",
+  },
+  openGraph: {
+    title: "Calma | Sleep Sounds, Relaxation and Focus",
+    description:
+      "Calma helps you create personalized soundscapes for better sleep, relaxation and deeper focus.",
+    url: "https://www.calmasounds.com/",
+    siteName: "Calma",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Calma | Sleep Sounds, Relaxation and Focus",
+    description:
+      "Calma helps you create personalized soundscapes for better sleep, relaxation and deeper focus.",
+  },
+};
 
 export default function Home() {
   return (
@@ -562,6 +587,14 @@ export default function Home() {
               <li>
                 <a href="/sound-mixer-app" className="transition hover:text-white">
                   Sound mixer app
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/blog/binaural-beats-for-sleep-and-focus"
+                  className="transition hover:text-white"
+                >
+                  Binaural beats for sleep and focus
                 </a>
               </li>
             </ul>
