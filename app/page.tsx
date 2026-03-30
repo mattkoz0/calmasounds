@@ -2,16 +2,16 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Calma | Sleep Sounds, Relaxation and Focus",
+  title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
   description:
-    "Calma helps you create personalized soundscapes for better sleep, relaxation and deeper focus.",
+    "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
   alternates: {
     canonical: "https://www.calmasounds.com/",
   },
   openGraph: {
-    title: "Calma | Sleep Sounds, Relaxation and Focus",
+    title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
     description:
-      "Calma helps you create personalized soundscapes for better sleep, relaxation and deeper focus.",
+      "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
     url: "https://www.calmasounds.com/",
     siteName: "Calma",
     locale: "en_US",
@@ -19,15 +19,112 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calma | Sleep Sounds, Relaxation and Focus",
+    title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
     description:
-      "Calma helps you create personalized soundscapes for better sleep, relaxation and deeper focus.",
+      "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
   },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Calma",
+  url: "https://www.calmasounds.com",
+  description:
+    "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
+};
+
+const softwareAppJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Calma",
+  applicationCategory: "HealthApplication",
+  operatingSystem: "Android",
+  url: "https://www.calmasounds.com",
+  downloadUrl:
+    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+  description:
+    "Sleep sounds, white noise, relaxation and focus app with personalized soundscapes.",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD",
+  },
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Calma",
+  url: "https://www.calmasounds.com",
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is Calma?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma is a sound mixer app designed to help you sleep better, relax more easily and stay focused with personalized audio mixes.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who is Calma for?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma is for anyone who wants a calmer bedtime routine, a more peaceful reset after work or a focused background for studying and deep work.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Can I create my own sound mix?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Calma is built around the idea of creating your own relaxing sound environment instead of listening to only one fixed track.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is Calma available now?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma is available on Android, with more improvements and future platform expansion planned over time.",
+      },
+    },
+  ],
 };
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(websiteJsonLd),
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(softwareAppJsonLd),
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(organizationJsonLd),
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(faqJsonLd),
+              }}
+            />
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
@@ -52,6 +149,9 @@ export default function Home() {
             </a>
             <a href="#faq" className="transition hover:text-white">
               FAQ
+            </a>
+            <a href="/blog" className="transition hover:text-white">
+              Blog
             </a>
             <a href="#download" className="transition hover:text-white">
               Download
@@ -425,6 +525,52 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explore focus page →
             </span>
+          </a>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            Guides
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Read our sleep and focus guides
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            Explore practical reads about sleep sounds, white noise, studying and calmer bedtime routines.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <a
+            href="/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">Best Sounds for Sleep</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              Rain, white noise and softer soundscapes for bedtime.
+            </p>
+          </a>
+
+          <a
+            href="/blog/best-sounds-for-studying"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">Best Sounds for Studying</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              Discover which sounds may help concentration and focus.
+            </p>
+          </a>
+
+          <a
+            href="/blog/rain-sounds-vs-white-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">Rain Sounds vs White Noise</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              Compare atmosphere, masking and sleep comfort.
+            </p>
           </a>
         </div>
       </section>
