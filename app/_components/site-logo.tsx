@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type SiteLogoProps = {
   size?: number;
@@ -10,7 +11,7 @@ export default function SiteLogo({
   textClassName = "text-lg font-semibold tracking-wide",
 }: SiteLogoProps) {
   return (
-    <a href="/" className="flex items-center gap-3">
+    <Link href="/" className="flex items-center gap-3">
       <Image
         src="/logo.png"
         alt="Calma logo"
@@ -20,6 +21,6 @@ export default function SiteLogo({
         priority
       />
       <span className={textClassName}>Calma</span>
-    </a>
+    </Link>
   );
 }

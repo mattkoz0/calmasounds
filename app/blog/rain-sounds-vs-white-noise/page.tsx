@@ -56,6 +56,7 @@ const articleJsonLd = {
 export default function RainSoundsVsWhiteNoisePage() {
   return (
     <ArticlePage
+      slug="rain-sounds-vs-white-noise"
       jsonLd={articleJsonLd}
       title="Rain sounds vs white noise for sleep: which one is better?"
       intro="Both rain sounds and white noise are popular choices for bedtime, but they do not feel the same. One tends to feel softer and more natural, while the other creates a more stable sound layer that can mask outside noise. The better choice depends on what kind of sleep environment helps you unwind most easily."

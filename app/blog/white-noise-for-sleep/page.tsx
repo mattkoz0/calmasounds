@@ -75,6 +75,7 @@ const relatedArticles = [
 export default function WhiteNoiseForSleepPage() {
   return (
     <ArticlePage
+      slug="white-noise-for-sleep"
       jsonLd={articleJsonLd}
       topLinkHref="/white-noise-app"
       topLinkLabel="Explore white noise page"

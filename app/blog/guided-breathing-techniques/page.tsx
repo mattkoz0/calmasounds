@@ -58,8 +58,9 @@ const articleJsonLd = {
 export default function GuidedBreathingTechniquesPage() {
   return (
     <ArticlePage
+      slug="guided-breathing-techniques"
       jsonLd={articleJsonLd}
-      title="Guided breathing techniques for calm, sleep and focus"
+      title="Easy Guided Breathing Techniques for Fast Relief"
       intro="Guided breathing can be one of the simplest ways to shift your mental and physical state. Some breathing techniques are better for sleep, some help you feel more balanced, and others are useful when you need quick relief from stress or mental overload. The best one depends on what your body needs in that moment: slowing down, stabilizing, resetting or gently waking up."
       topLinkHref="/sleep-sounds-app"
       topLinkLabel="Explore sleep page"

@@ -56,6 +56,7 @@ const articleJsonLd = {
 export default function BedtimeRoutineArticlePage() {
   return (
     <ArticlePage
+      slug="how-to-build-a-bedtime-routine"
       jsonLd={articleJsonLd}
       title="How to build a bedtime routine that actually feels calming"
       intro="A good bedtime routine does not need to be complicated or perfect. What matters most is that it feels realistic, repeatable and calming enough to help your mind and body shift out of the day. Small, consistent signals often work better than ambitious routines you only follow once."

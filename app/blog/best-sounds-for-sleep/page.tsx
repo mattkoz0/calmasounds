@@ -56,6 +56,7 @@ const articleJsonLd = {
 export default function BestSoundsForSleepPage() {
   return (
     <ArticlePage
+      slug="best-sounds-for-sleep"
       jsonLd={articleJsonLd}
       topLinkHref="/sleep-sounds-app"
       topLinkLabel="Explore sleep page"

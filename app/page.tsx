@@ -98,6 +98,16 @@ const faqJsonLd = {
   ],
 };
 
+const videoJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  name: "Calma App Demo",
+  description: "Watch Calma in motion, from immersive sound mixing to premium wellness features designed for sleep, relaxation and focus.",
+  thumbnailUrl: "https://www.calmasounds.com/screenshots/3_en.png",
+  uploadDate: "2026-03-30",
+  contentUrl: "https://www.calmasounds.com/demo.mp4"
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -123,6 +133,12 @@ export default function Home() {
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify(faqJsonLd),
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(videoJsonLd),
               }}
             />
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
@@ -285,6 +301,7 @@ export default function Home() {
             controls
             preload="metadata"
             playsInline
+            poster="/screenshots/3_en.png"
           >
             <source src="/demo.mp4" type="video/mp4" />
             Your browser does not support the video tag.

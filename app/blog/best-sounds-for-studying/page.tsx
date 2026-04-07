@@ -56,10 +56,11 @@ const articleJsonLd = {
 export default function BestSoundsForStudyingPage() {
   return (
     <ArticlePage
+      slug="best-sounds-for-studying"
       jsonLd={articleJsonLd}
       topLinkHref="/focus-sounds-app"
       topLinkLabel="Explore focus page"
-      title="Best sounds for studying: what helps you focus better?"
+      title="The Best Sounds for Studying & Focus"
       intro="The best sounds for studying are usually the ones that help you stay mentally steady without pulling attention away from the task itself. Some people focus best with neutral background layers, while others prefer softer ambient soundscapes that make the environment feel less noisy and more immersive."
       ctaHref="/focus-sounds-app"
       ctaLabel="Explore focus sounds app"

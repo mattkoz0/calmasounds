@@ -22,6 +22,7 @@ type ArticlePageProps = {
   relatedArticles?: RelatedArticle[];
   ctaTitle?: string;
   ctaText?: string;
+  slug?: string;
 };
 
 export function ArticlePage({
@@ -38,7 +39,33 @@ export function ArticlePage({
   relatedArticles = [],
   ctaTitle = "Explore sleep soundscapes with Calma",
   ctaText = "Calma helps you explore calming audio, sleep soundscapes and more personalized bedtime environments.",
+  slug,
 }: ArticlePageProps) {
+  const breadcrumbJsonLd = slug ? {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.calmasounds.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://www.calmasounds.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": title,
+        "item": `https://www.calmasounds.com/blog/${slug}`
+      }
+    ]
+  } : null;
+
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <Script
@@ -46,6 +73,13 @@ export function ArticlePage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {breadcrumbJsonLd && (
+        <Script
+          id="breadcrumb-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+      )}
 
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
