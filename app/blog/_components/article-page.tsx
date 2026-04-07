@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 
 type RelatedArticle = {
@@ -84,15 +85,16 @@ export function ArticlePage({
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Calma logo"
                 width={100}
                 height={100}
                 className="h-[100px] w-[100px] object-contain"
+                priority
               />
-            </a>
+            </Link>
 
             <p className="hidden text-sm italic tracking-[0.08em] text-white/60 lg:block">
               Your calm, by design

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
@@ -144,15 +145,16 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Calma logo"
                 width={100}
                 height={100}
                 className="h-[100px] w-[100px] object-contain"
+                priority
               />
-            </a>
+            </Link>
 
             <p className="hidden text-sm italic tracking-[0.08em] text-white/60 lg:block">
               Your calm, by design
@@ -242,6 +244,7 @@ export default function Home() {
               width={240}
               height={93}
               className="h-[60px] w-auto object-contain"
+              priority
             />
           </a>
         </div>
@@ -302,6 +305,8 @@ export default function Home() {
             preload="metadata"
             playsInline
             poster="/screenshots/3_en.png"
+            title="Calma app demo video"
+            aria-label="Calma app demo video"
           >
             <source src="/demo.mp4" type="video/mp4" />
             Your browser does not support the video tag.

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Calma Blog | Sleep, White Noise and Focus Guides",
@@ -26,6 +27,12 @@ export const metadata: Metadata = {
 };
 
 const articles = [
+  {
+    href: "/blog/benefits-of-nature-sounds-for-relaxation",
+    title: "Nature Sounds for Deep Relaxation",
+    description:
+      "Explore how natural soundscapes like rain and ocean waves can act as natural white noise to enhance your bedtime routine.",
+  },
   {
     href: "/blog/best-sounds-for-sleep",
     title: "Best Sounds for Sleep",
@@ -80,6 +87,11 @@ const blogJsonLd = {
   hasPart: [
     {
       "@type": "Article",
+      headline: "Nature Sounds for Deep Relaxation",
+      url: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
+    },
+    {
+      "@type": "Article",
       headline: "Best Sounds for Sleep",
       url: "https://www.calmasounds.com/blog/best-sounds-for-sleep",
     },
@@ -129,15 +141,16 @@ export default function BlogPage() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <a href="/" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Calma logo"
                 width={100}
                 height={100}
                 className="h-[100px] w-[100px] object-contain"
+                priority
               />
-            </a>
+            </Link>
 
             <p className="hidden text-sm italic tracking-[0.08em] text-white/60 lg:block">
               Your calm, by design
