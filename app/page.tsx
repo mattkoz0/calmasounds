@@ -171,6 +171,9 @@ export default function Home() {
             <a href="/blog" className="transition hover:text-white">
               Blog
             </a>
+            <a href="/support" className="transition hover:text-white">
+              Support
+            </a>
             <a href="#download" className="transition hover:text-white">
               Download
             </a>
@@ -819,6 +822,11 @@ export default function Home() {
                   className="transition hover:text-white"
                 >
                   Binaural beats for sleep and focus
+                </a>
+              </li>
+              <li>
+                <a href="/support" className="transition hover:text-white font-medium">
+                  Support & Contact
                 </a>
               </li>
             </ul>
