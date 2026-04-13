@@ -65,6 +65,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.calmasounds.com",
   },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "Calma",
+    statusBarStyle: "black-translucent",
+  },
 };
 
 export default function RootLayout({

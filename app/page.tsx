@@ -818,6 +818,120 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <section className="mx-auto max-w-6xl px-6 py-24">
+        <div className="mb-12 flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end">
+          <div className="text-center sm:text-left">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+              Sound knowledge
+            </p>
+            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+              Latest from our blog
+            </h2>
+          </div>
+          <Link
+            href="/blog"
+            className="rounded-2xl border border-white/10 bg-white/5 px-6 py-3 text-sm font-medium transition hover:bg-white/10"
+          >
+            View all guides
+          </Link>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-3">
+          <a
+            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white group-hover:text-white">
+              Noise Colors Explained
+            </h3>
+            <p className="mt-4 flex-grow leading-7 text-white/60">
+              Ever wondered about the difference between white, pink, and brown
+              noise? Discover which color is best for your focus or sleep.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-white/40 group-hover:text-white">
+              Read guide
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <a
+            href="/blog/best-sounds-for-sleep"
+            className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white group-hover:text-white">
+              Best Sounds for Sleep
+            </h3>
+            <p className="mt-4 flex-grow leading-7 text-white/60">
+              A practical guide to choosing the right audio background for your
+              bedtime routine, from rain to white noise.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-white/40 group-hover:text-white">
+              Read guide
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+          </a>
+
+          <a
+            href="/blog/how-to-build-a-bedtime-routine"
+            className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white group-hover:text-white">
+              Building a Bedtime Routine
+            </h3>
+            <p className="mt-4 flex-grow leading-7 text-white/60">
+              Simple ways to create a calmer evening rhythm that supports natural
+              sleep and consistent rest every night.
+            </p>
+            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-white/40 group-hover:text-white">
+              Read guide
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 12L10 8L6 4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
+          </a>
+        </div>
+      </section>
+
       <footer className="border-t border-white/10 bg-slate-950">
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-3">
           <div>

@@ -33,9 +33,32 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.calmasounds.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sound Mixer App",
+      "item": "https://www.calmasounds.com/sound-mixer-app"
+    }
+  ]
+};
+
 export default function SoundMixerAppPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <header className="border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="/" className="text-lg font-semibold tracking-wide">
@@ -46,6 +69,7 @@ export default function SoundMixerAppPage() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Get Calma on Google Play Store (opens in a new window)"
             className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10"
           >
             Download on Google Play
@@ -72,6 +96,7 @@ export default function SoundMixerAppPage() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Download Calma on Google Play Store (opens in a new window)"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
             Download Calma on Google Play
@@ -128,7 +153,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              alt="Calma sound mixer app screenshot 1"
+              alt="Calma mobile app interface for creating custom sound mixes"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"
@@ -138,7 +163,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              alt="Calma sound mixer app screenshot 2"
+              alt="Calma sound mixer interface for customizing ambient soundscapes"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"
@@ -148,7 +173,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/3_en.png"
-              alt="Calma sound mixer app screenshot 3"
+              alt="Calma interface showing multiple audio layers for personalized relaxation"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"
@@ -158,12 +183,44 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/4_en.png"
-              alt="Calma sound mixer app screenshot 4"
+              alt="Calma sound mixer controls for sleep and focus audio"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"
             />
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            Guides & Knowledge
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Learn more about soundscapes
+          </h2>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <a
+            href="/blog/rain-sounds-vs-white-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Rain Sounds vs White Noise</h3>
+            <p className="mt-3 text-white/70">
+              Compare different atmospheric layers and see how mixing them can create the perfect focus or sleep audio.
+            </p>
+          </a>
+          <a
+            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">The Colors of Noise</h3>
+            <p className="mt-3 text-white/70">
+              Learn about noise colors and how to balance them in your personal sound mixer.
+            </p>
+          </a>
         </div>
       </section>
 
@@ -223,6 +280,7 @@ export default function SoundMixerAppPage() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Download Calma on Google Play Store (opens in a new window)"
             className="mt-8 inline-block rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
             Download on Google Play
