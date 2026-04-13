@@ -58,6 +58,11 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: "Calma",
   url: "https://www.calmasounds.com",
+  logo: "https://www.calmasounds.com/logo.png",
+  sameAs: [
+    "https://www.tiktok.com/@.calma.app",
+    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+  ]
 };
 
 const faqJsonLd = {
@@ -204,6 +209,7 @@ export default function Home() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Get Calma on Google Play Store (opens in a new window)"
             className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10"
           >
             Get Calma
@@ -231,6 +237,7 @@ export default function Home() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Download Calma on Google Play Store (opens in a new window)"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
             Download on Google Play
@@ -356,7 +363,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/3_en.png"
-              alt="Calma app screenshot 1"
+              alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"
@@ -366,7 +373,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/4_en.png"
-              alt="Calma app screenshot 2"
+              alt="Calma sound mixer interface for customizing white noise for sleep and focus"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"

@@ -103,6 +103,9 @@ export function ArticlePage({
 
           <a
             href={topLinkHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${topLinkLabel} (opens in a new window)`}
             className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10"
           >
             {topLinkLabel}

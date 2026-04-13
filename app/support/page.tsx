@@ -12,6 +12,20 @@ export const metadata: Metadata = {
 };
 
 export default function SupportPage() {
+  const contactJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Support & Contact | Calma App",
+    "description": "Get support for the Calma app, provide feedback or request new features.",
+    "url": "https://www.calmasounds.com/support",
+    "mainEntity": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "calma.app@outlook.com",
+      "url": "https://www.calmasounds.com/support"
+    }
+  };
+
   const footerLinks = [
     { name: 'Sleep sounds app', href: '/sleep-sounds-app' },
     { name: 'Relaxing sounds', href: '/relaxing-sounds' },
@@ -30,6 +44,10 @@ export default function SupportPage() {
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
@@ -65,6 +83,7 @@ export default function SupportPage() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Get Calma on Google Play Store (opens in a new window)"
             className="rounded-xl border border-white/15 bg-white/5 px-4 py-2 text-sm font-medium transition hover:bg-white/10"
           >
             Get Calma
@@ -116,7 +135,7 @@ export default function SupportPage() {
             </h4>
             <ul className="mt-4 space-y-3 text-white/70">
               {footerLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.href} className="flex">
                   <Link href={link.href} className="transition hover:text-white">
                     {link.name}
                   </Link>
@@ -131,7 +150,7 @@ export default function SupportPage() {
             </h4>
             <ul className="mt-4 space-y-3 text-white/70">
               {guideLinks.map((link) => (
-                <li key={link.href}>
+                <li key={link.href} className="flex">
                   <Link href={link.href} className="transition hover:text-white">
                     {link.name}
                   </Link>
@@ -140,10 +159,12 @@ export default function SupportPage() {
             </ul>
           </div>
         </div>
-        <div className="mx-auto max-w-6xl border-t border-white/5 px-6 py-8">
-          <p className="text-sm text-white/40">
-            &copy; {new Date().getFullYear()} Calma. All rights reserved.
-          </p>
+        <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 border-t border-white/5 text-sm text-white/40 sm:flex-row">
+          <p>© {new Date().getFullYear()} Calma. All rights reserved.</p>
+          <div className="flex gap-4">
+            <Link href="/privacy-policy" className="hover:text-white">Privacy Policy</Link>
+            <Link href="/terms-of-service" className="hover:text-white">Terms of Service</Link>
+          </div>
         </div>
       </footer>
     </main>
