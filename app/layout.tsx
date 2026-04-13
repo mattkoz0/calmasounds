@@ -62,6 +62,11 @@ export const metadata: Metadata = {
       "Create personalized soundscapes for sleep, relaxation and deep focus with Calma.",
     images: ["/og-image.png"],
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   alternates: {
     canonical: "https://www.calmasounds.com",
   },

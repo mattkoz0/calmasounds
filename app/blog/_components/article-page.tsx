@@ -42,6 +42,27 @@ export function ArticlePage({
   ctaText = "Calma helps you explore calming audio, sleep soundscapes and more personalized bedtime environments.",
   slug,
 }: ArticlePageProps) {
+  const enrichedJsonLd = {
+    ...jsonLd,
+    "author": {
+      "@type": "Person",
+      "name": "Calma Team",
+      "url": "https://www.calmasounds.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Calma",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.calmasounds.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": slug ? `https://www.calmasounds.com/blog/${slug}` : "https://www.calmasounds.com/blog"
+    }
+  };
+
   const breadcrumbJsonLd = slug ? {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -72,7 +93,7 @@ export function ArticlePage({
       <Script
         id="article-jsonld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(enrichedJsonLd) }}
       />
       {breadcrumbJsonLd && (
         <Script

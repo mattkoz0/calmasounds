@@ -55,7 +55,7 @@ export default function SupportPage() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/logo.png"
-                alt="Calma logo"
+                alt="Calma Sounds logo - Sleep & Relax App"
                 width={100}
                 height={100}
                 className="h-[100px] w-[100px] object-contain"

@@ -40,7 +40,7 @@ export default function BioPage() {
         <a href="/" className="flex items-center justify-center">
           <Image
             src="/logo.png"
-            alt="Calma logo"
+            alt="Calma Sounds logo - Sleep & Relax App"
             width={120}
             height={120}
             className="h-[120px] w-[120px] object-contain"
@@ -61,6 +61,7 @@ export default function BioPage() {
                 href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Download Calma on Google Play Store (opens in a new window)"
                 className="flex items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-center font-semibold text-slate-950 transition hover:scale-[1.01]"
             >
                 <FaGooglePlay className="text-lg" />
@@ -79,6 +80,7 @@ export default function BioPage() {
                 href="https://www.tiktok.com/@.calma.app"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow Calma on TikTok (opens in a new window)"
                 className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
             >
                 <FaTiktok className="text-lg" />
@@ -89,6 +91,7 @@ export default function BioPage() {
                 href="https://www.instagram.com/calma.app.official"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow Calma on Instagram (opens in a new window)"
                 className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
             >
                 <FaInstagram className="text-lg" />
@@ -99,6 +102,7 @@ export default function BioPage() {
                 href="https://www.youtube.com/@CalmaApp"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow Calma on YouTube (opens in a new window)"
                 className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
             >
                 <FaYoutube className="text-lg" />
@@ -109,6 +113,7 @@ export default function BioPage() {
                 href="https://www.facebook.com/profile.php?id=61580760185966"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Follow Calma on Facebook (opens in a new window)"
                 className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
             >
                 <FaFacebookF className="text-lg" />
