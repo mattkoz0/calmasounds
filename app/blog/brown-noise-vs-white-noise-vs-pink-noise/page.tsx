@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "calma blog",
   ],
   alternates: {
-    canonical: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise-green-noise",
+    canonical: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
   },
   openGraph: {
     title: "Brown Noise vs White Noise vs Pink Noise | Calma Blog",

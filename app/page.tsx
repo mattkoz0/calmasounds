@@ -7,13 +7,13 @@ export const metadata: Metadata = {
   description:
     "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
   alternates: {
-    canonical: "https://www.calmasounds.com/",
+    canonical: "https://www.calmasounds.com",
   },
   openGraph: {
     title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
     description:
       "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
-    url: "https://www.calmasounds.com/",
+    url: "https://www.calmasounds.com",
     siteName: "Calma",
     locale: "en_US",
     type: "website",
