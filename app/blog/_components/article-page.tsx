@@ -41,7 +41,8 @@ export function ArticlePage({
   ctaTitle = "Explore sleep soundscapes with Calma",
   ctaText = "Calma helps you explore calming audio, sleep soundscapes and more personalized bedtime environments.",
   slug,
-}: ArticlePageProps) {
+  tableOfContents = [],
+}: ArticlePageProps & { tableOfContents?: { id: string; title: string }[] }) {
   const enrichedJsonLd = {
     ...jsonLd,
     "author": {
@@ -144,6 +145,24 @@ export function ArticlePage({
         </h1>
 
         <p className="mt-6 text-lg leading-8 text-white/70">{intro}</p>
+
+        {tableOfContents.length > 0 && (
+          <nav className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6" aria-label="Table of contents">
+            <p className="text-sm font-semibold uppercase tracking-wider text-white/40">In this guide</p>
+            <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+              {tableOfContents.map((item) => (
+                <li key={item.id}>
+                  <a
+                    href={`#${item.id}`}
+                    className="text-white/70 transition hover:text-white hover:underline underline-offset-4"
+                  >
+                    {item.title}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )}
 
         <div className="mt-10 space-y-10">{children}</div>
 

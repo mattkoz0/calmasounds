@@ -75,6 +75,9 @@ export const metadata: Metadata = {
     title: "Calma",
     statusBarStyle: "black-translucent",
   },
+  other: {
+    "color-scheme": "dark",
+  },
 };
 
 export default function RootLayout({
@@ -87,6 +90,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://play.google.com" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}

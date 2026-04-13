@@ -40,7 +40,8 @@ const softwareAppJsonLd = {
   "@type": "SoftwareApplication",
   name: "Calma",
   applicationCategory: "HealthApplication",
-  operatingSystem: "Android",
+  applicationSubCategory: "Sleep and Relaxation",
+  operatingSystem: "Android 8.0 and up",
   url: "https://www.calmasounds.com",
   downloadUrl:
     "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
@@ -51,6 +52,7 @@ const softwareAppJsonLd = {
     price: "0",
     priceCurrency: "USD",
   },
+  softwareVersion: "1.0.0",
 };
 
 const organizationJsonLd = {
@@ -59,9 +61,18 @@ const organizationJsonLd = {
   name: "Calma",
   url: "https://www.calmasounds.com",
   logo: "https://www.calmasounds.com/logo.png",
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "calma.app@outlook.com",
+    contactType: "customer support",
+    availableLanguage: "English"
+  },
   sameAs: [
     "https://www.tiktok.com/@.calma.app",
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+    "https://www.instagram.com/calma.app.official",
+    "https://www.youtube.com/@CalmaApp",
+    "https://www.facebook.com/profile.php?id=61580760185966"
   ]
 };
 
@@ -171,7 +182,7 @@ export default function Home() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center" aria-label="Calma home - sleep sounds app">
               <Image
                 src="/logo.png"
                 alt="Calma Sounds logo - Sleep & Relax App"
@@ -179,6 +190,7 @@ export default function Home() {
                 height={100}
                 className="h-[100px] w-[100px] object-contain"
                 priority
+                fetchPriority="high"
               />
             </Link>
 
@@ -187,20 +199,20 @@ export default function Home() {
             </p>
           </div>
 
-          <nav className="hidden gap-6 text-sm text-white/70 md:flex">
-            <a href="#features" className="transition hover:text-white">
+          <nav className="hidden gap-6 text-sm text-white/70 md:flex" aria-label="Main navigation">
+            <a href="#features" className="transition hover:text-white" aria-label="Explore app features">
               Features
             </a>
-            <a href="#faq" className="transition hover:text-white">
+            <a href="#faq" className="transition hover:text-white" aria-label="Frequently asked questions">
               FAQ
             </a>
-            <a href="/blog" className="transition hover:text-white">
+            <a href="/blog" className="transition hover:text-white" aria-label="Read our sleep and focus blog">
               Blog
             </a>
-            <a href="/support" className="transition hover:text-white">
+            <a href="/support" className="transition hover:text-white" aria-label="Customer support and contact">
               Support
             </a>
-            <a href="#download" className="transition hover:text-white">
+            <a href="#download" className="transition hover:text-white" aria-label="Download the app">
               Download
             </a>
           </nav>

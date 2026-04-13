@@ -67,6 +67,14 @@ export default function NoiseColorsPage() {
       ctaLabel="Explore white noise app"
       secondaryCtaHref="/sound-mixer-app"
       secondaryCtaLabel="Explore sound mixer app"
+      tableOfContents={[
+        { id: "video", title: "Video: Colors Explained" },
+        { id: "white-noise", title: "White Noise" },
+        { id: "pink-noise", title: "Pink Noise" },
+        { id: "brown-noise", title: "Brown Noise" },
+        { id: "green-noise", title: "Green Noise" },
+        { id: "summary", title: "Which should you choose?" },
+      ]}
       relatedArticles={[
         {
           href: "/blog/white-noise-for-sleep",
@@ -82,7 +90,7 @@ export default function NoiseColorsPage() {
         },
       ]}
     >
-      <ArticleSection title="Watch: The Colors of Noise Explained">
+      <ArticleSection id="video" title="Watch: The Colors of Noise Explained">
         <p className="mb-6">
           Check out our quick guide on YouTube Shorts to hear the difference and see which color might be your favorite.
         </p>
@@ -99,7 +107,7 @@ export default function NoiseColorsPage() {
         </div>
       </ArticleSection>
 
-      <ArticleSection title="White Noise: The All-Rounder">
+      <ArticleSection id="white-noise" title="White Noise: The All-Rounder">
         <p>
           White noise contains all audible frequencies played at the same intensity. It sounds like static or a 'hushing' sound. Because it covers all frequencies, it is exceptionally good at masking sudden, distracting sounds like doors slamming or cars honking.
         </p>
@@ -108,7 +116,7 @@ export default function NoiseColorsPage() {
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Pink Noise: The Natural Choice">
+      <ArticleSection id="pink-noise" title="Pink Noise: The Natural Choice">
         <p>
           Pink noise is similar to white noise but has more energy at lower frequencies. This creates a softer, more balanced sound that many people find more natural than the harshness of pure white noise. Think of it like the sound of steady rain or wind rustling through leaves.
         </p>
@@ -117,7 +125,7 @@ export default function NoiseColorsPage() {
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Brown Noise: The Deep Calm">
+      <ArticleSection id="brown-noise" title="Brown Noise: The Deep Calm">
         <p>
           Brown noise (also called Red noise) goes even further than pink noise, focusing heavily on low-frequency bass. It sounds like a deep rumble, a distant waterfall, or the low hum of an airplane cabin. 
         </p>
@@ -129,7 +137,7 @@ export default function NoiseColorsPage() {
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Green Noise: The Nature Harmony">
+      <ArticleSection id="green-noise" title="Green Noise: The Nature Harmony">
         <p>
           Green noise is often described as the background sound of nature. It focuses on the middle frequencies, similar to what you might hear in a forest or by a quiet stream. It is less harsh than white noise and less bass-heavy than brown noise, finding a comfortable middle ground.
         </p>
@@ -138,7 +146,7 @@ export default function NoiseColorsPage() {
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Which one should you choose?">
+      <ArticleSection id="summary" title="Which one should you choose?">
         <p>
           The 'best' color is entirely personal. We recommend starting with White noise if you need to block out specific loud noises, but switching to Pink or Brown if you find the higher-pitched static of White noise too sharp.
         </p>
