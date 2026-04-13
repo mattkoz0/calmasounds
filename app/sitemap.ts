@@ -113,6 +113,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: "https://www.calmasounds.com/terms-of-service",
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
       url: "https://www.calmasounds.com/support",
       lastModified: currentDate,
       changeFrequency: "monthly",

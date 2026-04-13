@@ -111,6 +111,19 @@ const videoJsonLd = {
   embedUrl: "https://www.calmasounds.com/demo.mp4"
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://www.calmasounds.com"
+    }
+  ]
+};
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
@@ -142,6 +155,12 @@ export default function Home() {
               type="application/ld+json"
               dangerouslySetInnerHTML={{
                 __html: JSON.stringify(videoJsonLd),
+              }}
+            />
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify(breadcrumbJsonLd),
               }}
             />
       <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
@@ -256,9 +275,9 @@ export default function Home() {
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
-              Sleep
+              Better Sleep
             </p>
-            <h2 className="mt-3 text-xl font-semibold">Fall asleep in a calmer way</h2>
+            <h2 className="mt-3 text-xl font-semibold">Spersonalizowane szumy na sen i lepszy odpoczynek</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
               Create bedtime sound mixes with rain, ambient textures and soothing
               background layers that help you unwind naturally.
@@ -267,9 +286,9 @@ export default function Home() {
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
-              Relax
+              Deep Relax
             </p>
-            <h2 className="mt-3 text-xl font-semibold">Slow down after busy days</h2>
+            <h2 className="mt-3 text-xl font-semibold">Relaksujące dźwięki natury i odprężenie</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
               Use calming soundscapes to reset your mind, reduce noise around you
               and build a gentler evening routine.
@@ -278,9 +297,9 @@ export default function Home() {
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
-              Focus
+              ADHD & Focus
             </p>
-            <h2 className="mt-3 text-xl font-semibold">Stay immersed and productive</h2>
+            <h2 className="mt-3 text-xl font-semibold">Brązowy szum dla ADHD i lepszego skupienia</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
               Build your own background audio for studying, reading and deep work
               without distracting visuals or clutter.
@@ -367,7 +386,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/7_en.png"
-              alt="Calma app screenshot 4"
+              alt="Calma sound mixer interface for creating custom white noise mixes"
               width={720}
               height={1600}
               className="h-auto w-full rounded-2xl"
@@ -936,6 +955,9 @@ export default function Home() {
                 </a>
                 <a href="/privacy-policy" className="transition hover:text-white">
                   Privacy Policy
+                </a>
+                <a href="/terms-of-service" className="transition hover:text-white">
+                  Terms of Service
                 </a>
               </div>
 

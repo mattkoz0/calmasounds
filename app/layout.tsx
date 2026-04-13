@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import Script from "next/script";
+import CookieConsent from "./_components/cookie-consent";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.calmasounds.com"),
   title: "Calma | Sleep Sounds, Relaxation and Focus App",
@@ -27,6 +30,8 @@ export const metadata: Metadata = {
     "focus sounds",
     "white noise app",
     "calma app",
+    "ADHD focus sounds",
+    "anxiety relief sounds",
     "calma sleep sounds",
   ],
   robots: {
@@ -57,10 +62,10 @@ export const metadata: Metadata = {
       "Create personalized soundscapes for sleep, relaxation and deep focus with Calma.",
     images: ["/og-image.png"],
   },
+  alternates: {
+    canonical: "https://www.calmasounds.com",
+  },
 };
-
-import Script from "next/script";
-import CookieConsent from "./_components/cookie-consent";
 
 export default function RootLayout({
   children,
@@ -69,6 +74,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
         <CookieConsent />
