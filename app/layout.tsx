@@ -60,6 +60,7 @@ export const metadata: Metadata = {
 };
 
 import Script from "next/script";
+import CookieConsent from "./_components/cookie-consent";
 
 export default function RootLayout({
   children,
@@ -70,6 +71,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <CookieConsent />
         
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DKG7861ZMZ"

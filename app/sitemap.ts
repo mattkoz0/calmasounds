@@ -101,6 +101,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.calmasounds.com/privacy-policy",
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
       url: "https://www.calmasounds.com/support",
       lastModified: currentDate,
       changeFrequency: "monthly",

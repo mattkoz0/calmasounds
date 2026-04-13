@@ -105,7 +105,7 @@ const videoJsonLd = {
   name: "Calma App Demo",
   description: "Watch Calma in motion, from immersive sound mixing to premium wellness features designed for sleep, relaxation and focus.",
   thumbnailUrl: "https://www.calmasounds.com/screenshots/3_en.png",
-  uploadDate: "2026-03-30",
+  uploadDate: "2026-03-30T09:00:00+02:00",
   contentUrl: "https://www.calmasounds.com/demo.mp4"
 };
 
@@ -599,6 +599,85 @@ export default function Home() {
           </a>
         </div>
       </section>
+      
+      <section className="mx-auto max-w-6xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+            Sound knowledge
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            Understand the colors of noise
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
+            Did you know that noise has colors? From masking distractions to supporting focus and ADHD, different frequencies serve different needs.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10">
+            <div className="mb-4 inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-white">
+              White Noise
+            </div>
+            <h3 className="text-xl font-semibold">Perfect for masking</h3>
+            <p className="mt-4 text-sm leading-6 text-white/70">
+              Covers all audible frequencies equally. Ideal for blocking out sudden loud sounds and supporting infant sleep.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10">
+            <div className="mb-4 inline-block rounded-full bg-pink-500/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-pink-300">
+              Pink Noise
+            </div>
+            <h3 className="text-xl font-semibold">Balanced & natural</h3>
+            <p className="mt-4 text-sm leading-6 text-white/70">
+              Deeper than white noise, mimicking sounds like steady rain or wind. Great for improving overall sleep quality.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10">
+            <div className="mb-4 inline-block rounded-full bg-orange-500/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-orange-300">
+              Brown Noise
+            </div>
+            <h3 className="text-xl font-semibold">Focus & ADHD support</h3>
+            <p className="mt-4 text-sm leading-6 text-white/70">
+              Heavy on low frequencies, like a distant waterfall. Increasingly popular for deep focus and 'quieting' a busy mind.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10">
+            <div className="mb-4 inline-block rounded-full bg-emerald-500/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-emerald-300">
+              Green Noise
+            </div>
+            <h3 className="text-xl font-semibold">Nature Harmony</h3>
+            <p className="mt-4 text-sm leading-6 text-white/70">
+              Focuses on mid-range frequencies, similar to rustling forest leaves. Perfect for a calming, natural atmosphere.
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <a
+            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
+          >
+            Read the full guide to noise colors
+            <svg
+              className="h-4 w-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="9 5l7 7-7 7"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
 
       <section id="faq" className="mx-auto max-w-5xl px-6 py-16">
         <div className="mb-12 text-center">
@@ -852,6 +931,9 @@ export default function Home() {
                 </a>
                 <a href="/bio" className="transition hover:text-white">
                   All links
+                </a>
+                <a href="/privacy-policy" className="transition hover:text-white">
+                  Privacy Policy
                 </a>
               </div>
 

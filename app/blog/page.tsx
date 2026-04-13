@@ -75,6 +75,12 @@ const articles = [
     description:
       "Explore calming breathing methods for relaxation, balance, sleep and focus.",
   },
+  {
+    href: "/blog/brown-noise-vs-white-noise-vs-pink-noise",
+    title: "Brown Noise vs White Noise vs Pink Noise",
+    description:
+      "Explore differences between noise colors and find which one is best for your focus or sleep.",
+  },
 ];
 
 const blogJsonLd = {
@@ -124,6 +130,11 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "Guided Breathing Techniques",
       url: "https://www.calmasounds.com/blog/guided-breathing-techniques",
+    },
+    {
+      "@type": "Article",
+      headline: "Brown Noise vs White Noise vs Pink Noise",
+      url: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
     },
   ],
 };
