@@ -105,8 +105,10 @@ const videoJsonLd = {
   name: "Calma App Demo",
   description: "Watch Calma in motion, from immersive sound mixing to premium wellness features designed for sleep, relaxation and focus.",
   thumbnailUrl: "https://www.calmasounds.com/screenshots/3_en.png",
-  uploadDate: "2026-03-30T09:00:00+02:00",
-  contentUrl: "https://www.calmasounds.com/demo.mp4"
+  uploadDate: "2026-03-30T09:00:00Z",
+  duration: "PT34S",
+  contentUrl: "https://www.calmasounds.com/demo.mp4",
+  embedUrl: "https://www.calmasounds.com/demo.mp4"
 };
 
 export default function Home() {
