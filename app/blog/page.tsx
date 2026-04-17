@@ -81,6 +81,11 @@ const articles = [
     description:
       "Explore differences between noise colors and find which one is best for your focus or sleep.",
   },
+  {
+    href: "/blog/rain-sounds-for-better-sleep-and-focus",
+    title: "Why Rain Sounds Are the Ultimate Secret to Better Sleep and Focus",
+    description: "Discover why steady rain sounds are perfect for calming your mind, beating insomnia, and keeping you focused.",
+  },
 ];
 
 const blogJsonLd = {
@@ -135,6 +140,11 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "Brown Noise vs White Noise vs Pink Noise",
       url: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
+    },
+    {
+      "@type": "Article",
+      headline: "Why Rain Sounds Are the Ultimate Secret to Better Sleep and Focus",
+      url: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
     },
   ],
 };

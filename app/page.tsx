@@ -249,10 +249,10 @@ export default function Home() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Download Calma on Google Play Store (opens in a new window)"
-            className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+            aria-label="Download Calma App on Google Play Store (opens in a new window)"
+            className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
           >
-            Download on Google Play
+            Start Your Free Routine
           </a>
 
           <a
@@ -296,9 +296,9 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
               Better Sleep
             </p>
-            <h2 className="mt-3 text-xl font-semibold">Spersonalizowane szumy na sen i lepszy odpoczynek</h2>
+            <h2 className="mt-3 text-xl font-semibold">Personalized Sleep Sounds & Rain Ambience</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
-              Create bedtime sound mixes with rain, ambient textures and soothing
+              Create bedtime sound mixes with rain sounds, ambient textures and soothing
               background layers that help you unwind naturally.
             </p>
           </div>
@@ -307,7 +307,7 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
               Deep Relax
             </p>
-            <h2 className="mt-3 text-xl font-semibold">Relaksujące dźwięki natury i odprężenie</h2>
+            <h2 className="mt-3 text-xl font-semibold">Relaxing Sounds of Nature for Deep Rest</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
               Use calming soundscapes to reset your mind, reduce noise around you
               and build a gentler evening routine.
@@ -318,7 +318,7 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
               ADHD & Focus
             </p>
-            <h2 className="mt-3 text-xl font-semibold">Brązowy szum dla ADHD i lepszego skupienia</h2>
+            <h2 className="mt-3 text-xl font-semibold">Brown Noise & Focus Sounds for ADHD</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
               Build your own background audio for studying, reading and deep work
               without distracting visuals or clutter.
@@ -609,6 +609,16 @@ export default function Home() {
 
         <div className="grid gap-6 md:grid-cols-3">
           <a
+            href="/blog/rain-sounds-for-better-sleep-and-focus"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">Rain Sounds for Sleep & Focus</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              Why steady rain sounds are perfect for calming your mind.
+            </p>
+          </a>
+
+          <a
             href="/blog/best-sounds-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -625,16 +635,6 @@ export default function Home() {
             <h3 className="text-xl font-semibold">Best Sounds for Studying</h3>
             <p className="mt-3 text-sm leading-6 text-white/70">
               Discover which sounds may help concentration and focus.
-            </p>
-          </a>
-
-          <a
-            href="/blog/rain-sounds-vs-white-noise"
-            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
-          >
-            <h3 className="text-xl font-semibold">Rain Sounds vs White Noise</h3>
-            <p className="mt-3 text-sm leading-6 text-white/70">
-              Compare atmosphere, masking and sleep comfort.
             </p>
           </a>
         </div>
@@ -776,20 +776,13 @@ export default function Home() {
             focus with a beautifully simple app designed for everyday use.
           </p>
 
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-block rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
-          >
-            Download Calma on Google Play
-          </a>
-          <div className="mt-6 flex justify-center">
+          <div className="mt-10 flex justify-center hover:scale-[1.02] transition-transform duration-200">
             <a
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex"
+              aria-label="Download Calma App on Google Play"
             >
               <Image
                 src="/google-play-badge.png"
