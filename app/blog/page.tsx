@@ -86,6 +86,11 @@ const articles = [
     title: "Why Rain Sounds Are the Ultimate Secret to Better Sleep and Focus",
     description: "Discover why steady rain sounds are perfect for calming your mind, beating insomnia, and keeping you focused.",
   },
+  {
+    href: "/blog/green-noise-for-sleep",
+    title: "Green Noise for Sleep: The Natural Way to Rest",
+    description: "Discover what green noise is and why its nature-like frequencies might be the perfect soundscape for sleep.",
+  },
 ];
 
 const blogJsonLd = {
@@ -145,6 +150,11 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "Why Rain Sounds Are the Ultimate Secret to Better Sleep and Focus",
       url: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
+    },
+    {
+      "@type": "Article",
+      headline: "Green Noise for Sleep: The Natural Way to Rest",
+      url: "https://www.calmasounds.com/blog/green-noise-for-sleep",
     },
   ],
 };

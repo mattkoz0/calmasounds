@@ -107,6 +107,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.calmasounds.com/blog/green-noise-for-sleep",
+      lastModified: currentDate,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.calmasounds.com/baby-sleep-sounds-app",
+      lastModified: currentDate,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.calmasounds.com/privacy-policy",
       lastModified: currentDate,
       changeFrequency: "monthly",
