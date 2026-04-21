@@ -1,0 +1,40 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "relaxingSounds": "Relaxing Sounds",
+    "blog": "Blog",
+    "features": "Features",
+    "faq": "FAQ",
+    "support": "Support",
+    "download": "Download",
+    "getCalma": "Get Calma",
+    "subtitle": "Your calm, by design"
+  },
+  "Metadata": {
+    "title": "Calma | Sleep Sounds, Relaxation and Focus App",
+    "description": "Calma is a beautifully simple sleep sounds and relaxation app that helps you create personalized audio mixes for better sleep, calmer evenings and deeper focus.",
+    "keywords": "sleep sounds app, relaxation app, focus sounds app, sound mixer app, sleep sounds, relaxing sounds, focus sounds, white noise app, calma app, ADHD focus sounds, anxiety relief sounds, calma sleep sounds"
+  },
+  "Footer": {
+    "tagline": "A beautifully simple app for sleep, relaxation, focus and personalized soundscapes.",
+    "product": "Product",
+    "guides": "Guides & Support",
+    "allRightsReserved": "© {year} Calma. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "home": "Home",
+    "allLinks": "All links",
+    "sleepSoundsApp": "Sleep sounds app",
+    "relaxingSounds": "Relaxing sounds",
+    "focusSoundsApp": "Focus sounds app",
+    "whiteNoiseApp": "White noise app",
+    "soundMixerApp": "Sound mixer app",
+    "binauralBeats": "Binaural beats",
+    "rainVsWhiteNoise": "Rain sounds vs white noise",
+    "bestSoundsForSleep": "Best sounds for sleep",
+    "bedtimeRoutineGuide": "Bedtime routine guide",
+    "whiteNoiseForSleep": "White noise for sleep",
+    "bestSoundsForStudying": "Best sounds for studying",
+    "support": "Support & Contact"
+  }
+}

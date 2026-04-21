@@ -1,0 +1,40 @@
+{
+  "Navigation": {
+    "home": "Inicio",
+    "relaxingSounds": "Sonidos Relajantes",
+    "blog": "Blog",
+    "features": "Funciones",
+    "faq": "FAQ",
+    "support": "Soporte",
+    "download": "Descargar",
+    "getCalma": "Obtener Calma",
+    "subtitle": "Tu calma, por diseño"
+  },
+  "Metadata": {
+    "title": "Calma | App de Sonidos para Dormir, Relajación y Concentración",
+    "description": "Calma es una aplicación simple y hermosa de sonidos para dormir y relajación que te ayuda a crear mezclas de audio personalizadas para dormir mejor, tener noches más tranquilas y lograr una concentración más profunda.",
+    "keywords": "app para dormir, app de relajación, sonidos para estudiar, mezclador de sonidos, sonidos para dormir, sonidos relajantes, ruido blanco, app calma, sonidos TDAH, sonidos ansiedad, calma dormir"
+  },
+  "Footer": {
+    "tagline": "Una aplicación simple y hermosa para dormir, relajación, concentración y paisajes sonoros personalizados.",
+    "product": "Producto",
+    "guides": "Guías y Soporte",
+    "allRightsReserved": "© {year} Calma. Todos los derechos reservados.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "home": "Inicio",
+    "allLinks": "Todos los enlaces",
+    "sleepSoundsApp": "App para dormir",
+    "relaxingSounds": "Sonidos relajantes",
+    "focusSoundsApp": "App de concentración",
+    "whiteNoiseApp": "App de ruido blanco",
+    "soundMixerApp": "App mezcladora de sonidos",
+    "binauralBeats": "Tonos binaurales",
+    "rainVsWhiteNoise": "Sonidos de lluvia vs ruido blanco",
+    "bestSoundsForSleep": "Mejores sonidos para dormir",
+    "bedtimeRoutineGuide": "Guía de rutina nocturna",
+    "whiteNoiseForSleep": "Ruido blanco para dormir",
+    "bestSoundsForStudying": "Mejores sonidos para estudiar",
+    "support": "Soporte y Contacto"
+  }
+}

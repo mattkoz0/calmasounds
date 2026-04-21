@@ -2,145 +2,44 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date();
+  const url = (path: string) => `https://www.calmasounds.com${path}`;
 
-  return [
-    {
-      url: "https://www.calmasounds.com",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: "https://www.calmasounds.com/blog",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: "https://www.calmasounds.com/sleep-sounds-app",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.calmasounds.com/relaxing-sounds",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.calmasounds.com/focus-sounds-app",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.calmasounds.com/white-noise-app",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: "https://www.calmasounds.com/sound-mixer-app",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: "https://www.calmasounds.com/bio",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/best-sounds-for-sleep",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/how-to-build-a-bedtime-routine",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/white-noise-for-sleep",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/best-sounds-for-studying",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/binaural-beats-for-sleep-and-focus",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/guided-breathing-techniques",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/blog/green-noise-for-sleep",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.7,
-    },
-    {
-      url: "https://www.calmasounds.com/baby-sleep-sounds-app",
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    },
-    {
-      url: "https://www.calmasounds.com/privacy-policy",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.3,
-    },
-    {
-      url: "https://www.calmasounds.com/terms-of-service",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.3,
-    },
-    {
-      url: "https://www.calmasounds.com/support",
-      lastModified: currentDate,
-      changeFrequency: "monthly",
-      priority: 0.6,
-    },
+  const routes = [
+    { path: "", priority: 1, changeFrequency: "weekly" as const },
+    { path: "/blog", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/sleep-sounds-app", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/relaxing-sounds", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/focus-sounds-app", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/white-noise-app", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/sound-mixer-app", priority: 0.9, changeFrequency: "weekly" as const },
+    { path: "/bio", priority: 0.5, changeFrequency: "monthly" as const },
+    { path: "/blog/benefits-of-nature-sounds-for-relaxation", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/rain-sounds-vs-white-noise", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/best-sounds-for-sleep", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/how-to-build-a-bedtime-routine", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/white-noise-for-sleep", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/best-sounds-for-studying", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/binaural-beats-for-sleep-and-focus", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/guided-breathing-techniques", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/brown-noise-vs-white-noise-vs-pink-noise", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/rain-sounds-for-better-sleep-and-focus", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/green-noise-for-sleep", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/baby-sleep-sounds-app", priority: 0.8, changeFrequency: "weekly" as const },
+    { path: "/privacy-policy", priority: 0.3, changeFrequency: "monthly" as const },
+    { path: "/terms-of-service", priority: 0.3, changeFrequency: "monthly" as const },
+    { path: "/support", priority: 0.6, changeFrequency: "monthly" as const },
   ];
+
+  return routes.map((route) => ({
+    url: url(route.path),
+    lastModified: currentDate,
+    changeFrequency: route.changeFrequency,
+    priority: route.priority,
+    alternates: {
+      languages: {
+        en: url(route.path),
+        es: url(`/es${route.path}`),
+      },
+    },
+  }));
 }
