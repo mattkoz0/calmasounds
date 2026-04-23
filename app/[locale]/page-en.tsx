@@ -43,8 +43,10 @@ const softwareAppJsonLd = {
   applicationSubCategory: "Sleep and Relaxation",
   operatingSystem: "Android 8.0 and up",
   url: "https://www.calmasounds.com",
-  downloadUrl:
+  downloadUrl: [
     "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+  ],
   description:
     "Sleep sounds, white noise, relaxation and focus app with personalized soundscapes.",
   offers: {
@@ -70,6 +72,7 @@ const organizationJsonLd = {
   sameAs: [
     "https://www.tiktok.com/@.calma.app",
     "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
     "https://www.instagram.com/calma.app.official",
     "https://www.youtube.com/@CalmaApp",
     "https://www.facebook.com/profile.php?id=61580760185966"
@@ -109,7 +112,7 @@ const faqJsonLd = {
       name: "Is Calma available now?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Calma is available on Android, with more improvements and future platform expansion planned over time.",
+        text: "Calma is available on Android and iOS (App Store), with more improvements and future platform expansion planned over time.",
       },
     },
   ],
@@ -226,16 +229,31 @@ export default function Home() {
             No subscription pressure
           </span>
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex"
+            className="inline-flex transition hover:scale-[1.02]"
           >
             <Image
               src="/google-play-badge.png"
               alt="Get it on Google Play"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+              priority
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex transition hover:scale-[1.02]"
+          >
+            <Image
+              src="/apple-appstore-badge.png"
+              alt="Download on the App Store"
               width={240}
               height={93}
               className="h-[60px] w-auto object-contain"
@@ -728,17 +746,32 @@ export default function Home() {
             focus with a beautifully simple app designed for everyday use.
           </p>
 
-          <div className="mt-10 flex justify-center hover:scale-[1.02] transition-transform duration-200">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex"
+              className="inline-flex transition hover:scale-[1.02]"
               aria-label="Download Calma App on Google Play"
             >
               <Image
                 src="/google-play-badge.png"
                 alt="Get it on Google Play"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex transition hover:scale-[1.02]"
+              aria-label="Download Calma App on Apple App Store"
+            >
+              <Image
+                src="/apple-appstore-badge.png"
+                alt="Download on the App Store"
                 width={240}
                 height={93}
                 className="h-[60px] w-auto object-contain"

@@ -43,8 +43,10 @@ const softwareAppJsonLd = {
   applicationSubCategory: "Sleep and Relaxation",
   operatingSystem: "Android 8.0 and up",
   url: "https://www.calmasounds.com/es",
-  downloadUrl:
+  downloadUrl: [
     "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+  ],
   description:
     "Aplicación de sonidos para dormir, ruido blanco, relajación y concentración con paisajes sonoros personalizados.",
   offers: {
@@ -70,6 +72,7 @@ const organizationJsonLd = {
   sameAs: [
     "https://www.tiktok.com/@.calma.app",
     "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
     "https://www.instagram.com/calma.app.official",
     "https://www.youtube.com/@CalmaApp",
     "https://www.facebook.com/profile.php?id=61580760185966"
@@ -109,7 +112,7 @@ const faqJsonLd = {
       name: "¿Está disponible Calma ahora?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Calma está disponible en Android, con más mejoras y una futura expansión a otras plataformas planeada con el tiempo.",
+        text: "Calma está disponible en Android e iOS (App Store), con más mejoras y una futura expansión a otras plataformas planeada con el tiempo.",
       },
     },
   ],
@@ -226,16 +229,31 @@ export default function Home() {
             Sin suscripciones obligatorias
           </span>
         </div>
-        <div className="mt-8 flex justify-center">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           <a
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex"
+            className="inline-flex transition hover:scale-[1.02]"
           >
             <Image
               src="/google-play-badge.png"
               alt="Disponible en Google Play"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+              priority
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex transition hover:scale-[1.02]"
+          >
+            <Image
+              src="/apple-appstore-badge.png"
+              alt="Descargar en App Store"
               width={240}
               height={93}
               className="h-[60px] w-auto object-contain"
@@ -726,17 +744,32 @@ export default function Home() {
             concentración más profunda con una aplicación maravillosamente sencilla diseñada para uso diario.
           </p>
 
-          <div className="mt-10 flex justify-center hover:scale-[1.02] transition-transform duration-200">
+          <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex"
+              className="inline-flex transition hover:scale-[1.02]"
               aria-label="Descarga la App Calma en Google Play"
             >
               <Image
                 src="/google-play-badge.png"
                 alt="Consíguelo en Google Play"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex transition hover:scale-[1.02]"
+              aria-label="Descargar la aplicación Calma en App Store"
+            >
+              <Image
+                src="/apple-appstore-badge.png"
+                alt="Descargar en App Store"
                 width={240}
                 height={93}
                 className="h-[60px] w-auto object-contain"

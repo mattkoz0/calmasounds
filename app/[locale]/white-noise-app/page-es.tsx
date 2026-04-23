@@ -78,10 +78,20 @@ export default function WhiteNoiseAppPage() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Descargar Calma en Google Play (abre en ventana nueva)"
+            aria-label="Descargar Calma en Google Play Store (abre en ventana nueva)"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
-            Descargar Calma en Google Play
+            Descargar en Google Play
+          </a>
+
+          <a
+            href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Descargar Calma en App Store (abre en ventana nueva)"
+            className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+          >
+            Descargar en App Store
           </a>
 
           <a
@@ -258,15 +268,26 @@ export default function WhiteNoiseAppPage() {
             relajación te aportará a tus rutinas de sueño diario.
           </p>
 
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Descargar Calma en Google Play (abre en una nueva ventana)"
-            className="mt-8 inline-block rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
-          >
-            Descargar en Google Play
-          </a>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Descargar Calma en Google Play Store"
+              className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+            >
+              Google Play
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Descargar Calma en App Store"
+              className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+            >
+              App Store
+            </a>
+          </div>
         </div>
       </section>
     </main>

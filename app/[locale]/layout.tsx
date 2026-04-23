@@ -41,7 +41,7 @@ export async function generateMetadata({
       description: t("description"),
       url: "https://www.calmasounds.com",
       siteName: "Calma",
-      locale: locale === "es" ? "es_ES" : "en_US",
+      locale: locale === "es" ? "es_ES" : locale === "pl" ? "pl_PL" : "en_US",
       type: "website",
       images: [
         {
@@ -68,6 +68,7 @@ export async function generateMetadata({
       languages: {
         "en": "https://www.calmasounds.com",
         "es": "https://www.calmasounds.com/es",
+        "pl": "https://www.calmasounds.com/pl",
       }
     },
     manifest: "/manifest.json",
@@ -92,7 +93,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />

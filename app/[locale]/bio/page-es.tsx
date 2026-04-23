@@ -6,6 +6,7 @@ import {
   FaYoutube,
   FaFacebookF,
   FaGooglePlay,
+  FaAppStore,
   FaGlobe,
 } from "react-icons/fa";
 
@@ -65,7 +66,18 @@ export default function BioPage() {
                 className="flex items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-center font-semibold text-slate-950 transition hover:scale-[1.01]"
             >
                 <FaGooglePlay className="text-lg" />
-                <span>Descargar Calma en Google Play</span>
+                <span>Descargar en Google Play</span>
+            </a>
+
+            <a
+                href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Descargar Calma en Apple App Store (abre en nueva ventana)"
+                className="flex items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-center font-semibold text-slate-950 transition hover:scale-[1.01]"
+            >
+                <FaAppStore className="text-lg" />
+                <span>Descargar en App Store</span>
             </a>
 
             <a

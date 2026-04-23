@@ -94,6 +94,14 @@ export default function Footer() {
               >
                 Google Play
               </a>
+              <a
+                href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition hover:text-white"
+              >
+                App Store
+              </a>
               <Link href="/bio" className="transition hover:text-white">
                 {t("allLinks")}
               </Link>

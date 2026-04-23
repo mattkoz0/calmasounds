@@ -82,7 +82,17 @@ export default function SleepSoundsAppPage() {
             aria-label="Download Calma on Google Play Store (opens in a new window)"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
-            Download Calma on Google Play
+            Download on Google Play
+          </a>
+
+          <a
+            href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Download Calma on Apple App Store (opens in a new window)"
+            className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+          >
+            Download on App Store
           </a>
 
           <a
@@ -259,15 +269,26 @@ export default function SleepSoundsAppPage() {
             experience with personalized sleep sounds.
           </p>
 
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Download Calma on Google Play Store (opens in a new window)"
-            className="mt-8 inline-block rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
-          >
-            Download on Google Play
-          </a>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Calma on Google Play Store (opens in a new window)"
+              className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+            >
+              Google Play
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Download Calma on Apple App Store (opens in a new window)"
+              className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
+            >
+              App Store
+            </a>
+          </div>
         </div>
       </section>
     </main>

@@ -1,0 +1,42 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "relaxingSounds": "Relaksujące dźwięki",
+    "blog": "Blog",
+    "features": "Funkcje",
+    "faq": "FAQ",
+    "support": "Wsparcie",
+    "download": "Pobierz",
+    "getCalma": "Pobierz Calmę",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "subtitle": "Twój spokój, z założenia"
+  },
+  "Metadata": {
+    "title": "Calma | Dźwięki do snu, relaksacji i koncentracji",
+    "description": "Calma to pięknie prosta aplikacja z dźwiękami do snu i relaksacji, która pomaga tworzyć spersonalizowane miksy audio dla lepszego snu, spokojniejszych wieczorów i głębszej koncentracji.",
+    "keywords": "aplikacja do snu, aplikacja do relaksacji, dźwięki do nauki, mikser dźwięków, dźwięki do spania, relaksujące dźwięki, biały szum, aplikacja calma, dźwięki ADHD, dźwięki na lęk, calma dźwięki do snu"
+  },
+  "Footer": {
+    "tagline": "Pięknie prosta aplikacja do snu, relaksacji, koncentracji i spersonalizowanych pejzaży dźwiękowych.",
+    "product": "Produkt",
+    "guides": "Poradniki i Wsparcie",
+    "allRightsReserved": "© {year} Calma. Wszelkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka Prywatności",
+    "termsOfService": "Regulamin",
+    "home": "Home",
+    "allLinks": "Wszystkie linki",
+    "sleepSoundsApp": "Aplikacja do snu",
+    "relaxingSounds": "Relaksujące dźwięki",
+    "focusSoundsApp": "Aplikacja do koncentracji",
+    "whiteNoiseApp": "Aplikacja z białym szumem",
+    "soundMixerApp": "Mikser dźwięków",
+    "binauralBeats": "Dudnienia binauralne",
+    "rainVsWhiteNoise": "Dźwięki deszczu vs biały szum",
+    "bestSoundsForSleep": "Najlepsze dźwięki do snu",
+    "bedtimeRoutineGuide": "Poradnik wieczornej rutyny",
+    "whiteNoiseForSleep": "Biały szum do snu",
+    "bestSoundsForStudying": "Najlepsze dźwięki do nauki",
+    "support": "Wsparcie i Kontakt"
+  }
+}

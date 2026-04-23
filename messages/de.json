@@ -1,0 +1,42 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "relaxingSounds": "Entspannungsklänge",
+    "blog": "Blog",
+    "features": "Funktionen",
+    "faq": "FAQ",
+    "support": "Support",
+    "download": "Herunterladen",
+    "getCalma": "Calma laden",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "subtitle": "Deine Ruhe, planvoll gestaltet"
+  },
+  "Metadata": {
+    "title": "Calma | Klänge für Schlaf, Entspannung und Fokus",
+    "description": "Calma ist eine wunderschön einfache App für Schlaf und Entspannung, die dir hilft, personalisierte Klangmischungen für besseren Schlaf, ruhigere Abende und tiefere Konzentration zu erstellen.",
+    "keywords": "Schlaf-App, Entspannungs-App, Lernklänge, Sound-Mixer, Einschlafhilfen, entspannende Klänge, weißes Rauschen, Calma-App, ADHD-Sounds, Angstlinderung, Calma Schlafklänge"
+  },
+  "Footer": {
+    "tagline": "Eine wunderschön einfache App für Schlaf, Entspannung, Fokus und personalisierte Klangwelten.",
+    "product": "Produkt",
+    "guides": "Ratgeber & Support",
+    "allRightsReserved": "© {year} Calma. Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutz",
+    "termsOfService": "AGB",
+    "home": "Home",
+    "allLinks": "Alle Links",
+    "sleepSoundsApp": "Schlaf-App",
+    "relaxingSounds": "Entspannungsklänge",
+    "focusSoundsApp": "Fokus-App",
+    "whiteNoiseApp": "Weißes Rauschen App",
+    "soundMixerApp": "Sound-Mixer App",
+    "binauralBeats": "Binaurale Beats",
+    "rainVsWhiteNoise": "Regen vs. Weißes Rauschen",
+    "bestSoundsForSleep": "Beste Schlafklänge",
+    "bedtimeRoutineGuide": "Abendroutine-Ratgeber",
+    "whiteNoiseForSleep": "Weißes Rauschen zum Schlafen",
+    "bestSoundsForStudying": "Beste Lernklänge",
+    "support": "Support & Kontakt"
+  }
+}

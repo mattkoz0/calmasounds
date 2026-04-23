@@ -39,6 +39,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       languages: {
         en: url(route.path),
         es: url(`/es${route.path}`),
+        pl: url(`/pl${route.path}`),
+        de: url(`/de${route.path}`),
       },
     },
   }));
