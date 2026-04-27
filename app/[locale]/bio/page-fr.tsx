@@ -1,0 +1,140 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import {
+  FaTiktok,
+  FaInstagram,
+  FaYoutube,
+  FaFacebookF,
+  FaGooglePlay,
+  FaAppStore,
+  FaGlobe,
+} from "react-icons/fa";
+
+export const metadata: Metadata = {
+  title: "Calma | Liens",
+  description:
+    "Retrouvez Calma sur Google Play et explorez nos réseaux sociaux officiels.",
+  alternates: {
+    canonical: "https://www.calmasounds.com/fr/bio",
+  },
+  openGraph: {
+    title: "Calma | Liens",
+    description:
+      "Retrouvez Calma sur Google Play et explorez nos réseaux sociaux officiels.",
+    url: "https://www.calmasounds.com/fr/bio",
+    siteName: "Calma",
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Calma | Liens",
+    description:
+      "Retrouvez Calma sur Google Play et explorez nos réseaux sociaux officiels.",
+  },
+};
+
+export default function BioPage() {
+  return (
+    <main className="min-h-screen bg-slate-950 px-6 py-10 text-white">
+      <div className="mx-auto flex max-md flex-col items-center">
+        <a href="/" className="flex items-center justify-center">
+          <Image
+            src="/logo.png"
+            alt="Logo Calma - Sons pour le sommeil"
+            width={120}
+            height={120}
+            className="h-[120px] w-[120px] object-contain"
+            priority
+          />
+        </a>
+
+        <p className="mt-2 text-center text-sm italic tracking-[0.08em] text-white/60">
+          Votre calme, sur mesure
+        </p>
+
+        <p className="mt-4 max-w-sm text-center leading-7 text-white/70">
+          Dormez, relaxez et concentrez-vous avec des paysages sonores personnalisés.
+        </p>
+        <div className="mt-8 flex w-full flex-col gap-4">
+            <a
+                href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Télécharger Calma sur Google Play (ouvre une nouvelle fenêtre)"
+                className="flex items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-center font-semibold text-slate-950 transition hover:scale-[1.01]"
+            >
+                <FaGooglePlay className="text-lg" />
+                <span>Télécharger sur Google Play</span>
+            </a>
+
+            <a
+                href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Télécharger Calma sur l'App Store (ouvre une nouvelle fenêtre)"
+                className="flex items-center justify-center gap-3 rounded-2xl bg-white px-6 py-4 text-center font-semibold text-slate-950 transition hover:scale-[1.01]"
+            >
+                <FaAppStore className="text-lg" />
+                <span>Télécharger sur l'App Store</span>
+            </a>
+
+            <a
+                href="/"
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
+            >
+                <FaGlobe className="text-lg" />
+                <span>Visiter calmasounds.com</span>
+            </a>
+
+            <a
+                href="https://www.tiktok.com/@.calma.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivre Calma sur TikTok (ouvre une nouvelle fenêtre)"
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
+            >
+                <FaTiktok className="text-lg" />
+                <span>TikTok</span>
+            </a>
+
+            <a
+                href="https://www.instagram.com/calma.app.official"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivre Calma sur Instagram (ouvre une nouvelle fenêtre)"
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
+            >
+                <FaInstagram className="text-lg" />
+                <span>Instagram</span>
+            </a>
+
+            <a
+                href="https://www.youtube.com/@CalmaApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivre Calma sur YouTube (ouvre une nouvelle fenêtre)"
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
+            >
+                <FaYoutube className="text-lg" />
+                <span>YouTube</span>
+            </a>
+
+            <a
+                href="https://www.facebook.com/profile.php?id=61580760185966"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivre Calma sur Facebook (ouvre une nouvelle fenêtre)"
+                className="flex items-center justify-center gap-3 rounded-2xl border border-white/20 bg-gradient-to-br from-violet-500/20 via-white/10 to-slate-800/40 px-6 py-4 text-center font-medium text-white shadow-lg shadow-black/20 transition hover:border-white/30 hover:from-violet-500/30 hover:via-white/15 hover:to-slate-700/50"
+            >
+                <FaFacebookF className="text-lg" />
+                <span>Facebook</span>
+            </a>
+            </div>
+        <p className="mt-8 text-center text-sm text-white/50">
+          Liens officiels de Calma
+        </p>
+      </div>
+    </main>
+  );
+}

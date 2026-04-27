@@ -41,7 +41,7 @@ export async function generateMetadata({
       description: t("description"),
       url: "https://www.calmasounds.com",
       siteName: "Calma",
-      locale: locale === "es" ? "es_ES" : locale === "pl" ? "pl_PL" : "en_US",
+      locale: locale === "es" ? "es_ES" : locale === "pl" ? "pl_PL" : locale === "fr" ? "fr_FR" : "en_US",
       type: "website",
       images: [
         {
@@ -69,6 +69,7 @@ export async function generateMetadata({
         "en": "https://www.calmasounds.com",
         "es": "https://www.calmasounds.com/es",
         "pl": "https://www.calmasounds.com/pl",
+        "fr": "https://www.calmasounds.com/fr",
       }
     },
     manifest: "/manifest.json",

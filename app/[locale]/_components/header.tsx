@@ -78,6 +78,7 @@ export default function Header() {
             <option value="es" className="bg-slate-900 text-white">ES</option>
             <option value="pl" className="bg-slate-900 text-white">PL</option>
             <option value="de" className="bg-slate-900 text-white">DE</option>
+            <option value="fr" className="bg-slate-900 text-white">FR</option>
           </select>
 
           <div className="relative" ref={dropdownRef}>
