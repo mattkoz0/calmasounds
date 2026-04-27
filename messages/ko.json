@@ -1,0 +1,62 @@
+{
+  "Navigation": {
+    "subtitle": "당신만의 평온함, 디자인되다",
+    "features": "기능",
+    "faq": "자주 묻는 질문",
+    "blog": "블로그",
+    "support": "고객지원",
+    "download": "다운로드",
+    "getCalma": "Calma 받기",
+    "googlePlay": "Google Play",
+    "appStore": "App Store"
+  },
+  "Hero": {
+    "badge": "Calma • 수면 및 휴식 앱",
+    "title": "더 나은 수면, 깊은 휴식 그리고 집중",
+    "description": "Calma는 숙면과 집중력 향상을 위해 나만의 맞춤형 사운드스케이프를 만들 수 있는 심플하고 우아한 수면 유도 소리 및 백색소음 앱입니다.",
+    "ctaStart": "나만의 루틴 시작하기",
+    "ctaFeatures": "기능 둘러보기",
+    "feature1": "맞춤형 믹스",
+    "feature2": "수면 • 휴식 • 집중",
+    "feature3": "광고 없는 순수한 경험"
+  },
+  "Features": {
+    "tagline": "Calma를 선택해야 하는 이유",
+    "title": "당신을 위해 설계된 평온한 경험",
+    "description": "Calma는 시각적 공해나 복잡함 없이 당신만의 완만한 소리 환경을 조성할 수 있도록 돕습니다.",
+    "item1Title": "나만의 분위기 조성",
+    "item1Description": "기분과 루틴에 맞춰 소리를 믹스하세요. 일반적인 오디오 앱보다 훨씬 개인화된 경험을 제공합니다.",
+    "item2Title": "복잡함 없는 휴식",
+    "item2Description": "심플함을 추구하는 디자인으로 매일매일 부담 없이 사용할 수 있는 최적의 사용자 환경을 제공합니다.",
+    "item3Title": "다양한 일상의 순간들",
+    "item3Description": "취침 시간, 퇴근 후 휴식, 공부나 업무 등 모든 순간에 어울리는 사운드를 만드세요.",
+    "item4Title": "프리미엄 & 감성 디자인",
+    "item4Description": "세련된 비주얼과 따뜻한 감성이 어우러져 매일 방문하고 싶은 공간을 선사합니다."
+  },
+  "Footer": {
+    "tagline": "수면 유도 소리, 백색소음, 휴식 및 집중을 위한 나만의 맞춤형 사운드스케이프.",
+    "product": "제품",
+    "guides": "가이드",
+    "sleepSoundsApp": "수면 유도 소리 앱",
+    "relaxingSounds": "휴식 사운드",
+    "focusSoundsApp": "집중력 향상 앱",
+    "whiteNoiseApp": "백색소음 앱",
+    "soundMixerApp": "사운드 믹서 앱",
+    "binauralBeats": "바이노럴 비트",
+    "rainVsWhiteNoise": "빗소리 vs 백색소음",
+    "bestSoundsForSleep": "최고의 수면 사운드",
+    "bedtimeRoutineGuide": "취침 루틴 가이드",
+    "whiteNoiseForSleep": "수면을 위한 백색소음",
+    "bestSoundsForStudying": "공부에 좋은 소리",
+    "support": "고객지원",
+    "allRightsReserved": "© {year} Calma. All rights reserved.",
+    "home": "홈",
+    "allLinks": "모든 링크",
+    "privacyPolicy": "개인정보 처리방침",
+    "termsOfService": "이용약관"
+  },
+  "Metadata": {
+    "homeTitle": "Calma | 수면 유도 소리, 백색소음, 휴식 및 집중",
+    "homeDescription": "Calma는 최고의 수면 유도 소리, 백색소음 및 휴식 앱입니다. 더 나은 수면과 깊은 집중을 위해 나만의 사운드스케이프를 만드세요."
+  }
+}

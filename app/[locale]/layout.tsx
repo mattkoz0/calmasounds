@@ -27,6 +27,15 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "Metadata" });
 
+  const localeMap: Record<string, string> = {
+    en: "en_US",
+    pl: "pl_PL",
+    es: "es_ES",
+    de: "de_DE",
+    fr: "fr_FR",
+    ko: "ko_KR",
+  };
+
   return {
     metadataBase: new URL("https://www.calmasounds.com"),
     title: t("title"),
@@ -41,7 +50,7 @@ export async function generateMetadata({
       description: t("description"),
       url: "https://www.calmasounds.com",
       siteName: "Calma",
-      locale: locale === "es" ? "es_ES" : locale === "pl" ? "pl_PL" : locale === "fr" ? "fr_FR" : "en_US",
+      locale: localeMap[locale] || "en_US",
       type: "website",
       images: [
         {
@@ -70,6 +79,8 @@ export async function generateMetadata({
         "es": "https://www.calmasounds.com/es",
         "pl": "https://www.calmasounds.com/pl",
         "fr": "https://www.calmasounds.com/fr",
+        "de": "https://www.calmasounds.com/de",
+        "ko": "https://www.calmasounds.com/ko",
       }
     },
     manifest: "/manifest.json",
