@@ -1,0 +1,42 @@
+{
+  "Navigation": {
+    "home": "ホーム",
+    "relaxingSounds": "リラックスできる音",
+    "blog": "ブログ",
+    "features": "特徴",
+    "faq": "よくある質問",
+    "support": "サポート",
+    "download": "ダウンロード",
+    "getCalma": "Calmaを入手",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "subtitle": "あなたの落ち着きをデザインする"
+  },
+  "Metadata": {
+    "title": "Calma | 睡眠音、リラクゼーション、集中アプリ",
+    "description": "Calmaは、より良い睡眠、より穏やかな夜、そしてより深い集中のために、パーソナライズされたオーディオミックスを作成するのに役立つ、美しくシンプルな睡眠音とリラクゼーションのアプリです。",
+    "keywords": "睡眠音アプリ, リラクゼーションアプリ, 集中音アプリ, サウンドミキサーアプリ, 睡眠音, リラックスできる音, 集中音, ホワイトノイズアプリ, calmaアプリ, ADHD集中音, 不安解消音, calma睡眠音"
+  },
+  "Footer": {
+    "tagline": "睡眠、リラクゼーション、集中、パーソナライズされたサウンドスケープのための美しくシンプルなアプリ。",
+    "product": "プロダクト",
+    "guides": "ガイドとサポート",
+    "allRightsReserved": "© {year} Calma. 無断複写・転載を禁じます。",
+    "privacyPolicy": "プライバシーポリシー",
+    "termsOfService": "利用規約",
+    "home": "ホーム",
+    "allLinks": "すべてのリンク",
+    "sleepSoundsApp": "睡眠音アプリ",
+    "relaxingSounds": "リラックスできる音",
+    "focusSoundsApp": "集中音アプリ",
+    "whiteNoiseApp": "ホワイトノイズアプリ",
+    "soundMixerApp": "サウンドミキサーアプリ",
+    "binauralBeats": "バイノーラルビート",
+    "rainVsWhiteNoise": "雨の音 vs ホワイトノイズ",
+    "bestSoundsForSleep": "睡眠に最適な音",
+    "bedtimeRoutineGuide": "就寝時のルーティンガイド",
+    "whiteNoiseForSleep": "睡眠のためのホワイトノイズ",
+    "bestSoundsForStudying": "勉強に最適な音",
+    "support": "サポートと連絡先"
+  }
+}

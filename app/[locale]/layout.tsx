@@ -72,17 +72,7 @@ export async function generateMetadata({
       shortcut: "/logo.png",
       apple: "/logo.png",
     },
-    alternates: {
-      canonical: "https://www.calmasounds.com",
-      languages: {
-        "en": "https://www.calmasounds.com",
-        "es": "https://www.calmasounds.com/es",
-        "pl": "https://www.calmasounds.com/pl",
-        "fr": "https://www.calmasounds.com/fr",
-        "de": "https://www.calmasounds.com/de",
-        "ko": "https://www.calmasounds.com/ko",
-      }
-    },
+
     manifest: "/manifest.json",
     appleWebApp: {
       title: "Calma",

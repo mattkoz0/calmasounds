@@ -4,6 +4,7 @@ import PlPage from './page-pl';
 import DePage from './page-de';
 import FrPage from './page-fr';
 import KoPage from './page-ko';
+import JaPage from './page-ja';
 
 export default async function Page({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
@@ -13,5 +14,6 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
   if (locale === 'de') return <DePage />;
   if (locale === 'fr') return <FrPage />;
   if (locale === 'ko') return <KoPage />;
+  if (locale === 'ja') return <JaPage />;
   return <EnPage />;
 }

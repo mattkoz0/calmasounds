@@ -37,10 +37,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: route.priority,
     alternates: {
       languages: {
+        "x-default": url(route.path),
         en: url(route.path),
         es: url(`/es${route.path}`),
         pl: url(`/pl${route.path}`),
         de: url(`/de${route.path}`),
+        fr: url(`/fr${route.path}`),
+        ko: url(`/ko${route.path}`),
+        ja: url(`/ja${route.path}`),
       },
     },
   }));
