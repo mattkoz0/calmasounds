@@ -74,12 +74,14 @@ export default function Header() {
             className="rounded-lg border border-white/10 bg-white/5 py-1.5 pl-2 pr-8 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20stroke%3D%22%23ffffff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22%20d%3D%22m6%208%204%204%204-4%22%2F%3E%3C%2Fsvg%3E')] bg-[length:1.25rem_1.25rem] bg-[right_0.5rem_center] bg-no-repeat"
             aria-label="Select language"
           >
-            <option value="en" className="bg-slate-900 text-white">EN</option>
-            <option value="es" className="bg-slate-900 text-white">ES</option>
-            <option value="pl" className="bg-slate-900 text-white">PL</option>
-            <option value="de" className="bg-slate-900 text-white">DE</option>
-            <option value="fr" className="bg-slate-900 text-white">FR</option>
-            <option value="ko" className="bg-slate-900 text-white">KO</option>
+            <option value="en" className="bg-slate-900 text-white">🇺🇸 EN</option>
+            <option value="es" className="bg-slate-900 text-white">🇪🇸 ES</option>
+            <option value="pl" className="bg-slate-900 text-white">🇵🇱 PL</option>
+            <option value="de" className="bg-slate-900 text-white">🇩🇪 DE</option>
+            <option value="fr" className="bg-slate-900 text-white">🇫🇷 FR</option>
+            <option value="ko" className="bg-slate-900 text-white">🇰🇷 KO</option>
+            <option value="ja" className="bg-slate-900 text-white">🇯🇵 JA</option>
+            <option value="pt-BR" className="bg-slate-900 text-white">🇧🇷 PT</option>
           </select>
 
           <div className="relative" ref={dropdownRef}>

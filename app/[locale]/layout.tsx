@@ -34,6 +34,8 @@ export async function generateMetadata({
     de: "de_DE",
     fr: "fr_FR",
     ko: "ko_KR",
+    ja: "ja_JP",
+    "pt-BR": "pt_BR",
   };
 
   return {

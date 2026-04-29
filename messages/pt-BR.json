@@ -1,0 +1,42 @@
+{
+  "Navigation": {
+    "home": "Início",
+    "relaxingSounds": "Sons Relaxantes",
+    "blog": "Blog",
+    "features": "Recursos",
+    "faq": "FAQ",
+    "support": "Suporte",
+    "download": "Baixar",
+    "getCalma": "Obter Calma",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "subtitle": "Sua calma, por design"
+  },
+  "Metadata": {
+    "title": "Calma | Sons para Dormir, Relaxamento e Foco",
+    "description": "O Calma é um aplicativo maravilhosamente simples de sons para dormir e relaxar que ajuda você a criar mixagens de áudio personalizadas para um sono melhor, noites mais calmas e foco mais profundo.",
+    "keywords": "aplicativo de sons para dormir, aplicativo de relaxamento, aplicativo de sons para foco, aplicativo misturador de som, sons para dormir, sons relaxantes, sons para foco, aplicativo de ruído branco, aplicativo calma, sons para foco TDAH, sons para alívio da ansiedade, calma sons para dormir"
+  },
+  "Footer": {
+    "tagline": "Um aplicativo maravilhosamente simples para sono, relaxamento, foco e paisagens sonoras personalizadas.",
+    "product": "Produto",
+    "guides": "Guias e Suporte",
+    "allRightsReserved": "© {year} Calma. Todos os direitos reservados.",
+    "privacyPolicy": "Política de Privacidade",
+    "termsOfService": "Termos de Serviço",
+    "home": "Início",
+    "allLinks": "Todos os links",
+    "sleepSoundsApp": "App de sons para dormir",
+    "relaxingSounds": "Sons relaxantes",
+    "focusSoundsApp": "App de sons para foco",
+    "whiteNoiseApp": "App de ruído branco",
+    "soundMixerApp": "App misturador de som",
+    "binauralBeats": "Batidas binaurais",
+    "rainVsWhiteNoise": "Sons de chuva vs ruído branco",
+    "bestSoundsForSleep": "Melhores sons para dormir",
+    "bedtimeRoutineGuide": "Guia de rotina de dormir",
+    "whiteNoiseForSleep": "Ruído branco para dormir",
+    "bestSoundsForStudying": "Melhores sons para estudar",
+    "support": "Suporte e Contato"
+  }
+}
