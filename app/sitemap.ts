@@ -45,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         fr: url(`/fr${route.path}`),
         ko: url(`/ko${route.path}`),
         ja: url(`/ja${route.path}`),
+        "pt-BR": url(`/pt-BR${route.path}`),
       },
     },
   }));
