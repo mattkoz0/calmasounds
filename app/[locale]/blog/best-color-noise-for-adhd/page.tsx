@@ -1,10 +1,22 @@
 import EnPage from './page-en';
+import EsPage from './page-es';
+import PlPage from './page-pl';
+import DePage from './page-de';
+import FrPage from './page-fr';
+import KoPage from './page-ko';
+import JaPage from './page-ja';
+import PtPage from './page-pt-BR';
 
 export default async function Page({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   
-  // As this is a new article, we only have English for now.
-  // Other locales will fallback to English until translated.
+  if (locale === 'es') return <EsPage />;
+  if (locale === 'pl') return <PlPage />;
+  if (locale === 'de') return <DePage />;
+  if (locale === 'fr') return <FrPage />;
+  if (locale === 'ko') return <KoPage />;
+  if (locale === 'ja') return <JaPage />;
+  if (locale === 'pt-BR') return <PtPage />;
   
   return <EnPage />;
 }
