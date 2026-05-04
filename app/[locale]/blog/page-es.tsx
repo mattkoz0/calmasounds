@@ -91,6 +91,16 @@ const articles = [
     title: "Ruido Verde para Dormir: La Manera Natural de Descansar",
     description: "Descubre qué es el ruido verde y por qué sus vibraciones similares a la naturaleza encajan tanto.",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "La mejor aplicación gratuita de ruido blanco para dormir",
+    description: "¿Buscas la mejor aplicación gratuita de ruido blanco para ayudarte a conciliar el sueño? Descubre por qué Calma es la opción perfecta para sonidos relajantes.",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
+    description: "Explora por qué el ruido marrón suele preferirse sobre el ruido blanco para el TDAH, la concentración y la sobreestimulación.",
+  },
 ];
 
 const blogJsonLd = {
@@ -155,6 +165,16 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "Ruido Verde para Dormir: La Manera Natural de Descansar",
       url: "https://www.calmasounds.com/es/blog/green-noise-for-sleep",
+    },
+    {
+      "@type": "Article",
+      headline: "La mejor aplicación gratuita de ruido blanco para dormir",
+      url: "https://www.calmasounds.com/es/blog/best-free-white-noise-app",
+    },
+    {
+      "@type": "Article",
+      headline: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
+      url: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
     },
   ],
 };

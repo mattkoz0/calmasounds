@@ -89,6 +89,16 @@ const articles = [
     title: "睡眠のためのグリーンノイズ：自然な休息の方法",
     description: "グリーンノイズとは何か、そしてその自然のような周波数が睡眠に最適なサウンドスケープである理由を発見してください。",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "睡眠のための最高の無料ホワイトノイズアプリ",
+    description: "無料の睡眠音をお探しですか？Calmaが心地よい睡眠音のための完璧な選択である理由をご覧ください。",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "ADHDに最適なノイズの色は？ブラウンノイズ vs ホワイトノイズ",
+    description: "ADHD、集中力、過剰刺激に対してブラウンノイズがしばしば好まれる理由をご覧ください。",
+  },
 ];
 
 const blogJsonLd = {
@@ -153,6 +163,16 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "睡眠のためのグリーンノイズ：自然な休息の方法",
       url: "https://www.calmasounds.com/ja/blog/green-noise-for-sleep",
+    },
+    {
+      "@type": "Article",
+      headline: "睡眠のための最高の無料ホワイトノイズアプリ",
+      url: "https://www.calmasounds.com/ja/blog/best-free-white-noise-app",
+    },
+    {
+      "@type": "Article",
+      headline: "ADHDに最適なノイズの色は？ブラウンノイズ vs ホワイトノイズ",
+      url: "https://www.calmasounds.com/ja/blog/best-color-noise-for-adhd",
     },
   ],
 };

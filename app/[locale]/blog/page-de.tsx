@@ -89,6 +89,16 @@ const articles = [
     title: "Grünes Rauschen zum Schlafen: Der natürliche Weg zur Ruhe",
     description: "Was ist grünes Rauschen und warum sind naturähnliche Frequenzen die perfekte Klanglandschaft für den Schlaf?",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "Die beste kostenlose White-Noise-App für den Schlaf",
+    description: "Suchen Sie nach kostenlosen Schlafgeräuschen? Entdecken Sie, warum Calma die perfekte Wahl für beruhigende Klänge ist.",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
+    description: "Erfahren Sie, warum braunes Rauschen bei ADHS oft bevorzugt wird, um Fokus zu finden und Überstimulation zu reduzieren.",
+  },
 ];
 
 const blogJsonLd = {
@@ -153,6 +163,16 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "Grünes Rauschen zum Schlafen: Der natürliche Weg zur Ruhe",
       url: "https://www.calmasounds.com/de/blog/green-noise-for-sleep",
+    },
+    {
+      "@type": "Article",
+      headline: "Die beste kostenlose White-Noise-App für den Schlaf",
+      url: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",
+    },
+    {
+      "@type": "Article",
+      headline: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
+      url: "https://www.calmasounds.com/de/blog/best-color-noise-for-adhd",
     },
   ],
 };

@@ -91,6 +91,16 @@ const articles = [
     title: "수면을 위한 그린 노이즈: 자연스러운 휴식 방법",
     description: "그린 노이즈가 무엇인지, 왜 그 자연스러운 주파수가 수면에 완벽한 사운드스케이프가 될 수 있는지 알아보세요.",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "최고의 무료 백색 소음 수면 앱",
+    description: "무료 수면 소리를 찾고 계신가요? Calma가 부드러운 수면 소리를 위한 완벽한 선택인 이유를 알아보세요.",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "ADHD에 가장 좋은 소음 색깔은? 갈색 소음 vs 백색 소음",
+    description: "ADHD, 집중력, 과잉 자극에 갈색 소음이 종종 선호되는 이유를 알아보세요.",
+  },
 ];
 
 export default function BlogPage() {

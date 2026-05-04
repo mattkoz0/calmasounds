@@ -89,6 +89,16 @@ const articles = [
     title: "Zielony szum do snu: naturalny sposób na odpoczynek",
     description: "Dowiedz się, czym jest zielony szum i dlaczego jego naturalne częstotliwości mogą być idealnym tłem do spania.",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "Najlepsza darmowa aplikacja z białym szumem do snu",
+    description: "Szukasz darmowych dźwięków do snu? Odkryj, dlaczego Calma to idealny wybór.",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "Jaki kolor szumu jest najlepszy na ADHD? Brązowy czy biały",
+    description: "Dowiedz się, dlaczego brązowy szum jest często preferowany w ADHD, pomagając w skupieniu i radzeniu sobie z przebodźcowaniem.",
+  },
 ];
 
 const blogJsonLd = {

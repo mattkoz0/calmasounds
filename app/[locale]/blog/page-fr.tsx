@@ -91,6 +91,16 @@ const articles = [
     title: "Bruit vert pour le sommeil : La voie naturelle du repos",
     description: "Découvrez ce qu'est le bruit vert et pourquoi ses fréquences naturelles pourraient être le paysage sonore parfait pour dormir.",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "La meilleure application gratuite de bruit blanc pour le sommeil",
+    description: "Vous cherchez des sons pour dormir gratuits ? Découvrez pourquoi Calma est le choix idéal pour des sons relaxants.",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "Quelle couleur de bruit est la meilleure pour le TDAH ? Bruit brun vs blanc",
+    description: "Découvrez pourquoi le bruit brun est souvent préféré pour le TDAH, la concentration et la surstimulation.",
+  },
 ];
 
 export default function BlogPage() {
