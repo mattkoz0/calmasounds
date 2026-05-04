@@ -70,7 +70,7 @@ export default function WhiteNoiseAppPage() {
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
           Calma is a beautifully simple white noise app that helps you create a
           softer, more controlled sound environment for sleep, relaxation and
-          everyday calm. Use it to support bedtime routines, reduce distracting
+          everyday calm. Whether you are searching for the <strong>best sound to go to sleep to</strong> or the <strong>best noise for studying</strong>, use Calma to support bedtime routines, reduce distracting
           noise and build a more peaceful atmosphere around you.
         </p>
 

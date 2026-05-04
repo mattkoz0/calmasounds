@@ -158,6 +158,54 @@ export default function RainSoundsVsWhiteNoisePage() {
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
+        <h2 className="text-2xl font-semibold">Frequently Asked Questions</h2>
+        
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="text-xl font-medium text-white/90">Is rain considered white noise?</h3>
+            <p className="mt-2 leading-7 text-white/70">
+              Strictly speaking, rain is not pure white noise. Pure white noise contains all audible frequencies at equal intensity. Rain sounds naturally have more energy in the lower frequencies, which makes them closer to \"pink noise\". However, in everyday conversation, people often use the term \"white noise\" to describe any constant, soothing background sound, including rain.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-medium text-white/90">Is rain sound white noise?</h3>
+            <p className="mt-2 leading-7 text-white/70">
+              No, a rain sound is technically classified as pink noise rather than white noise. Because rain has a deeper, more atmospheric rumble with less high-pitched static, it feels softer to the human ear. This is why many people prefer the sound of rain for sleeping or studying over traditional machine-generated white noise.
+            </p>
+          </div>
+        </div>
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Is rain considered white noise?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Strictly speaking, rain is not pure white noise. Pure white noise contains all audible frequencies at equal intensity. Rain sounds naturally have more energy in the lower frequencies, which makes them closer to pink noise."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is rain sound white noise?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No, a rain sound is technically classified as pink noise rather than white noise. Because rain has a deeper, more atmospheric rumble with less high-pitched static, it feels softer to the human ear."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+      </section>
+
+      <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
         <h2 className="text-2xl font-semibold">A practical way to choose</h2>
         <p className="mt-4 leading-8 text-white/70">
           Try both for a few evenings and pay attention to how your body and

@@ -91,6 +91,16 @@ const articles = [
     title: "Green Noise for Sleep: The Natural Way to Rest",
     description: "Discover what green noise is and why its nature-like frequencies might be the perfect soundscape for sleep.",
   },
+  {
+    href: "/blog/best-free-white-noise-app",
+    title: "The Best Free White Noise App for Sleep",
+    description: "Looking for free sleeping sounds? Discover why Calma is the perfect choice for white noise.",
+  },
+  {
+    href: "/blog/best-color-noise-for-adhd",
+    title: "What Color Noise is Best for ADHD?",
+    description: "Explore why brown noise is often preferred over white noise for ADHD, focus, and overstimulation.",
+  },
 ];
 
 const blogJsonLd = {
@@ -155,6 +165,16 @@ const blogJsonLd = {
       "@type": "Article",
       headline: "Green Noise for Sleep: The Natural Way to Rest",
       url: "https://www.calmasounds.com/blog/green-noise-for-sleep",
+    },
+    {
+      "@type": "Article",
+      headline: "The Best Free White Noise App for Sleep",
+      url: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    },
+    {
+      "@type": "Article",
+      headline: "What Color Noise is Best for ADHD?",
+      url: "https://www.calmasounds.com/blog/best-color-noise-for-adhd",
     },
   ],
 };

@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/blog/brown-noise-vs-white-noise-vs-pink-noise", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/blog/rain-sounds-for-better-sleep-and-focus", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/blog/green-noise-for-sleep", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/best-free-white-noise-app", priority: 0.7, changeFrequency: "monthly" as const },
+    { path: "/blog/best-color-noise-for-adhd", priority: 0.7, changeFrequency: "monthly" as const },
     { path: "/baby-sleep-sounds-app", priority: 0.8, changeFrequency: "weekly" as const },
     { path: "/privacy-policy", priority: 0.3, changeFrequency: "monthly" as const },
     { path: "/terms-of-service", priority: 0.3, changeFrequency: "monthly" as const },
