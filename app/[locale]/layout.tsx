@@ -80,6 +80,9 @@ export async function generateMetadata({
       title: "Calma",
       statusBarStyle: "black-translucent",
     },
+    itunes: {
+      appId: "6761824923",
+    },
     other: {
       "color-scheme": "dark",
     },

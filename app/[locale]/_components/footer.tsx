@@ -13,8 +13,10 @@ export default function Footer() {
     { name: t("relaxingSounds"), href: "/relaxing-sounds" },
     { name: t("focusSoundsApp"), href: "/focus-sounds-app" },
     { name: t("whiteNoiseApp"), href: "/white-noise-app" },
+    { name: t("brownNoiseApp"), href: "/brown-noise-app" },
+    { name: t("natureSoundsApp"), href: "/nature-sounds-app" },
+    { name: t("tinnitusSoundsApp"), href: "/tinnitus-sounds-app" },
     { name: t("soundMixerApp"), href: "/sound-mixer-app" },
-    { name: t("binauralBeats"), href: "/blog/binaural-beats-for-sleep-and-focus" },
   ];
 
   const guideLinks = [

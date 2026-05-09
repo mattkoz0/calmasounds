@@ -10,11 +10,10 @@ import PtPage from './page-pt-BR';
 
 export default async function Page({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
-  
   const schema = (
     <SoftwareApplicationSchema 
-      name="Calma - Baby Sleep Sounds"
-      description="Help your baby fall asleep faster with gentle shushing, womb sounds, and continuous white noise."
+      name="Calma - Tinnitus Relief"
+      description="A beautifully simple app for tinnitus relief sounds and relaxation."
       applicationCategory="HealthApplication"
     />
   );

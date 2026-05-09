@@ -53,7 +53,10 @@
     "home": "홈",
     "allLinks": "모든 링크",
     "privacyPolicy": "개인정보 처리방침",
-    "termsOfService": "이용약관"
+    "termsOfService": "이용약관",
+    "brownNoiseApp": "갈색 소음 앱",
+    "natureSoundsApp": "자연의 소리 앱",
+    "tinnitusSoundsApp": "이명 완화 앱"
   },
   "Metadata": {
     "homeTitle": "Calma | 수면 유도 소리, 백색소음, 휴식 및 집중",

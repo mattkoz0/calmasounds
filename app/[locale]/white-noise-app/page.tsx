@@ -1,3 +1,4 @@
+import SoftwareApplicationSchema from '../_components/software-application-schema';
 import EnPage from './page-en';
 import EsPage from './page-es';
 import PlPage from './page-pl';
@@ -9,13 +10,20 @@ import PtPage from './page-pt-BR';
 
 export default async function Page({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
+  const schema = (
+    <SoftwareApplicationSchema 
+      name="Calma - White Noise"
+      description="A beautifully simple white noise app for sleep, relaxation and building a calmer audio environment."
+      applicationCategory="HealthApplication"
+    />
+  );
   
-  if (locale === 'es') return <EsPage />;
-  if (locale === 'pl') return <PlPage />;
-  if (locale === 'de') return <DePage />;
-  if (locale === 'fr') return <FrPage />;
-  if (locale === 'ko') return <KoPage />;
-  if (locale === 'ja') return <JaPage />;
-  if (locale === 'pt-BR') return <PtPage />;
-  return <EnPage />;
+  if (locale === 'es') return <>{schema}<EsPage /></>;
+  if (locale === 'pl') return <>{schema}<PlPage /></>;
+  if (locale === 'de') return <>{schema}<DePage /></>;
+  if (locale === 'fr') return <>{schema}<FrPage /></>;
+  if (locale === 'ko') return <>{schema}<KoPage /></>;
+  if (locale === 'ja') return <>{schema}<JaPage /></>;
+  if (locale === 'pt-BR') return <>{schema}<PtPage /></>;
+  return <>{schema}<EnPage /></>;
 }
