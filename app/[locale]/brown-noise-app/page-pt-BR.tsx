@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Ruído Marrom | Calma",
+  title: "App de Ruído Marrom para Dormir | Calma",
   description:
-    "Descubra o Calma, um aplicativo de ruído marrom incrivelmente simples para dormir, relaxar e criar um ambiente de áudio mais calmo.",
+    "Crie misturas relaxantes para dormir com ruído marrom e ruído branco. Use o Calma para relaxar, focar e dormir melhor.",
   keywords: [
     "aplicativo de ruído marrom",
     "ruído marrom para dormir",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/brown-noise-app",
   },
   openGraph: {
-    title: "App de Ruído Marrom | Calma",
+    title: "App de Ruído Marrom para Dormir | Calma",
     description:
-      "Descubra um aplicativo de ruído marrom incrivelmente simples para dormir, relaxar e rotinas diárias mais calmas.",
+    "Crie misturas relaxantes para dormir com ruído marrom e ruído branco. Use o Calma para relaxar, focar e dormir melhor.",
     url: "https://www.calmasounds.com/pt-BR/brown-noise-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Ruído Marrom | Calma",
+    title: "App de Ruído Marrom para Dormir | Calma",
     description:
-      "Descubra um aplicativo de ruído marrom incrivelmente simples para dormir, relaxar e rotinas diárias mais calmas.",
+    "Crie misturas relaxantes para dormir com ruído marrom e ruído branco. Use o Calma para relaxar, focar e dormir melhor.",
   },
 };
 

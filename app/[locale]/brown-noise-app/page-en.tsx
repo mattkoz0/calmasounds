@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Brown Noise App | Calma",
+  title: "Brown Noise App for Sleep & Focus | Calma",
   description:
-    "Discover Calma, a beautifully simple brown noise app for sleep, relaxation and building a calmer audio environment.",
+    "Create calming sleep mixes with brown noise, pink noise and white noise. Use Calma to relax, focus and build your bedtime routine.",
   keywords: [
     "brown noise app",
     "brown noise for sleep",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/brown-noise-app",
   },
   openGraph: {
-    title: "Brown Noise App | Calma",
+    title: "Brown Noise App for Sleep & Focus | Calma",
     description:
-      "Discover a beautifully simple brown noise app for sleep, relaxation and calmer daily routines.",
+    "Create calming sleep mixes with brown noise, pink noise and white noise. Use Calma to relax, focus and build your bedtime routine.",
     url: "https://www.calmasounds.com/brown-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Brown Noise App | Calma",
+    title: "Brown Noise App for Sleep & Focus | Calma",
     description:
-      "Discover a beautifully simple brown noise app for sleep, relaxation and calmer daily routines.",
+    "Create calming sleep mixes with brown noise, pink noise and white noise. Use Calma to relax, focus and build your bedtime routine.",
   },
 };
 

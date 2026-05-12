@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja z relaksującymi dźwiękami | Calma",
+  title: "Relaksujące Dźwięki do Odprężenia | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację z relaksującymi dźwiękami, stworzoną dla spokojniejszych wieczorów, wyciszających rutyn i spersonalizowanych pejzaży dźwiękowych.",
+    "Stwórz własny miks relaksujących dźwięków z deszczem i białym szumem. Użyj Calmy, aby znaleźć spokój i złagodzić codzienny stres.",
   keywords: [
     "aplikacja z relaksującymi dźwiękami",
     "dźwięki do relaksacji",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/relaxing-sounds",
   },
   openGraph: {
-    title: "Aplikacja z relaksującymi dźwiękami | Calma",
+    title: "Relaksujące Dźwięki do Odprężenia | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z relaksującymi dźwiękami dla spokojniejszych wieczorów i codziennych chwil wytchnienia.",
+    "Stwórz własny miks relaksujących dźwięków z deszczem i białym szumem. Użyj Calmy, aby znaleźć spokój i złagodzić codzienny stres.",
     url: "https://www.calmasounds.com/pl/relaxing-sounds",
     siteName: "Calma",
     locale: "pl_PL",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja z relaksującymi dźwiękami | Calma",
+    title: "Relaksujące Dźwięki do Odprężenia | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z relaksującymi dźwiękami dla spokojniejszych wieczorów i codziennych chwil wytchnienia.",
+    "Stwórz własny miks relaksujących dźwięków z deszczem i białym szumem. Użyj Calmy, aby znaleźć spokój i złagodzić codzienny stres.",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "ブラウンノイズアプリ | Calma",
+  title: "睡眠と集中のためのブラウンノイズアプリ | Calma",
   description:
-    "睡眠、リラクゼーション、より穏やかなオーディオ環境の構築のための、美しくシンプルなブラウンノイズアプリであるCalmaを発見してください。",
+    "ブラウンノイズとホワイトノイズで落ち着いた睡眠ミックスを作成します。Calmaを使用してリラックスし、集中しましょう。",
   keywords: [
     "ブラウンノイズアプリ",
     "睡眠のためのブラウンノイズ",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/brown-noise-app",
   },
   openGraph: {
-    title: "ブラウンノイズアプリ | Calma",
+    title: "睡眠と集中のためのブラウンノイズアプリ | Calma",
     description:
-      "睡眠、リラクゼーション、より穏やかな日常のルーティンのための、美しくシンプルなブラウンノイズアプリを発見してください。",
+    "ブラウンノイズとホワイトノイズで落ち着いた睡眠ミックスを作成します。Calmaを使用してリラックスし、集中しましょう。",
     url: "https://www.calmasounds.com/ja/brown-noise-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ブラウンノイズアプリ | Calma",
+    title: "睡眠と集中のためのブラウンノイズアプリ | Calma",
     description:
-      "睡眠、リラクゼーション、より穏やかな日常のルーティンのための、美しくシンプルなブラウンノイズアプリを発見してください。",
+    "ブラウンノイズとホワイトノイズで落ち着いた睡眠ミックスを作成します。Calmaを使用してリラックスし、集中しましょう。",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "自然の音アプリ | Calma",
+  title: "リラクゼーションのための自然の音アプリ | Calma",
   description:
-    "睡眠、リラクゼーション、より穏やかなオーディオ環境の構築のための、美しくシンプルな自然の音アプリであるCalmaを発見してください。",
+    "自然の音、雨、森の音で落ち着いた睡眠ミックスを作成します。Calmaを使用してリラックスし、睡眠ルーティンを作りましょう。",
   keywords: [
     "自然の音アプリ",
     "睡眠のための自然の音",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/nature-sounds-app",
   },
   openGraph: {
-    title: "自然の音アプリ | Calma",
+    title: "リラクゼーションのための自然の音アプリ | Calma",
     description:
-      "睡眠、リラクゼーション、より穏やかな日常のルーティンのための、美しくシンプルな自然の音アプリを発見してください。",
+    "自然の音、雨、森の音で落ち着いた睡眠ミックスを作成します。Calmaを使用してリラックスし、睡眠ルーティンを作りましょう。",
     url: "https://www.calmasounds.com/ja/nature-sounds-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "自然の音アプリ | Calma",
+    title: "リラクゼーションのための自然の音アプリ | Calma",
     description:
-      "睡眠、リラクゼーション、より穏やかな日常のルーティンのための、美しくシンプルな自然の音アプリを発見してください。",
+    "自然の音、雨、森の音で落ち着いた睡眠ミックスを作成します。Calmaを使用してリラックスし、睡眠ルーティンを作りましょう。",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Focus Sounds App | Calma",
+  title: "Focus Sounds App for Deep Work | Calma",
   description:
-    "Discover Calma, a beautifully simple focus sounds app for deep work, studying and personalized concentration soundscapes.",
+    "Build immersive focus soundscapes with rain, brown noise and ambient audio. Calma helps you create a quieter space for deep work.",
   keywords: [
     "focus sounds app",
     "focus app",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/focus-sounds-app",
   },
   openGraph: {
-    title: "Focus Sounds App | Calma",
+    title: "Focus Sounds App for Deep Work | Calma",
     description:
-      "Discover a beautifully simple focus sounds app for deep work, studying and concentration.",
+    "Build immersive focus soundscapes with rain, brown noise and ambient audio. Calma helps you create a quieter space for deep work.",
     url: "https://www.calmasounds.com/focus-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Focus Sounds App | Calma",
+    title: "Focus Sounds App for Deep Work | Calma",
     description:
-      "Discover a beautifully simple focus sounds app for deep work, studying and concentration.",
+    "Build immersive focus soundscapes with rain, brown noise and ambient audio. Calma helps you create a quieter space for deep work.",
   },
 };
 

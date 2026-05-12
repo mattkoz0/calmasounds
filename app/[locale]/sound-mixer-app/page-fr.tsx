@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Application de mixage sonore | Calma",
+  title: "Mixeur de Sons pour Dormir | Calma",
   description:
-    "Découvrez Calma, une application de mixage sonore simple et élégante pour le sommeil, la relaxation, la concentration et des rituels audio personnalisés.",
+    "Créez des mixages audio apaisants avec de la pluie et des sons de la nature. Utilisez le mixeur Calma pour vous détendre et dormir.",
   keywords: [
     "application mixage sonore",
     "mixeur de sons sommeil",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/sound-mixer-app",
   },
   openGraph: {
-    title: "Application de mixage sonore | Calma",
+    title: "Mixeur de Sons pour Dormir | Calma",
     description:
-      "Découvrez un mixeur de sons simple et élégant pour le sommeil, la relaxation, la concentration et des paysages sonores sur mesure.",
+    "Créez des mixages audio apaisants avec de la pluie et des sons de la nature. Utilisez le mixeur Calma pour vous détendre et dormir.",
     url: "https://www.calmasounds.com/fr/sound-mixer-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Application de mixage sonore | Calma",
+    title: "Mixeur de Sons pour Dormir | Calma",
     description:
-      "Découvrez un mixeur de sons simple et élégant pour le sommeil, la relaxation, la concentration et des paysages sonores sur mesure.",
+    "Créez des mixages audio apaisants avec de la pluie et des sons de la nature. Utilisez le mixeur Calma pour vous détendre et dormir.",
   },
 };
 

@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Les bienfaits des sons de la nature pour une relaxation profonde | Blog Calma",
+  title: "Bienfaits des Sons de la Nature | Calma",
   description:
-    "Découvrez comment les sons de la nature comme la pluie, les vagues de l'océan et l'ambiance forestière peuvent agir comme un bruit blanc naturel pour améliorer votre relaxation profonde.",
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
   keywords: [
     "sons de la nature",
     "sons relaxants pour dormir",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/blog/benefits-of-nature-sounds-for-relaxation",
   },
   openGraph: {
-    title: "Les bienfaits des sons de la nature pour une relaxation profonde | Blog Calma",
+    title: "Bienfaits des Sons de la Nature | Calma",
     description:
-      "Découvrez comment les sons de la nature comme la pluie, les vagues de l'océan et l'ambiance forestière peuvent agir comme un bruit blanc naturel pour améliorer votre relaxation profonde.",
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
     url: "https://www.calmasounds.com/fr/blog/benefits-of-nature-sounds-for-relaxation",
     siteName: "Calma",
     locale: "fr_FR",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Les bienfaits des sons de la nature pour une relaxation profonde | Blog Calma",
+    title: "Bienfaits des Sons de la Nature | Calma",
     description:
-      "Découvrez comment les sons de la nature comme la pluie, les vagues de l'océan et l'ambiance forestière peuvent agir comme un bruit blanc naturel pour améliorer votre relaxation profonde.",
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Les bienfaits des sons de la nature pour une relaxation profonde",
   description:
-    "Découvrez comment les sons de la nature comme la pluie, les vagues de l'océan et l'ambiance forestière peuvent agir comme un bruit blanc naturel pour améliorer votre relaxation profonde.",
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -72,18 +72,21 @@ export default function BenefitsOfNatureSoundsPage() {
       relatedArticles={[
         {
           href: "/blog/rain-sounds-vs-white-noise",
-          title: "Sons de pluie vs Bruit blanc",
-          description: "Comparez le confort émotionnel, le masquage et l'atmosphère du coucher.",
+          title: "Bienfaits des Sons de la Nature | Calma",
+          description:
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
         },
         {
           href: "/blog/how-to-build-a-bedtime-routine",
-          title: "Construire une routine de coucher",
-          description: "Des moyens simples de créer un rythme du soir plus calme qui favorise le sommeil.",
+          title: "Bienfaits des Sons de la Nature | Calma",
+          description:
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
         },
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Bruit blanc pour le sommeil",
-          description: "Quand le bruit blanc peut aider et comment construire un environnement de coucher plus calme.",
+          title: "Bienfaits des Sons de la Nature | Calma",
+          description:
+    "Découvrez comment les sons de la nature peuvent soutenir votre routine quotidienne, réduire le stress et relaxer.",
         },
       ]}
     >

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja z dźwiękami do koncentracji | Calma",
+  title: "Dźwięki do Nauki i Koncentracji | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację z dźwiękami do koncentracji, idealną do głębokiej pracy, nauki i tworzenia spersonalizowanych pejzaży dźwiękowych skupienia.",
+    "Zbuduj immersyjne środowisko dźwiękowe z deszczem i brązowym szumem. Calma pomaga stworzyć spokojną przestrzeń do głębokiej pracy.",
   keywords: [
     "aplikacja do koncentracji",
     "dźwięki do nauki",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/focus-sounds-app",
   },
   openGraph: {
-    title: "Aplikacja z dźwiękami do koncentracji | Calma",
+    title: "Dźwięki do Nauki i Koncentracji | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z dźwiękami do koncentracji dla głębokiej pracy, nauki i lepszego skupienia.",
+    "Zbuduj immersyjne środowisko dźwiękowe z deszczem i brązowym szumem. Calma pomaga stworzyć spokojną przestrzeń do głębokiej pracy.",
     url: "https://www.calmasounds.com/pl/focus-sounds-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja z dźwiękami do koncentracji | Calma",
+    title: "Dźwięki do Nauki i Koncentracji | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z dźwiękami do koncentracji dla głębokiej pracy, nauki i lepszego skupienia.",
+    "Zbuduj immersyjne środowisko dźwiękowe z deszczem i brązowym szumem. Calma pomaga stworzyć spokojną przestrzeń do głębokiej pracy.",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Dźwięki do snu dla niemowląt | Calma",
+  title: "Dźwięki do Snu dla Niemowląt | Calma",
   description:
-    "Odkryj Calmę – aplikację z dźwiękami do snu dla niemowląt, oferującą kojący biały szum, łagodny deszcz i uspokajającą atmosferę, stworzoną, by pomóc Twojemu dziecku spać spokojnie.",
+    "Twórz spokojne miksy z białym szumem i delikatnymi dźwiękami dla niemowląt. Calma pomoże Twojemu dziecku przespać całą noc.",
   keywords: [
     "dźwięki do snu dla niemowląt",
     "biały szum dla dzieci",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Dźwięki do snu dla niemowląt | Calma",
+    title: "Dźwięki do Snu dla Niemowląt | Calma",
     description:
-      "Pięknie prosta aplikacja, która pomoże Twojemu dziecku wyciszyć się i zasnąć dzięki spersonalizowanym, łagodnym pejzażom dźwiękowym.",
+    "Twórz spokojne miksy z białym szumem i delikatnymi dźwiękami dla niemowląt. Calma pomoże Twojemu dziecku przespać całą noc.",
     url: "https://www.calmasounds.com/pl/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dźwięki do snu dla niemowląt | Calma",
+    title: "Dźwięki do Snu dla Niemowląt | Calma",
     description:
-      "Pięknie prosta aplikacja, która pomoże Twojemu dziecku wyciszyć się i zasnąć dzięki spersonalizowanym, łagodnym pejzażom dźwiękowym.",
+    "Twórz spokojne miksy z białym szumem i delikatnymi dźwiękami dla niemowląt. Calma pomoże Twojemu dziecku przespać całą noc.",
   },
 };
 

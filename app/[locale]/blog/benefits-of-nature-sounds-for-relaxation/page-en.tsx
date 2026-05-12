@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "The Benefits of Nature Sounds for Deep Relaxation | Calma Blog",
+  title: "Benefits of Nature Sounds for Relaxation | Calma",
   description:
-    "Explore how nature sounds like rain, ocean waves, and forest ambiance can act as a natural white noise to enhance your deep relaxation and bedtime routine.",
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
   keywords: [
     "nature sounds",
     "relaxing sounds for sleep",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
   },
   openGraph: {
-    title: "The Benefits of Nature Sounds for Deep Relaxation | Calma Blog",
+    title: "Benefits of Nature Sounds for Relaxation | Calma",
     description:
-      "Explore how nature sounds like rain, ocean waves, and forest ambiance can act as a natural white noise to enhance your deep relaxation and bedtime routine.",
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
     url: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
     siteName: "Calma",
     locale: "en_US",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Benefits of Nature Sounds for Deep Relaxation | Calma Blog",
+    title: "Benefits of Nature Sounds for Relaxation | Calma",
     description:
-      "Explore how nature sounds like rain, ocean waves, and forest ambiance can act as a natural white noise to enhance your deep relaxation and bedtime routine.",
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "The Benefits of Nature Sounds for Deep Relaxation",
   description:
-    "Explore how nature sounds like rain, ocean waves, and forest ambiance can act as a natural white noise to enhance your deep relaxation and bedtime routine.",
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -72,18 +72,21 @@ export default function BenefitsOfNatureSoundsPage() {
       relatedArticles={[
         {
           href: "/blog/rain-sounds-vs-white-noise",
-          title: "Rain Sounds vs White Noise",
-          description: "Compare emotional comfort, masking and bedtime atmosphere.",
+          title: "Benefits of Nature Sounds for Relaxation | Calma",
+          description:
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
         },
         {
           href: "/blog/how-to-build-a-bedtime-routine",
-          title: "Building a Bedtime Routine",
-          description: "Simple ways to create a calmer evening rhythm that supports sleep.",
+          title: "Benefits of Nature Sounds for Relaxation | Calma",
+          description:
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
         },
         {
           href: "/blog/white-noise-for-sleep",
-          title: "White Noise for Sleep",
-          description: "When white noise can help and how to build a calmer bedtime environment.",
+          title: "Benefits of Nature Sounds for Relaxation | Calma",
+          description:
+    "Discover how nature sounds and forest audio can support your daily routine, reduce stress, and improve relaxation.",
         },
       ]}
     >

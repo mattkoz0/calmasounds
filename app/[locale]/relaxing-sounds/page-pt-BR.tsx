@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sons Relaxantes | Calma",
+  title: "Sons Relaxantes para a Paz Diária | Calma",
   description:
-    "Descubra o Calma, um aplicativo incrivelmente simples de sons relaxantes para noites mais calmas, rotinas pacíficas e paisagens sonoras personalizadas.",
+    "Crie sua própria mistura de sons relaxantes com chuva e ruído branco. Use o Calma para encontrar a paz e aliviar o estresse diário.",
   keywords: [
     "aplicativo de sons relaxantes",
     "sons de relaxamento",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/relaxing-sounds",
   },
   openGraph: {
-    title: "App de Sons Relaxantes | Calma",
+    title: "Sons Relaxantes para a Paz Diária | Calma",
     description:
-      "Descubra um aplicativo incrivelmente simples de sons relaxantes para noites mais calmas e rotinas diárias pacíficas.",
+    "Crie sua própria mistura de sons relaxantes com chuva e ruído branco. Use o Calma para encontrar a paz e aliviar o estresse diário.",
     url: "https://www.calmasounds.com/pt-BR/relaxing-sounds",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sons Relaxantes | Calma",
+    title: "Sons Relaxantes para a Paz Diária | Calma",
     description:
-      "Descubra um aplicativo incrivelmente simples de sons relaxantes para noites mais calmas e rotinas diárias pacíficas.",
+    "Crie sua própria mistura de sons relaxantes com chuva e ruído branco. Use o Calma para encontrar a paz e aliviar o estresse diário.",
   },
 };
 

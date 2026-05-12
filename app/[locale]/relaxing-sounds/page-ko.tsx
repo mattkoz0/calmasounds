@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "휴식 사운드 앱 | Calma",
+  title: "매일의 평온을 위한 휴식 소리 앱 | Calma",
   description:
-    "일상의 스트레스를 해소하고 마음의 평온을 되찾아주는 휴식 사운드 앱 Calma. 나만의 힐링 사운드스케이프를 디자인하세요.",
+    "비, 백색 소음, 자연의 소리로 나만의 휴식 소리 믹스를 만드세요. Calma를 사용하여 평화를 찾고 스트레스를 해소하세요.",
   keywords: [
     "휴식 사운드 앱",
     "힐링 소리",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/relaxing-sounds",
   },
   openGraph: {
-    title: "휴식 사운드 앱 | Calma",
+    title: "매일의 평온을 위한 휴식 소리 앱 | Calma",
     description:
-      "더 차분한 저녁과 부드러운 일상을 위해 설계된 심플하고 우아한 휴식 사운드 앱입니다.",
+    "비, 백색 소음, 자연의 소리로 나만의 휴식 소리 믹스를 만드세요. Calma를 사용하여 평화를 찾고 스트레스를 해소하세요.",
     url: "https://www.calmasounds.com/ko/relaxing-sounds",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "휴식 사운드 앱 | Calma",
+    title: "매일의 평온을 위한 휴식 소리 앱 | Calma",
     description:
-      "더 차분한 저녁과 부드러운 일상을 위해 설계된 심플하고 우아한 휴식 사운드 앱입니다.",
+    "비, 백색 소음, 자연의 소리로 나만의 휴식 소리 믹스를 만드세요. Calma를 사용하여 평화를 찾고 스트레스를 해소하세요.",
   },
 };
 

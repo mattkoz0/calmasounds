@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "耳鳴り緩和音アプリ | Calma",
+  title: "睡眠のための耳鳴り緩和音アプリ | Calma",
   description:
-    "睡眠、リラクゼーション、より穏やかなオーディオ環境の構築のための、美しくシンプルな耳鳴り緩和音アプリであるCalmaを発見してください。",
+    "耳鳴り緩和音アプリを発見してください。Calmaを使用して、より良い睡眠と休息のための心地よいオーディオ環境を作成します。",
   keywords: [
     "耳鳴り緩和音アプリ",
     "睡眠のための耳鳴り緩和音",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "耳鳴り緩和音アプリ | Calma",
+    title: "睡眠のための耳鳴り緩和音アプリ | Calma",
     description:
-      "睡眠、リラクゼーション、より穏やかな日常のルーティンのための、美しくシンプルな耳鳴り緩和音アプリを発見してください。",
+    "耳鳴り緩和音アプリを発見してください。Calmaを使用して、より良い睡眠と休息のための心地よいオーディオ環境を作成します。",
     url: "https://www.calmasounds.com/ja/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "耳鳴り緩和音アプリ | Calma",
+    title: "睡眠のための耳鳴り緩和音アプリ | Calma",
     description:
-      "睡眠、リラクゼーション、より穏やかな日常のルーティンのための、美しくシンプルな耳鳴り緩和音アプリを発見してください。",
+    "耳鳴り緩和音アプリを発見してください。Calmaを使用して、より良い睡眠と休息のための心地よいオーディオ環境を作成します。",
   },
 };
 

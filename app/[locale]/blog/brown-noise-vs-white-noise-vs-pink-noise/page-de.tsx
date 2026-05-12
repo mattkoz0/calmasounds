@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Braunes vs. Weißes vs. Pinkes Rauschen | Calma Blog",
+  title: "Braunes vs Weißes vs Rosa Rauschen | Calma",
   description:
-    "Erfahre die Unterschiede zwischen weißem, pinkem und braunem Rauschen. Finde heraus, welches am besten für deinen Schlaf und Fokus ist.",
+    "Entdecken Sie die Unterschiede zwischen braunem, weißem und rosa Rauschen. Finden Sie den besten Klang zum Schlafen.",
   keywords: [
     "braunes Rauschen vs weißes Rauschen",
     "pinkes Rauschen vs weißes Rauschen",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
   },
   openGraph: {
-    title: "Braunes vs. Weißes vs. Pinkes Rauschen | Calma Blog",
+    title: "Braunes vs Weißes vs Rosa Rauschen | Calma",
     description:
-      "Erfahre die Unterschiede zwischen weißem, pinkem und braunem Rauschen. Finde heraus, welches am besten für deinen Schlaf und Fokus ist.",
+    "Entdecken Sie die Unterschiede zwischen braunem, weißem und rosa Rauschen. Finden Sie den besten Klang zum Schlafen.",
     url: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
     siteName: "Calma",
     locale: "de_DE",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Braunes vs. Weißes vs. Pinkes Rauschen | Calma Blog",
+    title: "Braunes vs Weißes vs Rosa Rauschen | Calma",
     description:
-      "Erfahre die Unterschiede zwischen weißem, pinkem und braunem Rauschen. Finde heraus, welches am besten für deinen Schlaf und Fokus ist.",
+    "Entdecken Sie die Unterschiede zwischen braunem, weißem und rosa Rauschen. Finden Sie den besten Klang zum Schlafen.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Braunes vs. Weißes vs. Pinkes vs. Grünes Rauschen",
   description:
-    "Ein umfassender Guide zu den Farben des Rauschens und ihren Vorteilen für Schlaf, Fokus und Entspannung.",
+    "Entdecken Sie die Unterschiede zwischen braunem, weißem und rosa Rauschen. Finden Sie den besten Klang zum Schlafen.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -68,25 +68,25 @@ export default function NoiseColorsPage() {
       secondaryCtaHref="/sound-mixer-app"
       secondaryCtaLabel="Sound Mixer App entdecken"
       tableOfContents={[
-        { id: "video", title: "Video: Farben erklärt" },
-        { id: "white-noise", title: "Weißes Rauschen" },
-        { id: "pink-noise", title: "Pinkes Rauschen" },
-        { id: "brown-noise", title: "Braunes Rauschen" },
-        { id: "green-noise", title: "Grünes Rauschen" },
-        { id: "summary", title: "Was solltest du wählen?" },
+        { id: "video", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
+        { id: "white-noise", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
+        { id: "pink-noise", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
+        { id: "brown-noise", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
+        { id: "green-noise", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
+        { id: "summary", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
       ]}
       relatedArticles={[
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Weißes Rauschen zum Schlafen",
+          title: "Braunes vs Weißes vs Rosa Rauschen | Calma",
           description:
-            "Erfahre, wie es dir hilft, schneller einzuschlafen und länger durchzuschlafen.",
+    "Entdecken Sie die Unterschiede zwischen braunem, weißem und rosa Rauschen. Finden Sie den besten Klang zum Schlafen.",
         },
         {
           href: "/blog/best-sounds-for-studying",
-          title: "Beste Sounds zum Lernen",
+          title: "Braunes vs Weißes vs Rosa Rauschen | Calma",
           description:
-            "Entdecke, welche Hintergründe am effektivsten für die Konzentration sind.",
+    "Entdecken Sie die Unterschiede zwischen braunem, weißem und rosa Rauschen. Finden Sie den besten Klang zum Schlafen.",
         },
       ]}
     >

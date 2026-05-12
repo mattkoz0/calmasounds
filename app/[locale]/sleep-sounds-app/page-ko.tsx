@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "수면 유도 소리 앱 | Calma",
+  title: "더 나은 수면을 위한 수면 소리 앱 | Calma",
   description:
-    "숙면을 위한 최고의 소리 앱 Calma를 만나보세요. 빗소리, 백색소음, 자연의 소리를 믹스하여 나만의 완벽한 취침 루틴을 만드세요.",
+    "최고의 수면 소리와 자연의 소리를 발견하세요. Calma와 함께 맞춤형 수면 믹스를 만들어 더 빨리 잠들고 개운하게 일어나세요.",
   keywords: [
     "수면 유도 소리 앱",
     "숙면 소리",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/sleep-sounds-app",
   },
   openGraph: {
-    title: "수면 유도 소리 앱 | Calma",
+    title: "더 나은 수면을 위한 수면 소리 앱 | Calma",
     description:
-      "더 나은 밤과 평온한 취침 루틴을 위해 설계된 심플하고 우아한 수면 유도 소리 앱입니다.",
+    "최고의 수면 소리와 자연의 소리를 발견하세요. Calma와 함께 맞춤형 수면 믹스를 만들어 더 빨리 잠들고 개운하게 일어나세요.",
     url: "https://www.calmasounds.com/ko/sleep-sounds-app",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "수면 유도 소리 앱 | Calma",
+    title: "더 나은 수면을 위한 수면 소리 앱 | Calma",
     description:
-      "더 나은 밤과 평온한 취침 루틴을 위해 설계된 심플하고 우아한 수면 유도 소리 앱입니다.",
+    "최고의 수면 소리와 자연의 소리를 발견하세요. Calma와 함께 맞춤형 수면 믹스를 만들어 더 빨리 잠들고 개운하게 일어나세요.",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sleep Sounds App | Calma",
+  title: "Sleep Sounds App for Better Sleep | Calma",
   description:
-    "Discover Calma, a beautifully simple sleep sounds app for better bedtime routines, calming evenings and personalized relaxing soundscapes.",
+    "Discover the best sleep sounds and nature audio. Build a personalized bedtime mix with Calma to sleep faster and wake up refreshed.",
   keywords: [
     "sleep sounds app",
     "sleep app",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/sleep-sounds-app",
   },
   openGraph: {
-    title: "Sleep Sounds App | Calma",
+    title: "Sleep Sounds App for Better Sleep | Calma",
     description:
-      "Discover a beautifully simple sleep sounds app for calmer nights and better bedtime routines.",
+    "Discover the best sleep sounds and nature audio. Build a personalized bedtime mix with Calma to sleep faster and wake up refreshed.",
     url: "https://www.calmasounds.com/sleep-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sleep Sounds App | Calma",
+    title: "Sleep Sounds App for Better Sleep | Calma",
     description:
-      "Discover a beautifully simple sleep sounds app for calmer nights and better bedtime routines.",
+    "Discover the best sleep sounds and nature audio. Build a personalized bedtime mix with Calma to sleep faster and wake up refreshed.",
   },
 };
 

@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Application de sons pour acouphènes | Calma",
+  title: "Sons pour les Acouphènes et le Sommeil | Calma",
   description:
-    "Découvrez Calma, une application de sons pour acouphènes simple et élégante pour le sommeil, la relaxation et la création d'un environnement sonore apaisant.",
+    "Découvrez une application simple de sons pour soulager les acouphènes. Utilisez Calma pour créer un environnement audio apaisant.",
   keywords: [
     "application sons pour acouphènes",
     "sons pour acouphènes pour dormir",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Application de sons pour acouphènes | Calma",
+    title: "Sons pour les Acouphènes et le Sommeil | Calma",
     description:
-      "Découvrez une application de sons pour acouphènes simple et élégante pour le sommeil, la relaxation et des rituels quotidiens plus calmes.",
+    "Découvrez une application simple de sons pour soulager les acouphènes. Utilisez Calma pour créer un environnement audio apaisant.",
     url: "https://www.calmasounds.com/fr/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Application de sons pour acouphènes | Calma",
+    title: "Sons pour les Acouphènes et le Sommeil | Calma",
     description:
-      "Découvrez une application de sons pour acouphènes simple et élégante pour le sommeil, la relaxation et des rituels quotidiens plus calmes.",
+    "Découvrez une application simple de sons pour soulager les acouphènes. Utilisez Calma pour créer un environnement audio apaisant.",
   },
 };
 

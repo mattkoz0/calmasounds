@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Os Benefícios dos Sons da Natureza para Relaxamento Profundo | Blog do Calma",
+  title: "Benefícios dos Sons da Natureza | Calma",
   description:
-    "Explore como sons da natureza, como chuva, ondas do mar e ambiente florestal, podem atuar como um ruído branco natural para melhorar o seu relaxamento profundo e a rotina de dormir.",
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
   keywords: [
     "sons da natureza",
     "sons relaxantes para dormir",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/blog/benefits-of-nature-sounds-for-relaxation",
   },
   openGraph: {
-    title: "Os Benefícios dos Sons da Natureza para Relaxamento Profundo | Blog do Calma",
+    title: "Benefícios dos Sons da Natureza | Calma",
     description:
-      "Explore como sons da natureza, como chuva, ondas do mar e ambiente florestal, podem atuar como um ruído branco natural para melhorar o seu relaxamento profundo e a rotina de dormir.",
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
     url: "https://www.calmasounds.com/pt-BR/blog/benefits-of-nature-sounds-for-relaxation",
     siteName: "Calma",
     locale: "pt_BR",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Os Benefícios dos Sons da Natureza para Relaxamento Profundo | Blog do Calma",
+    title: "Benefícios dos Sons da Natureza | Calma",
     description:
-      "Explore como sons da natureza, como chuva, ondas do mar e ambiente florestal, podem atuar como um ruído branco natural para melhorar o seu relaxamento profundo e a rotina de dormir.",
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Os Benefícios dos Sons da Natureza para Relaxamento Profundo",
   description:
-    "Explore como sons da natureza, como chuva, ondas do mar e ambiente florestal, podem atuar como um ruído branco natural para melhorar o seu relaxamento profundo e a rotina de dormir.",
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -72,18 +72,21 @@ export default function BenefitsOfNatureSoundsPage() {
       relatedArticles={[
         {
           href: "/pt-BR/blog/rain-sounds-vs-white-noise",
-          title: "Sons de Chuva vs Ruído Branco",
-          description: "Compare conforto emocional, mascaramento e atmosfera de dormir.",
+          title: "Benefícios dos Sons da Natureza | Calma",
+          description:
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
         },
         {
           href: "/pt-BR/blog/how-to-build-a-bedtime-routine",
-          title: "Construindo uma Rotina de Dormir",
-          description: "Maneiras simples de criar um ritmo noturno mais calmo que suporte o sono.",
+          title: "Benefícios dos Sons da Natureza | Calma",
+          description:
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
         },
         {
           href: "/pt-BR/blog/white-noise-for-sleep",
-          title: "Ruído Branco para Dormir",
-          description: "Quando o ruído branco pode ajudar e como construir um ambiente de dormir mais calmo.",
+          title: "Benefícios dos Sons da Natureza | Calma",
+          description:
+    "Descubra como os sons da natureza podem apoiar sua rotina diária, reduzir o estresse e melhorar o relaxamento.",
         },
       ]}
     >

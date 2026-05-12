@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "サウンドミキサーアプリ | Calma",
+  title: "睡眠と集中のためのサウンドミキサーアプリ | Calma",
   description:
-    "睡眠、リラクゼーション、集中、パーソナライズされたオーディオルティーンのための、美しくシンプルなサウンドミキサーアプリであるCalmaを発見してください。",
+    "雨やホワイトノイズで落ち着いたオーディオミックスを作成します。Calmaサウンドミキサーでリラックスし、集中しましょう。",
   keywords: [
     "サウンドミキサーアプリ",
     "睡眠音ミキサー",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/sound-mixer-app",
   },
   openGraph: {
-    title: "サウンドミキサーアプリ | Calma",
+    title: "睡眠と集中のためのサウンドミキサーアプリ | Calma",
     description:
-      "睡眠、リラクゼーション、集中、パーソナライズされたサウンドスケープのための、美しくシンプルなサウンドミキサーアプリを発見してください。",
+    "雨やホワイトノイズで落ち着いたオーディオミックスを作成します。Calmaサウンドミキサーでリラックスし、集中しましょう。",
     url: "https://www.calmasounds.com/ja/sound-mixer-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "サウンドミキサーアプリ | Calma",
+    title: "睡眠と集中のためのサウンドミキサーアプリ | Calma",
     description:
-      "睡眠、リラクゼーション、集中、パーソナライズされたサウンドスケープのための、美しくシンプルなサウンドミキサーアプリを発見してください。",
+    "雨やホワイトノイズで落ち着いたオーディオミックスを作成します。Calmaサウンドミキサーでリラックスし、集中しましょう。",
   },
 };
 

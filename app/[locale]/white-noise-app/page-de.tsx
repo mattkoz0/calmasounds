@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Weißes Rauschen App | Calma",
+  title: "Weißes Rauschen App für den Schlaf | Calma",
   description:
-    "Entdecke Calma – eine schlichte Weißes Rauschen App für Schlaf, Entspannung und ein ruhigeres Klangerlebnis.",
+    "Erstellen Sie beruhigende Schlafmischungen mit weißem und braunem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
   keywords: [
     "Weißes Rauschen App",
     "White Noise App",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/white-noise-app",
   },
   openGraph: {
-    title: "Weißes Rauschen App | Calma",
+    title: "Weißes Rauschen App für den Schlaf | Calma",
     description:
-      "Entdecke eine schlichte Weißes Rauschen App für Schlaf, Entspannung und ruhigere tägliche Routinen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit weißem und braunem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
     url: "https://www.calmasounds.com/de/white-noise-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Weißes Rauschen App | Calma",
+    title: "Weißes Rauschen App für den Schlaf | Calma",
     description:
-      "Entdecke eine schlichte Weißes Rauschen App für Schlaf, Entspannung und ruhigere tägliche Routinen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit weißem und braunem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
   },
 };
 

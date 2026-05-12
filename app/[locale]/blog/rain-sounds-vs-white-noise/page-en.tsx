@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 
 export const metadata: Metadata = {
-  title: "Rain Sounds vs White Noise for Sleep | Calma Blog",
+  title: "Rain Sounds vs White Noise for Sleep | Calma",
   description:
-    "Discover the difference between rain sounds and white noise for sleep, relaxation and better bedtime routines.",
+    "Compare rain sounds and white noise to find out what works better for sleep, relaxation and creating a calm environment.",
   keywords: [
     "rain sounds vs white noise",
     "rain sounds for sleep",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "Rain Sounds vs White Noise for Sleep | Calma Blog",
+    title: "Rain Sounds vs White Noise for Sleep | Calma",
     description:
-      "Discover the difference between rain sounds and white noise for sleep, relaxation and better bedtime routines.",
+    "Compare rain sounds and white noise to find out what works better for sleep, relaxation and creating a calm environment.",
     url: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rain Sounds vs White Noise for Sleep | Calma Blog",
+    title: "Rain Sounds vs White Noise for Sleep | Calma",
     description:
-      "Discover the difference between rain sounds and white noise for sleep, relaxation and better bedtime routines.",
+    "Compare rain sounds and white noise to find out what works better for sleep, relaxation and creating a calm environment.",
   },
 };
 
@@ -38,7 +38,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Rain Sounds vs White Noise for Sleep",
   description:
-    "Discover the difference between rain sounds and white noise for sleep, relaxation and better bedtime routines.",
+    "Compare rain sounds and white noise to find out what works better for sleep, relaxation and creating a calm environment.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -71,15 +71,15 @@ export default function RainSoundsVsWhiteNoisePage() {
       relatedArticles={[
         {
           href: "/blog/white-noise-for-sleep",
-          title: "White Noise for Sleep",
+          title: "Rain Sounds vs White Noise for Sleep | Calma",
           description:
-            "Learn when white noise may help create a calmer and more stable bedtime environment.",
+    "Compare rain sounds and white noise to find out what works better for sleep, relaxation and creating a calm environment.",
         },
         {
           href: "/blog/best-sounds-for-sleep",
-          title: "Best Sounds for Sleep",
+          title: "Rain Sounds vs White Noise for Sleep | Calma",
           description:
-            "Explore which sleep sound styles may work best for different people.",
+    "Compare rain sounds and white noise to find out what works better for sleep, relaxation and creating a calm environment.",
         },
       ]}
     >

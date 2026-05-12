@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja z białym szumem | Calma",
+  title: "Dźwięki Natury do Relaksu i Snu | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację z białym szumem do snu, relaksu i budowania spokojniejszego środowiska dźwiękowego.",
+    "Stwórz uspokajające miksy z dźwiękami natury, deszczu i lasu. Użyj aplikacji Calma, aby się odprężyć i poprawić jakość snu.",
   keywords: [
     "aplikacja z białym szumem",
     "dźwięki natury do snu",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/nature-sounds-app",
   },
   openGraph: {
-    title: "Aplikacja z białym szumem | Calma",
+    title: "Dźwięki Natury do Relaksu i Snu | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z białym szumem dla snu, relaksu i spokojniejszej codzienności.",
+    "Stwórz uspokajające miksy z dźwiękami natury, deszczu i lasu. Użyj aplikacji Calma, aby się odprężyć i poprawić jakość snu.",
     url: "https://www.calmasounds.com/pl/nature-sounds-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja z białym szumem | Calma",
+    title: "Dźwięki Natury do Relaksu i Snu | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z białym szumem dla snu, relaksu i spokojniejszej codzienności.",
+    "Stwórz uspokajające miksy z dźwiękami natury, deszczu i lasu. Użyj aplikacji Calma, aby się odprężyć i poprawić jakość snu.",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja z białym szumem | Calma",
+  title: "Aplikacja z Brązowym Szumem | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację z białym szumem do snu, relaksu i budowania spokojniejszego środowiska dźwiękowego.",
+    "Stwórz spokojne miksy do snu z brązowym i białym szumem. Użyj aplikacji Calma, aby się zrelaksować, skupić uwagę i zasnąć.",
   keywords: [
     "aplikacja z białym szumem",
     "brązowy szum do snu",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/brown-noise-app",
   },
   openGraph: {
-    title: "Aplikacja z białym szumem | Calma",
+    title: "Aplikacja z Brązowym Szumem | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z białym szumem dla snu, relaksu i spokojniejszej codzienności.",
+    "Stwórz spokojne miksy do snu z brązowym i białym szumem. Użyj aplikacji Calma, aby się zrelaksować, skupić uwagę i zasnąć.",
     url: "https://www.calmasounds.com/pl/brown-noise-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja z białym szumem | Calma",
+    title: "Aplikacja z Brązowym Szumem | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z białym szumem dla snu, relaksu i spokojniejszej codzienności.",
+    "Stwórz spokojne miksy do snu z brązowym i białym szumem. Użyj aplikacji Calma, aby się zrelaksować, skupić uwagę i zasnąć.",
   },
 };
 

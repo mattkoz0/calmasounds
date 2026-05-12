@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 
 export const metadata: Metadata = {
-  title: "Técnicas de Respiración Guiadas para la Calma, el Sueño y la Concentración | Blog de Calma",
+  title: "Técnicas de Respiración para Relajarse | Calma",
   description:
-    "Descubre técnicas de respiración guiadas para la relajación, el sueño y la concentración, incluyendo 4-7-8, respiración de caja, respiración de resonancia y más.",
+    "Aprende técnicas simples de respiración guiada como 4-7-8 para calmar tu mente, reducir la ansiedad y prepararte.",
   keywords: [
     "técnicas de respiración guiada",
     "ejercicios de respiración para dormir",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/guided-breathing-techniques",
   },
   openGraph: {
-    title: "Técnicas de Respiración Guiadas para la Calma, el Sueño y la Concentración | Blog de Calma",
+    title: "Técnicas de Respiración para Relajarse | Calma",
     description:
-      "Descubre técnicas de respiración guiadas para la relajación, el sueño y la concentración, incluyendo 4-7-8, respiración de caja, respiración de resonancia y más.",
+    "Aprende técnicas simples de respiración guiada como 4-7-8 para calmar tu mente, reducir la ansiedad y prepararte.",
     url: "https://www.calmasounds.com/blog/guided-breathing-techniques",
     siteName: "Calma",
     locale: "es_ES",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Técnicas de Respiración Guiadas para la Calma, el Sueño y la Concentración | Blog de Calma",
+    title: "Técnicas de Respiración para Relajarse | Calma",
     description:
-      "Descubre técnicas de respiración guiadas para la relajación, el sueño y la concentración, incluyendo 4-7-8, respiración de caja, respiración de resonancia y más.",
+    "Aprende técnicas simples de respiración guiada como 4-7-8 para calmar tu mente, reducir la ansiedad y prepararte.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Técnicas de Respiración Guiadas para la Calma, el Sueño y la Concentración",
   description:
-    "Descubre técnicas de respiración guiadas para la relajación, el sueño y la concentración, incluyendo 4-7-8, respiración de caja, respiración de resonancia y más.",
+    "Aprende técnicas simples de respiración guiada como 4-7-8 para calmar tu mente, reducir la ansiedad y prepararte.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -73,15 +73,15 @@ export default function GuidedBreathingTechniquesPage() {
       relatedArticles={[
         {
           href: "/blog/how-to-build-a-bedtime-routine",
-          title: "Generando Rituales a tu Hora de Dormir",
+          title: "Técnicas de Respiración para Relajarse | Calma",
           description:
-            "Formatos por simples forma como conformarse del entorno mejor vespertino más calmo en favor hacia su correcto sueño.",
+    "Aprende técnicas simples de respiración guiada como 4-7-8 para calmar tu mente, reducir la ansiedad y prepararte.",
         },
         {
           href: "/blog/binaural-beats-for-sleep-and-focus",
-          title: "Las Frecuencia por Onda Binaural Para tu Conciliación del Un buen Foco",
+          title: "Técnicas de Respiración para Relajarse | Calma",
           description:
-            "Sencilla incursión por un camino introductorio hacia prácticas como apoyo tanto de los niveles concentración y calmante de estos medios en el tema audio.",
+    "Aprende técnicas simples de respiración guiada como 4-7-8 para calmar tu mente, reducir la ansiedad y prepararte.",
         },
       ]}
     >

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "睡眠音アプリ | Calma",
+  title: "より良い睡眠のための睡眠音アプリ | Calma",
   description:
-    "より良い就寝時のルーティン、穏やかな夜、パーソナライズされたリラックスできるサウンドスケープのための、美しくシンプルな睡眠音アプリであるCalmaを発見してください。",
+    "最高の睡眠音と自然の音を発見してください。Calmaでカスタマイズされた睡眠ミックスを作成し、早く眠りにつきましょう。",
   keywords: [
     "睡眠音アプリ",
     "睡眠アプリ",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/sleep-sounds-app",
   },
   openGraph: {
-    title: "睡眠音アプリ | Calma",
+    title: "より良い睡眠のための睡眠音アプリ | Calma",
     description:
-      "より穏やかな夜とより良い就寝時のルーティンのための、美しくシンプルな睡眠音アプリを発見してください。",
+    "最高の睡眠音と自然の音を発見してください。Calmaでカスタマイズされた睡眠ミックスを作成し、早く眠りにつきましょう。",
     url: "https://www.calmasounds.com/ja/sleep-sounds-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "睡眠音アプリ | Calma",
+    title: "より良い睡眠のための睡眠音アプリ | Calma",
     description:
-      "より穏やかな夜とより良い就寝時のルーティンのための、美しくシンプルな睡眠音アプリを発見してください。",
+    "最高の睡眠音と自然の音を発見してください。Calmaでカスタマイズされた睡眠ミックスを作成し、早く眠りにつきましょう。",
   },
 };
 

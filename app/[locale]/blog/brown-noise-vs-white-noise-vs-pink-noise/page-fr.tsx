@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Bruit brun vs Bruit blanc vs Bruit rose | Blog Calma",
+  title: "Bruit Brun vs Blanc vs Rose | Calma",
   description:
-    "Explorez les différences entre les bruits blanc, rose et brun. Découvrez lequel est le meilleur pour votre sommeil, votre concentration ou la gestion du TDAH.",
+    "Découvrez les différences entre le bruit brun, blanc et rose. Trouvez le meilleur son pour dormir ou vous détendre.",
   keywords: [
     "bruit brun vs bruit blanc",
     "bruit rose vs bruit blanc",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/blog/brown-noise-vs-white-noise-vs-pink-noise",
   },
   openGraph: {
-    title: "Bruit brun vs Bruit blanc vs Bruit rose | Blog Calma",
+    title: "Bruit Brun vs Blanc vs Rose | Calma",
     description:
-      "Explorez les différences entre les bruits blanc, rose et brun. Découvrez lequel est le meilleur pour votre sommeil, votre concentration ou la gestion du TDAH.",
+    "Découvrez les différences entre le bruit brun, blanc et rose. Trouvez le meilleur son pour dormir ou vous détendre.",
     url: "https://www.calmasounds.com/fr/blog/brown-noise-vs-white-noise-vs-pink-noise",
     siteName: "Calma",
     locale: "fr_FR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bruit brun vs Bruit blanc vs Bruit rose | Blog Calma",
+    title: "Bruit Brun vs Blanc vs Rose | Calma",
     description:
-      "Explorez les différences entre les bruits blanc, rose et brun. Découvrez lequel est le meilleur pour votre sommeil, votre concentration ou la gestion du TDAH.",
+    "Découvrez les différences entre le bruit brun, blanc et rose. Trouvez le meilleur son pour dormir ou vous détendre.",
   },
 };
 
@@ -39,7 +39,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Bruit brun vs Bruit blanc vs Bruit rose vs Bruit vert",
   description:
-    "Un guide complet pour comprendre les couleurs du bruit, y compris le bruit vert, et leurs avantages uniques pour le sommeil et la concentration.",
+    "Découvrez les différences entre le bruit brun, blanc et rose. Trouvez le meilleur son pour dormir ou vous détendre.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -67,25 +67,25 @@ export default function NoiseColorsPage() {
       secondaryCtaHref="/sound-mixer-app"
       secondaryCtaLabel="Explorer le mixer sonore"
       tableOfContents={[
-        { id: "video", title: "Vidéo : Les couleurs expliquées" },
-        { id: "white-noise", title: "Bruit blanc" },
-        { id: "pink-noise", title: "Bruit rose" },
-        { id: "brown-noise", title: "Bruit brun" },
-        { id: "green-noise", title: "Bruit vert" },
-        { id: "summary", title: "Lequel choisir ?" },
+        { id: "video", title: "Bruit Brun vs Blanc vs Rose | Calma" },
+        { id: "white-noise", title: "Bruit Brun vs Blanc vs Rose | Calma" },
+        { id: "pink-noise", title: "Bruit Brun vs Blanc vs Rose | Calma" },
+        { id: "brown-noise", title: "Bruit Brun vs Blanc vs Rose | Calma" },
+        { id: "green-noise", title: "Bruit Brun vs Blanc vs Rose | Calma" },
+        { id: "summary", title: "Bruit Brun vs Blanc vs Rose | Calma" },
       ]}
       relatedArticles={[
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Bruit blanc pour le sommeil",
+          title: "Bruit Brun vs Blanc vs Rose | Calma",
           description:
-            "Découvrez comment le bruit blanc peut vous aider à vous endormir plus rapidement.",
+    "Découvrez les différences entre le bruit brun, blanc et rose. Trouvez le meilleur son pour dormir ou vous détendre.",
         },
         {
           href: "/blog/best-sounds-for-studying",
-          title: "Les meilleurs sons pour étudier",
+          title: "Bruit Brun vs Blanc vs Rose | Calma",
           description:
-            "Découvrez quels sons de fond sont les plus efficaces pour la concentration.",
+    "Découvrez les différences entre le bruit brun, blanc et rose. Trouvez le meilleur son pour dormir ou vous détendre.",
         },
       ]}
     >

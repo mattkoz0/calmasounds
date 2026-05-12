@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Fokus-App | Calma",
+  title: "Fokus Geräusche App für Tiefe Arbeit | Calma",
   description:
-    "Entdecke Calma – eine schlichte Fokus-App für konzentriertes Arbeiten, Lernen und personalisierte Klangwelten.",
+    "Erstellen Sie immersive Klanglandschaften mit Regen und braunem Rauschen. Calma hilft Ihnen, einen ruhigen Raum für tiefe Arbeit zu schaffen.",
   keywords: [
     "Fokus-App",
     "Konzentrations-App",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/focus-sounds-app",
   },
   openGraph: {
-    title: "Fokus-App | Calma",
+    title: "Fokus Geräusche App für Tiefe Arbeit | Calma",
     description:
-      "Entdecke eine schlichte Fokus-App für konzentriertes Arbeiten, Lernen und maximale Konzentration.",
+    "Erstellen Sie immersive Klanglandschaften mit Regen und braunem Rauschen. Calma hilft Ihnen, einen ruhigen Raum für tiefe Arbeit zu schaffen.",
     url: "https://www.calmasounds.com/de/focus-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fokus-App | Calma",
+    title: "Fokus Geräusche App für Tiefe Arbeit | Calma",
     description:
-      "Entdecke eine schlichte Fokus-App für konzentriertes Arbeiten, Lernen und maximale Konzentration.",
+    "Erstellen Sie immersive Klanglandschaften mit Regen und braunem Rauschen. Calma hilft Ihnen, einen ruhigen Raum für tiefe Arbeit zu schaffen.",
   },
 };
 

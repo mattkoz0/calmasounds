@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "集中音アプリ | Calma",
+  title: "深い作業のための集中音アプリ | Calma",
   description:
-    "深い作業、勉強、パーソナライズされた集中のサウンドスケープのための、美しくシンプルな集中音アプリであるCalmaを発見してください。",
+    "雨やブラウンノイズで没入感のある集中音環境を構築します。Calmaは、深い作業のための静かな空間を作るのに役立ちます。",
   keywords: [
     "集中音アプリ",
     "集中アプリ",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/focus-sounds-app",
   },
   openGraph: {
-    title: "集中音アプリ | Calma",
+    title: "深い作業のための集中音アプリ | Calma",
     description:
-      "深い作業、勉強、集中のための、美しくシンプルな集中音アプリを発見してください。",
+    "雨やブラウンノイズで没入感のある集中音環境を構築します。Calmaは、深い作業のための静かな空間を作るのに役立ちます。",
     url: "https://www.calmasounds.com/ja/focus-sounds-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "集中音アプリ | Calma",
+    title: "深い作業のための集中音アプリ | Calma",
     description:
-      "深い作業、勉強、集中のための、美しくシンプルな集中音アプリを発見してください。",
+    "雨やブラウンノイズで没入感のある集中音環境を構築します。Calmaは、深い作業のための静かな空間を作るのに役立ちます。",
   },
 };
 

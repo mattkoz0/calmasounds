@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Vorteile von Naturklängen für tiefe Entspannung | Calma Blog",
+  title: "Vorteile von Naturklängen zur Entspannung | Calma",
   description:
-    "Erfahre, wie Naturklänge wie Regen, Meereswellen und Wald-Ambiente deine Entspannung und Abendroutine fördern können.",
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
   keywords: [
     "Naturklänge",
     "entspannende Sounds zum Schlafen",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/blog/benefits-of-nature-sounds-for-relaxation",
   },
   openGraph: {
-    title: "Vorteile von Naturklängen für tiefe Entspannung | Calma Blog",
+    title: "Vorteile von Naturklängen zur Entspannung | Calma",
     description:
-      "Erfahre, wie Naturklänge wie Regen, Meereswellen und Wald-Ambiente deine Entspannung und Abendroutine fördern können.",
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
     url: "https://www.calmasounds.com/de/blog/benefits-of-nature-sounds-for-relaxation",
     siteName: "Calma",
     locale: "de_DE",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vorteile von Naturklängen für tiefe Entspannung | Calma Blog",
+    title: "Vorteile von Naturklängen zur Entspannung | Calma",
     description:
-      "Erfahre, wie Naturklänge wie Regen, Meereswellen und Wald-Ambiente deine Entspannung und Abendroutine fördern können.",
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Vorteile von Naturklängen für tiefe Entspannung",
   description:
-    "Erfahre, wie Naturklänge wie Regen, Meereswellen und Wald-Ambiente deine Entspannung und Abendroutine fördern können.",
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -72,18 +72,21 @@ export default function BenefitsOfNatureSoundsPage() {
       relatedArticles={[
         {
           href: "/blog/rain-sounds-vs-white-noise",
-          title: "Regenklänge vs. Weißes Rauschen",
-          description: "Vergleiche emotionalen Komfort und die Atmosphäre vor der Nacht.",
+          title: "Vorteile von Naturklängen zur Entspannung | Calma",
+          description:
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
         },
         {
           href: "/blog/how-to-build-a-bedtime-routine",
-          title: "Abendroutine aufbauen",
-          description: "Einfache Wege zu einem ruhigeren Rhythmus zum Einschlafen.",
+          title: "Vorteile von Naturklängen zur Entspannung | Calma",
+          description:
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
         },
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Weißes Rauschen zum Schlafen",
-          description: "Wann es hilft und wie du eine ruhigere Umgebung für die Nacht schaffst.",
+          title: "Vorteile von Naturklängen zur Entspannung | Calma",
+          description:
+    "Entdecken Sie, wie Naturklänge Ihre tägliche Routine unterstützen, Stress abbauen und die Entspannung verbessern.",
         },
       ]}
     >

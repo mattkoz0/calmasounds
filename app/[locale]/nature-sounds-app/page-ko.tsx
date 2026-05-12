@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "백색소음 앱 | Calma",
+  title: "휴식을 위한 자연의 소리 앱 | Calma",
   description:
-    "수면, 집중, 그리고 휴식을 위한 가장 완벽한 백색소음 앱 Calma. 핑크 노이즈부터 브라운 노이즈까지, 나만의 최적화된 소리 환경을 만드세요.",
+    "자연의 소리, 비, 숲 소리로 차분한 수면 믹스를 만드세요. Calma를 사용하여 긴장을 풀고 수면 루틴을 만드세요.",
   keywords: [
     "백색소음 앱",
     "집중 백색소음",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/nature-sounds-app",
   },
   openGraph: {
-    title: "백색소음 앱 | Calma",
+    title: "휴식을 위한 자연의 소리 앱 | Calma",
     description:
-      "더 깊은 잠과 완벽한 몰입을 위해 설계된 심플하고 우아한 백색소음 앱입니다.",
+    "자연의 소리, 비, 숲 소리로 차분한 수면 믹스를 만드세요. Calma를 사용하여 긴장을 풀고 수면 루틴을 만드세요.",
     url: "https://www.calmasounds.com/ko/nature-sounds-app",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "백색소음 앱 | Calma",
+    title: "휴식을 위한 자연의 소리 앱 | Calma",
     description:
-      "더 깊은 잠과 완벽한 몰입을 위해 설계된 심플하고 우아한 백색소음 앱입니다.",
+    "자연의 소리, 비, 숲 소리로 차분한 수면 믹스를 만드세요. Calma를 사용하여 긴장을 풀고 수면 루틴을 만드세요.",
   },
 };
 

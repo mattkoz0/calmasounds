@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "집중력 향상 앱 | Calma",
+  title: "깊은 작업을 위한 집중 소리 앱 | Calma",
   description:
-    "공부하고 업무에 몰입하기 위한 최고의 소리 환경을 제공하는 Calma. 집중력을 높여주는 맞춤형 백색소음과 사운드스케이프를 경험하세요.",
+    "비와 갈색 소음으로 몰입형 집중 소리 환경을 구축하세요. Calma는 깊은 작업을 위한 조용한 공간을 만들 수 있도록 도와줍니다.",
   keywords: [
     "집중력 향상 앱",
     "공부 백색소음",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/focus-sounds-app",
   },
   openGraph: {
-    title: "집중력 향상 앱 | Calma",
+    title: "깊은 작업을 위한 집중 소리 앱 | Calma",
     description:
-      "더 깊은 업무 몰입과 효율적인 공부 환경을 위해 설계된 심플하고 우아한 집중력 향상 앱입니다.",
+    "비와 갈색 소음으로 몰입형 집중 소리 환경을 구축하세요. Calma는 깊은 작업을 위한 조용한 공간을 만들 수 있도록 도와줍니다.",
     url: "https://www.calmasounds.com/ko/focus-sounds-app",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "집중력 향상 앱 | Calma",
+    title: "깊은 작업을 위한 집중 소리 앱 | Calma",
     description:
-      "더 깊은 업무 몰입과 효율적인 공부 환경을 위해 설계된 심플하고 우아한 집중력 향상 앱입니다.",
+    "비와 갈색 소음으로 몰입형 집중 소리 환경을 구축하세요. Calma는 깊은 작업을 위한 조용한 공간을 만들 수 있도록 도와줍니다.",
   },
 };
 

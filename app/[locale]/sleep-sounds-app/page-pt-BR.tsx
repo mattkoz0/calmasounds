@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sons para Dormir | Calma",
+  title: "App de Sons para Dormir Melhor | Calma",
   description:
-    "Descubra o Calma, um aplicativo de sons para dormir lindamente simples para melhores rotinas de sono, noites mais calmas e paisagens sonoras relaxantes personalizadas.",
+    "Descubra os melhores sons para dormir. Crie uma mistura relaxante com Calma para dormir mais rápido e acordar com energia.",
   keywords: [
     "aplicativo de sons para dormir",
     "aplicativo de sono",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/sleep-sounds-app",
   },
   openGraph: {
-    title: "App de Sons para Dormir | Calma",
+    title: "App de Sons para Dormir Melhor | Calma",
     description:
-      "Descubra um aplicativo de sons para dormir lindamente simples para noites mais calmas e melhores rotinas na hora de dormir.",
+    "Descubra os melhores sons para dormir. Crie uma mistura relaxante com Calma para dormir mais rápido e acordar com energia.",
     url: "https://www.calmasounds.com/pt-BR/sleep-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sons para Dormir | Calma",
+    title: "App de Sons para Dormir Melhor | Calma",
     description:
-      "Descubra um aplicativo de sons para dormir lindamente simples para noites mais calmas e melhores rotinas na hora de dormir.",
+    "Descubra os melhores sons para dormir. Crie uma mistura relaxante com Calma para dormir mais rápido e acordar com energia.",
   },
 };
 

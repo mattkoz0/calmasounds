@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco | Calma",
+  title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
   description:
-    "Si tienes TDAH y luchas con la concentración o la sobreestimulación, podrías preguntarte qué color de ruido es mejor. Explora por qué el ruido marrón suele preferirse.",
+    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
   keywords: [
     "qué color de ruido es mejor para el tdah",
     "ruido marron vs ruido blanco tdah",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
   },
   openGraph: {
-    title: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
+    title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
     description:
-      "Si tienes TDAH y luchas con la concentración o la sobreestimulación, podrías preguntarte qué color de ruido es mejor. Explora por qué el ruido marrón suele preferirse.",
+    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
     url: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
     siteName: "Calma",
     locale: "es_ES",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
+    title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
     description:
-      "Si tienes TDAH y luchas con la concentración o la sobreestimulación, podrías preguntarte qué color de ruido es mejor. Explora por qué el ruido marrón suele preferirse.",
+    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
   },
 };
 
@@ -39,7 +39,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
   description:
-    "Si tienes TDAH y luchas con la concentración o la sobreestimulación, podrías preguntarte qué color de ruido es mejor. Explora por qué el ruido marrón suele preferirse.",
+    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -67,24 +67,24 @@ export default function BestColorNoiseForADHDPage() {
       secondaryCtaHref="/es/sound-mixer-app"
       secondaryCtaLabel="Mezcla tu propio audio"
       tableOfContents={[
-        { id: "adhd-and-sound", title: "¿Por qué el cerebro con TDAH necesita sonido?" },
-        { id: "white-noise", title: "Ruido blanco y TDAH" },
-        { id: "brown-noise", title: "Ruido marrón: El favorito para el TDAH" },
-        { id: "pink-noise", title: "Ruido rosa: El punto medio" },
-        { id: "summary", title: "Conclusión: ¿Qué color es mejor?" },
+        { id: "adhd-and-sound", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
+        { id: "white-noise", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
+        { id: "brown-noise", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
+        { id: "pink-noise", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
+        { id: "summary", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
       ]}
       relatedArticles={[
         {
           href: "/es/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "Ruido marrón vs blanco vs rosa",
+          title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
           description:
-            "Una guía completa para comprender los colores del ruido y sus beneficios.",
+    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
         },
         {
           href: "/es/blog/best-sounds-for-studying",
-          title: "Los mejores sonidos para estudiar",
+          title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
           description:
-            "Descubre qué sonidos de fondo son más efectivos para una concentración profunda.",
+    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
         },
       ]}
     >

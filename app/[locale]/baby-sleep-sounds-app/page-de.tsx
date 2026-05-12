@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Baby Schlaf-Sounds App | Calma",
+  title: "Baby Schlafgeräusche & Weißes Rauschen | Calma",
   description:
-    "Entdecke Calma – eine Baby Schlaf-Sounds App mit beruhigendem weißen Rauschen, sanftem Regen und Klängen, die Neugeborenen und Kleinkindern beim Einschlafen helfen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit weißem Rauschen für Babys. Calma hilft Ihrem Baby, sich zu entspannen und zu schlafen.",
   keywords: [
     "Baby Schlaf-Sounds App",
     "Weißes Rauschen für Babys",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Baby Schlaf-Sounds App | Calma",
+    title: "Baby Schlafgeräusche & Weißes Rauschen | Calma",
     description:
-      "Eine schlichte App, die deinem Baby hilft, mit sanften und individuellen Klanglandschaften zur Ruhe zu kommen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit weißem Rauschen für Babys. Calma hilft Ihrem Baby, sich zu entspannen und zu schlafen.",
     url: "https://www.calmasounds.com/de/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baby Schlaf-Sounds App | Calma",
+    title: "Baby Schlafgeräusche & Weißes Rauschen | Calma",
     description:
-      "Eine schlichte App, die deinem Baby hilft, mit sanften und individuellen Klanglandschaften zur Ruhe zu kommen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit weißem Rauschen für Babys. Calma hilft Ihrem Baby, sich zu entspannen und zu schlafen.",
   },
 };
 

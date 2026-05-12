@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "リラックスできる音アプリ | Calma",
+  title: "日常の落ち着きのためのリラックス音アプリ | Calma",
   description:
-    "より穏やかな夜、平和なルーティン、パーソナライズされたサウンドスケープのための、美しくシンプルなリラックスできる音アプリであるCalmaを発見してください。",
+    "雨、ホワイトノイズ、自然の音で独自のリラックス音ミックスを作成します。Calmaを使用して平和を見つけストレスを和らげます。",
   keywords: [
     "リラックスできる音アプリ",
     "リラクゼーションの音",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/relaxing-sounds",
   },
   openGraph: {
-    title: "リラックスできる音アプリ | Calma",
+    title: "日常の落ち着きのためのリラックス音アプリ | Calma",
     description:
-      "より穏やかな夜と平和な日常のルーティンのための、美しくシンプルなリラックスできる音アプリを発見してください。",
+    "雨、ホワイトノイズ、自然の音で独自のリラックス音ミックスを作成します。Calmaを使用して平和を見つけストレスを和らげます。",
     url: "https://www.calmasounds.com/ja/relaxing-sounds",
     siteName: "Calma",
     locale: "ja_JP",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "リラックスできる音アプリ | Calma",
+    title: "日常の落ち着きのためのリラックス音アプリ | Calma",
     description:
-      "より穏やかな夜と平和な日常のルーティンのための、美しくシンプルなリラックスできる音アプリを発見してください。",
+    "雨、ホワイトノイズ、自然の音で独自のリラックス音ミックスを作成します。Calmaを使用して平和を見つけストレスを和らげます。",
   },
 };
 

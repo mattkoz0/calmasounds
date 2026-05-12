@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja z białym szumem | Calma",
+  title: "Dźwięki na Szumy Uszne i Sen | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację z białym szumem do snu, relaksu i budowania spokojniejszego środowiska dźwiękowego.",
+    "Odkryj prostą aplikację z dźwiękami łagodzącymi szumy uszne. Użyj Calmy, aby stworzyć kojące środowisko audio do lepszego snu.",
   keywords: [
     "aplikacja z białym szumem",
     "dźwięki na szumy uszne do snu",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Aplikacja z białym szumem | Calma",
+    title: "Dźwięki na Szumy Uszne i Sen | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z białym szumem dla snu, relaksu i spokojniejszej codzienności.",
+    "Odkryj prostą aplikację z dźwiękami łagodzącymi szumy uszne. Użyj Calmy, aby stworzyć kojące środowisko audio do lepszego snu.",
     url: "https://www.calmasounds.com/pl/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja z białym szumem | Calma",
+    title: "Dźwięki na Szumy Uszne i Sen | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z białym szumem dla snu, relaksu i spokojniejszej codzienności.",
+    "Odkryj prostą aplikację z dźwiękami łagodzącymi szumy uszne. Użyj Calmy, aby stworzyć kojące środowisko audio do lepszego snu.",
   },
 };
 

@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen | Calma",
+  title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma",
   description:
-    "Wenn Sie ADHS haben und mit Konzentrationsschwierigkeiten kämpfen, fragen Sie sich vielleicht, welches Rauschen am besten ist. Entdecken Sie, warum braunes Rauschen oft bevorzugt wird.",
+    "Erfahren Sie, wie weißes, braunes und rosa Rauschen bei ADHS helfen kann, den Fokus zu verbessern und Ablenkungen zu reduzieren.",
   keywords: [
     "welche rauschfarbe bei adhs",
     "braunes vs weißes rauschen adhs",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/blog/best-color-noise-for-adhd",
   },
   openGraph: {
-    title: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
+    title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma",
     description:
-      "Wenn Sie ADHS haben und mit Konzentrationsschwierigkeiten kämpfen, fragen Sie sich vielleicht, welches Rauschen am besten ist. Entdecken Sie, warum braunes Rauschen oft bevorzugt wird.",
+    "Erfahren Sie, wie weißes, braunes und rosa Rauschen bei ADHS helfen kann, den Fokus zu verbessern und Ablenkungen zu reduzieren.",
     url: "https://www.calmasounds.com/de/blog/best-color-noise-for-adhd",
     siteName: "Calma",
     locale: "de_DE",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
+    title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma",
     description:
-      "Wenn Sie ADHS haben und mit Konzentrationsschwierigkeiten kämpfen, fragen Sie sich vielleicht, welches Rauschen am besten ist. Entdecken Sie, warum braunes Rauschen oft bevorzugt wird.",
+    "Erfahren Sie, wie weißes, braunes und rosa Rauschen bei ADHS helfen kann, den Fokus zu verbessern und Ablenkungen zu reduzieren.",
   },
 };
 
@@ -39,7 +39,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
   description:
-    "Wenn Sie ADHS haben und mit Konzentrationsschwierigkeiten kämpfen, fragen Sie sich vielleicht, welches Rauschen am besten ist. Entdecken Sie, warum braunes Rauschen oft bevorzugt wird.",
+    "Erfahren Sie, wie weißes, braunes und rosa Rauschen bei ADHS helfen kann, den Fokus zu verbessern und Ablenkungen zu reduzieren.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -67,24 +67,24 @@ export default function BestColorNoiseForADHDPage() {
       secondaryCtaHref="/de/sound-mixer-app"
       secondaryCtaLabel="Eigenes Audio mischen"
       tableOfContents={[
-        { id: "adhd-and-sound", title: "Warum braucht das ADHS-Gehirn Geräusche?" },
-        { id: "white-noise", title: "Weißes Rauschen und ADHS" },
-        { id: "brown-noise", title: "Braunes Rauschen: Der Favorit bei ADHS" },
-        { id: "pink-noise", title: "Rosa Rauschen: Der Mittelweg" },
-        { id: "summary", title: "Fazit: Welche Farbe ist die beste?" },
+        { id: "adhd-and-sound", title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma" },
+        { id: "white-noise", title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma" },
+        { id: "brown-noise", title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma" },
+        { id: "pink-noise", title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma" },
+        { id: "summary", title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma" },
       ]}
       relatedArticles={[
         {
           href: "/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "Braunes, Weißes oder Rosa Rauschen",
+          title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma",
           description:
-            "Ein umfassender Leitfaden zum Verständnis der Rauschfarben und ihrer Vorteile.",
+    "Erfahren Sie, wie weißes, braunes und rosa Rauschen bei ADHS helfen kann, den Fokus zu verbessern und Ablenkungen zu reduzieren.",
         },
         {
           href: "/de/blog/best-sounds-for-studying",
-          title: "Die besten Klänge zum Lernen",
+          title: "Bestes Rauschen bei ADHS: Braun vs Weiß | Calma",
           description:
-            "Entdecken Sie, welche Hintergrundgeräusche für tiefe Konzentration am effektivsten sind.",
+    "Erfahren Sie, wie weißes, braunes und rosa Rauschen bei ADHS helfen kann, den Fokus zu verbessern und Ablenkungen zu reduzieren.",
         },
       ]}
     >

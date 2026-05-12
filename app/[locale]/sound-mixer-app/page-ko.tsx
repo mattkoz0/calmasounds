@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "사운드 믹서 앱 | Calma",
+  title: "수면과 집중을 위한 소리 믹서 앱 | Calma",
   description:
-    "어디서도 들어본 적 없는 당신만의 소리를 만드세요. Calma는 수십 가지의 자연 소리와 백색소음을 자유롭게 믹스할 수 있는 프리미엄 사운드 믹서 앱입니다.",
+    "비, 백색 소음, 자연의 소리로 차분한 오디오 믹스를 만드세요. Calma 소리 믹서를 사용하여 긴장을 풀고 집중하세요.",
   keywords: [
     "사운드 믹서 앱",
     "나만의 소리 만들기",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/sound-mixer-app",
   },
   openGraph: {
-    title: "사운드 믹서 앱 | Calma",
+    title: "수면과 집중을 위한 소리 믹서 앱 | Calma",
     description:
-      "더 개인화되고 차원 높은 휴식 경험을 위해 설계된 심플하고 우아한 사운드 믹서 앱입니다.",
+    "비, 백색 소음, 자연의 소리로 차분한 오디오 믹스를 만드세요. Calma 소리 믹서를 사용하여 긴장을 풀고 집중하세요.",
     url: "https://www.calmasounds.com/ko/sound-mixer-app",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "사운드 믹서 앱 | Calma",
+    title: "수면과 집중을 위한 소리 믹서 앱 | Calma",
     description:
-      "더 개인화되고 차원 높은 휴식 경험을 위해 설계된 심플하고 우아한 사운드 믹서 앱입니다.",
+    "비, 백색 소음, 자연의 소리로 차분한 오디오 믹스를 만드세요. Calma 소리 믹서를 사용하여 긴장을 풀고 집중하세요.",
   },
 };
 

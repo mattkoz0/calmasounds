@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Application de sons de la nature | Calma",
+  title: "Sons de la Nature pour la Détente | Calma",
   description:
-    "Découvrez Calma, une application de sons de la nature simple et élégante pour le sommeil, la relaxation et la création d'un environnement sonore apaisant.",
+    "Créez des mélanges apaisants avec des sons de la nature, de la pluie et de la forêt. Utilisez Calma pour vous détendre et dormir.",
   keywords: [
     "application sons de la nature",
     "sons de la nature pour dormir",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/nature-sounds-app",
   },
   openGraph: {
-    title: "Application de sons de la nature | Calma",
+    title: "Sons de la Nature pour la Détente | Calma",
     description:
-      "Découvrez une application de sons de la nature simple et élégante pour le sommeil, la relaxation et des rituels quotidiens plus calmes.",
+    "Créez des mélanges apaisants avec des sons de la nature, de la pluie et de la forêt. Utilisez Calma pour vous détendre et dormir.",
     url: "https://www.calmasounds.com/fr/nature-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Application de sons de la nature | Calma",
+    title: "Sons de la Nature pour la Détente | Calma",
     description:
-      "Découvrez une application de sons de la nature simple et élégante pour le sommeil, la relaxation et des rituels quotidiens plus calmes.",
+    "Créez des mélanges apaisants avec des sons de la nature, de la pluie et de la forêt. Utilisez Calma pour vous détendre et dormir.",
   },
 };
 

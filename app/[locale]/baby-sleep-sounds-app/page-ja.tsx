@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "赤ちゃんの睡眠音アプリ | Calma",
+  title: "赤ちゃんの睡眠音とホワイトノイズアプリ | Calma",
   description:
-    "新生児や幼児が安らかに眠れるように設計された、落ち着くホワイトノイズ、穏やかな雨、リラックスできる雰囲気を備えた赤ちゃんの睡眠音アプリであるCalmaを発見してください。",
+    "ホワイトノイズと優しい赤ちゃんの睡眠音で睡眠ミックスを作成します。Calmaを使って、赤ちゃんが夜通し眠れるようにしましょう。",
   keywords: [
     "赤ちゃんの睡眠音アプリ",
     "赤ちゃんのためのホワイトノイズ",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "赤ちゃんの睡眠音アプリ | Calma",
+    title: "赤ちゃんの睡眠音とホワイトノイズアプリ | Calma",
     description:
-      "パーソナライズされた穏やかなサウンドスケープで、赤ちゃんが落ち着き、眠りにつくのを助ける美しくシンプルなアプリです。",
+    "ホワイトノイズと優しい赤ちゃんの睡眠音で睡眠ミックスを作成します。Calmaを使って、赤ちゃんが夜通し眠れるようにしましょう。",
     url: "https://www.calmasounds.com/ja/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "赤ちゃんの睡眠音アプリ | Calma",
+    title: "赤ちゃんの睡眠音とホワイトノイズアプリ | Calma",
     description:
-      "パーソナライズされた穏やかなサウンドスケープで、赤ちゃんが落ち着き、眠りにつくのを助ける美しくシンプルなアプリです。",
+    "ホワイトノイズと優しい赤ちゃんの睡眠音で睡眠ミックスを作成します。Calmaを使って、赤ちゃんが夜通し眠れるようにしましょう。",
   },
 };
 

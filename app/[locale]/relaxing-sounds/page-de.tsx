@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Entspannungsklänge App | Calma",
+  title: "Entspannende Klänge für den Alltag | Calma",
   description:
-    "Entdecke Calma – eine schlichte App für Entspannungsklänge, ruhigere Abende und personalisierte Klanglandschaften.",
+    "Erstellen Sie Ihre eigene entspannende Klangmischung mit Regen und weißem Rauschen. Nutzen Sie Calma, um täglichen Stress abzubauen.",
   keywords: [
     "Entspannungsklänge App",
     "Relaxing Sounds App",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/relaxing-sounds",
   },
   openGraph: {
-    title: "Entspannungsklänge App | Calma",
+    title: "Entspannende Klänge für den Alltag | Calma",
     description:
-      "Entdecke eine schlichte App für Entspannungsklänge und friedliche tägliche Routinen.",
+    "Erstellen Sie Ihre eigene entspannende Klangmischung mit Regen und weißem Rauschen. Nutzen Sie Calma, um täglichen Stress abzubauen.",
     url: "https://www.calmasounds.com/de/relaxing-sounds",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Entspannungsklänge App | Calma",
+    title: "Entspannende Klänge für den Alltag | Calma",
     description:
-      "Entdecke eine schlichte App für Entspannungsklänge und friedliche tägliche Routinen.",
+    "Erstellen Sie Ihre eigene entspannende Klangmischung mit Regen und weißem Rauschen. Nutzen Sie Calma, um täglichen Stress abzubauen.",
   },
 };
 

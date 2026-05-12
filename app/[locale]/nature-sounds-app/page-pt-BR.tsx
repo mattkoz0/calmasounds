@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sons da Natureza | Calma",
+  title: "Sons da Natureza para Relaxar | Calma",
   description:
-    "Descubra o Calma, um aplicativo de sons da natureza incrivelmente simples para dormir, relaxar e criar um ambiente de áudio mais calmo.",
+    "Crie misturas relaxantes para dormir com sons da natureza, chuva e floresta. Use o Calma para relaxar e construir sua rotina.",
   keywords: [
     "aplicativo de sons da natureza",
     "sons da natureza para dormir",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/nature-sounds-app",
   },
   openGraph: {
-    title: "App de Sons da Natureza | Calma",
+    title: "Sons da Natureza para Relaxar | Calma",
     description:
-      "Descubra um aplicativo de sons da natureza incrivelmente simples para dormir, relaxar e rotinas diárias mais calmas.",
+    "Crie misturas relaxantes para dormir com sons da natureza, chuva e floresta. Use o Calma para relaxar e construir sua rotina.",
     url: "https://www.calmasounds.com/pt-BR/nature-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sons da Natureza | Calma",
+    title: "Sons da Natureza para Relaxar | Calma",
     description:
-      "Descubra um aplicativo de sons da natureza incrivelmente simples para dormir, relaxar e rotinas diárias mais calmas.",
+    "Crie misturas relaxantes para dormir com sons da natureza, chuva e floresta. Use o Calma para relaxar e construir sua rotina.",
   },
 };
 

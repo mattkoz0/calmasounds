@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Tinnitus-Linderung App | Calma",
+  title: "Tinnitus Linderung Sounds App | Calma",
   description:
-    "Entdecke Calma – eine schlichte Tinnitus-Linderung App für Schlaf, Entspannung und ein ruhigeres Klangerlebnis.",
+    "Entdecken Sie eine einfache App mit Tinnitus-Linderungsklängen. Verwenden Sie Calma für eine beruhigende Audio-Umgebung.",
   keywords: [
     "Tinnitus-Linderung App",
     "White Noise App",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Tinnitus-Linderung App | Calma",
+    title: "Tinnitus Linderung Sounds App | Calma",
     description:
-      "Entdecke eine schlichte Tinnitus-Linderung App für Schlaf, Entspannung und ruhigere tägliche Routinen.",
+    "Entdecken Sie eine einfache App mit Tinnitus-Linderungsklängen. Verwenden Sie Calma für eine beruhigende Audio-Umgebung.",
     url: "https://www.calmasounds.com/de/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tinnitus-Linderung App | Calma",
+    title: "Tinnitus Linderung Sounds App | Calma",
     description:
-      "Entdecke eine schlichte Tinnitus-Linderung App für Schlaf, Entspannung und ruhigere tägliche Routinen.",
+    "Entdecken Sie eine einfache App mit Tinnitus-Linderungsklängen. Verwenden Sie Calma für eine beruhigende Audio-Umgebung.",
   },
 };
 

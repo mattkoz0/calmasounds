@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App Misturador de Som | Calma",
+  title: "Misturador de Sons para Dormir | Calma",
   description:
-    "Descubra o Calma, um aplicativo misturador de som incrivelmente simples para sono, relaxamento, foco e rotinas de áudio personalizadas.",
+    "Crie misturas de áudio relaxantes com chuva e sons da natureza. Use o misturador Calma para relaxar, focar e dormir profundamente.",
   keywords: [
     "aplicativo misturador de som",
     "misturador de som para dormir",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/sound-mixer-app",
   },
   openGraph: {
-    title: "App Misturador de Som | Calma",
+    title: "Misturador de Sons para Dormir | Calma",
     description:
-      "Descubra um aplicativo misturador de som incrivelmente simples para sono, relaxamento, foco e paisagens sonoras personalizadas.",
+    "Crie misturas de áudio relaxantes com chuva e sons da natureza. Use o misturador Calma para relaxar, focar e dormir profundamente.",
     url: "https://www.calmasounds.com/pt-BR/sound-mixer-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Misturador de Som | Calma",
+    title: "Misturador de Sons para Dormir | Calma",
     description:
-      "Descubra um aplicativo misturador de som incrivelmente simples para sono, relaxamento, foco e paisagens sonoras personalizadas.",
+    "Crie misturas de áudio relaxantes com chuva e sons da natureza. Use o misturador Calma para relaxar, focar e dormir profundamente.",
   },
 };
 

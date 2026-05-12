@@ -11,16 +11,16 @@ import {
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title: "Calma | Linki",
+  title: "Oficjalne Linki Calma i Media Społecznościowe",
   description:
-    "Znajdź Calma w Google Play oraz App Store i sprawdź nasze oficjalne kanały społecznościowe.",
+    "Znajdź oficjalne linki Calma, pobierz aplikację z Google Play i dołącz do nas w mediach społecznościowych.",
   alternates: {
     canonical: "https://www.calmasounds.com/bio",
   },
   openGraph: {
-    title: "Calma | Linki",
+    title: "Oficjalne Linki Calma i Media Społecznościowe",
     description:
-      "Znajdź Calma w Google Play oraz App Store i sprawdź nasze oficjalne kanały społecznościowe.",
+    "Znajdź oficjalne linki Calma, pobierz aplikację z Google Play i dołącz do nas w mediach społecznościowych.",
     url: "https://www.calmasounds.com/bio",
     siteName: "Calma",
     locale: "pl_PL",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calma | Linki",
+    title: "Oficjalne Linki Calma i Media Społecznościowe",
     description:
-      "Znajdź Calma w Google Play oraz App Store i sprawdź nasze oficjalne kanały społecznościowe.",
+    "Znajdź oficjalne linki Calma, pobierz aplikację z Google Play i dołącz do nas w mediach społecznościowych.",
   },
 };
 

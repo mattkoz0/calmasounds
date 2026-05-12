@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Ruído Marrom vs Ruído Branco vs Ruído Rosa | Blog do Calma",
+  title: "Ruído Marrom vs Branco vs Rosa | Calma",
   description:
-    "Explore as diferenças entre o ruído Branco, Rosa e Marrom. Descubra qual é o melhor para o seu sono, foco ou gerenciamento de TDAH.",
+    "Descubra as diferenças entre ruído marrom, branco e rosa. Encontre o melhor som para dormir, estudar ou relaxar.",
   keywords: [
     "ruído marrom vs ruído branco",
     "ruído rosa vs ruído branco",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/blog/brown-noise-vs-white-noise-vs-pink-noise",
   },
   openGraph: {
-    title: "Ruído Marrom vs Ruído Branco vs Ruído Rosa | Blog do Calma",
+    title: "Ruído Marrom vs Branco vs Rosa | Calma",
     description:
-      "Explore as diferenças entre o ruído Branco, Rosa e Marrom. Descubra qual é o melhor para o seu sono, foco ou gerenciamento de TDAH.",
+    "Descubra as diferenças entre ruído marrom, branco e rosa. Encontre o melhor som para dormir, estudar ou relaxar.",
     url: "https://www.calmasounds.com/pt-BR/blog/brown-noise-vs-white-noise-vs-pink-noise",
     siteName: "Calma",
     locale: "pt_BR",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ruído Marrom vs Ruído Branco vs Ruído Rosa | Blog do Calma",
+    title: "Ruído Marrom vs Branco vs Rosa | Calma",
     description:
-      "Explore as diferenças entre o ruído Branco, Rosa e Marrom. Descubra qual é o melhor para o seu sono, foco ou gerenciamento de TDAH.",
+    "Descubra as diferenças entre ruído marrom, branco e rosa. Encontre o melhor som para dormir, estudar ou relaxar.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Ruído Marrom vs Ruído Branco vs Ruído Rosa vs Ruído Verde",
   description:
-    "Um guia abrangente para entender as cores do ruído, incluindo o Ruído Verde, e seus benefícios únicos para sono, foco e relaxamento.",
+    "Descubra as diferenças entre ruído marrom, branco e rosa. Encontre o melhor som para dormir, estudar ou relaxar.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -68,25 +68,25 @@ export default function NoiseColorsPage() {
       secondaryCtaHref="/pt-BR/sound-mixer-app"
       secondaryCtaLabel="Explore o app misturador de som"
       tableOfContents={[
-        { id: "video", title: "Vídeo: Cores Explicadas" },
-        { id: "white-noise", title: "Ruído Branco" },
-        { id: "pink-noise", title: "Ruído Rosa" },
-        { id: "brown-noise", title: "Ruído Marrom" },
-        { id: "green-noise", title: "Ruído Verde" },
-        { id: "summary", title: "Qual você deve escolher?" },
+        { id: "video", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
+        { id: "white-noise", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
+        { id: "pink-noise", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
+        { id: "brown-noise", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
+        { id: "green-noise", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
+        { id: "summary", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
       ]}
       relatedArticles={[
         {
           href: "/pt-BR/blog/white-noise-for-sleep",
-          title: "Ruído Branco para Dormir",
+          title: "Ruído Marrom vs Branco vs Rosa | Calma",
           description:
-            "Aprenda como o ruído branco pode ajudá-lo a adormecer mais rápido e a permanecer dormindo por mais tempo.",
+    "Descubra as diferenças entre ruído marrom, branco e rosa. Encontre o melhor som para dormir, estudar ou relaxar.",
         },
         {
           href: "/pt-BR/blog/best-sounds-for-studying",
-          title: "Melhores Sons para Estudar",
+          title: "Ruído Marrom vs Branco vs Rosa | Calma",
           description:
-            "Descubra quais sons de fundo são mais eficazes para a concentração.",
+    "Descubra as diferenças entre ruído marrom, branco e rosa. Encontre o melhor som para dormir, estudar ou relaxar.",
         },
       ]}
     >

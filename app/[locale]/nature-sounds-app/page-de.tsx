@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Naturklänge App | Calma",
+  title: "Naturklänge App für Entspannung | Calma",
   description:
-    "Entdecke Calma – eine schlichte Naturklänge App für Schlaf, Entspannung und ein ruhigeres Klangerlebnis.",
+    "Erstellen Sie beruhigende Schlafmischungen mit Naturklängen, Regen und Waldgeräuschen. Nutzen Sie Calma zum Entspannen.",
   keywords: [
     "Naturklänge App",
     "White Noise App",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/nature-sounds-app",
   },
   openGraph: {
-    title: "Naturklänge App | Calma",
+    title: "Naturklänge App für Entspannung | Calma",
     description:
-      "Entdecke eine schlichte Naturklänge App für Schlaf, Entspannung und ruhigere tägliche Routinen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit Naturklängen, Regen und Waldgeräuschen. Nutzen Sie Calma zum Entspannen.",
     url: "https://www.calmasounds.com/de/nature-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Naturklänge App | Calma",
+    title: "Naturklänge App für Entspannung | Calma",
     description:
-      "Entdecke eine schlichte Naturklänge App für Schlaf, Entspannung und ruhigere tägliche Routinen.",
+    "Erstellen Sie beruhigende Schlafmischungen mit Naturklängen, Regen und Waldgeräuschen. Nutzen Sie Calma zum Entspannen.",
   },
 };
 

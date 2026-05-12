@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sons para o Bebê Dormir | Calma",
+  title: "Sons para Dormir Bebês e Ruído Branco | Calma",
   description:
-    "Descubra o Calma, um aplicativo de sons para o bebê dormir com ruído branco suave, chuva delicada e atmosferas calmantes projetadas para ajudar seu recém-nascido ou criança a dormir pacificamente.",
+    "Crie misturas com ruído branco e sons suaves para bebês. Use o Calma para ajudar seu bebê a relaxar e dormir a noite toda.",
   keywords: [
     "aplicativo de sons para bebê dormir",
     "ruído branco para bebês",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "App de Sons para o Bebê Dormir | Calma",
+    title: "Sons para Dormir Bebês e Ruído Branco | Calma",
     description:
-      "Um aplicativo lindamente simples para ajudar seu bebê a se acalmar e adormecer com paisagens sonoras personalizadas e gentis.",
+    "Crie misturas com ruído branco e sons suaves para bebês. Use o Calma para ajudar seu bebê a relaxar e dormir a noite toda.",
     url: "https://www.calmasounds.com/pt-BR/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sons para o Bebê Dormir | Calma",
+    title: "Sons para Dormir Bebês e Ruído Branco | Calma",
     description:
-      "Um aplicativo lindamente simples para ajudar seu bebê a se acalmar e adormecer com paisagens sonoras personalizadas e gentis.",
+    "Crie misturas com ruído branco e sons suaves para bebês. Use o Calma para ajudar seu bebê a relaxar e dormir a noite toda.",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja z dźwiękami do snu | Calma",
+  title: "Aplikacja z Dźwiękami do Snu | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację z dźwiękami do snu, która pomoże Ci zbudować lepszą wieczorną rutynę i stworzyć spersonalizowane, relaksujące pejzaże dźwiękowe.",
+    "Odkryj najlepsze dźwięki do snu i natury. Stwórz własny miks audio z aplikacją Calma, aby szybciej zasnąć i budzić się z energią.",
   keywords: [
     "aplikacja z dźwiękami do snu",
     "aplikacja do spania",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/sleep-sounds-app",
   },
   openGraph: {
-    title: "Aplikacja z dźwiękami do snu | Calma",
+    title: "Aplikacja z Dźwiękami do Snu | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z dźwiękami do snu dla spokojniejszych nocy i lepszej wieczornej rutyny.",
+    "Odkryj najlepsze dźwięki do snu i natury. Stwórz własny miks audio z aplikacją Calma, aby szybciej zasnąć i budzić się z energią.",
     url: "https://www.calmasounds.com/pl/sleep-sounds-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja z dźwiękami do snu | Calma",
+    title: "Aplikacja z Dźwiękami do Snu | Calma",
     description:
-      "Odkryj pięknie prostą aplikację z dźwiękami do snu dla spokojniejszych nocy i lepszej wieczornej rutyny.",
+    "Odkryj najlepsze dźwięki do snu i natury. Stwórz własny miks audio z aplikacją Calma, aby szybciej zasnąć i budzić się z energią.",
   },
 };
 

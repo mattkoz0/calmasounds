@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Application de sons pour le sommeil de bébé | Calma",
+  title: "Sons pour Dormir Bébé et Bruit Blanc | Calma",
   description:
-    "Découvrez Calma, une application de sons pour le sommeil de bébé avec du bruit blanc, de la pluie douce et des ambiances apaisantes conçues pour aider votre nouveau-né ou votre enfant à dormir paisiblement.",
+    "Créez des mélanges pour dormir avec du bruit blanc pour les bébés. Utilisez Calma pour aider votre bébé à se détendre et à dormir.",
   keywords: [
     "application sommeil bébé",
     "bruit blanc pour bébé",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Application de sons pour le sommeil de bébé | Calma",
+    title: "Sons pour Dormir Bébé et Bruit Blanc | Calma",
     description:
-      "Une application simple et élégante pour aider votre bébé à se calmer et à s'endormir avec des paysages sonores doux et personnalisés.",
+    "Créez des mélanges pour dormir avec du bruit blanc pour les bébés. Utilisez Calma pour aider votre bébé à se détendre et à dormir.",
     url: "https://www.calmasounds.com/fr/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Application de sons pour le sommeil de bébé | Calma",
+    title: "Sons pour Dormir Bébé et Bruit Blanc | Calma",
     description:
-      "Une application simple et élégante pour aider votre bébé à se calmer et à s'endormir avec des paysages sonores doux et personnalisés.",
+    "Créez des mélanges pour dormir avec du bruit blanc pour les bébés. Utilisez Calma pour aider votre bébé à se détendre et à dormir.",
   },
 };
 

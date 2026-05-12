@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Tinnitus Relief App | Calma",
+  title: "Tinnitus Relief Sounds App for Sleep | Calma",
   description:
-    "Discover Calma, a beautifully simple tinnitus relief sounds app for sleep, relaxation and building a calmer audio environment.",
+    "Discover a beautifully simple tinnitus relief sounds app. Use Calma to create a soothing audio environment for better sleep and rest.",
   keywords: [
     "tinnitus relief sounds app",
     "tinnitus relief sounds for sleep",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Tinnitus Relief App | Calma",
+    title: "Tinnitus Relief Sounds App for Sleep | Calma",
     description:
-      "Discover a beautifully simple tinnitus relief sounds app for sleep, relaxation and calmer daily routines.",
+    "Discover a beautifully simple tinnitus relief sounds app. Use Calma to create a soothing audio environment for better sleep and rest.",
     url: "https://www.calmasounds.com/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tinnitus Relief App | Calma",
+    title: "Tinnitus Relief Sounds App for Sleep | Calma",
     description:
-      "Discover a beautifully simple tinnitus relief sounds app for sleep, relaxation and calmer daily routines.",
+    "Discover a beautifully simple tinnitus relief sounds app. Use Calma to create a soothing audio environment for better sleep and rest.",
   },
 };
 

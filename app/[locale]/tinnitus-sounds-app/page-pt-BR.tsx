@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Alívio do Zumbido | Calma",
+  title: "Sons para Zumbido e Sono Profundo | Calma",
   description:
-    "Descubra o Calma, um aplicativo de sons para zumbido incrivelmente simples para dormir, relaxar e criar um ambiente de áudio mais calmo.",
+    "Descubra um aplicativo simples de sons para aliviar o zumbido. Use o Calma para criar um ambiente de áudio suave para dormir.",
   keywords: [
     "aplicativo de sons para zumbido",
     "sons para zumbido para dormir",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "App de Alívio do Zumbido | Calma",
+    title: "Sons para Zumbido e Sono Profundo | Calma",
     description:
-      "Descubra um aplicativo de sons para zumbido incrivelmente simples para dormir, relaxar e rotinas diárias mais calmas.",
+    "Descubra um aplicativo simples de sons para aliviar o zumbido. Use o Calma para criar um ambiente de áudio suave para dormir.",
     url: "https://www.calmasounds.com/pt-BR/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Alívio do Zumbido | Calma",
+    title: "Sons para Zumbido e Sono Profundo | Calma",
     description:
-      "Descubra um aplicativo de sons para zumbido incrivelmente simples para dormir, relaxar e rotinas diárias mais calmas.",
+    "Descubra um aplicativo simples de sons para aliviar o zumbido. Use o Calma para criar um ambiente de áudio suave para dormir.",
   },
 };
 

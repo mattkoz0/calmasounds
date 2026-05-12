@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "아기 수면 유도 소리 앱 | Calma",
+  title: "아기 수면 소리 및 백색 소음 앱 | Calma",
   description:
-    "아기의 평온한 수면을 돕는 최고의 선택, Calma. 신생아를 위한 백색소음, 부드러운 빗소리, 그리고 엄마의 품 같은 안락한 사운드스케이프를 제공합니다.",
+    "백색 소음과 부드러운 아기 수면 소리로 차분한 수면 믹스를 만드세요. Calma를 사용하여 아기가 밤새 푹 잘 수 있도록 도와주세요.",
   keywords: [
     "아기 수면 소리",
     "아기 백색소음 앱",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "아기 수면 유도 소리 앱 | Calma",
+    title: "아기 수면 소리 및 백색 소음 앱 | Calma",
     description:
-      "아기와 부모 모두의 평온한 밤을 위해 설계된 심플하고 우아한 아기 수면 사운드 앱입니다.",
+    "백색 소음과 부드러운 아기 수면 소리로 차분한 수면 믹스를 만드세요. Calma를 사용하여 아기가 밤새 푹 잘 수 있도록 도와주세요.",
     url: "https://www.calmasounds.com/ko/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "아기 수면 유도 소리 앱 | Calma",
+    title: "아기 수면 소리 및 백색 소음 앱 | Calma",
     description:
-      "아기와 부모 모두의 평온한 밤을 위해 설계된 심플하고 우아한 아기 수면 사운드 앱입니다.",
+    "백색 소음과 부드러운 아기 수면 소리로 차분한 수면 믹스를 만드세요. Calma를 사용하여 아기가 밤새 푹 잘 수 있도록 도와주세요.",
   },
 };
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Schlaf-App | Calma",
+  title: "Schlafgeräusche App für Besseren Schlaf | Calma",
   description:
-    "Entdecke Calma – eine schlichte Schlaf-App für bessere Abendroutinen, ruhigere Abende und personalisierte Klanglandschaften.",
+    "Entdecken Sie die besten Schlafgeräusche. Erstellen Sie mit Calma eine persönliche Einschlafmischung für tiefen und erholsamen Schlaf.",
   keywords: [
     "Schlaf-App",
     "Einschlafhilfen App",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/sleep-sounds-app",
   },
   openGraph: {
-    title: "Schlaf-App | Calma",
+    title: "Schlafgeräusche App für Besseren Schlaf | Calma",
     description:
-      "Entdecke eine schlichte Schlaf-App für ruhigere Nächte und bessere Abendroutinen.",
+    "Entdecken Sie die besten Schlafgeräusche. Erstellen Sie mit Calma eine persönliche Einschlafmischung für tiefen und erholsamen Schlaf.",
     url: "https://www.calmasounds.com/de/sleep-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Schlaf-App | Calma",
+    title: "Schlafgeräusche App für Besseren Schlaf | Calma",
     description:
-      "Entdecke eine schlichte Schlaf-App für ruhigere Nächte und bessere Abendroutinen.",
+    "Entdecken Sie die besten Schlafgeräusche. Erstellen Sie mit Calma eine persönliche Einschlafmischung für tiefen und erholsamen Schlaf.",
   },
 };
 

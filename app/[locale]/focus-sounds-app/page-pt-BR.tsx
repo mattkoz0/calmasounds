@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sons para Foco | Calma",
+  title: "Sons de Foco para Trabalho Profundo | Calma",
   description:
-    "Descubra o Calma, um aplicativo incrivelmente simples de sons para foco, trabalho profundo, estudos e paisagens sonoras de concentração personalizadas.",
+    "Construa paisagens sonoras imersivas com chuva e ruído marrom. O Calma ajuda você a criar um espaço mais tranquilo para trabalhar.",
   keywords: [
     "aplicativo de sons para foco",
     "aplicativo de foco",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/focus-sounds-app",
   },
   openGraph: {
-    title: "App de Sons para Foco | Calma",
+    title: "Sons de Foco para Trabalho Profundo | Calma",
     description:
-      "Descubra um aplicativo incrivelmente simples de sons para foco, trabalho profundo, estudos e concentração.",
+    "Construa paisagens sonoras imersivas com chuva e ruído marrom. O Calma ajuda você a criar um espaço mais tranquilo para trabalhar.",
     url: "https://www.calmasounds.com/pt-BR/focus-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sons para Foco | Calma",
+    title: "Sons de Foco para Trabalho Profundo | Calma",
     description:
-      "Descubra um aplicativo incrivelmente simples de sons para foco, trabalho profundo, estudos e concentração.",
+    "Construa paisagens sonoras imersivas com chuva e ruído marrom. O Calma ajuda você a criar um espaço mais tranquilo para trabalhar.",
   },
 };
 

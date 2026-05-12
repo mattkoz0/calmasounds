@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Aplikacja mikser dźwięków | Calma",
+  title: "Mikser Dźwięków do Snu i Pracy | Calma",
   description:
-    "Odkryj Calmę – pięknie prostą aplikację do miksowania dźwięków dla snu, relaksu, koncentracji i spersonalizowanych rutyn audio.",
+    "Twórz uspokajające miksy audio z deszczem, białym szumem i dźwiękami natury. Użyj miksera Calma do relaksu, koncentracji i snu.",
   keywords: [
     "aplikacja mikser dźwięków",
     "mikser dźwięków do snu",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pl/sound-mixer-app",
   },
   openGraph: {
-    title: "Aplikacja mikser dźwięków | Calma",
+    title: "Mikser Dźwięków do Snu i Pracy | Calma",
     description:
-      "Odkryj pięknie prostą aplikację do miksowania dźwięków dla snu, relaksu, koncentracji i spersonalizowanych pejzaży dźwiękowych.",
+    "Twórz uspokajające miksy audio z deszczem, białym szumem i dźwiękami natury. Użyj miksera Calma do relaksu, koncentracji i snu.",
     url: "https://www.calmasounds.com/pl/sound-mixer-app",
     siteName: "Calma",
     locale: "pl_PL",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Aplikacja mikser dźwięków | Calma",
+    title: "Mikser Dźwięków do Snu i Pracy | Calma",
     description:
-      "Odkryj pięknie prostą aplikację do miksowania dźwięków dla snu, relaksu, koncentracji i spersonalizowanych pejzaży dźwiękowych.",
+    "Twórz uspokajające miksy audio z deszczem, białym szumem i dźwiękami natury. Użyj miksera Calma do relaksu, koncentracji i snu.",
   },
 };
 

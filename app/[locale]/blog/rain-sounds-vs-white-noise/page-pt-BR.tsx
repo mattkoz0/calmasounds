@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 
 export const metadata: Metadata = {
-  title: "Sons de Chuva vs Ruído Branco para Dormir | Blog do Calma",
+  title: "Sons de Chuva vs Ruído Branco | Calma",
   description:
-    "Descubra a diferença entre sons de chuva e ruído branco para dormir, relaxamento e melhores rotinas na hora de dormir.",
+    "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para dormir, relaxar e focar.",
   keywords: [
     "sons de chuva vs ruído branco",
     "sons de chuva para dormir",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "Sons de Chuva vs Ruído Branco para Dormir | Blog do Calma",
+    title: "Sons de Chuva vs Ruído Branco | Calma",
     description:
-      "Descubra a diferença entre sons de chuva e ruído branco para dormir, relaxamento e melhores rotinas na hora de dormir.",
+    "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para dormir, relaxar e focar.",
     url: "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons de Chuva vs Ruído Branco para Dormir | Blog do Calma",
+    title: "Sons de Chuva vs Ruído Branco | Calma",
     description:
-      "Descubra a diferença entre sons de chuva e ruído branco para dormir, relaxamento e melhores rotinas na hora de dormir.",
+    "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para dormir, relaxar e focar.",
   },
 };
 
@@ -38,7 +38,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Sons de Chuva vs Ruído Branco para Dormir",
   description:
-    "Descubra a diferença entre sons de chuva e ruído branco para dormir, relaxamento e melhores rotinas na hora de dormir.",
+    "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para dormir, relaxar e focar.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -71,15 +71,15 @@ export default function RainSoundsVsWhiteNoisePage() {
       relatedArticles={[
         {
           href: "/pt-BR/blog/white-noise-for-sleep",
-          title: "Ruído Branco para Dormir",
+          title: "Sons de Chuva vs Ruído Branco | Calma",
           description:
-            "Aprenda quando o ruído branco pode ajudar a criar um ambiente mais calmo e estável na hora de dormir.",
+    "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para dormir, relaxar e focar.",
         },
         {
           href: "/pt-BR/blog/best-sounds-for-sleep",
-          title: "Melhores Sons para Dormir",
+          title: "Sons de Chuva vs Ruído Branco | Calma",
           description:
-            "Explore quais estilos de som para dormir podem funcionar melhor para diferentes pessoas.",
+    "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para dormir, relaxar e focar.",
         },
       ]}
     >

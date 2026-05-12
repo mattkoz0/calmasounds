@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Application de bruit blanc | Calma",
+  title: "App de Bruit Blanc pour Dormir | Calma",
   description:
-    "Découvrez Calma, une application de bruit blanc simple et élégante pour le sommeil, la relaxation et la création d'un environnement sonore apaisant.",
+    "Créez des mélanges apaisants avec du bruit blanc, rose et brun. Utilisez Calma pour vous détendre, vous concentrer et mieux dormir.",
   keywords: [
     "application bruit blanc",
     "bruit blanc pour dormir",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/white-noise-app",
   },
   openGraph: {
-    title: "Application de bruit blanc | Calma",
+    title: "App de Bruit Blanc pour Dormir | Calma",
     description:
-      "Découvrez une application de bruit blanc simple et élégante pour le sommeil, la relaxation et des rituels quotidiens plus calmes.",
+    "Créez des mélanges apaisants avec du bruit blanc, rose et brun. Utilisez Calma pour vous détendre, vous concentrer et mieux dormir.",
     url: "https://www.calmasounds.com/fr/white-noise-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Application de bruit blanc | Calma",
+    title: "App de Bruit Blanc pour Dormir | Calma",
     description:
-      "Découvrez une application de bruit blanc simple et élégante pour le sommeil, la relaxation et des rituels quotidiens plus calmes.",
+    "Créez des mélanges apaisants avec du bruit blanc, rose et brun. Utilisez Calma pour vous détendre, vous concentrer et mieux dormir.",
   },
 };
 

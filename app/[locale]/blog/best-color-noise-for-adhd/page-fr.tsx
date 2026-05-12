@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Quelle couleur de bruit est la meilleure pour le TDAH ? Bruit brun vs blanc | Calma",
+  title: "Meilleur Bruit de Couleur pour TDAH | Calma",
   description:
-    "Si vous avez un TDAH et que vous luttez contre le manque de concentration ou la surstimulation, découvrez quelle couleur de bruit vous convient le mieux. Explorez pourquoi le bruit brun est souvent préféré.",
+    "Découvrez comment les bruits blanc, brun et rose peuvent aider le TDAH à améliorer la concentration et réduire les distractions.",
   keywords: [
     "quelle couleur de bruit pour le tdah",
     "bruit brun vs bruit blanc tdah",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/blog/best-color-noise-for-adhd",
   },
   openGraph: {
-    title: "Quelle couleur de bruit est la meilleure pour le TDAH ? Bruit brun vs blanc",
+    title: "Meilleur Bruit de Couleur pour TDAH | Calma",
     description:
-      "Si vous avez un TDAH et que vous luttez contre le manque de concentration ou la surstimulation, découvrez quelle couleur de bruit vous convient le mieux. Explorez pourquoi le bruit brun est souvent préféré.",
+    "Découvrez comment les bruits blanc, brun et rose peuvent aider le TDAH à améliorer la concentration et réduire les distractions.",
     url: "https://www.calmasounds.com/fr/blog/best-color-noise-for-adhd",
     siteName: "Calma",
     locale: "fr_FR",
@@ -28,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Quelle couleur de bruit est la meilleure pour le TDAH ? Bruit brun vs blanc",
+    title: "Meilleur Bruit de Couleur pour TDAH | Calma",
     description:
-      "Si vous avez un TDAH et que vous luttez contre le manque de concentration ou la surstimulation, découvrez quelle couleur de bruit vous convient le mieux. Explorez pourquoi le bruit brun est souvent préféré.",
+    "Découvrez comment les bruits blanc, brun et rose peuvent aider le TDAH à améliorer la concentration et réduire les distractions.",
   },
 };
 
@@ -39,7 +39,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Quelle couleur de bruit est la meilleure pour le TDAH ? Bruit brun vs blanc",
   description:
-    "Si vous avez un TDAH et que vous luttez contre le manque de concentration ou la surstimulation, découvrez quelle couleur de bruit vous convient le mieux. Explorez pourquoi le bruit brun est souvent préféré.",
+    "Découvrez comment les bruits blanc, brun et rose peuvent aider le TDAH à améliorer la concentration et réduire les distractions.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -67,24 +67,24 @@ export default function BestColorNoiseForADHDPage() {
       secondaryCtaHref="/fr/sound-mixer-app"
       secondaryCtaLabel="Mélangez votre propre son"
       tableOfContents={[
-        { id: "adhd-and-sound", title: "Pourquoi le cerveau TDAH a-t-il besoin de son ?" },
-        { id: "white-noise", title: "Le bruit blanc et le TDAH" },
-        { id: "brown-noise", title: "Bruit brun : Le favori pour le TDAH" },
-        { id: "pink-noise", title: "Bruit rose : Le juste milieu" },
-        { id: "summary", title: "Conclusion : Quelle couleur est la meilleure ?" },
+        { id: "adhd-and-sound", title: "Meilleur Bruit de Couleur pour TDAH | Calma" },
+        { id: "white-noise", title: "Meilleur Bruit de Couleur pour TDAH | Calma" },
+        { id: "brown-noise", title: "Meilleur Bruit de Couleur pour TDAH | Calma" },
+        { id: "pink-noise", title: "Meilleur Bruit de Couleur pour TDAH | Calma" },
+        { id: "summary", title: "Meilleur Bruit de Couleur pour TDAH | Calma" },
       ]}
       relatedArticles={[
         {
           href: "/fr/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "Bruit brun, blanc et rose",
+          title: "Meilleur Bruit de Couleur pour TDAH | Calma",
           description:
-            "Un guide complet pour comprendre les couleurs du bruit et leurs avantages.",
+    "Découvrez comment les bruits blanc, brun et rose peuvent aider le TDAH à améliorer la concentration et réduire les distractions.",
         },
         {
           href: "/fr/blog/best-sounds-for-studying",
-          title: "Les meilleurs sons pour étudier",
+          title: "Meilleur Bruit de Couleur pour TDAH | Calma",
           description:
-            "Découvrez quels sons d'ambiance sont les plus efficaces pour une concentration profonde.",
+    "Découvrez comment les bruits blanc, brun et rose peuvent aider le TDAH à améliorer la concentration et réduire les distractions.",
         },
       ]}
     >

@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App de Sonidos de Concentración | Calma",
   description:
-    "Descubre Calma, una aplicación de sonidos para la concentración muy simple pero elegante, ideal para el trabajo profundo, el estudio y entornos de sonido personalizados.",
+    "Construye paisajes sonoros inmersivos con lluvia y ruido marrón. Calma te ayuda a crear un espacio más tranquilo para el trabajo profundo.",
   keywords: [
     "app de sonidos para la concentración",
     "app de enfoque",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App de Sonidos de Concentración | Calma",
     description:
-      "Descubre una aplicación de sonidos para la concentración simple y elegante, ideal para el trabajo profundo y el estudio.",
+    "Construye paisajes sonoros inmersivos con lluvia y ruido marrón. Calma te ayuda a crear un espacio más tranquilo para el trabajo profundo.",
     url: "https://www.calmasounds.com/es/focus-sounds-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App de Sonidos de Concentración | Calma",
     description:
-      "Descubre una aplicación de sonidos para la concentración simple y elegante, ideal para el trabajo profundo y el estudio.",
+    "Construye paisajes sonoros inmersivos con lluvia y ruido marrón. Calma te ayuda a crear un espacio más tranquilo para el trabajo profundo.",
   },
 };
 

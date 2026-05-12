@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Los Beneficios de los Sonidos de la Naturaleza para una Relajación Profunda | Blog de Calma",
+  title: "Beneficios de Sonidos de Naturaleza | Calma",
   description:
-    "Explora cómo los sonidos de la naturaleza, como la lluvia, las olas del mar y el ambiente del bosque, pueden actuar como un ruido blanco natural para mejorar tu relajación profunda y rutina nocturna.",
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
   keywords: [
     "sonidos de la naturaleza",
     "sonidos relajantes para dormir",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
   },
   openGraph: {
-    title: "Los Beneficios de los Sonidos de la Naturaleza para una Relajación Profunda | Blog de Calma",
+    title: "Beneficios de Sonidos de Naturaleza | Calma",
     description:
-      "Explora cómo los sonidos de la naturaleza, como la lluvia, las olas del mar y el ambiente del bosque, pueden actuar como un ruido blanco natural para mejorar tu relajación profunda y rutina nocturna.",
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
     url: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
     siteName: "Calma",
     locale: "es_ES",
@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Los Beneficios de los Sonidos de la Naturaleza para una Relajación Profunda | Blog de Calma",
+    title: "Beneficios de Sonidos de Naturaleza | Calma",
     description:
-      "Explora cómo los sonidos de la naturaleza, como la lluvia, las olas del mar y el ambiente del bosque, pueden actuar como un ruido blanco natural para mejorar tu relajación profunda y rutina nocturna.",
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
   },
 };
 
@@ -40,7 +40,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Los Beneficios de los Sonidos de la Naturaleza para una Relajación Profunda",
   description:
-    "Explora cómo los sonidos de la naturaleza, como la lluvia, las olas del mar y el ambiente del bosque, pueden actuar como un ruido blanco natural para mejorar tu relajación profunda y rutina nocturna.",
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -72,18 +72,21 @@ export default function BenefitsOfNatureSoundsPage() {
       relatedArticles={[
         {
           href: "/blog/rain-sounds-vs-white-noise",
-          title: "Sonidos de Lluvia vs Ruido Blanco",
-          description: "Compara el confort emocional, el enmascaramiento y la atmósfera nocturna.",
+          title: "Beneficios de Sonidos de Naturaleza | Calma",
+          description:
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
         },
         {
           href: "/blog/how-to-build-a-bedtime-routine",
-          title: "Construyendo una Rutina para Acostarse",
-          description: "Maneras sencillas de crear un ritmo vespertino más calmado.",
+          title: "Beneficios de Sonidos de Naturaleza | Calma",
+          description:
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
         },
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Ruido Blanco para Dormir",
-          description: "Cuándo puede ayudar el ruido blanco y cómo construir un entorno más tranquilo para la hora de acostarse.",
+          title: "Beneficios de Sonidos de Naturaleza | Calma",
+          description:
+    "Descubre cómo los sonidos de la naturaleza pueden apoyar tu rutina diaria, reducir el estrés y mejorar la relajación.",
         },
       ]}
     >

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Baby Sleep Sounds App | Calma",
+  title: "Baby Sleep Sounds App & White Noise | Calma",
   description:
-    "Discover Calma, a baby sleep sounds app with soothing white noise, gentle rain, and calming atmospheres designed to help your newborn or toddler sleep peacefully.",
+    "Create calming sleep mixes with white noise and gentle baby sleep sounds. Use Calma to help your baby relax and sleep through the night.",
   keywords: [
     "baby sleep sounds app",
     "white noise for babies",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Baby Sleep Sounds App | Calma",
+    title: "Baby Sleep Sounds App & White Noise | Calma",
     description:
-      "A beautifully simple app to help your baby calm down and fall asleep with personalized, gentle soundscapes.",
+    "Create calming sleep mixes with white noise and gentle baby sleep sounds. Use Calma to help your baby relax and sleep through the night.",
     url: "https://www.calmasounds.com/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baby Sleep Sounds App | Calma",
+    title: "Baby Sleep Sounds App & White Noise | Calma",
     description:
-      "A beautifully simple app to help your baby calm down and fall asleep with personalized, gentle soundscapes.",
+    "Create calming sleep mixes with white noise and gentle baby sleep sounds. Use Calma to help your baby relax and sleep through the night.",
   },
 };
 

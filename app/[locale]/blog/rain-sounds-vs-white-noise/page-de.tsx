@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 
 export const metadata: Metadata = {
-  title: "Regenklänge vs. Weißes Rauschen zum Schlafen | Calma Blog",
+  title: "Regengeräusche vs. Weißes Rauschen | Calma",
   description:
-    "Entdecke den Unterschied zwischen Regen und weißem Rauschen für Schlaf, Entspannung und bessere Abendroutinen.",
+    "Vergleichen Sie Regengeräusche und weißes Rauschen, um herauszufinden, was besser zum Schlafen, Entspannen und Arbeiten geeignet ist.",
   keywords: [
     "Regenklänge vs weißes Rauschen",
     "Regenklänge zum Schlafen",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "Regenklänge vs. Weißes Rauschen zum Schlafen | Calma Blog",
+    title: "Regengeräusche vs. Weißes Rauschen | Calma",
     description:
-      "Entdecke den Unterschied zwischen Regen und weißem Rauschen für Schlaf, Entspannung und bessere Abendroutinen.",
+    "Vergleichen Sie Regengeräusche und weißes Rauschen, um herauszufinden, was besser zum Schlafen, Entspannen und Arbeiten geeignet ist.",
     url: "https://www.calmasounds.com/de/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "de_DE",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Regenklänge vs. Weißes Rauschen zum Schlafen | Calma Blog",
+    title: "Regengeräusche vs. Weißes Rauschen | Calma",
     description:
-      "Entdecke den Unterschied zwischen Regen und weißem Rauschen für Schlaf, Entspannung und bessere Abendroutinen.",
+    "Vergleichen Sie Regengeräusche und weißes Rauschen, um herauszufinden, was besser zum Schlafen, Entspannen und Arbeiten geeignet ist.",
   },
 };
 
@@ -38,7 +38,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Regenklänge vs. Weißes Rauschen zum Schlafen",
   description:
-    "Entdecke den Unterschied zwischen Regen und weißem Rauschen für Schlaf, Entspannung und bessere Abendroutinen.",
+    "Vergleichen Sie Regengeräusche und weißes Rauschen, um herauszufinden, was besser zum Schlafen, Entspannen und Arbeiten geeignet ist.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -71,15 +71,15 @@ export default function RainSoundsVsWhiteNoisePage() {
       relatedArticles={[
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Weißes Rauschen zum Schlafen",
+          title: "Regengeräusche vs. Weißes Rauschen | Calma",
           description:
-            "Erfahre, wann weißes Rauschen eine stabilere Umgebung für deine Nacht schafft.",
+    "Vergleichen Sie Regengeräusche und weißes Rauschen, um herauszufinden, was besser zum Schlafen, Entspannen und Arbeiten geeignet ist.",
         },
         {
           href: "/blog/best-sounds-for-sleep",
-          title: "Beste Klänge zum Schlafen",
+          title: "Regengeräusche vs. Weißes Rauschen | Calma",
           description:
-            "Entdecke, welche Klangstile für verschiedene Menschen am besten funktionieren.",
+    "Vergleichen Sie Regengeräusche und weißes Rauschen, um herauszufinden, was besser zum Schlafen, Entspannen und Arbeiten geeignet ist.",
         },
       ]}
     >
