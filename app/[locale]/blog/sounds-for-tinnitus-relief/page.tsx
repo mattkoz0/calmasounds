@@ -7,6 +7,19 @@ import KoPage from './page-ko';
 import JaPage from './page-ja';
 import PtPage from './page-pt-BR';
 
+
+export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
+  const {locale} = await params;
+  if (locale === 'es') return (await import('./page-es')).metadata;
+  if (locale === 'pl') return (await import('./page-pl')).metadata;
+  if (locale === 'de') return (await import('./page-de')).metadata;
+  if (locale === 'fr') return (await import('./page-fr')).metadata;
+  if (locale === 'ko') return (await import('./page-ko')).metadata;
+  if (locale === 'ja') return (await import('./page-ja')).metadata;
+  if (locale === 'pt-BR') return (await import('./page-pt-BR')).metadata;
+  return (await import('./page-en')).metadata;
+}
+
 export default async function Page({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   if (locale === 'es') return <EsPage />;

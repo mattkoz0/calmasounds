@@ -59,7 +59,7 @@ export default function BinauralBeatsArticlePage() {
       jsonLd={articleJsonLd}
       topLinkHref="/focus-sounds-app"
       topLinkLabel="Explore focus page"
-      title="Binaural beats for sleep and focus: what are they and how do people use them?"
+      title="Binaural Beats for Sleep and Focus"
       intro="Binaural beats are often discussed in connection with sleep, focus and mental reset. Some people use them as part of a calming nighttime routine, while others explore them during work or study sessions. The experience is highly personal, but the basic idea is simple: they are a type of audio designed to create a specific listening effect when heard through headphones."
       ctaTitle="Explore deeper audio rituals with Calma"
       ctaText="Calma goes beyond simple playback with immersive sound experiences for sleep, focus and calmer routines, including more experimental listening modes inspired by brainwave-style audio."

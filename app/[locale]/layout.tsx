@@ -42,7 +42,6 @@ export async function generateMetadata({
     metadataBase: new URL("https://www.calmasounds.com"),
     title: t("title"),
     description: t("description"),
-    keywords: t("keywords").split(",").map(k => k.trim()),
     robots: {
       index: true,
       follow: true,

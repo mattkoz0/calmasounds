@@ -64,9 +64,7 @@ export default function WhiteNoiseAppPage() {
         <p className="text-sm uppercase tracking-[0.25em] text-white/50">
           Tinnitus relief app
         </p>
-        <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          A tinnitus relief sounds app for better sleep and a calmer audio environment
-        </h1>
+        <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">\n          Tinnitus Sounds App for Sleep and Calm\n        </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
           Calma is a beautifully simple tinnitus relief sounds app that helps you create a
           softer, more controlled sound environment for sleep, relaxation and
