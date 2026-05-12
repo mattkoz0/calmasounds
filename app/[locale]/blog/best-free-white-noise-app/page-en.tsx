@@ -6,7 +6,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Best Free White Noise App for Sleep in 2026 | Calma Blog",
   description:
-    "Looking for the best free white noise app to help you fall asleep? Discover why Calma is the perfect choice for soothing sleep sounds, rain, and deep focus.",
+    "Looking for a free white noise app? Discover how Calma helps you mix sleep sounds, rain and calming audio for rest and focus.",
   keywords: [
     "best app for white noise",
     "free sleeping sounds",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Free White Noise App for Sleep in 2026 | Calma Blog",
     description:
-      "Looking for the best free white noise app to help you fall asleep? Discover why Calma is the perfect choice for soothing sleep sounds, rain, and deep focus.",
+      "Looking for a free white noise app? Discover how Calma helps you mix sleep sounds, rain and calming audio for rest and focus.",
     url: "https://www.calmasounds.com/blog/best-free-white-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Free White Noise App for Sleep in 2026 | Calma Blog",
     description:
-      "Looking for the best free white noise app to help you fall asleep? Discover why Calma is the perfect choice for soothing sleep sounds, rain, and deep focus.",
+      "Looking for a free white noise app? Discover how Calma helps you mix sleep sounds, rain and calming audio for rest and focus.",
   },
 };
 

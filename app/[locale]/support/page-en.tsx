@@ -4,7 +4,7 @@ import Link from 'next/link';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Support & Contact | Calma App',
+  title: 'Calma Support & Contact',
   description: 'Get support for Calma app. Contact us for help with sleep sounds, relaxation features, feedback and suggestions.',
   alternates: {
     canonical: 'https://www.calmasounds.com/support',

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 
 export const metadata: Metadata = {
-  title: "Guided Breathing Techniques for Calm, Sleep and Focus | Calma Blog",
+  title: "Guided Breathing for Sleep & Focus | Calma Blog",
   description:
     "Discover guided breathing techniques for relaxation, sleep and focus, including 4-7-8, box breathing, resonance breathing and more.",
   keywords: [
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/guided-breathing-techniques",
   },
   openGraph: {
-    title: "Guided Breathing Techniques for Calm, Sleep and Focus | Calma Blog",
+    title: "Guided Breathing for Sleep & Focus | Calma Blog",
     description:
       "Discover guided breathing techniques for relaxation, sleep and focus, including 4-7-8, box breathing, resonance breathing and more.",
     url: "https://www.calmasounds.com/blog/guided-breathing-techniques",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Guided Breathing Techniques for Calm, Sleep and Focus | Calma Blog",
+    title: "Guided Breathing for Sleep & Focus | Calma Blog",
     description:
       "Discover guided breathing techniques for relaxation, sleep and focus, including 4-7-8, box breathing, resonance breathing and more.",
   },

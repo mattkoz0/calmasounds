@@ -3,16 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Why Rain Sounds Are the Ultimate Secret to Better Sleep and Focus | Calma Blog",
+  title: "Rain Sounds for Sleep and Focus | Calma Blog",
   description:
-    "Discover why steady rain sounds are perfect for calming your mind, beating insomnia, and keeping you focused during deep work. Find out the science behind it.",
+    "Discover how steady rain sounds can support sleep, relaxation and focus, and how to use them in a calming audio routine.",
   alternates: {
     canonical: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
   },
   openGraph: {
-    title: "Why Rain Sounds Are the Ultimate Secret to Better Sleep and Focus",
+    title: "Rain Sounds for Sleep and Focus | Calma Blog",
     description:
-      "Discover why steady rain sounds are perfect for calming your mind, beating insomnia, and keeping you focused.",
+      "Discover how steady rain sounds can support sleep, relaxation and focus, and how to use them in a calming audio routine.",
     url: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
     siteName: "Calma",
     locale: "en_US",
