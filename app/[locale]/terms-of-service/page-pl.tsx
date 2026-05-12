@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "Regulamin świadczenia usług | Calma",
   description:
     "Zapoznaj się z regulaminem korzystania z aplikacji Calma, naszymi zobowiązaniami dotyczącymi prywatności oraz zasadami użytkowania.",
+    alternates: {
+    canonical: "https://www.calmasounds.com/terms-of-service",
+  },
   robots: {
     index: true,
     follow: true,

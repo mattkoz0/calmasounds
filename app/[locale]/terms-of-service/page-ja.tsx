@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "利用規約 | Calma",
   description:
     "プライバシーへの取り組みやアプリの利用規則を含む、Calmaの利用規約をお読みください。",
+    alternates: {
+    canonical: "https://www.calmasounds.com/terms-of-service",
+  },
   robots: {
     index: true,
     follow: true,

@@ -4,6 +4,9 @@ export const metadata: Metadata = {
   title: "プライバシーポリシー | Calma",
   description:
     "Calmaがあなたのデータをどのように収集、使用、保護するかを理解するために、プライバシーポリシーをお読みください。",
+    alternates: {
+    canonical: "https://www.calmasounds.com/privacy-policy",
+  },
   robots: {
     index: true,
     follow: true,

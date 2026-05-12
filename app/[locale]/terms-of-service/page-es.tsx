@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Términos de Servicio | Calma",
   description:
     "Lee los términos de servicio para el uso de Calma, incluyendo nuestro compromiso con tu privacidad y las reglas de uso de la aplicación.",
+    alternates: {
+    canonical: "https://www.calmasounds.com/terms-of-service",
+  },
   robots: {
     index: true,
     follow: true,

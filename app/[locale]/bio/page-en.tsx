@@ -49,9 +49,7 @@ export default function BioPage() {
           />
         </a>
 
-        <p className="mt-2 text-center text-sm italic tracking-[0.08em] text-white/60">
-          Your calm, by design
-        </p>
+        <h1 className="mt-2 text-center text-sm italic tracking-[0.08em] text-white/60">\n          Calma sleep sounds app — official links\n        </h1>
 
         <p className="mt-4 max-w-sm text-center leading-7 text-white/70">
           Sleep, relax and focus with personalized soundscapes and calming daily
