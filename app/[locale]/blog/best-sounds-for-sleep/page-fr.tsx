@@ -130,6 +130,18 @@ export default function BestSoundsForSleepPage() {
           ou un mélange plus personnalisé.
         </p>
       </ArticleSection>
+    
+      <ArticleSection title="Bons Sons pour Dormir : Un Guide Rapide">
+        
+      <p className="mt-4 leading-8 text-white/70">
+        Si vous vous demandez encore quels sont les <strong>bons sons pour dormir</strong>, cela dépend de vos préférences. 
+        Si vous vivez dans une ville bruyante, le bruit blanc est excellent pour bloquer les interruptions. Si vous préférez une ambiance plus naturelle, 
+        la pluie régulière ou le bruit rose vous aidera à trouver un repos profond. Les <strong>sons pour mieux dormir</strong> sont ceux qui vous 
+        font vous sentir en sécurité et calme.
+      </p>
+    
+      </ArticleSection>
+
     </ArticlePage>
   );
 }

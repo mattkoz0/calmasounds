@@ -229,34 +229,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O que é um aplicativo de sons para zumbido?
+              Existe um aplicativo gratuito de ruído branco para zumbido?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Um aplicativo de sons para zumbido ajuda a criar um som de fundo constante que pode
-              apoiar o sono, relaxamento e um ambiente sonoro mais calmo.
+              Sim, o Calma fornece paisagens sonoras gratuitas, incluindo ruído branco e rosa, frequentemente usados para mascarar o zumbido à noite.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O sons para zumbido pode ajudar com o sono?
+              Qual cor de ruído é melhor para o zumbido?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Muitas pessoas usam o sons para zumbido para tornar a hora de dormir mais calma e reduzir
-              o impacto de sons perturbadores no ambiente.
+              Muitas pessoas acham o ruído branco ou rosa mais eficaz para mascarar o zumbido nos ouvidos. O Calma permite que você teste todas as cores.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O Calma é apenas para sons para zumbido?
+              O mascaramento de som pode ajudar com o zumbido à noite?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Não. O Calma também suporta sons para dormir, paisagens sonoras relaxantes e
-              mixagens de áudio orientadas para foco, para que você possa moldar a experiência de acordo com
-              suas necessidades.
+              Sim. O silêncio pode fazer com que o zumbido pareça mais alto. Criar um som de fundo constante dá ao seu cérebro uma alternativa para focar.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Existe um aplicativo gratuito de ruído branco para zumbido?","acceptedAnswer":{"@type":"Answer","text":"Sim, o Calma fornece paisagens sonoras gratuitas, incluindo ruído branco e rosa, frequentemente usados para mascarar o zumbido à noite."}},{"@type":"Question","name":"Qual cor de ruído é melhor para o zumbido?","acceptedAnswer":{"@type":"Answer","text":"Muitas pessoas acham o ruído branco ou rosa mais eficaz para mascarar o zumbido nos ouvidos. O Calma permite que você teste todas as cores."}},{"@type":"Question","name":"O mascaramento de som pode ajudar com o zumbido à noite?","acceptedAnswer":{"@type":"Answer","text":"Sim. O silêncio pode fazer com que o zumbido pareça mais alto. Criar um som de fundo constante dá ao seu cérebro uma alternativa para focar."}}]}) }}
+          />
         </div>
       </section>
 

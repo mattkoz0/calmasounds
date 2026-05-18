@@ -227,34 +227,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              What is a tinnitus relief sounds app?
+              Is there a free white noise app for tinnitus?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              A tinnitus relief sounds app helps create a steady background sound that can
-              support sleep, relaxation and a calmer sound environment.
+              Yes, Calma provides free soundscapes including white, pink, and brown noise, which are often used by individuals seeking a calming audio environment to mask tinnitus at night.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Can tinnitus relief sounds help with sleep?
+              What color noise is best for tinnitus?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Many people use tinnitus relief sounds to make bedtime feel calmer and reduce
-              the impact of distracting sounds in the environment.
+              Many people find high-frequency white noise or balanced pink noise most effective for masking ringing in the ears. However, personal preference varies, so Calma allows you to test and mix all color noises.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Is Calma only for tinnitus relief sounds?
+              Can sound masking help with tinnitus at night?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              No. Calma also supports sleep sounds, relaxing soundscapes and
-              focus-oriented audio mixes, so you can shape the experience to your
-              needs.
+              Yes. Silence can make tinnitus seem louder. Creating a continuous background layer of ambient sound, like a gentle stream or rain, provides your brain with alternative audio input to focus on.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there a free white noise app for tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Yes, Calma provides free soundscapes including white, pink, and brown noise, which are often used by individuals seeking a calming audio environment to mask tinnitus at night."}},{"@type":"Question","name":"What color noise is best for tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Many people find high-frequency white noise or balanced pink noise most effective for masking ringing in the ears. However, personal preference varies, so Calma allows you to test and mix all color noises."}},{"@type":"Question","name":"Can sound masking help with tinnitus at night?","acceptedAnswer":{"@type":"Answer","text":"Yes. Silence can make tinnitus seem louder. Creating a continuous background layer of ambient sound, like a gentle stream or rain, provides your brain with alternative audio input to focus on."}}]}) }}
+          />
         </div>
       </section>
 

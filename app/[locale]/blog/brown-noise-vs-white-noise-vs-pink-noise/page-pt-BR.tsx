@@ -74,6 +74,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
         { id: "green-noise", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
         { id: "summary", title: "Ruído Marrom vs Branco vs Rosa | Calma" },
+        { id: "comparison-table", title: "Tabela Comparativa: Cores do Ruído" },
+        { id: "faq", title: "Perguntas Frequentes" },
       ]}
       relatedArticles={[
         {
@@ -154,6 +156,95 @@ export default function NoiseColorsPage() {
           Com o <strong>Calma</strong>, você não precisa escolher apenas um. Você pode misturar diferentes camadas de ruído, adicionando texturas da natureza ou sons ambientais para criar uma paisagem sonora verdadeiramente personalizada que funcione para o seu cérebro único.
         </p>
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="Tabela Comparativa: Cores do Ruído">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Cor do Ruído</th>
+                <th className="px-4 py-3 font-semibold">Soa Como</th>
+                <th className="px-4 py-3 font-semibold">Melhor Para</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Ruído Branco</td>
+                <td className="px-4 py-3">Estática, ventilador</td>
+                <td className="px-4 py-3">Mascarar barulhos fortes, sono do bebê</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Ruído Rosa</td>
+                <td className="px-4 py-3">Chuva constante, folhas</td>
+                <td className="px-4 py-3">Sono profundo, foco constante, relaxamento</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Ruído Marrom</td>
+                <td className="px-4 py-3">Trovão distante, chuva forte</td>
+                <td className="px-4 py-3">Foco TDAH, relaxamento profundo, estudo</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Ruído Verde</td>
+                <td className="px-4 py-3">Ambiente de floresta, riacho</td>
+                <td className="px-4 py-3">Alívio do estresse, meditação</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="Perguntas Frequentes">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">O ruído branco ajuda você a dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Sim, o ruído branco ajuda a dormir ao mascarar sons perturbadores e fornecer um ambiente acústico constante.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Qual é a diferença entre ruído branco e ruído rosa?</h3>
+            <p className="mt-2 leading-7 text-white/70">O ruído branco contém todas as frequências e soa agudo. O ruído rosa enfatiza frequências mais baixas e soa mais suave, como chuva.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Ruído marrom vs ruído branco para dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Para muitos, o ruído marrom é melhor para dormir porque seu som profundo e grave é mais suave e menos agressivo que o ruído branco.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "O ruído branco ajuda você a dormir?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim, o ruído branco ajuda a dormir ao mascarar sons perturbadores e fornecer um ambiente acústico constante."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qual é a diferença entre ruído branco e ruído rosa?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O ruído branco contém todas as frequências e soa agudo. O ruído rosa enfatiza frequências mais baixas e soa mais suave, como chuva."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Ruído marrom vs ruído branco para dormir?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Para muitos, o ruído marrom é melhor para dormir porque seu som profundo e grave é mais suave e menos agressivo que o ruído branco."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

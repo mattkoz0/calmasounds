@@ -229,33 +229,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Qu'est-ce qu'une application de sons pour acouphènes ?
+              Existe-t-il une application gratuite de bruit blanc pour les acouphènes ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Elle aide à créer un son de fond régulier qui favorise le sommeil 
-              et un environnement audio apaisant.
+              Oui, Calma propose des paysages sonores gratuits, dont du bruit blanc et rose, souvent utilisés pour masquer les acouphènes la nuit.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Le sons pour acouphènes aide-t-il vraiment à dormir ?
+              Quelle couleur de bruit est la meilleure pour les acouphènes ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, beaucoup de personnes l'utilisent pour calmer le mental et 
-              atténuer les bruits extérieurs perturbateurs.
+              Beaucoup trouvent le bruit blanc ou rose plus efficace pour masquer les bourdonnements. Calma vous permet de tester toutes les couleurs.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Calma ne propose-t-elle que du sons pour acouphènes ?
+              Le masquage sonore peut-il aider avec les acouphènes la nuit ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Non, elle propose également des sons de nature, de relaxation et 
-              de concentration pour répondre à tous vos besoins sonores.
+              Oui. Le silence peut faire paraître les acouphènes plus forts. Un son de fond constant donne à votre cerveau une alternative sur laquelle se concentrer.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Existe-t-il une application gratuite de bruit blanc pour les acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Oui, Calma propose des paysages sonores gratuits, dont du bruit blanc et rose, souvent utilisés pour masquer les acouphènes la nuit."}},{"@type":"Question","name":"Quelle couleur de bruit est la meilleure pour les acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Beaucoup trouvent le bruit blanc ou rose plus efficace pour masquer les bourdonnements. Calma vous permet de tester toutes les couleurs."}},{"@type":"Question","name":"Le masquage sonore peut-il aider avec les acouphènes la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le silence peut faire paraître les acouphènes plus forts. Un son de fond constant donne à votre cerveau une alternative sur laquelle se concentrer."}}]}) }}
+          />
         </div>
       </section>
 

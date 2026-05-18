@@ -73,6 +73,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "브라운 노이즈 (갈색소음)" },
         { id: "green-noise", title: "그린 노이즈 (초록색소음)" },
         { id: "summary", title: "어떤 것을 선택해야 할까요?" },
+        { id: "comparison-table", title: "소음 색상 비교표" },
+        { id: "faq", title: "자주 묻는 질문" },
       ]}
       relatedArticles={[
         {
@@ -153,6 +155,95 @@ export default function NoiseColorsPage() {
           <strong>Calma</strong>와 함께라면 하나만 선택할 필요가 없습니다. 다양한 노이즈 층을 섞고 자연의 질감을 더해 당신의 뇌에 딱 맞는 나만의 사운드스케이프를 만들 수 있습니다.
         </p>
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="소음 색상 비교표">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">소음 색상</th>
+                <th className="px-4 py-3 font-semibold">소리 특징</th>
+                <th className="px-4 py-3 font-semibold">가장 좋은 용도</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">백색 소음</td>
+                <td className="px-4 py-3">TV 잡음, 선풍기 소리</td>
+                <td className="px-4 py-3">큰 소음 차단, 아기 수면</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">핑크 소음</td>
+                <td className="px-4 py-3">일정한 비, 나뭇잎 소리</td>
+                <td className="px-4 py-3">깊은 수면, 집중, 휴식</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">갈색 소음</td>
+                <td className="px-4 py-3">먼 천둥, 폭우</td>
+                <td className="px-4 py-3">ADHD 집중, 깊은 휴식, 공부</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">녹색 소음</td>
+                <td className="px-4 py-3">숲, 잔잔한 개울</td>
+                <td className="px-4 py-3">스트레스 완화, 명상</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="자주 묻는 질문">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">백색 소음이 수면에 도움이 됩니까?</h3>
+            <p className="mt-2 leading-7 text-white/70">네, 백색 소음은 주변 소음을 차단하고 뇌를 이완시키는 일정한 오디오 환경을 제공하여 수면을 돕습니다.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">백색 소음과 핑크 소음의 차이는 무엇입니까?</h3>
+            <p className="mt-2 leading-7 text-white/70">백색 소음은 모든 주파수를 포함하여 날카롭게 들립니다. 핑크 소음은 낮은 주파수를 강조하여 비처럼 더 부드럽게 들립니다.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">수면에는 갈색 소음과 백색 소음 중 어느 것이 더 좋습니까?</h3>
+            <p className="mt-2 leading-7 text-white/70">많은 사람들에게 갈색 소음이 수면에 더 좋습니다. 깊고 낮은 주파수의 소리가 백색 소음보다 더 편안하고 귀에 덜 거슬리기 때문입니다.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "백색 소음이 수면에 도움이 됩니까?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "네, 백색 소음은 주변 소음을 차단하고 뇌를 이완시키는 일정한 오디오 환경을 제공하여 수면을 돕습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "백색 소음과 핑크 소음의 차이는 무엇입니까?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "백색 소음은 모든 주파수를 포함하여 날카롭게 들립니다. 핑크 소음은 낮은 주파수를 강조하여 비처럼 더 부드럽게 들립니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "수면에는 갈색 소음과 백색 소음 중 어느 것이 더 좋습니까?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "많은 사람들에게 갈색 소음이 수면에 더 좋습니다. 깊고 낮은 주파수의 소리가 백색 소음보다 더 편안하고 귀에 덜 거슬리기 때문입니다."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

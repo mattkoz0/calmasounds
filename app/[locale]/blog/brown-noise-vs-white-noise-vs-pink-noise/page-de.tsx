@@ -74,6 +74,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
         { id: "green-noise", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
         { id: "summary", title: "Braunes vs Weißes vs Rosa Rauschen | Calma" },
+        { id: "comparison-table", title: "Vergleichstabelle: Farben des Rauschens" },
+        { id: "faq", title: "Häufig gestellte Fragen" },
       ]}
       relatedArticles={[
         {
@@ -154,6 +156,95 @@ export default function NoiseColorsPage() {
           Mit <strong>Calma</strong> musst du dich nicht für eines entscheiden. Du kannst verschiedene Rauschfarben mischen und mit Naturtexturen oder atmosphärischen Klängen ergänzen, um einen wirklich persönlichen Mix zu erstellen.
         </p>
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="Vergleichstabelle: Farben des Rauschens">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Rauschfarbe</th>
+                <th className="px-4 py-3 font-semibold">Klingt wie</th>
+                <th className="px-4 py-3 font-semibold">Am besten für</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Weißes Rauschen</td>
+                <td className="px-4 py-3">Statisches Rauschen, Ventilator</td>
+                <td className="px-4 py-3">Ausblenden lauter Geräusche, Babyschlaf</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Rosa Rauschen</td>
+                <td className="px-4 py-3">Stetiger Regen, Blätterrauschen</td>
+                <td className="px-4 py-3">Tiefschlaf, Konzentration, Entspannung</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Braunes Rauschen</td>
+                <td className="px-4 py-3">Ferner Donner, starker Regen</td>
+                <td className="px-4 py-3">ADHS-Fokus, tiefe Entspannung, Lernen</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Grünes Rauschen</td>
+                <td className="px-4 py-3">Wald, sanfter Bach</td>
+                <td className="px-4 py-3">Stressabbau, Meditation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="Häufig gestellte Fragen">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Hilft weißes Rauschen beim Schlafen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Ja, weißes Rauschen hilft beim Schlafen, indem es störende Hintergrundgeräusche übertönt und eine konstante akustische Umgebung schafft.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Was ist der Unterschied zwischen weißem und rosa Rauschen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Weißes Rauschen enthält alle Frequenzen und klingt scharf. Rosa Rauschen betont tiefere Frequenzen und klingt weicher, wie Regen.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Braunes oder weißes Rauschen zum Schlafen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Für viele ist braunes Rauschen besser zum Schlafen, da das tiefe Grollen beruhigender und weniger scharf ist als weißes Rauschen.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Hilft weißes Rauschen beim Schlafen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja, weißes Rauschen hilft beim Schlafen, indem es störende Hintergrundgeräusche übertönt und eine konstante akustische Umgebung schafft."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Was ist der Unterschied zwischen weißem und rosa Rauschen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Weißes Rauschen enthält alle Frequenzen und klingt scharf. Rosa Rauschen betont tiefere Frequenzen und klingt weicher, wie Regen."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Braunes oder weißes Rauschen zum Schlafen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Für viele ist braunes Rauschen besser zum Schlafen, da das tiefe Grollen beruhigender und weniger scharf ist als weißes Rauschen."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

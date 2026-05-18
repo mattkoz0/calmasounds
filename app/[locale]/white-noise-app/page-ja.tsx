@@ -222,30 +222,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ホワイトノイズアプリとは何ですか？
+              最高の無料ホワイトノイズアプリは何ですか？
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              ホワイトノイズアプリは、睡眠、リラクゼーション、そしてより穏やかな音環境をサポートできる一定の背景音を作成するのに役立ちます。
+              Calmaは、ホワイトノイズと自然の音をミックスするためのシンプルで気晴らしのない環境を提供します。睡眠を妨げる邪魔な広告はありません。
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
               ホワイトノイズは睡眠に役立ちますか？
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              多くの人がホワイトノイズを使用して、就寝時をより穏やかに感じ、環境内の気を散らす音の影響を軽減しています。
+              はい。ホワイトノイズは、交通音や犬の吠え声などの突然の背景音をマスキングする音の毛布として機能し、脳をリラックスさせます。
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Calmaはホワイトノイズ専用ですか？
+              勉強のためにホワイトノイズをどのように使用しますか？
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              いいえ。Calmaは睡眠音、リラックスできるサウンドスケープ、集中指向のオーディオミックスもサポートしているため、ニーズに合わせて体験を形作ることができます。
+              勉強には、ホワイトまたはブラウンノイズのベースに小雨をミックスすることをお勧めします。これにより、集中力を維持できます。
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"最高の無料ホワイトノイズアプリは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Calmaは、ホワイトノイズと自然の音をミックスするためのシンプルで気晴らしのない環境を提供します。睡眠を妨げる邪魔な広告はありません。"}},{"@type":"Question","name":"ホワイトノイズは睡眠に役立ちますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ホワイトノイズは、交通音や犬の吠え声などの突然の背景音をマスキングする音の毛布として機能し、脳をリラックスさせます。"}},{"@type":"Question","name":"勉強のためにホワイトノイズをどのように使用しますか？","acceptedAnswer":{"@type":"Answer","text":"勉強には、ホワイトまたはブラウンノイズのベースに小雨をミックスすることをお勧めします。これにより、集中力を維持できます。"}}]}) }}
+          />
         </div>
       </section>
 

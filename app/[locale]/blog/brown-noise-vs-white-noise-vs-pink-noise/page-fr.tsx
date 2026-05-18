@@ -73,6 +73,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "Bruit Brun vs Blanc vs Rose | Calma" },
         { id: "green-noise", title: "Bruit Brun vs Blanc vs Rose | Calma" },
         { id: "summary", title: "Bruit Brun vs Blanc vs Rose | Calma" },
+        { id: "comparison-table", title: "Tableau Comparatif : Couleurs du Bruit" },
+        { id: "faq", title: "Foire Aux Questions" },
       ]}
       relatedArticles={[
         {
@@ -153,6 +155,95 @@ export default function NoiseColorsPage() {
           Avec <strong>Calma</strong>, vous pouvez mélanger différentes couches de bruit pour créer un paysage sonore vraiment personnalisé qui fonctionne pour votre cerveau unique.
         </p>
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="Tableau Comparatif : Couleurs du Bruit">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Couleur</th>
+                <th className="px-4 py-3 font-semibold">Sonne Comme</th>
+                <th className="px-4 py-3 font-semibold">Idéal Pour</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Bruit Blanc</td>
+                <td className="px-4 py-3">Statique, ventilateur</td>
+                <td className="px-4 py-3">Masquer les bruits, sommeil de bébé</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Bruit Rose</td>
+                <td className="px-4 py-3">Pluie régulière, feuilles</td>
+                <td className="px-4 py-3">Sommeil profond, concentration, détente</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Bruit Brun</td>
+                <td className="px-4 py-3">Tonnerre lointain, pluie forte</td>
+                <td className="px-4 py-3">Concentration TDAH, détente profonde, étude</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Bruit Vert</td>
+                <td className="px-4 py-3">Forêt, ruisseau doux</td>
+                <td className="px-4 py-3">Soulagement du stress, méditation</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="Foire Aux Questions">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Le bruit blanc aide-t-il à dormir ?</h3>
+            <p className="mt-2 leading-7 text-white/70">Oui, le bruit blanc aide à dormir en masquant les sons gênants et en offrant un environnement acoustique constant.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Quelle est la différence entre le bruit blanc et le bruit rose ?</h3>
+            <p className="mt-2 leading-7 text-white/70">Le bruit blanc contient toutes les fréquences et semble aigu. Le bruit rose accentue les basses fréquences et semble plus doux.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Bruit brun ou bruit blanc pour dormir ?</h3>
+            <p className="mt-2 leading-7 text-white/70">Pour beaucoup, le bruit brun est meilleur pour dormir, car son grondement profond est plus apaisant et moins dur que le bruit blanc.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Le bruit blanc aide-t-il à dormir ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Oui, le bruit blanc aide à dormir en masquant les sons gênants et en offrant un environnement acoustique constant."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quelle est la différence entre le bruit blanc et le bruit rose ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Le bruit blanc contient toutes les fréquences et semble aigu. Le bruit rose accentue les basses fréquences et semble plus doux."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Bruit brun ou bruit blanc pour dormir ?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pour beaucoup, le bruit brun est meilleur pour dormir, car son grondement profond est plus apaisant et moins dur que le bruit blanc."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

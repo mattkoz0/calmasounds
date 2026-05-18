@@ -139,6 +139,18 @@ export default function BestSoundsForSleepPage() {
           more personalized mix.
         </p>
       </ArticleSection>
+    
+      <ArticleSection title="Good Sounds to Sleep To: A Quick Guide">
+        
+      <p className="mt-4 leading-8 text-white/70">
+        If you are still wondering what are the <strong>good sounds to sleep to</strong>, it comes down to personal preference and your environment. 
+        If you live in a noisy city, white noise is excellent for blocking sudden interruptions. If you prefer a more natural, relaxing vibe, 
+        steady rain or pink noise will help you find deep rest. Ultimately, the <strong>sounds to sleep better</strong> are the ones that make 
+        you feel secure and calm, allowing your nervous system to fully unwind before bed.
+      </p>
+    
+      </ArticleSection>
+
     </ArticlePage>
   );
 }

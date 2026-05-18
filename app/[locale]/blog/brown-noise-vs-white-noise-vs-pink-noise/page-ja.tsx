@@ -74,6 +74,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "ブラウンノイズ" },
         { id: "green-noise", title: "グリーンノイズ" },
         { id: "summary", title: "どれを選ぶべきですか？" },
+        { id: "comparison-table", title: "ノイズの色の比較表" },
+        { id: "faq", title: "よくある質問" },
       ]}
       relatedArticles={[
         {
@@ -154,6 +156,95 @@ export default function NoiseColorsPage() {
           <strong>Calma</strong>を使用すると、1つだけを選ぶ必要はありません。自然のテクスチャや環境の周囲音を追加して、ノイズの異なるレイヤーを組み合わせることで、独自の脳に合った真にパーソナライズされたサウンドスケープを作成できます。
         </p>
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="ノイズの色の比較表">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">ノイズの色</th>
+                <th className="px-4 py-3 font-semibold">聞こえ方</th>
+                <th className="px-4 py-3 font-semibold">最適</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">ホワイトノイズ</td>
+                <td className="px-4 py-3">静電気、扇風機</td>
+                <td className="px-4 py-3">騒音のマスキング、赤ちゃんの睡眠</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">ピンクノイズ</td>
+                <td className="px-4 py-3">安定した雨、葉の音</td>
+                <td className="px-4 py-3">深い睡眠、集中、リラックス</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">ブラウンノイズ</td>
+                <td className="px-4 py-3">遠くの雷、大雨</td>
+                <td className="px-4 py-3">ADHDの集中、深いリラクゼーション、勉強</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">グリーンノイズ</td>
+                <td className="px-4 py-3">森の環境音、小川</td>
+                <td className="px-4 py-3">ストレス緩和、瞑想</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="よくある質問">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">ホワイトノイズは睡眠に役立ちますか？</h3>
+            <p className="mt-2 leading-7 text-white/70">はい。ホワイトノイズは、周囲の騒音をマスキングし、脳をリラックスさせる一定の音環境を提供することで睡眠を助けます。</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">ホワイトノイズとピンクノイズの違いは何ですか？</h3>
+            <p className="mt-2 leading-7 text-white/70">ホワイトノイズはすべての周波数を均等に含み、鋭く聞こえます。ピンクノイズは低い周波数を強調し、雨のように柔らかく聞こえます。</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">睡眠にはブラウンノイズとホワイトノイズのどちらが良いですか？</h3>
+            <p className="mt-2 leading-7 text-white/70">多くの人にとって、ブラウンノイズの方が睡眠に適しています。低周波の深い音は、ホワイトノイズよりも心地よく、耳に負担がかかりません。</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "ホワイトノイズは睡眠に役立ちますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "はい。ホワイトノイズは、周囲の騒音をマスキングし、脳をリラックスさせる一定の音環境を提供することで睡眠を助けます。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "ホワイトノイズとピンクノイズの違いは何ですか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ホワイトノイズはすべての周波数を均等に含み、鋭く聞こえます。ピンクノイズは低い周波数を強調し、雨のように柔らかく聞こえます。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "睡眠にはブラウンノイズとホワイトノイズのどちらが良いですか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "多くの人にとって、ブラウンノイズの方が睡眠に適しています。低周波の深い音は、ホワイトノイズよりも心地よく、耳に負担がかかりません。"
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

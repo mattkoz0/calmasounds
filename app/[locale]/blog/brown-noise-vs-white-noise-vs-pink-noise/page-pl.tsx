@@ -74,6 +74,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "Szum Brązowy" },
         { id: "green-noise", title: "Szum Zielony" },
         { id: "summary", title: "Który wybrać?" },
+        { id: "comparison-table", title: "Tabela Porównawcza: Kolory Szumu" },
+        { id: "faq", title: "Często Zadawane Pytania (FAQ)" },
       ]}
       relatedArticles={[
         {
@@ -154,6 +156,95 @@ export default function NoiseColorsPage() {
           Dzięki aplikacji <strong>Calma</strong> nie musisz wybierać tylko jednego. Możesz mieszać różne warstwy szumu, dodając tekstury natury lub atmosferyczne dźwięki ambient, aby stworzyć prawdziwie spersonalizowany pejzaż dźwiękowy, który działa na Twój umysł.
         </p>
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="Tabela Porównawcza: Kolory Szumu">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Kolor Szumu</th>
+                <th className="px-4 py-3 font-semibold">Brzmi Jak</th>
+                <th className="px-4 py-3 font-semibold">Najlepsze Na</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Biały Szum</td>
+                <td className="px-4 py-3">Szum radia, wentylator</td>
+                <td className="px-4 py-3">Maskowanie głośnych dźwięków, biuro, sen niemowląt</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Różowy Szum</td>
+                <td className="px-4 py-3">Stały deszcz, szum liści</td>
+                <td className="px-4 py-3">Głęboki sen, koncentracja, relaks</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Brązowy Szum</td>
+                <td className="px-4 py-3">Odległy grzmot, ciężki deszcz</td>
+                <td className="px-4 py-3">Skupienie (ADHD), głęboki relaks, nauka</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Zielony Szum</td>
+                <td className="px-4 py-3">Las, łagodny strumyk</td>
+                <td className="px-4 py-3">Ulga w stresie, medytacja, odpoczynek</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="Często Zadawane Pytania (FAQ)">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Czy biały szum pomaga zasnąć?</h3>
+            <p className="mt-2 leading-7 text-white/70">Tak, biały szum pomaga zasnąć poprzez maskowanie nagłych dźwięków (jak ruch uliczny czy sąsiedzi) i tworzenie ciągłego tła, które uspokaja mózg.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Jaka jest różnica między białym a różowym szumem?</h3>
+            <p className="mt-2 leading-7 text-white/70">Biały szum ma równą intensywność na wszystkich częstotliwościach i brzmi ostro. Różowy szum kładzie nacisk na niższe tony, brzmiąc łagodniej, przypominając deszcz.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Brązowy czy biały szum do snu?</h3>
+            <p className="mt-2 leading-7 text-white/70">Dla wielu osób brązowy szum jest lepszy do snu, ponieważ jego głębokie, niskie brzmienie jest bardziej kojące i mniej męczące dla uszu niż ostry biały szum.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Czy biały szum pomaga zasnąć?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tak, biały szum pomaga zasnąć poprzez maskowanie nagłych dźwięków (jak ruch uliczny czy sąsiedzi) i tworzenie ciągłego tła, które uspokaja mózg."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Jaka jest różnica między białym a różowym szumem?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Biały szum ma równą intensywność na wszystkich częstotliwościach i brzmi ostro. Różowy szum kładzie nacisk na niższe tony, brzmiąc łagodniej, przypominając deszcz."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Brązowy czy biały szum do snu?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Dla wielu osób brązowy szum jest lepszy do snu, ponieważ jego głębokie, niskie brzmienie jest bardziej kojące i mniej męczące dla uszu niż ostry biały szum."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

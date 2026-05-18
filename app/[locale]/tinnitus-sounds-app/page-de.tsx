@@ -228,33 +228,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Was ist eine Tinnitus-Linderung App?
+              Gibt es eine kostenlose Tinnitus-App für weißes Rauschen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sie hilft dir, ein gleichmäßiges Hintergrundgeräusch abzuspielen, das 
-              den Schlaf, die Entspannung und eine ruhigere Audio-Umgebung unterstützt.
+              Ja, Calma bietet kostenlose Klanglandschaften, einschließlich weißem und rosa Rauschen, die oft verwendet werden, um Tinnitus nachts zu maskieren.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Hilft Tinnitus-Sounds beim Schlafen?
+              Welche Rauschfarbe ist am besten bei Tinnitus?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Viele Menschen nutzen es, um die Schlafenszeit ruhiger zu gestalten und 
-              Ablenkungen durch plötzliche Geräusche zu minimieren.
+              Viele Menschen finden weißes oder rosa Rauschen am effektivsten, um das Klingeln in den Ohren zu übertönen. Mit Calma können Sie alle Farben testen.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Gibt es in Calma nur Tinnitus-Sounds?
+              Hilft Klangmaskierung bei Tinnitus in der Nacht?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Nein. Calma unterstützt auch Naturklänge, Ambient-Soundscapes und Fokus-Mixe, 
-              sodass du das Erlebnis ganz nach deinen Wünschen gestalten kannst.
+              Ja. Stille kann Tinnitus lauter erscheinen lassen. Ein konstanter Hintergrundklang gibt Ihrem Gehirn eine Alternative, auf die es sich konzentrieren kann.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Gibt es eine kostenlose Tinnitus-App für weißes Rauschen?","acceptedAnswer":{"@type":"Answer","text":"Ja, Calma bietet kostenlose Klanglandschaften, einschließlich weißem und rosa Rauschen, die oft verwendet werden, um Tinnitus nachts zu maskieren."}},{"@type":"Question","name":"Welche Rauschfarbe ist am besten bei Tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Viele Menschen finden weißes oder rosa Rauschen am effektivsten, um das Klingeln in den Ohren zu übertönen. Mit Calma können Sie alle Farben testen."}},{"@type":"Question","name":"Hilft Klangmaskierung bei Tinnitus in der Nacht?","acceptedAnswer":{"@type":"Answer","text":"Ja. Stille kann Tinnitus lauter erscheinen lassen. Ein konstanter Hintergrundklang gibt Ihrem Gehirn eine Alternative, auf die es sich konzentrieren kann."}}]}) }}
+          />
         </div>
       </section>
 

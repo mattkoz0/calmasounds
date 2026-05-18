@@ -227,34 +227,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Qué es una app de ruido blanco?
+              ¿Cuál es la mejor aplicación gratuita de ruido blanco?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Una aplicación de ruido blanco ayuda a reproducir sonidos que son suaves, difusos
-              y relajantes, ayudando a enmascarar otros ruidos más molestos en tu entorno.
+              Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza, sin anuncios intrusivos.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Puede el ruido blanco ayudar a dormir?
+              ¿El ruido blanco ayuda a dormir?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Mucha gente usa diariamente el ruido blanco para sentir un ambiente de mayor calma 
-              a la hora de acostarse y poder relajarse al reducir ruidos imprevistos de la ciudad o del tráfico.
+              Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Calma es únicamente sobre ruido blanco?
+              ¿Cómo usar ruido blanco para estudiar?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              No. Calma es un reproductor increíble de ruido blanco, rosa, verde y marrón, pero
-              también incluye un catálogo extensivo de sonidos para relajarte o concentrarte 
-              en las tareas que tú elijas.
+              Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la mejor aplicación gratuita de ruido blanco?","acceptedAnswer":{"@type":"Answer","text":"Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza, sin anuncios intrusivos."}},{"@type":"Question","name":"¿El ruido blanco ayuda a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse."}},{"@type":"Question","name":"¿Cómo usar ruido blanco para estudiar?","acceptedAnswer":{"@type":"Answer","text":"Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración."}}]}) }}
+          />
         </div>
       </section>
 

@@ -225,33 +225,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              백색소음 외에 다른 색깔의 노이즈는 무엇인가요?
+              최고의 무료 백색 소음 앱은 무엇입니까?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              주파수 대역에 따라 다르게 들리는 소리로, 핑크 노이즈는 더 부드럽고 
-              브라운 노이즈는 더욱 낮고 깊은 울림을 제공하여 취향에 따라 선택할 수 있습니다.
+              Calma는 방해되는 광고 없이 백색 소음과 자연의 소리를 믹스할 수 있는 간단하고 차분한 환경을 제공합니다.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              집중할 때 가장 좋은 노이즈는 무엇인가요?
+              백색 소음이 수면에 도움이 됩니까?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              보통은 화이트 노이즈가 선호되지만, 낮은 울림을 좋아하는 분들은 
-              브라운 노이즈를 배경으로 들을 때 몰입도가 더 높아지기도 합니다.
+              네. 백색 소음은 교통 소음이나 개 짖는 소리 같은 갑작스러운 배경 소음을 차단하는 오디오 담요 역할을 하여 뇌가 이완되도록 돕습니다.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Calma 앱에서 볼륨을 직접 조절할 수 있나요?
+              공부할 때 백색 소음을 어떻게 사용합니까?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              네. Calma의 강력한 믹서 기능을 통해 각 노이즈와 다른 자연 소리의 
-              볼륨 비율을 1% 단위로 세밀하게 믹스할 수 있습니다.
+              공부할 때는 백색 또는 갈색 소음의 기본 설정에 가벼운 비 소리를 섞는 것이 좋습니다. 이는 집중력을 유지하는 데 도움이 됩니다.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"최고의 무료 백색 소음 앱은 무엇입니까?","acceptedAnswer":{"@type":"Answer","text":"Calma는 방해되는 광고 없이 백색 소음과 자연의 소리를 믹스할 수 있는 간단하고 차분한 환경을 제공합니다."}},{"@type":"Question","name":"백색 소음이 수면에 도움이 됩니까?","acceptedAnswer":{"@type":"Answer","text":"네. 백색 소음은 교통 소음이나 개 짖는 소리 같은 갑작스러운 배경 소음을 차단하는 오디오 담요 역할을 하여 뇌가 이완되도록 돕습니다."}},{"@type":"Question","name":"공부할 때 백색 소음을 어떻게 사용합니까?","acceptedAnswer":{"@type":"Answer","text":"공부할 때는 백색 또는 갈색 소음의 기본 설정에 가벼운 비 소리를 섞는 것이 좋습니다. 이는 집중력을 유지하는 데 도움이 됩니다."}}]}) }}
+          />
         </div>
       </section>
 

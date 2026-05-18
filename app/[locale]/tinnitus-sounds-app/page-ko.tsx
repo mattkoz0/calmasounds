@@ -225,33 +225,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              백색소음 외에 다른 색깔의 노이즈는 무엇인가요?
+              이명을 위한 무료 백색 소음 앱이 있습니까?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              주파수 대역에 따라 다르게 들리는 소리로, 핑크 노이즈는 더 부드럽고 
-              브라운 노이즈는 더욱 낮고 깊은 울림을 제공하여 취향에 따라 선택할 수 있습니다.
+              네, Calma는 밤에 이명을 가리기 위해 차분한 오디오 환경을 찾는 사람들이 자주 사용하는 백색, 핑크 소음을 포함한 무료 소리를 제공합니다.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              집중할 때 가장 좋은 노이즈는 무엇인가요?
+              이명에는 어떤 색상의 소음이 가장 좋습니까?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              보통은 화이트 노이즈가 선호되지만, 낮은 울림을 좋아하는 분들은 
-              브라운 노이즈를 배경으로 들을 때 몰입도가 더 높아지기도 합니다.
+              많은 사람들이 귀 울림을 차단하는 데 백색 소음이나 핑크 소음이 가장 효과적이라고 생각합니다. Calma를 사용하면 모든 색상을 테스트할 수 있습니다.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Calma 앱에서 볼륨을 직접 조절할 수 있나요?
+              사운드 마스킹이 밤에 이명에 도움이 될 수 있습니까?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              네. Calma의 강력한 믹서 기능을 통해 각 노이즈와 다른 자연 소리의 
-              볼륨 비율을 1% 단위로 세밀하게 믹스할 수 있습니다.
+              네. 침묵은 이명을 더 크게 느끼게 할 수 있습니다. 비와 같은 일정한 배경 소음을 만들면 뇌가 집중할 수 있는 대안 오디오가 제공됩니다.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"이명을 위한 무료 백색 소음 앱이 있습니까?","acceptedAnswer":{"@type":"Answer","text":"네, Calma는 밤에 이명을 가리기 위해 차분한 오디오 환경을 찾는 사람들이 자주 사용하는 백색, 핑크 소음을 포함한 무료 소리를 제공합니다."}},{"@type":"Question","name":"이명에는 어떤 색상의 소음이 가장 좋습니까?","acceptedAnswer":{"@type":"Answer","text":"많은 사람들이 귀 울림을 차단하는 데 백색 소음이나 핑크 소음이 가장 효과적이라고 생각합니다. Calma를 사용하면 모든 색상을 테스트할 수 있습니다."}},{"@type":"Question","name":"사운드 마스킹이 밤에 이명에 도움이 될 수 있습니까?","acceptedAnswer":{"@type":"Answer","text":"네. 침묵은 이명을 더 크게 느끼게 할 수 있습니다. 비와 같은 일정한 배경 소음을 만들면 뇌가 집중할 수 있는 대안 오디오가 제공됩니다."}}]}) }}
+          />
         </div>
       </section>
 

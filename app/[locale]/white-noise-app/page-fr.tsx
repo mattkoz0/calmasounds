@@ -229,33 +229,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Qu'est-ce qu'une application de bruit blanc ?
+              Quelle est la meilleure application gratuite de bruit blanc ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Elle aide à créer un son de fond régulier qui favorise le sommeil 
-              et un environnement audio apaisant.
+              Calma offre un environnement simple pour mélanger le bruit blanc avec des sons de la nature, sans publicités intrusives qui vous réveillent.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Le bruit blanc aide-t-il vraiment à dormir ?
+              Le bruit blanc aide-t-il à dormir ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, beaucoup de personnes l'utilisent pour calmer le mental et 
-              atténuer les bruits extérieurs perturbateurs.
+              Oui. Le bruit blanc agit comme une couverture acoustique qui masque les bruits de fond soudains, aidant votre cerveau à se détendre.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Calma ne propose-t-elle que du bruit blanc ?
+              Comment utiliser le bruit blanc pour étudier ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Non, elle propose également des sons de nature, de relaxation et 
-              de concentration pour répondre à tous vos besoins sonores.
+              Pour étudier, nous recommandons une base de bruit blanc ou brun, mélangée à une pluie légère. Cela aide à maintenir la concentration.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quelle est la meilleure application gratuite de bruit blanc ?","acceptedAnswer":{"@type":"Answer","text":"Calma offre un environnement simple pour mélanger le bruit blanc avec des sons de la nature, sans publicités intrusives qui vous réveillent."}},{"@type":"Question","name":"Le bruit blanc aide-t-il à dormir ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le bruit blanc agit comme une couverture acoustique qui masque les bruits de fond soudains, aidant votre cerveau à se détendre."}},{"@type":"Question","name":"Comment utiliser le bruit blanc pour étudier ?","acceptedAnswer":{"@type":"Answer","text":"Pour étudier, nous recommandons une base de bruit blanc ou brun, mélangée à une pluie légère. Cela aide à maintenir la concentration."}}]}) }}
+          />
         </div>
       </section>
 

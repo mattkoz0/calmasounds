@@ -74,6 +74,8 @@ export default function NoiseColorsPage() {
         { id: "brown-noise", title: "Brown Noise" },
         { id: "green-noise", title: "Green Noise" },
         { id: "summary", title: "Which should you choose?" },
+        { id: "comparison-table", title: "Comparison Table: Colors of Noise" },
+        { id: "faq", title: "Frequently Asked Questions" },
       ]}
       relatedArticles={[
         {
@@ -193,6 +195,95 @@ export default function NoiseColorsPage() {
           }}
         />
       </ArticleSection>
+    
+      <ArticleSection id="comparison-table" title="Comparison Table: Colors of Noise">
+        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-white/10 text-white">
+              <tr>
+                <th className="px-4 py-3 font-semibold">Noise Color</th>
+                <th className="px-4 py-3 font-semibold">Sounds Like</th>
+                <th className="px-4 py-3 font-semibold">Best For</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/10">
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">White Noise</td>
+                <td className="px-4 py-3">Static, TV hiss, humming fan</td>
+                <td className="px-4 py-3">Masking loud sudden noises, office background, baby sleep</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Pink Noise</td>
+                <td className="px-4 py-3">Steady rain, rustling leaves</td>
+                <td className="px-4 py-3">Deep sleep, steady focus, relaxing atmosphere</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Brown Noise</td>
+                <td className="px-4 py-3">Distant thunder, low roar, heavy rain</td>
+                <td className="px-4 py-3">ADHD focus, deep relaxation, reading, studying</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Green Noise</td>
+                <td className="px-4 py-3">Forest ambience, gentle stream</td>
+                <td className="px-4 py-3">Anxiety relief, meditation, nature lovers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="faq" title="Frequently Asked Questions">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Does white noise help you sleep?</h3>
+            <p className="mt-2 leading-7 text-white/70">Yes, white noise helps you sleep by masking disruptive background sounds (like traffic or neighbors) and providing a constant acoustic environment that signals your brain to relax.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">What is the difference between white noise and pink noise?</h3>
+            <p className="mt-2 leading-7 text-white/70">White noise contains all frequencies at equal intensity, sounding like sharp static. Pink noise emphasizes lower frequencies, making it sound deeper and softer, like steady rain.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Brown noise vs white noise for sleep: which is better?</h3>
+            <p className="mt-2 leading-7 text-white/70">For many, brown noise is better for sleep because its deep, low-frequency rumble is more soothing and less harsh than the high-pitched static of white noise.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Does white noise help you sleep?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, white noise helps you sleep by masking disruptive background sounds (like traffic or neighbors) and providing a constant acoustic environment that signals your brain to relax."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between white noise and pink noise?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "White noise contains all frequencies at equal intensity, sounding like sharp static. Pink noise emphasizes lower frequencies, making it sound deeper and softer, like steady rain."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Brown noise vs white noise for sleep: which is better?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "For many, brown noise is better for sleep because its deep, low-frequency rumble is more soothing and less harsh than the high-pitched static of white noise."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }

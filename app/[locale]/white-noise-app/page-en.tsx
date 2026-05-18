@@ -229,34 +229,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              What is a white noise app?
+              What is the best free white noise app?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              A white noise app helps create a steady background sound that can
-              support sleep, relaxation and a calmer sound environment.
+              Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Can white noise help with sleep?
+              Does white noise help you sleep?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Many people use white noise to make bedtime feel calmer and reduce
-              the impact of distracting sounds in the environment.
+              Yes. White noise acts as an acoustic blanket that masks sudden background noises like traffic or dogs barking, helping your brain relax and stay in deep sleep.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Is Calma only for white noise?
+              How to use a white noise app for studying?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              No. Calma also supports sleep sounds, relaxing soundscapes and
-              focus-oriented audio mixes, so you can shape the experience to your
-              needs.
+              For studying, we recommend setting a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best free white noise app?","acceptedAnswer":{"@type":"Answer","text":"Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up."}},{"@type":"Question","name":"Does white noise help you sleep?","acceptedAnswer":{"@type":"Answer","text":"Yes. White noise acts as an acoustic blanket that masks sudden background noises like traffic or dogs barking, helping your brain relax and stay in deep sleep."}},{"@type":"Question","name":"How to use a white noise app for studying?","acceptedAnswer":{"@type":"Answer","text":"For studying, we recommend setting a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD."}}]}) }}
+          />
         </div>
       </section>
 

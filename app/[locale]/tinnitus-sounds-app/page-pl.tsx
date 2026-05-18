@@ -229,33 +229,32 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Czym jest aplikacja z białym szumem?
+              Czy istnieje darmowa aplikacja na szumy uszne (tinnitus)?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              To aplikacja pomagająca stworzyć stały dźwięk tła, który wspiera sen, 
-              relaksację i bardziej ciche środowisko akustyczne.
+              Tak, Calma oferuje darmowe pejzaże dźwiękowe, w tym biały i różowy szum, które są często używane do tworzenia kojącego tła pomagającego zasnąć przy szumach usznych.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Czy dźwięki na szumy uszne pomaga w spaniu?
+              Jaki kolor szumu jest najlepszy na szumy uszne?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Wiele osób używa białego szumu, aby wyciszyć się przed snem i zredukować 
-              wpływ rozpraszających dźwięków z otoczenia.
+              Wiele osób uważa, że biały lub różowy szum najlepiej maskuje dzwonienie w uszach. Calma pozwala przetestować i zmiksować różne kolory szumu.
             </p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Czy Calma oferuje tylko dźwięki na szumy uszne?
+              Czy maskowanie dźwiękiem pomaga zasnąć z tinnitusem?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Nie. Calma wspiera także dźwięki natury, relaksujące pejzaże dźwiękowe i miksy 
-              do koncentracji, dzięki czemu możesz dostosować aplikację do swoich potrzeb.
+              Tak. Kompletna cisza sprawia, że szumy wydają się głośniejsze. Stałe tło dźwiękowe, jak deszcz czy szum wiatru, daje mózgowi alternatywny dźwięk, na którym może się skupić.
             </p>
           </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Czy istnieje darmowa aplikacja na szumy uszne (tinnitus)?","acceptedAnswer":{"@type":"Answer","text":"Tak, Calma oferuje darmowe pejzaże dźwiękowe, w tym biały i różowy szum, które są często używane do tworzenia kojącego tła pomagającego zasnąć przy szumach usznych."}},{"@type":"Question","name":"Jaki kolor szumu jest najlepszy na szumy uszne?","acceptedAnswer":{"@type":"Answer","text":"Wiele osób uważa, że biały lub różowy szum najlepiej maskuje dzwonienie w uszach. Calma pozwala przetestować i zmiksować różne kolory szumu."}},{"@type":"Question","name":"Czy maskowanie dźwiękiem pomaga zasnąć z tinnitusem?","acceptedAnswer":{"@type":"Answer","text":"Tak. Kompletna cisza sprawia, że szumy wydają się głośniejsze. Stałe tło dźwiękowe, jak deszcz czy szum wiatru, daje mózgowi alternatywny dźwięk, na którym może się skupić."}}]}) }}
+          />
         </div>
       </section>
 
