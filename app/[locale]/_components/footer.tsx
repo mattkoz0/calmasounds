@@ -21,6 +21,7 @@ export default function Footer() {
 
   const guideLinks = [
     { name: t("rainVsWhiteNoise"), href: "/blog/rain-sounds-vs-white-noise" },
+    { name: t("whiteNoiseForBabies"), href: "/blog/white-noise-for-babies" },
     { name: t("bestSoundsForSleep"), href: "/blog/best-sounds-for-sleep" },
     { name: t("brownVsWhiteNoise"), href: "/blog/brown-noise-vs-white-noise-vs-pink-noise" },
     { name: t("bedtimeRoutineGuide"), href: "/blog/how-to-build-a-bedtime-routine" },
