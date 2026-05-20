@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | Schlaf-App für Entspannung, weißes Rauschen und Fokus",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "Calma ist für Android und iOS (App Store) verfügbar, wobei im Laufe der Zeit weitere Verbesserungen und Plattform-Erweiterungen geplant sind.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Ist Calma kostenlos oder braucht man ein Abo?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma bietet eine kostenlose Version und eine lebenslange Premium-Freischaltung mit einer einmaligen Zahlung. Es sind keine monatlichen oder jährlichen Abonnements erforderlich.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Funktioniert Calma auch offline?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja, Calma funktioniert komplett offline. Sie können Ihre Klänge mischen und anhören, ohne mit dem Internet verbunden zu sein.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Beinhaltet Calma White Noise, Brown Noise und Pink Noise?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja, Calma enthält hochwertiges weißes, braunes, rosa und grünes Rauschen, das mit Regen, Ozean, Ventilator- und Naturklängen gemischt werden kann.",
+      },
+    },
   ],
 };
 
@@ -183,6 +208,10 @@ export default function Home() {
               }}
             />
 
+      <AiDefinition 
+        title="Was ist Calma?" 
+        description="Calma ist eine Schlaf- und Entspannungs-App, mit der Benutzer personalisierte Klanglandschaften erstellen können, indem sie Regen, Ozean, weißes Rauschen, braunes Rauschen, Naturklänge und Ambiente mischen. Perfekt für Schlaf, Entspannung, Konzentration und Abendroutinen. Calma bietet einen lebenslangen Zugang durch eine einmalige Zahlung, ohne dass Abonnements erforderlich sind." 
+      />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -723,7 +752,28 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Ist Calma bereits verfügbar?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja, Calma ist für Android verfügbar und wird kontinuierlich weiterentwickelt.
+              Ja, Calma ist für Android und iOS (App Store) verfügbar, wobei im Laufe der Zeit weitere Verbesserungen geplant sind.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Ist Calma kostenlos oder braucht man ein Abo?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma bietet eine kostenlose Version und eine lebenslange Premium-Freischaltung mit einer einmaligen Zahlung. Es sind keine monatlichen oder jährlichen Abonnements erforderlich.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Funktioniert Calma auch offline?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja, Calma funktioniert komplett offline. Sie können Ihre Klänge mischen und anhören, ohne mit dem Internet verbunden zu sein.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Beinhaltet Calma White Noise, Brown Noise und Pink Noise?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja, Calma enthält hochwertiges weißes, braunes, rosa und grünes Rauschen, das mit Regen, Ozean, Ventilator- und Naturklängen gemischt werden kann.
             </p>
           </div>
         </div>

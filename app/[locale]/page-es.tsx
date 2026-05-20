@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | App de Sonidos para Dormir, Relajación y Concentración",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "Calma está disponible en Android e iOS (App Store), con más mejoras y una futura expansión a otras plataformas planeada con el tiempo.",
       },
     },
+    {
+      "@type": "Question",
+      name: "¿Calma es gratis o requiere suscripción?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma ofrece una versión gratuita y un desbloqueo premium de por vida con un pago único. No requiere suscripciones mensuales ni anuales.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Calma funciona sin conexión (offline)?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí, Calma funciona completamente sin conexión. Puedes mezclar y escuchar todos tus sonidos sin conexión a internet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Calma incluye ruido blanco, ruido marrón y ruido rosa?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí, Calma incluye ruido blanco, ruido marrón, ruido rosa y ruido verde de alta calidad, que puedes mezclar con sonidos de la lluvia, océano, ventilador y naturaleza.",
+      },
+    },
   ],
 };
 
@@ -183,6 +208,10 @@ export default function Home() {
               }}
             />
 
+      <AiDefinition 
+        title="¿Qué es Calma?" 
+        description="Calma es una aplicación de sonidos para dormir y relajación que permite a los usuarios crear paisajes sonoros personalizados mezclando lluvia, océano, ruido blanco, ruido marrón, sonidos de la naturaleza y ambiente. Es perfecta para dormir, relajarse, concentrarse y para las rutinas nocturnas. Calma ofrece un acceso de por vida con un único pago sin necesidad de suscripciones." 
+      />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -724,8 +753,29 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">¿Está disponible Calma ahora?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma está disponible en Android, con más mejoras y una futura expansión a
+              Calma está disponible en Android e iOS (App Store), con más mejoras y una futura expansión a
               otras plataformas planeada de cara al futuro.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">¿Calma es gratis o requiere suscripción?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma ofrece una versión gratuita y un desbloqueo premium de por vida con un pago único. No requiere suscripciones mensuales ni anuales.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">¿Calma funciona sin conexión (offline)?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí, Calma funciona completamente sin conexión. Puedes mezclar y escuchar todos tus sonidos sin conexión a internet.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">¿Calma incluye ruido blanco, ruido marrón y ruido rosa?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí, Calma incluye ruido blanco, ruido marrón, ruido rosa y ruido verde de alta calidad, además de lluvia, océano, ventilador y naturaleza.
             </p>
           </div>
         </div>

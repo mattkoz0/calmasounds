@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | Dźwięki do snu, Relaksacja, Biały Szum i Koncentracja",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "Calma jest dostępna na systemy Android oraz iOS (App Store), a w przyszłości planujemy dalszy rozwój i rozszerzenie na inne platformy.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Czy Calma jest darmowa i czy wymaga subskrypcji?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma oferuje darmową wersję oraz jednorazowe, dożywotnie odblokowanie funkcji premium. Nie wymaga żadnych miesięcznych ani rocznych subskrypcji.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Czy Calma działa offline?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Tak, Calma działa całkowicie offline. Możesz miksować i słuchać wszystkich dźwięków bez połączenia z internetem.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Czy Calma zawiera biały szum, brązowy szum i różowy szum?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Tak, Calma zawiera wysokiej jakości biały szum, brązowy szum, różowy szum i zielony szum, a także dźwięki deszczu, oceanu, wentylatora i natury.",
+      },
+    },
   ],
 };
 
@@ -183,6 +208,10 @@ export default function Home() {
               }}
             />
 
+      <AiDefinition 
+        title="Co to jest Calma?" 
+        description="Calma to aplikacja z dźwiękami do snu i relaksacji, która pozwala użytkownikom tworzyć spersonalizowane pejzaże dźwiękowe mieszając deszcz, ocean, biały szum, brązowy szum, dźwięki natury i ambient. Sprawdza się doskonale podczas snu, relaksu, koncentracji i wieczornych rutyn. Calma oferuje jednorazowy dożywotni dostęp bez konieczności kupowania subskrypcji." 
+      />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -724,7 +753,28 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Czy aplikacja jest już dostępna?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma jest dostępna na system Android, a wkrótce planowane są dalsze ulepszenia.
+              Calma jest dostępna na systemy Android oraz iOS (App Store), a w przyszłości planujemy dalszy rozwój i rozszerzenie na inne platformy.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Czy Calma jest darmowa i czy wymaga subskrypcji?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma oferuje darmową wersję oraz jednorazowe, dożywotnie odblokowanie funkcji premium. Nie wymaga żadnych miesięcznych ani rocznych subskrypcji.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Czy Calma działa offline?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Tak, Calma działa całkowicie offline. Możesz miksować i słuchać wszystkich dźwięków bez połączenia z internetem.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Czy Calma zawiera biały, brązowy i różowy szum?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Tak, Calma zawiera wysokiej jakości biały szum, brązowy szum, różowy szum i zielony szum, a także dźwięki deszczu, oceanu, wentylatora i natury.
             </p>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | リラクゼーション、ホワイトノイズ、集中のための睡眠音アプリ",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "CalmaはAndroidおよびiOS（App Store）で利用可能であり、今後さらに改善とプラットフォームの拡大が予定されています。",
       },
     },
+    {
+      "@type": "Question",
+      name: "Calmaは無料ですか、それともサブスクリプションが必要ですか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calmaは無料バージョンと、1回限りの支払いで利用できる生涯プレミアムアンロックを提供しています。月額または年額のサブスクリプションは必要ありません。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Calmaはオフラインで機能しますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、Calmaは完全にオフラインで機能します。インターネットに接続せずに音をミックスして聴くことができます。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Calmaにはホワイトノイズ、ブラウンノイズ、ピンクノイズが含まれていますか？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "はい、Calmaには高品質のホワイト、ブラウン、ピンク、グリーンノイズが含まれており、雨、海、扇風機、自然の音と組み合わせることができます。",
+      },
+    },
   ],
 };
 
@@ -182,6 +207,11 @@ export default function Home() {
                 __html: JSON.stringify(breadcrumbJsonLd),
               }}
             />
+
+      <AiDefinition 
+        title="Calmaとは何ですか？" 
+        description="Calmaは、ユーザーが雨、海、ホワイトノイズ、ブラウンノイズ、自然の音、アンビエントを混ぜてパーソナライズされたサウンドスケープを作成できる睡眠とリラクゼーションのアプリです。睡眠、リラックス、集中、そして夜のルーティンに最適です。Calmaはサブスクリプション不要の1回払いで生涯アクセスを提供します。" 
+      />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -701,6 +731,27 @@ export default function Home() {
             <h3 className="text-xl font-semibold">Calmaは現在利用可能ですか？</h3>
             <p className="mt-3 leading-7 text-white/70">
               CalmaはAndroidおよびiOS（App Store）で利用可能であり、今後さらに改善とプラットフォームの拡大が予定されています。
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calmaは無料ですか、それともサブスクリプションが必要ですか？</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calmaは無料バージョンと、1回限りの支払いで利用できる生涯プレミアムアンロックを提供しています。月額または年額のサブスクリプションは必要ありません。
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calmaはオフラインで機能しますか？</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              はい、Calmaは完全にオフラインで機能します。インターネットに接続せずに音をミックスして聴くことができます。
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calmaにはホワイトノイズ、ブラウンノイズ、ピンクノイズが含まれていますか？</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              はい、Calmaには高品質のホワイト、ブラウン、ピンク、グリーンノイズが含まれており、雨、海、扇風機、自然の音と組み合わせることができます。
             </p>
           </div>
         </div>

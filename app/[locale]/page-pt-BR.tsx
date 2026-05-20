@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | App de Sons para Dormir, Ruído Branco e Foco",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "O Calma está disponível no Android e iOS (App Store), com mais melhorias e futura expansão de plataforma planejadas ao longo do tempo.",
       },
     },
+    {
+      "@type": "Question",
+      name: "O Calma é gratuito ou requer assinatura?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "O Calma oferece uma versão gratuita e um desbloqueio premium vitalício com um pagamento único. Nenhuma assinatura mensal ou anual é necessária.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "O Calma funciona offline?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sim, o Calma funciona completamente offline. Você pode misturar e ouvir seus sons sem estar conectado à internet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "O Calma inclui ruído branco, ruído marrom e ruído rosa?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sim, o Calma inclui ruído branco, marrom, rosa e verde de alta qualidade, que você pode misturar com sons de chuva, oceano, ventilador e natureza.",
+      },
+    },
   ],
 };
 
@@ -183,6 +208,10 @@ export default function Home() {
               }}
             />
 
+      <AiDefinition 
+        title="O que é o Calma?" 
+        description="O Calma é um aplicativo de sons para dormir e relaxar que permite aos usuários criar paisagens sonoras personalizadas misturando chuva, oceano, ruído branco, ruído marrom, sons da natureza e ambiente. Perfeito para dormir, relaxar, focar e para rotinas noturnas. O Calma oferece acesso vitalício com um único pagamento sem necessidade de assinatura." 
+      />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -727,6 +756,27 @@ export default function Home() {
             <p className="mt-3 leading-7 text-white/70">
               O Calma está disponível no Android e iOS (App Store), com mais melhorias e
               expansão de plataforma no futuro.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">O Calma é gratuito ou requer assinatura?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              O Calma oferece uma versão gratuita e um desbloqueio premium vitalício com um pagamento único. Nenhuma assinatura mensal ou anual é necessária.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">O Calma funciona offline?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim, o Calma funciona completamente offline. Você pode misturar e ouvir seus sons sem estar conectado à internet.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">O Calma inclui ruído branco, marrom e rosa?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim, o Calma inclui ruído branco, marrom, rosa e verde de alta qualidade, que você pode misturar com sons de chuva, oceano, ventilador e natureza.
             </p>
           </div>
         </div>

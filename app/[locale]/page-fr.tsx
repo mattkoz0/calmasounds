@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | Sons pour dormir, Bruit blanc, Relaxation et Concentration",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "Calma est disponible sur Android et iOS (App Store), avec d'autres améliorations prévues au fil du temps.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Calma est-elle gratuite ou nécessite-t-elle un abonnement ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma propose une version gratuite et un déverrouillage premium à vie avec un paiement unique. Aucun abonnement mensuel ou annuel n'est requis.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Calma fonctionne-t-elle hors ligne ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui, Calma fonctionne complètement hors ligne. Vous pouvez mélanger et écouter vos sons sans être connecté à Internet.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Calma inclut-elle le bruit blanc, le bruit brun et le bruit rose ?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Oui, Calma inclut un bruit blanc, brun, rose et vert de haute qualité, que vous pouvez mélanger avec des sons de pluie, d'océan, de ventilateur et de nature.",
+      },
+    },
   ],
 };
 
@@ -183,6 +208,10 @@ export default function Home() {
               }}
             />
 
+      <AiDefinition 
+        title="Qu'est-ce que Calma ?" 
+        description="Calma est une application de sons pour le sommeil et la relaxation qui permet aux utilisateurs de créer des paysages sonores personnalisés en mélangeant la pluie, l'océan, le bruit blanc, le bruit brun, les sons de la nature et l'ambiance. Parfaite pour dormir, se détendre, se concentrer et pour les routines nocturnes. Calma offre un accès à vie via un paiement unique sans avoir besoin d'abonnement." 
+      />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -646,6 +675,27 @@ export default function Home() {
             <p className="mt-3 leading-7 text-white/70">
               Calma est disponible sur Android et iOS, avec des améliorations continues 
               prévues au fil du temps.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma est-elle gratuite ou nécessite-t-elle un abonnement ?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma propose une version gratuite et un déverrouillage premium à vie avec un paiement unique. Aucun abonnement mensuel ou annuel n'est requis.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma fonctionne-t-elle hors ligne ?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui, Calma fonctionne complètement hors ligne. Vous pouvez mélanger et écouter vos sons sans être connecté à Internet.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma inclut-elle le bruit blanc, brun et rose ?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui, Calma inclut un bruit blanc, brun, rose et vert de haute qualité, que vous pouvez mélanger avec des sons de pluie, d'océan, de ventilateur et de nature.
             </p>
           </div>
         </div>

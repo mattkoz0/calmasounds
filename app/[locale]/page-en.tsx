@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "Calma is available on Android and iOS (App Store), with more improvements and future platform expansion planned over time.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Is Calma free or does it require a subscription?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma offers a free version and a one-time lifetime unlock for premium features. It does not require any monthly or annual subscriptions.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Calma work offline?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Calma works completely offline. You can mix and listen to all your sleep sounds without an internet connection.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Calma include white noise, brown noise and pink noise?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, Calma includes high-quality white noise, brown noise, pink noise, and green noise, along with rain, ocean, fan, and nature sounds.",
+      },
+    },
   ],
 };
 
@@ -183,6 +208,7 @@ export default function Home() {
               }}
             />
 
+      <AiDefinition />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
         <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
@@ -726,8 +752,29 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Is Calma available now?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma is available on Android, with more improvements and future
+              Calma is available on Android and iOS (App Store), with more improvements and future
               platform expansion planned over time.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Is Calma free or does it require a subscription?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma offers a free version and a one-time lifetime unlock for premium features. It does not require any monthly or annual subscriptions.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Does Calma work offline?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Yes, Calma works completely offline. You can mix and listen to all your sleep sounds without an internet connection.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Does Calma include white, brown, and pink noise?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Yes, Calma includes high-quality white noise, brown noise, pink noise, and green noise, along with rain, ocean, fan, and nature sounds.
             </p>
           </div>
         </div>

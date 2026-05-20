@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import AiDefinition from "./_components/ai-definition";
 
 export const metadata: Metadata = {
   title: "Calma | 수면 유도 소리, 백색소음, 휴식 및 집중",
@@ -115,6 +116,30 @@ const faqJsonLd = {
         text: "현재 Android(Google Play)와 iOS(App Store)에서 바로 이용하실 수 있습니다.",
       },
     },
+    {
+      "@type": "Question",
+      name: "Calma는 무료인가요, 아니면 구독이 필요한가요?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Calma는 무료 버전을 제공하며, 한 번의 결제로 평생 프리미엄 기능을 사용할 수 있습니다. 월간 또는 연간 구독이 필요하지 않습니다.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Calma는 오프라인에서 작동하나요?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "네, Calma는 완전히 오프라인에서 작동합니다. 인터넷 연결 없이도 소리를 믹스하고 들을 수 있습니다.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Calma에 백색소음, 갈색소음, 핑크소음이 포함되어 있나요?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "네, Calma에는 고품질의 백색소음, 갈색소음, 핑크소음 및 녹색소음이 포함되어 있으며 비, 바다, 선풍기 및 자연 소리와 혼합할 수 있습니다.",
+      },
+    },
   ],
 };
 
@@ -153,6 +178,11 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+
+      <AiDefinition 
+        title="Calma란 무엇인가요?" 
+        description="Calma는 사용자가 비, 바다, 백색소음, 갈색소음, 자연의 소리 및 주변음을 혼합하여 맞춤형 사운드스케이프를 만들 수 있는 수면 및 휴식 소리 앱입니다. 수면, 휴식, 집중 및 저녁 루틴에 적합합니다. Calma는 구독할 필요 없이 단일 결제로 평생 액세스를 제공합니다." 
       />
 
       <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
@@ -361,6 +391,66 @@ export default function Home() {
               집중력을 극대화하고 소음을 차단하는 최적의 환경.
             </p>
           </Link>
+        </div>
+      </section>
+
+      <section id="faq" className="mx-auto max-w-5xl px-6 py-16">
+        <div className="mb-12 text-center">
+          <p className="text-sm uppercase tracking-[0.25em] text-white/50">FAQ</p>
+          <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            자주 묻는 질문
+          </h2>
+        </div>
+
+        <div className="space-y-6">
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma란 무엇인가요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma는 맞춤형 사운드 믹스를 통해 더 나은 수면, 휴식, 집중을 돕는 사운드 믹서 앱입니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma는 누구에게 적합한가요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              더 평온한 취침 루틴, 퇴근 후의 평화로운 휴식, 혹은 공부와 업무 집중을 위한 소리 환경이 필요한 모든 분들께 적합합니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">나만의 사운드 믹스를 만들 수 있나요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              네. Calma는 하나의 정해진 트랙을 듣는 대신, 당신만의 휴식 사운드 환경을 직접 조성할 수 있도록 설계되었습니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma는 어디서 다운로드할 수 있나요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              현재 Android(Google Play)와 iOS(App Store)에서 바로 이용하실 수 있습니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma는 무료인가요, 아니면 구독이 필요한가요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma는 무료 버전을 제공하며, 한 번의 결제로 평생 프리미엄 기능을 사용할 수 있습니다. 월간 또는 연간 구독이 필요하지 않습니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma는 오프라인에서 작동하나요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              네, Calma는 완전히 오프라인에서 작동합니다. 인터넷 연결 없이도 소리를 믹스하고 들을 수 있습니다.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">Calma에 백색소음, 갈색소음, 핑크소음이 포함되어 있나요?</h3>
+            <p className="mt-3 leading-7 text-white/70">
+              네, Calma에는 고품질의 백색소음, 갈색소음, 핑크소음 및 녹색소음이 포함되어 있으며 비, 바다, 선풍기 및 자연 소리와 혼합할 수 있습니다.
+            </p>
+          </div>
         </div>
       </section>
 
