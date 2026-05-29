@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "White Noise App for Sleep & Focus | Calma",
+  title: "Best Free White Noise App for Sleep & Focus | Calma",
   description:
-    "Create calming sleep mixes with white noise, pink noise and brown noise. Use Calma to relax, focus and build your bedtime routine.",
+    "Create calming sleep mixes with white noise, pink noise, and brown noise. Download Calma to relax, focus, and build your bedtime routine.",
   keywords: [
     "white noise app",
     "white noise for sleep",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/white-noise-app",
   },
   openGraph: {
-    title: "White Noise App for Sleep & Focus | Calma",
+    title: "Best Free White Noise App for Sleep & Focus | Calma",
     description:
-    "Create calming sleep mixes with white noise, pink noise and brown noise. Use Calma to relax, focus and build your bedtime routine.",
+    "Create calming sleep mixes with white noise, pink noise, and brown noise. Download Calma to relax, focus, and build your bedtime routine.",
     url: "https://www.calmasounds.com/white-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "White Noise App for Sleep & Focus | Calma",
+    title: "Best Free White Noise App for Sleep & Focus | Calma",
     description:
-    "Create calming sleep mixes with white noise, pink noise and brown noise. Use Calma to relax, focus and build your bedtime routine.",
+    "Create calming sleep mixes with white noise, pink noise, and brown noise. Download Calma to relax, focus, and build your bedtime routine.",
   },
 };
 

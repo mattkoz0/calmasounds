@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Nature Sounds App for Relaxation | Calma",
+  title: "Nature Sounds App for Sleep & Relaxation | Calma",
   description:
-    "Create calming sleep mixes with nature sounds, rain and forest audio. Use Calma to relax, focus and build your bedtime routine.",
+    "Create calming sleep mixes with nature sounds, rain, and forest audio. Download Calma to relax and build your perfect bedtime routine.",
   keywords: [
     "nature sounds app",
     "nature sounds for sleep",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/nature-sounds-app",
   },
   openGraph: {
-    title: "Nature Sounds App for Relaxation | Calma",
+    title: "Nature Sounds App for Sleep & Relaxation | Calma",
     description:
-    "Create calming sleep mixes with nature sounds, rain and forest audio. Use Calma to relax, focus and build your bedtime routine.",
+    "Create calming sleep mixes with nature sounds, rain, and forest audio. Download Calma to relax and build your perfect bedtime routine.",
     url: "https://www.calmasounds.com/nature-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nature Sounds App for Relaxation | Calma",
+    title: "Nature Sounds App for Sleep & Relaxation | Calma",
     description:
-    "Create calming sleep mixes with nature sounds, rain and forest audio. Use Calma to relax, focus and build your bedtime routine.",
+    "Create calming sleep mixes with nature sounds, rain, and forest audio. Download Calma to relax and build your perfect bedtime routine.",
   },
 };
 

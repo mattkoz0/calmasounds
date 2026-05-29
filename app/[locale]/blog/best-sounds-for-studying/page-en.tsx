@@ -3,7 +3,7 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Best Sounds for Studying | Calma Blog",
+  title: "Best Sounds for Studying & Focus (2026 Guide) | Calma Blog",
   description:
     "Discover some of the best sounds for studying, focusing and deeper concentration.",
   keywords: [
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/best-sounds-for-studying",
   },
   openGraph: {
-    title: "Best Sounds for Studying | Calma Blog",
+    title: "Best Sounds for Studying & Focus (2026 Guide) | Calma Blog",
     description:
       "Discover some of the best sounds for studying, focusing and deeper concentration.",
     url: "https://www.calmasounds.com/blog/best-sounds-for-studying",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Sounds for Studying | Calma Blog",
+    title: "Best Sounds for Studying & Focus (2026 Guide) | Calma Blog",
     description:
       "Discover some of the best sounds for studying, focusing and deeper concentration.",
   },

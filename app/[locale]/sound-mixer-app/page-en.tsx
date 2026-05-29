@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sound Mixer App for Sleep & Focus | Calma",
+  title: "Best Sound Mixer App for Sleep & Focus | Calma",
   description:
-    "Create calming audio mixes with rain, white noise and nature sounds. Use Calma sound mixer to relax, focus and build a bedtime routine.",
+    "Mix your own sleep sounds, white noise, and nature audio. Download Calma – the ultimate sound mixer app for personalized relaxation.",
   keywords: [
     "sound mixer app",
     "sleep sound mixer",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/sound-mixer-app",
   },
   openGraph: {
-    title: "Sound Mixer App for Sleep & Focus | Calma",
+    title: "Best Sound Mixer App for Sleep & Focus | Calma",
     description:
-    "Create calming audio mixes with rain, white noise and nature sounds. Use Calma sound mixer to relax, focus and build a bedtime routine.",
+    "Mix your own sleep sounds, white noise, and nature audio. Download Calma – the ultimate sound mixer app for personalized relaxation.",
     url: "https://www.calmasounds.com/sound-mixer-app",
     siteName: "Calma",
     locale: "en_US",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sound Mixer App for Sleep & Focus | Calma",
+    title: "Best Sound Mixer App for Sleep & Focus | Calma",
     description:
-    "Create calming audio mixes with rain, white noise and nature sounds. Use Calma sound mixer to relax, focus and build a bedtime routine.",
+    "Mix your own sleep sounds, white noise, and nature audio. Download Calma – the ultimate sound mixer app for personalized relaxation.",
   },
 };
 

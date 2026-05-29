@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Relaxing Sounds App for Everyday Calm | Calma",
+  title: "Relaxing Sounds App for Stress Relief | Calma",
   description:
-    "Create your own relaxing sounds mix with rain, white noise and nature audio. Use Calma to find peace and relieve daily stress.",
+    "Create your own relaxing sounds mix with rain, white noise, and nature audio. Find peace and relieve daily stress with Calma.",
   keywords: [
     "relaxing sounds app",
     "relaxation sounds",
@@ -16,9 +16,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/relaxing-sounds",
   },
   openGraph: {
-    title: "Relaxing Sounds App for Everyday Calm | Calma",
+    title: "Relaxing Sounds App for Stress Relief | Calma",
     description:
-    "Create your own relaxing sounds mix with rain, white noise and nature audio. Use Calma to find peace and relieve daily stress.",
+    "Create your own relaxing sounds mix with rain, white noise, and nature audio. Find peace and relieve daily stress with Calma.",
     url: "https://www.calmasounds.com/relaxing-sounds",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Relaxing Sounds App for Everyday Calm | Calma",
+    title: "Relaxing Sounds App for Stress Relief | Calma",
     description:
-    "Create your own relaxing sounds mix with rain, white noise and nature audio. Use Calma to find peace and relieve daily stress.",
+    "Create your own relaxing sounds mix with rain, white noise, and nature audio. Find peace and relieve daily stress with Calma.",
   },
 };
 
