@@ -100,7 +100,7 @@ export default function NoiseColorsPage() {
             <div className="aspect-[9/16] w-full max-w-[350px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <iframe
                     className="h-full w-full"
-                    src="https://www.youtube.com/embed/4SXR34eNAmY"
+                    src="https://www.youtube.com/embed/MlJNs1K66xc"
                     title="Los Colores del Ruido: Blanco, Rosa, Marrón y Verde"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen

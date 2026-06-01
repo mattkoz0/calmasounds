@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
+import { AudioPlayer } from "../_components/audio-player";
 
 export const metadata: Metadata = {
   title: "Brown Noise vs White Noise vs Pink Noise | Calma Blog",
@@ -43,7 +44,7 @@ const articleJsonLd = {
     "A comprehensive guide to understanding the colors of noise, including Green Noise, and their unique benefits for sleep, focus, and relaxation.",
   author: {
     "@type": "Organization",
-    name: "Calma",
+    name: "Calma Team",
   },
   publisher: {
     "@type": "Organization",
@@ -100,7 +101,7 @@ export default function NoiseColorsPage() {
             <div className="aspect-[9/16] w-full max-w-[350px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <iframe
                     className="h-full w-full"
-                    src="https://www.youtube.com/embed/4SXR34eNAmY"
+                    src="https://www.youtube.com/embed/MlJNs1K66xc"
                     title="The Colors of Noise: White, Pink, Brown and Green"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen
@@ -113,6 +114,12 @@ export default function NoiseColorsPage() {
         <p>
           White noise contains all audible frequencies played at the same intensity. It sounds like static or a 'hushing' sound. Because it covers all frequencies, it is exceptionally good at masking sudden, distracting sounds like doors slamming or cars honking.
         </p>
+        <AudioPlayer 
+          src="/white_noise.m4a" 
+          title="White Noise Sample" 
+          description="Consistent static that masks all frequencies evenly."
+          colorClass="bg-slate-500/20 text-slate-300"
+        />
         <p className="mt-4">
           <strong>Best for:</strong> Masking environmental noise, supporting infant sleep, and creating a neutral background in busy offices.
         </p>
@@ -122,6 +129,12 @@ export default function NoiseColorsPage() {
         <p>
           Pink noise is similar to white noise but has more energy at lower frequencies. This creates a softer, more balanced sound that many people find more natural than the harshness of pure white noise. Think of it like the sound of steady rain or wind rustling through leaves.
         </p>
+        <AudioPlayer 
+          src="/pink_noise.m4a" 
+          title="Pink Noise Sample" 
+          description="A softer, more balanced sound resembling steady rainfall."
+          colorClass="bg-pink-500/20 text-pink-300"
+        />
         <p className="mt-4">
           <strong>Best for:</strong> Improving sleep quality, relaxing without the 'static' feel of white noise, and long-term focus.
         </p>
@@ -131,6 +144,12 @@ export default function NoiseColorsPage() {
         <p>
           Brown noise (also called Red noise) goes even further than pink noise, focusing heavily on low-frequency bass. It sounds like a deep rumble, a distant waterfall, or the low hum of an airplane cabin. 
         </p>
+        <AudioPlayer 
+          src="/brown_noise.m4a" 
+          title="Brown Noise Sample" 
+          description="Deep, rumbling low frequencies perfect for deep focus."
+          colorClass="bg-orange-500/20 text-orange-300"
+        />
         <p className="mt-4">
           Recently, brown noise has gained significant popularity in the ADHD community. Many people find that its deep, immersive quality helps 'quiet' a busy mind more effectively than higher-frequency sounds.
         </p>
@@ -284,6 +303,14 @@ export default function NoiseColorsPage() {
           })
         }}
       />
+      
+      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
+        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
+        <div>
+          <p className="font-semibold text-white">Written by the Calma Team</p>
+          <p className="text-sm text-white/60">Sleep hygiene advocates and sound design enthusiasts dedicated to helping you build calmer routines.</p>
+        </div>
+      </div>
     </ArticlePage>
   );
 }
