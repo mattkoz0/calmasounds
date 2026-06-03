@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AiDefinition from "./_components/ai-definition";
+import DesktopDownloadQr from "./_components/desktop-download-qr";
 
 export const metadata: Metadata = {
   title: "Calma | Dźwięki do snu, Relaksacja, Biały Szum i Koncentracja",
@@ -213,83 +214,91 @@ export default function Home() {
         description="Calma to aplikacja z dźwiękami do snu i relaksacji, która pozwala użytkownikom tworzyć spersonalizowane pejzaże dźwiękowe mieszając deszcz, ocean, biały szum, brązowy szum, dźwięki natury i ambient. Sprawdza się doskonale podczas snu, relaksu, koncentracji i wieczornych rutyn. Calma oferuje jednorazowy dożywotni dostęp bez konieczności kupowania subskrypcji." 
       />
 
-      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
-        <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
-          Calma • Sen i Relaks
-        </span>
-
-        <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-          Śpij lepiej, relaksuj się głębiej i skup się dzięki dźwiękom spersonalizowanym dla Ciebie
-        </h1>
-
-        <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma to pięknie prosta aplikacja z dźwiękami do snu i relaksacji, która pomaga
-          Ci tworzyć spersonalizowane miksy audio dla lepszego snu, spokojniejszych wieczorów i
-          głębszej koncentracji.
-        </p>
-
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Pobierz aplikację Calma ze sklepu Google Play (otwiera się w nowym oknie)"
-            className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
-          >
-            Zacznij darmową rutynę
-          </a>
-
-          <a
-            href="#features"
-            className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
-          >
-            Poznaj funkcje
-          </a>
-        </div>
-
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-white/65">
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Spersonalizowane miksy
+      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
+        <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
+          <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
+            Calma • Sen i Relaks
           </span>
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Sen • Relaks • Koncentracja
-          </span>
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            Brak presji subskrypcyjnej
-          </span>
+
+          <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+            Śpij lepiej, relaksuj się głębiej i skup się dzięki dźwiękom spersonalizowanym dla Ciebie
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
+            Calma to pięknie prosta aplikacja z dźwiękami do snu i relaksacji, która pomaga
+            Ci tworzyć spersonalizowane miksy audio dla lepszego snu, spokojniejszych wieczorów i
+            głębszej koncentracji.
+          </p>
+
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start w-full">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Pobierz aplikację Calma ze sklepu Google Play (otwiera się w nowym oknie)"
+              className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
+            >
+              Zacznij darmową rutynę
+            </a>
+
+            <a
+              href="#features"
+              className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
+            >
+              Poznaj funkcje
+            </a>
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-sm text-white/65">
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+              Spersonalizowane miksy
+            </span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+              Sen • Relaks • Koncentracja
+            </span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+              Brak presji subskrypcyjnej
+            </span>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 lg:hidden">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex transition hover:scale-[1.02]"
+            >
+              <Image
+                src="/google-play-badge.png"
+                alt="Pobierz z Google Play"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+                priority
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex transition hover:scale-[1.02]"
+            >
+              <Image
+                src="/apple-appstore-badge.png"
+                alt="Pobierz w App Store"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+                priority
+              />
+            </a>
+          </div>
         </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-[1.02]"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Pobierz z Google Play"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-              priority
-            />
-          </a>
-          <a
-            href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-[1.02]"
-          >
-            <Image
-              src="/apple-appstore-badge.png"
-              alt="Pobierz w App Store"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-              priority
-            />
-          </a>
+        <div className="hidden lg:col-span-4 lg:flex lg:justify-center lg:w-full">
+          <DesktopDownloadQr />
         </div>
+      </section>
+
+      <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-16 text-center">
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
@@ -781,50 +790,56 @@ export default function Home() {
       </section>
 
       <section id="download" className="mx-auto max-w-4xl px-6 py-16 text-center">
-        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12">
-          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-            Zacznij teraz
-          </p>
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12 lg:grid lg:grid-cols-12 lg:gap-8 lg:text-left lg:items-center">
+          <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+              Zacznij teraz
+            </p>
             <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Pobierz Calmę i zbuduj spokojniejszą codzienność
+              Pobierz Calmę i zbuduj spokojniejszą codzienność
             </h2>
             <p className="mt-4 leading-7 text-white/70">
-            Twórz spersonalizowane pejzaże dźwiękowe dla lepszego snu, spokojniejszych wieczorów 
-            i głębokiego skupienia w pięknej aplikacji zaprojektowanej do codziennego użytku.
-          </p>
+              Twórz spersonalizowane pejzaże dźwiękowe dla lepszego snu, spokojniejszych wieczorów 
+              i głębokiego skupienia w pięknej aplikacji zaprojektowanej do codziennego użytku.
+            </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex transition hover:scale-[1.02]"
-              aria-label="Pobierz aplikację Calma ze sklepu Google Play"
-            >
-              <Image
-                src="/google-play-badge.png"
-                alt="Pobierz z Google Play"
-                width={240}
-                height={93}
-                className="h-[60px] w-auto object-contain"
-              />
-            </a>
-            <a
-              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex transition hover:scale-[1.02]"
-              aria-label="Pobierz aplikację Calma z App Store"
-            >
-              <Image
-                src="/apple-appstore-badge.png"
-                alt="Pobierz w App Store"
-                width={240}
-                height={93}
-                className="h-[60px] w-auto object-contain"
-              />
-            </a>
+            <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4 lg:hidden">
+              <a
+                href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex transition hover:scale-[1.02]"
+                aria-label="Pobierz aplikację Calma ze sklepu Google Play"
+              >
+                <Image
+                  src="/google-play-badge.png"
+                  alt="Pobierz z Google Play"
+                  width={240}
+                  height={93}
+                  className="h-[60px] w-auto object-contain"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex transition hover:scale-[1.02]"
+                aria-label="Pobierz aplikację Calma z App Store"
+              >
+                <Image
+                  src="/apple-appstore-badge.png"
+                  alt="Pobierz w App Store"
+                  width={240}
+                  height={93}
+                  className="h-[60px] w-auto object-contain"
+                />
+              </a>
+            </div>
           </div>
+          <div className="hidden lg:col-span-4 lg:flex lg:justify-center lg:w-full">
+            <DesktopDownloadQr />
+          </div>
+        </div>
           <p className="mt-4 text-sm text-white/60">
             Szukasz dedykowanej sekcji o śnie?{" "}
             <a
@@ -853,7 +868,6 @@ export default function Home() {
               Przeczytaj nasz poradnik o dudnieniach binauralnych
             </a>
           </p>
-        </div>
       </section>
       <section className="mx-auto max-w-6xl px-6 py-24">
         <div className="mb-12 flex flex-col items-center justify-between gap-6 sm:flex-row sm:items-end">

@@ -43,5 +43,16 @@
     "tinnitusSoundsApp": "Sonidos para tinnitus",
     "brownVsWhiteNoise": "Colores del ruido",
     "whiteNoiseForBabies": "Ruido blanco para bebés"
+  },
+  "Download": {
+    "title": "Descargar Calma",
+    "description": "Elige tu tienda y empieza a crear paisajes sonoros relajantes para dormir, concentrarte y relajarte.",
+    "scanToDownload": "Escanea para descargar Calma",
+    "scanSubtitle": "Abre la cámara de tu teléfono y escanea el código.",
+    "appStore": "Consíguelo en el App Store",
+    "googlePlay": "Disponible en Google Play",
+    "redirectingAppStore": "Redirigiendo a App Store...",
+    "redirectingGooglePlay": "Redirigiendo a Google Play...",
+    "fallbackText": "Si no eres redirigido automáticamente, haz clic en uno de los botones de abajo:"
   }
 }

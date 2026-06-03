@@ -42,6 +42,17 @@
     "natureSoundsApp": "Sons da natureza",
     "tinnitusSoundsApp": "Sons para zumbido",
     "brownVsWhiteNoise": "Cores do ruído",
-    "whiteNoiseForBabies": "Ruído branco para bebês"
+    "whiteNoiseForBabies": "Ruido branco para bebês"
+  },
+  "Download": {
+    "title": "Baixar Calma",
+    "description": "Escolha sua loja e comece a criar paisagens sonoras relaxantes para dormir, concentrar-se e relaxar.",
+    "scanToDownload": "Escaneie para baixar o Calma",
+    "scanSubtitle": "Abra a câmera do seu celular e escaneie o código.",
+    "appStore": "Baixar na App Store",
+    "googlePlay": "Disponível no Google Play",
+    "redirectingAppStore": "Redirecionando para a App Store...",
+    "redirectingGooglePlay": "Redirecionando para o Google Play...",
+    "fallbackText": "Se você não for redirecionado automaticamente, clique em um dos botões abaixo:"
   }
 }

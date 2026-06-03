@@ -43,5 +43,16 @@
     "tinnitusSoundsApp": "Sons pour acouphènes",
     "brownVsWhiteNoise": "Couleurs du bruit",
     "whiteNoiseForBabies": "Bruit blanc pour bébés"
+  },
+  "Download": {
+    "title": "Télécharger Calma",
+    "description": "Choisissez votre boutique de téléchargement et commencez à créer des paysages sonores relaxants pour le sommeil, la concentration et la relaxation.",
+    "scanToDownload": "Scannez pour télécharger Calma",
+    "scanSubtitle": "Ouvrez l'appareil photo de votre téléphone et scannez le code.",
+    "appStore": "Télécharger dans l'App Store",
+    "googlePlay": "Disponible sur Google Play",
+    "redirectingAppStore": "Redirection vers l'App Store...",
+    "redirectingGooglePlay": "Redirection vers Google Play...",
+    "fallbackText": "Si vous n'êtes pas redirigé automatiquement, veuillez cliquer sur l'un des boutons ci-dessous :"
   }
 }

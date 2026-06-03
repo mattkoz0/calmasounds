@@ -43,5 +43,16 @@
     "tinnitusSoundsApp": "Tinnitus sounds app",
     "brownVsWhiteNoise": "Noise colors explained",
     "whiteNoiseForBabies": "White noise for babies"
+  },
+  "Download": {
+    "title": "Download Calma",
+    "description": "Choose your store and start creating relaxing soundscapes for sleep, focus and relaxation.",
+    "scanToDownload": "Scan to download Calma",
+    "scanSubtitle": "Open the camera on your phone and scan the code.",
+    "appStore": "Download on the App Store",
+    "googlePlay": "Get it on Google Play",
+    "redirectingAppStore": "Redirecting you to the App Store...",
+    "redirectingGooglePlay": "Redirecting you to the Google Play Store...",
+    "fallbackText": "If you are not redirected automatically, please click one of the buttons below:"
   }
 }

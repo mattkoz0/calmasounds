@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import AiDefinition from "./_components/ai-definition";
+import DesktopDownloadQr from "./_components/desktop-download-qr";
 
 export const metadata: Metadata = {
   title: "Calma | リラクゼーション、ホワイトノイズ、集中のための睡眠音アプリ",
@@ -213,81 +214,89 @@ export default function Home() {
         description="Calmaは、ユーザーが雨、海、ホワイトノイズ、ブラウンノイズ、自然の音、アンビエントを混ぜてパーソナライズされたサウンドスケープを作成できる睡眠とリラクゼーションのアプリです。睡眠、リラックス、集中、そして夜のルーティンに最適です。Calmaはサブスクリプション不要の1回払いで生涯アクセスを提供します。" 
       />
 
-      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center">
-        <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
-          Calma • 睡眠音＆リラックス
-        </span>
-
-        <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-          パーソナライズされたサウンドスケープで、より良い睡眠、深いリラックス、そして集中を
-        </h1>
-
-        <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-          Calmaは、より良い睡眠、穏やかな夜、そして深い集中のためのパーソナライズされたオーディオミックスの作成をサポートする、美しくシンプルな睡眠音とリラクゼーションのアプリです。
-        </p>
-
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Google Play StoreからCalmaアプリをダウンロード（新しいウィンドウで開きます）"
-            className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
-          >
-            無料のルーティンを始める
-          </a>
-
-          <a
-            href="#features"
-            className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
-          >
-            機能を探索する
-          </a>
-        </div>
-
-        <div className="mt-8 flex flex-wrap items-center justify-center gap-3 text-sm text-white/65">
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            パーソナライズされたミックス
+      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
+        <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
+          <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
+            Calma • 睡眠音＆リラックス
           </span>
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            睡眠 • リラックス • 集中
-          </span>
-          <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
-            サブスクリプションのプレッシャーなし
-          </span>
+
+          <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+            パーソナライズされたサウンドスケープで、より良い睡眠、深いリラックス、そして集中を
+          </h1>
+
+          <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
+            Calmaは、より良い睡眠、穏やかな夜、そして深い集中のためのパーソナライズされたオーディオミックスの作成をサポートする、美しくシンプルな睡眠音とリラクゼーションのアプリです。
+          </p>
+
+          <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start w-full">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Google Play StoreからCalmaアプリをダウンロード（新しいウィンドウで開きます）"
+              className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
+            >
+              無料のルーティンを始める
+            </a>
+
+            <a
+              href="#features"
+              className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
+            >
+              機能を探索する
+            </a>
+          </div>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3 text-sm text-white/65">
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+              パーソナライズされたミックス
+            </span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+              睡眠 • リラックス • 集中
+            </span>
+            <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2">
+              サブスクリプションのプレッシャーなし
+            </span>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center lg:justify-start gap-4 lg:hidden">
+            <a
+              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex transition hover:scale-[1.02]"
+            >
+              <Image
+                src="/google-play-badge.png"
+                alt="Google Playで手に入れよう"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+                priority
+              />
+            </a>
+            <a
+              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex transition hover:scale-[1.02]"
+            >
+              <Image
+                src="/apple-appstore-badge.png"
+                alt="App Storeからダウンロード"
+                width={240}
+                height={93}
+                className="h-[60px] w-auto object-contain"
+                priority
+              />
+            </a>
+          </div>
         </div>
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-[1.02]"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Google Playで手に入れよう"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-              priority
-            />
-          </a>
-          <a
-            href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-[1.02]"
-          >
-            <Image
-              src="/apple-appstore-badge.png"
-              alt="App Storeからダウンロード"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-              priority
-            />
-          </a>
+        <div className="hidden lg:col-span-4 lg:flex lg:justify-center lg:w-full">
+          <DesktopDownloadQr />
         </div>
+      </section>
+
+      <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-16 text-center">
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
             <p className="text-sm uppercase tracking-[0.2em] text-white/50">
@@ -758,78 +767,83 @@ export default function Home() {
       </section>
 
       <section id="download" className="mx-auto max-w-4xl px-6 py-16 text-center">
-        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12">
-          <p className="text-sm uppercase tracking-[0.25em] text-white/50">
-            今すぐ始める
-          </p>
+        <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12 lg:grid lg:grid-cols-12 lg:gap-8 lg:text-left lg:items-center">
+          <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <p className="text-sm uppercase tracking-[0.25em] text-white/50">
+              今すぐ始める
+            </p>
             <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            Calmaをダウンロードして、より柔らかな毎日のルーティンを構築しましょう
+              Calmaをダウンロードして、より柔らかな毎日のルーティンを構築しましょう
             </h2>
             <p className="mt-4 leading-7 text-white/70">
-            日常的に使用するために設計された美しくシンプルなアプリで、より良い睡眠、より穏やかな夜、そしてより深い集中のためのパーソナライズされたサウンドスケープを作成します。
-          </p>
+              日常的に使用するために設計された美しくシンプルなアプリで、より良い睡眠、より穏やかな夜、そしてより深い集中のためのパーソナライズされたサウンドスケープを作成します。
+            </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <a
-              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex transition hover:scale-[1.02]"
-              aria-label="Google PlayでCalmaアプリをダウンロード"
-            >
-              <Image
-                src="/google-play-badge.png"
-                alt="Google Playで手に入れよう"
-                width={240}
-                height={93}
-                className="h-[60px] w-auto object-contain"
-              />
-            </a>
-            <a
-              href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex transition hover:scale-[1.02]"
-              aria-label="Apple App StoreでCalmaアプリをダウンロード"
-            >
-              <Image
-                src="/apple-appstore-badge.png"
-                alt="App Storeからダウンロード"
-                width={240}
-                height={93}
-                className="h-[60px] w-auto object-contain"
-              />
-            </a>
+            <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-4 lg:hidden">
+              <a
+                href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex transition hover:scale-[1.02]"
+                aria-label="Google PlayでCalmaアプリをダウンロード"
+              >
+                <Image
+                  src="/google-play-badge.png"
+                  alt="Google Playで手に入れよう"
+                  width={240}
+                  height={93}
+                  className="h-[60px] w-auto object-contain"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex transition hover:scale-[1.02]"
+                aria-label="Apple App StoreでCalmaアプリをダウンロード"
+              >
+                <Image
+                  src="/apple-appstore-badge.png"
+                  alt="App Storeからダウンロード"
+                  width={240}
+                  height={93}
+                  className="h-[60px] w-auto object-contain"
+                />
+              </a>
+            </div>
           </div>
-          <p className="mt-4 text-sm text-white/60">
-            専用の睡眠ページをお探しですか？{" "}
-            <a
-              href="/sleep-sounds-app"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              睡眠音アプリのページを見る
-            </a>
-          </p>
-
-          <p className="mt-3 text-sm text-white/60">
-            就寝時のアイデアをさらに探していますか？{" "}
-            <a
-              href="/blog/best-sounds-for-sleep"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              睡眠に最適な音のガイドを読む
-            </a>
-          </p>
-          <p className="mt-3 text-sm text-white/60">
-            ノイズの色についてもっと知りたいですか？{" "}
-            <a
-              href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
-              className="text-white underline underline-offset-4 transition hover:text-white/80"
-            >
-              ホワイトノイズ、ピンクノイズ、ブラウンノイズの違いを読む
-            </a>
-          </p>
+          <div className="hidden lg:col-span-4 lg:flex lg:justify-center lg:w-full">
+            <DesktopDownloadQr />
+          </div>
         </div>
+        <p className="mt-4 text-sm text-white/60">
+          専用の睡眠ページをお探しですか？{" "}
+          <a
+            href="/sleep-sounds-app"
+            className="text-white underline underline-offset-4 transition hover:text-white/80"
+          >
+            睡眠音アプリのページを見る
+          </a>
+        </p>
+
+        <p className="mt-3 text-sm text-white/60">
+          就寝時のアイデアをさらに探していますか？{" "}
+          <a
+            href="/blog/best-sounds-for-sleep"
+            className="text-white underline underline-offset-4 transition hover:text-white/80"
+          >
+            睡眠に最適な音のガイドを読む
+          </a>
+        </p>
+        <p className="mt-3 text-sm text-white/60">
+          ノイズの色についてもっと知りたいですか？{" "}
+          <a
+            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            className="text-white underline underline-offset-4 transition hover:text-white/80"
+          >
+            ホワイトノイズ、ピンクノイズ、ブラウンノイズの違いを読む
+          </a>
+        </p>
       </section>
     </main>
   );

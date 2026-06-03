@@ -43,5 +43,16 @@
     "tinnitusSoundsApp": "耳鳴り緩和アプリ",
     "brownVsWhiteNoise": "ノイズの色",
     "whiteNoiseForBabies": "赤ちゃんのためのホワイトノイズ"
+  },
+  "Download": {
+    "title": "Calmaをダウンロード",
+    "description": "ストアを選択して、睡眠、集中、リラックスのための心地よいサウンドスケープを作成し始めましょう。",
+    "scanToDownload": "スキャンしてCalmaをダウンロード",
+    "scanSubtitle": "スマートフォンのカメラを開いてコードをスキャンしてください。",
+    "appStore": "App Storeからダウンロード",
+    "googlePlay": "Google Playで手に入れよう",
+    "redirectingAppStore": "App Storeへリダイレクト中...",
+    "redirectingGooglePlay": "Google Playへリダイレクト中...",
+    "fallbackText": "自動的にリダイレクトされない場合は、以下のボタンのいずれかをクリックしてください。"
   }
 }

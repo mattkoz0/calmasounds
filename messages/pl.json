@@ -43,5 +43,16 @@
     "tinnitusSoundsApp": "Aplikacja na szumy uszne",
     "brownVsWhiteNoise": "Kolory szumu",
     "whiteNoiseForBabies": "Biały szum dla niemowląt"
+  },
+  "Download": {
+    "title": "Pobierz Calma",
+    "description": "Wybierz swój sklep i zacznij tworzyć relaksujące pejzaże dźwiękowe do snu, koncentracji i relaksu.",
+    "scanToDownload": "Zeskanuj, aby pobrać Calma",
+    "scanSubtitle": "Otwórz aparat w telefonie i zeskanuj kod.",
+    "appStore": "Pobierz w App Store",
+    "googlePlay": "Pobierz w Google Play",
+    "redirectingAppStore": "Przekierowanie do App Store...",
+    "redirectingGooglePlay": "Przekierowanie do Google Play...",
+    "fallbackText": "Jeśli przekierowanie nie nastąpiło automatycznie, kliknij jeden z przycisków poniżej:"
   }
 }

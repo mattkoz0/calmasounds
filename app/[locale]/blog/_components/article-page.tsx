@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import DesktopDownloadQr from "../../_components/desktop-download-qr";
 
 type RelatedArticle = {
   href: string;
@@ -137,23 +138,28 @@ export function ArticlePage({
 
         <div className="mt-10 space-y-10">{children}</div>
 
-        <section className="mt-10 rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 shadow-2xl shadow-black/20">
-          <h2 className="text-2xl font-semibold">{ctaTitle}</h2>
-          <p className="mt-4 leading-8 text-white/70">{ctaText}</p>
+        <section className="mt-10 rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8 shadow-2xl shadow-black/20 lg:grid lg:grid-cols-12 lg:gap-8 lg:text-left lg:items-center">
+          <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+            <h2 className="text-2xl font-semibold">{ctaTitle}</h2>
+            <p className="mt-4 leading-8 text-white/70">{ctaText}</p>
 
-          <div className="mt-6 flex flex-col gap-4 sm:flex-row">
-            <a
-              href={ctaHref}
-              className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:scale-[1.02]"
-            >
-              {ctaLabel}
-            </a>
-            <a
-              href={secondaryCtaHref}
-              className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
-            >
-              {secondaryCtaLabel}
-            </a>
+            <div className="mt-6 flex flex-col gap-4 sm:flex-row w-full lg:justify-start">
+              <a
+                href={ctaHref}
+                className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:scale-[1.02]"
+              >
+                {ctaLabel}
+              </a>
+              <a
+                href={secondaryCtaHref}
+                className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
+              >
+                {secondaryCtaLabel}
+              </a>
+            </div>
+          </div>
+          <div className="hidden lg:col-span-4 lg:flex lg:justify-center lg:w-full">
+            <DesktopDownloadQr />
           </div>
         </section>
 

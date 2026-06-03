@@ -43,5 +43,16 @@
     "tinnitusSoundsApp": "Tinnitus Linderung App",
     "brownVsWhiteNoise": "Farben des Rauschens",
     "whiteNoiseForBabies": "Weißes Rauschen für Babys"
+  },
+  "Download": {
+    "title": "Calma herunterladen",
+    "description": "Wähle deinen Store und beginne mit der Erstellung entspannender Klangwelten für Schlaf, Fokus und Entspannung.",
+    "scanToDownload": "Scannen, um Calma herunterzuladen",
+    "scanSubtitle": "Öffne die Kamera deines Telefons und scanne den Code.",
+    "appStore": "Laden im App Store",
+    "googlePlay": "Jetzt bei Google Play",
+    "redirectingAppStore": "Weiterleitung zum App Store...",
+    "redirectingGooglePlay": "Weiterleitung zu Google Play...",
+    "fallbackText": "Wenn Sie nicht automatisch weitergeleitet werden, klicken Sie bitte auf eine der Schaltflächen unten:"
   }
 }

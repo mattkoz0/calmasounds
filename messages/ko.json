@@ -63,5 +63,16 @@
   "Metadata": {
     "homeTitle": "Calma | 수면 유도 소리, 백색소음, 휴식 및 집중",
     "homeDescription": "Calma는 최고의 수면 유도 소리, 백색소음 및 휴식 앱입니다. 더 나은 수면과 깊은 집중을 위해 나만의 사운드스케이프를 만드세요."
+  },
+  "Download": {
+    "title": "Calma 다운로드",
+    "description": "스토어를 선택하고 수면, 집중 및 휴식을 위한 편안한 사운드스케이프를 만들어보세요.",
+    "scanToDownload": "스캔하여 Calma 다운로드",
+    "scanSubtitle": "휴대폰 카메라를 켜고 QR 코드를 스캔하세요.",
+    "appStore": "App Store에서 다운로드 하기",
+    "googlePlay": "Google Play 다운로드",
+    "redirectingAppStore": "App Store로 이동 중...",
+    "redirectingGooglePlay": "Google Play로 이동 중...",
+    "fallbackText": "자동으로 이동하지 않는 경우 아래 버튼 중 하나를 클릭하세요."
   }
 }
