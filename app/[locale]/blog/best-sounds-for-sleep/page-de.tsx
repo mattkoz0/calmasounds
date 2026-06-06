@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
+import { AudioPlayer } from "../_components/audio-player";
 
 export const metadata: Metadata = {
-  title: "Beste Einschlafklänge | Calma Blog",
+  title: "Beste Einschlafklänge | Wissenschaftlich fundiert | Calma Blog",
   description:
-    "Entdecke die besten Klänge zum Einschlafen und erfahre, wie du das richtige Audio für deine Abendroutine auswählst.",
+    "Entdecken Sie die besten Klänge zum Einschlafen, von weißem Rauschen bis hin zu sanftem Regen. Lernen Sie die Wissenschaft hinter Schlafsounds kennen.",
   keywords: [
     "beste Einschlafklänge",
     "Schlafsounds",
@@ -18,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/blog/best-sounds-for-sleep",
   },
   openGraph: {
-    title: "Beste Einschlafklänge | Calma Blog",
+    title: "Beste Einschlafklänge | Wissenschaftlich fundiert | Calma Blog",
     description:
-      "Entdecke die besten Klänge zum Einschlafen und erfahre, wie du das richtige Audio für deine Abendroutine auswählst.",
+      "Entdecken Sie die besten Klänge zum Einschlafen, von weißem Rauschen bis hin zu sanftem Regen. Lernen Sie die Wissenschaft hinter Schlafsounds kennen.",
     url: "https://www.calmasounds.com/de/blog/best-sounds-for-sleep",
     siteName: "Calma",
     locale: "de_DE",
@@ -28,21 +29,21 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Beste Einschlafklänge | Calma Blog",
+    title: "Beste Einschlafklänge | Wissenschaftlich fundiert | Calma Blog",
     description:
-      "Entdecke die besten Klänge zum Einschlafen und erfahre, wie du das richtige Audio für deine Abendroutine auswählst.",
+      "Entdecken Sie die besten Klänge zum Einschlafen, von weißem Rauschen bis hin zu sanftem Regen.",
   },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Beste Einschlafklänge",
+  headline: "Die besten Klänge zum Schlafen: Der ultimative Leitfaden für Abend-Audio",
   description:
-    "Entdecke die besten Klänge zum Einschlafen und erfahre, wie du das richtige Audio für deine Abendroutine auswählst.",
+    "Entdecken Sie die besten Klänge zum Einschlafen, von weißem Rauschen bis hin zu sanftem Regen. Lernen Sie die Wissenschaft hinter Schlafsounds kennen.",
   author: {
     "@type": "Organization",
-    name: "Calma",
+    name: "Calma Team",
   },
   publisher: {
     "@type": "Organization",
@@ -50,7 +51,7 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/de/blog/best-sounds-for-sleep",
   datePublished: "2026-03-25",
-  dateModified: "2026-04-21",
+  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function BestSoundsForSleepPage() {
@@ -58,99 +59,163 @@ export default function BestSoundsForSleepPage() {
     <ArticlePage
       slug="best-sounds-for-sleep"
       jsonLd={articleJsonLd}
-      topLinkHref="/sleep-sounds-app"
-      topLinkLabel="Schlaf-Bereich entdecken"
+      topLinkHref="/de/sleep-sounds-app"
+      topLinkLabel="Schlaf-App entdecken"
       title="Beste Klänge zum Einschlafen: Was hilft beim Abschalten?"
-      intro="Die besten Einschlafklänge sind für jeden Menschen unterschiedlich. Einige entspannen sich am besten bei sanftem Regen, andere bevorzugen die Beständigkeit von weißem Rauschen und wieder andere schlafen besser mit weichen, atmosphärischen Texturen. Die richtige Wahl hängt meist davon ab, was dir hilft, dich sicher und ruhig zu fühlen und den Tag loszulassen."
-      ctaHref="/sleep-sounds-app"
-      ctaLabel="Schlafklänge App entdecken"
-      secondaryCtaHref="/blog/rain-sounds-vs-white-noise"
-      secondaryCtaLabel="Regen vs. Rauschen lesen"
+      intro="Den richtigen Sound zum Einschlafen zu finden, kann Ihre Nächte verändern. Während sich einige Menschen bei sanftem Regen sofort entspannen, bevorzugen andere die verlässliche Maskierung von weißem Rauschen oder das tiefe Brummen von braunem Rauschen. Die besten Schlafsounds sind nicht universell – sie hängen von Ihrer Umgebung, Ihrem Nervensystem und dem ab, was Ihnen hilft, den Tag loszulassen."
+      ctaHref="/de/sleep-sounds-app"
+      ctaLabel="Eigene Schlafklänge mischen"
+      secondaryCtaHref="/de/white-noise-app"
+      secondaryCtaLabel="Weißes Rauschen App testen"
+      tableOfContents={[
+        { id: "warum-klänge", title: "Warum helfen uns Klänge beim Schlafen?" },
+        { id: "weisses-rauschen", title: "Weißes Rauschen: Der ultimative Maskierer" },
+        { id: "rosa-braun", title: "Rosa & Braunes Rauschen: Tiefe Erholung" },
+        { id: "natur-regen", title: "Natur- & Regengeräusche" },
+        { id: "auswahl", title: "So wählen Sie den besten Sound aus" },
+        { id: "faq", title: "Häufig gestellte Fragen (FAQ)" },
+      ]}
       relatedArticles={[
         {
-          href: "/blog/rain-sounds-vs-white-noise",
+          href: "/de/blog/rain-sounds-vs-white-noise",
           title: "Regenklänge vs. Weißes Rauschen",
           description:
-            "Vergleiche das emotionale Gefühl und die praktischen Unterschiede.",
+            "Vergleichen Sie das emotionale Gefühl und die praktischen Unterschiede zwischen natürlichem Regen und statischem Rauschen.",
         },
         {
-          href: "/blog/white-noise-for-sleep",
-          title: "Weißes Rauschen zum Schlafen",
+          href: "/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
+          title: "Rauschfarben erklärt",
           description:
-            "Erfahre, wann weißes Rauschen am besten in deine Routine passt.",
+            "Ein tiefer Einblick in weißes, rosa und braunes Rauschen und wie sie Ihr Gehirn beeinflussen.",
         },
       ]}
     >
-      <ArticleSection title="Regenklänge">
+      <ArticleSection id="warum-klänge" title="Warum helfen uns Geräusche beim Einschlafen?">
         <p className="mt-4 leading-8 text-white/70">
-          Regen gehört zu den beliebtesten Einschlafklängen, weil er sich natürlich, 
-          sanft und gemütlich anfühlt. Er funktioniert besonders gut für Menschen, 
-          die möchten, dass sich das Zubettgehen emotional geborgen und nicht nur 
-          funktional anfühlt.
+          Es mag widersprüchlich erscheinen, einem Raum Geräusche hinzuzufügen, wenn man schlafen möchte. Stille ist jedoch nicht immer ideal. In einem völlig ruhigen Raum reagiert das Gehirn extrem empfindlich auf plötzliche akustische Veränderungen – wie einen bellenden Hund, eine zuschlagende Tür oder ein vorbeifahrendes Auto.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Wenn du eine atmosphärische und naturbasierte Klangumgebung magst, ist 
-          Regen eine sehr gute Wahl.
+          Gute Einschlafklänge funktionieren durch ein Phänomen namens <strong>akustische Maskierung</strong>. Indem ein gleichmäßiges, vorhersehbares Hintergrundgeräusch eingeführt wird, wird der Unterschied zwischen der normalen Raumstille und plötzlichen Störungen drastisch verringert. Ihr Gehirn nimmt die plötzlichen Geräusche nicht mehr als Bedrohung wahr, sodass Sie ungestört schlafen können.
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Weißes Rauschen">
+      <ArticleSection id="weisses-rauschen" title="Weißes Rauschen: Der ultimative Maskierer">
         <p className="mt-4 leading-8 text-white/70">
-          Weißes Rauschen erzeugt eine stabilere und neutralere Klangschicht. Es wird 
-          oft von Menschen genutzt, die den Einfluss plötzlicher Geräusche minimieren 
-          und eine kontrollierte Schlafumgebung schaffen wollen.
+          Weißes Rauschen ist vielleicht der bekannteste Schlafsound. Es enthält alle hörbaren Frequenzen in gleicher Intensität, was zu einem zischenden Ton führt (wie ein Ventilator oder ein statisches Fernsehsignal). Da es das gesamte Frequenzspektrum abdeckt, ist es unglaublich effektiv beim Blockieren externer Geräusche.
         </p>
+        <AudioPlayer 
+          src="/white_noise.m4a" 
+          title="Weißes Rauschen" 
+          description="Ein gleichmäßiges Vollspektrum-Geräusch, das hochfrequente Störungen blockiert."
+          colorClass="bg-slate-500/20 text-slate-300"
+        />
         <p className="mt-4 leading-8 text-white/70">
-          Es fühlt sich vielleicht weniger 'emotional' als Regen an, ist aber 
-          oft zuverlässiger, wenn Außengeräusche deine Ruhe stören.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection title="Sanfte atmosphärische Soundscapes">
-        <p className="mt-4 leading-8 text-white/70">
-          Einige Menschen schlafen am besten mit sanften, vielschichtigen Klanglandschaften, 
-          die sich warm und immersiv anfühlen. Dies ist eine gute Option, wenn du die 
-          emotionale Weichheit eines ruhigen Hintergrunds suchst, ohne dich auf 
-          ein bestimmtes, erkennbares Geräusch zu konzentrieren.
+          <strong>Ideal für:</strong> Stadtbewohner, Menschen mit leichtem Schlaf und alle, die in unruhigen Umgebungen wie Hotels schlafen müssen. Wenn Sie nach dem zuverlässigsten Geräusch suchen, um laute Störungen auszublenden, ist weißes Rauschen Ihre beste Wahl.
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Naturinspirierte Klänge">
+      <ArticleSection id="rosa-braun" title="Rosa & Braunes Rauschen: Tiefe Erholung">
         <p className="mt-4 leading-8 text-white/70">
-          Naturbasierte Klangumgebungen funktionieren oft dann am besten, wenn deine 
-          Abendroutine stark mit Entspannung verknüpft ist. Für viele Menschen fühlen 
-          sie sich weniger mechanisch und emotional erdender an.
+          Wenn weißes Rauschen für Sie zu scharf klingt, bevorzugen Sie vielleicht <strong>rosa Rauschen</strong> oder <strong>braunes Rauschen</strong>. Rosa Rauschen betont tiefere Frequenzen und klingt wie stetiger Regen oder Wind. Braunes Rauschen geht noch tiefer und filtert hohe Frequenzen fast vollständig heraus, um ein tiefes, dumpfes Brummen zu erzeugen (wie ein entfernter Wasserfall oder eine Flugzeugkabine).
+        </p>
+        <AudioPlayer 
+          src="/brown_noise.m4a" 
+          title="Braunes Rauschen" 
+          description="Eine tiefe, brummende Textur, ideal zur Beruhigung eines aktiven Geistes."
+          colorClass="bg-orange-500/20 text-orange-300"
+        />
+        <p className="mt-4 leading-8 text-white/70">
+          Studien deuten darauf hin, dass rosa Rauschen die Qualität des Tiefschlafs verbessern kann, indem es sich mit Ihren Gehirnwellen synchronisiert. Braunes Rauschen hingegen ist besonders beliebt, um kreisende Gedanken vor dem Einschlafen zu beruhigen.
         </p>
       </ArticleSection>
 
-      <ArticleSection title="So wählst du den besten Sound">
-        <ul className="mt-4 space-y-3 text-white/70">
-          <li>• Wähle Klänge, bei denen sich dein Körper ruhiger anfühlt.</li>
-          <li>• Überlege, ob du Atmosphäre, Maskierung oder beides brauchst.</li>
-          <li>• Teste denselben Klang für einige Nächte, bevor du ihn bewertest.</li>
-          <li>• Achte auf emotionalen Komfort, nicht nur auf reine Theorie.</li>
+      <ArticleSection id="natur-regen" title="Natur- & Regengeräusche: Emotionaler Trost">
+        <p className="mt-4 leading-8 text-white/70">
+          Für viele Menschen wirken mechanische Brummgeräusche oder statisches Rauschen nicht entspannend. Hier glänzen Naturgeräusche. Das Geräusch von Regen, sanften Meereswellen oder einem knisternden Feuer bietet sowohl Maskierungsvorteile als auch emotionalen Trost.
+        </p>
+        <AudioPlayer 
+          src="/rain.m4a" 
+          title="Gleichmäßiger Regen" 
+          description="Natürlicher, beruhigender Regenfall für eine gemütliche Schlafzimmeratmosphäre."
+          colorClass="bg-blue-500/20 text-blue-300"
+        />
+        <p className="mt-4 leading-8 text-white/70">
+          Unsere Gehirne sind darauf programmiert, das Geräusch von Regen mit Sicherheit und Schutz zu verbinden. Diese organischen, nicht bedrohlichen Klänge signalisieren Ihrem Nervensystem, dass es sich entspannen kann, was sie zu den besten Klängen macht, wenn Angst Sie wach hält.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection id="auswahl" title="So wählen Sie den besten Sound zum Einschlafen">
+        <p className="mt-4 leading-8 text-white/70">
+          Es gibt keine universelle Antwort darauf, was Ihren Schlaf verbessert. Nutzen Sie diese Tipps, um Ihr ideales Audio zu finden:
+        </p>
+        <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
+          <li><strong>Identifizieren Sie Ihr Hauptproblem:</strong> Wenn es sich um externen Lärm (Verkehr, Schnarchen) handelt, wählen Sie weißes oder rosa Rauschen. Bei internem Stress (Gedankenkarussell) testen Sie braunes Rauschen oder Naturklänge.</li>
+          <li><strong>Mischen Sie Ihren eigenen Sound:</strong> Mit einer App wie <a href="/de/sleep-sounds-app" className="text-emerald-400 hover:underline">Calma</a> müssen Sie sich nicht entscheiden. Sie können braunes Rauschen mit leichtem Regen mischen, um das Beste aus beiden Welten zu erhalten.</li>
+          <li><strong>Halten Sie die Lautstärke sicher:</strong> Schlafsounds sollten im Hintergrund bleiben. Halten Sie die Lautstärke unter 50 Dezibel, um Ihr Gehör zu schützen und Überstimulation zu vermeiden.</li>
+          <li><strong>Geben Sie dem Ganzen ein paar Nächte:</strong> Es kann ein paar Tage dauern, bis sich Ihr Gehirn an eine neue Schlafroutine gewöhnt. Testen Sie einen Sound mindestens 3 Nächte lang.</li>
         </ul>
       </ArticleSection>
 
-      <ArticleSection title="Der beste Einschlafsound ist persönlich">
-        <p className="mt-4 leading-8 text-white/70">
-          Es gibt keine universelle Antwort. Die besten Einschlafklänge sind die, 
-          die dir helfen, dich emotional sicher und körperlich ruhig zu fühlen. Das kann 
-          Regen, weißes Rauschen oder ein ganz individueller Mix sein.
-        </p>
-      </ArticleSection>
-    
-      <ArticleSection title="Gute Klänge zum Einschlafen: Ein kurzer Leitfaden">
-        
-      <p className="mt-4 leading-8 text-white/70">
-        Wenn Sie sich immer noch fragen, was wirklich <strong>gute Klänge zum Einschlafen</strong> sind: Es hängt von Ihren Vorlieben ab. 
-        Wenn Sie in einer lauten Stadt leben, ist weißes Rauschen hervorragend, um plötzliche Störungen zu blockieren. Wenn Sie eine natürlichere Stimmung bevorzugen, 
-        hilft Ihnen stetiger Regen oder rosa Rauschen, tiefe Ruhe zu finden. Die <strong>Klänge für besseren Schlaf</strong> sind letztendlich jene, 
-        die Ihnen ein Gefühl von Sicherheit und Ruhe geben.
-      </p>
-    
+      <ArticleSection id="faq" title="Häufig gestellte Fragen (FAQ)">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Was ist das entspannendste Geräusch zum Einschlafen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Obwohl dies subjektiv ist, zeigen Studien und Nutzerdaten, dass stetiger Regen, rosa Rauschen und langsame Meereswellen zu den entspannendsten Klängen gehören, da sie die akustische Sicherheit der Natur nachbilden.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Ist es schädlich, die ganze Nacht weißes Rauschen zu hören?</h3>
+            <p className="mt-2 leading-7 text-white/70">Es ist für Erwachsene im Allgemeinen sicher, weißes Rauschen die ganze Nacht über zu hören, solange die Lautstärke auf einem sicheren, niedrigen Niveau gehalten wird (unter 50-60 dB).</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Können Geräusche bei einem unruhigen Geist helfen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Ja. Gleichmäßige, tieffrequente Geräusche wie braunes Rauschen bieten einen konstanten, nicht bedrohlichen sensorischen Input, der das Bedürfnis des Gehirns nach Stimulation befriedigt und ablenkende Gedanken blockiert.</p>
+          </div>
+        </div>
       </ArticleSection>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Was ist das entspannendste Geräusch zum Einschlafen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Obwohl dies subjektiv ist, zeigen Studien und Nutzerdaten, dass stetiger Regen, rosa Rauschen und langsame Meereswellen zu den entspannendsten Klängen gehören, da sie die akustische Sicherheit der Natur nachbilden."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Ist es schädlich, die ganze Nacht weißes Rauschen zu hören?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Es ist für Erwachsene im Allgemeinen sicher, weißes Rauschen die ganze Nacht über zu hören, solange die Lautstärke auf einem sicheren, niedrigen Niveau gehalten wird (unter 50-60 dB)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Können Geräusche bei einem unruhigen Geist helfen?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Ja. Gleichmäßige, tieffrequente Geräusche wie braunes Rauschen bieten einen konstanten, nicht bedrohlichen sensorischen Input, der das Bedürfnis des Gehirns nach Stimulation befriedigt und ablenkende Gedanken blockiert."
+                }
+              }
+            ]
+          })
+        }}
+      />
+      
+      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
+        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
+        <div>
+          <p className="font-semibold text-white">Geschrieben vom Calma Team</p>
+          <p className="text-sm text-white/60">Experten für Schlafhygiene und Sounddesign, die sich dafür einsetzen, Ihnen zu erholsameren Nächten zu verhelfen.</p>
+        </div>
+      </div>
     </ArticlePage>
   );
 }
