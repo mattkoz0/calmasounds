@@ -6,6 +6,7 @@ import Image from "next/image";
 
 export default function Footer() {
   const t = useTranslations("Footer");
+  const navT = useTranslations("Navigation");
   const currentYear = new Date().getFullYear();
 
   const footerLinks = [
@@ -89,6 +90,9 @@ export default function Footer() {
             <div className="flex flex-wrap items-center justify-center gap-6">
               <Link href="/" className="transition hover:text-white">
                 {t("home")}
+              </Link>
+              <Link href="/download" className="transition hover:text-white">
+                {navT("download")}
               </Link>
               <a
                 href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
