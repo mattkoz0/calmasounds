@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/routing";
+import { pathnamesMapping } from "@/app/utils/seo";
 
 export const metadata: Metadata = {
   title: "Calmaブログ | 睡眠、ホワイトノイズ、集中のガイド",
@@ -26,66 +28,66 @@ export const metadata: Metadata = {
 
 const articles = [
   {
-    href: "/ja/blog/benefits-of-nature-sounds-for-relaxation",
+    href: "/blog/benefits-of-nature-sounds-for-relaxation",
     title: "深いリラクゼーションのための自然の音",
     description:
       "雨や海の波のような自然のサウンドスケープが、就寝時のルーティンを強化する自然なホワイトノイズとしてどのように機能するかを探ります。",
   },
   {
-    href: "/ja/blog/best-sounds-for-sleep",
+    href: "/blog/best-sounds-for-sleep",
     title: "睡眠に最適な音",
     description:
       "雨、ホワイトノイズ、より柔らかな睡眠サウンドスケープへの実践的なガイド。",
   },
   {
-    href: "/ja/blog/white-noise-for-sleep",
+    href: "/blog/white-noise-for-sleep",
     title: "睡眠のためのホワイトノイズ",
     description:
       "ホワイトノイズがいつ役立つか、そしてより穏やかな就寝環境を構築する方法。",
   },
   {
-    href: "/ja/blog/rain-sounds-vs-white-noise",
+    href: "/blog/rain-sounds-vs-white-noise",
     title: "雨の音 vs ホワイトノイズ",
     description:
       "感情的な快適さ、マスキング、就寝時の雰囲気を比較します。",
   },
   {
-    href: "/ja/blog/how-to-build-a-bedtime-routine",
+    href: "/blog/how-to-build-a-bedtime-routine",
     title: "就寝時のルーティンの作り方",
     description:
       "睡眠をサポートするより穏やかな夜のリズムを作成する簡単な方法。",
   },
   {
-    href: "/ja/blog/best-sounds-for-studying",
+    href: "/blog/best-sounds-for-studying",
     title: "勉強に最適な音",
     description:
       "集中力とより深いフォーカスを助ける可能性のある音の種類を見つけます。",
   },
   {
-    href: "/ja/blog/binaural-beats-for-sleep-and-focus",
+    href: "/blog/binaural-beats-for-sleep-and-focus",
     title: "睡眠と集中のためのバイノーラルビート",
     description:
       "バイノーラルビートが落ち着きと集中をどのようにサポートするかの簡単な紹介。",
   },
   {
-    href: "/ja/blog/guided-breathing-techniques",
+    href: "/blog/guided-breathing-techniques",
     title: "ガイド付き呼吸法",
     description:
       "リラクゼーション、バランス、睡眠、集中のための落ち着く呼吸法を探ります。",
   },
   {
-    href: "/ja/blog/brown-noise-vs-white-noise-vs-pink-noise",
+    href: "/blog/brown-noise-vs-white-noise-vs-pink-noise",
     title: "ブラウンノイズ vs ホワイトノイズ vs ピンクノイズ",
     description:
       "ノイズの色による違いを探り、集中や睡眠に最適なものを見つけます。",
   },
   {
-    href: "/ja/blog/rain-sounds-for-better-sleep-and-focus",
+    href: "/blog/rain-sounds-for-better-sleep-and-focus",
     title: "雨の音がより良い睡眠と集中のための究極の秘密である理由",
     description: "絶え間ない雨の音が、心を落ち着かせ、不眠症を克服し、集中力を維持するのに最適な理由を発見してください。",
   },
   {
-    href: "/ja/blog/green-noise-for-sleep",
+    href: "/blog/green-noise-for-sleep",
     title: "睡眠のためのグリーンノイズ：自然な休息の方法",
     description: "グリーンノイズとは何か、そしてその自然のような周波数が睡眠に最適なサウンドスケープである理由を発見してください。",
   },
@@ -108,73 +110,15 @@ const blogJsonLd = {
   url: "https://www.calmasounds.com/ja/blog",
   description:
     "睡眠音、ホワイトノイズ、集中音、落ち着くルーティンに関するガイド。",
-  hasPart: [
-    {
+  hasPart: articles.map(article => {
+    const mapping = pathnamesMapping[article.href as keyof typeof pathnamesMapping];
+    const localizedPath = (mapping && (mapping as any)["ja"]) || article.href;
+    return {
       "@type": "Article",
-      headline: "深いリラクゼーションのための自然の音",
-      url: "https://www.calmasounds.com/ja/blog/benefits-of-nature-sounds-for-relaxation",
-    },
-    {
-      "@type": "Article",
-      headline: "睡眠に最適な音",
-      url: "https://www.calmasounds.com/ja/blog/best-sounds-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "睡眠のためのホワイトノイズ",
-      url: "https://www.calmasounds.com/ja/blog/white-noise-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "雨の音 vs ホワイトノイズ",
-      url: "https://www.calmasounds.com/ja/blog/rain-sounds-vs-white-noise",
-    },
-    {
-      "@type": "Article",
-      headline: "就寝時のルーティンの作り方",
-      url: "https://www.calmasounds.com/ja/blog/how-to-build-a-bedtime-routine",
-    },
-    {
-      "@type": "Article",
-      headline: "勉強に最適な音",
-      url: "https://www.calmasounds.com/ja/blog/best-sounds-for-studying",
-    },
-    {
-      "@type": "Article",
-      headline: "睡眠と集中のためのバイノーラルビート",
-      url: "https://www.calmasounds.com/ja/blog/binaural-beats-for-sleep-and-focus",
-    },
-    {
-      "@type": "Article",
-      headline: "ガイド付き呼吸法",
-      url: "https://www.calmasounds.com/ja/blog/guided-breathing-techniques",
-    },
-    {
-      "@type": "Article",
-      headline: "ブラウンノイズ vs ホワイトノイズ vs ピンクノイズ",
-      url: "https://www.calmasounds.com/ja/blog/brown-noise-vs-white-noise-vs-pink-noise",
-    },
-    {
-      "@type": "Article",
-      headline: "雨の音がより良い睡眠と集中のための究極の秘密である理由",
-      url: "https://www.calmasounds.com/ja/blog/rain-sounds-for-better-sleep-and-focus",
-    },
-    {
-      "@type": "Article",
-      headline: "睡眠のためのグリーンノイズ：自然な休息の方法",
-      url: "https://www.calmasounds.com/ja/blog/green-noise-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "睡眠のための最高の無料ホワイトノイズアプリ",
-      url: "https://www.calmasounds.com/ja/blog/best-free-white-noise-app",
-    },
-    {
-      "@type": "Article",
-      headline: "ADHDに最適なノイズの色は？ブラウンノイズ vs ホワイトノイズ",
-      url: "https://www.calmasounds.com/ja/blog/best-color-noise-for-adhd",
-    },
-  ],
+      headline: article.title,
+      url: `https://www.calmasounds.com/ja${localizedPath}`,
+    };
+  }),
 };
 
 const breadcrumbJsonLd = {
@@ -229,40 +173,40 @@ export default function BlogPage() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {articles.map((article) => (
-            <a
+            <Link
               key={article.href}
-              href={article.href}
+              href={article.href as any}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>
               <p className="mt-4 leading-7 text-white/70">
                 {article.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="mt-16 rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8">
           <h2 className="text-2xl font-semibold">Calmaを探索する</h2>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a
-              href="/ja/sleep-sounds-app"
-              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950"
+            <Link
+              href="/sleep-sounds-app"
+              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950 hover:scale-[1.02] transition"
             >
               睡眠音アプリ
-            </a>
-            <a
-              href="/ja/white-noise-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+            </Link>
+            <Link
+              href="/white-noise-app"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               ホワイトノイズアプリ
-            </a>
-            <a
-              href="/ja/focus-sounds-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+            </Link>
+            <Link
+              href="/focus-sounds-app"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               集中音アプリ
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/routing";
+import { pathnamesMapping } from "@/app/utils/seo";
 
 export const metadata: Metadata = {
   title: "Calma Blog | Ratgeber zu Schlaf, weißem Rauschen und Fokus",
@@ -108,73 +110,15 @@ const blogJsonLd = {
   url: "https://www.calmasounds.com/de/blog",
   description:
     "Ratgeber zu Schlafklängen, weißem Rauschen, Fokus-Sounds und beruhigenden Routinen.",
-  hasPart: [
-    {
+  hasPart: articles.map(article => {
+    const mapping = pathnamesMapping[article.href];
+    const localizedPath = (mapping && mapping["de"]) || article.href;
+    return {
       "@type": "Article",
-      headline: "Naturklänge für tiefe Entspannung",
-      url: "https://www.calmasounds.com/de/blog/benefits-of-nature-sounds-for-relaxation",
-    },
-    {
-      "@type": "Article",
-      headline: "Beste Sounds zum Einschlafen",
-      url: "https://www.calmasounds.com/de/blog/best-sounds-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "Weißes Rauschen zum Schlafen",
-      url: "https://www.calmasounds.com/de/blog/white-noise-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "Regenklänge vs. Weißes Rauschen",
-      url: "https://www.calmasounds.com/de/blog/rain-sounds-vs-white-noise",
-    },
-    {
-      "@type": "Article",
-      headline: "Wie man eine Abendroutine aufbaut",
-      url: "https://www.calmasounds.com/de/blog/how-to-build-a-bedtime-routine",
-    },
-    {
-      "@type": "Article",
-      headline: "Beste Sounds zum Lernen",
-      url: "https://www.calmasounds.com/de/blog/best-sounds-for-studying",
-    },
-    {
-      "@type": "Article",
-      headline: "Binaurale Beats für Schlaf und Fokus",
-      url: "https://www.calmasounds.com/de/blog/binaural-beats-for-sleep-and-focus",
-    },
-    {
-      "@type": "Article",
-      headline: "Geführte Atemtechniken",
-      url: "https://www.calmasounds.com/de/blog/guided-breathing-techniques",
-    },
-    {
-      "@type": "Article",
-      headline: "Braunes vs. Weißes vs. Pinkes Rauschen",
-      url: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
-    },
-    {
-      "@type": "Article",
-      headline: "Warum Regenklänge das Geheimnis für besseren Schlaf und Fokus sind",
-      url: "https://www.calmasounds.com/de/blog/rain-sounds-for-better-sleep-and-focus",
-    },
-    {
-      "@type": "Article",
-      headline: "Grünes Rauschen zum Schlafen: Der natürliche Weg zur Ruhe",
-      url: "https://www.calmasounds.com/de/blog/green-noise-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "Die beste kostenlose White-Noise-App für den Schlaf",
-      url: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",
-    },
-    {
-      "@type": "Article",
-      headline: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
-      url: "https://www.calmasounds.com/de/blog/best-color-noise-for-adhd",
-    },
-  ],
+      headline: article.title,
+      url: `https://www.calmasounds.com/de${localizedPath}`,
+    };
+  }),
 };
 
 const breadcrumbJsonLd = {
@@ -230,40 +174,40 @@ export default function BlogPage() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {articles.map((article) => (
-            <a
+            <Link
               key={article.href}
-              href={article.href}
+              href={article.href as any}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>
               <p className="mt-4 leading-7 text-white/70">
                 {article.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="mt-16 rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8">
           <h2 className="text-2xl font-semibold">Calma entdecken</h2>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a
+            <Link
               href="/sleep-sounds-app"
-              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950"
+              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950 hover:scale-[1.02] transition"
             >
               Schlaf-App
-            </a>
-            <a
+            </Link>
+            <Link
               href="/white-noise-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               Weißes Rauschen App
-            </a>
-            <a
+            </Link>
+            <Link
               href="/focus-sounds-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               Fokus-App
-            </a>
+            </Link>
           </div>
         </div>
       </section>

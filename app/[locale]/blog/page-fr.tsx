@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 
 export const metadata: Metadata = {
   title: "Blog Calma | Guides sur le sommeil, le bruit blanc et la concentration",
@@ -98,7 +98,7 @@ const articles = [
   },
   {
     href: "/blog/best-color-noise-for-adhd",
-    title: "Quelle couleur de bruit est la meilleure pour le TDAH ? Bruit brun vs blanc",
+    title: "La meilleure couleur de bruit pour le TDAH ? Bruit brun vs blanc",
     description: "Découvrez pourquoi le bruit brun est souvent préféré pour le TDAH, la concentration et la surstimulation.",
   },
 ];
@@ -122,16 +122,16 @@ export default function BlogPage() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {articles.map((article) => (
-            <a
+            <Link
               key={article.href}
-              href={article.href}
+              href={article.href as any}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>
               <p className="mt-4 leading-7 text-white/70">
                 {article.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
       </section>

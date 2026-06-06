@@ -1,5 +1,68 @@
 import type { Metadata } from "next";
 
+export const pathnamesMapping: Record<string, Record<string, string>> = {
+  '/blog/benefits-of-nature-sounds-for-relaxation': {
+    en: '/blog/benefits-of-nature-sounds-for-relaxation',
+    pl: '/blog/korzysci-z-dzwiekow-natury-dla-relaksu',
+    de: '/blog/vorteile-von-naturgeraeuschen-zur-entspannung',
+    es: '/blog/beneficios-de-los-sonidos-de-la-naturaleza-para-relajarse',
+    fr: '/blog/bienfaits-des-sons-de-la-nature-pour-la-relaxation',
+    "pt-BR": '/blog/beneficios-dos-sons-da-natureza-para-relaxar',
+    ko: '/blog/benefits-of-nature-sounds-for-relaxation',
+    ja: '/blog/benefits-of-nature-sounds-for-relaxation',
+  },
+  '/blog/best-sounds-for-sleep': {
+    en: '/blog/best-sounds-for-sleep',
+    pl: '/blog/najlepsze-dzwieki-do-snu',
+    de: '/blog/beste-geraeusche-zum-einschlafen',
+    es: '/blog/mejores-sonidos-para-dormir',
+    fr: '/blog/meilleurs-sons-pour-dormir',
+    "pt-BR": '/blog/melhores-sons-para-dormir',
+    ko: '/blog/best-sounds-for-sleep',
+    ja: '/blog/best-sounds-for-sleep',
+  },
+  '/blog/best-sounds-for-studying': {
+    en: '/blog/best-sounds-for-studying',
+    pl: '/blog/najlepsze-dzwieki-do-nauki',
+    de: '/blog/beste-geraeusche-zum-lernen',
+    es: '/blog/mejores-sonidos-para-estudiar',
+    fr: '/blog/meilleurs-sons-pour-etudier',
+    "pt-BR": '/blog/melhores-sons-para-estudar',
+    ko: '/blog/best-sounds-for-studying',
+    ja: '/blog/best-sounds-for-studying',
+  },
+  '/blog/white-noise-for-sleep': {
+    en: '/blog/white-noise-for-sleep',
+    pl: '/blog/bialy-szum-do-snu',
+    de: '/blog/weisses-rauschen-zum-schlafen',
+    es: '/blog/ruido-blanco-para-dormir',
+    fr: '/blog/bruit-blanc-pour-dormir',
+    "pt-BR": '/blog/ruido-branco-para-dormir',
+    ko: '/blog/white-noise-for-sleep',
+    ja: '/blog/white-noise-for-sleep',
+  },
+  '/blog/rain-sounds-vs-white-noise': {
+    en: '/blog/rain-sounds-vs-white-noise',
+    pl: '/blog/dzwieki-deszczu-vs-bialy-szum',
+    de: '/blog/regengeraeusche-vs-weisses-rauschen',
+    es: '/blog/sonido-de-lluvia-vs-ruido-blanco',
+    fr: '/blog/bruit-de-pluie-vs-bruit-blanc',
+    "pt-BR": '/blog/sons-de-chuva-vs-ruido-branco',
+    ko: '/blog/rain-sounds-vs-white-noise',
+    ja: '/blog/rain-sounds-vs-white-noise',
+  },
+  '/blog/brown-noise-vs-white-noise-vs-pink-noise': {
+    en: '/blog/brown-noise-vs-white-noise-vs-pink-noise',
+    pl: '/blog/szum-brazowy-vs-bialy-vs-rozowy',
+    de: '/blog/braunes-vs-weisses-vs-rosa-rauschen',
+    es: '/blog/ruido-marron-vs-blanco-vs-rosa',
+    fr: '/blog/bruit-marron-vs-blanc-vs-rose',
+    "pt-BR": '/blog/ruido-marrom-vs-branco-vs-rosa',
+    ko: '/blog/brown-noise-vs-white-noise-vs-pink-noise',
+    ja: '/blog/brown-noise-vs-white-noise-vs-pink-noise',
+  }
+};
+
 export function getLocalizedMetadata(
   locale: string,
   path: string,
@@ -8,18 +71,26 @@ export function getLocalizedMetadata(
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
   const url = (p: string) => `https://www.calmasounds.com${p}`;
 
+  const getPathForLocale = (loc: string) => {
+    const mapping = pathnamesMapping[cleanPath];
+    if (mapping && mapping[loc]) {
+      return mapping[loc];
+    }
+    return cleanPath;
+  };
+
   const alternates = {
-    canonical: url(locale === "en" ? cleanPath : `/${locale}${cleanPath}`),
+    canonical: url(locale === "en" ? getPathForLocale(locale) : `/${locale}${getPathForLocale(locale)}`),
     languages: {
-      "x-default": url(cleanPath),
-      en: url(cleanPath),
-      es: url(`/es${cleanPath}`),
-      pl: url(`/pl${cleanPath}`),
-      de: url(`/de${cleanPath}`),
-      fr: url(`/fr${cleanPath}`),
-      ko: url(`/ko${cleanPath}`),
-      ja: url(`/ja${cleanPath}`),
-      "pt-BR": url(`/pt-BR${cleanPath}`),
+      "x-default": url(getPathForLocale("en")),
+      en: url(getPathForLocale("en")),
+      es: url(`/es${getPathForLocale("es")}`),
+      pl: url(`/pl${getPathForLocale("pl")}`),
+      de: url(`/de${getPathForLocale("de")}`),
+      fr: url(`/fr${getPathForLocale("fr")}`),
+      ko: url(`/ko${getPathForLocale("ko")}`),
+      ja: url(`/ja${getPathForLocale("ja")}`),
+      "pt-BR": url(`/pt-BR${getPathForLocale("pt-BR")}`),
     },
   };
 

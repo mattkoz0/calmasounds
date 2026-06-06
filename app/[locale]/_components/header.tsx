@@ -50,10 +50,10 @@ export default function Header() {
         </div>
 
         <nav className="hidden gap-6 text-sm text-white/70 md:flex" aria-label="Main navigation">
-          <Link href="/#features" className="transition hover:text-white">
+          <Link href={"/#features" as any} className="transition hover:text-white">
             {t("features")}
           </Link>
-          <Link href="/#faq" className="transition hover:text-white">
+          <Link href={"/#faq" as any} className="transition hover:text-white">
             {t("faq")}
           </Link>
           <Link href="/blog" className="transition hover:text-white">
@@ -62,7 +62,7 @@ export default function Header() {
           <Link href="/support" className="transition hover:text-white">
             {t("support")}
           </Link>
-          <Link href="/#download" className="transition hover:text-white">
+          <Link href={"/#download" as any} className="transition hover:text-white">
             {t("download")}
           </Link>
         </nav>

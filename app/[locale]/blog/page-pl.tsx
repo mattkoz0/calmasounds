@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Link } from "@/i18n/routing";
+import { pathnamesMapping } from "@/app/utils/seo";
 
 export const metadata: Metadata = {
   title: "Blog Calma | Przewodniki po snu, białym szumie i koncentracji",
@@ -108,11 +110,15 @@ const blogJsonLd = {
   url: "https://www.calmasounds.com/pl/blog",
   description:
     "Przewodniki o dźwiękach do snu, białym szumie, dźwiękach do koncentracji i wyciszających rutynach.",
-  hasPart: articles.map(article => ({
-    "@type": "Article",
-    headline: article.title,
-    url: `https://www.calmasounds.com/pl${article.href}`,
-  })),
+  hasPart: articles.map(article => {
+    const mapping = pathnamesMapping[article.href];
+    const localizedPath = (mapping && mapping["pl"]) || article.href;
+    return {
+      "@type": "Article",
+      headline: article.title,
+      url: `https://www.calmasounds.com/pl${localizedPath}`,
+    };
+  }),
 };
 
 const breadcrumbJsonLd = {
@@ -168,40 +174,40 @@ export default function BlogPage() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {articles.map((article) => (
-            <a
+            <Link
               key={article.href}
-              href={article.href}
+              href={article.href as any}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>
               <p className="mt-4 leading-7 text-white/70">
                 {article.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="mt-16 rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8">
           <h2 className="text-2xl font-semibold">Odkryj Calmę</h2>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a
+            <Link
               href="/sleep-sounds-app"
-              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950"
+              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950 hover:scale-[1.02] transition"
             >
               Aplikacja do snu
-            </a>
-            <a
+            </Link>
+            <Link
               href="/white-noise-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               Aplikacja biały szum
-            </a>
-            <a
+            </Link>
+            <Link
               href="/focus-sounds-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               Aplikacja koncentracja
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -58,7 +58,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-3 text-white/70">
             {footerLinks.map((link) => (
               <li key={link.href} className="flex">
-                <Link href={link.href} className="transition hover:text-white">
+                <Link href={link.href as any} className="transition hover:text-white">
                   {link.name}
                 </Link>
               </li>
@@ -73,7 +73,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-3 text-white/70">
             {guideLinks.map((link) => (
               <li key={link.name} className="flex">
-                <Link href={link.href} className="transition hover:text-white">
+                <Link href={link.href as any} className="transition hover:text-white">
                   {link.name}
                 </Link>
               </li>

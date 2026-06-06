@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import { useParams } from "next/navigation";
+import { pathnamesMapping } from "@/app/utils/seo";
 import DesktopDownloadQr from "../../_components/desktop-download-qr";
 
 type RelatedArticle = {
@@ -62,8 +63,13 @@ export function ArticlePage({
   const locale = (params?.locale as string) || "en";
 
   const getLocalizedUrl = (path: string, currentLocale: string) => {
+    let cleanPath = path;
+    const mapping = pathnamesMapping[path];
+    if (mapping && mapping[currentLocale]) {
+      cleanPath = mapping[currentLocale];
+    }
     const prefix = currentLocale === "en" ? "" : `/${currentLocale}`;
-    return `https://www.calmasounds.com${prefix}${path}`;
+    return `https://www.calmasounds.com${prefix}${cleanPath}`;
   };
 
   const enrichedJsonLd = {

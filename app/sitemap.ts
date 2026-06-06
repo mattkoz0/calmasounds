@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { pathnamesMapping } from "@/app/utils/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const currentDate = new Date();
@@ -42,23 +43,33 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/download", priority: 0.7, changeFrequency: "monthly" as const },
   ];
 
-  return routes.map((route) => ({
-    url: url(route.path),
-    lastModified: currentDate,
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-    alternates: {
-      languages: {
-        "x-default": url(route.path),
-        en: url(route.path),
-        es: url(`/es${route.path}`),
-        pl: url(`/pl${route.path}`),
-        de: url(`/de${route.path}`),
-        fr: url(`/fr${route.path}`),
-        ko: url(`/ko${route.path}`),
-        ja: url(`/ja${route.path}`),
-        "pt-BR": url(`/pt-BR${route.path}`),
+  return routes.map((route) => {
+    const getPathForLocale = (loc: string) => {
+      const mapping = pathnamesMapping[route.path];
+      if (mapping && mapping[loc]) {
+        return mapping[loc];
+      }
+      return route.path;
+    };
+
+    return {
+      url: url(getPathForLocale("en")),
+      lastModified: currentDate,
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+      alternates: {
+        languages: {
+          "x-default": url(getPathForLocale("en")),
+          en: url(getPathForLocale("en")),
+          es: url(`/es${getPathForLocale("es")}`),
+          pl: url(`/pl${getPathForLocale("pl")}`),
+          de: url(`/de${getPathForLocale("de")}`),
+          fr: url(`/fr${getPathForLocale("fr")}`),
+          ko: url(`/ko${getPathForLocale("ko")}`),
+          ja: url(`/ja${getPathForLocale("ja")}`),
+          "pt-BR": url(`/pt-BR${getPathForLocale("pt-BR")}`),
+        },
       },
-    },
-  }));
+    };
+  });
 }

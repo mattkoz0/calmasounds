@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { pathnamesMapping } from "@/app/utils/seo";
 
 export const metadata: Metadata = {
   title: "Blog de Calma | Guías de Sueño, Ruido Blanco y Concentración",
@@ -110,73 +111,15 @@ const blogJsonLd = {
   url: "https://www.calmasounds.com/es/blog",
   description:
     "Guías sobre sonidos para dormir, ruido blanco, sonidos para concentrarse y rutinas relajantes.",
-  hasPart: [
-    {
+  hasPart: articles.map(article => {
+    const mapping = pathnamesMapping[article.href];
+    const localizedPath = (mapping && mapping["es"]) || article.href;
+    return {
       "@type": "Article",
-      headline: "Sonidos de la Naturaleza para Relajación Profunda",
-      url: "https://www.calmasounds.com/es/blog/benefits-of-nature-sounds-for-relaxation",
-    },
-    {
-      "@type": "Article",
-      headline: "Los Mejores Sonidos para Dormir",
-      url: "https://www.calmasounds.com/es/blog/best-sounds-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "Ruido Blanco para Dormir",
-      url: "https://www.calmasounds.com/es/blog/white-noise-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "Sonidos de Lluvia vs Ruido Blanco",
-      url: "https://www.calmasounds.com/es/blog/rain-sounds-vs-white-noise",
-    },
-    {
-      "@type": "Article",
-      headline: "Cómo Construir una Rutina para Acostarse",
-      url: "https://www.calmasounds.com/es/blog/how-to-build-a-bedtime-routine",
-    },
-    {
-      "@type": "Article",
-      headline: "Los Mejores Sonidos para Estudiar",
-      url: "https://www.calmasounds.com/es/blog/best-sounds-for-studying",
-    },
-    {
-      "@type": "Article",
-      headline: "Ondas Binaurales para el Sueño y la Concentración",
-      url: "https://www.calmasounds.com/es/blog/binaural-beats-for-sleep-and-focus",
-    },
-    {
-      "@type": "Article",
-      headline: "Técnicas de Respiración Guiada",
-      url: "https://www.calmasounds.com/es/blog/guided-breathing-techniques",
-    },
-    {
-      "@type": "Article",
-      headline: "Ruido Marrón vs Ruido Blanco vs Ruido Rosa",
-      url: "https://www.calmasounds.com/es/blog/brown-noise-vs-white-noise-vs-pink-noise",
-    },
-    {
-      "@type": "Article",
-      headline: "Por qué los Sonidos de Lluvia son el Secreto para Dormir y Concentrarse",
-      url: "https://www.calmasounds.com/es/blog/rain-sounds-for-better-sleep-and-focus",
-    },
-    {
-      "@type": "Article",
-      headline: "Ruido Verde para Dormir: La Manera Natural de Descansar",
-      url: "https://www.calmasounds.com/es/blog/green-noise-for-sleep",
-    },
-    {
-      "@type": "Article",
-      headline: "La mejor aplicación gratuita de ruido blanco para dormir",
-      url: "https://www.calmasounds.com/es/blog/best-free-white-noise-app",
-    },
-    {
-      "@type": "Article",
-      headline: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
-      url: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
-    },
-  ],
+      headline: article.title,
+      url: `https://www.calmasounds.com/es${localizedPath}`,
+    };
+  }),
 };
 
 const breadcrumbJsonLd = {
@@ -232,40 +175,40 @@ export default function BlogPage() {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {articles.map((article) => (
-            <a
+            <Link
               key={article.href}
-              href={article.href}
+              href={article.href as any}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>
               <p className="mt-4 leading-7 text-white/70">
                 {article.description}
               </p>
-            </a>
+            </Link>
           ))}
         </div>
 
         <div className="mt-16 rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-8">
           <h2 className="text-2xl font-semibold">Explora Calma</h2>
           <div className="mt-6 flex flex-wrap gap-4">
-            <a
+            <Link
               href="/sleep-sounds-app"
-              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950"
+              className="rounded-2xl bg-white px-5 py-3 font-medium text-slate-950 hover:scale-[1.02] transition"
             >
               App para dormir
-            </a>
-            <a
+            </Link>
+            <Link
               href="/white-noise-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               App de ruido blanco
-            </a>
-            <a
+            </Link>
+            <Link
               href="/focus-sounds-app"
-              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white"
+              className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 font-medium text-white hover:bg-white/10 transition"
             >
               App para concentrarse
-            </a>
+            </Link>
           </div>
         </div>
       </section>
