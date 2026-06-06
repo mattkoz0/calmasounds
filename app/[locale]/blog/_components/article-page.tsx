@@ -1,7 +1,10 @@
+"use client";
+
 import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
+import { useParams } from "next/navigation";
 import DesktopDownloadQr from "../../_components/desktop-download-qr";
 
 type RelatedArticle = {
@@ -27,6 +30,17 @@ type ArticlePageProps = {
   slug?: string;
 };
 
+const homeTranslations: Record<string, string> = {
+  en: "Home",
+  pl: "Strona główna",
+  es: "Inicio",
+  de: "Startseite",
+  fr: "Accueil",
+  ko: "홈",
+  ja: "ホーム",
+  "pt-BR": "Início",
+};
+
 export function ArticlePage({
   jsonLd,
   ctaHref,
@@ -44,6 +58,14 @@ export function ArticlePage({
   slug,
   tableOfContents = [],
 }: ArticlePageProps & { tableOfContents?: { id: string; title: string }[] }) {
+  const params = useParams();
+  const locale = (params?.locale as string) || "en";
+
+  const getLocalizedUrl = (path: string, currentLocale: string) => {
+    const prefix = currentLocale === "en" ? "" : `/${currentLocale}`;
+    return `https://www.calmasounds.com${prefix}${path}`;
+  };
+
   const enrichedJsonLd = {
     ...jsonLd,
     "author": {
@@ -61,7 +83,7 @@ export function ArticlePage({
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": slug ? `https://www.calmasounds.com/blog/${slug}` : "https://www.calmasounds.com/blog"
+      "@id": slug ? getLocalizedUrl(`/blog/${slug}`, locale) : getLocalizedUrl("/blog", locale)
     }
   };
 
@@ -72,20 +94,20 @@ export function ArticlePage({
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
-        "item": "https://www.calmasounds.com"
+        "name": homeTranslations[locale] || "Home",
+        "item": getLocalizedUrl("", locale)
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://www.calmasounds.com/blog"
+        "item": getLocalizedUrl("/blog", locale)
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": title,
-        "item": `https://www.calmasounds.com/blog/${slug}`
+        "item": getLocalizedUrl(`/blog/${slug}`, locale)
       }
     ]
   } : null;

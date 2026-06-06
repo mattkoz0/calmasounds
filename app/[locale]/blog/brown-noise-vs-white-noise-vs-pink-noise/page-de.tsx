@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
+import { YouTubeEmbed } from "@/app/_components/youtube-embed";
 
 export const metadata: Metadata = {
   title: "Braunes vs. Weißes vs. Rosa Rauschen | Calma Blog",
@@ -100,13 +101,10 @@ export default function NoiseColorsPage() {
         </p>
         <div className="flex justify-center">
             <div className="aspect-[9/16] w-full max-w-[350px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-                <iframe
-                    className="h-full w-full"
-                    src="https://www.youtube.com/embed/MlJNs1K66xc"
+                <YouTubeEmbed
+                    videoId="MlJNs1K66xc"
                     title="Die Farben des Rauschens: Weiß, Pink, Braun und Grün"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                ></iframe>
+                />
             </div>
         </div>
       </ArticleSection>

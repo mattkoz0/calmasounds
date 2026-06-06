@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { YouTubeEmbed } from "@/app/_components/youtube-embed";
 
 export const metadata: Metadata = {
   title: "Dlaczego dźwięki deszczu to sekret lepszego snu i koncentracji | Blog Calma",
@@ -102,16 +103,12 @@ export default function RainSoundsBlogPage() {
         <div className="mt-8">
           {/* YouTube Shorts Embed */}
           <div className="flex justify-center mb-8">
-            <iframe
-              width="315"
-              height="560"
-              src="https://www.youtube.com/embed/ds-fFkoWBUo"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              className="rounded-3xl shadow-xl shadow-black/50"
-            ></iframe>
+            <div className="aspect-[9/16] w-full max-w-[350px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
+              <YouTubeEmbed
+                videoId="ds-fFkoWBUo"
+                title="YouTube video player"
+              />
+            </div>
           </div>
 
           <p className="mt-6 text-lg leading-8 text-white/80">
