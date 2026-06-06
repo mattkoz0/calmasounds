@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
+import { AudioPlayer } from "../_components/audio-player";
 
 export const metadata: Metadata = {
   title: "Szum Brązowy vs Biały vs Różowy | Blog Calma",
@@ -43,7 +44,7 @@ const articleJsonLd = {
     "Kompleksowy przewodnik po kolorach szumu, w tym szumie Zielonym, oraz ich unikalnych korzyściach dla snu, skupienia i relaksu.",
   author: {
     "@type": "Organization",
-    name: "Calma",
+    name: "Calma Team",
   },
   publisher: {
     "@type": "Organization",
@@ -51,7 +52,7 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/pl/blog/brown-noise-vs-white-noise-vs-pink-noise",
   datePublished: "2026-04-13",
-  dateModified: "2026-04-13",
+  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function NoiseColorsPage() {
@@ -59,13 +60,13 @@ export default function NoiseColorsPage() {
     <ArticlePage
       slug="brown-noise-vs-white-noise-vs-pink-noise"
       jsonLd={articleJsonLd}
-      topLinkHref="/white-noise-app"
+      topLinkHref="/pl/white-noise-app"
       topLinkLabel="Odkryj sekcję białego szumu"
       title="Szum Brązowy vs Biały vs Różowy vs Zielony"
       intro="Nie każdy „biały szum” jest w rzeczywistości biały. W świecie audio dźwięki są kategoryzowane jako „kolory” na podstawie ich rozkładu częstotliwości. Zrozumienie różnicy między szumem białym, różowym, brązowym i zielonym pomoże Ci wybrać odpowiednie tło dla lepszego snu, głębszej koncentracji lub łagodzenia objawów ADHD."
-      ctaHref="/white-noise-app"
+      ctaHref="/pl/white-noise-app"
       ctaLabel="Odkryj aplikację biały szum"
-      secondaryCtaHref="/sound-mixer-app"
+      secondaryCtaHref="/pl/sound-mixer-app"
       secondaryCtaLabel="Odkryj mikser dźwięków"
       tableOfContents={[
         { id: "video", title: "Wideo: Kolory wyjaśnione" },
@@ -73,19 +74,20 @@ export default function NoiseColorsPage() {
         { id: "pink-noise", title: "Szum Różowy" },
         { id: "brown-noise", title: "Szum Brązowy" },
         { id: "green-noise", title: "Szum Zielony" },
+        { id: "adhd-noise", title: "Szum przy ADHD" },
         { id: "summary", title: "Który wybrać?" },
         { id: "comparison-table", title: "Tabela Porównawcza: Kolory Szumu" },
         { id: "faq", title: "Często Zadawane Pytania (FAQ)" },
       ]}
       relatedArticles={[
         {
-          href: "/blog/white-noise-for-sleep",
+          href: "/pl/blog/white-noise-for-sleep",
           title: "Biały szum do snu",
           description:
             "Dowiedz się, jak biały szum pomaga szybciej zasnąć i spać dłużej.",
         },
         {
-          href: "/blog/best-sounds-for-studying",
+          href: "/pl/blog/best-sounds-for-studying",
           title: "Najlepsze dźwięki do nauki",
           description:
             "Odkryj, które dźwięki tła są najskuteczniejsze dla Twojej koncentracji.",
@@ -110,49 +112,106 @@ export default function NoiseColorsPage() {
       </ArticleSection>
 
       <ArticleSection id="white-noise" title="Szum Biały: Wszechstronny klasyk">
-        <p>
+        <p className="mt-4 leading-8 text-white/70">
           Biały szum zawiera wszystkie słyszalne częstotliwości odtwarzane z taką samą intensywnością. Brzmi jak szum starego radia lub statyczny sygnał. Ponieważ pokrywa całe spektrum, wyjątkowo dobrze maskuje nagłe, rozpraszające dźwięki, takie jak trzaśnięcia drzwiami czy klaksony samochodów.
         </p>
-        <p className="mt-4">
+        <AudioPlayer 
+          src="/white_noise.m4a" 
+          title="Próbka Białego Szumu" 
+          description="Jednostajny szum statyczny, który równomiernie maskuje wszystkie częstotliwości."
+          colorClass="bg-slate-500/20 text-slate-300"
+        />
+        <p className="mt-4 leading-8 text-white/70">
           <strong>Najlepszy dla:</strong> Maskowania hałasu otoczenia, wspierania snu niemowląt i tworzenia neutralnego tła w głośnych biurach.
         </p>
       </ArticleSection>
 
       <ArticleSection id="pink-noise" title="Szum Różowy: Naturalny wybór">
-        <p>
+        <p className="mt-4 leading-8 text-white/70">
           Szum różowy jest podobny do białego, ale ma więcej energii w niższych częstotliwościach. Tworzy to miększy, bardziej zrównoważony dźwięk, który wiele osób uważa za bardziej naturalny niż surowy biały szum. Przypomina on odgłos jednostajnego deszczu lub wiatru szumiącego w liściach.
         </p>
-        <p className="mt-4">
+        <AudioPlayer 
+          src="/pink_noise.m4a" 
+          title="Próbka Różowego Szumu" 
+          description="Łagodniejszy, bardziej zrównoważony dźwięk przypominający jednostajny opad deszczu."
+          colorClass="bg-pink-500/20 text-pink-300"
+        />
+        <p className="mt-4 leading-8 text-white/70">
           <strong>Najlepszy dla:</strong> Poprawy jakości snu, relaksu bez uczucia „statyczności” oraz długotrwałego skupienia.
         </p>
       </ArticleSection>
 
       <ArticleSection id="brown-noise" title="Szum Brązowy: Głęboki spokój">
-        <p>
+        <p className="mt-4 leading-8 text-white/70">
           Szum brązowy (nazywany też czerwonym) idzie jeszcze dalej niż różowy, skupiając się mocno na niskich częstotliwościach basowych. Brzmi jak głęboki pomruk, odległy wodospad lub niski szum silników samolotu.
         </p>
-        <p className="mt-4">
+        <AudioPlayer 
+          src="/brown_noise.m4a" 
+          title="Próbka Brązowego Szumu" 
+          description="Głębokie, basowe częstotliwości idealne do głębokiego skupienia."
+          colorClass="bg-orange-500/20 text-orange-300"
+        />
+        <p className="mt-4 leading-8 text-white/70">
           Ostatnio szum brązowy zyskał dużą popularność w społeczności ADHD. Wiele osób uważa, że jego głęboka, immersyjna jakość pomaga „uciszyć” natłok myśli skuteczniej niż dźwięki o wyższych częstotliwościach.
         </p>
-        <p className="mt-4">
+        <p className="mt-4 leading-8 text-white/70">
           <strong>Najlepszy dla:</strong> Łagodzenia objawów ADHD, głębokiej koncentracji, intensywnego relaksu i osób, które drażnią wysokie częstotliwości.
         </p>
       </ArticleSection>
 
       <ArticleSection id="green-noise" title="Szum Zielony: Harmonia natury">
-        <p>
+        <p className="mt-4 leading-8 text-white/70">
           Zielony szum jest często opisywany jako tło akustyczne samej natury. Skupia się na środkowych częstotliwościach, podobnych do tych, które słyszymy w lesie lub przy cichym strumieniu. Jest mniej surowy niż szum biały i mniej basowy niż szum brązowy, znajdując komfortowy złoty środek.
         </p>
-        <p className="mt-4">
+        <p className="mt-4 leading-8 text-white/70">
           <strong>Najlepszy dla:</strong> Tworzenia spokojnej atmosfery, relaksu bez ciężkiego basu i osób kochających naturalnie brzmiące pejzaże dźwiękowe.
         </p>
       </ArticleSection>
 
+      <ArticleSection id="adhd-noise" title="Jaki kolor szumu jest najlepszy przy ADHD?">
+        <p className="mt-4 leading-8 text-white/70">
+          Częstym pytaniem w społecznościach osób neuroróżnorodnych jest: <strong>Jaki kolor szumu najlepiej pomaga przy ADHD?</strong> Choć mózg każdego człowieka działa inaczej, <strong>szum brązowy</strong> jest zazwyczaj zdecydowanym faworytem.
+        </p>
+        <p className="mt-4 leading-8 text-white/70">
+          Ponieważ szum brązowy jest głębszy i nie posiada wysokotonowego „syczenia” charakterystycznego dla szumu białego, wiele osób z ADHD opisuje go jako „ciężki koc” dźwiękowy, który naturalnie wycisza natłok myśli. Dostarcza dokładnie tyle stymulacji sensorycznej, ile potrzebuje mózg, pozwalając korze przedczołowej skupić się na wykonywanym zadaniu bez rozpraszania się wewnętrznymi czy zewnętrznymi bodźcami.
+        </p>
+        <p className="mt-4 leading-8 text-white/70">
+          Jeśli porównujesz <em>szum brązowy a biały przy ADHD</em>, zacznij od szumu brązowego podczas nauki lub pracy i sprawdź, czy ułatwia Ci to wejście w stan pełnego skupienia (flow).
+        </p>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "Jaki kolor szumu jest najlepszy przy ADHD?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Szum brązowy jest powszechnie uznawany za najlepszy kolor szumu dla osób z ADHD. Jego głęboki, niskoczęstotliwościowy dźwięk zapewnia wystarczająco dużo bodźców sensorycznych, aby wyciszyć natłok myśli, bez rozpraszającego, wysokotonowego szumu statycznego obecnego w szumie białym."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Czy szum brązowy jest lepszy od białego przy ADHD?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Wiele osób z ADHD woli szum brązowy od białego, ponieważ działa on jak „ciężki koc” dźwiękowy. Skutecznie maskuje rozproszenia, będąc jednocześnie łagodniejszym i mniej męczącym dla uszu podczas długich sesji nauki lub pracy."
+                  }
+                }
+              ]
+            })
+          }}
+        />
+      </ArticleSection>
+
       <ArticleSection id="summary" title="Który powinieneś wybrać?">
-        <p>
+        <p className="mt-4 leading-8 text-white/70">
           Wybór „najlepszego” koloru jest całkowicie osobisty. Zalecamy rozpoczęcie od szumu białego, jeśli musisz zablokować konkretne głośne dźwięki, ale przesiadkę na różowy lub brązowy, jeśli statyczny szum białego wydaje Ci się zbyt ostry.
         </p>
-        <p className="mt-4">
+        <p className="mt-4 leading-8 text-white/70">
           Dzięki aplikacji <strong>Calma</strong> nie musisz wybierać tylko jednego. Możesz mieszać różne warstwy szumu, dodając tekstury natury lub atmosferyczne dźwięki ambient, aby stworzyć prawdziwie spersonalizowany pejzaż dźwiękowy, który działa na Twój umysł.
         </p>
       </ArticleSection>
@@ -245,6 +304,14 @@ export default function NoiseColorsPage() {
           })
         }}
       />
+
+      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
+        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
+        <div>
+          <p className="font-semibold text-white">Napisane przez Zespół Calma</p>
+          <p className="text-sm text-white/60">Orędownicy higieny snu i pasjonaci projektowania dźwięku, zaangażowani w pomoc w budowaniu spokojniejszych nawyków.</p>
+        </div>
+      </div>
     </ArticlePage>
   );
 }
