@@ -7,7 +7,7 @@ import { YouTubeEmbed } from "@/app/_components/youtube-embed";
 export const metadata: Metadata = {
   title: "Brown Noise vs White Noise vs Pink Noise | Calma Blog",
   description:
-    "Explore the differences between White, Pink, and Brown noise. Discover which one is best for your sleep, focus, or ADHD management.",
+    "Brown noise vs white noise vs pink noise — what’s the difference? Compare all 4 colors of noise with audio samples, find which is best for sleep, ADHD, studying & focus. Free comparison chart included.",
   keywords: [
     "brown noise vs white noise",
     "pink noise vs white noise",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Brown Noise vs White Noise vs Pink Noise | Calma Blog",
     description:
-      "Explore the differences between White, Pink, and Brown noise. Discover which one is best for your sleep, focus, or ADHD management.",
+      "Brown noise vs white noise vs pink noise — what's the difference? Compare all 4 colors of noise with audio samples, find which is best for sleep, ADHD, studying & focus.",
     url: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
     siteName: "Calma",
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Brown Noise vs White Noise vs Pink Noise | Calma Blog",
     description:
-      "Explore the differences between White, Pink, and Brown noise. Discover which one is best for your sleep, focus, or ADHD management.",
+      "Brown noise vs white noise vs pink noise — what’s the difference? Compare all 4 colors of noise with audio samples, find which is best for sleep, ADHD & focus.",
   },
 };
 
@@ -53,7 +53,7 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/blog/brown-noise-vs-white-noise-vs-pink-noise",
   datePublished: "2026-04-13",
-  dateModified: "2026-04-13",
+  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function NoiseColorsPage() {
@@ -263,6 +263,18 @@ export default function NoiseColorsPage() {
             <h3 className="font-semibold text-lg text-emerald-400">Brown noise vs white noise for sleep: which is better?</h3>
             <p className="mt-2 leading-7 text-white/70">For many, brown noise is better for sleep because its deep, low-frequency rumble is more soothing and less harsh than the high-pitched static of white noise.</p>
           </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">What is pink noise and how is it different from white noise?</h3>
+            <p className="mt-2 leading-7 text-white/70">Pink noise contains all frequencies like white noise, but with more energy concentrated in lower frequencies. This makes it sound deeper and more balanced — like steady rainfall rather than TV static. Many studies suggest pink noise can enhance deep sleep quality by synchronizing with your brainwaves during slow-wave sleep stages.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Which noise color is best for sleeping?</h3>
+            <p className="mt-2 leading-7 text-white/70">There is no single best noise for everyone. White noise excels at blocking sharp environmental sounds. Pink noise may enhance deep sleep quality. Brown noise is preferred by people who find white noise too harsh or who have racing thoughts at bedtime. Green noise offers a gentle, nature-like middle ground. Try each for 3 nights to discover your preference.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Is brown noise better than white noise for ADHD?</h3>
+            <p className="mt-2 leading-7 text-white/70">Many people with ADHD find brown noise more effective because its deep, low-frequency sound creates a "heavy blanket" effect. It provides enough sensory input to satisfy the brain’s need for stimulation, without the high-frequency static of white noise that some find irritating during long focus or study sessions.</p>
+          </div>
         </div>
       </ArticleSection>
 
@@ -295,6 +307,30 @@ export default function NoiseColorsPage() {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "For many, brown noise is better for sleep because its deep, low-frequency rumble is more soothing and less harsh than the high-pitched static of white noise."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is pink noise and how is it different from white noise?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Pink noise contains all frequencies like white noise, but with more energy concentrated in lower frequencies. This makes it sound deeper and more balanced — like steady rainfall rather than TV static. Many studies suggest pink noise can enhance deep sleep quality by synchronizing with your brainwaves."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which noise color is best for sleeping?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "There is no single best noise for everyone. White noise excels at blocking sharp environmental sounds. Pink noise may enhance deep sleep quality. Brown noise is preferred by people who find white noise too harsh or who have racing thoughts at bedtime. Try each for 3 nights to discover your preference."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is brown noise better than white noise for ADHD?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Many people with ADHD find brown noise more effective because its deep, low-frequency sound creates a heavy blanket effect. It provides enough sensory input to satisfy the brain's need for stimulation, without the high-frequency static of white noise that some find irritating."
                 }
               }
             ]

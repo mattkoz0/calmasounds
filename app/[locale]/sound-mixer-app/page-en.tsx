@@ -2,24 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Best Sound Mixer App for Sleep & Focus | Calma",
+  title: "Best Free Sound Mixer App for Sleep, Relaxation & Focus | Calma",
   description:
-    "Mix your own sleep sounds, white noise, and nature audio. Download Calma – the ultimate sound mixer app for personalized relaxation.",
+    "Create custom sound mixes with white noise, rain, brown noise & nature sounds. Calma is a free sound mixer app for sleep, relaxation and focus. No subscription, works offline.",
   keywords: [
     "sound mixer app",
     "sleep sound mixer",
     "relaxation sound mixer",
     "focus sound mixer",
     "personalized soundscapes",
+    "sound machine app",
+    "ambient sound mixer",
+    "white noise mixer app",
+    "free sound mixer",
     "calma sound mixer",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/sound-mixer-app",
   },
   openGraph: {
-    title: "Best Sound Mixer App for Sleep & Focus | Calma",
+    title: "Best Free Sound Mixer App for Sleep, Relaxation & Focus | Calma",
     description:
-    "Mix your own sleep sounds, white noise, and nature audio. Download Calma – the ultimate sound mixer app for personalized relaxation.",
+    "Create custom sound mixes with white noise, rain, brown noise & nature sounds. Free sound mixer app for sleep, relaxation and focus. No subscription.",
     url: "https://www.calmasounds.com/sound-mixer-app",
     siteName: "Calma",
     locale: "en_US",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Sound Mixer App for Sleep & Focus | Calma",
+    title: "Best Free Sound Mixer App for Sleep & Focus | Calma",
     description:
-    "Mix your own sleep sounds, white noise, and nature audio. Download Calma – the ultimate sound mixer app for personalized relaxation.",
+    "Create custom sound mixes with white noise, rain & nature sounds. Free sound mixer app for sleep, relaxation and focus.",
   },
 };
 
@@ -215,6 +219,24 @@ export default function SoundMixerAppPage() {
               Learn about noise colors and how to balance them in your personal sound mixer.
             </p>
           </a>
+          <a
+            href="/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Best Sounds for Sleep</h3>
+            <p className="mt-3 text-white/70">
+              Explore different sound types and learn which combinations work best for your sleep.
+            </p>
+          </a>
+          <a
+            href="/blog/best-sounds-for-studying"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Best Sounds for Studying</h3>
+            <p className="mt-3 text-white/70">
+              Discover which background sounds support concentration and deep work sessions.
+            </p>
+          </a>
         </div>
       </section>
 
@@ -257,6 +279,28 @@ export default function SoundMixerAppPage() {
               routines through customizable soundscapes.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              What is the best free sound machine app?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              The best free sound machine app lets you mix multiple sounds together rather than just playing one track. Calma offers white noise, brown noise, pink noise, rain, ocean waves, and nature sounds — all mixable with individual volume controls. It's free, works offline, and doesn't require a subscription.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              How many sounds can I mix at once in Calma?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Calma lets you layer multiple sounds simultaneously, each with its own volume slider. You can combine rain with brown noise, add a touch of crackling fire, and adjust each element independently to create your perfect soundscape.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a sound mixer app?","acceptedAnswer":{"@type":"Answer","text":"A sound mixer app helps you combine different sounds into one personalized audio environment for sleep, relaxation, focus or everyday calm."}},{"@type":"Question","name":"How is Calma different from a normal sound app?","acceptedAnswer":{"@type":"Answer","text":"Calma is built around personalization, letting you shape your own mix instead of only choosing from fixed pre-made tracks."}},{"@type":"Question","name":"Can I use Calma for more than sleep?","acceptedAnswer":{"@type":"Answer","text":"Yes. Calma supports sleep, relaxation, focus and softer daily routines through customizable soundscapes."}},{"@type":"Question","name":"What is the best free sound machine app?","acceptedAnswer":{"@type":"Answer","text":"The best free sound machine app lets you mix multiple sounds together. Calma offers white noise, brown noise, pink noise, rain, ocean waves, and nature sounds — all mixable with individual volume controls. It's free, works offline, and doesn't require a subscription."}},{"@type":"Question","name":"How many sounds can I mix at once in Calma?","acceptedAnswer":{"@type":"Answer","text":"Calma lets you layer multiple sounds simultaneously, each with its own volume slider. You can combine rain with brown noise, add crackling fire, and adjust each element independently."}}]}) }}
+          />
         </div>
       </section>
 

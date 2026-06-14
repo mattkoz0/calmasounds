@@ -2,23 +2,29 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Best Free White Noise App for Sleep & Focus | Calma",
+  title: "Best Free White Noise App 2026 | Sleep, Focus, Babies & Tinnitus | Calma",
   description:
-    "Create calming sleep mixes with white noise, pink noise, and brown noise. Download Calma to relax, focus, and build your bedtime routine.",
+    "Looking for the best white noise app? Mix white noise, brown noise, pink noise & nature sounds for sleep, ADHD focus, babies, or tinnitus relief. 100% free, no ads, works offline.",
   keywords: [
     "white noise app",
     "white noise for sleep",
+    "best white noise app",
+    "free white noise app",
+    "white noise machine app",
+    "whitenoise app",
+    "white noise app for babies",
+    "white noise app free",
+    "white noise generator app",
     "sleep white noise app",
-    "calming white noise",
     "calma white noise",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/white-noise-app",
   },
   openGraph: {
-    title: "Best Free White Noise App for Sleep & Focus | Calma",
+    title: "Best Free White Noise App 2026 | Sleep, Focus & Tinnitus | Calma",
     description:
-    "Create calming sleep mixes with white noise, pink noise, and brown noise. Download Calma to relax, focus, and build your bedtime routine.",
+    "Looking for the best white noise app? Mix white noise, brown noise, pink noise & nature sounds for sleep, focus, babies, or tinnitus relief. 100% free, no ads.",
     url: "https://www.calmasounds.com/white-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free White Noise App for Sleep & Focus | Calma",
+    title: "Best Free White Noise App | Sleep, Focus & Babies | Calma",
     description:
-    "Create calming sleep mixes with white noise, pink noise, and brown noise. Download Calma to relax, focus, and build your bedtime routine.",
+    "Mix white noise, brown noise & nature sounds for sleep, ADHD focus, babies, or tinnitus. 100% free, works offline.",
   },
 };
 
@@ -215,6 +221,24 @@ export default function WhiteNoiseAppPage() {
               Explore the differences between white, pink, brown, and green noise to find your ideal sound.
             </p>
           </a>
+          <a
+            href="/blog/best-free-white-noise-app"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Best Free White Noise Apps Compared</h3>
+            <p className="mt-3 text-white/70">
+              See how Calma compares to other white noise apps in features, sound quality, and value.
+            </p>
+          </a>
+          <a
+            href="/blog/rain-sounds-vs-white-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Rain Sounds vs White Noise</h3>
+            <p className="mt-3 text-white/70">
+              Which is better for your sleep: organic rain sounds or constant white noise?
+            </p>
+          </a>
         </div>
       </section>
 
@@ -251,9 +275,33 @@ export default function WhiteNoiseAppPage() {
               For studying, we recommend setting a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD.
             </p>
           </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Is white noise safe for babies?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Yes, when used correctly. Keep the volume below 50 dB (softer than a quiet conversation), place the device at least 2 meters from the crib, and use a sleep timer so it doesn't play all night. Many pediatricians recommend white noise to help babies fall asleep and stay asleep longer.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              White noise vs brown noise — which is better for sleep?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              White noise is better at masking high-pitched sounds like alarms, voices, or barking dogs. Brown noise has a deeper, rumbling quality (like distant thunder) that many adults find more soothing for falling asleep. With Calma, you can mix both together to get the best of both worlds.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Can I use a white noise app instead of a sound machine?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Absolutely. Modern white noise apps like Calma offer the same (or better) sound quality as dedicated sound machines, plus the ability to mix custom soundscapes, set sleep timers, and work offline. You also save money since Calma is free.
+            </p>
+          </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best free white noise app?","acceptedAnswer":{"@type":"Answer","text":"Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up."}},{"@type":"Question","name":"Does white noise help you sleep?","acceptedAnswer":{"@type":"Answer","text":"Yes. White noise acts as an acoustic blanket that masks sudden background noises like traffic or dogs barking, helping your brain relax and stay in deep sleep."}},{"@type":"Question","name":"How to use a white noise app for studying?","acceptedAnswer":{"@type":"Answer","text":"For studying, we recommend setting a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best free white noise app?","acceptedAnswer":{"@type":"Answer","text":"Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up."}},{"@type":"Question","name":"Does white noise help you sleep?","acceptedAnswer":{"@type":"Answer","text":"Yes. White noise acts as an acoustic blanket that masks sudden background noises like traffic or dogs barking, helping your brain relax and stay in deep sleep."}},{"@type":"Question","name":"How to use a white noise app for studying?","acceptedAnswer":{"@type":"Answer","text":"For studying, set a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD."}},{"@type":"Question","name":"Is white noise safe for babies?","acceptedAnswer":{"@type":"Answer","text":"Yes, when used correctly. Keep the volume below 50 dB, place the device at least 2 meters from the crib, and use a sleep timer. Many pediatricians recommend white noise for babies."}},{"@type":"Question","name":"White noise vs brown noise — which is better for sleep?","acceptedAnswer":{"@type":"Answer","text":"White noise is better at masking high-pitched sounds. Brown noise has a deeper, rumbling quality that many adults find more soothing. With Calma, you can mix both together."}},{"@type":"Question","name":"Can I use a white noise app instead of a sound machine?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Modern white noise apps like Calma offer the same or better sound quality as dedicated sound machines, plus custom soundscapes, sleep timers, and offline support. Calma is free."}}]}) }}
           />
         </div>
       </section>

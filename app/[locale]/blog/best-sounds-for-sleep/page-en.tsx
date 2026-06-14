@@ -6,7 +6,7 @@ import { AudioPlayer } from "../_components/audio-player";
 export const metadata: Metadata = {
   title: "Best Sounds for Sleep (2026 Guide) | Science-Backed Audio | Calma Blog",
   description:
-    "Discover the best sounds to sleep to, from white noise to gentle rain. Learn the science behind sleep audio and how to build a routine to sleep better.",
+    "What are the best sounds to sleep to? From white noise and rain to brown noise for ADHD — explore 7 science-backed sleep sounds, hear audio samples, and learn how to build a calmer bedtime routine. Free app included.",
   keywords: [
     "best sounds for sleep",
     "good sounds to sleep to",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Best Sounds for Sleep (2026 Guide) | Science-Backed Audio | Calma Blog",
     description:
-      "Discover the best sounds to sleep to, from white noise to gentle rain. Learn the science behind sleep audio and how to build a routine to sleep better.",
+      "What are the best sounds to sleep to? From white noise and rain to brown noise for ADHD — explore 7 science-backed sleep sounds, hear audio samples, and learn how to build a calmer bedtime routine.",
     url: "https://www.calmasounds.com/blog/best-sounds-for-sleep",
     siteName: "Calma",
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Sounds for Sleep (2026 Guide) | Science-Backed Audio",
     description:
-      "Discover the best sounds to sleep to, from white noise to gentle rain. Learn the science behind sleep audio.",
+      "What are the best sounds to sleep to? From white noise and rain to brown noise — explore science-backed sleep sounds and build a calmer bedtime routine.",
   },
 };
 
@@ -173,6 +173,18 @@ export default function BestSoundsForSleepPage() {
             <h3 className="font-semibold text-lg text-emerald-400">Can sounds help you sleep better if you have a busy mind?</h3>
             <p className="mt-2 leading-7 text-white/70">Yes. Steady, low-frequency sounds like Brown noise provide constant, non-threatening sensory input that can satisfy your brain's need for stimulation, preventing it from spiraling into anxious or repetitive thoughts.</p>
           </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">What sound makes you sleep the fastest?</h3>
+            <p className="mt-2 leading-7 text-white/70">Sounds that promote sleep most quickly are typically steady and predictable — like white noise, pink noise, or gentle rain. These mask sudden environmental disruptions and allow your brain to relax into sleep mode faster. Many users report falling asleep within 10-15 minutes with brown noise or rain sounds.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">What is the best noise for sleep?</h3>
+            <p className="mt-2 leading-7 text-white/70">The best noise for sleep depends on your sensitivity. White noise is best for blocking sharp, sudden sounds. Pink noise is often preferred for deeper, more restorative sleep. Brown noise works well for people with racing thoughts or ADHD. Rain sounds combine masking with emotional comfort. Try mixing different sounds in an app like Calma to find your ideal combination.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Do noises help you sleep or make it worse?</h3>
+            <p className="mt-2 leading-7 text-white/70">Consistent, steady noises like white noise or rain help you sleep by masking disruptive sounds. However, irregular or unpredictable noises (like TV or music with lyrics) can fragment sleep. The key is choosing sounds that are monotonous, continuous, and played at a safe volume below 60 dB.</p>
+          </div>
         </div>
       </ArticleSection>
 
@@ -205,6 +217,30 @@ export default function BestSoundsForSleepPage() {
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "Yes. Steady, low-frequency sounds like Brown noise provide constant, non-threatening sensory input that can satisfy your brain's need for stimulation, preventing it from spiraling into anxious or repetitive thoughts."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What sound makes you sleep the fastest?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sounds that promote sleep most quickly are typically steady and predictable — like white noise, pink noise, or gentle rain. These mask sudden environmental disruptions and allow your brain to relax into sleep mode faster. Many users report falling asleep within 10-15 minutes with brown noise or rain sounds."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the best noise for sleep?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The best noise for sleep depends on your sensitivity. White noise is best for blocking sharp, sudden sounds. Pink noise is often preferred for deeper, more restorative sleep. Brown noise works well for people with racing thoughts or ADHD. Rain sounds combine masking with emotional comfort."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do noises help you sleep or make it worse?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Consistent, steady noises like white noise or rain help you sleep by masking disruptive sounds. However, irregular or unpredictable noises (like TV or music with lyrics) can fragment sleep. The key is choosing sounds that are monotonous, continuous, and played at a safe volume below 60 dB."
                 }
               }
             ]

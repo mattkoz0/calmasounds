@@ -2,24 +2,29 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Focus Sounds App: Deep Work & Studying | Calma",
+  title: "Focus Sounds App for Studying, ADHD & Deep Work | Calma",
   description:
-    "Build immersive focus soundscapes with brown noise and ambient audio. Use Calma to create a quieter space for deep work and studying.",
+    "Can't focus? Calma helps you create custom brown noise, white noise & ambient soundscapes for studying, ADHD focus, and deep work. Free app, no subscription, works offline.",
   keywords: [
     "focus sounds app",
     "focus app",
     "concentration sounds app",
     "deep focus sounds",
     "study sounds app",
+    "brown noise for studying",
+    "brown noise ADHD",
+    "best background noise for studying",
+    "focus noise app",
+    "study background sounds",
     "calma focus sounds",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/focus-sounds-app",
   },
   openGraph: {
-    title: "Focus Sounds App: Deep Work & Studying | Calma",
+    title: "Focus Sounds App for Studying, ADHD & Deep Work | Calma",
     description:
-    "Build immersive focus soundscapes with brown noise and ambient audio. Use Calma to create a quieter space for deep work and studying.",
+    "Can't focus? Calma helps you create custom brown noise, white noise & ambient soundscapes for studying, ADHD focus, and deep work. Free app, no subscription.",
     url: "https://www.calmasounds.com/focus-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -27,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Focus Sounds App: Deep Work & Studying | Calma",
+    title: "Focus Sounds App for Studying, ADHD & Deep Work | Calma",
     description:
-    "Build immersive focus soundscapes with brown noise and ambient audio. Use Calma to create a quieter space for deep work and studying.",
+    "Can't focus? Create custom brown noise & ambient soundscapes for studying, ADHD focus, and deep work with Calma.",
   },
 };
 
@@ -215,6 +220,24 @@ export default function FocusSoundsAppPage() {
               A simple introduction to how binaural beats may support calm and focus in your daily work.
             </p>
           </a>
+          <a
+            href="/blog/best-color-noise-for-adhd"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Best Color Noise for ADHD</h3>
+            <p className="mt-3 text-white/70">
+              Discover why brown noise is the most popular choice for ADHD focus and how to use it effectively.
+            </p>
+          </a>
+          <a
+            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Colors of Noise Explained</h3>
+            <p className="mt-3 text-white/70">
+              Understand the difference between white, pink, brown, and green noise for concentration.
+            </p>
+          </a>
         </div>
       </section>
 
@@ -257,6 +280,28 @@ export default function FocusSoundsAppPage() {
               your focus environment feels more natural and useful to you.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              What is the best background noise for studying?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Research suggests that moderate-volume brown noise or pink noise works best for studying, as it masks distracting sounds without being too stimulating. Many students combine brown noise with light rain or a coffee shop ambience for optimal concentration.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Does brown noise help with ADHD focus?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Many people with ADHD report that brown noise helps them focus by providing constant, low-frequency stimulation. This satisfies the brain's need for background input, reducing the urge to seek distractions. Brown noise is often preferred over white noise for ADHD because its deeper tone is less fatiguing during long work sessions.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a focus sounds app?","acceptedAnswer":{"@type":"Answer","text":"A focus sounds app helps create an audio background that supports concentration, reduces distraction and makes work or study feel more immersive."}},{"@type":"Question","name":"When can I use Calma for focus?","acceptedAnswer":{"@type":"Answer","text":"You can use Calma while studying, reading, writing, working or any time you want a calmer and more controlled focus environment."}},{"@type":"Question","name":"Can I personalize the focus sound mix?","acceptedAnswer":{"@type":"Answer","text":"Yes. Calma is designed around building your own personalized mix so your focus environment feels more natural and useful to you."}},{"@type":"Question","name":"What is the best background noise for studying?","acceptedAnswer":{"@type":"Answer","text":"Research suggests that moderate-volume brown noise or pink noise works best for studying, as it masks distracting sounds without being too stimulating. Many students combine brown noise with light rain for optimal concentration."}},{"@type":"Question","name":"Does brown noise help with ADHD focus?","acceptedAnswer":{"@type":"Answer","text":"Many people with ADHD report that brown noise helps them focus by providing constant, low-frequency stimulation. This satisfies the brain's need for background input, reducing the urge to seek distractions."}}]}) }}
+          />
         </div>
       </section>
 

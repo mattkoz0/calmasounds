@@ -642,6 +642,36 @@ export default function Home() {
               Discover which sounds may help concentration and focus.
             </p>
           </a>
+
+          <a
+            href="/blog/white-noise-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">White Noise for Sleep</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              How white noise masks distractions and improves deep sleep.
+            </p>
+          </a>
+
+          <a
+            href="/blog/sounds-for-tinnitus-relief"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">Tinnitus Relief Sounds</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              Sound therapy techniques for managing tinnitus at night.
+            </p>
+          </a>
+
+          <a
+            href="/blog/best-color-noise-for-adhd"
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold">Best Noise for ADHD</h3>
+            <p className="mt-3 text-sm leading-6 text-white/70">
+              Why brown noise is the top choice for ADHD focus and flow.
+            </p>
+          </a>
         </div>
       </section>
       

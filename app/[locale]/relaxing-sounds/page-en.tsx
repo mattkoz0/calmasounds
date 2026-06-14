@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Relaxing Sounds App for Stress Relief | Calma",
+  title: "Free Relaxing Sounds App for Stress Relief & Anxiety | Calma",
   description:
-    "Create your own relaxing sounds mix with rain, white noise, and nature audio. Find peace and relieve daily stress with Calma.",
+    "Feeling stressed? Create your own relaxing soundscape with rain, ocean waves, crackling fire & white noise. Calma is a free relaxation app that helps you unwind. No subscription, works offline.",
   keywords: [
     "relaxing sounds app",
     "relaxation sounds",
     "calming sounds app",
     "relaxing ambient sounds",
+    "relaxing sounds for anxiety",
+    "calming sounds for stress",
+    "stress relief sounds app",
+    "free relaxation app",
+    "ambient sounds for relaxation",
     "calma relaxing sounds",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/relaxing-sounds",
   },
   openGraph: {
-    title: "Relaxing Sounds App for Stress Relief | Calma",
+    title: "Free Relaxing Sounds App for Stress Relief & Anxiety | Calma",
     description:
-    "Create your own relaxing sounds mix with rain, white noise, and nature audio. Find peace and relieve daily stress with Calma.",
+    "Feeling stressed? Create your own relaxing soundscape with rain, ocean waves, crackling fire & white noise. Free relaxation app. No subscription.",
     url: "https://www.calmasounds.com/relaxing-sounds",
     siteName: "Calma",
     locale: "en_US",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Relaxing Sounds App for Stress Relief | Calma",
+    title: "Free Relaxing Sounds App for Stress Relief | Calma",
     description:
-    "Create your own relaxing sounds mix with rain, white noise, and nature audio. Find peace and relieve daily stress with Calma.",
+    "Feeling stressed? Create relaxing soundscapes with rain, ocean waves & white noise. Free relaxation app. No subscription.",
   },
 };
 
@@ -214,6 +219,24 @@ export default function RelaxingSoundsPage() {
               Discover calming breathing methods that work alongside ambient sounds for deeper relaxation.
             </p>
           </a>
+          <a
+            href="/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Best Sounds for Sleep</h3>
+            <p className="mt-3 text-white/70">
+              Learn which calming sounds help you relax into deeper, more restful sleep.
+            </p>
+          </a>
+          <a
+            href="/blog/how-to-build-a-bedtime-routine"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Build a Bedtime Routine</h3>
+            <p className="mt-3 text-white/70">
+              Create a calmer evening ritual using relaxing sounds and simple habits.
+            </p>
+          </a>
         </div>
       </section>
 
@@ -255,6 +278,28 @@ export default function RelaxingSoundsPage() {
               relaxing soundscape instead of relying on only one fixed track.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              What are the best relaxing sounds for anxiety?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              For anxiety relief, soft rain sounds, gentle ocean waves, and low-frequency brown noise tend to work best. These sounds activate the parasympathetic nervous system, helping to lower heart rate and cortisol. Combining them with slow, deep breathing can amplify the calming effect.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              How long should I listen to relaxing sounds?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Even 15–20 minutes of relaxing sounds can help reduce stress and lower cortisol levels. For sleep, many people set a timer for 30–60 minutes so the sounds play while they fall asleep and then stop automatically. Calma includes a built-in sleep timer for this purpose.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a relaxing sounds app?","acceptedAnswer":{"@type":"Answer","text":"A relaxing sounds app helps you play calming audio that supports unwinding, emotional reset and more peaceful routines."}},{"@type":"Question","name":"When can I use Calma for relaxation?","acceptedAnswer":{"@type":"Answer","text":"You can use Calma after work, during evening wind-down, while reading, resting or anytime you want a softer background around you."}},{"@type":"Question","name":"Can I personalize the relaxing sounds?","acceptedAnswer":{"@type":"Answer","text":"Yes. Calma is designed around creating your own personalized relaxing soundscape instead of relying on one fixed track."}},{"@type":"Question","name":"What are the best relaxing sounds for anxiety?","acceptedAnswer":{"@type":"Answer","text":"For anxiety relief, soft rain sounds, gentle ocean waves, and low-frequency brown noise tend to work best. These sounds activate the parasympathetic nervous system, helping to lower heart rate and cortisol."}},{"@type":"Question","name":"How long should I listen to relaxing sounds?","acceptedAnswer":{"@type":"Answer","text":"Even 15-20 minutes of relaxing sounds can help reduce stress. For sleep, set a timer for 30-60 minutes. Calma includes a built-in sleep timer for this purpose."}}]}) }}
+          />
         </div>
       </section>
 
