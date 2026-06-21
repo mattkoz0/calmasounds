@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Schlafgeräusche App für Besseren Schlaf | Calma",
+  title: "Kostenlose Schlaf-App mit Sounds | Ohne Werbung | Calma",
   description:
-    "Entdecken Sie die besten Schlafgeräusche. Erstellen Sie mit Calma eine persönliche Einschlafmischung für tiefen und erholsamen Schlaf.",
+    "Suchen Sie die beste App zum Einschlafen? Mischen Sie weißes Rauschen, Regen und Naturklänge für besseren Schlaf. 100% kostenlos, ohne Werbung, offline nutzbar.",
   keywords: [
     "Schlaf-App",
     "Einschlafhilfen App",
     "entspannende Sounds zum Schlafen",
-    "Abendroutine App",
+    "Schlafgeräusche kostenlos",
     "Calma Schlafklänge",
+    "weißes Rauschen zum Einschlafen",
+    "Regengerusche zum Schlafen",
+    "Schlaf App kostenlos",
+    "beste Sounds zum Einschlafen",
+    "Nachtgeräusche App",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/sleep-sounds-app",
   },
   openGraph: {
-    title: "Schlafgeräusche App für Besseren Schlaf | Calma",
+    title: "Kostenlose Schlaf-App | Ohne Werbung | Calma",
     description:
-    "Entdecken Sie die besten Schlafgeräusche. Erstellen Sie mit Calma eine persönliche Einschlafmischung für tiefen und erholsamen Schlaf.",
+    "Weißes Rauschen, Regen und Naturklänge zum Einschlafen. 100% kostenlos, ohne Werbung.",
     url: "https://www.calmasounds.com/de/sleep-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Schlafgeräusche App für Besseren Schlaf | Calma",
+    title: "Kostenlose Schlaf-App | Calma",
     description:
-    "Entdecken Sie die besten Schlafgeräusche. Erstellen Sie mit Calma eine persönliche Einschlafmischung für tiefen und erholsamen Schlaf.",
+    "Weißes Rauschen, Regen und Naturklänge zum Einschlafen. 100% kostenlos, offline nutzbar.",
   },
 };
 
@@ -197,7 +202,7 @@ export default function SleepSoundsAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/best-sounds-for-sleep"
+            href="/de/blog/best-sounds-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Beste Sounds zum Schlafen</h3>
@@ -206,12 +211,12 @@ export default function SleepSoundsAppPage() {
             </p>
           </a>
           <a
-            href="/blog/how-to-build-a-bedtime-routine"
+            href="/de/blog/how-to-build-a-bedtime-routine"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Bessere Abendroutinen aufbauen</h3>
             <p className="mt-3 text-white/70">
-              Einfache Wege zu einem ruhigeren Abendrhythmus, der einen natürlichen und stabilen Schlaf fördert.
+              Einfache Wege zu einem ruhigeren Abendrhythmus, der natürlichen und stabilen Schlaf fördert.
             </p>
           </a>
         </div>
@@ -231,8 +236,7 @@ export default function SleepSoundsAppPage() {
               Was ist eine Schlafklänge-App?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Eine Schlaf-App hilft dabei, beruhigende Klänge abzuspielen, die 
-              Abendroutinen, Entspannung und einen ruhigeren mentalen Zustand unterstützen.
+              Eine Schlaf-App spielt beruhigende Klänge ab, die Abendroutinen, Entspannung und einen ruhigeren mentalen Zustand vor dem Einschlafen unterstützen.
             </p>
           </div>
 
@@ -241,8 +245,7 @@ export default function SleepSoundsAppPage() {
               Wodurch unterscheidet sich Calma?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma setzt auf personalisierte Mixe, ein schlichtes Design und ein 
-              hochwertiges Nutzererlebnis, statt dich mit zu vielen Optionen zu überfordern.
+              Calma ist 100% kostenlos, ohne Werbung, offline nutzbar und ermöglicht personalisierte Mixe mit einem schlichten, hochwertigen Design.
             </p>
           </div>
 
@@ -251,10 +254,31 @@ export default function SleepSoundsAppPage() {
               Kann ich meinen eigenen Mix bauen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja. Calma ist so konzipiert, dass du deine eigene Klangwelt erschaffst, 
-              anstatt nur vorgegebene Titel abzuspielen.
+              Ja. Calma ist so konzipiert, dass du deine eigene Klangwelt erschaffst, anstatt nur vorgegebene Titel abzuspielen.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Ist es sicher, jede Nacht Schlafklänge zu nutzen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja, bei moderater Lautstärke (unter 50 dB). Studien zeigen, dass gleichmäßige Hintergrundgeräusche die Tiefschlafqualität verbessern. Calma hat einen automatischen Sleep-Timer.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Welche Sounds helfen am besten beim schnellen Einschlafen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Die wirksamsten Sounds sind weißes Rauschen, braunes Rauschen und Regengerusche. Calma lässt dich alle zusammen mischen für die perfekte Atmosphäre.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist eine Schlafklänge-App?","acceptedAnswer":{"@type":"Answer","text":"Eine App, die beruhigende Klänge für Entspannung und tieferen Schlaf abspielt."}},{"@type":"Question","name":"Wodurch unterscheidet sich Calma?","acceptedAnswer":{"@type":"Answer","text":"100% kostenlos, ohne Werbung, offline nutzbar, mit personalisierbaren Mixe."}},{"@type":"Question","name":"Kann ich meinen eigenen Mix bauen?","acceptedAnswer":{"@type":"Answer","text":"Ja, erstelle deine eigene Klangwelt."}},{"@type":"Question","name":"Ist es sicher, jede Nacht Sounds zu nutzen?","acceptedAnswer":{"@type":"Answer","text":"Ja, bei moderater Lautstärke. Calma hat einen automatischen Sleep-Timer."}},{"@type":"Question","name":"Welche Sounds helfen beim schnellen Einschlafen?","acceptedAnswer":{"@type":"Answer","text":"Weißes Rauschen, braunes Rauschen und Regen. Calma mischt alle zusammen."}}]}) }}
+          />
         </div>
       </section>
 

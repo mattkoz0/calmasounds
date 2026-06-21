@@ -3,23 +3,29 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sons de la Nature pour la Détente | Calma",
+  title: "App de Sons de la Nature Gratuite | Pluie, Forêt, Mer | Calma",
   description:
-    "Créez des mélanges apaisants avec des sons de la nature, de la pluie et de la forêt. Utilisez Calma pour vous détendre et dormir.",
+    "Écoutez des sons de pluie, forêt, mer et oiseaux pour dormir et vous détendre. Créez des mélanges personnalisés avec Calma. 100% gratuit, sans pub, fonctionne hors ligne.",
   keywords: [
     "application sons de la nature",
     "sons de la nature pour dormir",
-    "application sommeil bébé",
+    "bruit de pluie pour dormir",
     "sons de la nature gratuit",
     "calma sons de la nature",
+    "sons de forêt",
+    "sons de la mer",
+    "sons de pluie gratuit",
+    "sons d'oiseaux relaxants",
+    "sons naturels pour se détendre",
+    "générateur sons nature",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/nature-sounds-app",
   },
   openGraph: {
-    title: "Sons de la Nature pour la Détente | Calma",
+    title: "Sons de la Nature Gratuits | Pluie, Forêt, Mer | Calma",
     description:
-    "Créez des mélanges apaisants avec des sons de la nature, de la pluie et de la forêt. Utilisez Calma pour vous détendre et dormir.",
+    "Sons de pluie, forêt, mer et oiseaux pour dormir et se détendre. 100% gratuit, sans pub.",
     url: "https://www.calmasounds.com/fr/nature-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons de la Nature pour la Détente | Calma",
+    title: "Sons de la Nature pour Dormir | Calma",
     description:
-    "Créez des mélanges apaisants avec des sons de la nature, de la pluie et de la forêt. Utilisez Calma pour vous détendre et dormir.",
+    "Mélangez pluie, forêt et mer pour vous détendre. 100% gratuit, fonctionne hors ligne.",
   },
 };
 
@@ -198,21 +204,39 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <Link
-            href="/blog/white-noise-for-sleep"
+            href="/fr/blog/benefits-of-nature-sounds-for-relaxation"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Le sons de la nature pour dormir</h3>
+            <h3 className="text-xl font-semibold text-white">Bienfaits des sons de la nature</h3>
             <p className="mt-3 text-white/70">
-              Découvrez comment le sons de la nature crée un environnement de sommeil stable.
+              Découvrez comment les sons naturels réduisent le stress et améliorent votre bien-être émotionnel.
             </p>
           </Link>
           <Link
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/fr/blog/rain-sounds-for-better-sleep-and-focus"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Sons de pluie pour dormir</h3>
+            <p className="mt-3 text-white/70">
+              Pourquoi les sons de pluie sont-ils si efficaces pour s'endormir et se concentrer ?
+            </p>
+          </Link>
+          <Link
+            href="/fr/blog/rain-sounds-vs-white-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Pluie vs bruit blanc</h3>
+            <p className="mt-3 text-white/70">
+              Comparez les effets des sons organiques de pluie avec le bruit blanc constant pour votre sommeil.
+            </p>
+          </Link>
+          <Link
+            href="/fr/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Les couleurs du bruit</h3>
             <p className="mt-3 text-white/70">
-              Explorez les différences entre le sons de la nature, rose, brun et vert.
+              Explorez les différences entre bruit blanc, rose, brun et vert pour trouver votre son idéal.
             </p>
           </Link>
         </div>
@@ -232,30 +256,49 @@ export default function WhiteNoiseAppPage() {
               Qu'est-ce qu'une application de sons de la nature ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Elle aide à créer un son de fond régulier qui favorise le sommeil 
-              et un environnement audio apaisant.
+              Une application de sons de la nature diffuse des sons ambiants comme la pluie, les vagues, la forêt et les oiseaux pour vous aider à vous détendre, mieux dormir ou vous concentrer.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Le sons de la nature aide-t-il vraiment à dormir ?
+              Les sons de la nature aident-ils à dormir ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, beaucoup de personnes l'utilisent pour calmer le mental et 
-              atténuer les bruits extérieurs perturbateurs.
+              Oui, de nombreuses études scientifiques démontrent que les sons de la nature réduisent le stress, ralentissent le rythme cardiaque et facilitent la transition vers un sommeil profond.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Calma ne propose-t-elle que du sons de la nature ?
+              Calma ne propose-t-elle que des sons de la nature ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Non, elle propose également des sons de nature, de relaxation et 
-              de concentration pour répondre à tous vos besoins sonores.
+              Non. Calma inclut également le bruit blanc, rose, brun et vert, ainsi qu'un catalogue complet de sons pour se détendre ou se concentrer.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Puis-je mélanger des sons de pluie avec du bruit blanc ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Absolument ! Calma est spécialement conçue pour mélanger plusieurs sons et ajuster le volume de chacun. Combiner pluie et bruit blanc ou brun est l'un des mélanges les plus populaires.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Les sons de la nature réduisent-ils l'anxiété ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui. Des recherches publiées dans Scientific Reports montrent que les sons de la nature activent le système nerveux parasympathique, réduisant la réponse de lutte ou de fuite et favorisant la détente.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'une application de sons de la nature ?","acceptedAnswer":{"@type":"Answer","text":"Elle diffuse des sons ambiants comme la pluie, les vagues et la forêt pour vous aider à vous détendre ou mieux dormir."}},{"@type":"Question","name":"Les sons de la nature aident-ils à dormir ?","acceptedAnswer":{"@type":"Answer","text":"Oui, les études montrent qu'ils réduisent le stress et facilitent le sommeil profond."}},{"@type":"Question","name":"Calma ne propose-t-elle que des sons de la nature ?","acceptedAnswer":{"@type":"Answer","text":"Non. Calma inclut aussi bruit blanc, rose, brun et vert."}},{"@type":"Question","name":"Puis-je mélanger des sons de pluie avec du bruit blanc ?","acceptedAnswer":{"@type":"Answer","text":"Absolument ! Calma permet de mélanger plusieurs sons et ajuster le volume de chacun."}},{"@type":"Question","name":"Les sons de la nature réduisent-ils l'anxiété ?","acceptedAnswer":{"@type":"Answer","text":"Oui, ils activent le système nerveux parasympathique, favorisant la détente."}}]}) }}
+          />
         </div>
       </section>
 

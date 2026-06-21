@@ -3,23 +3,29 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "App de Bruit Brun pour Dormir | Calma",
+  title: "App de Bruit Brun Gratuite pour TDAH et Sommeil | Calma",
   description:
-    "Créez des mélanges apaisants avec du bruit brun et blanc. Utilisez Calma pour vous détendre, vous concentrer et mieux dormir.",
+    "Vous cherchez du bruit brun profond pour le TDAH, le sommeil ou la concentration ? Mélangez bruit brun avec pluie et sons de la nature. 100% gratuit, sans pub, fonctionne hors ligne.",
   keywords: [
     "application bruit brun",
     "bruit brun pour dormir",
-    "application sommeil bébé",
+    "bruit brun TDAH",
     "bruit brun gratuit",
     "calma bruit brun",
+    "générateur bruit brun",
+    "bruit brun concentration",
+    "bruit marron pour dormir",
+    "application bruit brun gratuite",
+    "bruit brun sommeil profond",
+    "brown noise app français",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/brown-noise-app",
   },
   openGraph: {
-    title: "App de Bruit Brun pour Dormir | Calma",
+    title: "App de Bruit Brun Gratuite | TDAH, Sommeil et Concentration | Calma",
     description:
-    "Créez des mélanges apaisants avec du bruit brun et blanc. Utilisez Calma pour vous détendre, vous concentrer et mieux dormir.",
+    "Mélangez bruit brun avec pluie et sons naturels pour le TDAH, le sommeil et la concentration. 100% gratuit.",
     url: "https://www.calmasounds.com/fr/brown-noise-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Bruit Brun pour Dormir | Calma",
+    title: "App Bruit Brun Gratuite pour TDAH et Sommeil | Calma",
     description:
-    "Créez des mélanges apaisants avec du bruit brun et blanc. Utilisez Calma pour vous détendre, vous concentrer et mieux dormir.",
+    "Mélangez bruit brun avec pluie et sons naturels. 100% gratuit, fonctionne hors ligne.",
   },
 };
 
@@ -198,21 +204,39 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <Link
-            href="/blog/white-noise-for-sleep"
+            href="/fr/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Le bruit brun pour dormir</h3>
+            <h3 className="text-xl font-semibold text-white">Bruit brun vs blanc vs rose</h3>
             <p className="mt-3 text-white/70">
-              Découvrez comment le bruit brun crée un environnement de sommeil stable.
+              Comparez les différentes couleurs de bruit et découvrez laquelle est meilleure pour le sommeil, le TDAH ou la concentration.
             </p>
           </Link>
           <Link
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/fr/blog/best-color-noise-for-adhd"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Les couleurs du bruit</h3>
+            <h3 className="text-xl font-semibold text-white">Meilleur bruit pour le TDAH</h3>
             <p className="mt-3 text-white/70">
-              Explorez les différences entre le bruit brun, rose, brun et vert.
+              Quel type de bruit est le plus efficace pour les personnes atteintes de TDAH ? Guide fondé sur la recherche.
+            </p>
+          </Link>
+          <Link
+            href="/fr/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Meilleurs sons pour dormir</h3>
+            <p className="mt-3 text-white/70">
+              Découvrez pourquoi le bruit brun est parmi les sons les plus efficaces pour s'endormir.
+            </p>
+          </Link>
+          <Link
+            href="/fr/blog/white-noise-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Bruit blanc pour dormir</h3>
+            <p className="mt-3 text-white/70">
+              Complétez le bruit brun avec du bruit blanc pour un masquage sonore complet.
             </p>
           </Link>
         </div>
@@ -229,21 +253,19 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Qu'est-ce qu'une application de bruit brun ?
+              Qu'est-ce que le bruit brun ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Elle aide à créer un son de fond régulier qui favorise le sommeil 
-              et un environnement audio apaisant.
+              Le bruit brun est un son profond et grave, similaire au grondement d'un tonnerre lointain. Il a plus d'énergie dans les basses fréquences que le bruit blanc, ce qui le rend plus relaxant pour beaucoup de personnes.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Le bruit brun aide-t-il vraiment à dormir ?
+              Le bruit brun aide-t-il avec le TDAH ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, beaucoup de personnes l'utilisent pour calmer le mental et 
-              atténuer les bruits extérieurs perturbateurs.
+              Oui, de nombreuses personnes avec TDAH rapportent que le bruit brun les aide à mieux se concentrer. Son ton profond et constant réduit l'hyperactivité mentale et facilite la concentration soutenue.
             </p>
           </div>
 
@@ -252,10 +274,31 @@ export default function WhiteNoiseAppPage() {
               Calma ne propose-t-elle que du bruit brun ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Non, elle propose également des sons de nature, de relaxation et 
-              de concentration pour répondre à tous vos besoins sonores.
+              Non. Calma inclut également le bruit blanc, rose, vert et un catalogue complet de sons de la nature pour dormir, se détendre ou se concentrer.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Bruit brun vs bruit blanc — lequel est meilleur pour dormir ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Le bruit brun sonne plus profond et doux, idéal si vous trouvez le bruit blanc trop aigu. Le bruit blanc masque mieux les sons soudains. Avec Calma, vous pouvez mélanger les deux.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Puis-je utiliser le bruit brun toute la nuit ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui, c'est parfaitement sûr à volume modéré (en dessous de 50 dB). Calma inclut une minuterie de sommeil pour s'éteindre automatiquement si vous le souhaitez.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu'est-ce que le bruit brun ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit brun est un son profond et grave avec plus d'énergie dans les basses fréquences que le bruit blanc, ce qui le rend plus relaxant."}},{"@type":"Question","name":"Le bruit brun aide-t-il avec le TDAH ?","acceptedAnswer":{"@type":"Answer","text":"Oui, de nombreuses personnes avec TDAH rapportent une meilleure concentration grâce au bruit brun."}},{"@type":"Question","name":"Calma ne propose-t-elle que du bruit brun ?","acceptedAnswer":{"@type":"Answer","text":"Non. Calma inclut bruit blanc, rose, vert et des sons de la nature."}},{"@type":"Question","name":"Bruit brun vs bruit blanc — lequel est meilleur pour dormir ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit brun est plus profond et doux. Le bruit blanc masque mieux les sons soudains. Calma permet de mélanger les deux."}},{"@type":"Question","name":"Puis-je utiliser le bruit brun toute la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, c'est sûr à volume modéré. Calma a une minuterie de sommeil automatique."}}]}) }}
+          />
         </div>
       </section>
 

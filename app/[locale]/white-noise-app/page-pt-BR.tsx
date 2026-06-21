@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Ruído Branco para Dormir | Calma",
+  title: "Melhor App de Ruído Branco Grátis 2026 | Calma",
   description:
-    "Crie misturas relaxantes para dormir com ruído branco, rosa e marrom. Use o Calma para relaxar, focar e dormir melhor todas as noites.",
+    "Procurando o melhor app de ruído branco? Misture ruído branco, marrom, rosa e sons da natureza para dormir, TDAH, bebês ou zumbido. 100% grátis, sem anúncios, funciona offline.",
   keywords: [
     "aplicativo de ruído branco",
     "ruído branco para dormir",
-    "aplicativo de ruído branco para sono",
-    "ruído branco calmante",
-    "ruído branco calma",
+    "ruído branco grátis",
+    "melhor aplicativo ruído branco",
+    "ruído branco bebê",
+    "ruído branco TDAH",
+    "gerador de ruído branco",
+    "aplicativo ruído branco grátis",
+    "ruído branco zumbido",
+    "calma ruído branco",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/white-noise-app",
   },
   openGraph: {
-    title: "App de Ruído Branco para Dormir | Calma",
+    title: "Melhor App de Ruído Branco Grátis | Sono, Bebês, TDAH | Calma",
     description:
-    "Crie misturas relaxantes para dormir com ruído branco, rosa e marrom. Use o Calma para relaxar, focar e dormir melhor todas as noites.",
+    "Misture ruído branco, marrom e rosa para dormir, TDAH, bebês ou zumbido. 100% grátis, sem anúncios.",
     url: "https://www.calmasounds.com/pt-BR/white-noise-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Ruído Branco para Dormir | Calma",
+    title: "Melhor App de Ruído Branco Grátis | Calma",
     description:
-    "Crie misturas relaxantes para dormir com ruído branco, rosa e marrom. Use o Calma para relaxar, focar e dormir melhor todas as noites.",
+    "Misture ruído branco, marrom e rosa para dormir. 100% grátis, funciona offline.",
   },
 };
 
@@ -232,7 +237,7 @@ export default function WhiteNoiseAppPage() {
               Qual é o melhor aplicativo gratuito de ruído branco?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              O Calma oferece um ambiente simples e sem distrações para misturar ruído branco com sons da natureza, sem anúncios intrusivos.
+              O Calma oferece um ambiente simples para misturar ruído branco com sons da natureza, sem anúncios. É 100% grátis e funciona offline.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -240,7 +245,7 @@ export default function WhiteNoiseAppPage() {
               O ruído branco ajuda a dormir?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim. O ruído branco atua como um cobertor acústico que mascara ruídos de fundo repentinos, ajudando seu cérebro a relaxar.
+              Sim. O ruído branco atua como um cobertor acústico que mascara ruídos repentinos, ajudando seu cérebro a relaxar e manter o sono profundo.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -248,12 +253,36 @@ export default function WhiteNoiseAppPage() {
               Como usar ruído branco para estudar?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Para estudar, recomendamos uma base constante de ruído branco ou marrom, misturada com chuva fraca. Isso ajuda a manter o foco.
+              Para estudar, recomendamos uma base de ruído branco ou marrom, misturada com chuva fraca. Particularmente eficaz para pessoas com TDAH.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              O ruído branco é seguro para bebês?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim, quando usado corretamente. Mantenha o volume abaixo de 50 dB, coloque o dispositivo a pelo menos 2 metros do berço e use um temporizador.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Ruído branco vs ruído marrom — qual é melhor para dormir?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              O ruído branco mascara melhor sons agudos. O ruído marrom tem tom mais profundo que muitos adultos acham mais relaxante. Com o Calma, você pode misturar os dois.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              O Calma funciona sem internet?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim. O Calma funciona totalmente offline, então você pode usá-lo em qualquer lugar: no avião, na montanha ou simplesmente sem Wi-Fi.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual é o melhor aplicativo gratuito de ruído branco?","acceptedAnswer":{"@type":"Answer","text":"O Calma oferece um ambiente simples e sem distrações para misturar ruído branco com sons da natureza, sem anúncios intrusivos."}},{"@type":"Question","name":"O ruído branco ajuda a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sim. O ruído branco atua como um cobertor acústico que mascara ruídos de fundo repentinos, ajudando seu cérebro a relaxar."}},{"@type":"Question","name":"Como usar ruído branco para estudar?","acceptedAnswer":{"@type":"Answer","text":"Para estudar, recomendamos uma base constante de ruído branco ou marrom, misturada com chuva fraca. Isso ajuda a manter o foco."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qual é o melhor aplicativo gratuito de ruído branco?","acceptedAnswer":{"@type":"Answer","text":"Calma é 100% grátis, sem anúncios, funciona offline e permite misturar ruído branco com sons da natureza."}},{"@type":"Question","name":"O ruído branco ajuda a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sim. Mascara ruídos repentinos e ajuda a manter o sono profundo."}},{"@type":"Question","name":"Como usar ruído branco para estudar?","acceptedAnswer":{"@type":"Answer","text":"Base de ruído branco ou marrom com chuva fraca, eficaz para TDAH."}},{"@type":"Question","name":"O ruído branco é seguro para bebês?","acceptedAnswer":{"@type":"Answer","text":"Sim, volume abaixo de 50 dB, a 2 metros do berço, com temporizador."}},{"@type":"Question","name":"Ruído branco vs marrom — qual é melhor?","acceptedAnswer":{"@type":"Answer","text":"O branco mascara sons agudos. O marrom é mais profundo. Calma permite misturar."}},{"@type":"Question","name":"Funciona sem internet?","acceptedAnswer":{"@type":"Answer","text":"Sim. Calma funciona totalmente offline."}}]}) }}
           />
         </div>
       </section>

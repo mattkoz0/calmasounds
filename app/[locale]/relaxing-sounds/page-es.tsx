@@ -2,23 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sonidos Relajantes para el Estrés | Calma",
+  title: "Sonidos Relajantes Gratis para Estrés y Ansiedad | Calma",
   description:
-    "Crea tu propia mezcla de sonidos relajantes con lluvia y ruido blanco. Usa Calma para encontrar la paz y aliviar el estrés diario.",
+    "¿Necesitas relajarte? Mezcla sonidos de lluvia, naturaleza y ruido blanco para reducir el estrés y la ansiedad. App 100% gratis, sin anuncios, funciona offline.",
   keywords: [
     "app de sonidos relajantes",
     "sonidos de relajación",
     "app de sonidos para calmarse",
     "sonidos ambientales relajantes",
     "sonidos relajantes calma",
+    "sonidos para relajarse gratis",
+    "sonidos para la ansiedad",
+    "app relajación gratis",
+    "sonidos para meditar",
+    "sonidos calmantes para el estrés",
+    "música relajante para dormir",
+    "sonidos ambientales gratis",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/relaxing-sounds",
   },
   openGraph: {
-    title: "Sonidos Relajantes para el Estrés | Calma",
+    title: "Sonidos Relajantes Gratis | Estrés, Ansiedad y Sueño | Calma",
     description:
-    "Crea tu propia mezcla de sonidos relajantes con lluvia y ruido blanco. Usa Calma para encontrar la paz y aliviar el estrés diario.",
+    "Mezcla sonidos de lluvia, naturaleza y ruido blanco para reducir el estrés y la ansiedad. 100% gratis, sin anuncios.",
     url: "https://www.calmasounds.com/es/relaxing-sounds",
     siteName: "Calma",
     locale: "es_ES",
@@ -26,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sonidos Relajantes para el Estrés | Calma",
+    title: "Sonidos Relajantes Gratis | Calma",
     description:
-    "Crea tu propia mezcla de sonidos relajantes con lluvia y ruido blanco. Usa Calma para encontrar la paz y aliviar el estrés diario.",
+    "Mezcla lluvia, naturaleza y ruido blanco para relajarte. 100% gratis, funciona offline.",
   },
 };
 
@@ -197,7 +204,7 @@ export default function RelaxingSoundsPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/benefits-of-nature-sounds-for-relaxation"
+            href="/es/blog/benefits-of-nature-sounds-for-relaxation"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Beneficios de los Sonidos de la Naturaleza</h3>
@@ -206,12 +213,30 @@ export default function RelaxingSoundsPage() {
             </p>
           </a>
           <a
-            href="/blog/guided-breathing-techniques"
+            href="/es/blog/guided-breathing-techniques"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Técnicas de Respiración Guiada</h3>
             <p className="mt-3 text-white/70">
               Descubre métodos de respiración que trabajan junto a los sonidos ambientales para una mejor relajación.
+            </p>
+          </a>
+          <a
+            href="/es/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Mejores Sonidos para Dormir</h3>
+            <p className="mt-3 text-white/70">
+              ¿Qué sonidos te ayudan a dormir más rápido? Una guía completa con opciones naturales y electrónicas.
+            </p>
+          </a>
+          <a
+            href="/es/blog/how-to-build-a-bedtime-routine"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Cómo Crear una Rutina Nocturna</h3>
+            <p className="mt-3 text-white/70">
+              Construye una rutina vespertina relajante que integre sonidos calmantes para un mejor descanso.
             </p>
           </a>
         </div>
@@ -231,8 +256,7 @@ export default function RelaxingSoundsPage() {
               ¿Qué es una app de sonidos relajantes?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Una app de sonidos relajantes te ayuda a reproducir audio calmante que te acompaña
-              en tu rutina de descanso, reinicio emocional y momentos pacíficos.
+              Una app de sonidos relajantes te ayuda a reproducir audio calmante como lluvia, olas, ruido blanco y sonidos de la naturaleza para reducir el estrés, la ansiedad y facilitar el descanso.
             </p>
           </div>
 
@@ -242,7 +266,7 @@ export default function RelaxingSoundsPage() {
             </h3>
             <p className="mt-3 leading-7 text-white/70">
               Puedes usar Calma después del trabajo, durante el descanso por la tarde, mientras
-              lees o siempre que busques un entorno de fondo suave.
+              lees o siempre que busques un entorno de fondo suave para reducir el estrés.
             </p>
           </div>
 
@@ -251,10 +275,31 @@ export default function RelaxingSoundsPage() {
               ¿Puedo personalizar los sonidos?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sí. Calma está diseñada para crear tu propio paisaje relajante 
-              y no solo escuchar una pista estática todo el tiempo.
+              Sí. Calma está diseñada para crear tu propio paisaje relajante mezclando múltiples sonidos y ajustando el volumen de cada uno de forma independiente.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Los sonidos relajantes ayudan con la ansiedad?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí. Investigaciones muestran que los sonidos de la naturaleza y el ruido blanco activan el sistema nervioso parasimpático, reduciendo la frecuencia cardíaca y la respuesta de estrés. Muchos terapeutas recomiendan sonidos ambientales como complemento para manejar la ansiedad.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Calma funciona sin conexión a Internet?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí. Calma funciona completamente offline, lo que significa que puedes usarla en cualquier lugar: en el avión, en la montaña o simplemente cuando no tienes Wi-Fi. No necesitas conexión para relajarte.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app de sonidos relajantes?","acceptedAnswer":{"@type":"Answer","text":"Una app de sonidos relajantes reproduce audio calmante como lluvia, olas, ruido blanco y sonidos de la naturaleza para reducir el estrés y facilitar el descanso."}},{"@type":"Question","name":"¿Cuándo puedo usar Calma para relajarme?","acceptedAnswer":{"@type":"Answer","text":"Puedes usar Calma después del trabajo, durante el descanso, mientras lees o siempre que busques un entorno suave para reducir el estrés."}},{"@type":"Question","name":"¿Puedo personalizar los sonidos?","acceptedAnswer":{"@type":"Answer","text":"Sí. Calma está diseñada para crear tu propio paisaje relajante mezclando múltiples sonidos y ajustando el volumen individualmente."}},{"@type":"Question","name":"¿Los sonidos relajantes ayudan con la ansiedad?","acceptedAnswer":{"@type":"Answer","text":"Sí. Los sonidos de la naturaleza y el ruido blanco activan el sistema nervioso parasimpático, reduciendo la frecuencia cardíaca y la respuesta de estrés."}},{"@type":"Question","name":"¿Calma funciona sin conexión a Internet?","acceptedAnswer":{"@type":"Answer","text":"Sí. Calma funciona completamente offline. Puedes usarla en cualquier lugar sin necesidad de Wi-Fi."}}]}) }}
+          />
         </div>
       </section>
 

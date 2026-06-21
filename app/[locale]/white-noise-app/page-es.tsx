@@ -2,23 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Ruido Blanco para Dormir | Calma",
+  title: "Mejor App de Ruido Blanco Gratis 2026 | Calma",
   description:
-    "Crea mezclas relajantes para dormir con ruido blanco, rosa y marrón. Usa Calma para relajarte, concentrarte y dormir mejor.",
+    "¿Buscas la mejor app de ruido blanco? Mezcla ruido blanco, marrón, rosa y sonidos de la naturaleza para dormir, TDAH, bebés o tinnitus. 100% gratis, sin anuncios, funciona offline.",
   keywords: [
     "app de ruido blanco",
     "ruido blanco para dormir",
     "app de sueño ruido blanco",
     "ruido blanco relajante",
     "ruido blanco calma",
+    "mejor app ruido blanco",
+    "app ruido blanco gratis",
+    "ruido blanco para bebés",
+    "apps ruido blanco",
+    "generador ruido blanco",
+    "ruido blanco app gratis",
+    "máquina de ruido blanco app",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/white-noise-app",
   },
   openGraph: {
-    title: "App de Ruido Blanco para Dormir | Calma",
+    title: "Mejor App de Ruido Blanco Gratis 2026 | Dormir, TDAH, Bebés | Calma",
     description:
-    "Crea mezclas relajantes para dormir con ruido blanco, rosa y marrón. Usa Calma para relajarte, concentrarte y dormir mejor.",
+    "¿Buscas la mejor app de ruido blanco? Mezcla ruido blanco, marrón, rosa y sonidos de la naturaleza para dormir, TDAH, bebés o tinnitus. 100% gratis, sin anuncios.",
     url: "https://www.calmasounds.com/es/white-noise-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -26,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Ruido Blanco para Dormir | Calma",
+    title: "Mejor App de Ruido Blanco Gratis | Calma",
     description:
-    "Crea mezclas relajantes para dormir con ruido blanco, rosa y marrón. Usa Calma para relajarte, concentrarte y dormir mejor.",
+    "Mezcla ruido blanco, marrón y rosa para dormir, TDAH, bebés o tinnitus. 100% gratis, funciona offline.",
   },
 };
 
@@ -196,21 +203,39 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/white-noise-for-sleep"
+            href="/es/blog/white-noise-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Ruido Blanco para Dormir</h3>
             <p className="mt-3 text-white/70">
-              Descubre cómo el ruido blanco puede colaborar a la hora de mejorar en tu entorno de sueño.
+              Descubre cómo el ruido blanco puede mejorar la calidad de tu sueño y por qué millones lo usan.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/es/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Colores de Ruido Explicados</h3>
             <p className="mt-3 text-white/70">
               Explora las diferencias del ruido blanco, rosa, marrón o verde para lograr el ambiente perfecto para ti.
+            </p>
+          </a>
+          <a
+            href="/es/blog/best-free-white-noise-app"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Mejores Apps de Ruido Blanco Gratis</h3>
+            <p className="mt-3 text-white/70">
+              Compara Calma con otras apps de ruido blanco en funciones, calidad de sonido y relación calidad-precio.
+            </p>
+          </a>
+          <a
+            href="/es/blog/rain-sounds-vs-white-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Sonidos de Lluvia vs Ruido Blanco</h3>
+            <p className="mt-3 text-white/70">
+              ¿Qué es mejor para dormir: sonidos orgánicos de lluvia o ruido blanco constante?
             </p>
           </a>
         </div>
@@ -230,7 +255,7 @@ export default function WhiteNoiseAppPage() {
               ¿Cuál es la mejor aplicación gratuita de ruido blanco?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza, sin anuncios intrusivos.
+              Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza, sin anuncios intrusivos. Es 100% gratis y funciona offline.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -238,7 +263,7 @@ export default function WhiteNoiseAppPage() {
               ¿El ruido blanco ayuda a dormir?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse.
+              Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse y mantener el sueño profundo.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -246,12 +271,36 @@ export default function WhiteNoiseAppPage() {
               ¿Cómo usar ruido blanco para estudiar?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración.
+              Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración, especialmente para personas con TDAH.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Es seguro el ruido blanco para bebés?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí, cuando se usa correctamente. Mantén el volumen por debajo de 50 dB, coloca el dispositivo a al menos 2 metros de la cuna, y usa un temporizador de sueño. Muchos pediatras recomiendan el ruido blanco para ayudar a los bebés a dormir.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Ruido blanco vs ruido marrón — cuál es mejor para dormir?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              El ruido blanco enmascara mejor los sonidos agudos como alarmas o voces. El ruido marrón tiene un tono más profundo y grave que muchos adultos encuentran más relajante. Con Calma puedes mezclar ambos para obtener lo mejor de los dos mundos.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Puedo usar una app de ruido blanco en vez de una máquina de sonido?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Por supuesto. Apps modernas como Calma ofrecen la misma o mejor calidad de sonido que las máquinas de sonido dedicadas, además de poder crear mezclas personalizadas, usar temporizadores y funcionar offline. Y Calma es gratis.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la mejor aplicación gratuita de ruido blanco?","acceptedAnswer":{"@type":"Answer","text":"Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza, sin anuncios intrusivos."}},{"@type":"Question","name":"¿El ruido blanco ayuda a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse."}},{"@type":"Question","name":"¿Cómo usar ruido blanco para estudiar?","acceptedAnswer":{"@type":"Answer","text":"Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la mejor aplicación gratuita de ruido blanco?","acceptedAnswer":{"@type":"Answer","text":"Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza. Es 100% gratis, sin anuncios y funciona offline."}},{"@type":"Question","name":"¿El ruido blanco ayuda a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse y mantener el sueño profundo."}},{"@type":"Question","name":"¿Cómo usar ruido blanco para estudiar?","acceptedAnswer":{"@type":"Answer","text":"Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración, especialmente para personas con TDAH."}},{"@type":"Question","name":"¿Es seguro el ruido blanco para bebés?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando se usa correctamente. Mantén el volumen por debajo de 50 dB, coloca el dispositivo a al menos 2 metros de la cuna, y usa un temporizador de sueño."}},{"@type":"Question","name":"¿Ruido blanco vs ruido marrón — cuál es mejor para dormir?","acceptedAnswer":{"@type":"Answer","text":"El ruido blanco enmascara mejor sonidos agudos. El ruido marrón tiene un tono más profundo y grave. Con Calma puedes mezclar ambos para obtener lo mejor de los dos mundos."}},{"@type":"Question","name":"¿Puedo usar una app de ruido blanco en vez de una máquina de sonido?","acceptedAnswer":{"@type":"Answer","text":"Por supuesto. Apps modernas como Calma ofrecen la misma o mejor calidad que las máquinas dedicadas, además de mezclas personalizadas, temporizadores y modo offline. Calma es gratis."}}]}) }}
           />
         </div>
       </section>

@@ -3,23 +3,29 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "App de Sons pour Mieux Dormir | Calma",
+  title: "App de Sons pour Dormir Gratuite | Calma",
   description:
-    "Découvrez les meilleurs sons pour dormir. Créez un mix apaisant avec Calma pour vous endormir plus vite et vous réveiller en forme.",
+    "Vous cherchez la meilleure app de sons pour dormir ? Mélangez bruit blanc, pluie et sons de la nature pour vous endormir plus vite. 100% gratuit, sans pub, fonctionne hors ligne.",
   keywords: [
     "application sons pour dormir",
     "application sommeil",
     "sons relaxants pour dormir",
     "bruit de pluie pour dormir",
     "calma sons sommeil",
+    "bruit pour dormir",
+    "sons pour dormir gratuit",
+    "bruit blanc pour dormir",
+    "application sommeil gratuite",
+    "meilleurs sons pour dormir",
+    "sons de la nuit",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/sleep-sounds-app",
   },
   openGraph: {
-    title: "App de Sons pour Mieux Dormir | Calma",
+    title: "App de Sons pour Dormir Gratuite | Sans Pub | Calma",
     description:
-    "Découvrez les meilleurs sons pour dormir. Créez un mix apaisant avec Calma pour vous endormir plus vite et vous réveiller en forme.",
+    "Mélangez bruit blanc, pluie et sons de la nature pour vous endormir plus vite. 100% gratuit, sans pub.",
     url: "https://www.calmasounds.com/fr/sleep-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sons pour Mieux Dormir | Calma",
+    title: "App de Sons pour Dormir Gratuite | Calma",
     description:
-    "Découvrez les meilleurs sons pour dormir. Créez un mix apaisant avec Calma pour vous endormir plus vite et vous réveiller en forme.",
+    "Mélangez bruit blanc, pluie et sons de la nature pour dormir. 100% gratuit, fonctionne hors ligne.",
   },
 };
 
@@ -198,7 +204,7 @@ export default function SleepSoundsAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <Link
-            href="/blog/best-sounds-for-sleep"
+            href="/fr/blog/best-sounds-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Meilleurs sons pour dormir</h3>
@@ -207,12 +213,30 @@ export default function SleepSoundsAppPage() {
             </p>
           </Link>
           <Link
-            href="/blog/how-to-build-a-bedtime-routine"
+            href="/fr/blog/how-to-build-a-bedtime-routine"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Créer une routine du coucher</h3>
             <p className="mt-3 text-white/70">
               Des conseils simples pour instaurer un rythme de soirée calme favorisant un sommeil naturel.
+            </p>
+          </Link>
+          <Link
+            href="/fr/blog/white-noise-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Bruit blanc pour dormir</h3>
+            <p className="mt-3 text-white/70">
+              Découvrez comment le bruit blanc améliore la qualité du sommeil et pourquoi des millions l'utilisent.
+            </p>
+          </Link>
+          <Link
+            href="/fr/blog/rain-sounds-for-better-sleep-and-focus"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Sons de pluie pour dormir</h3>
+            <p className="mt-3 text-white/70">
+              Pourquoi les sons de pluie sont-ils si efficaces pour s'endormir ? La science derrière ce phénomène.
             </p>
           </Link>
         </div>
@@ -232,8 +256,7 @@ export default function SleepSoundsAppPage() {
               Qu'est-ce qu'une application de sons pour dormir ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Elle vous aide à diffuser des sons apaisants conçus pour favoriser 
-              les routines du coucher, la relaxation et un état mental calme avant de dormir.
+              Une application de sons pour dormir diffuse des sons apaisants conçus pour favoriser les routines du coucher, la relaxation et un état mental calme avant de dormir.
             </p>
           </div>
 
@@ -242,8 +265,7 @@ export default function SleepSoundsAppPage() {
               En quoi Calma est-elle différente ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma privilégie les paysages sonores personnalisés et une interface 
-              épurée plutôt que de vous submerger de complexité.
+              Calma privilégie les paysages sonores personnalisés et une interface épurée plutôt que de vous submerger de complexité. Elle est 100% gratuite, sans pub et fonctionne hors ligne.
             </p>
           </div>
 
@@ -252,10 +274,31 @@ export default function SleepSoundsAppPage() {
               Puis-je créer mon propre mélange ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, Calma est conçue pour que vous puissiez créer votre propre mélange 
-              audio relaxant plutôt que de choisir une piste fixe.
+              Oui, Calma est conçue pour que vous puissiez créer votre propre mélange audio relaxant plutôt que de choisir une piste fixe.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Est-il sûr d'utiliser des sons pour dormir chaque nuit ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui, si le volume reste modéré (en dessous de 50 dB). Des études montrent que le bruit de fond constant améliore la qualité du sommeil profond. Calma a une minuterie de sommeil pour s'éteindre automatiquement.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Quels sons sont les meilleurs pour s'endormir rapidement ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Les sons les plus efficaces pour s'endormir rapidement sont le bruit blanc, le bruit brun et les sons de pluie. Calma vous permet de les mélanger tous ensemble pour créer l'ambiance parfaite.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu'est-ce qu'une application de sons pour dormir ?","acceptedAnswer":{"@type":"Answer","text":"Une application qui diffuse des sons apaisants pour favoriser la relaxation et un sommeil plus profond."}},{"@type":"Question","name":"En quoi Calma est-elle différente ?","acceptedAnswer":{"@type":"Answer","text":"Calma est 100% gratuite, sans pub, fonctionne hors ligne et permet de créer des mélanges personnalisés."}},{"@type":"Question","name":"Puis-je créer mon propre mélange ?","acceptedAnswer":{"@type":"Answer","text":"Oui, Calma est conçue pour créer votre propre mélange audio relaxant."}},{"@type":"Question","name":"Est-il sûr d'utiliser des sons pour dormir chaque nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, à volume modéré. Calma a une minuterie de sommeil automatique."}},{"@type":"Question","name":"Quels sons sont les meilleurs pour s'endormir rapidement ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit blanc, le bruit brun et les sons de pluie. Calma permet de les mélanger."}}]}) }}
+          />
         </div>
       </section>
 

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sonidos de Concentración | Calma",
+  title: "App de Sonidos para Concentración y TDAH | Calma",
   description:
-    "Construye paisajes sonoros inmersivos con lluvia y ruido marrón. Calma te ayuda a crear un espacio más tranquilo para el trabajo profundo.",
+    "¿Necesitas concentrarte? Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. App 100% gratis, sin anuncios, funciona offline.",
   keywords: [
     "app de sonidos para la concentración",
     "app de enfoque",
@@ -12,14 +12,20 @@ export const metadata: Metadata = {
     "sonidos para el trabajo profundo",
     "app para estudiar",
     "sonidos de concentración calma",
+    "sonidos para estudiar",
+    "ruido marrón TDAH",
+    "app para concentrarse",
+    "sonidos para trabajar",
+    "ruido de fondo para estudiar",
+    "mejor ruido para estudiar",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/focus-sounds-app",
   },
   openGraph: {
-    title: "App de Sonidos de Concentración | Calma",
+    title: "App de Sonidos para Concentración y TDAH | Calma",
     description:
-    "Construye paisajes sonoros inmersivos con lluvia y ruido marrón. Calma te ayuda a crear un espacio más tranquilo para el trabajo profundo.",
+    "¿Necesitas concentrarte? Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. 100% gratis, sin anuncios.",
     url: "https://www.calmasounds.com/es/focus-sounds-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -27,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Sonidos de Concentración | Calma",
+    title: "App de Sonidos para Concentración y TDAH | Calma",
     description:
-    "Construye paisajes sonoros inmersivos con lluvia y ruido marrón. Calma te ayuda a crear un espacio más tranquilo para el trabajo profundo.",
+    "Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. 100% gratis, funciona offline.",
   },
 };
 
@@ -197,7 +203,7 @@ export default function FocusSoundsAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/best-sounds-for-studying"
+            href="/es/blog/best-sounds-for-studying"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Mejores Sonidos para Estudiar</h3>
@@ -206,12 +212,30 @@ export default function FocusSoundsAppPage() {
             </p>
           </a>
           <a
-            href="/blog/binaural-beats-for-sleep-and-focus"
+            href="/es/blog/binaural-beats-for-sleep-and-focus"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Ondas binaurales explicadas</h3>
             <p className="mt-3 text-white/70">
               Una introducción al poder las ondas binaurales y cómo estas apoyan un entorno sereno en tu trabajo diario.
+            </p>
+          </a>
+          <a
+            href="/es/blog/best-color-noise-for-adhd"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Mejor Ruido para TDAH</h3>
+            <p className="mt-3 text-white/70">
+              ¿Qué color de ruido es más efectivo para personas con TDAH? Guía basada en investigación científica.
+            </p>
+          </a>
+          <a
+            href="/es/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Ruido Marrón vs Blanco vs Rosa</h3>
+            <p className="mt-3 text-white/70">
+              Compara los diferentes colores de ruido y encuentra cuál es mejor para tu concentración y estudio.
             </p>
           </a>
         </div>
@@ -255,6 +279,28 @@ export default function FocusSoundsAppPage() {
               así, tu espacio de trabajo se sienta natural.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Qué ruido es mejor para estudiar?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              El ruido marrón y el ruido blanco son los más recomendados para estudiar. El ruido marrón tiene un tono más profundo y grave que ayuda a mantener la concentración, mientras que el ruido blanco enmascara mejor los sonidos agudos del entorno. Con Calma puedes mezclar ambos con lluvia suave.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿El ruido marrón ayuda con el TDAH?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Muchas personas con TDAH reportan que el ruido marrón les ayuda a concentrarse mejor. Su frecuencia grave y constante puede reducir la hiperactividad mental y facilitar el enfoque sostenido. Calma te permite ajustar la intensidad exacta que necesitas.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app de sonidos para la concentración?","acceptedAnswer":{"@type":"Answer","text":"Una aplicación de sonidos para la concentración te ayuda a crear un fondo de audio que respalda el enfoque, reduce las distracciones y hace que el estudio y el trabajo sean experiencias inmersivas."}},{"@type":"Question","name":"¿Cuándo puedo utilizar Calma?","acceptedAnswer":{"@type":"Answer","text":"Puedes utilizar Calma mientras estudias, lees, escribes, programas o en cualquier momento en que quieras disfrutar de un ambiente mucho más calmado."}},{"@type":"Question","name":"¿Puedo personalizar una mezcla de concentración?","acceptedAnswer":{"@type":"Answer","text":"Sí. Calma está diseñada para que puedas mezclar los audios tú mismo y que tu espacio de trabajo se sienta natural."}},{"@type":"Question","name":"¿Qué ruido es mejor para estudiar?","acceptedAnswer":{"@type":"Answer","text":"El ruido marrón y el ruido blanco son los más recomendados. El ruido marrón tiene un tono más profundo que ayuda a mantener la concentración. Con Calma puedes mezclar ambos con lluvia suave."}},{"@type":"Question","name":"¿El ruido marrón ayuda con el TDAH?","acceptedAnswer":{"@type":"Answer","text":"Muchas personas con TDAH reportan que el ruido marrón les ayuda a concentrarse mejor. Su frecuencia grave y constante puede reducir la hiperactividad mental. Calma te permite ajustar la intensidad exacta."}}]}) }}
+          />
         </div>
       </section>
 

@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sons da Natureza para Relaxar | Calma",
+  title: "App de Sons da Natureza Grátis | Chuva, Floresta, Mar | Calma",
   description:
-    "Crie misturas relaxantes para dormir com sons da natureza, chuva e floresta. Use o Calma para relaxar e construir sua rotina.",
+    "Ouça sons de chuva, floresta, mar e pássaros para dormir e relaxar. Crie mixagens personalizadas com o Calma. 100% grátis, sem anúncios, funciona offline.",
   keywords: [
     "aplicativo de sons da natureza",
     "sons da natureza para dormir",
-    "aplicativo de sons da natureza para sono",
-    "sons da natureza calmante",
-    "sons da natureza calma",
+    "som de chuva para dormir",
+    "sons da natureza grátis",
+    "calma sons da natureza",
+    "sons de floresta",
+    "sons do mar",
+    "sons de pássaros relaxantes",
+    "sons naturais para relaxar",
+    "gerador sons natureza",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/nature-sounds-app",
   },
   openGraph: {
-    title: "Sons da Natureza para Relaxar | Calma",
+    title: "Sons da Natureza Grátis | Chuva, Floresta, Mar | Calma",
     description:
-    "Crie misturas relaxantes para dormir com sons da natureza, chuva e floresta. Use o Calma para relaxar e construir sua rotina.",
+    "Sons de chuva, floresta, mar e pássaros para dormir e relaxar. 100% grátis, sem anúncios.",
     url: "https://www.calmasounds.com/pt-BR/nature-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons da Natureza para Relaxar | Calma",
+    title: "Sons da Natureza para Dormir | Calma",
     description:
-    "Crie misturas relaxantes para dormir com sons da natureza, chuva e floresta. Use o Calma para relaxar e construir sua rotina.",
+    "Misture chuva, floresta e mar para relaxar. 100% grátis, funciona offline.",
   },
 };
 
@@ -232,31 +237,49 @@ export default function WhiteNoiseAppPage() {
               O que é um aplicativo de sons da natureza?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Um aplicativo de sons da natureza ajuda a criar um som de fundo constante que pode
-              apoiar o sono, relaxamento e um ambiente sonoro mais calmo.
+              Um aplicativo de sons da natureza reproduz sons ambientes como chuva, ondas, floresta e pássaros para ajudar você a relaxar, dormir melhor ou se concentrar.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O sons da natureza pode ajudar com o sono?
+              Os sons da natureza ajudam a dormir?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Muitas pessoas usam o sons da natureza para tornar a hora de dormir mais calma e reduzir
-              o impacto de sons perturbadores no ambiente.
+              Sim, diversos estudos científicos demonstram que os sons da natureza reduzem o estresse, diminuem a frequência cardíaca e facilitam a transição para o sono profundo.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O Calma é apenas para sons da natureza?
+              O Calma só tem sons da natureza?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Não. O Calma também suporta sons para dormir, paisagens sonoras relaxantes e
-              mixagens de áudio orientadas para foco, para que você possa moldar a experiência de acordo com
-              suas necessidades.
+              Não. O Calma inclui também ruído branco, rosa, marrom e verde, além de um catálogo completo de sons para relaxar ou se concentrar.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Posso misturar sons de chuva com ruído branco?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Com certeza! O Calma foi especialmente projetado para misturar vários sons e ajustar o volume de cada um. Combinar chuva com ruído branco ou marrom é uma das mixagens mais populares.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Os sons da natureza reduzem a ansiedade?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim. Pesquisas publicadas na Scientific Reports mostram que os sons da natureza ativam o sistema nervoso parassimpático, reduzindo a resposta de luta ou fuga e promovendo relaxamento.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é um aplicativo de sons da natureza?","acceptedAnswer":{"@type":"Answer","text":"Reproduz sons como chuva, ondas e floresta para relaxar ou dormir melhor."}},{"@type":"Question","name":"Os sons da natureza ajudam a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sim, reduzem o estresse e facilitam o sono profundo."}},{"@type":"Question","name":"O Calma só tem sons da natureza?","acceptedAnswer":{"@type":"Answer","text":"Não. Inclui ruído branco, rosa, marrom e verde."}},{"@type":"Question","name":"Posso misturar sons de chuva com ruído branco?","acceptedAnswer":{"@type":"Answer","text":"Sim! Calma permite misturar vários sons e ajustar o volume de cada um."}},{"@type":"Question","name":"Os sons da natureza reduzem a ansiedade?","acceptedAnswer":{"@type":"Answer","text":"Sim, ativam o sistema nervoso parassimpático, promovendo relaxamento."}}]}) }}
+          />
         </div>
       </section>
 

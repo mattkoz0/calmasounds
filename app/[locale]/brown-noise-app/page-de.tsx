@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Braunes Rauschen App für den Schlaf | Calma",
+  title: "Kostenlose Brown Noise App für ADHS und Schlaf | Calma",
   description:
-    "Erstellen Sie beruhigende Schlafmischungen mit braunem und weißem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
+    "Suchen Sie tiefes braunes Rauschen für ADHS, Schlaf oder Konzentration? Mischen Sie Brown Noise mit Regen und Naturklängen. 100% kostenlos, ohne Werbung, offline nutzbar.",
   keywords: [
     "Braunes Rauschen App",
-    "White Noise App",
-    "Braunes Rauschen zum Einschlafen",
-    "beruhigendes braunes Rauschen",
-    "Calma White Noise",
+    "Brown Noise App",
+    "braunes Rauschen ADHS",
+    "braunes Rauschen zum Einschlafen",
+    "Calma Brown Noise",
+    "Brown Noise Generator",
+    "braunes Rauschen kostenlos",
+    "braunes Rauschen Konzentration",
+    "braunes Rauschen Tiefschlaf",
+    "Brown Noise App kostenlos",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/brown-noise-app",
   },
   openGraph: {
-    title: "Braunes Rauschen App für den Schlaf | Calma",
+    title: "Kostenlose Brown Noise App | ADHS, Schlaf & Fokus | Calma",
     description:
-    "Erstellen Sie beruhigende Schlafmischungen mit braunem und weißem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
+    "Braunes Rauschen mit Regen und Naturklängen für ADHS, Schlaf und Konzentration. 100% kostenlos.",
     url: "https://www.calmasounds.com/de/brown-noise-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Braunes Rauschen App für den Schlaf | Calma",
+    title: "Kostenlose Brown Noise App für ADHS und Schlaf | Calma",
     description:
-    "Erstellen Sie beruhigende Schlafmischungen mit braunem und weißem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
+    "Braunes Rauschen mit Regen und Naturklängen. 100% kostenlos, offline nutzbar.",
   },
 };
 
@@ -197,21 +202,21 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/white-noise-for-sleep"
+            href="/de/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Braunes Rauschen zum Schlafen</h3>
+            <h3 className="text-xl font-semibold text-white">Braun vs. weiß vs. rosa</h3>
             <p className="mt-3 text-white/70">
-              Entdecke, wie braunes Rauschen helfen kann, eine stabile Umgebung zu schaffen und deine Erholung zu verbessern.
+              Vergleiche die verschiedenen Rauschfarben und finde heraus, welche am besten für Schlaf, ADHS oder Fokus geeignet ist.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/de/blog/best-color-noise-for-adhd"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Rauschfarben erklärt</h3>
+            <h3 className="text-xl font-semibold text-white">Bestes Rauschen für ADHS</h3>
             <p className="mt-3 text-white/70">
-              Erfahre mehr über die Unterschiede zwischen weißem, pinkem, braunem und grünem Rauschen.
+              Welche Rauschfarbe ist am wirksamsten für Menschen mit ADHS? Ein forschungsbasierter Guide.
             </p>
           </a>
         </div>
@@ -228,21 +233,19 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Was ist eine Braunes Rauschen App?
+              Was ist braunes Rauschen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sie hilft dir, ein gleichmäßiges Hintergrundgeräusch abzuspielen, das 
-              den Schlaf, die Entspannung und eine ruhigere Audio-Umgebung unterstützt.
+              Braunes Rauschen ist ein tiefer, gleichmäßiger Klang, ähnlich einem fernen Donnergrollen. Es hat mehr Energie in den tiefen Frequenzen als weißes Rauschen, was es für viele Menschen entspannender macht.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Hilft braunes Rauschen beim Schlafen?
+              Hilft braunes Rauschen bei ADHS?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Viele Menschen nutzen es, um die Schlafenszeit ruhiger zu gestalten und 
-              Ablenkungen durch plötzliche Geräusche zu minimieren.
+              Ja, viele Menschen mit ADHS berichten, dass braunes Rauschen ihnen hilft, sich besser zu konzentrieren. Der tiefe, konstante Ton reduziert mentale Hyperaktivität und erleichtert anhaltende Konzentration.
             </p>
           </div>
 
@@ -251,10 +254,31 @@ export default function WhiteNoiseAppPage() {
               Gibt es in Calma nur braunes Rauschen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Nein. Calma unterstützt auch Naturklänge, Ambient-Soundscapes und Fokus-Mixe, 
-              sodass du das Erlebnis ganz nach deinen Wünschen gestalten kannst.
+              Nein. Calma bietet auch weißes, rosa und grünes Rauschen sowie einen vollständigen Katalog von Naturklängen zum Schlafen, Entspannen oder Konzentrieren.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Braunes vs. weißes Rauschen – was ist besser zum Schlafen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Braunes Rauschen klingt tiefer und sanfter – ideal, wenn du weißes Rauschen zu schrill findest. Weißes Rauschen maskiert plötzliche Geräusche besser. Mit Calma kannst du beides mischen.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Kann ich braunes Rauschen die ganze Nacht nutzen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja, bei moderater Lautstärke (unter 50 dB) ist es völlig sicher. Calma hat einen Sleep-Timer, der sich automatisch abschaltet.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist braunes Rauschen?","acceptedAnswer":{"@type":"Answer","text":"Ein tiefer, gleichmäßiger Klang mit mehr Energie in tiefen Frequenzen als weißes Rauschen."}},{"@type":"Question","name":"Hilft braunes Rauschen bei ADHS?","acceptedAnswer":{"@type":"Answer","text":"Ja, viele ADHS-Betroffene berichten bessere Konzentration mit braunem Rauschen."}},{"@type":"Question","name":"Gibt es nur braunes Rauschen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Calma bietet weiß, rosa, grün und Naturklänge."}},{"@type":"Question","name":"Braun vs. weiß – was ist besser?","acceptedAnswer":{"@type":"Answer","text":"Braun ist tiefer und sanfter. Weiß maskiert plötzliche Geräusche besser. Calma mischt beides."}},{"@type":"Question","name":"Kann man es die ganze Nacht nutzen?","acceptedAnswer":{"@type":"Answer","text":"Ja, bei moderater Lautstärke sicher. Calma hat einen automatischen Sleep-Timer."}}]}) }}
+          />
         </div>
       </section>
 

@@ -2,23 +2,29 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Weißes Rauschen App für den Schlaf | Calma",
+  title: "Beste Kostenlose White Noise App 2026 | Calma",
   description:
-    "Erstellen Sie beruhigende Schlafmischungen mit weißem und braunem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
+    "Suchen Sie die beste White Noise App? Mischen Sie weißes, braunes und rosa Rauschen mit Naturklängen für Schlaf, ADHS, Babys oder Tinnitus. 100% kostenlos, ohne Werbung, offline nutzbar.",
   keywords: [
     "Weißes Rauschen App",
     "White Noise App",
     "Weißes Rauschen zum Einschlafen",
-    "beruhigendes weißes Rauschen",
+    "beste White Noise App",
     "Calma White Noise",
+    "weißes Rauschen kostenlos",
+    "weißes Rauschen Baby",
+    "weißes Rauschen ADHS",
+    "White Noise Generator",
+    "weißes Rauschen zum Lernen",
+    "weißes Rauschen Tinnitus",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/white-noise-app",
   },
   openGraph: {
-    title: "Weißes Rauschen App für den Schlaf | Calma",
+    title: "Beste Kostenlose White Noise App | Schlaf, Babys, ADHS | Calma",
     description:
-    "Erstellen Sie beruhigende Schlafmischungen mit weißem und braunem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
+    "Weißes, braunes und rosa Rauschen für Schlaf, ADHS, Babys oder Tinnitus. 100% kostenlos, ohne Werbung.",
     url: "https://www.calmasounds.com/de/white-noise-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Weißes Rauschen App für den Schlaf | Calma",
+    title: "Beste Kostenlose White Noise App | Calma",
     description:
-    "Erstellen Sie beruhigende Schlafmischungen mit weißem und braunem Rauschen. Verwenden Sie Calma zum Entspannen und Fokussieren.",
+    "Weißes, braunes und rosa Rauschen für besseren Schlaf. 100% kostenlos, offline nutzbar.",
   },
 };
 
@@ -197,21 +203,21 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/white-noise-for-sleep"
+            href="/de/blog/white-noise-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Weißes Rauschen zum Schlafen</h3>
             <p className="mt-3 text-white/70">
-              Entdecke, wie weißes Rauschen helfen kann, eine stabile Umgebung zu schaffen und deine Erholung zu verbessern.
+              Entdecke, wie weißes Rauschen eine stabile Schlafumgebung schafft und deine Erholung verbessert.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/de/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Rauschfarben erklärt</h3>
             <p className="mt-3 text-white/70">
-              Erfahre mehr über die Unterschiede zwischen weißem, pinkem, braunem und grünem Rauschen.
+              Erfahre die Unterschiede zwischen weißem, pinkem, braunem und grünem Rauschen für deinen idealen Sound.
             </p>
           </a>
         </div>
@@ -228,10 +234,10 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Was ist die beste kostenlose App für weißes Rauschen?
+              Was ist die beste kostenlose White Noise App?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma bietet eine einfache Umgebung, um weißes Rauschen mit Naturklängen zu mischen, ohne aufdringliche Werbung, die Sie aufweckt.
+              Calma bietet eine einfache Umgebung zum Mischen von weißem Rauschen mit Naturklängen – ohne Werbung. 100% kostenlos und offline nutzbar.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -239,7 +245,7 @@ export default function WhiteNoiseAppPage() {
               Hilft weißes Rauschen beim Schlafen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja. Weißes Rauschen wirkt wie eine akustische Decke, die plötzliche Hintergrundgeräusche übertönt und Ihrem Gehirn hilft, sich zu entspannen.
+              Ja. Weißes Rauschen wirkt wie eine akustische Decke, die plötzliche Geräusche übertönt und deinem Gehirn hilft, sich zu entspannen und tiefer zu schlafen.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -247,12 +253,36 @@ export default function WhiteNoiseAppPage() {
               Wie nutzt man weißes Rauschen zum Lernen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Zum Lernen empfehlen wir eine Basis aus weißem oder braunem Rauschen, gemischt mit leichtem Regen. Dies hilft, den Fokus zu behalten.
+              Zum Lernen empfehlen wir eine Basis aus weißem oder braunem Rauschen, gemischt mit leichtem Regen. Besonders wirksam für Menschen mit ADHS.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Ist weißes Rauschen sicher für Babys?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja, bei richtiger Anwendung. Halte die Lautstärke unter 50 dB, stelle das Gerät mindestens 2 Meter vom Bett entfernt auf und verwende einen Timer.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Weißes vs. braunes Rauschen – was ist besser zum Schlafen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Weißes Rauschen maskiert hohe Töne besser. Braunes Rauschen klingt tiefer und wird von vielen Erwachsenen als entspannender empfunden. Mit Calma kannst du beides mischen.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Funktioniert Calma ohne Internet?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja. Calma funktioniert komplett offline – im Flugzeug, in den Bergen oder einfach ohne WLAN.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist die beste kostenlose App für weißes Rauschen?","acceptedAnswer":{"@type":"Answer","text":"Calma bietet eine einfache Umgebung, um weißes Rauschen mit Naturklängen zu mischen, ohne aufdringliche Werbung, die Sie aufweckt."}},{"@type":"Question","name":"Hilft weißes Rauschen beim Schlafen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Weißes Rauschen wirkt wie eine akustische Decke, die plötzliche Hintergrundgeräusche übertönt und Ihrem Gehirn hilft, sich zu entspannen."}},{"@type":"Question","name":"Wie nutzt man weißes Rauschen zum Lernen?","acceptedAnswer":{"@type":"Answer","text":"Zum Lernen empfehlen wir eine Basis aus weißem oder braunem Rauschen, gemischt mit leichtem Regen. Dies hilft, den Fokus zu behalten."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist die beste kostenlose White Noise App?","acceptedAnswer":{"@type":"Answer","text":"Calma ist 100% kostenlos, ohne Werbung, offline nutzbar und ermöglicht das Mischen von weißem Rauschen mit Naturklängen."}},{"@type":"Question","name":"Hilft weißes Rauschen beim Schlafen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Es maskiert plötzliche Geräusche und hilft dem Gehirn, sich zu entspannen."}},{"@type":"Question","name":"Wie nutzt man weißes Rauschen zum Lernen?","acceptedAnswer":{"@type":"Answer","text":"Basis aus weißem oder braunem Rauschen mit leichtem Regen, besonders wirksam bei ADHS."}},{"@type":"Question","name":"Ist weißes Rauschen sicher für Babys?","acceptedAnswer":{"@type":"Answer","text":"Ja, bei Lautstärke unter 50 dB und mindestens 2 Meter Abstand."}},{"@type":"Question","name":"Weißes vs. braunes Rauschen – was ist besser?","acceptedAnswer":{"@type":"Answer","text":"Weiß maskiert hohe Töne. Braun ist tiefer und entspannender. Calma mischt beides."}},{"@type":"Question","name":"Funktioniert Calma offline?","acceptedAnswer":{"@type":"Answer","text":"Ja. Calma funktioniert komplett ohne Internet."}}]}) }}
           />
         </div>
       </section>

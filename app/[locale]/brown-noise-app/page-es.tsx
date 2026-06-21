@@ -2,23 +2,30 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Ruido Marrón para Dormir | Calma",
+  title: "App de Ruido Marrón Gratis para TDAH y Sueño | Calma",
   description:
-    "Crea mezclas relajantes para dormir con ruido marrón y ruido blanco. Usa Calma para relajarte, concentrarte y dormir mejor.",
+    "¿Buscas ruido marrón profundo para TDAH, sueño o concentración? Mezcla ruido marrón con lluvia y sonidos de la naturaleza. App 100% gratis, sin anuncios, funciona offline.",
   keywords: [
     "app de ruido marrón",
     "ruido marrón para dormir",
     "app de sueño ruido marrón",
     "ruido marrón relajante",
     "ruido marrón calma",
+    "ruido marrón TDAH",
+    "app ruido marrón gratis",
+    "generador ruido marrón",
+    "ruido marrón para concentración",
+    "ruido marrón para estudiar",
+    "ruido marrón sueño profundo",
+    "brown noise app español",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/brown-noise-app",
   },
   openGraph: {
-    title: "App de Ruido Marrón para Dormir | Calma",
+    title: "App de Ruido Marrón Gratis | TDAH, Sueño y Concentración | Calma",
     description:
-    "Crea mezclas relajantes para dormir con ruido marrón y ruido blanco. Usa Calma para relajarte, concentrarte y dormir mejor.",
+    "¿Buscas ruido marrón profundo para TDAH, sueño o concentración? Mezcla con lluvia y sonidos de la naturaleza. 100% gratis, sin anuncios.",
     url: "https://www.calmasounds.com/es/brown-noise-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -26,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App de Ruido Marrón para Dormir | Calma",
+    title: "App de Ruido Marrón Gratis para TDAH y Sueño | Calma",
     description:
-    "Crea mezclas relajantes para dormir con ruido marrón y ruido blanco. Usa Calma para relajarte, concentrarte y dormir mejor.",
+    "Mezcla ruido marrón con lluvia y sonidos naturales para TDAH, sueño profundo y concentración. 100% gratis, funciona offline.",
   },
 };
 
@@ -196,21 +203,39 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/white-noise-for-sleep"
+            href="/es/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Ruido Marrón para Dormir</h3>
+            <h3 className="text-xl font-semibold text-white">Ruido Marrón vs Blanco vs Rosa</h3>
             <p className="mt-3 text-white/70">
-              Descubre cómo el ruido marrón puede colaborar a la hora de mejorar en tu entorno de sueño.
+              Compara los diferentes colores de ruido y descubre cuál es mejor para dormir, TDAH o concentración.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/es/blog/best-color-noise-for-adhd"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Colores de Ruido Explicados</h3>
+            <h3 className="text-xl font-semibold text-white">Mejor Color de Ruido para TDAH</h3>
             <p className="mt-3 text-white/70">
-              Explora las diferencias del ruido marrón, rosa, marrón o verde para lograr el ambiente perfecto para ti.
+              ¿Qué color de ruido es más efectivo para personas con TDAH? Guía basada en investigación científica.
+            </p>
+          </a>
+          <a
+            href="/es/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Mejores Sonidos para Dormir</h3>
+            <p className="mt-3 text-white/70">
+              Descubre por qué el ruido marrón está entre los sonidos más efectivos para conciliar el sueño.
+            </p>
+          </a>
+          <a
+            href="/es/blog/white-noise-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Ruido Blanco para Dormir</h3>
+            <p className="mt-3 text-white/70">
+              Complementa el ruido marrón con ruido blanco para un enmascaramiento de sonido completo.
             </p>
           </a>
         </div>
@@ -227,21 +252,19 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Qué es una app de ruido marrón?
+              ¿Qué es el ruido marrón?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Una aplicación de ruido marrón ayuda a reproducir sonidos que son suaves, difusos
-              y relajantes, ayudando a enmascarar otros ruidos más molestos en tu entorno.
+              El ruido marrón es un sonido profundo y grave, similar al rumor de un trueno lejano o el viento fuerte. Tiene más energía en las frecuencias bajas que el ruido blanco, lo que lo hace más relajante para muchas personas.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Puede el ruido marrón ayudar a dormir?
+              ¿El ruido marrón ayuda con el TDAH?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Mucha gente usa diariamente el ruido marrón para sentir un ambiente de mayor calma 
-              a la hora de acostarse y poder relajarse al reducir ruidos imprevistos de la ciudad o del tráfico.
+              Sí, muchas personas con TDAH reportan que el ruido marrón les ayuda a concentrarse mejor. Su tono profundo y constante reduce la hiperactividad mental y facilita el enfoque sostenido durante el estudio o el trabajo.
             </p>
           </div>
 
@@ -250,11 +273,31 @@ export default function WhiteNoiseAppPage() {
               ¿Calma es únicamente sobre ruido marrón?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              No. Calma es un reproductor increíble de ruido marrón, rosa, verde y marrón, pero
-              también incluye un catálogo extensivo de sonidos para relajarte o concentrarte 
-              en las tareas que tú elijas.
+              No. Calma también incluye ruido blanco, rosa, verde y un extenso catálogo de sonidos de la naturaleza para dormir, relajarte o concentrarte.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Ruido marrón vs ruido blanco — cuál es mejor para dormir?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              El ruido marrón suena más profundo y suave, ideal para quienes encuentran el ruido blanco demasiado agudo. El ruido blanco enmascara mejor los sonidos repentinos. Con Calma puedes mezclar ambos para el equilibrio perfecto.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Puedo usar ruido marrón toda la noche?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí, es completamente seguro escuchar ruido marrón toda la noche a un volumen moderado (por debajo de 50 dB). Calma incluye un temporizador de sueño para que se apague automáticamente si lo prefieres.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es el ruido marrón?","acceptedAnswer":{"@type":"Answer","text":"El ruido marrón es un sonido profundo y grave, similar al rumor de un trueno lejano. Tiene más energía en las frecuencias bajas que el ruido blanco."}},{"@type":"Question","name":"¿El ruido marrón ayuda con el TDAH?","acceptedAnswer":{"@type":"Answer","text":"Sí, muchas personas con TDAH reportan que el ruido marrón les ayuda a concentrarse mejor. Su tono profundo y constante reduce la hiperactividad mental."}},{"@type":"Question","name":"¿Calma es únicamente sobre ruido marrón?","acceptedAnswer":{"@type":"Answer","text":"No. Calma incluye ruido blanco, rosa, verde y sonidos de la naturaleza para dormir, relajarte o concentrarte."}},{"@type":"Question","name":"¿Ruido marrón vs ruido blanco — cuál es mejor para dormir?","acceptedAnswer":{"@type":"Answer","text":"El ruido marrón suena más profundo y suave. El ruido blanco enmascara mejor sonidos repentinos. Con Calma puedes mezclar ambos."}},{"@type":"Question","name":"¿Puedo usar ruido marrón toda la noche?","acceptedAnswer":{"@type":"Answer","text":"Sí, es seguro a volumen moderado. Calma incluye un temporizador de sueño para que se apague automáticamente."}}]}) }}
+          />
         </div>
       </section>
 

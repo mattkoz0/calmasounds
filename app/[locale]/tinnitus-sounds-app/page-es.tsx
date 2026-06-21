@@ -2,23 +2,29 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sonidos para el Tinnitus y Sueño | Calma",
+  title: "App de Sonidos para Tinnitus Gratis | Alivio del Zumbido | Calma",
   description:
-    "Descubre una aplicación de sonidos para aliviar el tinnitus. Usa Calma para crear un entorno de audio relajante para dormir.",
+    "¿Sufres de tinnitus? Usa ruido blanco, rosa y sonidos de la naturaleza para enmascarar el zumbido en los oídos. App 100% gratis, sin anuncios, funciona offline.",
   keywords: [
     "app de sonidos para tinnitus",
     "sonidos para tinnitus para dormir",
     "app de sueño sonidos para tinnitus",
     "sonidos para tinnitus relajante",
     "sonidos para tinnitus calma",
+    "sonidos para tinnitus",
+    "app tinnitus gratis",
+    "enmascaramiento tinnitus",
+    "ruido blanco tinnitus",
+    "alivio del zumbido en los oídos",
+    "terapia de sonido tinnitus app",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Sonidos para el Tinnitus y Sueño | Calma",
+    title: "App de Sonidos para Tinnitus Gratis | Alivio del Zumbido | Calma",
     description:
-    "Descubre una aplicación de sonidos para aliviar el tinnitus. Usa Calma para crear un entorno de audio relajante para dormir.",
+    "Usa ruido blanco, rosa y sonidos de la naturaleza para enmascarar el tinnitus. 100% gratis, sin anuncios, funciona offline.",
     url: "https://www.calmasounds.com/es/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -26,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sonidos para el Tinnitus y Sueño | Calma",
+    title: "App para Tinnitus Gratis | Calma",
     description:
-    "Descubre una aplicación de sonidos para aliviar el tinnitus. Usa Calma para crear un entorno de audio relajante para dormir.",
+    "Enmascara el zumbido en los oídos con ruido blanco, rosa y sonidos de la naturaleza. 100% gratis, funciona offline.",
   },
 };
 
@@ -196,21 +202,39 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/white-noise-for-sleep"
+            href="/es/blog/sounds-for-tinnitus-relief"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Alivio del Tinnitus para Dormir</h3>
+            <h3 className="text-xl font-semibold text-white">Sonidos para el Alivio del Tinnitus</h3>
             <p className="mt-3 text-white/70">
-              Descubre cómo el sonidos para tinnitus puede colaborar a la hora de mejorar en tu entorno de sueño.
+              Descubre qué sonidos son más efectivos para enmascarar el zumbido en los oídos y mejorar tu sueño.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/es/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Colores de Ruido Explicados</h3>
             <p className="mt-3 text-white/70">
-              Explora las diferencias del sonidos para tinnitus, rosa, marrón o verde para lograr el ambiente perfecto para ti.
+              Explora las diferencias entre ruido blanco, rosa, marrón y verde para encontrar el mejor para tu tinnitus.
+            </p>
+          </a>
+          <a
+            href="/es/blog/white-noise-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Ruido Blanco para Dormir</h3>
+            <p className="mt-3 text-white/70">
+              Aprende cómo el ruido blanco puede ayudarte a dormir mejor cuando sufres de tinnitus.
+            </p>
+          </a>
+          <a
+            href="/es/blog/best-sounds-for-sleep"
+            className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
+          >
+            <h3 className="text-xl font-semibold text-white">Mejores Sonidos para Dormir</h3>
+            <p className="mt-3 text-white/70">
+              Una guía completa de los sonidos más efectivos para conciliar el sueño rápidamente.
             </p>
           </a>
         </div>
@@ -230,7 +254,7 @@ export default function WhiteNoiseAppPage() {
               ¿Existe una aplicación gratuita de ruido blanco para el tinnitus?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sí, Calma ofrece paisajes sonoros gratuitos, incluyendo ruido blanco y rosa, que a menudo se utilizan para enmascarar el tinnitus por la noche.
+              Sí, Calma ofrece paisajes sonoros gratuitos, incluyendo ruido blanco y rosa, que a menudo se utilizan para enmascarar el tinnitus por la noche. Es 100% gratis y funciona offline.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -238,7 +262,7 @@ export default function WhiteNoiseAppPage() {
               ¿Qué color de ruido es mejor para el tinnitus?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Muchas personas encuentran que el ruido blanco o rosa es más efectivo para ocultar el zumbido en los oídos. Calma te permite probar todos los colores.
+              Muchas personas encuentran que el ruido blanco o rosa es más efectivo para ocultar el zumbido en los oídos. Calma te permite probar todos los colores y mezclarlos.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -246,12 +270,28 @@ export default function WhiteNoiseAppPage() {
               ¿Puede el enmascaramiento de sonido ayudar con el tinnitus en la noche?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sí. El silencio puede hacer que el tinnitus parezca más fuerte. Crear una capa de sonido de fondo constante le da a tu cerebro una alternativa.
+              Sí. El silencio puede hacer que el tinnitus parezca más fuerte. Crear una capa de sonido de fondo constante le da a tu cerebro una alternativa y facilita el sueño.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Calma puede reemplazar una máquina de terapia de sonido?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Para muchas personas, sí. Calma ofrece la misma calidad de sonido que las máquinas de terapia dedicadas, con la ventaja de poder personalizar las mezclas, usar temporizador de sueño y llevarla siempre en tu teléfono.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Qué frecuencia de sonido es mejor para el tinnitus?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Depende del tipo de tinnitus. Si tu zumbido es agudo, el ruido rosa o blanco puede funcionar mejor. Si es grave, prueba el ruido marrón. Calma te permite experimentar con diferentes combinaciones hasta encontrar la más efectiva.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Existe una aplicación gratuita de ruido blanco para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Sí, Calma ofrece paisajes sonoros gratuitos, incluyendo ruido blanco y rosa, que a menudo se utilizan para enmascarar el tinnitus por la noche."}},{"@type":"Question","name":"¿Qué color de ruido es mejor para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Muchas personas encuentran que el ruido blanco o rosa es más efectivo para ocultar el zumbido en los oídos. Calma te permite probar todos los colores."}},{"@type":"Question","name":"¿Puede el enmascaramiento de sonido ayudar con el tinnitus en la noche?","acceptedAnswer":{"@type":"Answer","text":"Sí. El silencio puede hacer que el tinnitus parezca más fuerte. Crear una capa de sonido de fondo constante le da a tu cerebro una alternativa."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Existe una aplicación gratuita de ruido blanco para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Sí, Calma ofrece paisajes sonoros gratuitos, incluyendo ruido blanco y rosa, para enmascarar el tinnitus. Es 100% gratis y funciona offline."}},{"@type":"Question","name":"¿Qué color de ruido es mejor para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Muchas personas encuentran que el ruido blanco o rosa es más efectivo. Calma te permite probar todos los colores y mezclarlos."}},{"@type":"Question","name":"¿Puede el enmascaramiento de sonido ayudar con el tinnitus en la noche?","acceptedAnswer":{"@type":"Answer","text":"Sí. El silencio puede hacer que el tinnitus parezca más fuerte. Una capa de sonido de fondo constante le da a tu cerebro una alternativa."}},{"@type":"Question","name":"¿Calma puede reemplazar una máquina de terapia de sonido?","acceptedAnswer":{"@type":"Answer","text":"Para muchas personas, sí. Calma ofrece la misma calidad con la ventaja de personalizar mezclas, usar temporizador y llevarla en tu teléfono."}},{"@type":"Question","name":"¿Qué frecuencia de sonido es mejor para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Depende del tipo de tinnitus. Si tu zumbido es agudo, prueba ruido rosa o blanco. Si es grave, prueba ruido marrón. Calma te permite experimentar con combinaciones."}}]}) }}
           />
         </div>
       </section>
