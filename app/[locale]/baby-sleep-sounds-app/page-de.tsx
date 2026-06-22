@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Baby Schlafgeräusche & Weißes Rauschen | Calma",
+  title: "Kostenlose Baby Schlaf App | Weißes Rauschen für Babys | Calma",
   description:
-    "Erstellen Sie beruhigende Schlafmischungen mit weißem Rauschen für Babys. Calma hilft Ihrem Baby, sich zu entspannen und zu schlafen.",
+    "Suchen Sie weißes Rauschen für Ihr Baby? Beruhigen Sie Ihr Neugeborenes mit sanftem Rauschen, Regen und Mutterleib-Klängen. 100% kostenlos, ohne Werbung, offline nutzbar.",
   keywords: [
     "Baby Schlaf-Sounds App",
     "Weißes Rauschen für Babys",
@@ -12,14 +12,18 @@ export const metadata: Metadata = {
     "Baby Einschlaf-Musik",
     "beruhigende Klänge für Babys",
     "Baby Abendroutine",
+    "Baby White Noise App",
+    "Neugeborene Schlaf App kostenlos",
+    "braunes Rauschen Baby",
+    "Mutterleib Geräusche Baby",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Baby Schlafgeräusche & Weißes Rauschen | Calma",
+    title: "Kostenlose Baby Schlaf App | Weißes Rauschen | Calma",
     description:
-    "Erstellen Sie beruhigende Schlafmischungen mit weißem Rauschen für Babys. Calma hilft Ihrem Baby, sich zu entspannen und zu schlafen.",
+    "Weißes Rauschen, Regen und Mutterleib-Klänge für friedlichen Babyschlaf. 100% kostenlos, ohne Werbung.",
     url: "https://www.calmasounds.com/de/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baby Schlafgeräusche & Weißes Rauschen | Calma",
+    title: "Baby Schlaf App | Weißes Rauschen | Calma",
     description:
-    "Erstellen Sie beruhigende Schlafmischungen mit weißem Rauschen für Babys. Calma hilft Ihrem Baby, sich zu entspannen und zu schlafen.",
+    "Beruhigen Sie Ihr Baby mit sanftem Rauschen. 100% kostenlos, offline nutzbar.",
   },
 };
 
@@ -147,9 +151,7 @@ export default function BabySleepSoundsAppPage() {
               Ist weißes Rauschen sicher für Babys?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja, es gilt als sicher und effektiv, solange die Lautstärke auf einem 
-              angenehmen Niveau (jak ein Gespräch) bleibt und das Gerät mit einigem 
-              Abstand zum Bettchen platziert wird.
+              Ja, bei richtiger Anwendung. Halte die Lautstärke unter 50 dB (Gesprächslautstärke), stelle das Gerät mindestens 2 Meter vom Bettchen entfernt auf und verwende einen Timer.
             </p>
           </div>
 
@@ -158,9 +160,7 @@ export default function BabySleepSoundsAppPage() {
               Welches Rauschen ist am besten für Neugeborene?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Viele Babys reagieren gut auf klassisches weißes Rauschen, aber auch 
-              braunes Rauschen mit tieferen Frequenzen ist ideal, um die gedämpften 
-              Geräusche aus dem Mutterleib zu simulieren.
+              Braunes Rauschen mit tiefen Frequenzen simuliert die gedämpften Geräusche aus dem Mutterleib und wird von vielen Neugeborenen bevorzugt. Weißes Rauschen ist ebenfalls sehr wirksam.
             </p>
           </div>
 
@@ -169,10 +169,31 @@ export default function BabySleepSoundsAppPage() {
               Benötigt Calma eine Internetverbindung?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma funktioniert offline. Wenn die App installiert ist, brauchst du 
-              keine aktive Verbindung, um den Lieblings-Mix deines Babys abzuspielen.
+              Nein. Calma funktioniert komplett offline – perfekt für Reisen, den Kinderwagen oder das nächtliche Stillen.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Wie lange sollte weißes Rauschen für Babys laufen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Experten empfehlen 20–45 Minuten. Calma hat einen Sleep-Timer, der sich automatisch abschaltet.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Kann ich verschiedene Klänge für mein Baby mischen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja! Jedes Baby ist anders. Calma lässt dich weißes Rauschen mit sanftem Regen, Ventilator oder Herzschlag-Klängen mischen, um die perfekte Frequenz zu finden.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ist weißes Rauschen sicher für Babys?","acceptedAnswer":{"@type":"Answer","text":"Ja, bei Lautstärke unter 50 dB und mindestens 2 Meter Abstand."}},{"@type":"Question","name":"Welches Rauschen für Neugeborene?","acceptedAnswer":{"@type":"Answer","text":"Braunes Rauschen simuliert Mutterleib-Geräusche. Weißes Rauschen ist ebenfalls wirksam."}},{"@type":"Question","name":"Funktioniert Calma offline?","acceptedAnswer":{"@type":"Answer","text":"Ja, komplett ohne Internet."}},{"@type":"Question","name":"Wie lange sollte weißes Rauschen laufen?","acceptedAnswer":{"@type":"Answer","text":"20–45 Minuten. Calma hat einen automatischen Sleep-Timer."}},{"@type":"Question","name":"Kann ich Klänge mischen?","acceptedAnswer":{"@type":"Answer","text":"Ja, mische weißes Rauschen mit Regen, Ventilator oder Herzschlag."}}]}) }}
+          />
         </div>
       </section>
 

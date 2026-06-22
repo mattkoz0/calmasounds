@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sound Mixer App für Schlaf & Fokus | Calma",
+  title: "Kostenlose Sound Mixer App | Schlaf, Fokus & Entspannung | Calma",
   description:
-    "Erstellen Sie beruhigende Audiomischungen mit Regen und Naturklängen. Nutzen Sie den Calma Sound Mixer zum Entspannen und Fokussieren.",
+    "Suchen Sie eine Sound Mixer App? Mischen Sie weißes Rauschen, Regen und Naturklänge für Schlaf, Fokus und Entspannung. 100% kostenlos, ohne Werbung, offline nutzbar.",
   keywords: [
     "Sound Mixer App",
     "Schlafklänge Mixer",
@@ -12,14 +12,18 @@ export const metadata: Metadata = {
     "Fokus Sound Mixer",
     "personalisierte Soundscapes",
     "Calma Sound Mixer",
+    "Sound Mixer kostenlos",
+    "Ambient Sound Mixer",
+    "Klänge mischen App",
+    "eigener Sound Mix erstellen",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/sound-mixer-app",
   },
   openGraph: {
-    title: "Sound Mixer App für Schlaf & Fokus | Calma",
+    title: "Kostenlose Sound Mixer App | Schlaf & Fokus | Calma",
     description:
-    "Erstellen Sie beruhigende Audiomischungen mit Regen und Naturklängen. Nutzen Sie den Calma Sound Mixer zum Entspannen und Fokussieren.",
+    "Mische weißes Rauschen, Regen und Naturklänge für Schlaf, Fokus und Entspannung. 100% kostenlos.",
     url: "https://www.calmasounds.com/de/sound-mixer-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sound Mixer App für Schlaf & Fokus | Calma",
+    title: "Kostenlose Sound Mixer App | Calma",
     description:
-    "Erstellen Sie beruhigende Audiomischungen mit Regen und Naturklängen. Nutzen Sie den Calma Sound Mixer zum Entspannen und Fokussieren.",
+    "Erstelle deine eigenen Klangwelten. 100% kostenlos, offline nutzbar.",
   },
 };
 
@@ -198,21 +202,21 @@ export default function SoundMixerAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/rain-sounds-vs-white-noise"
+            href="/de/blog/rain-sounds-vs-white-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Regenklänge vs. Weißes Rauschen</h3>
             <p className="mt-3 text-white/70">
-              Vergleiche verschiedene atmosphärische Ebenen und sieh, wie das Mischen den perfekten Schlaf- oder Fokus-Sound erzeugt.
+              Vergleiche verschiedene Klänge und entdecke, wie Mischen den perfekten Schlaf- oder Fokus-Sound erzeugt.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/de/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Rauschfarben verstehen</h3>
             <p className="mt-3 text-white/70">
-              Erfahre mehr über die Farben des Rauschens und wie du sie in deinem persönlichen Mixer ausbalancierst.
+              Lerne die Rauschfarben kennen und wie du sie in deinem Mixer optimal kombinierst.
             </p>
           </a>
         </div>
@@ -232,8 +236,7 @@ export default function SoundMixerAppPage() {
               Was ist eine Sound Mixer App?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sie hilft dir, verschiedene Klänge zu einer persönlichen Audio-Umgebung 
-              für Schlaf, Entspannung oder Konzentration zu kombinieren.
+              Eine Sound Mixer App ermöglicht dir, verschiedene Klänge zu einer personalisierten Audio-Umgebung für Schlaf, Entspannung oder Konzentration zu kombinieren.
             </p>
           </div>
 
@@ -242,20 +245,40 @@ export default function SoundMixerAppPage() {
               Wodurch unterscheidet sich Calma?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma setzt konsequent auf Personalisierung. Du gestaltest deinen eigenen 
-              Mix, anstatt nur aus fertigen Titeln zu wählen.
+              Calma ist 100% kostenlos, ohne Werbung, offline nutzbar und setzt auf Personalisierung – erstelle deinen eigenen Mix statt aus fertigen Titeln zu wählen.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Kann ich Calma mehr als nur zum Schlafen nutzen?
+              Kann ich Calma für mehr als nur Schlaf nutzen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja. Dank der anpassbaren Soundscapes unterstützt Calma dich auch beim 
-              Lernen, Arbeiten oder Entspannen am Tag.
+              Ja. Dank anpassbarer Soundscapes unterstützt Calma dich auch beim Lernen, Deep Work, Meditation oder Entspannen am Tag.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Wie viele Klänge kann ich gleichzeitig mischen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Du kannst mehrere Klänge gleichzeitig abspielen und die Lautstärke jedes einzelnen individuell einstellen für die perfekte Atmosphäre.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Funktioniert Calma ohne Internet?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja. Alle Sounds funktionieren komplett offline – perfekt für Reisen, Bibliotheken oder Orte ohne WLAN.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist eine Sound Mixer App?","acceptedAnswer":{"@type":"Answer","text":"Kombiniere verschiedene Klänge zu einer personalisierten Audio-Umgebung."}},{"@type":"Question","name":"Wodurch unterscheidet sich Calma?","acceptedAnswer":{"@type":"Answer","text":"100% kostenlos, ohne Werbung, offline nutzbar, mit personalisierbaren Mixen."}},{"@type":"Question","name":"Mehr als nur Schlaf?","acceptedAnswer":{"@type":"Answer","text":"Ja, für Lernen, Deep Work, Meditation und Entspannung."}},{"@type":"Question","name":"Wie viele Klänge gleichzeitig?","acceptedAnswer":{"@type":"Answer","text":"Mehrere Klänge mit individueller Lautstärke."}},{"@type":"Question","name":"Funktioniert Calma offline?","acceptedAnswer":{"@type":"Answer","text":"Ja, komplett ohne Internet."}}]}) }}
+          />
         </div>
       </section>
 

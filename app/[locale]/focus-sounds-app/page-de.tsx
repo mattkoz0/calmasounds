@@ -2,23 +2,29 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Fokus Geräusche App für Tiefe Arbeit | Calma",
+  title: "Kostenlose Fokus-App für ADHS & Deep Work | Calma",
   description:
-    "Erstellen Sie immersive Klanglandschaften mit Regen und braunem Rauschen. Calma hilft Ihnen, einen ruhigen Raum für tiefe Arbeit zu schaffen.",
+    "Suchen Sie die beste Fokus-App? Mischen Sie braunes Rauschen, Regen und Naturklänge für Deep Work, Lernen und ADHS-Konzentration. 100% kostenlos, ohne Werbung, offline nutzbar.",
   keywords: [
     "Fokus-App",
     "Konzentrations-App",
     "Deep Work Sounds",
     "Lernklänge App",
     "Calma Fokus",
+    "braunes Rauschen Konzentration",
+    "ADHS Fokus App",
+    "Fokus Musik kostenlos",
+    "Hintergrundgeräusche zum Lernen",
+    "Focus Sounds App",
+    "Konzentrationsgeräusche",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/focus-sounds-app",
   },
   openGraph: {
-    title: "Fokus Geräusche App für Tiefe Arbeit | Calma",
+    title: "Kostenlose Fokus-App | ADHS, Deep Work & Lernen | Calma",
     description:
-    "Erstellen Sie immersive Klanglandschaften mit Regen und braunem Rauschen. Calma hilft Ihnen, einen ruhigen Raum für tiefe Arbeit zu schaffen.",
+    "Braunes Rauschen, Regen und Naturklänge für Deep Work, Lernen und ADHS. 100% kostenlos, ohne Werbung.",
     url: "https://www.calmasounds.com/de/focus-sounds-app",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Fokus Geräusche App für Tiefe Arbeit | Calma",
+    title: "Kostenlose Fokus-App für ADHS & Deep Work | Calma",
     description:
-    "Erstellen Sie immersive Klanglandschaften mit Regen und braunem Rauschen. Calma hilft Ihnen, einen ruhigen Raum für tiefe Arbeit zu schaffen.",
+    "Braunes Rauschen und Naturklänge für Deep Work und Lernen. 100% kostenlos, offline nutzbar.",
   },
 };
 
@@ -197,21 +203,21 @@ export default function FocusSoundsAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/best-sounds-for-studying"
+            href="/de/blog/best-sounds-for-studying"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Beste Sounds zum Lernen</h3>
             <p className="mt-3 text-white/70">
-              Finde heraus, welche Klänge dir helfen können, bei deinen Lernsessions konzentriert zu bleiben.
+              Finde heraus, welche Klänge dir bei Lernsessions, Deep Work und konzentriertem Arbeiten am meisten helfen.
             </p>
           </a>
           <a
-            href="/blog/binaural-beats-for-sleep-and-focus"
+            href="/de/blog/best-color-noise-for-adhd"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Binaurale Beats erklärt</h3>
+            <h3 className="text-xl font-semibold text-white">Bestes Rauschen für ADHS</h3>
             <p className="mt-3 text-white/70">
-              Eine einfache Einführung, wie binaurale Beats Ruhe und Fokus im Arbeitsalltag unterstützen können.
+              Welche Rauschfarbe ist am wirksamsten für Menschen mit ADHS? Ein forschungsbasierter Überblick.
             </p>
           </a>
         </div>
@@ -231,18 +237,16 @@ export default function FocusSoundsAppPage() {
               Was ist eine Fokus-App?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sie hilft dir, einen Audio-Hintergrund zu erschaffen, der die Konzentration 
-              fördert, Ablenkungen reduziert und Workflows immersiver macht.
+              Eine Fokus-App erschafft einen Audio-Hintergrund, der Ablenkungen reduziert, die Konzentration fördert und Deep-Work-Sessions produktiver macht.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Wann nutze ich Calma für meinen Fokus?
+              Hilft braunes Rauschen bei ADHS-Konzentration?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Beim Lernen, Lesen, Schreiben oder Arbeiten – immer dann, wenn du 
-              eine ruhige und kontrollierte Umgebung brauchst.
+              Ja, viele ADHS-Betroffene berichten, dass braunes Rauschen ihre Konzentration verbessert. Der tiefe, konstante Ton reduziert mentale Hyperaktivität und erleichtert anhaltenden Fokus.
             </p>
           </div>
 
@@ -251,10 +255,31 @@ export default function FocusSoundsAppPage() {
               Kann ich den Mix personalisieren?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja. Calma ermöglicht es dir, deinen Mix so zu gestalten, dass er 
-              sich für dich natürlich und hilfreich anfühlt.
+              Ja. Calma ermöglicht dir, deinen eigenen Fokus-Mix zu erstellen – mit weißem, braunem oder rosa Rauschen, Regen, Vogelgesang und mehr.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Welche Sounds sind am besten zum Lernen?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Braunes Rauschen mit leichtem Regen ist die beliebteste Kombination zum Lernen. Auch lo-fi Klänge und binaurale Beats können helfen.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Funktioniert Calma offline?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja. Alle Sounds funktionieren komplett offline – perfekt für Bibliotheken, Flugzeuge oder Orte ohne WLAN.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist eine Fokus-App?","acceptedAnswer":{"@type":"Answer","text":"Sie erschafft einen Audio-Hintergrund für Konzentration und Deep Work."}},{"@type":"Question","name":"Hilft braunes Rauschen bei ADHS?","acceptedAnswer":{"@type":"Answer","text":"Ja, viele ADHS-Betroffene berichten bessere Konzentration mit braunem Rauschen."}},{"@type":"Question","name":"Kann ich den Mix personalisieren?","acceptedAnswer":{"@type":"Answer","text":"Ja, mit weißem, braunem, rosa Rauschen, Regen und mehr."}},{"@type":"Question","name":"Welche Sounds sind am besten zum Lernen?","acceptedAnswer":{"@type":"Answer","text":"Braunes Rauschen mit leichtem Regen ist die beliebteste Kombination."}},{"@type":"Question","name":"Funktioniert Calma offline?","acceptedAnswer":{"@type":"Answer","text":"Ja, alle Sounds funktionieren komplett ohne Internet."}}]}) }}
+          />
         </div>
       </section>
 

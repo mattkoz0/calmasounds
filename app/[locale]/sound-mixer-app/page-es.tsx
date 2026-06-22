@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Mezclador de Sonidos Relajantes | Calma",
+  title: "App Mezcladora de Sonidos Gratis | Dormir y Concentrarse | Calma",
   description:
-    "Crea mezclas de audio relajantes con lluvia y sonidos de la naturaleza. Usa el mezclador Calma para relajarte y concentrarte.",
+    "¿Buscas una app para mezclar sonidos? Combina ruido blanco, lluvia y naturaleza para dormir, concentrarte y relajarte. 100% gratis, sin anuncios, funciona offline.",
   keywords: [
     "app mezcladora de sonidos",
     "mezclador de sonidos para dormir",
@@ -12,14 +12,18 @@ export const metadata: Metadata = {
     "mezclador para la concentración",
     "paisajes sonoros personalizados",
     "mezclador de sonidos calma",
+    "mezclador sonidos gratis",
+    "mezclar sonidos app",
+    "crear mezcla sonidos",
+    "app sonidos ambiente gratis",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/sound-mixer-app",
   },
   openGraph: {
-    title: "Mezclador de Sonidos Relajantes | Calma",
+    title: "Mezcladora de Sonidos Gratis | Dormir y Concentrarse | Calma",
     description:
-    "Crea mezclas de audio relajantes con lluvia y sonidos de la naturaleza. Usa el mezclador Calma para relajarte y concentrarte.",
+    "Mezcla ruido blanco, lluvia y naturaleza. 100% gratis, sin anuncios.",
     url: "https://www.calmasounds.com/es/sound-mixer-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mezclador de Sonidos Relajantes | Calma",
+    title: "Mezcladora de Sonidos Gratis | Calma",
     description:
-    "Crea mezclas de audio relajantes con lluvia y sonidos de la naturaleza. Usa el mezclador Calma para relajarte y concentrarte.",
+    "Crea tus propios paisajes sonoros. 100% gratis, offline.",
   },
 };
 
@@ -196,21 +200,21 @@ export default function SoundMixerAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/rain-sounds-vs-white-noise"
+            href="/es/blog/rain-sounds-vs-white-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Sonidos de Lluvia y Ruido Blanco</h3>
+            <h3 className="text-xl font-semibold text-white">Sonidos de Lluvia vs Ruido Blanco</h3>
             <p className="mt-3 text-white/70">
-              Compara de qué modo las capas atmosféricas de agua junto a ruidos cálidos generan calma.
+              Compara diferentes capas sonoras y descubre cómo mezclarlas para el sueño o la concentración perfecta.
             </p>
           </a>
           <a
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/es/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Los Colores del Ruido</h3>
             <p className="mt-3 text-white/70">
-              Aprende cómo equilibrar los diferentes colores del ruido al usar tu mezclador.
+              Aprende a equilibrar los diferentes colores del ruido en tu mezclador personal.
             </p>
           </a>
         </div>
@@ -227,34 +231,52 @@ export default function SoundMixerAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Qué es una app de mezclador de sonidos?
+              ¿Qué es una app mezcladora de sonidos?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Una app mezcladora de sonidos te permite de forma interactiva combinar diferentes tonos,
-              como lluvia, ruido blanco natural, truenos, piano, entre otros; creando un entorno 
-              de relajación asombrosamente tuyo.
+              Una app que te permite combinar diferentes sonidos como lluvia, ruido blanco y naturaleza para crear un ambiente personalizado para dormir, estudiar o relajarte.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿En qué se distingue Calma de una app de sonidos habitual?
+              ¿En qué se distingue Calma?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma está enteramente construida sobre un sistema de personalización que fluye
-              intuitivamente al elegir de forma interactiva las intensidades y los sonidos deseados.
+              Calma es 100% gratis, sin anuncios, funciona offline y está diseñada para personalizar tus mezclas en lugar de elegir pistas fijas.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              ¿Puedo usar Calma para más que para dormir?
+              ¿Puedo usar Calma para más que dormir?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sí. Calma apoya con eficacia los momentos de estudio, la relajación profunda, la meditación
-              diaria, las terapias y otros lugares donde crear paisajes sonoros aporte bienestar a tu rutina.
+              Sí. Calma apoya estudio, deep work, meditación y relajación diaria con paisajes sonoros personalizables.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Cuántos sonidos puedo mezclar a la vez?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Puedes reproducir varios sonidos simultáneamente y ajustar el volumen de cada uno individualmente para la atmósfera perfecta.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              ¿Funciona Calma sin internet?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sí. Todos los sonidos funcionan completamente offline – perfecto para viajes, bibliotecas o lugares sin WiFi.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app mezcladora de sonidos?","acceptedAnswer":{"@type":"Answer","text":"Combina sonidos como lluvia y ruido blanco para crear ambientes personalizados."}},{"@type":"Question","name":"¿En qué se distingue Calma?","acceptedAnswer":{"@type":"Answer","text":"100% gratis, sin anuncios, offline, con mezclas personalizables."}},{"@type":"Question","name":"¿Más que para dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí, para estudio, deep work, meditación y relajación."}},{"@type":"Question","name":"¿Cuántos sonidos a la vez?","acceptedAnswer":{"@type":"Answer","text":"Varios sonidos con volumen individual."}},{"@type":"Question","name":"¿Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sí, completamente sin internet."}}]}) }}
+          />
         </div>
       </section>
 

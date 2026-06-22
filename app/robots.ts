@@ -6,6 +6,9 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://www.calmasounds.com/sitemap.xml",
+    sitemap: [
+      "https://www.calmasounds.com/sitemap.xml",
+      "https://www.calmasounds.com/image-sitemap.xml",
+    ],
   };
 }
