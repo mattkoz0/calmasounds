@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sons pour Dormir Bébé et Bruit Blanc | Calma",
+  title: "Application Gratuite Sons Bébé | Bruit Blanc pour Bébés | Calma",
   description:
-    "Créez des mélanges pour dormir avec du bruit blanc pour les bébés. Utilisez Calma pour aider votre bébé à se détendre et à dormir.",
+    "Vous cherchez du bruit blanc pour votre bébé ? Calmez votre nouveau-né avec des sons doux, de la pluie et des fréquences utérines. 100% gratuite, sans publicités, hors ligne.",
   keywords: [
     "application sommeil bébé",
     "bruit blanc pour bébé",
@@ -13,14 +13,18 @@ export const metadata: Metadata = {
     "musique pour dormir bébé",
     "bruit de pluie bébé",
     "calma sommeil bébé",
+    "app bruit blanc bébé gratuite",
+    "sons du ventre maternel",
+    "bruit brun bébé",
+    "app sommeil bébé sans pub",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Sons pour Dormir Bébé et Bruit Blanc | Calma",
+    title: "Application Gratuite Sons Bébé | Bruit Blanc | Calma",
     description:
-    "Créez des mélanges pour dormir avec du bruit blanc pour les bébés. Utilisez Calma pour aider votre bébé à se détendre et à dormir.",
+    "Bruit blanc, pluie et sons utérins pour le sommeil de bébé. 100% gratuite, sans publicités.",
     url: "https://www.calmasounds.com/fr/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -28,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons pour Dormir Bébé et Bruit Blanc | Calma",
+    title: "Sons Bébé Gratuit | Calma",
     description:
-    "Créez des mélanges pour dormir avec du bruit blanc pour les bébés. Utilisez Calma pour aider votre bébé à se détendre et à dormir.",
+    "Bruit blanc pour bébés. 100% gratuite, hors ligne.",
   },
 };
 
@@ -144,16 +148,16 @@ export default function BabySleepSoundsAppPage() {
               Le bruit blanc est-il sûr pour les bébés ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, le bruit blanc est considéré comme très sûr et efficace, à condition que le volume soit maintenu à un niveau modéré et que l'appareil soit placé à une distance sécurisée du berceau.
+              Oui, à un volume modéré (moins de 50 dB) et avec l’appareil à plus de 2 mètres du berceau. Calma a un minuteur automatique.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Quelle couleur de bruit est la meilleure ?
+              Quelle couleur de bruit pour les nouveau-nés ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Beaucoup de bébés répondent bien au bruit blanc, mais le bruit rose et le bruit brun (plus profonds) sont parfaits pour simuler les sons étouffés de l'utérus.
+              Le bruit brun simule les sons du ventre maternel et est préféré par beaucoup de nouveau-nés. Le bruit blanc est également très efficace.
             </p>
           </div>
 
@@ -162,9 +166,31 @@ export default function BabySleepSoundsAppPage() {
               Calma fonctionne-t-elle hors ligne ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, Calma fonctionne sans connexion internet une fois installée. Vous pouvez diffuser le mix préféré de votre bébé n'importe où.
+              Oui. Calma fonctionne complètement sans internet – parfait pour les voyages, la poussette ou l’allaitement nocturne.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Combien de temps faire jouer le bruit blanc ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Les experts recommandent 20–45 minutes. Calma possède un minuteur qui s’éteint automatiquement.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Puis-je mixer des sons pour mon bébé ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui ! Chaque bébé est unique. Calma vous permet de mixer bruit blanc avec pluie douce, ventilateur ou battements de cœur.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Le bruit blanc est-il sûr pour les bébés ?","acceptedAnswer":{"@type":"Answer","text":"Oui, à volume modéré et à plus de 2 mètres du berceau."}},{"@type":"Question","name":"Quelle couleur pour les nouveau-nés ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit brun simule le ventre maternel. Le bruit blanc est aussi efficace."}},{"@type":"Question","name":"Fonctionne hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}},{"@type":"Question","name":"Combien de temps ?","acceptedAnswer":{"@type":"Answer","text":"20–45 minutes. Minuteur automatique inclus."}},{"@type":"Question","name":"Puis-je mixer des sons ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mixez bruit blanc avec pluie, ventilateur ou battements de cœur."}}]}) }}
+          />
         </div>
       </section>
 

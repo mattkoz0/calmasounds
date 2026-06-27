@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Misturador de Sons para Dormir | Calma",
+  title: "Misturador de Sons Grátis | Dormir, Foco e Relaxamento | Calma",
   description:
-    "Crie misturas de áudio relaxantes com chuva e sons da natureza. Use o misturador Calma para relaxar, focar e dormir profundamente.",
+    "Procurando um misturador de sons? Misture ruído branco, chuva e sons da natureza para dormir, focar e relaxar. 100% grátis, sem anúncios, funciona offline.",
   keywords: [
     "aplicativo misturador de som",
     "misturador de som para dormir",
@@ -12,14 +12,18 @@ export const metadata: Metadata = {
     "misturador de som para foco",
     "paisagens sonoras personalizadas",
     "calma misturador de som",
+    "misturador sons grátis",
+    "misturar sons app",
+    "criar mix sonoro",
+    "app sons ambiente grátis",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/sound-mixer-app",
   },
   openGraph: {
-    title: "Misturador de Sons para Dormir | Calma",
+    title: "Misturador de Sons Grátis | Dormir e Foco | Calma",
     description:
-    "Crie misturas de áudio relaxantes com chuva e sons da natureza. Use o misturador Calma para relaxar, focar e dormir profundamente.",
+    "Misture ruído branco, chuva e natureza. 100% grátis, sem anúncios.",
     url: "https://www.calmasounds.com/pt-BR/sound-mixer-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Misturador de Sons para Dormir | Calma",
+    title: "Misturador de Sons Grátis | Calma",
     description:
-    "Crie misturas de áudio relaxantes com chuva e sons da natureza. Use o misturador Calma para relaxar, focar e dormir profundamente.",
+    "Crie suas próprias paisagens sonoras. 100% grátis, offline.",
   },
 };
 
@@ -229,22 +233,19 @@ export default function SoundMixerAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O que é um aplicativo misturador de som?
+              O que é um app misturador de som?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Um aplicativo misturador de som ajuda você a combinar sons diferentes em um único
-              ambiente de áudio personalizado para sono, relaxamento, foco ou
-              calma diária.
+              Um app que permite combinar diferentes sons para criar um ambiente de áudio personalizado para dormir, relaxar ou se concentrar.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Como o Calma é diferente de um aplicativo de som normal?
+              No que o Calma se diferencia?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              O Calma é construído em torno da personalização, permitindo que você molde sua própria
-              mixagem em vez de escolher apenas faixas pré-fabricadas fixas.
+              O Calma é 100% grátis, sem anúncios, offline e focado na personalização – crie suas próprias misturas em vez de escolher faixas fixas.
             </p>
           </div>
 
@@ -253,10 +254,31 @@ export default function SoundMixerAppPage() {
               Posso usar o Calma para mais do que dormir?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim. O Calma apoia o sono, relaxamento, foco e rotinas diárias
-              mais suaves por meio de paisagens sonoras personalizáveis.
+              Sim. O Calma é ideal para estudo, deep work, meditação e relaxamento diário com paisagens sonoras personalizáveis.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Quantos sons posso misturar ao mesmo tempo?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Você pode reproduzir vários sons simultaneamente e ajustar o volume de cada um individualmente para a atmosfera perfeita.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              O Calma funciona sem internet?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim. Todos os sons funcionam completamente offline – perfeito para viagens, bibliotecas ou locais sem WiFi.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é um misturador de som?","acceptedAnswer":{"@type":"Answer","text":"Combine diferentes sons para um ambiente de áudio personalizado."}},{"@type":"Question","name":"Calma se diferencia como?","acceptedAnswer":{"@type":"Answer","text":"100% grátis, sem anúncios, offline, com misturas personalizáveis."}},{"@type":"Question","name":"Mais que dormir?","acceptedAnswer":{"@type":"Answer","text":"Sim, para estudo, deep work, meditação e relaxamento."}},{"@type":"Question","name":"Quantos sons ao mesmo tempo?","acceptedAnswer":{"@type":"Answer","text":"Vários sons com volume individual."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}}]}) }}
+          />
         </div>
       </section>
 

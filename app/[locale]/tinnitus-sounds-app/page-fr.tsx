@@ -3,23 +3,28 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Sons pour les Acouphènes et le Sommeil | Calma",
+  title: "Application Gratuite Acouphènes | Bruit Blanc contre Acouphènes | Calma",
   description:
-    "Découvrez une application simple de sons pour soulager les acouphènes. Utilisez Calma pour créer un environnement audio apaisant.",
+    "Vous cherchez une application pour acouphènes ? Masquez les bourdonnements avec du bruit blanc, rose et brun. 100% gratuite, sans publicités, fonctionne hors ligne.",
   keywords: [
-    "application sons pour acouphènes",
-    "sons pour acouphènes pour dormir",
-    "application sommeil bébé",
-    "sons pour acouphènes gratuit",
-    "calma sons pour acouphènes",
+    "application acouphènes",
+    "sons pour acouphènes",
+    "bruit blanc acouphènes",
+    "masquage acouphènes",
+    "acouphènes sommeil",
+    "bruit rose acouphènes",
+    "thérapie sonore acouphènes",
+    "app acouphènes gratuite",
+    "soulagement acouphènes",
+    "calma acouphènes",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Sons pour les Acouphènes et le Sommeil | Calma",
+    title: "Application Gratuite Acouphènes | Bruit Blanc | Calma",
     description:
-    "Découvrez une application simple de sons pour soulager les acouphènes. Utilisez Calma pour créer un environnement audio apaisant.",
+    "Masquez les acouphènes avec du bruit blanc, rose et brun. 100% gratuite, sans pubs.",
     url: "https://www.calmasounds.com/fr/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons pour les Acouphènes et le Sommeil | Calma",
+    title: "App Gratuite Acouphènes | Calma",
     description:
-    "Découvrez une application simple de sons pour soulager les acouphènes. Utilisez Calma pour créer un environnement audio apaisant.",
+    "Masquez les bourdonnements avec du bruit blanc. 100% gratuite, hors ligne.",
   },
 };
 
@@ -198,21 +203,21 @@ export default function WhiteNoiseAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <Link
-            href="/blog/white-noise-for-sleep"
+            href="/fr/blog/sounds-for-tinnitus-relief"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
-            <h3 className="text-xl font-semibold text-white">Le sons pour acouphènes pour dormir</h3>
+            <h3 className="text-xl font-semibold text-white">Sons contre les acouphènes</h3>
             <p className="mt-3 text-white/70">
-              Découvrez comment le sons pour acouphènes crée un environnement de sommeil stable.
+              Quels sons sont les plus efficaces pour masquer les acouphènes ? Un guide basé sur la recherche.
             </p>
           </Link>
           <Link
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/fr/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Les couleurs du bruit</h3>
             <p className="mt-3 text-white/70">
-              Explorez les différences entre le sons pour acouphènes, rose, brun et vert.
+              Comparez bruit blanc, rose et brun pour trouver la couleur optimale pour vos acouphènes.
             </p>
           </Link>
         </div>
@@ -229,10 +234,10 @@ export default function WhiteNoiseAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Existe-t-il une application gratuite de bruit blanc pour les acouphènes ?
+              Existe-t-il une application gratuite pour les acouphènes ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, Calma propose des paysages sonores gratuits, dont du bruit blanc et rose, souvent utilisés pour masquer les acouphènes la nuit.
+              Oui, Calma est 100% gratuite, sans publicités et propose du bruit blanc, rose et brun pour masquer les acouphènes.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -240,20 +245,36 @@ export default function WhiteNoiseAppPage() {
               Quelle couleur de bruit est la meilleure pour les acouphènes ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Beaucoup trouvent le bruit blanc ou rose plus efficace pour masquer les bourdonnements. Calma vous permet de tester toutes les couleurs.
+              Le bruit rose masque les hautes fréquences plus doucement, le bruit blanc est plus large. Calma vous permet de tester et mixer toutes les couleurs.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Le masquage sonore peut-il aider avec les acouphènes la nuit ?
+              Le masquage sonore aide-t-il la nuit ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui. Le silence peut faire paraître les acouphènes plus forts. Un son de fond constant donne à votre cerveau une alternative sur laquelle se concentrer.
+              Oui. Le silence amplifie la perception des acouphènes. Un son de fond constant offre à votre cerveau une alternative sur laquelle se concentrer.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Puis-je créer mon propre mix anti-acouphènes ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui. Calma vous permet de mixer plusieurs sons et d’ajuster le volume individuellement pour trouver le masquage optimal.
+            </p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Calma fonctionne-t-elle hors ligne ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui. Tous les sons fonctionnent complètement sans internet – parfait la nuit ou en déplacement.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Existe-t-il une application gratuite de bruit blanc pour les acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Oui, Calma propose des paysages sonores gratuits, dont du bruit blanc et rose, souvent utilisés pour masquer les acouphènes la nuit."}},{"@type":"Question","name":"Quelle couleur de bruit est la meilleure pour les acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Beaucoup trouvent le bruit blanc ou rose plus efficace pour masquer les bourdonnements. Calma vous permet de tester toutes les couleurs."}},{"@type":"Question","name":"Le masquage sonore peut-il aider avec les acouphènes la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le silence peut faire paraître les acouphènes plus forts. Un son de fond constant donne à votre cerveau une alternative sur laquelle se concentrer."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Application gratuite acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Oui, Calma est 100% gratuite avec bruit blanc, rose et brun."}},{"@type":"Question","name":"Quelle couleur pour les acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Rose ou blanc. Calma permet de tester et mixer."}},{"@type":"Question","name":"Masquage sonore la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, un son de fond donne au cerveau une alternative."}},{"@type":"Question","name":"Créer un mix anti-acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mixez plusieurs sons avec volume individuel."}},{"@type":"Question","name":"Hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
           />
         </div>
       </section>

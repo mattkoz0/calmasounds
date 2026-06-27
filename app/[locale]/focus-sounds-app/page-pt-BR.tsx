@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sons de Foco para Trabalho Profundo | Calma",
+  title: "App Grátis de Sons para Foco | Estudo, TDAH e Deep Work | Calma",
   description:
-    "Construa paisagens sonoras imersivas com chuva e ruído marrom. O Calma ajuda você a criar um espaço mais tranquilo para trabalhar.",
+    "Procurando sons para concentração? O Calma oferece ruído marrom, chuva e paisagens sonoras personalizáveis para estudo, TDAH e deep work. 100% grátis, sem anúncios, offline.",
   keywords: [
     "aplicativo de sons para foco",
     "aplicativo de foco",
@@ -12,14 +12,19 @@ export const metadata: Metadata = {
     "sons para foco profundo",
     "aplicativo de sons para estudo",
     "calma sons para foco",
+    "app foco grátis",
+    "ruído marrom para TDAH",
+    "sons para estudar",
+    "app concentração sem anúncios",
+    "deep work sons",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/focus-sounds-app",
   },
   openGraph: {
-    title: "Sons de Foco para Trabalho Profundo | Calma",
+    title: "App Grátis Sons para Foco | Estudo e TDAH | Calma",
     description:
-    "Construa paisagens sonoras imersivas com chuva e ruído marrom. O Calma ajuda você a criar um espaço mais tranquilo para trabalhar.",
+    "Ruído marrom, chuva e sons personalizáveis para foco e estudo. 100% grátis, sem anúncios.",
     url: "https://www.calmasounds.com/pt-BR/focus-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons de Foco para Trabalho Profundo | Calma",
+    title: "App Sons para Foco Grátis | Calma",
     description:
-    "Construa paisagens sonoras imersivas com chuva e ruído marrom. O Calma ajuda você a criar um espaço mais tranquilo para trabalhar.",
+    "Sons para concentração e estudo. 100% grátis, offline.",
   },
 };
 
@@ -229,34 +234,52 @@ export default function FocusSoundsAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O que é um aplicativo de sons para foco?
+              O que é um app de sons para foco?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Um aplicativo de sons para foco ajuda a criar um fundo de áudio que apoia
-              a concentração, reduz a distração e faz com que o trabalho ou estudo pareça mais
-              imersivo.
+              Um app que cria um fundo de áudio para apoiar a concentração, reduzir distrações e tornar o trabalho ou estudo mais imersivo.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Quando posso usar o Calma para foco?
+              O Calma ajuda com TDAH?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Você pode usar o Calma enquanto estuda, lê, escreve, trabalha ou em qualquer
-              momento em que desejar um ambiente de foco mais calmo e controlado.
+              Muitas pessoas com TDAH relatam que ruído marrom e sons ambientes ajudam na concentração. O Calma permite personalizar a mistura ideal.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Posso personalizar a mixagem de som para foco?
+              Posso personalizar a mistura de foco?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim. O Calma é projetado em torno de construir sua própria mixagem personalizada para que
-              seu ambiente de foco pareça mais natural e útil para você.
+              Sim. O Calma é 100% grátis e permite criar misturas personalizadas com ruído marrom, chuva, café e muito mais.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Qual o melhor ruído para estudar?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ruído marrom e rosa são os mais populares para estudo. Sons de chuva também são muito eficazes. Teste e misture no Calma.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              O Calma funciona offline?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim. Todos os sons funcionam completamente sem internet – perfeito para bibliotecas, viagens ou locais sem WiFi.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é um app de sons para foco?","acceptedAnswer":{"@type":"Answer","text":"Cria um fundo de áudio para concentração e estudo imersivo."}},{"@type":"Question","name":"Ajuda com TDAH?","acceptedAnswer":{"@type":"Answer","text":"Sim, ruído marrom e sons ambientes ajudam na concentração."}},{"@type":"Question","name":"Posso personalizar?","acceptedAnswer":{"@type":"Answer","text":"Sim, 100% grátis com misturas personalizáveis."}},{"@type":"Question","name":"Melhor ruído para estudar?","acceptedAnswer":{"@type":"Answer","text":"Ruído marrom, rosa e chuva. Teste e misture no Calma."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}}]}) }}
+          />
         </div>
       </section>
 

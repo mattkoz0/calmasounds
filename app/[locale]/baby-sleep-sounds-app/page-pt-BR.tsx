@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sons para Dormir Bebês e Ruído Branco | Calma",
+  title: "App Grátis de Sons para Bebê Dormir | Ruído Branco | Calma",
   description:
-    "Crie misturas com ruído branco e sons suaves para bebês. Use o Calma para ajudar seu bebê a relaxar e dormir a noite toda.",
+    "Procurando ruído branco para bebê? Acalme seu recém-nascido com sons suaves, chuva e frequências do útero. 100% grátis, sem anúncios, funciona offline.",
   keywords: [
     "aplicativo de sons para bebê dormir",
     "ruído branco para bebês",
@@ -12,14 +12,18 @@ export const metadata: Metadata = {
     "música para o bebê dormir",
     "sons calmantes para recém-nascidos",
     "sons para a hora de dormir do bebê",
+    "app ruído branco bebê grátis",
+    "sons do útero bebê",
+    "ruído marrom para bebês",
+    "app sono bebê sem anúncios",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/baby-sleep-sounds-app",
   },
   openGraph: {
-    title: "Sons para Dormir Bebês e Ruído Branco | Calma",
+    title: "App Grátis Sons para Bebê | Ruído Branco | Calma",
     description:
-    "Crie misturas com ruído branco e sons suaves para bebês. Use o Calma para ajudar seu bebê a relaxar e dormir a noite toda.",
+    "Ruído branco, chuva e sons do útero para o sono do bebê. 100% grátis, sem anúncios.",
     url: "https://www.calmasounds.com/pt-BR/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons para Dormir Bebês e Ruído Branco | Calma",
+    title: "Sons para Bebê Grátis | Calma",
     description:
-    "Crie misturas com ruído branco e sons suaves para bebês. Use o Calma para ajudar seu bebê a relaxar e dormir a noite toda.",
+    "Ruído branco para bebês. 100% grátis, offline.",
   },
 };
 
@@ -140,10 +144,10 @@ export default function BabySleepSoundsAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O ruído branco é seguro para os bebês?
+              O ruído branco é seguro para bebês?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim, o ruído branco é geralmente considerado muito seguro e eficaz para os bebês, desde que o volume seja mantido em um nível de conversação confortável (cerca de 50-60 decibéis) e o dispositivo seja colocado a uma distância segura do berço.
+              Sim, em volume moderado (menos de 50 dB) e com o dispositivo a mais de 2 metros do berço. O Calma tem temporizador automático.
             </p>
           </div>
 
@@ -152,18 +156,40 @@ export default function BabySleepSoundsAppPage() {
               Qual cor de ruído é melhor para recém-nascidos?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Muitos bebês respondem bem ao ruído branco padrão, mas o ruído rosa e o ruído marrom (que enfatizam frequências mais profundas e graves) também podem ser perfeitos para simular os sons abafados do útero.
+              O ruído marrom simula os sons abafados do útero e muitos recém-nascidos o preferem. O ruído branco também é muito eficaz.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O Calma requer internet para tocar offline?
+              O Calma funciona offline?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              O Calma funciona offline. Depois de ter o aplicativo instalado, você não precisa de uma conexão ativa com a Internet para reproduzir a mixagem de sono favorita do seu bebê.
+              Sim. O Calma funciona completamente sem internet – perfeito para viagens, o carrinho ou a amamentação noturna.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Quanto tempo o ruído branco deve tocar para bebês?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Especialistas recomendam 20–45 minutos. O Calma tem um temporizador que desliga automaticamente.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Posso misturar sons para o meu bebê?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim! Cada bebê é único. O Calma permite misturar ruído branco com chuva suave, ventilador ou batimentos cardíacos.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Ruído branco é seguro para bebês?","acceptedAnswer":{"@type":"Answer","text":"Sim, em volume moderado e a mais de 2 metros do berço."}},{"@type":"Question","name":"Qual cor para recém-nascidos?","acceptedAnswer":{"@type":"Answer","text":"Ruído marrom simula o útero. Ruído branco também é eficaz."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}},{"@type":"Question","name":"Quanto tempo deve tocar?","acceptedAnswer":{"@type":"Answer","text":"20–45 minutos. Temporizador automático incluso."}},{"@type":"Question","name":"Posso misturar sons?","acceptedAnswer":{"@type":"Answer","text":"Sim, misture ruído branco com chuva, ventilador ou batimentos."}}]}) }}
+          />
         </div>
       </section>
 

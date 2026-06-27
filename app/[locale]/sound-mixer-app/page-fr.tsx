@@ -3,23 +3,27 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Mixeur de Sons pour Dormir | Calma",
+  title: "Mixeur de Sons Gratuit | Sommeil, Focus & Relaxation | Calma",
   description:
-    "Créez des mixages audio apaisants avec de la pluie et des sons de la nature. Utilisez le mixeur Calma pour vous détendre et dormir.",
+    "Vous cherchez un mixeur de sons ? Mélangez bruit blanc, pluie et sons de la nature pour dormir, vous concentrer et vous détendre. 100% gratuit, sans publicités, hors ligne.",
   keywords: [
     "application mixage sonore",
     "mixeur de sons sommeil",
     "mixeur sons relaxation",
     "fonds sonores personnalisés",
     "calma sound mixer",
+    "mixeur sons gratuit",
+    "mélanger sons app",
+    "créer mix sonore",
+    "app sons ambiants gratuit",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/sound-mixer-app",
   },
   openGraph: {
-    title: "Mixeur de Sons pour Dormir | Calma",
+    title: "Mixeur de Sons Gratuit | Sommeil & Focus | Calma",
     description:
-    "Créez des mixages audio apaisants avec de la pluie et des sons de la nature. Utilisez le mixeur Calma pour vous détendre et dormir.",
+    "Mélangez bruit blanc, pluie et nature. 100% gratuit, sans publicités.",
     url: "https://www.calmasounds.com/fr/sound-mixer-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -27,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mixeur de Sons pour Dormir | Calma",
+    title: "Mixeur de Sons Gratuit | Calma",
     description:
-    "Créez des mixages audio apaisants avec de la pluie et des sons de la nature. Utilisez le mixeur Calma pour vous détendre et dormir.",
+    "Créez vos propres paysages sonores. 100% gratuit, hors ligne.",
   },
 };
 
@@ -198,21 +202,21 @@ export default function SoundMixerAppPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <Link
-            href="/blog/rain-sounds-vs-white-noise"
+            href="/fr/blog/rain-sounds-vs-white-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Pluie vs Bruit blanc</h3>
             <p className="mt-3 text-white/70">
-              Comparez les différentes ambiances et découvrez comment les mixer pour créer le fond sonore idéal pour dormir.
+              Comparez différentes ambiances et découvrez comment les mixer pour le sommeil ou la concentration parfaite.
             </p>
           </Link>
           <Link
-            href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
+            href="/fr/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Les couleurs du bruit</h3>
             <p className="mt-3 text-white/70">
-              Apprenez-en plus sur les couleurs du bruit et comment les équilibrer dans votre mixeur personnel.
+              Apprenez à équilibrer les différentes couleurs du bruit dans votre mixeur personnel.
             </p>
           </Link>
         </div>
@@ -229,33 +233,52 @@ export default function SoundMixerAppPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Qu'est-ce qu'un mixeur sonore ?
+              Qu’est-ce qu’un mixeur sonore ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Elle vous permet de combiner plusieurs sons en un seul environnement 
-              audio personnalisé pour le sommeil, la détente ou le focus.
+              Une application qui vous permet de combiner différents sons pour créer un environnement audio personnalisé pour le sommeil, la détente ou la concentration.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Comment Calma se distingue d'une application classique ?
+              En quoi Calma se distingue ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma est fondée sur la personnalisation totale, vous laissant modeler 
-              votre mix plutôt que de choisir parmi des pistes prédéfinies.
+              Calma est 100% gratuite, sans publicités, hors ligne et fondée sur la personnalisation – créez votre propre mix au lieu de choisir des pistes fixes.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Puis-je l'utiliser pour autre chose que le sommeil ?
+              Puis-je l’utiliser au-delà du sommeil ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui absolument. Elle est tout aussi efficace pour la relaxation, 
-              la concentration au travail ou simplement instaurer un fond sonore calme.
+              Oui. Calma est idéale pour l’étude, le deep work, la méditation et la relaxation quotidienne.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Combien de sons puis-je mixer à la fois ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Vous pouvez jouer plusieurs sons simultanément et ajuster le volume de chacun individuellement pour l’atmosphère parfaite.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Calma fonctionne-t-elle hors ligne ?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Oui. Tous les sons fonctionnent complètement sans internet – parfait pour les voyages ou les bibliothèques.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu’est-ce qu’un mixeur sonore ?","acceptedAnswer":{"@type":"Answer","text":"Combinez différents sons pour un environnement audio personnalisé."}},{"@type":"Question","name":"En quoi Calma se distingue ?","acceptedAnswer":{"@type":"Answer","text":"100% gratuite, sans pubs, hors ligne, avec mix personnalisables."}},{"@type":"Question","name":"Au-delà du sommeil ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pour étude, deep work, méditation et relaxation."}},{"@type":"Question","name":"Combien de sons à la fois ?","acceptedAnswer":{"@type":"Answer","text":"Plusieurs sons avec volume individuel."}},{"@type":"Question","name":"Fonctionne hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
+          />
         </div>
       </section>
 
