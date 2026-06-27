@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Entspannende Klänge für den Alltag | Calma",
+  title: "Kostenlose Entspannungsklänge App | Stressabbau & Wellness | Calma",
   description:
-    "Erstellen Sie Ihre eigene entspannende Klangmischung mit Regen und weißem Rauschen. Nutzen Sie Calma, um täglichen Stress abzubauen.",
+    "Suchen Sie entspannende Klänge? Mischen Sie Regen, Naturgeräusche und weißes Rauschen für Stressabbau und innere Ruhe. 100% kostenlos, ohne Werbung, funktioniert offline.",
   keywords: [
     "Entspannungsklänge App",
     "Relaxing Sounds App",
     "beruhigende Klänge",
     "Ambient Sounds zur Entspannung",
     "Calma Entspannung",
+    "Stressabbau App kostenlos",
+    "Naturgeräusche Entspannung",
+    "Meditation Hintergrundgeräusche",
+    "Regen und Naturklänge",
+    "Wellness App ohne Werbung",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/relaxing-sounds",
   },
   openGraph: {
-    title: "Entspannende Klänge für den Alltag | Calma",
+    title: "Kostenlose Entspannungsklänge | Stressabbau | Calma",
     description:
-    "Erstellen Sie Ihre eigene entspannende Klangmischung mit Regen und weißem Rauschen. Nutzen Sie Calma, um täglichen Stress abzubauen.",
+    "Mischen Sie Regen, Naturgeräusche und weißes Rauschen für Entspannung. 100% kostenlos, ohne Werbung.",
     url: "https://www.calmasounds.com/de/relaxing-sounds",
     siteName: "Calma",
     locale: "de_DE",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Entspannende Klänge für den Alltag | Calma",
+    title: "Entspannungsklänge Kostenlos | Calma",
     description:
-    "Erstellen Sie Ihre eigene entspannende Klangmischung mit Regen und weißem Rauschen. Nutzen Sie Calma, um täglichen Stress abzubauen.",
+    "Beruhigende Klänge für Stressabbau. 100% kostenlos, offline.",
   },
 };
 
@@ -197,16 +202,16 @@ export default function RelaxingSoundsPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <a
-            href="/blog/benefits-of-nature-sounds-for-relaxation"
+            href="/de/blog/benefits-of-nature-sounds-for-relaxation"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Vorteile von Naturklängen</h3>
             <p className="mt-3 text-white/70">
-              Erfahre, wie natürliche Soundscapes wie Regen und Meeresrauschen als natürliche Erdung zur Entspannung służą.
+              Erfahre, wie Regen, Meeresrauschen und Vogelgesang als natürliche Mittel zur Entspannung wirken.
             </p>
           </a>
           <a
-            href="/blog/guided-breathing-techniques"
+            href="/de/blog/guided-breathing-techniques"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
             <h3 className="text-xl font-semibold text-white">Geführte Atemtechniken</h3>
@@ -231,8 +236,16 @@ export default function RelaxingSoundsPage() {
               Was ist eine App für Entspannungsklänge?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sie hilft dir, beruhigende Audio-Inhalte abzuspielen, die das 
-              Abschalten, den mentalen Reset und einen friedlicheren Alltag unterstützen.
+              Eine App, die beruhigende Audioinhalte abspielt – Regen, Naturgeräusche und weißes Rauschen – um Stress abzubauen und den Alltag ruhiger zu gestalten.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Ist Calma kostenlos?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja, Calma ist 100% kostenlos, ohne Werbung und funktioniert komplett offline – keine versteckten Kosten.
             </p>
           </div>
 
@@ -241,20 +254,31 @@ export default function RelaxingSoundsPage() {
               Wann nutze ich Calma zur Entspannung?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Po der Arbeit, beim Entspannen am Abend, beim Lesen oder einfach, 
-              wenn du eine sanftere Hintergrundumgebung wünschst.
+              Nach der Arbeit, beim Lesen, beim Yoga, bei der Meditation oder einfach wenn du eine sanftere Umgebung brauchst.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Kann ich die Entspannungsklänge personalisieren?
+              Kann ich eigene Klangwelten erstellen?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja. Calma ist darauf ausgelegt, dass du deine eigene Klangwelt erschaffst, 
-              anstatt dich auf vorgegebene Titel verlassen zu müssen.
+              Ja. Calma ist darauf ausgelegt, dass du deine eigene Klangmischung erstellst – Regen + Kaminfeuer, Wald + Wind, oder was auch immer dir hilft.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Funktioniert Calma offline?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Ja. Alle Klänge funktionieren komplett ohne Internet – perfekt für unterwegs oder den Flugmodus.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist eine Entspannungsklänge App?","acceptedAnswer":{"@type":"Answer","text":"Beruhigende Audioinhalte für Stressabbau und Alltag."}},{"@type":"Question","name":"Ist Calma kostenlos?","acceptedAnswer":{"@type":"Answer","text":"Ja, 100% kostenlos, ohne Werbung, offline."}},{"@type":"Question","name":"Wann nutzt man Calma?","acceptedAnswer":{"@type":"Answer","text":"Nach der Arbeit, beim Lesen, Yoga oder Meditation."}},{"@type":"Question","name":"Eigene Klangwelten erstellen?","acceptedAnswer":{"@type":"Answer","text":"Ja, individuelle Mischungen aus Regen, Natur und mehr."}},{"@type":"Question","name":"Funktioniert offline?","acceptedAnswer":{"@type":"Answer","text":"Ja, komplett ohne Internet."}}]}) }}
+          />
         </div>
       </section>
 

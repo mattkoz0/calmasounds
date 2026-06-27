@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "einmalzahlung schlaf app",
     "kostenlose schlafgeräusche app",
     "lebenslange freischaltung schlaf app",
+    "schlaf app ohne abonnement",
+    "weißes rauschen app kein abo",
+    "calm alternative ohne abo",
+    "schlafgeräusche einmalzahlung",
+    "beste schlaf app gratis",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/best-sleep-sounds-app-without-subscription",

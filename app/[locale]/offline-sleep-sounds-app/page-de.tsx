@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "flugmodus schlaf app",
     "reise schlafgeräusche",
     "schlafgeräusche kein wlan",
+    "schlaf app offline kostenlos",
+    "einschlafgeräusche ohne internet",
+    "schlaf sounds flugmodus",
+    "calma offline app",
+    "schlafgeräusche ohne datenverbrauch",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/offline-sleep-sounds-app",

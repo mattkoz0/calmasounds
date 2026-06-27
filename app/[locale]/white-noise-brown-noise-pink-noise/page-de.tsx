@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "rosa rauschen app",
     "grünes rauschen app",
     "rauschfarben app",
+    "brown noise ADHS",
+    "weißes rauschen zum schlafen",
+    "rosa rauschen baby",
+    "braunes rauschen fokus",
+    "rauschfarben vergleich",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/white-noise-brown-noise-pink-noise",
