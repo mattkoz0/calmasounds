@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "respiration de cohérence",
     "soupir physiologique",
     "blog calma",
+    "application pour mieux dormir",
+    "favoriser le sommeil profond",
+    "aide à l'endormissement",
+    "sons apaisants nuit",
+    "améliorer qualité du sommeil",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/blog/guided-breathing-techniques",

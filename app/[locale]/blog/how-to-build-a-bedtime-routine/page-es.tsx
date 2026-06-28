@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     "rutina antes de dormir adultos",
     "hábitos de sueño saludables",
     "relajarse antes de dormir",
+    "app para dormir mejor",
+    "promover sueño profundo",
+    "ayuda para conciliar el sueño",
+    "sonidos relajantes noche",
+    "mejorar calidad del sueño",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/blog/how-to-build-a-bedtime-routine",

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "batidas binaurais para focar",
     "áudio de ondas cerebrais",
     "blog do calma",
+    "app para dormir melhor",
+    "promover sono profundo",
+    "ajuda para adormecer",
+    "sons calmantes noite",
+    "melhorar qualidade do sono",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/blog/binaural-beats-for-sleep-and-focus",

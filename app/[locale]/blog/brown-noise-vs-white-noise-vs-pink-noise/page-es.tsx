@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     "ruido para TDAH",
     "colores del ruido explicados",
     "blog de calma",
+    "app para dormir mejor",
+    "promover sueño profundo",
+    "ayuda para conciliar el sueño",
+    "sonidos relajantes noche",
+    "mejorar calidad del sueño",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/blog/brown-noise-vs-white-noise-vs-pink-noise",

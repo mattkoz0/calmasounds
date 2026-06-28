@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "bruit blanc gratuit",
     "application de sommeil",
     "calma app",
+    "application pour mieux dormir",
+    "favoriser le sommeil profond",
+    "aide à l'endormissement",
+    "sons apaisants nuit",
+    "améliorer qualité du sommeil",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/blog/best-free-white-noise-app",

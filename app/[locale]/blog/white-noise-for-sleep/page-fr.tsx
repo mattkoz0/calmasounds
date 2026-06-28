@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     "soulagement acouphènes",
     "bloquer les bruits pour dormir",
     "bruit blanc pour bébés",
+    "application pour mieux dormir",
+    "favoriser le sommeil profond",
+    "aide à l'endormissement",
+    "sons apaisants nuit",
+    "améliorer qualité du sommeil",
   ],
   robots: {
     index: true,

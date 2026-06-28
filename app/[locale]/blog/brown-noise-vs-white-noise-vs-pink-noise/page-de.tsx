@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     "Rauschen bei ADHS",
     "Farben des Rauschens erklärt",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",

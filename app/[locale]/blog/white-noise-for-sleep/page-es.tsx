@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     "alivio tinnitus",
     "bloquear ruidos al dormir",
     "ruido blanco para bebés",
+    "app para dormir mejor",
+    "promover sueño profundo",
+    "ayuda para conciliar el sueño",
+    "sonidos relajantes noche",
+    "mejorar calidad del sueño",
   ],
   robots: {
     index: true,

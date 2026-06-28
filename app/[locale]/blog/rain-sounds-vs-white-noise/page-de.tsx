@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     "beste Schlafsounds",
     "Vergleich Schlafsounds",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: articleUrl,

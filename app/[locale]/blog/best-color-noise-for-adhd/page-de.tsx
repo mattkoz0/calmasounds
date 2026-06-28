@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "weißes rauschen adhs",
     "rosa rauschen adhs",
     "calma blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/best-color-noise-for-adhd",

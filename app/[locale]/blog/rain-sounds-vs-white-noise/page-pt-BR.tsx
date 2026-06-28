@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     "melhores sons para dormir",
     "comparacao de sons de sono",
     "blog do calma",
+    "app para dormir melhor",
+    "promover sono profundo",
+    "ajuda para adormecer",
+    "sons calmantes noite",
+    "melhorar qualidade do sono",
   ],
   alternates: {
     canonical: articleUrl,

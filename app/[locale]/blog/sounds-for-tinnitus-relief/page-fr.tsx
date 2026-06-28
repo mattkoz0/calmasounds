@@ -5,7 +5,13 @@ import { ArticleSection } from "../_components/article-section";
 export const metadata: Metadata = {
   title: "Meilleurs Sons pour Acouphènes | Calma Blog",
   description: "Découvrez comment la thérapie sonore peut soulager les acouphènes.",
-  keywords: ["sons pour acouphènes", "soulagement acouphènes", "bruit blanc"],
+  keywords: ["sons pour acouphènes", "soulagement acouphènes", "bruit blanc"
+    "application pour mieux dormir",
+    "favoriser le sommeil profond",
+    "aide à l'endormissement",
+    "sons apaisants nuit",
+    "améliorer qualité du sommeil",
+  ],
   alternates: {
     canonical: "https://www.calmasounds.com/blog/sounds-for-tinnitus-relief",
   },

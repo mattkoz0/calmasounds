@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "Regenklänge zum Schlafen",
     "weißes Rauschen zum Schlafen",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/best-sounds-for-sleep",

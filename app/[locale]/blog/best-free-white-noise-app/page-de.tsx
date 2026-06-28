@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "white noise app",
     "weißes rauschen app kostenlos",
     "calma app",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",

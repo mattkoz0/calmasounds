@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     "pink noise for babies",
     "calma app",
     "sleep sounds app"
+  
+    "app para dormir melhor",
+    "promover sono profundo",
+    "ajuda para adormecer",
+    "sons calmantes noite",
+    "melhorar qualidade do sono",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/blog/white-noise-for-babies",

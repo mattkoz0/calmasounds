@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "ruido branco tdah",
     "ruido rosa tdah",
     "calma blog",
+    "app para dormir melhor",
+    "promover sono profundo",
+    "ajuda para adormecer",
+    "sons calmantes noite",
+    "melhorar qualidade do sono",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/blog/best-color-noise-for-adhd",

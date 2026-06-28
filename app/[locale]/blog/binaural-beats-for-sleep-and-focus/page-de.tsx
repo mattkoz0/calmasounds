@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "binaurale Beats Konzentration",
     "Brainwave Audio",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/binaural-beats-for-sleep-and-focus",

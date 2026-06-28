@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     "alívio zumbido",
     "bloquear ruídos ao dormir",
     "ruído branco para bebês",
+    "app para dormir melhor",
+    "promover sono profundo",
+    "ajuda para adormecer",
+    "sons calmantes noite",
+    "melhorar qualidade do sono",
   ],
   robots: {
     index: true,

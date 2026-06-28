@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     "braunes Rauschen zum Lernen",
     "weißes Rauschen für Fokus",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/best-sounds-for-studying",

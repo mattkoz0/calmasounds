@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     "Tinnitus übertönen",
     "Lärm blockieren Schlaf",
     "Baby Schlaf Rauschen",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   robots: {
     index: true,

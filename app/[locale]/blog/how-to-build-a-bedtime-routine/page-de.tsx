@@ -17,6 +17,11 @@ export const metadata: Metadata = {
     "Schlafhygiene verbessern",
     "Abendroutine Erwachsene",
     "entspannt einschlafen",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/how-to-build-a-bedtime-routine",

@@ -13,6 +13,11 @@ export const metadata: Metadata = {
     "bruit de pluie pour dormir",
     "bruit blanc sommeil",
     "blog calma",
+    "application pour mieux dormir",
+    "favoriser le sommeil profond",
+    "aide à l'endormissement",
+    "sons apaisants nuit",
+    "améliorer qualité du sommeil",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/blog/best-sounds-for-sleep",

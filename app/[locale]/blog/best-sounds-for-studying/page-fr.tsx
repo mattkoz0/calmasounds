@@ -16,6 +16,11 @@ export const metadata: Metadata = {
     "bruit marron pour etudier",
     "bruit blanc pour se concentrer",
     "blog calma",
+    "application pour mieux dormir",
+    "favoriser le sommeil profond",
+    "aide à l'endormissement",
+    "sons apaisants nuit",
+    "améliorer qualité du sommeil",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/blog/best-sounds-for-studying",

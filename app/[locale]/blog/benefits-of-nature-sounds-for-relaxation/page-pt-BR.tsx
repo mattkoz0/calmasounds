@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     "aliviar estresse natureza",
     "dormir melhor sons naturais",
     "reduzir cortisol natureza",
+    "app para dormir melhor",
+    "promover sono profundo",
+    "ajuda para adormecer",
+    "sons calmantes noite",
+    "melhorar qualidade do sono",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/blog/benefits-of-nature-sounds-for-relaxation",

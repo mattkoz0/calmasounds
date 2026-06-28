@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "natürliche Frequenzen",
     "beruhigende Klänge",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/green-noise-for-sleep",

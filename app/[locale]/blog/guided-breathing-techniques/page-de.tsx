@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "Resonanzatmung",
     "physiologischer Seufzer",
     "Calma Blog",
+    "besser schlafen App",
+    "Tiefschlaf fördern",
+    "Einschlafhilfe",
+    "beruhigende Geräusche",
+    "Schlafqualität verbessern",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/guided-breathing-techniques",
