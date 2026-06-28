@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "bettersleep sem assinatura",
     "mixer de sons para dormir como bettersleep",
     "alternativa ao relax melodies",
+    "bettersleep alternativa grátis",
+    "bettersleep comparação",
+    "relax melodies substituto",
+    "app mixer sono sem abo",
+    "bettersleep alternativa gratuita offline",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/calma-vs-bettersleep",

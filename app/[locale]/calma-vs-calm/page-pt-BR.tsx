@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "calm sem assinatura",
     "mixer de sons para dormir como calm",
     "melhor que o app calm",
+    "calm alternativa grátis",
+    "calm app comparação",
+    "app sono como calm grátis",
+    "calm substituto offline",
+    "app sons dormir sem abo como calm",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/calma-vs-calm",

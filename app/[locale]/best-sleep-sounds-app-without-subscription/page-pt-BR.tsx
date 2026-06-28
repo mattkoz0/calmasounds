@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "app de sono pagamento único",
     "app grátis de sons para dormir",
     "desbloqueio vitalício app de sono",
+    "app sono sem assinatura grátis",
+    "ruído branco sem assinatura",
+    "alternativa calm sem mensalidade",
+    "sons dormir pagamento único",
+    "melhor app sono grátis",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/best-sleep-sounds-app-without-subscription",

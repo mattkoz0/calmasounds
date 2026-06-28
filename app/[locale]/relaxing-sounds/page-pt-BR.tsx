@@ -2,23 +2,28 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Sons Relaxantes para a Paz Diária | Calma",
+  title: "Sons Relaxantes Grátis | Anti-Estresse e Bem-Estar | Calma",
   description:
-    "Crie sua própria mistura de sons relaxantes com chuva e ruído branco. Use o Calma para encontrar a paz e aliviar o estresse diário.",
+    "Procurando sons relaxantes? Misture chuva, natureza e ruído branco para aliviar o estresse. 100% grátis, sem anúncios, funciona offline.",
   keywords: [
     "aplicativo de sons relaxantes",
     "sons de relaxamento",
     "aplicativo de sons calmantes",
     "sons ambientes relaxantes",
     "calma sons relaxantes",
+    "app relaxamento grátis",
+    "sons anti-estresse",
+    "sons da natureza para meditação",
+    "chuva e sons naturais",
+    "bem-estar app sem anúncios",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/relaxing-sounds",
   },
   openGraph: {
-    title: "Sons Relaxantes para a Paz Diária | Calma",
+    title: "Sons Relaxantes Grátis | Anti-Estresse | Calma",
     description:
-    "Crie sua própria mistura de sons relaxantes com chuva e ruído branco. Use o Calma para encontrar a paz e aliviar o estresse diário.",
+    "Misture chuva, natureza e ruído branco para relaxar. 100% grátis, sem anúncios.",
     url: "https://www.calmasounds.com/pt-BR/relaxing-sounds",
     siteName: "Calma",
     locale: "pt_BR",
@@ -26,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sons Relaxantes para a Paz Diária | Calma",
+    title: "Sons Relaxantes Grátis | Calma",
     description:
-    "Crie sua própria mistura de sons relaxantes com chuva e ruído branco. Use o Calma para encontrar a paz e aliviar o estresse diário.",
+    "Sons calmantes para o dia a dia. 100% grátis, offline.",
   },
 };
 
@@ -228,33 +233,52 @@ export default function RelaxingSoundsPage() {
         <div className="space-y-6">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              O que é um aplicativo de sons relaxantes?
+              O que é um app de sons relaxantes?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Um aplicativo de sons relaxantes ajuda você a tocar áudio calmante que apoia o
-              relaxamento, redefinição emocional e rotinas mais tranquilas.
+              Um app que toca sons calmantes – chuva, natureza, ruído branco – para aliviar o estresse e trazer calma ao dia a dia.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Quando posso usar o Calma para relaxar?
+              O Calma é grátis?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Você pode usar o Calma após o trabalho, durante o relaxamento noturno, enquanto
-              lê, descansa ou sempre que desejar um ambiente mais suave ao seu redor.
+              Sim, o Calma é 100% grátis, sem anúncios e funciona completamente offline – sem custos ocultos.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
-              Posso personalizar os sons relaxantes?
+              Quando usar o Calma para relaxar?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim. O Calma é projetado em torno de criar a sua própria paisagem sonora relaxante
-              personalizada em vez de depender de apenas uma faixa fixa.
+              Após o trabalho, lendo, durante o yoga, meditação ou sempre que precisar de uma atmosfera mais suave.
             </p>
           </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Posso criar minhas próprias misturas?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim. O Calma permite criar misturas personalizadas – chuva + lareira, floresta + vento, ou o que te acalmar.
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">
+              Funciona offline?
+            </h3>
+            <p className="mt-3 leading-7 text-white/70">
+              Sim. Todos os sons funcionam sem internet – perfeito para viagens ou modo avião.
+            </p>
+          </div>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"App de sons relaxantes?","acceptedAnswer":{"@type":"Answer","text":"Sons calmantes para aliviar o estresse."}},{"@type":"Question","name":"Calma é grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim, 100% grátis, sem anúncios, offline."}},{"@type":"Question","name":"Quando usar?","acceptedAnswer":{"@type":"Answer","text":"Trabalho, yoga, meditação ou leitura."}},{"@type":"Question","name":"Criar misturas?","acceptedAnswer":{"@type":"Answer","text":"Sim, misturas personalizadas de chuva, natureza e mais."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}}]}) }}
+          />
         </div>
       </section>
 

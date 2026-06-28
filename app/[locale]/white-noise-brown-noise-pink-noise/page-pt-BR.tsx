@@ -11,6 +11,11 @@ export const metadata: Metadata = {
     "app de ruído rosa",
     "app de ruído verde",
     "app de cores de ruído",
+    "brown noise TDAH",
+    "ruído branco para dormir",
+    "ruído rosa bebês",
+    "ruído marrom concentração",
+    "cores de ruído comparação",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/white-noise-brown-noise-pink-noise",
