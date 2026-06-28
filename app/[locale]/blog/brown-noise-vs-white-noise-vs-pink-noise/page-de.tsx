@@ -3,291 +3,223 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
 import { YouTubeEmbed } from "@/app/_components/youtube-embed";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Braunes vs. Weißes vs. Rosa Rauschen | Calma Blog",
+  title: "Braunes Rauschen vs Weißes Rauschen: Was ist besser? | Calma",
   description:
-    "Entdecken Sie die Unterschiede zwischen weißem, rosa und braunem Rauschen. Finden Sie heraus, welches Rauschen am besten für Schlaf, Fokus oder ADHS geeignet ist.",
+    "Ist braunes Rauschen besser als weißes Rauschen zum Schlafen? Warum hilft braunes Rauschen bei ADHS? Entdecken Sie die wissenschaftlichen Unterschiede.",
   keywords: [
-    "braunes Rauschen vs weißes Rauschen",
-    "pinkes Rauschen vs weißes Rauschen",
-    "grünes Rauschen vs weißes Rauschen",
-    "bestes Rauschen für Fokus",
-    "Rauschen bei ADHS",
-    "Farben des Rauschens erklärt",
-    "Calma Blog",
-    "besser schlafen App",
-    "Tiefschlaf fördern",
-    "Einschlafhilfe",
-    "beruhigende Geräusche",
-    "Schlafqualität verbessern",
+    "braunes rauschen vs weißes rauschen",
+    "rosa rauschen vs weißes rauschen",
+    "ist braunes rauschen besser zum schlafen",
+    "warum hilft braunes rauschen bei adhs",
+    "farben des rauschens",
+    "calma app",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
   },
   openGraph: {
-    title: "Braunes vs. Weißes vs. Rosa Rauschen | Calma Blog",
+    title: "Braunes Rauschen vs Weißes Rauschen: Was ist besser?",
     description:
-      "Entdecken Sie die Unterschiede zwischen weißem, rosa und braunem Rauschen. Finden Sie heraus, welches Rauschen am besten für Schlaf, Fokus oder ADHS geeignet ist.",
+      "Entdecken Sie die wissenschaftlichen Unterschiede zwischen rosa, braunem und weißem Rauschen.",
     url: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
     siteName: "Calma",
     locale: "de_DE",
     type: "article",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Braunes vs. Weißes vs. Rosa Rauschen | Calma Blog",
-    description:
-      "Entdecken Sie die Unterschiede zwischen weißem, rosa und braunem Rauschen.",
-  },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Braunes vs. Weißes vs. Rosa Rauschen vs. Grünes Rauschen",
-  description:
-    "Ein umfassender Leitfaden zum Verständnis der Farben des Rauschens, einschließlich grünem Rauschen, und ihrer einzigartigen Vorteile für Schlaf, Fokus und Entspannung.",
-  author: {
-    "@type": "Organization",
-    name: "Calma Team",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/de/blog/brown-noise-vs-white-noise-vs-pink-noise",
-  datePublished: "2026-04-13",
-  dateModified: new Date().toISOString().split('T')[0],
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Ist braunes Rauschen besser als weißes Rauschen zum Schlafen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Für viele Menschen, ja. Braunes Rauschen ist besser als weißes Rauschen zum Schlafen, wenn Sie das hohe Zischen des weißen Rauschens irritierend finden. Braunes Rauschen klingt wie ein tiefer Wasserfall und beruhigt das Nervensystem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum hilft braunes Rauschen bei ADHS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Braunes Rauschen hilft Menschen mit ADHS, da es das Gehirn durch tiefes, kontinuierliches Grollen stimuliert. Dies befriedigt das Bedürfnis des Gehirns nach Stimulation und verhindert Ablenkungen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist der Unterschied zwischen rosa, braunem und weißem Rauschen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weißes Rauschen hat in allen Frequenzen die gleiche Energie. Rosa Rauschen dämpft die hohen Töne (klingt wie Regen). Braunes Rauschen reduziert die hohen Frequenzen noch weiter und erzeugt ein sehr tiefes Grollen (wie Gewitter)."
+      }
+    }
+  ]
 };
 
-export default function NoiseColorsPage() {
+export default function NoiseColorsPageDE() {
   return (
     <ArticlePage
       slug="brown-noise-vs-white-noise-vs-pink-noise"
       jsonLd={articleJsonLd}
       topLinkHref="/de/white-noise-app"
-      topLinkLabel="Weißes Rauschen entdecken"
-      title="Braunes vs. Weißes vs. Rosa Rauschen vs. Grünes Rauschen"
-      intro="Nicht jedes 'weiße Rauschen' ist tatsächlich weiß. In der Audiowelt werden Klänge basierend auf ihrer Frequenzverteilung in 'Farben' unterteilt. Das Verständnis der Unterschiede zwischen weißem, rosa, braunem und grünem Rauschen kann dir helfen, den richtigen Hintergrund für besseren Schlaf, tieferen Fokus oder die Bewältigung von ADHS-Symptomen zu finden."
-      ctaHref="/de/white-noise-app"
-      ctaLabel="Weißes Rauschen App entdecken"
+      topLinkLabel="White Noise App entdecken"
+      title="Braunes Rauschen vs Weißes Rauschen: Was ist besser für Schlaf & ADHS?"
+      intro="Nicht jedes 'weiße Rauschen' ist tatsächlich weiß. In der Audiowelt werden Klänge anhand ihrer Frequenzverteilung in 'Farben' eingeteilt. Der Unterschied zwischen weißem, rosa, braunem und grünem Rauschen ist das Geheimnis für besseren Schlaf oder Konzentration."
+      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+      ctaLabel="Calma App kostenlos herunterladen"
       secondaryCtaHref="/de/sound-mixer-app"
-      secondaryCtaLabel="Sound Mixer App entdecken"
+      secondaryCtaLabel="Sound Mixer entdecken"
       tableOfContents={[
-        { id: "video", title: "Video: Die Farben des Rauschens erklärt" },
-        { id: "white-noise", title: "Weißes Rauschen: Der Allrounder" },
-        { id: "pink-noise", title: "Pinkes Rauschen: Die natürliche Wahl" },
-        { id: "brown-noise", title: "Braunes Rauschen: Die tiefe Ruhe" },
-        { id: "green-noise", title: "Grünes Rauschen: Die Harmonie der Natur" },
-        { id: "adhd-noise", title: "Welches Rauschen ist am besten bei ADHS?" },
-        { id: "summary", title: "Was solltest du wählen?" },
-        { id: "comparison-table", title: "Vergleichstabelle: Farben des Rauschens" },
+        { id: "video", title: "Video: Rauschen erklärt" },
+        { id: "difference", title: "Was ist der Unterschied?" },
+        { id: "is-brown-better", title: "Ist braunes Rauschen besser für den Schlaf?" },
+        { id: "adhd", title: "Warum hilft braunes Rauschen bei ADHS?" },
+        { id: "comparison-table", title: "Vergleichstabelle" },
         { id: "faq", title: "Häufig gestellte Fragen" },
       ]}
       relatedArticles={[
         {
           href: "/de/blog/white-noise-for-sleep",
-          title: "Weißes Rauschen zum Schlafen",
-          description:
-            "Erfahre, wie weißes Rauschen Ablenkungen blockiert, um dir zu einem besseren Schlaf zu verhelfen.",
-        },
-        {
-          href: "/de/blog/best-sounds-for-studying",
-          title: "Beste Sounds zum Lernen",
-          description:
-            "Entdecke, welche Hintergrundgeräusche für die Konzentration am effektivsten sind.",
+          title: "Weißes Rauschen für den Schlaf",
+          description: "Wie weißes Rauschen Ihnen hilft, schneller einzuschlafen.",
         },
       ]}
     >
-      <ArticleSection id="video" title="Video: Die Farben des Rauschens erklärt">
-        <p className="mb-6">
-          Schau dir unseren kurzen YouTube-Guide an, um den Unterschied direkt zu hören und deinen Favoriten zu finden.
-        </p>
-        <div className="flex justify-center">
+      <ArticleSection id="video" title="Ansehen: Die Farben des Rauschens erklärt">
+        <div className="flex justify-center mt-6">
             <div className="aspect-[9/16] w-full max-w-[350px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
                 <YouTubeEmbed
                     videoId="MlJNs1K66xc"
-                    title="Die Farben des Rauschens: Weiß, Pink, Braun und Grün"
+                    title="The Colors of Noise"
                 />
             </div>
         </div>
       </ArticleSection>
 
-      <ArticleSection id="white-noise" title="Weißes Rauschen: Der Allrounder">
+      <ArticleSection id="difference" title="Was ist der Unterschied zwischen rosa, braunem und weißem Rauschen?">
+        <div className="mt-6 space-y-10">
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">1. Echtes weißes Rauschen</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              Weißes Rauschen enthält alle hörbaren Frequenzen in gleicher Intensität. Es maskiert plötzliche, laute Geräusche hervorragend.
+            </p>
+            <AudioPlayer 
+              src="/white_noise.m4a" 
+              title="Weißes Rauschen" 
+              description="Konstantes Rauschen."
+              colorClass="bg-slate-500/20 text-slate-300"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">2. Rosa Rauschen (Naturklänge)</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              Rosa Rauschen dämpft hohe Frequenzen. Es imitiert Naturklänge wie gleichmäßigen Regen.
+            </p>
+            <AudioPlayer 
+              src="/pink_noise.m4a" 
+              title="Rosa Rauschen" 
+              description="Ausgewogener Klang, ähnlich wie starker Regen."
+              colorClass="bg-pink-500/20 text-pink-300"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">3. Braunes Rauschen (Tiefer Bass)</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              Braunes Rauschen entfernt fast alle hochfrequenten Töne. Übrig bleibt ein tiefes Grollen (Flugzeugkabine, Wasserfall).
+            </p>
+            <AudioPlayer 
+              src="/brown_noise.m4a" 
+              title="Braunes Rauschen" 
+              description="Tiefe Frequenzen, perfekt für Konzentration."
+              colorClass="bg-orange-500/20 text-orange-300"
+            />
+          </div>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="is-brown-better" title="Ist braunes Rauschen besser als weißes Rauschen zum Schlafen?">
         <p className="mt-4 leading-8 text-white/70">
-          Weißes Rauschen enthält alle hörbaren Frequenzen in gleicher Intensität. Es klingt wie ein statisches Rauschen oder ein konstantes 'Zischen'. Da es alle Frequenzen abdeckt, eignet es sich hervorragend, um plötzliche Geräusche wie zuschlagende Türen oder Autohupen zu maskieren.
-        </p>
-        <AudioPlayer 
-          src="/white_noise.m4a" 
-          title="Weißes Rauschen" 
-          description="Gleichmäßiges statisches Rauschen, das alle Frequenzen gleichmäßig maskiert."
-          colorClass="bg-slate-500/20 text-slate-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          <strong>Bestens geeignet für:</strong> Maskierung von Umgebungsgeräuschen, Einschlafhilfe für Babys und neutraler Hintergrund in belebten Büros.
+          Für die überwiegende Mehrheit der Menschen: <strong>Ja</strong>. Während weißes Rauschen besser Lärm blockiert, empfinden viele das Zischen als störend. Braunes Rauschen signalisiert dem Nervensystem Sicherheit und hilft bei der Entspannung.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="pink-noise" title="Pinkes Rauschen: Die natürliche Wahl">
+      <ArticleSection id="adhd" title="Warum hilft braunes Rauschen bei ADHS?">
         <p className="mt-4 leading-8 text-white/70">
-          Pinkes Rauschen ähnelt dem weißen Rauschen, hat aber mehr Energie in den tieferen Frequenzen. Dies erzeugt einen weicheren, ausgewogeneren Klang, den viele als natürlicher empfinden. Denk an das Geräusch von stetigem Regen oder Wind in den Blättern.
-        </p>
-        <AudioPlayer 
-          src="/pink_noise.m4a" 
-          title="Pinkes Rauschen" 
-          description="Ein weicherer, ausgewogenerer Klang, der an stetigen Regen erinnert."
-          colorClass="bg-pink-500/20 text-pink-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          <strong>Bestens geeignet für:</strong> Verbesserung der Schlafqualität, Entspannung ohne das 'statische' Gefühl und langfristigen Fokus.
+          Bei ADHS sucht das Gehirn ständig nach Dopamin und Stimulation. Braunes Rauschen fungiert als kontinuierliche Audiomassage, die das Bedürfnis des Gehirns nach Stimulation befriedigt, sodass Sie sich intensiv auf eine Aufgabe konzentrieren können.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="brown-noise" title="Braunes Rauschen: Die tiefe Ruhe">
-        <p className="mt-4 leading-8 text-white/70">
-          Braunes Rauschen (auch rotes Rauschen genannt) geht noch weiter als pinkes Rauschen und konzentriert sich stark auf tiefe Bässe. Es klingt wie ein tiefes Grollen, ein ferner Wasserfall oder das Brummen in einer Flugzeugkabine.
-        </p>
-        <AudioPlayer 
-          src="/brown_noise.m4a" 
-          title="Braunes Rauschen" 
-          description="Tiefe, grollende tiefe Frequenzen, ideal für tiefe Konzentration."
-          colorClass="bg-orange-500/20 text-orange-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          In letzter Zeit hat braunes Rauschen in der ADHS-Community stark an Popularität gewonnen. Viele finden, dass die tiefe, immersive Qualität hilft, einen unruhigen Geist effektiver zu beruhigen als höherfrequente Klänge.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          <strong>Bestens geeignet für:</strong> ADHS-Management, Deep Focus, intensive Entspannung und für alle, die hohe Frequenzen als störend empfinden.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="green-noise" title="Grünes Rauschen: Die Harmonie der Natur">
-        <p className="mt-4 leading-8 text-white/70">
-          Grünes Rauschen wird oft als der Hintergrundklang der Natur beschrieben. Es konzentriert sich auf die mittleren Frequenzen, ähnlich dem, was man in einem Wald oder an einem ruhigen Bach hört. Es ist weniger scharf als weißes Rauschen und weniger basslastig als braunes Rauschen.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          <strong>Bestens geeignet für:</strong> Friedliche Atmosphäre, Entspannung ohne schweren Bass und für Liebhaber natürlicher Klanglandschaften.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="adhd-noise" title="Welches Rauschen ist am besten bei ADHS?">
-        <p className="mt-4 leading-8 text-white/70">
-          Eine häufige Frage in neurodivergenten Communities lautet: <strong>Welche Rauschfarbe ist am besten bei ADHS?</strong> Obwohl jedes Gehirn anders ist, ist <strong>braunes Rauschen</strong> oft der absolute Favorit.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Da braunes Rauschen tiefer ist und das hochfrequente Zischen des weißen Rauschens fehlt, berichten viele Menschen mit ADHS, dass es eine Art „schwere Decke“ aus Klang bildet, die kreisende Gedanken beruhigt. Es liefert gerade genug sensorischen Input, um das Stimulationsbedürfnis des Gehirns zu befriedigen, sodass sich der präfrontale Cortex auf die anstehende Aufgabe konzentrieren kann, ohne durch innere oder äußere Störungen abgelenkt zu werden.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Wenn du <em>braunes Rauschen mit weißem Rauschen bei ADHS</em> vergleichst, beginne am besten mit braunem Rauschen zum Lernen oder Arbeiten und schaue, ob es dir hilft, leichter in den Flow-Zustand zu kommen.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="summary" title="Was solltest du wählen?">
-        <p className="mt-4 leading-8 text-white/70">
-          Die 'beste' Farbe ist reine Geschmackssache. Wir empfehlen mit weißem Rauschen zu beginnen, wenn du laute Geräusche ausblenden musst, aber auf pink oder braun zu wechseln, wenn du das statische Zischen als zu scharf empfindest.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Mit <strong>Calma</strong> musst du dich nicht für eines entscheiden. Du kannst verschiedene Rauschfarben mischen und mit Naturtexturen oder atmosphärischen Klängen ergänzen, um einen wirklich persönlichen Mix zu erstellen.
-        </p>
-      </ArticleSection>
-    
-      <ArticleSection id="comparison-table" title="Vergleichstabelle: Farben des Rauschens">
-        <div className="overflow-x-auto mt-6 rounded-2xl border border-white/10 bg-white/5">
+      <ArticleSection id="comparison-table" title="Vergleichstabelle">
+        <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
           <table className="w-full text-left text-sm text-white/70">
-            <thead className="bg-white/10 text-white">
+            <thead className="bg-slate-800/50 text-white">
               <tr>
-                <th className="px-4 py-3 font-semibold">Rauschfarbe</th>
-                <th className="px-4 py-3 font-semibold">Klingt wie</th>
-                <th className="px-4 py-3 font-semibold">Am besten für</th>
+                <th className="px-6 py-4 font-semibold">Farbe</th>
+                <th className="px-6 py-4 font-semibold">Klingt wie</th>
+                <th className="px-6 py-4 font-semibold">Am besten für</th>
               </tr>
             </thead>
-            <tbody className="divide-y divide-white/10">
+            <tbody className="divide-y divide-white/5">
               <tr>
-                <td className="px-4 py-3 font-medium text-white">Weißes Rauschen</td>
-                <td className="px-4 py-3">Statisches Rauschen, Ventilator</td>
-                <td className="px-4 py-3">Ausblenden lauter Geräusche, Babyschlaf, Büro-Hintergrund</td>
+                <td className="px-6 py-4 font-medium text-slate-300">Weiß</td>
+                <td className="px-6 py-4">Fernseher, Ventilator</td>
+                <td className="px-6 py-4">Maskierung lauter Geräusche (Schnarchen).</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 font-medium text-white">Rosa Rauschen</td>
-                <td className="px-4 py-3">Stetiger Regen, Blätterrauschen</td>
-                <td className="px-4 py-3">Tiefschlaf, Konzentration, Entspannung</td>
+                <td className="px-6 py-4 font-medium text-pink-300">Rosa</td>
+                <td className="px-6 py-4">Regen, Blätter</td>
+                <td className="px-6 py-4">Tiefschlaf, Entspannung.</td>
               </tr>
               <tr>
-                <td className="px-4 py-3 font-medium text-white">Braunes Rauschen</td>
-                <td className="px-4 py-3">Ferner Donner, starker Regen, Wasserfall</td>
-                <td className="px-4 py-3">ADHS-Fokus, tiefe Entspannung, Lernen</td>
-              </tr>
-              <tr>
-                <td className="px-4 py-3 font-medium text-white">Grünes Rauschen</td>
-                <td className="px-4 py-3">Wald, sanfter Bach</td>
-                <td className="px-4 py-3">Stressabbau, Meditation, Naturfreunde</td>
+                <td className="px-6 py-4 font-medium text-orange-300">Braun</td>
+                <td className="px-6 py-4">Flugzeug, Donner</td>
+                <td className="px-6 py-4">ADHS-Fokus, Beruhigung rasender Gedanken.</td>
               </tr>
             </tbody>
           </table>
         </div>
+        <div className="mt-12 flex justify-center">
+          <a
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex transition hover:scale-105"
+          >
+            <Image
+              src="/google-play-badge.png"
+              alt="Calma App herunterladen"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+            />
+          </a>
+        </div>
       </ArticleSection>
 
-      <ArticleSection id="faq" title="Häufig gestellte Fragen">
+      <ArticleSection id="faq" title="Häufig gestellte Fragen (FAQ)">
         <div className="mt-6 space-y-6">
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Hilft weißes Rauschen beim Schlafen?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ja, weißes Rauschen hilft beim Schlafen, indem es störende Hintergrundgeräusche übertönt und eine konstante akustische Umgebung schafft, die dem Gehirn signalisiert, sich zu entspannen.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">Ist braunes Rauschen besser als weißes Rauschen zum Schlafen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Für viele Menschen, ja. Es entfernt das hohe Zischen und klingt wie ein tiefer Wasserfall, was beruhigend wirkt.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Was ist der Unterschied zwischen weißem und rosa Rauschen?</h3>
-            <p className="mt-2 leading-7 text-white/70">Weißes Rauschen enthält alle Frequenzen in gleicher Intensität und klingt scharf. Rosa Rauschen betont tiefere Frequenzen und klingt weicher, ähnlich wie stetiger Regen.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">Warum hilft braunes Rauschen bei ADHS?</h3>
+            <p className="mt-2 leading-7 text-white/70">Es bietet kontinuierliche Stimulation und verhindert so, dass das Gehirn nach Ablenkungen sucht.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Braunes oder weißes Rauschen zum Schlafen: was ist besser?</h3>
-            <p className="mt-2 leading-7 text-white/70">Für viele ist braunes Rauschen besser zum Schlafen, da das tiefe Grollen beruhigender und weniger scharf ist als das hochfrequente Zischen des weißen Rauschens.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">Was ist der Unterschied zwischen rosa, braunem und weißem Rauschen?</h3>
+            <p className="mt-2 leading-7 text-white/70">Weißes Rauschen hat in allen Frequenzen die gleiche Energie. Rosa dämpft die hohen Töne, braunes erzeugt ein sehr tiefes Grollen.</p>
           </div>
         </div>
       </ArticleSection>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Hilft weißes Rauschen beim Schlafen?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ja, weißes Rauschen hilft beim Schlafen, indem es störende Hintergrundgeräusche übertönt und eine konstante akustische Umgebung schafft, die dem Gehirn signalisiert, sich zu entspannen."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Was ist der Unterschied zwischen weißem und rosa Rauschen?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Weißes Rauschen enthält alle Frequenzen in gleicher Intensität und klingt scharf. Rosa Rauschen betont tiefere Frequenzen und klingt weicher, ähnlich wie stetiger Regen."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Braunes oder weißes Rauschen zum Schlafen: was ist besser?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Für viele ist braunes Rauschen besser zum Schlafen, da das tiefe Grollen beruhigender und weniger scharf ist als das hochfrequente Zischen des weißen Rauschens."
-                }
-              }
-            ]
-          })
-        }}
-      />
-      
-      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
-        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
-        <div>
-          <p className="font-semibold text-white">Geschrieben vom Calma Team</p>
-          <p className="text-sm text-white/60">Experten für Schlafhygiene und Sounddesign, die sich dafür einsetzen, Ihnen zu erholsameren Nächten zu verhelfen.</p>
-        </div>
-      </div>
     </ArticlePage>
   );
 }
