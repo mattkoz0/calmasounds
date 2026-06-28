@@ -2,207 +2,211 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
-
-const articleTitle = "Sons de chuva vs. Ruído branco para dormir | Blog do Calma";
-const articleDescription =
-  "Compare sons de chuva e ruído branco para descobrir o que funciona melhor para o sono, relaxamento e criação de um ambiente tranquilo.";
-const articleUrl = "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: articleTitle,
-  description: articleDescription,
+  title: "A chuva é considerada ruído branco? | Calma",
+  description:
+    "A chuva é ruído branco ou ruído rosa? Descubra a diferença científica, ouça amostras de áudio e saiba qual é melhor para um sono profundo.",
   keywords: [
-    "rain sounds vs white noise",
+    "chuva é ruído branco",
+    "som de chuva ruído branco",
+    "chuva ou ruído branco",
     "sons de chuva para dormir",
-    "ruido branco para dormir",
-    "melhores sons para dormir",
-    "comparacao de sons de sono",
-    "blog do calma",
-    "app para dormir melhor",
-    "promover sono profundo",
-    "ajuda para adormecer",
-    "sons calmantes noite",
-    "melhorar qualidade do sono",
+    "ruído rosa chuva",
+    "calma blog",
   ],
   alternates: {
-    canonical: articleUrl,
+    canonical: "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: articleTitle,
-    description: articleDescription,
-    url: articleUrl,
+    title: "A chuva é considerada ruído branco?",
+    description:
+      "Descubra a diferença científica entre a chuva e o ruído branco, e saiba qual é melhor para o seu sono.",
+    url: "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "pt_BR",
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: articleTitle,
-    description: articleDescription,
+    title: "A chuva é considerada ruído branco?",
+    description:
+      "Descubra a diferença científica entre os sons da chuva e o ruído branco.",
   },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Sons de chuva vs. Ruído branco: qual é o melhor para dormir?",
-  description: articleDescription,
-  author: {
-    "@type": "Organization",
-    name: "Calma Team",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: articleUrl,
-  datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "A chuva é considerada ruído branco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tecnicamente, não. Os sons da chuva são geralmente considerados ruído rosa. Enquanto o ruído branco tem energia igual em todas as frequências (soando como um chiado), a chuva tem mais energia nas frequências mais baixas, tornando-a mais profunda e relaxante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A chuva é ruído branco ou ruído rosa?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A chuva natural é classificada como ruído rosa. O ruído rosa contém todas as frequências como o ruído branco, mas amplifica as frequências baixas e profundas e suaviza os tons altos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A chuva pode ser considerada ruído branco para dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, na conversa do dia a dia, o termo 'ruído branco' é usado para descrever qualquer som de fundo constante. Embora cientificamente incorreto, a chuva serve para mascarar ruídos indesejados."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual é melhor para dormir: som de chuva ou ruído branco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Depende da sua preferência. A chuva (ruído rosa) é melhor para relaxar, enquanto o ruído branco é melhor para bloquear agressivamente ruídos agudos, como roncos ou trânsito."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Por que os sons de chuva ajudam a dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A chuva cria um ambiente acústico não ameaçador. Esse som contínuo mascara ruídos repentinos e acalma naturalmente o sistema nervoso, sinalizando segurança ao cérebro."
+      }
+    }
+  ]
 };
 
-const relatedArticles = [
-  {
-    href: "/pt-BR/blog/white-noise-for-sleep",
-    title: "Ruído branco para dormir",
-    description:
-      "Uma análise detalhada de como o ruído branco bloqueia distrações para uma melhor noite de descanso.",
-  },
-  {
-    href: "/pt-BR/blog/best-sounds-for-sleep",
-    title: "Melhores sons para dormir",
-    description:
-      "Descubra o guia definitivo dos melhores áudios apoiados pela ciência para a hora de dormir.",
-  },
-];
-
-export default function RainSoundsVsWhiteNoisePage() {
+export default function RainSoundsVsWhiteNoisePagePTBR() {
   return (
     <ArticlePage
       slug="rain-sounds-vs-white-noise"
       jsonLd={articleJsonLd}
-      title="Sons de chuva vs ruído branco para dormir: qual deles é o melhor?"
-      intro="Tanto os sons de chuva quanto o ruído branco são escolhas incrivelmente populares para a hora de dormir, mas eles servem a propósitos neurológicos e emocionais diferentes. Um deles parece orgânico, suave e acolhedor, enquanto o outro cria uma “manta de áudio” estável e consistente que pode mascarar perfeitamente os ruídos externos. A melhor escolha depende inteiramente do tipo de ambiente de sono que ajuda o seu sistema nervoso a relaxar."
-      topLinkHref="/pt-BR/sleep-sounds-app"
-      topLinkLabel="Explorar app de sono"
-      ctaHref="/pt-BR/sleep-sounds-app"
-      ctaLabel="Explorar app de sons de sono"
+      title="A chuva é considerada ruído branco? (E qual é melhor para dormir)"
+      intro="Se você já usou o som de uma tempestade para adormecer, deve ter se perguntado: a chuva é considerada ruído branco? Ambos são opções incrivelmente populares, mas serveem a propósitos neurológicos diferentes. Neste guia, responderemos à diferença científica entre os dois e qual você deve escolher para descansar melhor."
+      topLinkHref="/pt-BR/nature-sounds-app"
+      topLinkLabel="Explorar app de sons da natureza"
+      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+      ctaLabel="Baixar App Calma Grátis"
       secondaryCtaHref="/pt-BR/white-noise-app"
       secondaryCtaLabel="Explorar app de ruído branco"
       tableOfContents={[
-        { id: "o-que-sao-sons-de-chuva", title: "O que são sons de chuva?" },
-        { id: "o-que-e-ruido-branco", title: "O que é ruído branco?" },
-        { id: "quando-escolher-chuva", title: "Quando os sons de chuva são melhores" },
-        { id: "quando-escolher-ruido-branco", title: "Quando o ruído branco é melhor" },
-        { id: "veredicto", title: "Qual deles é o melhor para o sono em geral?" },
+        { id: "is-rain-white-noise", title: "A chuva é considerada ruído branco?" },
+        { id: "what-is-white-noise", title: "O que é o verdadeiro ruído branco?" },
+        { id: "when-to-choose-rain", title: "Quando escolher sons de chuva" },
+        { id: "when-to-choose-white-noise", title: "Quando escolher o ruído branco" },
+        { id: "verdict", title: "Qual é melhor para dormir?" },
         { id: "faq", title: "Perguntas Frequentes (FAQ)" },
       ]}
-      relatedArticles={relatedArticles}
+      relatedArticles={[
+        {
+          href: "/pt-BR/blog/white-noise-for-sleep",
+          title: "Ruído Branco para Dormir",
+          description: "Como o ruído branco bloqueia distrações.",
+        },
+        {
+          href: "/pt-BR/blog/best-sounds-for-sleep",
+          title: "Os Melhores Sons para Dormir",
+          description: "O guia definitivo de áudio para a hora de dormir.",
+        },
+      ]}
     >
-      <ArticleSection id="o-que-sao-sons-de-chuva" title="O que são sons de chuva?">
+      <ArticleSection id="is-rain-white-noise" title="A chuva é considerada ruído branco? (A resposta científica)">
         <p className="mt-4 leading-8 text-white/70">
-          Os sons de chuva são orgânicos, suaves e ambientais. Para a maioria das pessoas, eles criam uma associação emocional e aconchegante com o descanso, conforto e segurança — muitas vezes remetendo a memórias de infância de estar protegido dentro de casa durante uma tempestade.
+          A resposta curta é: <strong>Não, a chuva tecnicamente não é ruído branco.</strong> Sons de chuva natural são considerados <strong>ruído rosa</strong>. 
+        </p>
+        <p className="mt-4 leading-8 text-white/70">
+          O ruído rosa contém todas as frequências, mas coloca mais energia nas frequências baixas e profundas. Isso faz com que a chuva soe muito mais suave e orgânica para o ouvido humano.
         </p>
         <AudioPlayer 
           src="/rain.m4a" 
-          title="Chuva Constante" 
-          description="Som natural e atmosférico que promove conforto emocional."
+          title="Chuva Constante (Ruído Rosa)" 
+          description="Note o som profundo e atmosférico que promove conforto emocional."
           colorClass="bg-blue-500/20 text-blue-300"
         />
-        <p className="mt-4 leading-8 text-white/70">
-          Isso torna os sons de chuva especialmente atraentes se o seu objetivo não for apenas bloquear o ruído, mas acalmar ativamente o seu sistema nervoso. Os sons de chuva costumam funcionar bem para pessoas que desejam um ritual noturno mais suave e um tom emocional mais natural em torno do sono.
-        </p>
       </ArticleSection>
 
-      <ArticleSection id="o-que-e-ruido-branco" title="O que é ruído branco?">
+      <ArticleSection id="what-is-white-noise" title="O que é o verdadeiro ruído branco?">
         <p className="mt-4 leading-8 text-white/70">
-          O ruído branco é mais neutro e constante. Tecnicamente falando, contém todas as frequências audíveis tocadas em uma intensidade igual. Em vez de soar como um ambiente real, ele cria um „chiado“ constante de fundo que atua como uma barreira acústica.
+          Tecnicamente, ele contém <strong>todas as frequências audíveis reproduzidas com intensidade igual</strong>. Como as frequências altas são tão altas quanto as baixas, ele soa como a estática de uma televisão ou um ventilador.
         </p>
         <AudioPlayer 
           src="/white_noise.m4a" 
-          title="Ruído Branco" 
-          description="Um som contínuo de espectro completo que bloqueia distrações."
+          title="Verdadeiro Ruído Branco" 
+          description="Um chiado contínuo que bloqueia agressivamente as distrações."
           colorClass="bg-slate-500/20 text-slate-300"
         />
-        <p className="mt-4 leading-8 text-white/70">
-          Se ruídos repentinos e aleatórios — como trânsito, parceiros roncando ou vizinhos barulhentos — interrompem frequentemente sua sensação de calma, o ruído branco é cientificamente comprovado como mais eficaz do que sons ambientais mais suaves para „mascarar“ essas perturbações.
-        </p>
       </ArticleSection>
 
-      <ArticleSection id="quando-escolher-chuva" title="Quando os sons de chuva podem ser a melhor escolha">
+      <ArticleSection id="when-to-choose-rain" title="Quando os sons da chuva são a melhor escolha">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li>Você deseja uma atmosfera de sono mais emocional, aconchegante e natural.</li>
-          <li>Você sofre de ansiedade e precisa de um som que sinalize „segurança“ para o seu cérebro.</li>
-          <li>Sua rotina antes de dormir se concentra em desacelerar suavemente.</li>
-          <li>Você prefere um áudio que pareça menos técnico e mais imersivo.</li>
+          <li>Você deseja uma atmosfera de sono aconchegante e natural.</li>
+          <li>Você sofre de ansiedade e precisa de um som que indique \"segurança\".</li>
+          <li>Você acha o chiado agudo do verdadeiro ruído branco irritante.</li>
         </ul>
       </ArticleSection>
 
-      <ArticleSection id="quando-escolher-ruido-branco" title="Quando o ruído branco pode ser a melhor escolha">
+      <ArticleSection id="when-to-choose-white-noise" title="Quando o ruído branco é a melhor escolha">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li>Você quer um som de fundo estável e neutro que não mude.</li>
-          <li>Você é altamente sensível a ruídos externos imprevisíveis (por exemplo, morando na cidade).</li>
-          <li>Você prefere pura funcionalidade e mascaramento de som em vez de atmosfera.</li>
-          <li>Você está tentando ajudar um bebê a dormir (recém-nascidos respondem incrivelmente bem ao chiado constante do ruído branco).</li>
+          <li>Você é altamente sensível a ruídos externos (ex: sirenes, cães).</li>
+          <li>Você dorme ao lado de um parceiro que ronca.</li>
+          <li>Você precisa de um som de fundo neutro e constante.</li>
         </ul>
       </ArticleSection>
 
-      <ArticleSection id="veredicto" title="Qual deles é o melhor para o sono em geral?">
+      <ArticleSection id="verdict" title="Qual é melhor para dormir?">
         <p className="mt-4 leading-8 text-white/70">
-          Não há um vencedor universal. Os sons de chuva podem ser melhores para o relaxamento e conforto emocional, enquanto o ruído branco pode ser melhor para consistência e mascaramento de distrações. A resposta real é pessoal: o melhor som de sono é aquele que ajuda você a se sentir seguro, calmo e tranquilo o suficiente para se desligar do dia.
+          A melhor solução? <strong>Misture-os.</strong> Usando um aplicativo gratuito como o <strong>Calma</strong>, você pode sobrepor uma base de ruído branco com uma forte tempestade para obter o cobertor acústico definitivo.
         </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Em muitos casos, uma mixagem personalizada funciona melhor. Com o <a href="/pt-BR/sleep-sounds-app" className="text-emerald-400 hover:underline">aplicativo Calma</a>, você pode sobrepor uma base estável de ruído branco com uma cobertura suave de chuva, obtendo o melhor dos dois mundos.
-        </p>
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex transition hover:scale-105"
+            aria-label="Baixar App Calma"
+          >
+            <Image
+              src="/google-play-badge.png"
+              alt="Disponível no Google Play"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+            />
+          </a>
+        </div>
       </ArticleSection>
 
       <ArticleSection id="faq" title="Perguntas Frequentes (FAQ)">
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">A chuva é considerada ruído branco?</h3>
-            <p className="mt-2 leading-7 text-white/70">Rigorosamente falando, a chuva não é ruído branco puro. O ruído branco puro contém todas as frequências audíveis em intensidade igual. Os sons de chuva naturalmente têm mais energia nas frequências mais baixas, lo que os torna tecnicamente mais próximos do «ruído rosa». No entanto, na conversa cotidiana, as pessoas costumam usar o termo «ruído branco» para descrever qualquer som de fundo constante e calmante.</p>
+            <p className="mt-2 leading-7 text-white/70">Tecnicamente, não. Os sons da chuva são geralmente considerados ruído rosa e não ruído branco.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">O som de chuva é ruído branco?</h3>
-            <p className="mt-2 leading-7 text-white/70">Não, o som de chuva é tecnicamente classificado como ruído rosa e não ruído branco. Como a chuva tem um estrondo mais profundo e atmosférico com menos estática aguda, ela parece mais suave para o ouvido humano. É por isso que muitas pessoas preferem o som da chuva ao ruído branco artificial gerado por aparelhos.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">A chuva é ruído branco ou ruído rosa?</h3>
+            <p className="mt-2 leading-7 text-white/70">A chuva natural é classificada como ruído rosa, pois amplifica as frequências baixas para soar mais natural.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">A chuva pode ser considerada ruído branco para dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Sim, no dia a dia as pessoas chamam de 'ruído branco' qualquer som de fundo, incluindo a chuva.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Qual é melhor para dormir: som de chuva ou ruído branco?</h3>
+            <p className="mt-2 leading-7 text-white/70">A chuva é melhor para relaxar, enquanto o ruído branco é melhor para bloquear ruídos agudos.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">Por que os sons de chuva ajudam a dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Esse som contínuo mascara ruídos e acalma naturalmente o sistema nervoso, sinalizando segurança.</p>
           </div>
         </div>
       </ArticleSection>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "A chuva é considerada ruído branco?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Rigorosamente falando, a chuva não é ruído branco puro. O ruído branco puro contém todas as frequências audíveis em intensidade igual. Os sons de chuva naturalmente têm mais energia nas frequências mais baixas, o que os torna tecnicamente mais próximos do ruído rosa."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "O som de chuva é ruído branco?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Não, o som de chuva é tecnicamente classificado como ruído rosa e não ruído branco. Como a chuva tem um estrondo mais profundo e atmosférico com menos estática aguda, ela parece mais suave para o ouvido humano."
-                }
-              }
-            ]
-          })
-        }}
-      />
-      
-      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
-        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
-        <div>
-          <p className="font-semibold text-white">Escrito pela Equipe Calma</p>
-          <p className="text-sm text-white/60">Defensores da higiene do sono dedicados a ajudar você a construir rotinas noturnas mais tranquilas e baseadas na ciência.</p>
-        </div>
-      </div>
     </ArticlePage>
   );
 }
