@@ -40,7 +40,11 @@ const websiteJsonLd = {
 const softwareAppJsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Calma",
+  name: "Calma App",
+  sameAs: [
+    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
+    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+  ],
   applicationCategory: "HealthApplication",
   applicationSubCategory: "Sleep and Relaxation",
   operatingSystem: "Android 8.0 lub nowszy",

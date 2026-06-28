@@ -2,225 +2,194 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Los Mejores Sonidos para Dormir | Avalado por la Ciencia | Calma Blog",
+  title: "Los mejores sonidos para dormir (2026): ¿Qué sonido te hace dormir? | Calma",
   description:
-    "Descubre los mejores sonidos para dormir, desde el ruido blanco hasta la lluvia suave. Conoce la ciencia detrás del audio para el sueño y cómo mejorar tu descanso.",
+    "¿Cuáles son los mejores sonidos para dormir? Desde el ruido blanco hasta la lluvia profunda y el ruido marrón para el TDAH: explora sonidos respaldados por la ciencia.",
   keywords: [
     "mejores sonidos para dormir",
-    "sonidos para dormir",
-    "mejores audios para sueño",
-    "sonidos de lluvia para dormir",
-    "ruido blanco para dormir",
-    "blog de calma",
-    "app para dormir mejor",
-    "promover sueño profundo",
-    "ayuda para conciliar el sueño",
-    "sonidos relajantes noche",
-    "mejorar calidad del sueño",
+    "buenos sonidos para dormir",
+    "sonidos para dormir mejor",
+    "ruidos para ayudarte a dormir",
+    "qué sonido te hace dormir",
+    "calma app",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/blog/best-sounds-for-sleep",
   },
   openGraph: {
-    title: "Los Mejores Sonidos para Dormir | Avalado por la Ciencia | Calma Blog",
+    title: "Los mejores sonidos para dormir (2026)",
     description:
-      "Descubre los mejores sonidos para dormir, desde el ruido blanco hasta la lluvia suave. Conoce la ciencia detrás del audio para el sueño y cómo mejorar tu descanso.",
+      "¿Cuáles son los mejores sonidos para dormir? Explora audios respaldados por la ciencia.",
     url: "https://www.calmasounds.com/es/blog/best-sounds-for-sleep",
     siteName: "Calma",
     locale: "es_ES",
     type: "article",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Los Mejores Sonidos para Dormir | Avalado por la Ciencia | Calma Blog",
-    description:
-      "Descubre los mejores sonidos para dormir, desde el ruido blanco hasta la lluvia suave.",
-  },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Los mejores sonidos para dormir: La guía definitiva sobre audio relajante",
-  description:
-    "Descubre los mejores sonidos para dormir, desde el ruido blanco hasta la lluvia suave. Conoce la ciencia detrás del audio para el sueño y cómo mejorar tu descanso.",
-  author: {
-    "@type": "Organization",
-    name: "Calma Team",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/es/blog/best-sounds-for-sleep",
-  datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué sonido te hace dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El mejor sonido para hacerte dormir es uno que sea continuo y no amenazante, como el ruido rosa (lluvia) o el ruido marrón. Estos sonidos ralentizan las ondas cerebrales y enmascaran ruidos repentinos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuáles son los buenos sonidos para dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Los buenos sonidos incluyen lluvia constante, tormentas distantes, olas del mar, ruido blanco y ruido marrón. La clave es la consistencia que ayuda a relajar el sistema nervioso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué ruidos te ayudan a dormir mejor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Si vives en un entorno ruidoso, el ruido blanco es el mejor para bloquear agresivamente el tráfico. Si tienes pensamientos acelerados, los ruidos más profundos como el ruido marrón son mejores."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es malo dormir con sonidos toda la noche?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, dormir con sonidos de fondo constantes a bajo volumen es perfectamente seguro y se recomienda para el insomnio. También puedes usar un temporizador para desvanecer el sonido."
+      }
+    }
+  ]
 };
 
-export default function BestSoundsForSleepPage() {
+export default function BestSoundsForSleepPageES() {
   return (
     <ArticlePage
       slug="best-sounds-for-sleep"
       jsonLd={articleJsonLd}
+      title="Los mejores sonidos para dormir (2026): ¿Qué sonido te hace dormir?"
+      intro="Si tienes dificultades para conciliar el sueño, no estás solo. Millones de personas buscan cada noche la respuesta a una pregunta sencilla: ¿Qué sonido te hace dormir? Aunque el silencio total puede parecer ideal, hace que el cerebro esté hiperalerta. El secreto para descansar es crear una 'manta acústica' constante. Exploremos los mejores sonidos para dormir, respaldados por la ciencia."
       topLinkHref="/es/sleep-sounds-app"
-      topLinkLabel="Explorar app de sueño"
-      title="Los mejores sonidos para dormir: ¿qué ayuda a relajarse?"
-      intro="Encontrar el sonido adecuado para dormir puede transformar tus noches. Mientras que algunas personas se relajan al instante con una lluvia suave, otras prefieren el poder de enmascaramiento del ruido blanco o el zumbido profundo del ruido marrón. Los mejores sonidos para dormir no son iguales para todos: dependen de tu entorno, tu sistema nervioso y lo que te ayude a dejar atrás el día."
-      ctaHref="/es/sleep-sounds-app"
-      ctaLabel="Crear tus propios sonidos"
+      topLinkLabel="Explorar app de sonidos para dormir"
+      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+      ctaLabel="Descargar Calma Gratis"
       secondaryCtaHref="/es/white-noise-app"
-      secondaryCtaLabel="Probar app de ruido blanco"
+      secondaryCtaLabel="Explorar app de ruido blanco"
       tableOfContents={[
-        { id: "por-que-ayudan", title: "¿Por qué los sonidos nos ayudan a dormir?" },
-        { id: "ruido-blanco", title: "Ruido Blanco: El Enmascarador Definitivo" },
-        { id: "ruido-rosa-marron", title: "Ruido Rosa y Marrón: Descanso más Profundo" },
-        { id: "sonidos-naturaleza", title: "Sonidos de la Naturaleza y Lluvia" },
-        { id: "como-elegir", title: "Cómo elegir el mejor sonido" },
-        { id: "faq", title: "Preguntas Frecuentes (FAQ)" },
+        { id: "what-makes-you-sleep", title: "¿Qué sonido te hace dormir?" },
+        { id: "best-sounds", title: "Los 3 mejores sonidos para dormir" },
+        { id: "how-to-mix", title: "Cómo mezclar sonidos" },
+        { id: "faq", title: "Preguntas Frecuentes" },
       ]}
       relatedArticles={[
         {
           href: "/es/blog/rain-sounds-vs-white-noise",
-          title: "Sonido de Lluvia vs. Ruido Blanco",
-          description:
-            "Compara la sensación emocional y las diferencias prácticas entre la lluvia natural y el ruido estático constante.",
-        },
-        {
-          href: "/es/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "Colores del Ruido Explicados",
-          description:
-            "Un análisis profundo del ruido blanco, rosa y marrón, y cómo afectan a tu cerebro.",
+          title: "Lluvia vs Ruido Blanco",
+          description: "¿Cuál ha demostrado científicamente ayudarte a dormir mejor?",
         },
       ]}
     >
-      <ArticleSection id="por-que-ayudan" title="¿Por qué los ruidos nos ayudan a dormir?">
+      <ArticleSection id="what-makes-you-sleep" title="¿Qué sonido te hace dormir? (La ciencia)">
         <p className="mt-4 leading-8 text-white/70">
-          Puede parecer contradictorio añadir ruido a una habitación cuando intentas dormir. Sin embargo, el silencio absoluto no siempre es ideal. En una habitación perfectamente silenciosa, tu cerebro se vuelve hipersensible a cualquier cambio en el entorno acústico, como un perro ladrando, una puerta golpeándose o un coche pasando.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Los buenos sonidos para conciliar el sueño funcionan mediante un proceso llamado <strong>enmascaramiento de sonido</strong>. Al introducir un ruido de fondo constante y predecible, la diferencia entre el silencio de la habitación y las interrupciones repentinas se reduce drásticamente. Tu cerebro ya no percibe los sonidos repentinos como una amenaza, lo que te permite dormir sin interrupciones.
+          Tu cerebro nunca apaga su audición, incluso durante el sueño profundo. El mejor sonido para dormir es aquel que utiliza el <strong>enmascaramiento de sonido</strong>, reduciendo el contraste entre el silencio total y un ruido repentino. Los buenos sonidos siempre son constantes.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="ruido-blanco" title="Ruido Blanco: El Enmascarador Definitivo">
-        <p className="mt-4 leading-8 text-white/70">
-          El ruido blanco es quizás el sonido de sueño más famoso. Contiene todas las frecuencias audibles reproducidas a una intensidad constante, lo que da como resultado un sonido siseante (como un ventilador o la estática de la televisión). Al cubrir todo el espectro, es increíblemente eficaz para bloquear una amplia gama de ruidos externos.
-        </p>
-        <AudioPlayer 
-          src="/white_noise.m4a" 
-          title="Muestra de Ruido Blanco" 
-          description="Un sonido constante de espectro completo que bloquea distracciones de alta frecuencia."
-          colorClass="bg-slate-500/20 text-slate-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          <strong>Ideal para:</strong> Personas que viven en ciudades, de sueño ligero o que intentan dormir en entornos impredecibles como hoteles. Si buscas el ruido más fiable para dormir a pesar de las interrupciones ruidosas, el ruido blanco es tu mejor opción.
-        </p>
+      <ArticleSection id="best-sounds" title="Los 3 mejores sonidos para dormir">
+        <div className="mt-8 space-y-12">
+          
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">1. Lluvia Profunda (Ruido Rosa)</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              La lluvia se considera científicamente \"ruido rosa\". Tiene un sonido más profundo y rico que el ruido blanco y es increíblemente eficaz para reducir las ondas cerebrales.
+            </p>
+            <AudioPlayer 
+              src="/rain.m4a" 
+              title="Lluvia Profunda" 
+              description="Un sonido acogedor que calma naturalmente el sistema nervioso."
+              colorClass="bg-blue-500/20 text-blue-300"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">2. Verdadero Ruido Blanco</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              Si necesitas bloquear agresivamente ruidos fuertes e impredecibles (como ronquidos), este es el rey indiscutible.
+            </p>
+            <AudioPlayer 
+              src="/white_noise.m4a" 
+              title="Ruido Blanco" 
+              description="El muro acústico definitivo."
+              colorClass="bg-slate-500/20 text-slate-300"
+            />
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">3. Ruido Marrón</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              El ruido marrón elimina el siseo agudo del ruido blanco, enfocándose en un retumbo profundo (similar a la cabina de un avión). Muy recomendado para calmar una mente hiperactiva.
+            </p>
+            <AudioPlayer 
+              src="/brown_noise.m4a" 
+              title="Ruido Marrón" 
+              description="Perfecto para relajar pensamientos acelerados."
+              colorClass="bg-orange-500/20 text-orange-300"
+            />
+          </div>
+
+        </div>
       </ArticleSection>
 
-      <ArticleSection id="ruido-rosa-marron" title="Ruido Rosa y Marrón: Descanso más Profundo">
+      <ArticleSection id="how-to-mix" title="Cómo mezclar sonidos para descansar mejor">
         <p className="mt-4 leading-8 text-white/70">
-          Si el ruido blanco te resulta demasiado agudo o chirriante, puede que prefieras el <strong>ruido rosa</strong> o el <strong>ruido marrón</strong>. El ruido rosa enfatiza las frecuencias más bajas, asemejándose a una lluvia o viento constante. El ruido marrón va aún más profundo, eliminando casi por completo los tonos agudos para crear un zumbido sordo como el de una cascada lejana o la cabina de un avión.
+          Usando una aplicación gratuita como <strong>Calma</strong>, puedes crear tu propio paisaje sonoro. Comienza con una base de <strong>ruido marrón</strong>, añade una capa gruesa de <strong>lluvia</strong> y un poco de <strong>truenos lejanos</strong>.
         </p>
-        <AudioPlayer 
-          src="/brown_noise.m4a" 
-          title="Muestra de Ruido Marrón" 
-          description="Una textura profunda y retumbante, perfecta para calmar una mente ocupada."
-          colorClass="bg-orange-500/20 text-orange-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          Diversos estudios sugieren que el ruido rosa puede mejorar la calidad del sueño profundo al sincronizarse con tus ondas cerebrales. El ruido marrón, por otro lado, es muy popular para apagar los pensamientos acelerados antes de acostarse.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="sonidos-naturaleza" title="Sonidos de la Naturaleza y Lluvia: Confort Emocional">
-        <p className="mt-4 leading-8 text-white/70">
-          Para muchas personas, los zumbidos mecánicos no resultan relajantes. Aquí es donde brillan los sonidos de la naturaleza. El sonido de la lluvia, las olas suaves del mar o el crepitar del fuego ofrecen tanto enmascaramiento como confort emocional.
-        </p>
-        <AudioPlayer 
-          src="/rain.m4a" 
-          title="Lluvia Constante" 
-          description="Lluvia natural y relajante para crear una atmósfera acogedora y segura en el dormitorio."
-          colorClass="bg-blue-500/20 text-blue-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          Nuestros cerebros están programados para asociar el sonido de la lluvia con la seguridad y el cobijo. Estos sonidos orgánicos y no amenazantes le indican a tu sistema nervioso que no hay necesidad de estar alerta, lo que los convierte en los mejores sonidos si la ansiedad te impide conciliar el sueño.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="como-elegir" title="Cómo elegir el mejor sonido para dormir">
-        <p className="mt-4 leading-8 text-white/70">
-          No existe una respuesta única sobre qué te ayuda a dormir mejor. Para encontrar tu audio ideal, prueba estos consejos:
-        </p>
-        <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li><strong>Identifica tu problema principal:</strong> Si es el ruido externo (tráfico, ronquidos), opta por el ruido blanco o rosa. Si es el estrés interno (pensamientos acelerados), prueba con el ruido marrón o sonidos naturales.</li>
-          <li><strong>Crea tu propia mezcla:</strong> Con una aplicación como <a href="/es/sleep-sounds-app" className="text-emerald-400 hover:underline">Calma</a>, no tienes que elegir uno solo. Puedes mezclar ruido marrón profundo con una capa de lluvia suave para obtener lo mejor de ambos mundos.</li>
-          <li><strong>Mantén un volumen seguro:</strong> Los sonidos de fondo deben permanecer suaves. Mantén el volumen por debajo de los 50 decibelios para proteger tu audición y evitar sobreestimular el cerebro.</li>
-          <li><strong>Prueba durante varias noches:</strong> Tu cerebro puede tardar unos días en adaptarse. Prueba un sonido durante al menos 3 noches antes de decidir si funciona para ti.</li>
-        </ul>
+        <div className="mt-8 flex justify-center">
+          <a
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex transition hover:scale-105"
+            aria-label="Descargar App Calma Gratis"
+          >
+            <Image
+              src="/google-play-badge.png"
+              alt="Disponible en Google Play"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+            />
+          </a>
+        </div>
       </ArticleSection>
 
       <ArticleSection id="faq" title="Preguntas Frecuentes (FAQ)">
         <div className="mt-6 space-y-6">
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">¿Cuál es el sonido más relajante para conciliar el sueño?</h3>
-            <p className="mt-2 leading-7 text-white/70">Aunque es subjetivo, los estudios y los datos de usuarios muestran constantemente que la lluvia constante, el ruido rosa y las olas lentas del mar se encuentran entre los sonidos más relajantes, ya que imitan la seguridad acústica de la naturaleza.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Qué sonido te hace dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Un sonido continuo y no amenazante, como el ruido rosa (lluvia) o el ruido marrón, ralentiza las ondas cerebrales y enmascara los ruidos repentinos.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">¿Es malo escuchar ruido blanco toda la noche?</h3>
-            <p className="mt-2 leading-7 text-white/70">Generalmente es seguro para los adultos escuchar ruido blanco toda la noche, siempre que se mantenga a un volumen bajo y seguro (por debajo de 50-60 dB).</p>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Cuáles son los buenos sonidos para dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Lluvia constante, olas del mar, ruido blanco y ruido marrón. La clave es la consistencia que ayuda a relajar el sistema nervioso.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">¿Pueden los sonidos ayudarte a dormir mejor si tienes la mente muy activa?</h3>
-            <p className="mt-2 leading-7 text-white/70">Sí. Los sonidos constantes de baja frecuencia como el ruido marrón proporcionan un estímulo sensorial no amenazante que satisface la necesidad de estímulo de tu cerebro, evitando que caiga en pensamientos ansiosos o repetitivos.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Qué ruidos te ayudan a dormir mejor?</h3>
+            <p className="mt-2 leading-7 text-white/70">El ruido blanco es ideal para bloquear ruidos agresivos como el tráfico. Si tienes ansiedad, los ruidos más profundos como la lluvia son mejores.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Es malo dormir con sonidos toda la noche?</h3>
+            <p className="mt-2 leading-7 text-white/70">No, dormir con un volumen bajo es perfectamente seguro y muy recomendado. También puedes usar un temporizador de apagado.</p>
           </div>
         </div>
       </ArticleSection>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "¿Cuál es el sonido más relajante para conciliar el sueño?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Aunque es subjetivo, los estudios y los datos de usuarios muestran constantemente que la lluvia constante, el ruido rosa y las olas lentas del mar se encuentran entre los sonidos más relajantes, ya que imitan la seguridad acústica de la naturaleza."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "¿Es malo escuchar ruido blanco toda la noche?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Generalmente es seguro para los adultos escuchar ruido blanco toda la noche, siempre que se mantenga a un volumen bajo y seguro (por debajo de 50-60 dB)."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "¿Pueden los sonidos ayudarte a dormir mejor si tienes la mente muy activa?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Sí. Los sonidos constantes de baja frecuencia como el ruido marrón proporcionan un estímulo sensorial no amenazante que satisface la necesidad de estímulo de tu cerebro, evitando que caiga en pensamientos ansiosos o repetitivos."
-                }
-              }
-            ]
-          })
-        }}
-      />
-      
-      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
-        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
-        <div>
-          <p className="font-semibold text-white">Escrito por el Equipo de Calma</p>
-          <p className="text-sm text-white/60">Defensores de la higiene del sueño y apasionados del diseño sonoro dedicados a ayudarte a construir rutinas nocturnas más tranquilas.</p>
-        </div>
-      </div>
     </ArticlePage>
   );
 }
