@@ -5,7 +5,7 @@ import { ArticleSection } from "../_components/article-section";
 export const metadata: Metadata = {
   title: "Mejores Sonidos para el Tinnitus | Calma Blog",
   description: "Descubre cómo la terapia de sonido puede proporcionar alivio para el tinnitus.",
-  keywords: ["sonidos para tinnitus", "alivio del tinnitus", "ruido blanco tinnitus"
+  keywords: ["sonidos para tinnitus", "alivio del tinnitus", "ruido blanco tinnitus",
     "app para dormir mejor",
     "promover sueño profundo",
     "ayuda para conciliar el sueño",

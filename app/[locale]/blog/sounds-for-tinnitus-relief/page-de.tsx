@@ -5,7 +5,7 @@ import { ArticleSection } from "../_components/article-section";
 export const metadata: Metadata = {
   title: "Beste Geräusche gegen Tinnitus | Calma Blog",
   description: "Entdecke, wie Klangtherapie und Rauschen bei Tinnitus helfen können.",
-  keywords: ["tinnitus geräusche", "tinnitus linderung", "weißes rauschen tinnitus"
+  keywords: ["tinnitus geräusche", "tinnitus linderung", "weißes rauschen tinnitus",
     "besser schlafen App",
     "Tiefschlaf fördern",
     "Einschlafhilfe",

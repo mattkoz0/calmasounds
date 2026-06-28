@@ -10,8 +10,7 @@ export const metadata: Metadata = {
     "baby sleep sounds",
     "pink noise for babies",
     "calma app",
-    "sleep sounds app"
-  
+    "sleep sounds app",
     "app para dormir mejor",
     "promover sueño profundo",
     "ayuda para conciliar el sueño",

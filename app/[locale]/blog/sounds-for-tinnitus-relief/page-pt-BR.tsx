@@ -5,7 +5,7 @@ import { ArticleSection } from "../_components/article-section";
 export const metadata: Metadata = {
   title: "Melhores Sons para Zumbido | Calma Blog",
   description: "Descubra como a terapia sonora pode proporcionar alívio para o zumbido.",
-  keywords: ["sons para zumbido", "alívio do zumbido", "ruído branco zumbido"
+  keywords: ["sons para zumbido", "alívio do zumbido", "ruído branco zumbido",
     "app para dormir melhor",
     "promover sono profundo",
     "ajuda para adormecer",

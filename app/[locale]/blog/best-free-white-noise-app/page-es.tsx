@@ -4,47 +4,43 @@ import { ArticleSection } from "../_components/article-section";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "La mejor aplicación gratuita de ruido blanco para dormir en 2026 | Calma",
+  title: "La mejor app de ruido blanco gratis para dormir en 2026 | Calma",
   description:
-    "¿Buscas la mejor aplicación gratuita de ruido blanco para ayudarte a conciliar el sueño? Descubre por qué Calma es la opción perfecta para sonidos relajantes.",
+    "¿Buscas una alternativa a Calm o BetterSleep? Descubre por qué Calma es la mejor aplicación de ruido blanco 100% gratuita para dormir y relajarte.",
   keywords: [
     "mejor app de ruido blanco",
-    "sonidos para dormir gratis",
-    "app de ruido blanco",
-    "aplicación de ruido blanco gratis",
+    "app de sonidos para dormir gratis",
+    "alternativa a calm gratis",
+    "bettersleep alternativa",
+    "ruido blanco gratis",
+    "app para dormir",
     "calma app",
     "app para dormir mejor",
     "promover sueño profundo",
     "ayuda para conciliar el sueño",
     "sonidos relajantes noche",
-    "mejorar calidad del sueño",
+    "mejorar calidad del sueño"
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/es/blog/best-free-white-noise-app",
   },
   openGraph: {
-    title: "La mejor aplicación gratuita de ruido blanco para dormir en 2026",
+    title: "La mejor app de ruido blanco gratis para dormir en 2026 | Calma",
     description:
-      "¿Buscas la mejor aplicación gratuita de ruido blanco para ayudarte a conciliar el sueño? Descubre por qué Calma es la opción perfecta para sonidos relajantes.",
+      "¿Buscas una alternativa a Calm o BetterSleep? Descubre por qué Calma es la mejor aplicación de ruido blanco 100% gratuita para dormir.",
     url: "https://www.calmasounds.com/es/blog/best-free-white-noise-app",
     siteName: "Calma",
     locale: "es_ES",
     type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "La mejor aplicación gratuita de ruido blanco para dormir en 2026",
-    description:
-      "¿Buscas la mejor aplicación gratuita de ruido blanco para ayudarte a conciliar el sueño? Descubre por qué Calma es la opción perfecta para sonidos relajantes.",
   },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "La mejor aplicación gratuita de ruido blanco para dormir",
+  headline: "La mejor app de ruido blanco gratis para dormir",
   description:
-    "¿Buscas la mejor aplicación gratuita de ruido blanco para ayudarte a conciliar el sueño? Descubre por qué Calma es la opción perfecta para sonidos relajantes.",
+    "Descubre por qué Calma es la alternativa gratuita perfecta a aplicaciones pagas como Calm y BetterSleep.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -55,87 +51,83 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/es/blog/best-free-white-noise-app",
   datePublished: "2026-05-04",
-  dateModified: "2026-05-04",
+  dateModified: new Date().toISOString().split('T')[0],
 };
 
-export default function BestFreeWhiteNoiseAppPage() {
+export default function BestFreeWhiteNoiseAppPageES() {
   return (
     <ArticlePage
       slug="best-free-white-noise-app"
       jsonLd={articleJsonLd}
       topLinkHref="/es/white-noise-app"
-      topLinkLabel="Explorar página de ruido blanco"
-      title="La mejor aplicación gratuita de ruido blanco para dormir"
-      intro="Con miles de aplicaciones de sonido en el mercado, encontrar la mejor aplicación gratuita de ruido blanco puede resultar abrumador. Muchas opciones están inundadas de anuncios intrusivos, interfaces complejas o requieren suscripciones costosas solo para escuchar sonidos básicos de lluvia. Si estás buscando sonidos para dormir gratis que realmente te ayuden a relajarte, esto es lo que debes buscar, y por qué Calma destaca como la aplicación definitiva para crear ruido blanco."
+      topLinkLabel="Descubrir la app de ruido blanco"
+      title="La mejor app de ruido blanco gratis para el sueño"
+      intro="Con miles de aplicaciones de sonido en el mercado, encontrar la mejor app de ruido blanco gratuita puede resultar abrumador. Muchas opciones populares como Calm o BetterSleep ahora requieren suscripciones mensuales costosas. Si buscas sonidos gratuitos para dormir que realmente ayuden sin costos ocultos, aquí te mostramos por qué Calma es la alternativa definitiva."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Descargar Calma gratis"
       secondaryCtaHref="/es/sound-mixer-app"
-      secondaryCtaLabel="Explorar aplicación de mezcla"
+      secondaryCtaLabel="Explorar el mezclador de sonidos"
       tableOfContents={[
-        { id: "why-use-an-app", title: "¿Por qué usar una app y no YouTube?" },
-        { id: "what-to-look-for", title: "¿Qué hace grande a una app de sueño?" },
-        { id: "why-calma", title: "Por qué Calma es la mejor opción" },
-        { id: "how-to-start", title: "Cómo empezar tu mezcla" },
+        { id: "por-que-usar-app", title: "¿Por qué usar una app para dormir?" },
+        { id: "calma-vs-competencia", title: "Alternativas gratis a Calm y BetterSleep" },
+        { id: "por-que-calma", title: "¿Por qué Calma es la mejor elección?" },
+        { id: "primer-mix", title: "Cómo crear tu primera mezcla" },
+        { id: "faq", title: "Preguntas Frecuentes (FAQ)" },
       ]}
       relatedArticles={[
         {
           href: "/es/blog/white-noise-for-sleep",
           title: "Ruido blanco para dormir",
-          description:
-            "Aprende cómo el ruido blanco puede ayudarte a conciliar el sueño más rápido y mantenerte dormido por más tiempo.",
+          description: "Descubre cómo el ruido blanco te ayuda a conciliar el sueño más rápido.",
         },
         {
           href: "/es/blog/best-sounds-for-sleep",
           title: "Los mejores sonidos para dormir",
-          description:
-            "Descubre qué sonidos de fondo son más efectivos para tus rutinas antes de dormir.",
+          description: "Descubre qué sonidos de fondo son más efectivos.",
         },
       ]}
     >
-      <ArticleSection id="why-use-an-app" title="¿Por qué usar una aplicación de ruido blanco en lugar de YouTube?">
-        <p>
-          Es tentador simplemente poner un video de 8 horas de sonidos de lluvia en YouTube. Sin embargo, hay desventajas significativas. Reproducir videos agota la batería, requiere una conexión a internet activa y, lo peor de todo, puede interrumpir tu sueño con anuncios fuertes y repentinos en medio de la noche.
+      <ArticleSection id="por-que-usar-app" title="¿Por qué usar una app para dormir en lugar de YouTube?">
+        <p className="mt-4 leading-8 text-white/70">
+          Es tentador cargar un video de YouTube de 8 horas con sonidos de lluvia. Sin embargo, transmitir videos agota la batería, requiere una conexión a Internet y puede interrumpir tu sueño con anuncios repentinos y fuertes.
         </p>
-        <p className="mt-4">
-          Una <strong>aplicación dedicada de ruido blanco</strong> funciona sin conexión, consume un mínimo de batería y se ejecuta de forma fluida en segundo plano mientras la pantalla está bloqueada. Proporciona un entorno mucho más estable y confiable para un descanso ininterrumpido.
+        <p className="mt-4 leading-8 text-white/70">
+          Una <strong>app de ruido blanco</strong> dedicada funciona sin conexión, consume un mínimo de batería y se ejecuta sin problemas en segundo plano con la pantalla bloqueada.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="what-to-look-for" title="¿Qué hace que una aplicación gratuita de sueño sea excelente?">
-        <p>
-          Al evaluar aplicaciones de <em>sonidos para dormir gratis</em>, debes priorizar las siguientes características:
+      <ArticleSection id="calma-vs-competencia" title="Alternativas gratis a Calm y BetterSleep">
+        <p className="mt-4 leading-8 text-white/70">
+          Aplicaciones como <em>Calm</em> y <em>BetterSleep</em> son fantásticas, pero tienen un precio. Muchos usuarios descubren que la mayoría de los sonidos relajantes están bloqueados tras un muro de pago. Si no quieres gastar 60-80 € al año, necesitas una verdadera alternativa.
         </p>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
-          <li><strong>Audio de alta calidad:</strong> Los sonidos no deberían sonar como si hubieran sido grabados con un teléfono antiguo. Necesitan ser nítidos y repetirse en bucle sin un "salto" evidente cuando se reinicia la pista.</li>
-          <li><strong>Mezcla personalizada:</strong> Las mejores aplicaciones te permiten mezclar varios sonidos a la vez. Es posible que desees el zumbido constante del ruido marrón en capas con una suave tormenta eléctrica y un fuego crepitante.</li>
-          <li><strong>Acceso sin conexión:</strong> No deberías necesitar Wi-Fi para quedarte dormido. Una buena aplicación descarga los sonidos directamente en tu dispositivo.</li>
-          <li><strong>Temporizador de sueño:</strong> La aplicación debe desvanecerse automáticamente y cerrarse después de un tiempo establecido para ahorrar batería.</li>
-        </ul>
+        <p className="mt-4 leading-8 text-white/70">
+          Ahí es donde entra Calma. A diferencia de la costosa competencia, Calma se creó con la idea de que la higiene básica del sueño debería ser accesible. Es la mejor alternativa para quienes no quieren comprometer la calidad pero evitan las suscripciones.
+        </p>
       </ArticleSection>
 
-      <ArticleSection id="why-calma" title="Por qué Calma es la mejor aplicación gratuita de ruido blanco">
-        <p>
-          Creamos <strong>Calma</strong> porque estábamos cansados de las aplicaciones de sueño que se sentían demasiado complicadas o bloqueaban características esenciales detrás de un muro de pago. He aquí por qué Calma se ha convertido en la aplicación preferida por miles de personas que buscan un mejor descanso:
+      <ArticleSection id="por-que-calma" title="Por qué Calma es la mejor app de ruido blanco gratis">
+        <p className="mt-4 leading-8 text-white/70">
+          Creamos <strong>Calma</strong> porque estábamos cansados de las aplicaciones de sueño demasiado complicadas y caras. Esto es lo que hace a Calma tan especial:
         </p>
         <div className="mt-6 space-y-4">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">1. Diseño hermoso y sin distracciones</h3>
-            <p className="mt-2 text-sm text-white/70">Nuestra interfaz en modo oscuro está diseñada específicamente para su uso nocturno. No hay colores brillantes ni menús confusos que te despierten.</p>
+            <h3 className="font-semibold text-emerald-400">1. Sin suscripciones mensuales</h3>
+            <p className="mt-2 text-sm text-white/70">Disfruta de una enorme biblioteca de sonidos para dormir de forma totalmente gratuita, sin molestas solicitudes de tarjeta de crédito.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">2. Potente mezclador de sonido</h3>
-            <p className="mt-2 text-sm text-white/70">Crea tu entorno perfecto combinando hasta 10 sonidos a la vez. Ajusta el volumen del viento de forma independiente a la lluvia o la base de ruido blanco.</p>
+            <h3 className="font-semibold text-emerald-400">2. Mezclador de sonido avanzado</h3>
+            <p className="mt-2 text-sm text-white/70">Mezcla hasta 10 sonidos (ej. lluvia, ruido marrón y viento) y ajusta el volumen de cada elemento individualmente.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">3. Una biblioteca masiva de sonidos gratuitos para dormir</h3>
-            <p className="mt-2 text-sm text-white/70">Desde el clásico ruido blanco, rosa y marrón hasta el profundo ambiente del bosque, olas del océano y ejercicios de respiración guiada, tienes todo lo que necesitas.</p>
+            <h3 className="font-semibold text-emerald-400">3. Modo sin conexión y temporizador</h3>
+            <p className="mt-2 text-sm text-white/70">Pon tu teléfono en modo avión. Calma funciona completamente sin conexión y detiene la reproducción automáticamente.</p>
           </div>
         </div>
       </ArticleSection>
 
-      <ArticleSection id="how-to-start" title="Cómo empezar a construir tu mezcla">
-        <p>
-          Si eres nuevo en los paisajes sonoros para dormir, te recomendamos comenzar con algo simple. Intenta combinar una capa base de <strong>Ruido Rosa</strong> (al 60% de volumen) con <strong>Lluvia Ligera</strong> (al 40% de volumen). Esto crea una manta acústica altamente efectiva que enmascara las perturbaciones externas mientras se mantiene suave y natural.
+      <ArticleSection id="primer-mix" title="Cómo crear tu primera mezcla">
+        <p className="mt-4 leading-8 text-white/70">
+          Para los principiantes, recomendamos una combinación de <strong>Ruido Rosa</strong> (60% de volumen) y <strong>Lluvia Ligera</strong> (40% de volumen). Esto crea una manta acústica que enmascara eficazmente los ruidos molestos.
         </p>
         <div className="mt-8 flex justify-center">
           <a
@@ -143,7 +135,7 @@ export default function BestFreeWhiteNoiseAppPage() {
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex transition hover:scale-105"
-            aria-label="Descargar la app Calma de Google Play"
+            aria-label="Descargar la app Calma"
           >
             <Image
               src="/google-play-badge.png"
@@ -155,6 +147,83 @@ export default function BestFreeWhiteNoiseAppPage() {
           </a>
         </div>
       </ArticleSection>
+
+      <ArticleSection id="faq" title="Preguntas Frecuentes (FAQ)">
+        <div className="mt-6 space-y-6">
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Existe una app de ruido blanco totalmente gratuita?</h3>
+            <p className="mt-2 leading-7 text-white/70">Sí, Calma es una aplicación excelente y totalmente gratuita que ofrece ruido blanco, rosa y marrón sin suscripciones ocultas.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Es Calma mejor que Calm o BetterSleep?</h3>
+            <p className="mt-2 leading-7 text-white/70">Si buscas una alternativa sencilla y gratuita sin costosas tarifas mensuales, Calma ofrece una calidad de audio comparable y un mezclador superior.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Puedo usar la app sin conexión a Internet?</h3>
+            <p className="mt-2 leading-7 text-white/70">Absolutamente. Calma funciona perfectamente en modo avión o sin conexión, ahorrando batería y evitando interrupciones.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Qué ruidos son mejores para dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Los estudios muestran que los sonidos constantes como el ruido rosa, el ruido marrón o la lluvia son los más efectivos para bloquear el ruido de fondo.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿La aplicación consume mucha batería por la noche?</h3>
+            <p className="mt-2 leading-7 text-white/70">No, Calma está optimizada para usar un mínimo de batería con la pantalla apagada. Además, cuenta con un temporizador de sueño.</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "¿Existe una app de ruido blanco totalmente gratuita?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sí, Calma es una aplicación excelente y totalmente gratuita que ofrece ruido blanco, rosa y marrón sin suscripciones ocultas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Es Calma mejor que Calm o BetterSleep?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Si buscas una alternativa sencilla y gratuita sin costosas tarifas mensuales, Calma ofrece una calidad de audio comparable y un mezclador superior."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Puedo usar la app sin conexión a Internet?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutamente. Calma funciona perfectamente en modo avión o sin conexión, ahorrando batería y evitando interrupciones."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué ruidos son mejores para dormir?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Los estudios muestran que los sonidos constantes como el ruido rosa, el ruido marrón o la lluvia son los más efectivos para bloquear el ruido de fondo."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿La aplicación consume mucha batería por la noche?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No, Calma está optimizada para usar un mínimo de batería con la pantalla apagada. Además, cuenta con un temporizador de sueño."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </ArticlePage>
   );
 }
