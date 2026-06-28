@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     "bruit blanc naturel",
     "relaxation profonde",
     "blog calma",
+    "sons de pluie pour dormir",
+    "nature méditation",
+    "réduire le stress nature",
+    "mieux dormir sons naturels",
+    "baisser cortisol nature",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/blog/benefits-of-nature-sounds-for-relaxation",

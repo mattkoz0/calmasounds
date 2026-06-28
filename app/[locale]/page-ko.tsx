@@ -330,6 +330,7 @@ export default function Home() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Calma 앱 인터페이스 - 사운드 믹서 커스터마이징"
               width={720}
               height={1600}

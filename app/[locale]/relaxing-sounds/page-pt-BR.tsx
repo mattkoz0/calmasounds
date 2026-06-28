@@ -151,6 +151,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
+              priority
               alt="Interface do aplicativo móvel Calma para escolha de categorias de sons relaxantes"
               width={720}
               height={1600}
@@ -161,6 +162,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Interface do Calma para personalização de paisagens sonoras de ambiente relaxante"
               width={720}
               height={1600}

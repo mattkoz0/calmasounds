@@ -152,6 +152,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
+              priority
               alt="Interfaz de la app móvil Calma mostrando la lista de sonidos relajantes y categorías de sueño"
               width={720}
               height={1600}
@@ -162,6 +163,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Interfaz de Calma personalizando diferentes tipos de sonidos de la naturaleza"
               width={720}
               height={1600}

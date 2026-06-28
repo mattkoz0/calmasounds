@@ -150,6 +150,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
+              priority
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
               width={720}
               height={1600}
@@ -160,6 +161,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Calma tinnitus relief sounds app interface for customizing tinnitus relief sounds for sleep and focus"
               width={720}
               height={1600}

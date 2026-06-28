@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     "natürliches weißes Rauschen",
     "tiefe Entspannung",
     "Calma Blog",
+    "Regengeräusche zum Schlafen",
+    "Naturgeräusche Meditation",
+    "Stress abbauen mit Naturklängen",
+    "besser schlafen Natur",
+    "Cortisol senken Natur",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/benefits-of-nature-sounds-for-relaxation",

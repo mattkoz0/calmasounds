@@ -145,6 +145,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
+              priority
               alt="Calma 수면 앱 인터페이스 - 수면 유도 소리 리스트"
               width={720}
               height={1600}
@@ -155,6 +156,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Calma 수면 앱 인터페이스 - 나만의 믹스 커스터마이징"
               width={720}
               height={1600}

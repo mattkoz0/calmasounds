@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "Abendritual",
     "beruhigende Abendroutine",
     "Calma Blog",
+    "schneller einschlafen Routine",
+    "gesunder Schlaf Tipps",
+    "Schlafhygiene verbessern",
+    "Abendroutine Erwachsene",
+    "entspannt einschlafen",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/de/blog/how-to-build-a-bedtime-routine",

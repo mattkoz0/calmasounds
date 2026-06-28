@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "meilleure routine de coucher",
     "routine apaisante",
     "blog calma",
+    "s'endormir plus vite",
+    "hygiène du sommeil",
+    "routine du soir adulte",
+    "habitudes de sommeil saines",
+    "se détendre avant de dormir",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/blog/how-to-build-a-bedtime-routine",

@@ -12,6 +12,11 @@ export const metadata: Metadata = {
     "mejor rutina de noche",
     "rutina nocturna relajante",
     "blog de calma",
+    "dormir más rápido",
+    "higiene del sueño",
+    "rutina antes de dormir adultos",
+    "hábitos de sueño saludables",
+    "relajarse antes de dormir",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/blog/how-to-build-a-bedtime-routine",

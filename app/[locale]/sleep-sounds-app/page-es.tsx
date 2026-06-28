@@ -152,6 +152,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
+              priority
               alt="Interfaz de la app móvil de Calma mostrando sonidos y categorías de relajación para dormir"
               width={720}
               height={1600}
@@ -162,6 +163,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Interfaz de la app de Calma para personalizar audios para dormir"
               width={720}
               height={1600}

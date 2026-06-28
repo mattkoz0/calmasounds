@@ -145,6 +145,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
+              priority
               alt="Calma 앱 인터페이스 - 집중 및 학습 카테고리"
               width={720}
               height={1600}
@@ -155,6 +156,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
+              priority
               alt="Calma 앱 인터페이스 - 공부를 위한 사운드 커스텀"
               width={720}
               height={1600}
