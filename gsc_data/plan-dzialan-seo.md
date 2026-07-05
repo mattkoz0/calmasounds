@@ -282,16 +282,17 @@
 ### Faza 1: Quick Wins (natychmiastowy efekt)
 **Cel:** Poprawić CTR na stronach, które już są na pierwszej stronie Google.
 
-1. **Przepisz meta title i description dla `rain-sounds-vs-white-noise`**
-   - Aktualny tytuł jest zbyt techniczny/nudny
-   - Nowy tytuł powinien prowokować kliknięcie: "Is Rain Considered White Noise? Here's What Science Says"
-   - Nowy description: "The surprising answer: rain is NOT white noise. Learn why rain is actually pink noise, and which type helps you sleep better. Free audio samples inside."
+1. **✅ DONE (5.07.2026) — Przepisz meta title i description dla `rain-sounds-vs-white-noise`**
+   - Stary tytuł: "Is Rain Considered White Noise? (The Scientific Answer)"
+   - Nowy tytuł: **"Is Rain Considered White Noise? Here's What Science Says"**
+   - Nowy description: **"No — rain is NOT white noise. The surprising truth: rain is actually pink noise, and it may help you sleep better. Listen to audio samples and see the difference."**
+   - Zmieniono we wszystkich 5 wersjach językowych (EN, DE, ES, FR, PT-BR)
    - Plik: `app/[locale]/blog/rain-sounds-vs-white-noise/page-en.tsx` — pole `metadata.title` i `metadata.description`
 
-2. **Dodaj `SameAs` do Schema na stronach głównych dla YouTube, TikTok, Instagram, Facebook**
-   - Wzmocni Knowledge Panel dla zapytania "calma app"
+2. **✅ DONE (5.07.2026) — Dodaj `SameAs` do Schema na stronach głównych dla YouTube, TikTok, Instagram, Facebook**
+   - Wzmocniono Knowledge Panel we wszystkich 8 wersjach językowych
    - Plik: Wszystkie `app/[locale]/page-*.tsx` — obiekt `softwareAppJsonLd.sameAs`
-   - Dodaj do istniejącej tablicy `sameAs`:
+   - Dodano do istniejącej tablicy `sameAs`:
      ```
      "https://www.youtube.com/@CalmaApp",
      "https://www.tiktok.com/@.calma.app",
@@ -358,10 +359,10 @@
 
 ## 7. TECHNICZNE CHECKLIST DO NATYCHMIASTOWEGO WDROŻENIA
 
-- [ ] Dodaj do sameAs linki do YouTube, TikTok, Instagram, Facebook (skrypt Node.js po wszystkich `page-*.tsx`)
-- [ ] Przepisz meta title dla `rain-sounds-vs-white-noise` (wszystkie 5 wersji językowych)
-- [ ] Przepisz meta title dla `best-sounds-for-sleep` (wszystkie 5 wersji językowych)
-- [ ] Przepisz meta title dla `brown-noise-vs-white-noise-vs-pink-noise` (wszystkie 5 wersji językowych)
+- [x] Dodaj do sameAs linki do YouTube, TikTok, Instagram, Facebook (skrypt Node.js po wszystkich `page-*.tsx`) — ✅ 5.07.2026
+- [x] Przepisz meta title dla `rain-sounds-vs-white-noise` (wszystkie 5 wersji językowych) — ✅ 5.07.2026
+- [x] Przepisz meta title dla `best-sounds-for-sleep` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
+- [x] Przepisz meta title dla `brown-noise-vs-white-noise-vs-pink-noise` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
 - [ ] Sprawdź w Google, czy FAQ Rich Snippets wyświetlają się dla artykułów przebudowanych 28.06
 - [ ] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych)
 - [ ] Przebuduj `tinnitus-sounds-app` z FAQ Schema (8 wersji językowych)
