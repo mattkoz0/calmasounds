@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
+import Image from "next/image";
 
-const articleTitle = "Ruido blanco para dormir (Guía 2026) | Blog de Calma";
+const articleTitle = "¿Por qué el ruido blanco ayuda a dormir? (2026) | Calma";
 const articleDescription =
-  "Aprende cómo el ruido blanco para dormir bloquea las distracciones, mejora el sueño profundo y ayuda a los bebés a conciliar el sueño más rápido.";
+  "¿El ruido blanco ayuda a dormir? Descubra cómo el ruido blanco enmascara las distracciones y mejora la calidad del sueño profundo. Incluye muestras de audio gratuitas.";
 const articleUrl = "https://www.calmasounds.com/es/blog/white-noise-for-sleep";
 
 export const metadata: Metadata = {
@@ -13,21 +14,12 @@ export const metadata: Metadata = {
   description: articleDescription,
   keywords: [
     "ruido blanco para dormir",
-    "ruido blanco sueño",
-    "ruido blanco noche",
-    "sonidos para dormir ruido blanco",
+    "por que el ruido blanco ayuda a dormir",
+    "sonido de ruido blanco para dormir",
+    "ruido blanco para ayudar a dormir",
+    "el mejor ruido blanco para dormir",
     "ayuda el ruido blanco a dormir",
-    "blog de calma",
-    "generador de ruido blanco",
-    "dormir sin interrupciones",
-    "alivio tinnitus",
-    "bloquear ruidos al dormir",
-    "ruido blanco para bebés",
-    "app para dormir mejor",
-    "promover sueño profundo",
-    "ayuda para conciliar el sueño",
-    "sonidos relajantes noche",
-    "mejorar calidad del sueño",
+    "calma blog",
   ],
   robots: {
     index: true,
@@ -53,151 +45,192 @@ export const metadata: Metadata = {
 
 const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Ruido blanco para dormir: la ciencia del enmascaramiento del sonido",
-  description: articleDescription,
-  author: {
-    "@type": "Organization",
-    name: "Calma Team",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: articleUrl,
-  datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Por qué el ruido blanco ayuda a dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El ruido blanco ayuda a dormir elevando el nivel base de sonido ambiental en su habitación. Esto reduce el contraste entre el silencio y los ruidos repentinos (como el tráfico, los ronquidos o las puertas), por lo que es menos probable que su cerebro los registre como amenazas y lo despierte. Básicamente, crea una manta acústica constante."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué es exactamente el ruido blanco para dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El ruido blanco para dormir es un sonido continuo que contiene todas las frecuencias audibles a la misma intensidad, similar a la estática o a un ventilador encendido. Crea un entorno de audio predecible que enmascara interrupciones repentinas y ayuda a que su cerebro se relaje en etapas de sueño más profundas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es mejor el ruido blanco o el rosa para dormir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Muchos estudios sugieren que el ruido rosa (que suena como una lluvia constante) podría ser mejor para mejorar el sueño profundo porque su equilibrio de frecuencias es más suave para el oído humano. Sin embargo, el ruido blanco es generalmente mejor para enmascarar distracciones extremadamente agudas y fuertes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es seguro dormir con ruido blanco todas las noches?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, dormir con ruido blanco todas las noches es generalmente seguro para los adultos cuando el volumen se mantiene por debajo de 60 dB (aproximadamente el nivel de una conversación tranquila). Coloque la fuente de sonido al menos a 2 metros de su cabeza."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Se puede volver adicto a dormir con ruido blanco?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No se vuelve físicamente adicto al ruido blanco, pero puede formar un fuerte hábito psicológico. Su cerebro aprende a asociar el sonido con el sueño. Si desea dejar de usarlo, lo mejor es bajar gradualmente el volumen durante unas semanas."
+      }
+    }
+  ]
 };
 
 const relatedArticles = [
   {
     href: "/es/blog/rain-sounds-vs-white-noise",
-    title: "Sonido de lluvia vs. Ruido blanco",
-    description:
-      "Compara la sensación emocional y las diferencias prácticas entre la lluvia natural y la estática artificial.",
+    title: "Sonido de Lluvia vs Ruido Blanco",
+    description: "Compare las diferencias entre la lluvia natural y la estática artificial.",
   },
   {
     href: "/es/blog/best-sounds-for-sleep",
-    title: "Mejores sonidos para dormir",
-    description:
-      "Explora diferentes estilos de sonidos para dormir, desde el ruido rosa hasta las olas del mar, y cuál funciona mejor para ti.",
+    title: "Los Mejores Sonidos para Dormir",
+    description: "Explore diferentes estilos de sonido para dormir, desde ruido rosa hasta olas del mar.",
   },
 ];
 
-export default function WhiteNoiseForSleepPage() {
+export default function WhiteNoiseForSleepPageES() {
   return (
     <ArticlePage
       slug="white-noise-for-sleep"
       jsonLd={articleJsonLd}
       topLinkHref="/es/white-noise-app"
       topLinkLabel="Explorar app de ruido blanco"
-      title="Ruido blanco para dormir: ¿cuándo puede ayudar realmente?"
-      intro="El ruido blanco para dormir se ha convertido en un fenómeno global. Desde adultos estresados en ciudades ruidosas hasta padres que intentan que sus recién nacidos duerman toda la noche, millones de personas confían en ese siseo constante para conciliar el sueño. Pero, ¿cómo funciona realmente? ¿Mejora la calidad del sueño profundo o es solo una herramienta para tapar los ronquidos de tu pareja?"
-      ctaHref="/es/white-noise-app"
-      ctaLabel="Escuchar ruido blanco"
-      secondaryCtaHref="/es/blog/rain-sounds-vs-white-noise"
-      secondaryCtaLabel="Leer lluvia vs ruido blanco"
+      title="¿Por qué el ruido blanco ayuda a dormir? La ciencia explicada"
+      intro="El ruido blanco para dormir se ha convertido en un fenómeno mundial. Desde adultos estresados que viven en ciudades bulliciosas hasta padres que intentan que sus recién nacidos duerman toda la noche, millones de personas confían en ese 'siseo' constante para quedarse dormidos. Pero, ¿cómo funciona realmente? ¿Mejora la calidad de su sueño profundo o es solo una herramienta para bloquear a una pareja que ronca?"
+      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+      ctaLabel="Descargar App Calma Gratis"
+      secondaryCtaHref="/es/white-noise-app"
+      secondaryCtaLabel="Explorar reproductor"
       tableOfContents={[
-        { id: "que-es", title: "¿Qué es exactamente el ruido blanco?" },
-        { id: "como-funciona", title: "Cómo el enmascaramiento de sonido mejora el sueño" },
-        { id: "para-bebes", title: "Por qué a los bebés les encanta el ruido blanco" },
-        { id: "buenas-practicas", title: "Cómo usarlo de forma segura" },
-        { id: "faq", title: "Preguntas Frecuentes (FAQ)" },
+        { id: "how-it-works", title: "Cómo mejora el sueño el enmascaramiento" },
+        { id: "what-is-it", title: "¿Qué es exactamente el ruido blanco?" },
+        { id: "comparison-table", title: "Blanco vs Rosa vs Marrón" },
+        { id: "best-practices", title: "Cómo usarlo de forma segura" },
+        { id: "faq", title: "Preguntas Frecuentes" },
       ]}
       relatedArticles={relatedArticles}
     >
-      <ArticleSection id="que-es" title="¿Qué es exactamente el ruido blanco?">
+      <ArticleSection id="how-it-works" title="Cómo el enmascaramiento de sonido mejora el sueño">
         <p className="mt-4 leading-8 text-white/70">
-          En física, el ruido blanco es un sonido que contiene todas las frecuencias dentro del rango auditivo humano (entre 20 hercios y 20,000 hercios) reproducidas a una intensidad igual. Debido a que contiene todas las frecuencias de manera simultánea, suena como un siseo constante, similar a la estática de un televisor, una radio desintonizada o el zumbido de un ventilador.
+          El ruido blanco no solo bloquea los sonidos siendo ruidoso; funciona a través de un fenómeno llamado <strong>enmascaramiento de sonido</strong>. Cuando está dormido, su cerebro sigue procesando sonidos para alertarle de peligros. Lo que le despierta no es necesariamente el volumen de un ruido (como una puerta al cerrarse), sino el cambio repentino del silencio al ruido.
+        </p>
+        <p className="mt-4 leading-8 text-white/70">
+          Debido a que el ruido blanco contiene todas las frecuencias, esencialmente llena el silencio. Eleva la línea base de ruido de fondo para que los sonidos repentinos —como el tráfico, un perro ladrando o una pareja roncando— se mezclen y no activen la respuesta de \"despertar\" de su cerebro. Esto le ayuda a permanecer en las etapas más profundas y restauradoras del sueño.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection id="what-is-it" title="¿Qué es exactamente el ruido blanco?">
+        <p className="mt-4 leading-8 text-white/70">
+          En física, el ruido blanco es un sonido que contiene todas las frecuencias dentro del rango de audición humana (entre 20 hercios y 20,000 hercios) reproducidas a la misma intensidad. Debido a que contiene todas las frecuencias simultáneamente, suena como un siseo constante, similar a la estática de la televisión o a un ventilador.
         </p>
         <AudioPlayer 
           src="/white_noise.m4a" 
-          title="Ruido Blanco Puro" 
-          description="Un sonido constante de espectro completo."
+          title="Verdadero Ruido Blanco" 
+          description="Un sonido consistente y de espectro completo que bloquea ruidos agudos."
           colorClass="bg-slate-500/20 text-slate-300"
         />
-        <p className="mt-4 leading-8 text-white/70">
-          El término „blanco“ proviene de la luz blanca, que se crea cuando se combinan todos los colores del espectro visual. De la misma manera, el ruido blanco es una combinación de todos los „colores“ acústicos.
-        </p>
       </ArticleSection>
 
-      <ArticleSection id="como-funciona" title="Cómo el enmascaramiento de sonido mejora el sueño">
+      <ArticleSection id="comparison-table" title="Ruido Blanco vs Rosa vs Marrón para Dormir">
         <p className="mt-4 leading-8 text-white/70">
-          El ruido blanco no solo bloquea los sonidos al ser fuerte; funciona a través de un fenómeno llamado <strong>enmascaramiento de sonido</strong>. Cuando duermes, tu cerebro continúa procesando sonidos para alertarte del peligro. Lo que te despierta no es necesariamente el volumen de un ruido (como un portazo), sino el cambio de dirección del silencio al ruido.
+          No todo el \"ruido blanco\" es realmente blanco. En ingeniería de audio, los sonidos continuos se categorizan en colores según su balance de frecuencia. Elegir el color correcto es crucial para una buena noche de sueño.
         </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Debido a que el ruido blanco contiene todas las frecuencias, básicamente llena el silencio. Eleva la línea base del ruido de fondo de modo que los sonidos repentinos (como el tráfico, un perro ladrando o los ronquidos de tu pareja) se mezclen y no activen la respuesta de 'despertar' de tu cerebro. Esto te ayuda a permanecer en las etapas de sueño más profundas y reparadoras.
-        </p>
+        <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
+          <table className="w-full text-left text-sm text-white/70">
+            <thead className="bg-slate-800/50 text-white">
+              <tr>
+                <th className="px-6 py-4 font-semibold">Color del Ruido</th>
+                <th className="px-6 py-4 font-semibold">Enfoque de Frecuencia</th>
+                <th className="px-6 py-4 font-semibold">Mejor uso para</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/5">
+              <tr>
+                <td className="px-6 py-4 font-medium text-slate-300">Ruido Blanco</td>
+                <td className="px-6 py-4">Igual en todas las frecuencias.</td>
+                <td className="px-6 py-4">Enmascarar ruidos agudos e impredecibles (ronquidos, perros).</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 font-medium text-pink-300">Ruido Rosa</td>
+                <td className="px-6 py-4">Frecuencias más bajas potenciadas (suena como lluvia).</td>
+                <td className="px-6 py-4">Mejorar el sueño profundo de ondas lentas y la memoria.</td>
+              </tr>
+              <tr>
+                <td className="px-6 py-4 font-medium text-orange-300">Ruido Marrón</td>
+                <td className="px-6 py-4">Solo las frecuencias más profundas (suena como un trueno lejano).</td>
+                <td className="px-6 py-4">Crear un ambiente acogedor; ideal para la relajación y el TDAH.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </ArticleSection>
 
-      <ArticleSection id="para-bebes" title="Por qué a los bebés les encanta el ruido blanco">
+      <ArticleSection id="best-practices" title="Cómo usar el ruido blanco de forma segura">
         <p className="mt-4 leading-8 text-white/70">
-          Si alguna vez has intentado dormir a un recién nacido que llora, probablemente conozcas el poder de un fuerte «shhhh». El ruido blanco es increíblemente efectivo para los bebés porque imita el entorno acústico del útero materno.
-        </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Dentro del útero, el bebé escucha el flujo constante y fuerte de la sangre de la madre, que de hecho es muy similar a un ruido blanco o marrón pesado de baja frecuencia. Reproducir ruido blanco en la habitación activa un reflejo calmante, indicándole al bebé que está en un entorno seguro y familiar.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="buenas-practicas" title="Cómo usar el ruido blanco de forma segura">
-        <p className="mt-4 leading-8 text-white/70">
-          Aunque el ruido blanco es de gran ayuda, es importante usarlo correctamente para evitar la fatiga auditiva o la dependencia:
+          Si bien el ruido blanco es increíblemente útil, es importante usarlo correctamente para evitar la fatiga auditiva o la dependencia:
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li><strong>Mantén un volumen seguro:</strong> El sonido debe actuar como un zumbido de fondo, no como un concierto. Mantén el volumen alrededor de 50-60 decibelios (aproximadamente el volumen de una conversación tranquila o una ducha abierta).</li>
-          <li><strong>Cuida la distancia:</strong> Nunca coloques un teléfono o una máquina de ruido blanco directamente al lado de tu cabeza (o la de tu bebé). Mantén el dispositivo a una distancia de al menos 2 metros, preferiblemente al otro lado de la habitación.</li>
-          <li><strong>Experimenta con otros „colores“:</strong> Si el ruido blanco puro te suena demasiado agudo o sibilante, prueba el Ruido Rosa (que enfatiza las frecuencias más bajas como la lluvia) o el Ruido Marrón (que suena como una cascada profunda y retumbante).</li>
+          <li><strong>Mantenga el volumen seguro:</strong> El sonido debe actuar como un zumbido de fondo, no como un concierto. Mantenga el volumen en torno a los 50-60 decibelios (aproximadamente el volumen de una conversación tranquila).</li>
+          <li><strong>Tenga cuidado con la distancia:</strong> Nunca coloque un teléfono o máquina de ruido blanco directamente al lado de su cabeza. Manténgalo al menos a 2 metros de distancia, preferiblemente al otro lado de la habitación.</li>
+          <li><strong>Experimente con \"colores\":</strong> Si el ruido blanco puro suena demasiado agudo o silbante, pruebe con Ruido Rosa o Ruido Marrón en su lugar.</li>
         </ul>
+        <div className="mt-12 flex justify-center">
+          <a
+            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex transition hover:scale-105"
+          >
+            <Image
+              src="/google-play-badge.png"
+              alt="Descargar App Calma Gratis"
+              width={240}
+              height={93}
+              className="h-[60px] w-auto object-contain"
+            />
+          </a>
+        </div>
       </ArticleSection>
 
       <ArticleSection id="faq" title="Preguntas Frecuentes (FAQ)">
         <div className="mt-6 space-y-6">
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">¿Puedes volverte adicto a dormir con ruido blanco?</h3>
-            <p className="mt-2 leading-7 text-white/70">No te vuelves físicamente adicto al ruido blanco, pero puedes formar un hábito psicológico fuerte. Tu cerebro aprende a asociar el sonido con el sueño (un proceso llamado condicionamiento clásico). Si deseas dejar de usarlo, lo mejor es bajar gradualmente el volumen durante unas semanas en lugar de detenerte de golpe.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Por qué el ruido blanco ayuda a dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Eleva la línea base de sonido ambiental, reduciendo el contraste entre el silencio y los ruidos repentinos. Esto hace que sea menos probable que su cerebro se despierte por distracciones.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Qué es exactamente el ruido blanco para dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Es un sonido continuo que contiene todas las frecuencias audibles a la misma intensidad, similar a la estática, creando una manta acústica constante.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">¿Es mejor el ruido blanco o el rosa para dormir?</h3>
-            <p className="mt-2 leading-7 text-white/70">Muchos estudios sugieren que el ruido rosa (que suena como lluvia constante) podría ser mejor para mejorar el sueño profundo y de ondas lentas porque su equilibrio de frecuencias es más suave para el oído humano. Sin embargo, el ruido blanco es generalmente mejor para enmascarar distracciones extremadamente agudas y repentinas.</p>
+            <p className="mt-2 leading-7 text-white/70">El ruido rosa (como la lluvia constante) puede ser mejor para el sueño profundo, mientras que el blanco es mejor para bloquear ruidos fuertes y agudos (como los ronquidos).</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Es seguro dormir con ruido blanco todas las noches?</h3>
+            <p className="mt-2 leading-7 text-white/70">Sí, es seguro para los adultos si el volumen se mantiene por debajo de 60 dB y la fuente de sonido está al menos a 2 metros de su cabeza.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">¿Se puede volver adicto a dormir con ruido blanco?</h3>
+            <p className="mt-2 leading-7 text-white/70">Físicamente no, pero psicológicamente sí. Si desea dejar de usarlo, reduzca el volumen gradualmente durante varias semanas en lugar de detenerse abruptamente.</p>
           </div>
         </div>
       </ArticleSection>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "¿Puedes volverte adicto a dormir con ruido blanco?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "No te vuelves físicamente adicto al ruido blanco, pero puedes formar un hábito psicológico fuerte. Tu cerebro aprende a asociar el sonido con el sueño. Si deseas dejar de usarlo, lo mejor es bajar gradualmente el volumen durante unas semanas."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "¿Es mejor el ruido blanco o el rosa para dormir?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Muchos estudios sugieren que el ruido rosa podría ser mejor para mejorar el sueño profundo y de ondas lentas porque su equilibrio de frecuencias es más suave para el oído humano. Sin embargo, el ruido blanco es generalmente mejor para enmascarar distracciones extremadamente agudas y repentinas."
-                }
-              }
-            ]
-          })
-        }}
-      />
-      
-      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
-        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
-        <div>
-          <p className="font-semibold text-white">Escrito por el Equipo Calma</p>
-          <p className="text-sm text-white/60">Defensores de la higiene del sueño que te ayudan a construir rutinas de acostarse más tranquilas y basadas en la ciencia.</p>
-        </div>
-      </div>
     </ArticlePage>
   );
 }
