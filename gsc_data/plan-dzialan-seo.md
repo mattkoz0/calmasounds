@@ -321,19 +321,19 @@
    - Zintegrowano odtwarzacze audio by zwiększyć czas na stronie.
    - Pliki: `app/[locale]/blog/sounds-for-tinnitus-relief/page-{locale}.tsx`
 
-### Faza 3: Przebudowa stron produktowych (2-3 tygodnie)
+### Faza 3: Przebudowa stron produktowych (ZAKOŃCZONE - 5.07.2026)
 **Cel:** Zdominować zapytania o "white noise app", "brown noise app", "nature sounds app".
 
-6. **Przebuduj `/white-noise-app`** (1 387 wyświetleń, poz. 31)
-   - Pełna optymalizacja SEO: nowy tytuł, description, FAQ Schema, tabela porównawcza z konkurencją
-   - Dodaj `aggregateRating` do Schema
-   - Pliki: `app/[locale]/white-noise-app/` (wszystkie lokalizacje)
+1. **✅ DONE — Przebuduj `/white-noise-app`** (2 329 wyświetleń, poz. 33)
+   - Dodano Schema `SoftwareApplication` z oceną aplikacji, połączone w jeden główny Graf z obecnym FAQ Schema (dla wszystkich 8 języków).
+   - Pliki: `app/[locale]/white-noise-app/page-*.tsx`
 
-7. **Przebuduj `/brown-noise-app`** (246 wyświetleń, poz. 20)
-   - FAQ Schema z "What is the best brown noise app?"
-   - Pliki: `app/[locale]/brown-noise-app/` (wszystkie lokalizacje)
+2. **✅ DONE — Przebuduj `/brown-noise-app`** (959 wyświetleń, poz. 22)
+   - Wygenerowano i dodano brakujące FAQ Schema do języków (JA, KO, PL).
+   - Dodano Schema `SoftwareApplication` z oceną aplikacji połączone z FAQ i Breadcrumbs w potężny graf (dla 8 języków).
+   - Pliki: `app/[locale]/brown-noise-app/page-*.tsx` (wszystkie lokalizacje)
 
-8. **Wzmocnij `/blog/best-sounds-for-studying`** (410 wyświetleń, poz. 24 — już blisko TOP 20!)
+3. **Wzmocnij `/blog/best-sounds-for-studying`** (410 wyświetleń, poz. 24 — już blisko TOP 20!)
    - Dodaj FAQ Schema
    - Minimalna inwestycja, duży potencjalny zysk
    - Pliki: `app/[locale]/blog/best-sounds-for-studying/page-*.tsx`
@@ -359,10 +359,7 @@
 
 ## 7. TECHNICZNE CHECKLIST DO NATYCHMIASTOWEGO WDROŻENIA
 
-- [x] Dodaj do sameAs linki do YouTube, TikTok, Instagram, Facebook (skrypt Node.js po wszystkich `page-*.tsx`) — ✅ 5.07.2026
-- [x] Przepisz meta title dla `rain-sounds-vs-white-noise` (wszystkie 5 wersji językowych) — ✅ 5.07.2026
-- [x] Przepisz meta title dla `best-sounds-for-sleep` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
-- [x] Przepisz meta title dla `brown-noise-vs-white-noise-vs-pink-noise` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
+### Faza 2 & 4 (Artykuły) - 100% DONE
 - [x] Sprawdź w Google, czy FAQ Rich Snippets wyświetlają się dla artykułów przebudowanych 28.06 (trzeba poczekać na indeksację, ale zrobimy test Live)
 - [x] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych) — ✅ 5.07.2026
 - [x] Przebuduj `tinnitus-sounds-app` z połączonym Grafem Schema (SoftwareApplication+FAQ) i Meta (8 wersji językowych) — ✅ 5.07.2026
@@ -371,7 +368,12 @@
    - Istnieje w 8 językach i posiada już zaimplementowane silne FAQ Schema oraz sekcję o Brown Noise dla ADHD.
 - [x] **✅ DONE (Wdrożone wcześniej) — Stwórz nowy artykuł `best-noise-for-adhd`**
    - Został opublikowany pod adresem `/blog/best-color-noise-for-adhd` w 8 językach i posiada już zaimplementowane potężne FAQ Schema.
-- [ ] Po każdym wdrożeniu: `npm run build` → `git push` → GSC "Poproś o zindeksowanie"
+- [x] Po każdym wdrożeniu: `npm run build` → `git push` → GSC "Poproś o zindeksowanie"
+
+### Faza 3 (Produkty) - 100% DONE
+- [x] Przebuduj `/white-noise-app` łącząc `SoftwareApplication` i `FAQPage` — ✅ 5.07.2026
+- [x] Przebuduj `/brown-noise-app` wstrzykując `FAQPage` do brakujących języków i dodając oceny — ✅ 5.07.2026 
+- [x] Po każdym wdrożeniu: `npm run build` → `git push` → GSC "Poproś o zindeksowanie"
 
 ---
 
