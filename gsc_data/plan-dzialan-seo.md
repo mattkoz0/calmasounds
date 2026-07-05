@@ -367,8 +367,10 @@
 - [x] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych) — ✅ 5.07.2026
 - [x] Przebuduj `tinnitus-sounds-app` z połączonym Grafem Schema (SoftwareApplication+FAQ) i Meta (8 wersji językowych) — ✅ 5.07.2026
 - [x] Przebuduj `sounds-for-tinnitus-relief` z FAQ Schema (8 wersji językowych) — ✅ 5.07.2026
-- [ ] Przebuduj `best-sounds-for-studying` z FAQ Schema (5 wersji językowych)
-- [ ] Stwórz nowy artykuł `best-noise-for-adhd` (5 wersji językowych)
+- [x] **✅ DONE (Wdrożone wcześniej) — Przebuduj `/blog/best-sounds-for-studying`**
+   - Istnieje w 8 językach i posiada już zaimplementowane silne FAQ Schema oraz sekcję o Brown Noise dla ADHD.
+- [x] **✅ DONE (Wdrożone wcześniej) — Stwórz nowy artykuł `best-noise-for-adhd`**
+   - Został opublikowany pod adresem `/blog/best-color-noise-for-adhd` w 8 językach i posiada już zaimplementowane potężne FAQ Schema.
 - [ ] Po każdym wdrożeniu: `npm run build` → `git push` → GSC "Poproś o zindeksowanie"
 
 ---
