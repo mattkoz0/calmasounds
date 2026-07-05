@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App Grátis para Zumbido | Ruído Branco contra Zumbido | Calma",
-  description:
-    "Procurando um app para zumbido? Mascare o zumbido no ouvido com ruído branco, rosa e marrom. 100% grátis, sem anúncios, funciona offline.",
+  title: "Melhor App de Sons para Zumbido no Ouvido (Grátis) | Calma",
+  description: "Procurando o melhor app para zumbido no ouvido? Misture ruído branco e sons da natureza para mascarar o zumbido. Grátis, funciona offline.",
   keywords: [
     "app para zumbido",
     "sons para zumbido",
@@ -21,9 +20,8 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "App Grátis para Zumbido | Ruído Branco | Calma",
-    description:
-    "Mascare o zumbido com ruído branco, rosa e marrom. 100% grátis, sem anúncios.",
+    title: "Melhor App de Sons para Zumbido no Ouvido (Grátis) | Calma",
+    description: "Procurando o melhor app para zumbido no ouvido? Misture ruído branco e sons da natureza para mascarar o zumbido. Grátis, funciona offline.",
     url: "https://www.calmasounds.com/pt-BR/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -31,13 +29,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Grátis para Zumbido | Calma",
-    description:
-    "Mascare o zumbido no ouvido com ruído branco. 100% grátis, offline.",
+    title: "Melhor App de Sons para Zumbido no Ouvido (Grátis) | Calma",
+    description: "Procurando o melhor app para zumbido no ouvido? Misture ruído branco e sons da natureza para mascarar o zumbido. Grátis, funciona offline.",
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -54,6 +70,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/pt-BR/tinnitus-sounds-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "App grátis para zumbido?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, Calma é 100% grátis com ruído branco, rosa e marrom."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Qual cor para zumbido?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rosa ou branco. Calma permite testar e misturar."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Mascaramento à noite?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, som de fundo dá ao cérebro uma alternativa."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Criar mix anti-zumbido?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, misture vários sons com volume individual."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Funciona offline?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, completamente sem internet."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -61,7 +125,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -274,10 +338,7 @@ export default function WhiteNoiseAppPage() {
               Sim. Todos os sons funcionam completamente sem internet – perfeito para a noite ou em deslocamento.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"App grátis para zumbido?","acceptedAnswer":{"@type":"Answer","text":"Sim, Calma é 100% grátis com ruído branco, rosa e marrom."}},{"@type":"Question","name":"Qual cor para zumbido?","acceptedAnswer":{"@type":"Answer","text":"Rosa ou branco. Calma permite testar e misturar."}},{"@type":"Question","name":"Mascaramento à noite?","acceptedAnswer":{"@type":"Answer","text":"Sim, som de fundo dá ao cérebro uma alternativa."}},{"@type":"Question","name":"Criar mix anti-zumbido?","acceptedAnswer":{"@type":"Answer","text":"Sim, misture vários sons com volume individual."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}}]}) }}
-          />
+          
         </div>
       </section>
 

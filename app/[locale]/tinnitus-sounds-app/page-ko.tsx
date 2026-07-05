@@ -3,9 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "수면을 위한 이명 완화 소리 앱 | Calma",
-  description:
-    "이명 완화 소리 앱을 발견하세요. Calma를 사용하여 더 나은 수면과 휴식을 위한 차분한 오디오 환경을 만드세요.",
+  title: "이명 완화 및 수면을 위한 최고의 백색소음 앱 (무료) | Calma",
+  description: "귀울림에 가장 좋은 앱을 찾고 계십니까? 백색소음과 자연의 소리를 혼합하여 이명을 마스킹하세요. 무료, 오프라인으로 작동합니다.",
   keywords: [
     "백색소음 앱",
     "집중 백색소음",
@@ -18,9 +17,8 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ko/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "수면을 위한 이명 완화 소리 앱 | Calma",
-    description:
-    "이명 완화 소리 앱을 발견하세요. Calma를 사용하여 더 나은 수면과 휴식을 위한 차분한 오디오 환경을 만드세요.",
+    title: "이명 완화 및 수면을 위한 최고의 백색소음 앱 (무료) | Calma",
+    description: "귀울림에 가장 좋은 앱을 찾고 계십니까? 백색소음과 자연의 소리를 혼합하여 이명을 마스킹하세요. 무료, 오프라인으로 작동합니다.",
     url: "https://www.calmasounds.com/ko/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "ko_KR",
@@ -28,13 +26,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "수면을 위한 이명 완화 소리 앱 | Calma",
-    description:
-    "이명 완화 소리 앱을 발견하세요. Calma를 사용하여 더 나은 수면과 휴식을 위한 차분한 오디오 환경을 만드세요.",
+    title: "이명 완화 및 수면을 위한 최고의 백색소음 앱 (무료) | Calma",
+    description: "귀울림에 가장 좋은 앱을 찾고 계십니까? 백색소음과 자연의 소리를 혼합하여 이명을 마스킹하세요. 무료, 오프라인으로 작동합니다.",
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -51,6 +67,38 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/ko/tinnitus-sounds-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "이명을 위한 무료 백색 소음 앱이 있습니까?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네, Calma는 밤에 이명을 가리기 위해 차분한 오디오 환경을 찾는 사람들이 자주 사용하는 백색, 핑크 소음을 포함한 무료 소리를 제공합니다."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "이명에는 어떤 색상의 소음이 가장 좋습니까?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "많은 사람들이 귀 울림을 차단하는 데 백색 소음이나 핑크 소음이 가장 효과적이라고 생각합니다. Calma를 사용하면 모든 색상을 테스트할 수 있습니다."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "사운드 마스킹이 밤에 이명에 도움이 될 수 있습니까?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네. 침묵은 이명을 더 크게 느끼게 할 수 있습니다. 비와 같은 일정한 배경 소음을 만들면 뇌가 집중할 수 있는 대안 오디오가 제공됩니다."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -58,7 +106,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -249,10 +297,7 @@ export default function WhiteNoiseAppPage() {
               네. 침묵은 이명을 더 크게 느끼게 할 수 있습니다. 비와 같은 일정한 배경 소음을 만들면 뇌가 집중할 수 있는 대안 오디오가 제공됩니다.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"이명을 위한 무료 백색 소음 앱이 있습니까?","acceptedAnswer":{"@type":"Answer","text":"네, Calma는 밤에 이명을 가리기 위해 차분한 오디오 환경을 찾는 사람들이 자주 사용하는 백색, 핑크 소음을 포함한 무료 소리를 제공합니다."}},{"@type":"Question","name":"이명에는 어떤 색상의 소음이 가장 좋습니까?","acceptedAnswer":{"@type":"Answer","text":"많은 사람들이 귀 울림을 차단하는 데 백색 소음이나 핑크 소음이 가장 효과적이라고 생각합니다. Calma를 사용하면 모든 색상을 테스트할 수 있습니다."}},{"@type":"Question","name":"사운드 마스킹이 밤에 이명에 도움이 될 수 있습니까?","acceptedAnswer":{"@type":"Answer","text":"네. 침묵은 이명을 더 크게 느끼게 할 수 있습니다. 비와 같은 일정한 배경 소음을 만들면 뇌가 집중할 수 있는 대안 오디오가 제공됩니다."}}]}) }}
-          />
+          
         </div>
       </section>
 

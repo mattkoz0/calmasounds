@@ -3,9 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Application Gratuite Acouphènes | Bruit Blanc contre Acouphènes | Calma",
-  description:
-    "Vous cherchez une application pour acouphènes ? Masquez les bourdonnements avec du bruit blanc, rose et brun. 100% gratuite, sans publicités, fonctionne hors ligne.",
+  title: "Meilleure Appli Acouphènes et Bruits Blancs (Gratuit) | Calma",
+  description: "Vous cherchez la meilleure application pour les acouphènes ? Mélangez bruit blanc et sons de la nature pour masquer les bourdonnements. Gratuit, hors ligne.",
   keywords: [
     "application acouphènes",
     "sons pour acouphènes",
@@ -22,9 +21,8 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Application Gratuite Acouphènes | Bruit Blanc | Calma",
-    description:
-    "Masquez les acouphènes avec du bruit blanc, rose et brun. 100% gratuite, sans pubs.",
+    title: "Meilleure Appli Acouphènes et Bruits Blancs (Gratuit) | Calma",
+    description: "Vous cherchez la meilleure application pour les acouphènes ? Mélangez bruit blanc et sons de la nature pour masquer les bourdonnements. Gratuit, hors ligne.",
     url: "https://www.calmasounds.com/fr/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -32,13 +30,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App Gratuite Acouphènes | Calma",
-    description:
-    "Masquez les bourdonnements avec du bruit blanc. 100% gratuite, hors ligne.",
+    title: "Meilleure Appli Acouphènes et Bruits Blancs (Gratuit) | Calma",
+    description: "Vous cherchez la meilleure application pour les acouphènes ? Mélangez bruit blanc et sons de la nature pour masquer les bourdonnements. Gratuit, hors ligne.",
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -55,6 +71,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/fr/tinnitus-sounds-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Application gratuite acouphènes ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, Calma est 100% gratuite avec bruit blanc, rose et brun."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quelle couleur pour les acouphènes ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rose ou blanc. Calma permet de tester et mixer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Masquage sonore la nuit ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, un son de fond donne au cerveau une alternative."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Créer un mix anti-acouphènes ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, mixez plusieurs sons avec volume individuel."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Hors ligne ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, complètement sans internet."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -62,7 +126,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -274,10 +338,7 @@ export default function WhiteNoiseAppPage() {
               Oui. Tous les sons fonctionnent complètement sans internet – parfait la nuit ou en déplacement.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Application gratuite acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Oui, Calma est 100% gratuite avec bruit blanc, rose et brun."}},{"@type":"Question","name":"Quelle couleur pour les acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Rose ou blanc. Calma permet de tester et mixer."}},{"@type":"Question","name":"Masquage sonore la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, un son de fond donne au cerveau une alternative."}},{"@type":"Question","name":"Créer un mix anti-acouphènes ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mixez plusieurs sons avec volume individuel."}},{"@type":"Question","name":"Hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
-          />
+          
         </div>
       </section>
 

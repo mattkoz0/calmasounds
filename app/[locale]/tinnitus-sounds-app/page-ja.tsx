@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "睡眠のための耳鳴り緩和音アプリ | Calma",
-  description:
-    "耳鳴り緩和音アプリを発見してください。Calmaを使用して、より良い睡眠と休息のための心地よいオーディオ環境を作成します。",
+  title: "耳鳴り緩和と睡眠のための最高のアプリ (無料) | Calma",
+  description: "耳鳴りに最適なアプリをお探しですか？ホワイトノイズと自然音をミックスして耳鳴りをマスキングします。無料、オフラインで動作します。",
   keywords: [
     "耳鳴り緩和音アプリ",
     "睡眠のための耳鳴り緩和音",
@@ -16,9 +15,8 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/ja/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "睡眠のための耳鳴り緩和音アプリ | Calma",
-    description:
-    "耳鳴り緩和音アプリを発見してください。Calmaを使用して、より良い睡眠と休息のための心地よいオーディオ環境を作成します。",
+    title: "耳鳴り緩和と睡眠のための最高のアプリ (無料) | Calma",
+    description: "耳鳴りに最適なアプリをお探しですか？ホワイトノイズと自然音をミックスして耳鳴りをマスキングします。無料、オフラインで動作します。",
     url: "https://www.calmasounds.com/ja/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "ja_JP",
@@ -26,13 +24,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "睡眠のための耳鳴り緩和音アプリ | Calma",
-    description:
-    "耳鳴り緩和音アプリを発見してください。Calmaを使用して、より良い睡眠と休息のための心地よいオーディオ環境を作成します。",
+    title: "耳鳴り緩和と睡眠のための最高のアプリ (無料) | Calma",
+    description: "耳鳴りに最適なアプリをお探しですか？ホワイトノイズと自然音をミックスして耳鳴りをマスキングします。無料、オフラインで動作します。",
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -49,6 +65,38 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/ja/tinnitus-sounds-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "耳鳴り用の無料のホワイトノイズアプリはありますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "はい。Calmaは、夜間の耳鳴りをマスキングするための落ち着いたオーディオ環境を求める人がよく使用する、ホワイト、ピンクノイズなどの無料の音環境を提供します。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "耳鳴りには何色のノイズが最適ですか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "多くの人が、耳鳴りをマスキングするのにホワイトノイズやピンクノイズが効果的だと感じています。Calmaではすべての色をテストできます。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "夜間の耳鳴りにサウンドマスキングは役立ちますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "はい。沈黙は耳鳴りをより大きく感じさせることがあります。雨などの一定の背景音を作成することで、脳に集中すべき別の音を提供します。"
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -56,7 +104,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -246,10 +294,7 @@ export default function WhiteNoiseAppPage() {
               はい。沈黙は耳鳴りをより大きく感じさせることがあります。雨などの一定の背景音を作成することで、脳に集中すべき別の音を提供します。
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"耳鳴り用の無料のホワイトノイズアプリはありますか？","acceptedAnswer":{"@type":"Answer","text":"はい。Calmaは、夜間の耳鳴りをマスキングするための落ち着いたオーディオ環境を求める人がよく使用する、ホワイト、ピンクノイズなどの無料の音環境を提供します。"}},{"@type":"Question","name":"耳鳴りには何色のノイズが最適ですか？","acceptedAnswer":{"@type":"Answer","text":"多くの人が、耳鳴りをマスキングするのにホワイトノイズやピンクノイズが効果的だと感じています。Calmaではすべての色をテストできます。"}},{"@type":"Question","name":"夜間の耳鳴りにサウンドマスキングは役立ちますか？","acceptedAnswer":{"@type":"Answer","text":"はい。沈黙は耳鳴りをより大きく感じさせることがあります。雨などの一定の背景音を作成することで、脳に集中すべき別の音を提供します。"}}]}) }}
-          />
+          
         </div>
       </section>
 

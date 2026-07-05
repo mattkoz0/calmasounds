@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sonidos para Tinnitus Gratis | Alivio del Zumbido | Calma",
-  description:
-    "¿Sufres de tinnitus? Usa ruido blanco, rosa y sonidos de la naturaleza para enmascarar el zumbido en los oídos. App 100% gratis, sin anuncios, funciona offline.",
+  title: "La Mejor App de Sonidos para Tinnitus y Sueño (Gratis) | Calma",
+  description: "¿Buscas la mejor app para el zumbido en los oídos? Mezcla ruido blanco y sonidos de la naturaleza para enmascarar el tinnitus. Gratis, funciona offline.",
   keywords: [
     "app de sonidos para tinnitus",
     "sonidos para tinnitus para dormir",
@@ -22,9 +21,8 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/es/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "App de Sonidos para Tinnitus Gratis | Alivio del Zumbido | Calma",
-    description:
-    "Usa ruido blanco, rosa y sonidos de la naturaleza para enmascarar el tinnitus. 100% gratis, sin anuncios, funciona offline.",
+    title: "La Mejor App de Sonidos para Tinnitus y Sueño (Gratis) | Calma",
+    description: "¿Buscas la mejor app para el zumbido en los oídos? Mezcla ruido blanco y sonidos de la naturaleza para enmascarar el tinnitus. Gratis, funciona offline.",
     url: "https://www.calmasounds.com/es/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -32,13 +30,31 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "App para Tinnitus Gratis | Calma",
-    description:
-    "Enmascara el zumbido en los oídos con ruido blanco, rosa y sonidos de la naturaleza. 100% gratis, funciona offline.",
+    title: "La Mejor App de Sonidos para Tinnitus y Sueño (Gratis) | Calma",
+    description: "¿Buscas la mejor app para el zumbido en los oídos? Mezcla ruido blanco y sonidos de la naturaleza para enmascarar el tinnitus. Gratis, funciona offline.",
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -55,6 +71,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/es/tinnitus-sounds-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Existe una aplicación gratuita de ruido blanco para el tinnitus?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, Calma ofrece paisajes sonoros gratuitos, incluyendo ruido blanco y rosa, para enmascarar el tinnitus. Es 100% gratis y funciona offline."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué color de ruido es mejor para el tinnitus?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Muchas personas encuentran que el ruido blanco o rosa es más efectivo. Calma te permite probar todos los colores y mezclarlos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puede el enmascaramiento de sonido ayudar con el tinnitus en la noche?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. El silencio puede hacer que el tinnitus parezca más fuerte. Una capa de sonido de fondo constante le da a tu cerebro una alternativa."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Calma puede reemplazar una máquina de terapia de sonido?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para muchas personas, sí. Calma ofrece la misma calidad con la ventaja de personalizar mezclas, usar temporizador y llevarla en tu teléfono."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué frecuencia de sonido es mejor para el tinnitus?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depende del tipo de tinnitus. Si tu zumbido es agudo, prueba ruido rosa o blanco. Si es grave, prueba ruido marrón. Calma te permite experimentar con combinaciones."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -62,7 +126,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -291,10 +355,7 @@ export default function WhiteNoiseAppPage() {
               Depende del tipo de tinnitus. Si tu zumbido es agudo, el ruido rosa o blanco puede funcionar mejor. Si es grave, prueba el ruido marrón. Calma te permite experimentar con diferentes combinaciones hasta encontrar la más efectiva.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Existe una aplicación gratuita de ruido blanco para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Sí, Calma ofrece paisajes sonoros gratuitos, incluyendo ruido blanco y rosa, para enmascarar el tinnitus. Es 100% gratis y funciona offline."}},{"@type":"Question","name":"¿Qué color de ruido es mejor para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Muchas personas encuentran que el ruido blanco o rosa es más efectivo. Calma te permite probar todos los colores y mezclarlos."}},{"@type":"Question","name":"¿Puede el enmascaramiento de sonido ayudar con el tinnitus en la noche?","acceptedAnswer":{"@type":"Answer","text":"Sí. El silencio puede hacer que el tinnitus parezca más fuerte. Una capa de sonido de fondo constante le da a tu cerebro una alternativa."}},{"@type":"Question","name":"¿Calma puede reemplazar una máquina de terapia de sonido?","acceptedAnswer":{"@type":"Answer","text":"Para muchas personas, sí. Calma ofrece la misma calidad con la ventaja de personalizar mezclas, usar temporizador y llevarla en tu teléfono."}},{"@type":"Question","name":"¿Qué frecuencia de sonido es mejor para el tinnitus?","acceptedAnswer":{"@type":"Answer","text":"Depende del tipo de tinnitus. Si tu zumbido es agudo, prueba ruido rosa o blanco. Si es grave, prueba ruido marrón. Calma te permite experimentar con combinaciones."}}]}) }}
-          />
+          
         </div>
       </section>
 
