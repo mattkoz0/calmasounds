@@ -40,7 +40,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -57,6 +76,62 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/fr/white-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Quelle est la meilleure application gratuite de bruit blanc ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calma offre un environnement simple pour mélanger bruit blanc et sons de la nature. 100% gratuite, sans pub, fonctionne hors ligne."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Le bruit blanc aide-t-il à dormir ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Le bruit blanc masque les bruits soudains, aidant votre cerveau à se détendre et à maintenir un sommeil profond."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Comment utiliser le bruit blanc pour étudier ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nous recommandons une base de bruit blanc ou brun mélangée à une pluie légère, particulièrement efficace pour le TDAH."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Le bruit blanc est-il sûr pour les bébés ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, si le volume reste en dessous de 50 dB. Placez l'appareil à 2 m du berceau et utilisez une minuterie."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Bruit blanc vs bruit brun — lequel est meilleur pour dormir ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le bruit blanc masque les sons aigus. Le bruit brun est plus profond et relaxant. Calma permet de mélanger les deux."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Calma fonctionne-t-elle sans Internet ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Calma fonctionne entièrement hors ligne, partout et sans Wi-Fi."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -64,7 +139,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -302,10 +377,7 @@ export default function WhiteNoiseAppPage() {
               Oui. Calma fonctionne entièrement hors ligne, ce qui signifie que vous pouvez l'utiliser partout : dans l'avion, à la montagne ou simplement quand vous n'avez pas de Wi-Fi.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Quelle est la meilleure application gratuite de bruit blanc ?","acceptedAnswer":{"@type":"Answer","text":"Calma offre un environnement simple pour mélanger bruit blanc et sons de la nature. 100% gratuite, sans pub, fonctionne hors ligne."}},{"@type":"Question","name":"Le bruit blanc aide-t-il à dormir ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Le bruit blanc masque les bruits soudains, aidant votre cerveau à se détendre et à maintenir un sommeil profond."}},{"@type":"Question","name":"Comment utiliser le bruit blanc pour étudier ?","acceptedAnswer":{"@type":"Answer","text":"Nous recommandons une base de bruit blanc ou brun mélangée à une pluie légère, particulièrement efficace pour le TDAH."}},{"@type":"Question","name":"Le bruit blanc est-il sûr pour les bébés ?","acceptedAnswer":{"@type":"Answer","text":"Oui, si le volume reste en dessous de 50 dB. Placez l'appareil à 2 m du berceau et utilisez une minuterie."}},{"@type":"Question","name":"Bruit blanc vs bruit brun — lequel est meilleur pour dormir ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit blanc masque les sons aigus. Le bruit brun est plus profond et relaxant. Calma permet de mélanger les deux."}},{"@type":"Question","name":"Calma fonctionne-t-elle sans Internet ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Calma fonctionne entièrement hors ligne, partout et sans Wi-Fi."}}]}) }}
-          />
+          
         </div>
       </section>
 

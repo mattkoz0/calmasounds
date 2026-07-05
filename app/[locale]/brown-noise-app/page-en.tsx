@@ -37,7 +37,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -54,6 +73,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/brown-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is a brown noise app?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A brown noise app generates deep, low-frequency sound similar to a strong waterfall or distant thunder. It emphasizes lower frequencies, making it sound deeper and more soothing than white noise."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can brown noise help with sleep?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Many people use brown noise to make bedtime feel calmer and reduce the impact of distracting sounds in the environment."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is Calma only for brown noise?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Calma also supports white noise, pink noise, nature sounds, sleep soundscapes and focus-oriented audio mixes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does brown noise help with ADHD?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Brown noise's deep, consistent frequency provides enough background stimulation to satisfy the ADHD brain's need for input, without being distracting. This reduces the urge to seek other stimuli."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Brown noise vs white noise — what's the difference?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "White noise contains all frequencies at equal volume, producing a bright static. Brown noise rolls off at higher frequencies, sounding deeper and warmer. Most adults prefer brown noise for sleep because it's less harsh during long exposure."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -61,7 +128,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -299,10 +366,7 @@ export default function WhiteNoiseAppPage() {
               White noise contains all frequencies at equal volume, producing a bright "static" or "hiss" sound. Brown noise rolls off steeply at higher frequencies, sounding much deeper and warmer — like the rumble of a waterfall or heavy rain on a window. Most adults prefer brown noise for sleep because it's less harsh on the ears during long exposure.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a brown noise app?","acceptedAnswer":{"@type":"Answer","text":"A brown noise app generates deep, low-frequency sound similar to a strong waterfall or distant thunder. It emphasizes lower frequencies, making it sound deeper and more soothing than white noise."}},{"@type":"Question","name":"Can brown noise help with sleep?","acceptedAnswer":{"@type":"Answer","text":"Many people use brown noise to make bedtime feel calmer and reduce the impact of distracting sounds in the environment."}},{"@type":"Question","name":"Is Calma only for brown noise?","acceptedAnswer":{"@type":"Answer","text":"No. Calma also supports white noise, pink noise, nature sounds, sleep soundscapes and focus-oriented audio mixes."}},{"@type":"Question","name":"Does brown noise help with ADHD?","acceptedAnswer":{"@type":"Answer","text":"Yes. Brown noise's deep, consistent frequency provides enough background stimulation to satisfy the ADHD brain's need for input, without being distracting. This reduces the urge to seek other stimuli."}},{"@type":"Question","name":"Brown noise vs white noise — what's the difference?","acceptedAnswer":{"@type":"Answer","text":"White noise contains all frequencies at equal volume, producing a bright static. Brown noise rolls off at higher frequencies, sounding deeper and warmer. Most adults prefer brown noise for sleep because it's less harsh during long exposure."}}]}) }}
-          />
+          
         </div>
       </section>
 

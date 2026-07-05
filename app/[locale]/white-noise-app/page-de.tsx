@@ -38,7 +38,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -55,6 +74,62 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/de/white-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Was ist die beste kostenlose White Noise App?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calma ist 100% kostenlos, ohne Werbung, offline nutzbar und ermöglicht das Mischen von weißem Rauschen mit Naturklängen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Hilft weißes Rauschen beim Schlafen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Es maskiert plötzliche Geräusche und hilft dem Gehirn, sich zu entspannen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Wie nutzt man weißes Rauschen zum Lernen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Basis aus weißem oder braunem Rauschen mit leichtem Regen, besonders wirksam bei ADHS."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Ist weißes Rauschen sicher für Babys?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, bei Lautstärke unter 50 dB und mindestens 2 Meter Abstand."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Weißes vs. braunes Rauschen – was ist besser?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Weiß maskiert hohe Töne. Braun ist tiefer und entspannender. Calma mischt beides."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Funktioniert Calma offline?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja. Calma funktioniert komplett ohne Internet."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -62,7 +137,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -282,10 +357,7 @@ export default function WhiteNoiseAppPage() {
               Ja. Calma funktioniert komplett offline – im Flugzeug, in den Bergen oder einfach ohne WLAN.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist die beste kostenlose White Noise App?","acceptedAnswer":{"@type":"Answer","text":"Calma ist 100% kostenlos, ohne Werbung, offline nutzbar und ermöglicht das Mischen von weißem Rauschen mit Naturklängen."}},{"@type":"Question","name":"Hilft weißes Rauschen beim Schlafen?","acceptedAnswer":{"@type":"Answer","text":"Ja. Es maskiert plötzliche Geräusche und hilft dem Gehirn, sich zu entspannen."}},{"@type":"Question","name":"Wie nutzt man weißes Rauschen zum Lernen?","acceptedAnswer":{"@type":"Answer","text":"Basis aus weißem oder braunem Rauschen mit leichtem Regen, besonders wirksam bei ADHS."}},{"@type":"Question","name":"Ist weißes Rauschen sicher für Babys?","acceptedAnswer":{"@type":"Answer","text":"Ja, bei Lautstärke unter 50 dB und mindestens 2 Meter Abstand."}},{"@type":"Question","name":"Weißes vs. braunes Rauschen – was ist besser?","acceptedAnswer":{"@type":"Answer","text":"Weiß maskiert hohe Töne. Braun ist tiefer und entspannender. Calma mischt beides."}},{"@type":"Question","name":"Funktioniert Calma offline?","acceptedAnswer":{"@type":"Answer","text":"Ja. Calma funktioniert komplett ohne Internet."}}]}) }}
-          />
+          
         </div>
       </section>
 

@@ -33,7 +33,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -50,6 +69,38 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/pl/white-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Jaka jest najlepsza darmowa aplikacja z białym szumem?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calma oferuje proste, pozbawione rozpraszaczy środowisko do miksowania białego szumu z dźwiękami natury, bez inwazyjnych reklam, które mogłyby Cię obudzić."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy biały szum pomaga w zasypianiu?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Biały szum działa jak akustyczny koc, który maskuje nagłe hałasy, takie jak ruch uliczny czy szczekanie psów, pomagając mózgowi się zrelaksować."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Jak używać białego szumu do nauki?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Do nauki zalecamy ustawienie stałej bazy białego lub brązowego szumu, zmieszanego z lekkim deszczem. Pomaga to utrzymać koncentrację i maskuje domowe rozpraszacze."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -57,7 +108,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -253,10 +304,7 @@ export default function WhiteNoiseAppPage() {
               Do nauki zalecamy ustawienie stałej bazy białego lub brązowego szumu, zmieszanego z lekkim deszczem. Pomaga to utrzymać koncentrację i maskuje domowe rozpraszacze.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Jaka jest najlepsza darmowa aplikacja z białym szumem?","acceptedAnswer":{"@type":"Answer","text":"Calma oferuje proste, pozbawione rozpraszaczy środowisko do miksowania białego szumu z dźwiękami natury, bez inwazyjnych reklam, które mogłyby Cię obudzić."}},{"@type":"Question","name":"Czy biały szum pomaga w zasypianiu?","acceptedAnswer":{"@type":"Answer","text":"Tak. Biały szum działa jak akustyczny koc, który maskuje nagłe hałasy, takie jak ruch uliczny czy szczekanie psów, pomagając mózgowi się zrelaksować."}},{"@type":"Question","name":"Jak używać białego szumu do nauki?","acceptedAnswer":{"@type":"Answer","text":"Do nauki zalecamy ustawienie stałej bazy białego lub brązowego szumu, zmieszanego z lekkim deszczem. Pomaga to utrzymać koncentrację i maskuje domowe rozpraszacze."}}]}) }}
-          />
+          
         </div>
       </section>
 

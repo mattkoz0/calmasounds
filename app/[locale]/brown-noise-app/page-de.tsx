@@ -37,7 +37,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -54,6 +73,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/de/brown-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Was ist braunes Rauschen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ein tiefer, gleichmäßiger Klang mit mehr Energie in tiefen Frequenzen als weißes Rauschen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Hilft braunes Rauschen bei ADHS?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, viele ADHS-Betroffene berichten bessere Konzentration mit braunem Rauschen."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Gibt es nur braunes Rauschen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nein. Calma bietet weiß, rosa, grün und Naturklänge."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Braun vs. weiß – was ist besser?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Braun ist tiefer und sanfter. Weiß maskiert plötzliche Geräusche besser. Calma mischt beides."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Kann man es die ganze Nacht nutzen?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ja, bei moderater Lautstärke sicher. Calma hat einen automatischen Sleep-Timer."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -61,7 +128,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -277,10 +344,7 @@ export default function WhiteNoiseAppPage() {
               Ja, bei moderater Lautstärke (unter 50 dB) ist es völlig sicher. Calma hat einen Sleep-Timer, der sich automatisch abschaltet.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Was ist braunes Rauschen?","acceptedAnswer":{"@type":"Answer","text":"Ein tiefer, gleichmäßiger Klang mit mehr Energie in tiefen Frequenzen als weißes Rauschen."}},{"@type":"Question","name":"Hilft braunes Rauschen bei ADHS?","acceptedAnswer":{"@type":"Answer","text":"Ja, viele ADHS-Betroffene berichten bessere Konzentration mit braunem Rauschen."}},{"@type":"Question","name":"Gibt es nur braunes Rauschen?","acceptedAnswer":{"@type":"Answer","text":"Nein. Calma bietet weiß, rosa, grün und Naturklänge."}},{"@type":"Question","name":"Braun vs. weiß – was ist besser?","acceptedAnswer":{"@type":"Answer","text":"Braun ist tiefer und sanfter. Weiß maskiert plötzliche Geräusche besser. Calma mischt beides."}},{"@type":"Question","name":"Kann man es die ganze Nacht nutzen?","acceptedAnswer":{"@type":"Answer","text":"Ja, bei moderater Lautstärke sicher. Calma hat einen automatischen Sleep-Timer."}}]}) }}
-          />
+          
         </div>
       </section>
 

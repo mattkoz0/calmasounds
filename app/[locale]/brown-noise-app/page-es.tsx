@@ -39,7 +39,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -56,6 +75,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/es/brown-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Qué es el ruido marrón?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El ruido marrón es un sonido profundo y grave, similar al rumor de un trueno lejano. Tiene más energía en las frecuencias bajas que el ruido blanco."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El ruido marrón ayuda con el TDAH?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, muchas personas con TDAH reportan que el ruido marrón les ayuda a concentrarse mejor. Su tono profundo y constante reduce la hiperactividad mental."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Calma es únicamente sobre ruido marrón?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Calma incluye ruido blanco, rosa, verde y sonidos de la naturaleza para dormir, relajarte o concentrarte."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Ruido marrón vs ruido blanco — cuál es mejor para dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El ruido marrón suena más profundo y suave. El ruido blanco enmascara mejor sonidos repentinos. Con Calma puedes mezclar ambos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo usar ruido marrón toda la noche?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, es seguro a volumen moderado. Calma incluye un temporizador de sueño para que se apague automáticamente."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -63,7 +130,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -296,10 +363,7 @@ export default function WhiteNoiseAppPage() {
               Sí, es completamente seguro escuchar ruido marrón toda la noche a un volumen moderado (por debajo de 50 dB). Calma incluye un temporizador de sueño para que se apague automáticamente si lo prefieres.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es el ruido marrón?","acceptedAnswer":{"@type":"Answer","text":"El ruido marrón es un sonido profundo y grave, similar al rumor de un trueno lejano. Tiene más energía en las frecuencias bajas que el ruido blanco."}},{"@type":"Question","name":"¿El ruido marrón ayuda con el TDAH?","acceptedAnswer":{"@type":"Answer","text":"Sí, muchas personas con TDAH reportan que el ruido marrón les ayuda a concentrarse mejor. Su tono profundo y constante reduce la hiperactividad mental."}},{"@type":"Question","name":"¿Calma es únicamente sobre ruido marrón?","acceptedAnswer":{"@type":"Answer","text":"No. Calma incluye ruido blanco, rosa, verde y sonidos de la naturaleza para dormir, relajarte o concentrarte."}},{"@type":"Question","name":"¿Ruido marrón vs ruido blanco — cuál es mejor para dormir?","acceptedAnswer":{"@type":"Answer","text":"El ruido marrón suena más profundo y suave. El ruido blanco enmascara mejor sonidos repentinos. Con Calma puedes mezclar ambos."}},{"@type":"Question","name":"¿Puedo usar ruido marrón toda la noche?","acceptedAnswer":{"@type":"Answer","text":"Sí, es seguro a volumen moderado. Calma incluye un temporizador de sueño para que se apague automáticamente."}}]}) }}
-          />
+          
         </div>
       </section>
 

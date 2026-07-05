@@ -32,7 +32,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -49,6 +68,38 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/ja/white-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "最高の無料ホワイトノイズアプリは何ですか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calmaは、ホワイトノイズと自然の音をミックスするためのシンプルで気晴らしのない環境を提供します。睡眠を妨げる邪魔な広告はありません。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "ホワイトノイズは睡眠に役立ちますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "はい。ホワイトノイズは、交通音や犬の吠え声などの突然の背景音をマスキングする音の毛布として機能し、脳をリラックスさせます。"
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "勉強のためにホワイトノイズをどのように使用しますか？",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "勉強には、ホワイトまたはブラウンノイズのベースに小雨をミックスすることをお勧めします。これにより、集中力を維持できます。"
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -56,7 +107,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -246,10 +297,7 @@ export default function WhiteNoiseAppPage() {
               勉強には、ホワイトまたはブラウンノイズのベースに小雨をミックスすることをお勧めします。これにより、集中力を維持できます。
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"最高の無料ホワイトノイズアプリは何ですか？","acceptedAnswer":{"@type":"Answer","text":"Calmaは、ホワイトノイズと自然の音をミックスするためのシンプルで気晴らしのない環境を提供します。睡眠を妨げる邪魔な広告はありません。"}},{"@type":"Question","name":"ホワイトノイズは睡眠に役立ちますか？","acceptedAnswer":{"@type":"Answer","text":"はい。ホワイトノイズは、交通音や犬の吠え声などの突然の背景音をマスキングする音の毛布として機能し、脳をリラックスさせます。"}},{"@type":"Question","name":"勉強のためにホワイトノイズをどのように使用しますか？","acceptedAnswer":{"@type":"Answer","text":"勉強には、ホワイトまたはブラウンノイズのベースに小雨をミックスすることをお勧めします。これにより、集中力を維持できます。"}}]}) }}
-          />
+          
         </div>
       </section>
 

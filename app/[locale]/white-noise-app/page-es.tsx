@@ -39,7 +39,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -56,6 +75,62 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/es/white-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Cuál es la mejor aplicación gratuita de ruido blanco?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza. Es 100% gratis, sin anuncios y funciona offline."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿El ruido blanco ayuda a dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse y mantener el sueño profundo."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cómo usar ruido blanco para estudiar?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración, especialmente para personas con TDAH."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Es seguro el ruido blanco para bebés?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, cuando se usa correctamente. Mantén el volumen por debajo de 50 dB, coloca el dispositivo a al menos 2 metros de la cuna, y usa un temporizador de sueño."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Ruido blanco vs ruido marrón — cuál es mejor para dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El ruido blanco enmascara mejor sonidos agudos. El ruido marrón tiene un tono más profundo y grave. Con Calma puedes mezclar ambos para obtener lo mejor de los dos mundos."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Puedo usar una app de ruido blanco en vez de una máquina de sonido?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Por supuesto. Apps modernas como Calma ofrecen la misma o mejor calidad que las máquinas dedicadas, además de mezclas personalizadas, temporizadores y modo offline. Calma es gratis."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -63,7 +138,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -300,10 +375,7 @@ export default function WhiteNoiseAppPage() {
               Por supuesto. Apps modernas como Calma ofrecen la misma o mejor calidad de sonido que las máquinas de sonido dedicadas, además de poder crear mezclas personalizadas, usar temporizadores y funcionar offline. Y Calma es gratis.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es la mejor aplicación gratuita de ruido blanco?","acceptedAnswer":{"@type":"Answer","text":"Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza. Es 100% gratis, sin anuncios y funciona offline."}},{"@type":"Question","name":"¿El ruido blanco ayuda a dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí. El ruido blanco actúa como una manta acústica que enmascara ruidos repentinos de fondo, ayudando a tu cerebro a relajarse y mantener el sueño profundo."}},{"@type":"Question","name":"¿Cómo usar ruido blanco para estudiar?","acceptedAnswer":{"@type":"Answer","text":"Para estudiar, recomendamos una base constante de ruido blanco o marrón, mezclado con lluvia ligera. Esto ayuda a mantener la concentración, especialmente para personas con TDAH."}},{"@type":"Question","name":"¿Es seguro el ruido blanco para bebés?","acceptedAnswer":{"@type":"Answer","text":"Sí, cuando se usa correctamente. Mantén el volumen por debajo de 50 dB, coloca el dispositivo a al menos 2 metros de la cuna, y usa un temporizador de sueño."}},{"@type":"Question","name":"¿Ruido blanco vs ruido marrón — cuál es mejor para dormir?","acceptedAnswer":{"@type":"Answer","text":"El ruido blanco enmascara mejor sonidos agudos. El ruido marrón tiene un tono más profundo y grave. Con Calma puedes mezclar ambos para obtener lo mejor de los dos mundos."}},{"@type":"Question","name":"¿Puedo usar una app de ruido blanco en vez de una máquina de sonido?","acceptedAnswer":{"@type":"Answer","text":"Por supuesto. Apps modernas como Calma ofrecen la misma o mejor calidad que las máquinas dedicadas, además de mezclas personalizadas, temporizadores y modo offline. Calma es gratis."}}]}) }}
-          />
+          
         </div>
       </section>
 

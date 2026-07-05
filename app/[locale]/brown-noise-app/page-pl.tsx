@@ -33,7 +33,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -50,6 +69,37 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/pl/brown-noise-app"
     }
   ]
+},
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Czym jest szum brązowy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Szum brązowy to głęboki, basowy dźwięk o niskiej częstotliwości, przypominający grzmot lub wodospad. Jest łagodniejszy i bardziej relaksujący niż szum biały."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Czy szum brązowy pomaga w ADHD?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tak, wiele osób z ADHD zgłasza poprawę koncentracji dzięki głębokiej, przewidywalnej naturze szumu brązowego, który maskuje rozpraszacze."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Szum biały czy brązowy - który jest lepszy do snu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Szum brązowy jest głębszy i często preferowany przez dorosłych do długiego relaksu. Szum biały lepiej maskuje nagłe hałasy. Calma pozwala miksować oba."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -57,7 +107,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 

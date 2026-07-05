@@ -37,7 +37,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -54,6 +73,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/pt-BR/brown-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "O que é ruído marrom?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O ruído marrom é um som profundo e grave com mais energia nas baixas frequências, tornando-o mais relaxante."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "O ruído marrom ajuda com TDAH?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, muitas pessoas com TDAH relatam melhor concentração com ruído marrom."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "O Calma é apenas para ruído marrom?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Não. Calma inclui ruído branco, rosa, verde e sons da natureza."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Ruído marrom vs branco — qual é melhor para dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O marrom é mais profundo e suave. O branco mascara melhor sons repentinos. Calma permite misturar os dois."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Posso usar ruído marrom a noite toda?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sim, é seguro em volume moderado. Calma tem temporizador automático."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -61,7 +128,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -278,10 +345,7 @@ export default function WhiteNoiseAppPage() {
               Sim, é perfeitamente seguro em volume moderado (abaixo de 50 dB). O Calma inclui um temporizador de sono para desligar automaticamente.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é ruído marrom?","acceptedAnswer":{"@type":"Answer","text":"O ruído marrom é um som profundo e grave com mais energia nas baixas frequências, tornando-o mais relaxante."}},{"@type":"Question","name":"O ruído marrom ajuda com TDAH?","acceptedAnswer":{"@type":"Answer","text":"Sim, muitas pessoas com TDAH relatam melhor concentração com ruído marrom."}},{"@type":"Question","name":"O Calma é apenas para ruído marrom?","acceptedAnswer":{"@type":"Answer","text":"Não. Calma inclui ruído branco, rosa, verde e sons da natureza."}},{"@type":"Question","name":"Ruído marrom vs branco — qual é melhor para dormir?","acceptedAnswer":{"@type":"Answer","text":"O marrom é mais profundo e suave. O branco mascara melhor sons repentinos. Calma permite misturar os dois."}},{"@type":"Question","name":"Posso usar ruído marrom a noite toda?","acceptedAnswer":{"@type":"Answer","text":"Sim, é seguro em volume moderado. Calma tem temporizador automático."}}]}) }}
-          />
+          
         </div>
       </section>
 

@@ -32,7 +32,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -49,6 +68,37 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/ja/brown-noise-app"
     }
   ]
+},
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "ブラウンノイズとは何ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ブラウンノイズは、遠くの雷や滝のような低周波の深い音です。ホワイトノイズよりも柔らかく、リラックス効果が高いです。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ブラウンノイズはADHDに役立ちますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "はい、多くのADHDの人が、ブラウンノイズの深くて予測可能な性質により、気が散るのを防ぎ集中力が向上すると報告しています。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "睡眠にはホワイトノイズとブラウンノイズのどちらが良いですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ブラウンノイズは深みがあり、長時間の睡眠によく好まれます。ホワイトノイズは突然の音をマスキングするのに優れています。Calmaでは両方を混ぜることができます。"
+          }
+        }
+      ]
+    }
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -56,7 +106,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 

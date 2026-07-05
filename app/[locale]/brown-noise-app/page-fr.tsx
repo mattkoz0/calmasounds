@@ -39,7 +39,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -56,6 +75,54 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/fr/brown-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Qu'est-ce que le bruit brun ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le bruit brun est un son profond et grave avec plus d'énergie dans les basses fréquences que le bruit blanc, ce qui le rend plus relaxant."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Le bruit brun aide-t-il avec le TDAH ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, de nombreuses personnes avec TDAH rapportent une meilleure concentration grâce au bruit brun."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Calma ne propose-t-elle que du bruit brun ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non. Calma inclut bruit blanc, rose, vert et des sons de la nature."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Bruit brun vs bruit blanc — lequel est meilleur pour dormir ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le bruit brun est plus profond et doux. Le bruit blanc masque mieux les sons soudains. Calma permet de mélanger les deux."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Puis-je utiliser le bruit brun toute la nuit ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, c'est sûr à volume modéré. Calma a une minuterie de sommeil automatique."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -63,7 +130,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -297,10 +364,7 @@ export default function WhiteNoiseAppPage() {
               Oui, c'est parfaitement sûr à volume modéré (en dessous de 50 dB). Calma inclut une minuterie de sommeil pour s'éteindre automatiquement si vous le souhaitez.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu'est-ce que le bruit brun ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit brun est un son profond et grave avec plus d'énergie dans les basses fréquences que le bruit blanc, ce qui le rend plus relaxant."}},{"@type":"Question","name":"Le bruit brun aide-t-il avec le TDAH ?","acceptedAnswer":{"@type":"Answer","text":"Oui, de nombreuses personnes avec TDAH rapportent une meilleure concentration grâce au bruit brun."}},{"@type":"Question","name":"Calma ne propose-t-elle que du bruit brun ?","acceptedAnswer":{"@type":"Answer","text":"Non. Calma inclut bruit blanc, rose, vert et des sons de la nature."}},{"@type":"Question","name":"Bruit brun vs bruit blanc — lequel est meilleur pour dormir ?","acceptedAnswer":{"@type":"Answer","text":"Le bruit brun est plus profond et doux. Le bruit blanc masque mieux les sons soudains. Calma permet de mélanger les deux."}},{"@type":"Question","name":"Puis-je utiliser le bruit brun toute la nuit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, c'est sûr à volume modéré. Calma a une minuterie de sommeil automatique."}}]}) }}
-          />
+          
         </div>
       </section>
 

@@ -34,7 +34,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -51,6 +70,37 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/ko/brown-noise-app"
     }
   ]
+},
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "브라운 노이즈란 무엇입니까?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "브라운 노이즈는 멀리서 치는 천둥이나 폭포와 같은 저주파의 깊은 소리입니다. 백색 소음보다 부드럽고 편안합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "브라운 노이즈가 ADHD에 도움이 됩니까?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "네, 많은 ADHD 환자들이 브라운 노이즈의 깊고 예측 가능한 특성 덕분에 방해 요소를 가려주어 집중력이 향상되었다고 보고합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "수면에는 백색 소음과 브라운 노이즈 중 어느 것이 더 좋습니까?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "브라운 노이즈는 더 깊고 성인의 긴 휴식에 자주 선호됩니다. 백색 소음은 갑작스러운 소음을 마스킹하는 데 더 좋습니다. Calma에서는 두 가지를 혼합할 수 있습니다."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -58,7 +108,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 

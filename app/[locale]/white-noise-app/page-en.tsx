@@ -38,7 +38,26 @@ export const metadata: Metadata = {
   },
 };
 
-const breadcrumbJsonLd = {
+const combinedJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Calma - Sleep Sounds & Relax",
+      "applicationCategory": "HealthAndFitnessApplication",
+      "operatingSystem": "ANDROID, IOS",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      }
+    },
+    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -55,6 +74,62 @@ const breadcrumbJsonLd = {
       "item": "https://www.calmasounds.com/white-noise-app"
     }
   ]
+},
+    {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "What is the best free white noise app?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Does white noise help you sleep?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. White noise acts as an acoustic blanket that masks sudden background noises like traffic or dogs barking, helping your brain relax and stay in deep sleep."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "How to use a white noise app for studying?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For studying, set a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Is white noise safe for babies?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when used correctly. Keep the volume below 50 dB, place the device at least 2 meters from the crib, and use a sleep timer. Many pediatricians recommend white noise for babies."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "White noise vs brown noise — which is better for sleep?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "White noise is better at masking high-pitched sounds. Brown noise has a deeper, rumbling quality that many adults find more soothing. With Calma, you can mix both together."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Can I use a white noise app instead of a sound machine?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. Modern white noise apps like Calma offer the same or better sound quality as dedicated sound machines, plus custom soundscapes, sleep timers, and offline support. Calma is free."
+            }
+        }
+    ]
+}
+  ]
 };
 
 export default function WhiteNoiseAppPage() {
@@ -62,7 +137,7 @@ export default function WhiteNoiseAppPage() {
     <main className="min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(combinedJsonLd) }}
       />
 
 
@@ -301,10 +376,7 @@ export default function WhiteNoiseAppPage() {
               Absolutely. Modern white noise apps like Calma offer the same (or better) sound quality as dedicated sound machines, plus the ability to mix custom soundscapes, set sleep timers, and work offline. You also save money since Calma is free.
             </p>
           </div>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best free white noise app?","acceptedAnswer":{"@type":"Answer","text":"Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up."}},{"@type":"Question","name":"Does white noise help you sleep?","acceptedAnswer":{"@type":"Answer","text":"Yes. White noise acts as an acoustic blanket that masks sudden background noises like traffic or dogs barking, helping your brain relax and stay in deep sleep."}},{"@type":"Question","name":"How to use a white noise app for studying?","acceptedAnswer":{"@type":"Answer","text":"For studying, set a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD."}},{"@type":"Question","name":"Is white noise safe for babies?","acceptedAnswer":{"@type":"Answer","text":"Yes, when used correctly. Keep the volume below 50 dB, place the device at least 2 meters from the crib, and use a sleep timer. Many pediatricians recommend white noise for babies."}},{"@type":"Question","name":"White noise vs brown noise — which is better for sleep?","acceptedAnswer":{"@type":"Answer","text":"White noise is better at masking high-pitched sounds. Brown noise has a deeper, rumbling quality that many adults find more soothing. With Calma, you can mix both together."}},{"@type":"Question","name":"Can I use a white noise app instead of a sound machine?","acceptedAnswer":{"@type":"Answer","text":"Absolutely. Modern white noise apps like Calma offer the same or better sound quality as dedicated sound machines, plus custom soundscapes, sleep timers, and offline support. Calma is free."}}]}) }}
-          />
+          
         </div>
       </section>
 
