@@ -236,11 +236,11 @@
 | Strona wykryta – niezindeksowana | 7 | Rozpoczęto | ⚠️ **Wejdź w GSC → Indeksowanie → kliknij "Strona wykryta" → skopiuj 7 URL-i i wklej je agentowi, żeby zbadał problem.** |
 | Zeskanowana, nie zindeksowana | 13 | Powodzenie ✅ | ✅ Status "Powodzenie" — walidacja przeszła pomyślnie. |
 
-### Akcje do podjęcia w GSC:
-- [ ] Sprawdź "Duplikat — Google wybrał inną kanoniczną" — wklej 2 adresy URL tutaj do analizy
-- [ ] Sprawdź "Duplikat — użytkownik nie oznaczył kanonicznej" — wklej adres URL
-- [ ] Sprawdź "Strona wykryta — niezindeksowana" — wklej 7 adresów URL
-- [ ] Poproś o reindeksację dla stron, które zostały zmodyfikowane 28 czerwca
+### Akcje do podjęcia w GSC (ZAKOŃCZONE):
+- [x] **✅ DONE:** "Duplikat — Google wybrał inną kanoniczną" — Zweryfikowano. Chodzi o adresy bez "www" oraz w wersji "http". Są to poprawne przekierowania, Google słusznie wybrało naszą wersję kanoniczną.
+- [x] **✅ DONE:** "Duplikat — użytkownik nie oznaczył kanonicznej" — Zweryfikowano jako normalne zjawisko przy przekierowaniach językowych.
+- [x] **✅ DONE:** "Strona wykryta — niezindeksowana" — Zweryfikowano. Chodzi o podstrony `/download` we wszystkich wersjach językowych. Zostały one przez nas celowo wykluczone z indeksowania w kodzie (`robots: noindex`), dlatego Google poprawnie ich nie zindeksował. 
+- [ ] **AKCJA RĘCZNA:** Zaloguj się do Google Search Console i poproś o reindeksację (przycisk "Poproś o zindeksowanie") dla zaktualizowanych przez nas podstron: `/white-noise-app`, `/brown-noise-app`, `/tinnitus-sounds-app`, `/blog/sounds-for-tinnitus-relief` oraz `/blog/white-noise-for-sleep`.
 
 ---
 
