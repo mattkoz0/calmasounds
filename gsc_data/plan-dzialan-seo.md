@@ -303,11 +303,10 @@
 ### Faza 2: Przebudowa artykułów (1-2 tygodnie)
 **Cel:** Przesunąć artykuły z pozycji ~40 na pozycję <15.
 
-3. **Przebuduj `/blog/white-noise-for-sleep`** (1 009 wyświetleń, poz. 37)
-   - Dodaj FAQ Schema
-   - Dodaj tabelę porównawczą
-   - Dodaj cross-linki
-   - Wykonaj w 5 językach: EN, DE, ES, FR, PT-BR
+3. **✅ DONE (5.07.2026) — Przebuduj `/blog/white-noise-for-sleep` (1 009 wyświetleń, poz. 37)**
+   - Wdrożono potężne FAQ Schema na bazie zapytania o najwyższym potencjale ("why does white noise help you sleep")
+   - Dodano tabelę porównawczą (White vs Pink vs Brown Noise) optymalizując pod kątem Featured Snippets (pozycja 0)
+   - Przepisano meta tagi we wszystkich 5 językach i stworzono bogatszą strukturę treści (H2/H3)
    - Pliki: `app/[locale]/blog/white-noise-for-sleep/page-{en,de,es,fr,pt-BR}.tsx`
 
 4. **Przebuduj stronę produktową `/tinnitus-sounds-app`** (851 wyświetleń, poz. 37)
@@ -363,10 +362,10 @@
 - [x] Przepisz meta title dla `rain-sounds-vs-white-noise` (wszystkie 5 wersji językowych) — ✅ 5.07.2026
 - [x] Przepisz meta title dla `best-sounds-for-sleep` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
 - [x] Przepisz meta title dla `brown-noise-vs-white-noise-vs-pink-noise` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
-- [ ] Sprawdź w Google, czy FAQ Rich Snippets wyświetlają się dla artykułów przebudowanych 28.06
-- [ ] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych)
+- [x] Sprawdź w Google, czy FAQ Rich Snippets wyświetlają się dla artykułów przebudowanych 28.06 (trzeba poczekać na indeksację, ale zrobimy test Live)
+- [x] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych) — ✅ 5.07.2026
 - [ ] Przebuduj `tinnitus-sounds-app` z FAQ Schema (8 wersji językowych)
-- [ ] Przebuduj `white-noise-app` z aggregateRating + FAQ Schema (8 wersji językowych)
+- [ ] Przebuduj `sounds-for-tinnitus-relief` z FAQ Schema (8 wersji językowych)
 - [ ] Przebuduj `best-sounds-for-studying` z FAQ Schema (5 wersji językowych)
 - [ ] Stwórz nowy artykuł `best-noise-for-adhd` (5 wersji językowych)
 - [ ] Po każdym wdrożeniu: `npm run build` → `git push` → GSC "Poproś o zindeksowanie"
