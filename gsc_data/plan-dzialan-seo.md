@@ -309,11 +309,11 @@
    - Przepisano meta tagi we wszystkich 5 językach i stworzono bogatszą strukturę treści (H2/H3)
    - Pliki: `app/[locale]/blog/white-noise-for-sleep/page-{en,de,es,fr,pt-BR}.tsx`
 
-4. **Przebuduj stronę produktową `/tinnitus-sounds-app`** (851 wyświetleń, poz. 37)
-   - Dodaj FAQ Schema
-   - Dodaj sekcję "Why Calma is the Best Tinnitus App"
-   - Dodaj Schema `SoftwareApplication` z `aggregateRating`
-   - Pliki: `app/[locale]/tinnitus-sounds-app/` (wszystkie lokalizacje)
+4. **✅ DONE (5.07.2026) — Przebuduj stronę produktową `/tinnitus-sounds-app` (851 wyświetleń, poz. 37)**
+   - Stworzono dedykowany i połączony Graf Schema (SoftwareApplication dla oceny 4.8 + Breadcrumbs + FAQPage).
+   - Przepisano meta title i opis w sposób agresywny, pod kątem wskaźnika klikalności (CTR) i pytań użytkowników.
+   - Wdrożono we wszystkich 8 wersjach językowych za pomocą zautomatyzowanego skryptu (EN, DE, ES, FR, PL, PT-BR, JA, KO).
+   - Pliki: `app/[locale]/tinnitus-sounds-app/page-{locale}.tsx`
 
 5. **Przebuduj `/blog/sounds-for-tinnitus-relief`** (95 wyświetleń, poz. 28)
    - Dodaj FAQ Schema
@@ -364,7 +364,7 @@
 - [x] Przepisz meta title dla `brown-noise-vs-white-noise-vs-pink-noise` (wszystkie 5 wersji językowych) — ✅ już zrobione 28.06
 - [x] Sprawdź w Google, czy FAQ Rich Snippets wyświetlają się dla artykułów przebudowanych 28.06 (trzeba poczekać na indeksację, ale zrobimy test Live)
 - [x] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych) — ✅ 5.07.2026
-- [ ] Przebuduj `tinnitus-sounds-app` z FAQ Schema (8 wersji językowych)
+- [x] Przebuduj `tinnitus-sounds-app` z połączonym Grafem Schema (SoftwareApplication+FAQ) i Meta (8 wersji językowych) — ✅ 5.07.2026
 - [ ] Przebuduj `sounds-for-tinnitus-relief` z FAQ Schema (8 wersji językowych)
 - [ ] Przebuduj `best-sounds-for-studying` z FAQ Schema (5 wersji językowych)
 - [ ] Stwórz nowy artykuł `best-noise-for-adhd` (5 wersji językowych)
