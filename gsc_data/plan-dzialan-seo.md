@@ -315,10 +315,11 @@
    - Wdrożono we wszystkich 8 wersjach językowych za pomocą zautomatyzowanego skryptu (EN, DE, ES, FR, PL, PT-BR, JA, KO).
    - Pliki: `app/[locale]/tinnitus-sounds-app/page-{locale}.tsx`
 
-5. **Przebuduj `/blog/sounds-for-tinnitus-relief`** (95 wyświetleń, poz. 28)
-   - Dodaj FAQ Schema
-   - Rozszerz treść o sekcję o częstotliwościach
-   - Pliki: `app/[locale]/blog/sounds-for-tinnitus-relief/page-*.tsx`
+5. **✅ DONE (5.07.2026) — Przebuduj `/blog/sounds-for-tinnitus-relief` (95 wyświetleń, poz. 28)**
+   - Wdrożono potężne, dedykowane FAQ Schema.
+   - Treść została radykalnie rozbudowana we wszystkich 8 językach: dodano sekcje medyczne (Sound Therapy, Habituation) by zaatakować frazy medyczne.
+   - Zintegrowano odtwarzacze audio by zwiększyć czas na stronie.
+   - Pliki: `app/[locale]/blog/sounds-for-tinnitus-relief/page-{locale}.tsx`
 
 ### Faza 3: Przebudowa stron produktowych (2-3 tygodnie)
 **Cel:** Zdominować zapytania o "white noise app", "brown noise app", "nature sounds app".
@@ -365,7 +366,7 @@
 - [x] Sprawdź w Google, czy FAQ Rich Snippets wyświetlają się dla artykułów przebudowanych 28.06 (trzeba poczekać na indeksację, ale zrobimy test Live)
 - [x] Przebuduj `white-noise-for-sleep` z FAQ Schema (5 wersji językowych) — ✅ 5.07.2026
 - [x] Przebuduj `tinnitus-sounds-app` z połączonym Grafem Schema (SoftwareApplication+FAQ) i Meta (8 wersji językowych) — ✅ 5.07.2026
-- [ ] Przebuduj `sounds-for-tinnitus-relief` z FAQ Schema (8 wersji językowych)
+- [x] Przebuduj `sounds-for-tinnitus-relief` z FAQ Schema (8 wersji językowych) — ✅ 5.07.2026
 - [ ] Przebuduj `best-sounds-for-studying` z FAQ Schema (5 wersji językowych)
 - [ ] Stwórz nowy artykuł `best-noise-for-adhd` (5 wersji językowych)
 - [ ] Po każdym wdrożeniu: `npm run build` → `git push` → GSC "Poproś o zindeksowanie"
