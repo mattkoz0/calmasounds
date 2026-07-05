@@ -5,9 +5,9 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "La pluie est-elle considérée comme un bruit blanc ? | Calma",
+  title: "La pluie est-elle un bruit blanc ? La réponse surprenante | Calma",
   description:
-    "La pluie est-elle un bruit blanc ou un bruit rose ? Découvrez la différence scientifique, écoutez des extraits et trouvez ce qui est meilleur pour dormir.",
+    "Non — la pluie n'est PAS un bruit blanc. La vérité surprenante : la pluie est un bruit rose, et elle aide à mieux dormir. Extraits audio gratuits.",
   keywords: [
     "la pluie est elle un bruit blanc",
     "bruit de la pluie bruit blanc",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/fr/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "La pluie est-elle considérée comme un bruit blanc ?",
+    title: "La pluie est-elle un bruit blanc ? La réponse surprenante",
     description:
-      "La pluie est-elle un bruit blanc ou un bruit rose ? Découvrez la différence scientifique et trouvez ce qui est meilleur pour dormir.",
+      "Non — la pluie n'est PAS un bruit blanc. Elle est un bruit rose. Extraits audio gratuits.",
     url: "https://www.calmasounds.com/fr/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "fr_FR",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "La pluie est-elle un bruit blanc ?",
+    title: "La pluie est-elle un bruit blanc ? La science répond",
     description:
-      "Découvrez la différence scientifique entre les bruits de pluie et le bruit blanc.",
+      "Non — la pluie n'est PAS un bruit blanc. Elle est un bruit rose et aide à mieux dormir.",
   },
 };
 

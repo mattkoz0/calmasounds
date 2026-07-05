@@ -5,9 +5,9 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "A chuva é considerada ruído branco? | Calma",
+  title: "A chuva é ruído branco? A resposta surpreendente da ciência | Calma",
   description:
-    "A chuva é ruído branco ou ruído rosa? Descubra a diferença científica, ouça amostras de áudio e saiba qual é melhor para um sono profundo.",
+    "Não — a chuva NÃO é ruído branco. A verdade surpreendente: a chuva é ruído rosa, e pode ajudar a dormir melhor. Amostras de áudio grátis.",
   keywords: [
     "chuva é ruído branco",
     "som de chuva ruído branco",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "A chuva é considerada ruído branco?",
+    title: "A chuva é ruído branco? A resposta surpreendente",
     description:
-      "Descubra a diferença científica entre a chuva e o ruído branco, e saiba qual é melhor para o seu sono.",
+      "Não — a chuva NÃO é ruído branco. É ruído rosa. Amostras de áudio grátis.",
     url: "https://www.calmasounds.com/pt-BR/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "pt_BR",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "A chuva é considerada ruído branco?",
+    title: "A chuva é ruído branco? A ciência responde",
     description:
-      "Descubra a diferença científica entre os sons da chuva e o ruído branco.",
+      "Não — a chuva NÃO é ruído branco. É ruído rosa e ajuda a dormir melhor.",
   },
 };
 

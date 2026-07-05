@@ -43,7 +43,11 @@ const softwareAppJsonLd = {
   name: "Calma App",
   sameAs: [
     "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
+    "https://www.youtube.com/@CalmaApp",
+    "https://www.tiktok.com/@.calma.app",
+    "https://www.instagram.com/calma.app.official",
+    "https://www.facebook.com/profile.php?id=61580760185966"
   ],
   applicationCategory: "HealthApplication",
   applicationSubCategory: "Sleep and Relaxation",

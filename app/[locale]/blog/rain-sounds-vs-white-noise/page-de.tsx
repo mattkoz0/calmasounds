@@ -5,9 +5,9 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Zählt Regen als weißes Rauschen? (Die wissenschaftliche Antwort) | Calma",
+  title: "Ist Regen weißes Rauschen? Die überraschende Antwort der Wissenschaft | Calma",
   description:
-    "Gilt Regen als weißes oder rosa Rauschen? Entdecken Sie den wissenschaftlichen Unterschied, hören Sie Audiobeispiele und erfahren Sie, was besser für den Schlaf ist.",
+    "Nein — Regen ist KEIN weißes Rauschen. Die überraschende Wahrheit: Regen ist rosa Rauschen, und es kann beim Schlafen besser helfen. Hörproben inklusive.",
   keywords: [
     "ist regen weißes rauschen",
     "regen als weißes rauschen",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/de/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "Zählt Regen als weißes Rauschen? (Die wissenschaftliche Antwort)",
+    title: "Ist Regen weißes Rauschen? Die überraschende Antwort",
     description:
-      "Gilt Regen als weißes oder rosa Rauschen? Entdecken Sie den wissenschaftlichen Unterschied und lernen Sie, was besser für den Schlaf ist.",
+      "Nein — Regen ist KEIN weißes Rauschen. Regen ist rosa Rauschen. Hörproben inklusive.",
     url: "https://www.calmasounds.com/de/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "de_DE",

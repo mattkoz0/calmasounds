@@ -5,9 +5,9 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "¿Se considera la lluvia ruido blanco? (La respuesta científica) | Calma",
+  title: "¿La lluvia es ruido blanco? La sorprendente respuesta científica | Calma",
   description:
-    "¿Es la lluvia ruido blanco o ruido rosa? Descubra la diferencia científica, escuche muestras de audio y sepa cuál es mejor para dormir.",
+    "No — la lluvia NO es ruido blanco. La verdad sorprendente: la lluvia es ruido rosa, y puede ayudarte a dormir mejor. Muestras de audio gratis.",
   keywords: [
     "se considera la lluvia ruido blanco",
     "la lluvia es ruido blanco",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/es/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "¿Se considera la lluvia ruido blanco? (La respuesta científica)",
+    title: "¿La lluvia es ruido blanco? La sorprendente respuesta",
     description:
-      "¿Es la lluvia ruido blanco o ruido rosa? Descubra la diferencia científica y sepa cuál es mejor para dormir.",
+      "No — la lluvia NO es ruido blanco. Es ruido rosa. Muestras de audio gratis.",
     url: "https://www.calmasounds.com/es/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "es_ES",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "¿Se considera la lluvia ruido blanco?",
+    title: "¿La lluvia es ruido blanco? La ciencia responde",
     description:
-      "Descubra la diferencia científica entre los sonidos de la lluvia y el ruido blanco.",
+      "No — la lluvia NO es ruido blanco. Es ruido rosa y puede ayudar a dormir mejor.",
   },
 };
 

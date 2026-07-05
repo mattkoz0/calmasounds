@@ -5,9 +5,9 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Is Rain Considered White Noise? (The Scientific Answer) | Calma",
+  title: "Is Rain Considered White Noise? Here's What Science Says | Calma",
   description:
-    "Is rain considered white noise or pink noise? Discover the scientific difference, listen to audio samples, and learn which one is better for deep sleep.",
+    "No — rain is NOT white noise. The surprising truth: rain is actually pink noise, and it may help you sleep better. Listen to audio samples and see the difference.",
   keywords: [
     "is rain considered white noise",
     "is rain white noise",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "Is Rain Considered White Noise? (The Scientific Answer)",
+    title: "Is Rain Considered White Noise? Here's What Science Says",
     description:
-      "Is rain considered white noise or pink noise? Discover the scientific difference, listen to audio samples, and learn which one is better for deep sleep.",
+      "No — rain is NOT white noise. Rain is actually pink noise, and it may help you sleep better. Free audio samples inside.",
     url: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "en_US",
@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Is Rain Considered White Noise?",
+    title: "Is Rain Considered White Noise? Here's What Science Says",
     description:
-      "Discover the scientific difference between rain sounds and white noise, and learn which one is better for deep sleep.",
+      "No — rain is NOT white noise. Rain is actually pink noise. Learn the surprising science behind why rain helps you sleep better.",
   },
 };
 
