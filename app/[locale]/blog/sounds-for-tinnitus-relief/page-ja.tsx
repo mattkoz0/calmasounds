@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "耳鳴りに最適な音は何ですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "鋭い耳鳴りには高周波のホワイトノイズ、リラックスには自然音が最適です。"
+            "text": "好みには個人差があります。低い音量のホワイトノイズ、雨、その他の穏やかな背景音を試してください。"
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "音響療法はどのように機能しますか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "静寂と耳鳴りのコントラストを減らし、脳が順応するのを助けます。"
+            "text": "コントラストを減らしたり、注意をそらしたり、順応を支えたりする人もいますが結果は異なります。"
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "耳鳴りを完全にマスキングするべきですか？",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "いいえ、専門家は部分的なマスキングを推奨しています。"
+            "text": "誰にでも合う音量はありません。大きな音で覆おうとせず、必要なら聴覚の専門家に相談してください。"
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/ja/tinnitus-sounds-app"
       topLinkLabel="無料の耳鳴りアプリをダウンロード"
       title="耳鳴り緩和のための最高の音：音響療法ガイド"
-      intro="音響療法は、耳鳴りを管理するための最も効果的な方法の1つです。背景音を導入することで、耳鳴りをマスキングし、脳を訓練して無視することができます。"
+      intro="耳鳴りは静かな場所で目立つことがあります。低い背景音で気になりにくくなったり、注意をそらしたり、順応を支えたりする人もいますが、治療ではなく反応には個人差があります。"
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="無料の耳鳴りアプリをダウンロード"
       secondaryCtaHref="/ja/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">耳鳴りに最適な音は何ですか？</h3>
-            <p className="mt-2 leading-7 text-white/70">鋭い耳鳴りには高周波のホワイトノイズ、リラックスには自然音が最適です。</p>
+            <p className="mt-2 leading-7 text-white/70">好みには個人差があります。低い音量のホワイトノイズ、雨、その他の穏やかな背景音を試してください。</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">音響療法はどのように機能しますか？</h3>
-            <p className="mt-2 leading-7 text-white/70">静寂と耳鳴りのコントラストを減らし、脳が順応するのを助けます。</p>
+            <p className="mt-2 leading-7 text-white/70">コントラストを減らしたり、注意をそらしたり、順応を支えたりする人もいますが結果は異なります。</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">耳鳴りを完全にマスキングするべきですか？</h3>
-            <p className="mt-2 leading-7 text-white/70">いいえ、専門家は部分的なマスキングを推奨しています。</p>
+            <p className="mt-2 leading-7 text-white/70">誰にでも合う音量はありません。大きな音で覆おうとせず、必要なら聴覚の専門家に相談してください。</p>
           </div>
         </div>
       </ArticleSection>

@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "Quels sont les meilleurs sons pour les acouphènes ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bruit blanc pour les aigus, sons de la nature pour la relaxation."
+            "text": "Les préférences varient ; essayez un bruit blanc faible, la pluie ou un autre fond doux."
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "Comment fonctionne la thérapie sonore ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Elle aide le cerveau à s'habituer et à ignorer les acouphènes."
+            "text": "Elle peut réduire le contraste, distraire ou soutenir l'habituation chez certaines personnes ; les résultats varient."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "Faut-il masquer complètement les acouphènes ?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Non, un masquage partiel est recommandé par les experts."
+            "text": "Il n'existe pas de niveau universel ; évitez de couvrir les acouphènes avec un son fort et consultez un audiologiste."
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/fr/tinnitus-sounds-app"
       topLinkLabel="Télécharger l'App Acouphènes Gratuitement"
       title="Meilleurs Sons pour Acouphènes : Guide de Thérapie Sonore"
-      intro="Vivre avec des acouphènes est difficile. La thérapie sonore est l'un des moyens les plus efficaces de gérer les bourdonnements et d'entraîner votre cerveau à les ignorer."
+      intro="Les acouphènes peuvent sembler plus présents dans le silence. Un fond sonore doux peut les masquer, distraire ou soutenir l'habituation chez certaines personnes, sans constituer un remède universel."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Télécharger l'App Acouphènes Gratuitement"
       secondaryCtaHref="/fr/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Quels sont les meilleurs sons pour les acouphènes ?</h3>
-            <p className="mt-2 leading-7 text-white/70">Bruit blanc pour les aigus, sons de la nature pour la relaxation.</p>
+            <p className="mt-2 leading-7 text-white/70">Les préférences varient ; essayez un bruit blanc faible, la pluie ou un autre fond doux.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Comment fonctionne la thérapie sonore ?</h3>
-            <p className="mt-2 leading-7 text-white/70">Elle aide le cerveau à s'habituer et à ignorer les acouphènes.</p>
+            <p className="mt-2 leading-7 text-white/70">Elle peut réduire le contraste, distraire ou soutenir l'habituation chez certaines personnes ; les résultats varient.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Faut-il masquer complètement les acouphènes ?</h3>
-            <p className="mt-2 leading-7 text-white/70">Non, un masquage partiel est recommandé par les experts.</p>
+            <p className="mt-2 leading-7 text-white/70">Il n'existe pas de niveau universel ; évitez de couvrir les acouphènes avec un son fort et consultez un audiologiste.</p>
           </div>
         </div>
       </ArticleSection>

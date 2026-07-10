@@ -210,7 +210,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Calma App Interface mit Kategorien für Schlaf und Entspannung"
               width={720}
               height={1600}
@@ -221,7 +221,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Individuelles Einstellen von weißem Rauschen in Calma"
               width={720}
               height={1600}

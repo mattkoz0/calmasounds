@@ -193,6 +193,7 @@ export function ArticlePage({
 
         <Link
           href={getLocalizedHref(topLinkHref)}
+          data-cta-location="article_top"
           className="mt-6 inline-flex items-center rounded-xl border border-emerald-400/25 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-200 transition hover:bg-emerald-400/15"
         >
           {topLinkLabel} <span aria-hidden="true" className="ml-2">→</span>
@@ -233,6 +234,7 @@ export function ArticlePage({
               </a>
               <a
                 href={getLocalizedHref(secondaryCtaHref)}
+                data-cta-location="article_end_secondary"
                 className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
               >
                 {secondaryCtaLabel}

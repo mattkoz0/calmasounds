@@ -137,7 +137,7 @@ export default function BestColorNoiseForADHDPage() {
 
       <ArticleSection id="summary" title="Podsumowanie: Jaki kolor szumu jest najlepszy dla ADHD?">
         <p>
-          Jeśli jesteś zmuszony wybrać tylko jeden, <strong>szum brązowy jest ogólnie uważany za najlepszy kolor szumu dla ADHD</strong> ze względu na jego głęboki, kojący i niedrażniący profil.
+          Nie ma jednego koloru szumu najlepszego dla każdej osoby z ADHD. Przegląd z 2024 roku wykazał małą średnią korzyść białego lub różowego szumu, ale nie znalazł badań brązowego szumu spełniających kryteria.
         </p>
         <p className="mt-4">
           Nie musisz jednak wybierać tylko jednego. Najskuteczniejszym podejściem jest użycie aplikacji takiej jak <strong>Calma</strong> do miksowania własnego krajobrazu dźwiękowego. Możesz odkryć, że warstwa bazowa brązowego szumu zmieszana z dźwiękiem trzaskającego ogniska i odległego grzmotu zapewnia dokładny poziom stymulacji, którego Twój mózg dzisiaj potrzebuje.
@@ -154,7 +154,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Jaki kolor szumu jest najlepszy na ADHD?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Szum brązowy jest ogólnie uważany za najlepszy kolor szumu dla osób z ADHD. Jego głęboki, niskotonowy dźwięk zapewnia wystarczającą stymulację sensoryczną, aby uspokoić galopujące myśli bez rozpraszającego syczenia o wysokiej częstotliwości, typowego dla białego szumu."
+                    "text": "Nie ma uniwersalnie najlepszego koloru. Przegląd z 2024 roku wykazał małą średnią korzyść białego lub różowego szumu w zadaniach laboratoryjnych, lecz nie objął kwalifikujących się badań brązowego szumu."
                   }
                 },
                 {
@@ -162,7 +162,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Czy szum brązowy jest lepszy od białego dla osób z ADHD?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Tak, wiele osób z ADHD woli szum brązowy od białego, ponieważ działa jak \"ciężki koc\" akustyczny. Skutecznie maskuje zakłócenia, a jednocześnie jest mniej ostry i męczący dla uszu podczas długich sesji nauki lub pracy."
+                    "text": "Obecne dowody tego nie potwierdzają. Część osób woli jego głębsze brzmienie, ale reakcje są indywidualne, a szum nie jest leczeniem ADHD."
                   }
                 }
               ]

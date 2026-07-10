@@ -142,7 +142,7 @@ export default function BestColorNoiseForADHDPage() {
 
       <ArticleSection id="summary" title="Conclusão: Qual cor de ruído é a melhor para o TDAH?">
         <p>
-          Se você for forçado a escolher apenas uma, <strong>o ruído marrom geralmente é considerado a melhor cor de ruído para o TDAH</strong> devido ao seu perfil profundo, relaxante e não irritante.
+          Não existe uma cor de ruído melhor para todas as pessoas com TDAH. Uma revisão de 2024 encontrou um pequeno benefício médio do ruído branco ou rosa, mas nenhum estudo elegível sobre ruído marrom.
         </p>
         <p className="mt-4">
           No entanto, você não precisa escolher apenas uma. A abordagem mais eficaz é usar um aplicativo como o <strong>Calma</strong> para mixar a sua própria paisagem sonora. Você pode descobrir que uma camada base de ruído marrom misturada com o som do fogo crepitante e um trovão distante fornece o nível exato de estímulo que o seu cérebro precisa para render hoje.
@@ -159,7 +159,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Qual é a melhor cor de ruído para o TDAH?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "O ruído marrom é geralmente considerado a melhor cor de ruído para o TDAH. Seu som profundo e de baixa frequência fornece estímulo sensorial suficiente para acalmar pensamentos acelerados sem a estática aguda e irritante encontrada no ruído branco."
+                    "text": "Não existe uma cor universalmente melhor. Uma revisão de 2024 encontrou um pequeno benefício médio do ruído branco ou rosa em tarefas de laboratório, mas nenhum estudo elegível sobre ruído marrom."
                   }
                 },
                 {
@@ -167,7 +167,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "O ruído marrom é melhor do que o ruído branco para o TDAH?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sim, muitas pessoas com TDAH preferem o ruído marrom ao ruído branco porque ele parece um pesado cobertor acústico. Ele mascara as distrações de forma eficaz, sendo menos agressivo e irritante para os ouvidos durante longas sessões de estudo ou trabalho."
+                    "text": "As evidências atuais não demonstram isso. Algumas pessoas preferem o som mais grave, mas a resposta é individual e o ruído não trata TDAH."
                   }
                 }
               ]

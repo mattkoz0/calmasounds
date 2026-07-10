@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "Quais sons são melhores para o zumbido?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ruído branco para sons agudos, sons da natureza para relaxamento."
+            "text": "As preferências variam; experimente ruído branco baixo, chuva ou outro fundo suave."
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "Como funciona a terapia de som?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Reduz o contraste com o silêncio e ajuda na habituação cerebral."
+            "text": "Pode reduzir o contraste, distrair ou apoiar a habituação em algumas pessoas; os resultados variam."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "Devo mascarar completamente o zumbido?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Não, especialistas recomendam o mascaramento parcial."
+            "text": "Não há um nível universal; evite cobrir o zumbido com som alto e consulte um audiologista."
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/pt-BR/tinnitus-sounds-app"
       topLinkLabel="Baixar App para Zumbido Grátis"
       title="Melhores Sons para Zumbido: Guia de Terapia de Som"
-      intro="A terapia de som é uma das formas mais eficazes de lidar com o zumbido no ouvido. Ela ajuda a mascarar o som e treina seu cérebro para ignorá-lo."
+      intro="O zumbido pode parecer mais intenso no silêncio. Um som externo baixo pode mascará-lo, distrair ou apoiar a habituação em algumas pessoas, mas não é uma cura e a resposta varia."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Baixar App para Zumbido Grátis"
       secondaryCtaHref="/pt-BR/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Quais sons são melhores para o zumbido?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ruído branco para sons agudos, sons da natureza para relaxamento.</p>
+            <p className="mt-2 leading-7 text-white/70">As preferências variam; experimente ruído branco baixo, chuva ou outro fundo suave.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Como funciona a terapia de som?</h3>
-            <p className="mt-2 leading-7 text-white/70">Reduz o contraste com o silêncio e ajuda na habituação cerebral.</p>
+            <p className="mt-2 leading-7 text-white/70">Pode reduzir o contraste, distrair ou apoiar a habituação em algumas pessoas; os resultados variam.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Devo mascarar completamente o zumbido?</h3>
-            <p className="mt-2 leading-7 text-white/70">Não, especialistas recomendam o mascaramento parcial.</p>
+            <p className="mt-2 leading-7 text-white/70">Não há um nível universal; evite cobrir o zumbido com som alto e consulte um audiologista.</p>
           </div>
         </div>
       </ArticleSection>

@@ -61,7 +61,7 @@ export default function BestFreeWhiteNoiseAppPagePTBR() {
       topLinkHref="/pt-BR/white-noise-app"
       topLinkLabel="Descobrir o app de ruído branco"
       title="O melhor app de ruído branco grátis para o sono"
-      intro="Com milhares de aplicativos de som no mercado, encontrar o melhor aplicativo de ruído branco gratuito pode ser assustador. Muitas opções populares como Calm ou BetterSleep agora exigem assinaturas mensais caras. Se você procura sons gratuitos para dormir que realmente ajudem sem custos ocultos, aqui está o motivo pelo qual o Calma é a alternativa definitiva."
+      intro="Com milhares de aplicativos de som no mercado, encontrar o melhor aplicativo de ruído branco gratuito pode ser assustador. Muitas opções populares como Calm ou BetterSleep agora exigem assinaturas mensais caras. Se você procura sons gratuitos para dormir que realmente ajudem PRO opcional com compra única, aqui está o motivo pelo qual o Calma é a alternativa definitiva."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Baixar o Calma grátis"
       secondaryCtaHref="/pt-BR/sound-mixer-app"

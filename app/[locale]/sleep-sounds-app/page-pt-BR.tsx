@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "App de Sons para Dormir Grátis | Sem Anúncios | Calma",
+  title: "App de Sons para Dormir Grátis e Offline | Calma",
   description:
-    "Procurando o melhor app de sons para dormir? Misture ruído branco, chuva e sons da natureza para adormecer mais rápido. 100% grátis, sem anúncios, funciona offline.",
+    "Procurando o melhor app de sons para dormir? Misture ruído branco, chuva e sons da natureza para adormecer mais rápido. versão gratuita disponível, funciona offline.",
   keywords: [
     "aplicativo de sons para dormir",
     "aplicativo de sono",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/pt-BR/sleep-sounds-app",
   },
   openGraph: {
-    title: "App de Sons para Dormir Grátis | Sem Anúncios | Calma",
+    title: "App de Sons para Dormir Grátis e Offline | Calma",
     description:
-    "Misture ruído branco, chuva e sons da natureza para adormecer mais rápido. 100% grátis, sem anúncios.",
+    "Misture ruído branco, chuva e sons da natureza para adormecer mais rápido. versão gratuita disponível.",
     url: "https://www.calmasounds.com/pt-BR/sleep-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -151,7 +151,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface do aplicativo móvel Calma mostrando uma lista de sons para dormir e categorias de relaxamento"
               width={720}
               height={1600}
@@ -162,7 +162,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface do app de sons para dormir Calma para personalização de áudio para a hora de dormir"
               width={720}
               height={1600}
@@ -247,7 +247,7 @@ export default function SleepSoundsAppPage() {
               Como o Calma é diferente?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              O Calma é 100% grátis, sem anúncios, funciona offline e permite criar mixagens personalizadas com uma interface simples e premium.
+              O Calma é versão gratuita disponível, funciona offline e permite criar mixagens personalizadas com uma interface simples e premium.
             </p>
           </div>
 
@@ -279,7 +279,7 @@ export default function SleepSoundsAppPage() {
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é um aplicativo de sons para dormir?","acceptedAnswer":{"@type":"Answer","text":"Um app que reproduz áudio relaxante para apoiar o sono e o relaxamento."}},{"@type":"Question","name":"Como o Calma é diferente?","acceptedAnswer":{"@type":"Answer","text":"Calma é 100% grátis, sem anúncios, funciona offline e permite mixagens personalizadas."}},{"@type":"Question","name":"Posso criar minha própria mixagem?","acceptedAnswer":{"@type":"Answer","text":"Sim, crie sua própria mixagem de áudio relaxante."}},{"@type":"Question","name":"É seguro usar sons para dormir todas as noites?","acceptedAnswer":{"@type":"Answer","text":"Sim, em volume moderado. Calma tem temporizador automático."}},{"@type":"Question","name":"Quais sons são melhores para adormecer rápido?","acceptedAnswer":{"@type":"Answer","text":"Ruído branco, ruído marrom e sons de chuva. Calma permite misturá-los."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"O que é um aplicativo de sons para dormir?","acceptedAnswer":{"@type":"Answer","text":"Um app que reproduz áudio relaxante para apoiar o sono e o relaxamento."}},{"@type":"Question","name":"Como o Calma é diferente?","acceptedAnswer":{"@type":"Answer","text":"Calma é versão gratuita disponível, funciona offline e permite mixagens personalizadas."}},{"@type":"Question","name":"Posso criar minha própria mixagem?","acceptedAnswer":{"@type":"Answer","text":"Sim, crie sua própria mixagem de áudio relaxante."}},{"@type":"Question","name":"É seguro usar sons para dormir todas as noites?","acceptedAnswer":{"@type":"Answer","text":"Sim, em volume moderado. Calma tem temporizador automático."}},{"@type":"Question","name":"Quais sons são melhores para adormecer rápido?","acceptedAnswer":{"@type":"Answer","text":"Ruído branco, ruído marrom e sons de chuva. Calma permite misturá-los."}}]}) }}
           />
         </div>
       </section>

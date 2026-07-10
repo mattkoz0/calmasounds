@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App de Sons da Natureza Grátis | Chuva, Floresta, Mar | Calma",
   description:
-    "Ouça sons de chuva, floresta, mar e pássaros para dormir e relaxar. Crie mixagens personalizadas com o Calma. 100% grátis, sem anúncios, funciona offline.",
+    "Ouça sons de chuva, floresta, mar e pássaros para dormir e relaxar. Crie mixagens personalizadas com o Calma. versão gratuita disponível, funciona offline.",
   keywords: [
     "aplicativo de sons da natureza",
     "sons da natureza para dormir",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sons da Natureza Grátis | Chuva, Floresta, Mar | Calma",
     description:
-    "Sons de chuva, floresta, mar e pássaros para dormir e relaxar. 100% grátis, sem anúncios.",
+    "Sons de chuva, floresta, mar e pássaros para dormir e relaxar. versão gratuita disponível.",
     url: "https://www.calmasounds.com/pt-BR/nature-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -152,7 +152,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface móvel do app Calma mostrando uma lista de sons para dormir e categorias de relaxamento"
               width={720}
               height={1600}
@@ -163,7 +163,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface do app de sons da natureza Calma para personalizar o sons da natureza para dormir e foco"
               width={720}
               height={1600}

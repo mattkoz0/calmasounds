@@ -4,9 +4,9 @@ import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
-const articleTitle = "Best Sounds for Tinnitus Relief & Sound Therapy | Calma";
+const articleTitle = "Sounds for Tinnitus Masking: A Practical Guide | Calma";
 const articleDescription =
-  "Discover how sound therapy, white noise, and nature sounds can provide relief from tinnitus. Learn how to mask ringing in the ears and achieve habituation.";
+  "Learn how white noise and nature sounds may make tinnitus less noticeable, how to listen safely and when to seek professional care.";
 const articleUrl = "https://www.calmasounds.com/blog/sounds-for-tinnitus-relief";
 
 export const metadata: Metadata = {
@@ -45,7 +45,7 @@ const articleJsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Best Sounds for Tinnitus Relief: A Sound Therapy Guide",
+      "headline": "Sounds for Tinnitus Masking: A Practical Guide",
       "description": articleDescription,
       "author": { "@type": "Organization", "name": "Calma Team" },
       "publisher": { "@type": "Organization", "name": "Calma" },
@@ -57,10 +57,10 @@ const articleJsonLd = {
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What sounds are best for tinnitus relief?",
+          "name": "What sounds can be used for tinnitus masking?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The best sounds for tinnitus relief vary by person. High-frequency white noise is excellent for sharp ringing, while deeper brown noise or nature sounds (like rain or ocean waves) are better for relaxation and deep sleep."
+            "text": "Preferences vary. Some people use quiet white noise, rain, waves, a fan or other neutral sounds to reduce the contrast with tinnitus. Use a comfortable level and stop if symptoms worsen."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "How does sound therapy work for tinnitus?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sound therapy introduces a soothing background noise to reduce the contrast between silence and the ringing in your ears. Over time, this helps your brain \"habituate\" or learn to ignore the tinnitus, providing long-term relief."
+            "text": "Sound therapy adds external sound that may mask tinnitus, distract from it or support habituation for some people. Outcomes vary and professional guidance can help."
           }
         },
         {
@@ -76,7 +76,7 @@ const articleJsonLd = {
           "name": "Should you completely mask tinnitus?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, experts recommend partial masking. You should set your background sound level just below the volume of your tinnitus. This \"mixing point\" allows your brain to hear the ringing but not be bothered by it, which is crucial for habituation."
+            "text": "There is no single level that suits everyone. Keep sound comfortable and avoid trying to overpower tinnitus with loud audio. An audiologist can help select an approach."
           }
         },
         {
@@ -84,7 +84,7 @@ const articleJsonLd = {
           "name": "Can white noise make tinnitus worse?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "When used at safe, comfortable volumes (below 60 decibels), white noise is safe and highly recommended for tinnitus. However, playing any sound too loudly through headphones can potentially aggravate tinnitus or cause hearing fatigue."
+            "text": "Loud or uncomfortable audio can harm hearing or aggravate symptoms. Keep the volume low and seek advice if tinnitus is new, sudden, one-sided, pulsatile or worsening."
           }
         }
       ]
@@ -99,8 +99,8 @@ export default function SoundsForTinnitusReliefPage() {
       jsonLd={articleJsonLd}
       topLinkHref="/tinnitus-sounds-app"
       topLinkLabel="Explore Tinnitus Sounds App"
-      title="Best Sounds for Tinnitus Relief: A Sound Therapy Guide"
-      intro="Living with tinnitus can be incredibly challenging, especially when trying to focus, relax, or sleep in a quiet room. Silence often makes the ringing or buzzing seem much louder. Fortunately, sound therapy is one of the most effective, scientifically backed ways to manage tinnitus. By introducing the right background noise, you can not only mask the ringing but actually train your brain to ignore it over time."
+      title="Sounds for Tinnitus Masking: A Practical Guide"
+      intro="Tinnitus can feel more noticeable in a quiet room. External sound may reduce that contrast, distract attention or support habituation for some people, but it is not a cure and there is no universally best sound. This guide helps you compare gentle options and listen safely."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Download Free Tinnitus App"
       secondaryCtaHref="/tinnitus-sounds-app"
@@ -128,31 +128,32 @@ export default function SoundsForTinnitusReliefPage() {
     >
       <ArticleSection id="what-is-sound-therapy" title="How Sound Therapy Works">
         <p className="mt-4 leading-8 text-white/70">
-          When you are in a quiet room, your brain actively searches for acoustic input. For someone with tinnitus, this means the brain latches onto the internal ringing, amplifying it. <strong>Sound therapy</strong> (or sound masking) solves this by providing a continuous, neutral external sound. This reduces the contrast between the silence and the tinnitus, making the ringing much less noticeable and intrusive.
+          <strong>Sound therapy</strong> adds neutral or pleasant external audio. According to the U.S. National Institute on Deafness and Other Communication Disorders, it may work by masking tinnitus, helping a person become accustomed to it or providing a distraction. A smartphone sound generator can be used as an aid for relaxation or sleep.
         </p>
+        <p className="mt-4 leading-8 text-white/70">Read the <a className="text-emerald-300 underline underline-offset-4" href="https://www.nidcd.nih.gov/health/tinnitus" target="_blank" rel="noopener noreferrer">NIDCD tinnitus guide</a>, and speak with a clinician or audiologist about persistent symptoms.</p>
       </ArticleSection>
 
       <ArticleSection id="white-noise" title="White Noise for Sharp Ringing">
         <p className="mt-4 leading-8 text-white/70">
-          White noise is a steady, consistent sound that covers all audible frequencies equally. It is considered the gold standard for masking high-pitched ringing (tonal tinnitus) because its full-spectrum nature essentially &quot;swallows&quot; the sharp frequencies of the ringing.
+          White noise is a steady, broad-spectrum sound. Some people find that it makes high-pitched tinnitus less prominent; others prefer a softer or more natural option.
         </p>
         <AudioPlayer 
           src="/white_noise.m4a" 
           title="Pure White Noise" 
-          description="A consistent &quot;shhh&quot; sound that aggressively masks high-pitched ringing."
+          description="A consistent &quot;shhh&quot; sound to try quietly as background masking."
           colorClass="bg-slate-500/20 text-slate-300"
         />
       </ArticleSection>
 
       <ArticleSection id="brown-noise" title="Brown Noise for Deep Relaxation">
         <p className="mt-4 leading-8 text-white/70">
-          If white noise sounds too harsh or hissy to your ears, <strong>Brown noise</strong> is a fantastic alternative. It focuses heavily on deep, lower frequencies, resembling the rumbling of a distant waterfall or heavy thunder. For many people, it is much more soothing and can be very comforting when trying to sleep with tinnitus.
+          If white noise sounds too harsh, <strong>brown noise</strong> is a deeper alternative with more low-frequency energy. Comfort is personal, so compare it at a low volume rather than assuming one color will match the pitch of your tinnitus.
         </p>
       </ArticleSection>
 
       <ArticleSection id="nature-sounds" title="Nature Sounds: Rain and Ocean Waves">
         <p className="mt-4 leading-8 text-white/70">
-          Water sounds, like steady rain, ocean waves, or a flowing river, are incredibly popular for tinnitus relief. They offer a dynamic, organic texture that distracts the brain naturally. Most natural water sounds act similarly to <strong>Pink noise</strong>—they are balanced and softer on the ears, making them ideal for long-term listening.
+          Water sounds such as steady rain, ocean waves or a flowing river provide a less synthetic background. Their changing texture may be easier for some listeners to keep at a comfortable level.
         </p>
         <AudioPlayer 
           src="/rain.m4a" 
@@ -164,10 +165,10 @@ export default function SoundsForTinnitusReliefPage() {
 
       <ArticleSection id="habituation" title="The Secret: Partial Masking and Habituation">
         <p className="mt-4 leading-8 text-white/70">
-          Many people make the mistake of turning up their sound therapy volume until they can't hear their tinnitus at all. While this provides immediate relief, the long-term goal of sound therapy is <strong>habituation</strong>—training your brain to classify the tinnitus as &quot;unimportant background noise.&quot;
+          Avoid turning sound up simply to overpower tinnitus. Loud listening can damage hearing and may make symptoms more intrusive.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          To achieve habituation, audiologists recommend <strong>partial masking</strong>. You should set your background sound (like rain or white noise) just <em>below</em> the volume of your tinnitus. You want the &quot;mixing point&quot; where you can still hear the ringing if you listen for it, but the background sound makes it easy to ignore.
+          Habituation-based programs combine low-level sound with counselling, but the plan and mixing level should be individualized. If you want to use sound therapeutically rather than simply as a quiet bedtime background, an audiologist can help.
         </p>
         
         <div className="mt-12 flex justify-center">
@@ -192,19 +193,19 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">What sounds are best for tinnitus relief?</h3>
-            <p className="mt-2 leading-7 text-white/70">High-frequency white noise is excellent for sharp ringing, while deeper brown noise or nature sounds are better for relaxation and sleep. The best sound is the one that brings you the most comfort.</p>
+            <p className="mt-2 leading-7 text-white/70">There is no universal best sound. Try quiet white noise, rain, waves or another neutral sound and keep only what feels comfortable.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">How does sound therapy work for tinnitus?</h3>
-            <p className="mt-2 leading-7 text-white/70">It introduces a soothing background noise to reduce the contrast between silence and the ringing. Over time, this helps your brain habituate and ignore the tinnitus.</p>
+            <p className="mt-2 leading-7 text-white/70">It adds external audio that may mask tinnitus, distract from it or support habituation for some people.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Should you completely mask tinnitus?</h3>
-            <p className="mt-2 leading-7 text-white/70">No, experts recommend partial masking. Set your background sound level just below the volume of your tinnitus to allow your brain to habituate to the ringing.</p>
+            <p className="mt-2 leading-7 text-white/70">Avoid loud audio intended to overpower it. The appropriate level and approach vary; an audiologist can help.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Can white noise make tinnitus worse?</h3>
-            <p className="mt-2 leading-7 text-white/70">When used at safe volumes (below 60 decibels), white noise is safe. However, playing any sound too loudly can potentially aggravate tinnitus or cause hearing fatigue.</p>
+            <p className="mt-2 leading-7 text-white/70">Any loud or uncomfortable sound can harm hearing or aggravate symptoms. Keep the level low and stop if symptoms worsen.</p>
           </div>
         </div>
       </ArticleSection>

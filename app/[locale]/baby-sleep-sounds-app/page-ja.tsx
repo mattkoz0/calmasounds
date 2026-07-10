@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "赤ちゃんの睡眠音とホワイトノイズアプリ | Calma",

@@ -142,7 +142,7 @@ export default function BestColorNoiseForADHDPage() {
 
       <ArticleSection id="summary" title="Conclusión: ¿Qué color de ruido es mejor para el TDAH?">
         <p>
-          Si te ves obligado a elegir solo uno, <strong>generalmente se considera que el ruido marrón es el mejor color de ruido para el TDAH</strong> debido a su perfil profundo, relajante y no irritante.
+          No existe un color de ruido que sea el mejor para todas las personas con TDAH. Una revisión de 2024 halló un beneficio medio pequeño para el ruido blanco o rosa, pero no encontró estudios elegibles sobre ruido marrón.
         </p>
         <p className="mt-4">
           Sin embargo, no tienes que elegir solo uno. El enfoque más efectivo es usar una aplicación como <strong>Calma</strong> para mezclar tu propio paisaje sonoro. Es posible que descubras que una capa base de ruido marrón mezclada con el sonido del fuego crepitante y un trueno distante proporciona el nivel exacto de estimulación que tu cerebro necesita para prosperar hoy.
@@ -159,7 +159,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "¿Qué color de ruido es mejor para el TDAH?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Generalmente se considera que el ruido marrón es el mejor color de ruido para el TDAH. Su sonido profundo de baja frecuencia proporciona suficiente estimulación sensorial para calmar los pensamientos acelerados sin la estática aguda y molesta que se encuentra en el ruido blanco."
+                    "text": "No existe un color universalmente mejor. Una revisión de 2024 encontró un beneficio medio pequeño del ruido blanco o rosa en tareas de laboratorio, pero ningún estudio elegible sobre ruido marrón."
                   }
                 },
                 {
@@ -167,7 +167,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "¿Es el ruido marrón mejor que el ruido blanco para el TDAH?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Sí, muchas personas con TDAH prefieren el ruido marrón al ruido blanco porque se siente como una manta acústica pesada. Enmascara las distracciones de manera efectiva y, al mismo tiempo, es menos duro y chirriante para los oídos durante largas sesiones de estudio o trabajo."
+                    "text": "No lo demuestra la evidencia actual. Algunas personas prefieren su sonido más grave, pero la respuesta es individual y el ruido no es un tratamiento para el TDAH."
                   }
                 }
               ]

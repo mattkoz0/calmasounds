@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import type { ComponentProps } from "react";
 import { Link } from "@/i18n/routing";
 import { pathnamesMapping } from "@/app/utils/seo";
+
+type BlogHref = ComponentProps<typeof Link>["href"];
 
 export const metadata: Metadata = {
   title: "Calmaブログ | 睡眠、ホワイトノイズ、集中のガイド",
@@ -98,8 +101,18 @@ const articles = [
   },
   {
     href: "/blog/best-color-noise-for-adhd",
-    title: "ADHDに最適なノイズの色は？ブラウンノイズ vs ホワイトノイズ",
-    description: "ADHD、集中力、過剰刺激に対してブラウンノイズがしばしば好まれる理由をご覧ください。",
+    title: "ノイズカラーとADHD：研究で分かっていること",
+    description: "ホワイト、ピンク、ブラウンノイズと、現在のエビデンスの限界を比較します。",
+  },
+  {
+    href: "/blog/sounds-for-tinnitus-relief",
+    title: "耳鳴りのマスキングに使うサウンド",
+    description: "穏やかな背景音、安全な聴き方、専門家に相談すべき症状を解説します。",
+  },
+  {
+    href: "/blog/white-noise-for-babies",
+    title: "赤ちゃんのホワイトノイズ：慎重な使い方",
+    description: "より安全な睡眠習慣のための音量、距離、再生時間のポイントです。",
   },
 ];
 
@@ -112,7 +125,7 @@ const blogJsonLd = {
     "睡眠音、ホワイトノイズ、集中音、落ち着くルーティンに関するガイド。",
   hasPart: articles.map(article => {
     const mapping = pathnamesMapping[article.href as keyof typeof pathnamesMapping];
-    const localizedPath = (mapping && (mapping as any)["ja"]) || article.href;
+    const localizedPath = mapping?.ja || article.href;
     return {
       "@type": "Article",
       headline: article.title,
@@ -175,7 +188,7 @@ export default function BlogPage() {
           {articles.map((article) => (
             <Link
               key={article.href}
-              href={article.href as any}
+              href={article.href as BlogHref}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>

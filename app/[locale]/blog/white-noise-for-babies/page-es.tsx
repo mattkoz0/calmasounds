@@ -105,7 +105,7 @@ export default function WhiteNoiseForBabiesPage() {
       </ArticleSection>
 
       <ArticleSection id="safety" title="Seguridad: Volumen y Distancia">
-        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Volumen bajo:</strong> Máximo 50 decibelios.</li><li><strong>Distancia segura:</strong> Al menos a 2 metros de la cuna.</li></ul>
+        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Volumen bajo:</strong> Empieza en el nivel mínimo útil.</li><li><strong>Distancia y tiempo:</strong> Coloca el dispositivo lo más lejos posible de la cabeza y utiliza un temporizador.</li></ul>
       </ArticleSection>
 
       <ArticleSection id="routine" title="Crear una Rutina de Sueño">
@@ -114,7 +114,7 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Preguntas Frecuentes">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">¿Es seguro dejar el ruido blanco toda la noche?</h3><p className="mt-2 leading-7 text-white/70">Sí, siempre y cuando se mantenga a un volumen seguro (50 dB) y a 2 metros de la cuna.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">¿Es seguro dejar el ruido blanco toda la noche?</h3><p className="mt-2 leading-7 text-white/70">No des por hecho que la reproducción continua es inocua. La AAP aconseja alejar la máquina de la cabeza y usarla solo durante poco tiempo.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">¿Qué ruido es mejor para un bebé?</h3><p className="mt-2 leading-7 text-white/70">El ruido rosa es muy popular por ser más suave.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">¿Cuándo dejar de usar ruido blanco?</h3><p className="mt-2 leading-7 text-white/70">No hay una edad estricta. Puedes reducir gradualmente el volumen durante unas semanas.</p></div>
         </div>
@@ -132,7 +132,7 @@ export default function WhiteNoiseForBabiesPage() {
                     "name": "¿Es seguro dejar el ruido blanco toda la noche?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Sí, siempre y cuando se mantenga a un volumen seguro (50 dB) y a 2 metros de la cuna."
+                              "text": "No se debe asumir que la reproducción continua es inocua. La AAP aconseja colocar la máquina lo más lejos posible de la cabeza del bebé y usarla solo durante poco tiempo."
                     }
           },
           {

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import type { ComponentProps } from "react";
 import { Link } from "@/i18n/routing";
+
+type BlogHref = ComponentProps<typeof Link>["href"];
 
 export const metadata: Metadata = {
   title: "Calma 블로그 | 수면, 백색소음 및 집중 가이드",
@@ -98,8 +100,18 @@ const articles = [
   },
   {
     href: "/blog/best-color-noise-for-adhd",
-    title: "ADHD에 가장 좋은 소음 색깔은? 갈색 소음 vs 백색 소음",
-    description: "ADHD, 집중력, 과잉 자극에 갈색 소음이 종종 선호되는 이유를 알아보세요.",
+    title: "노이즈 컬러와 ADHD: 연구 결과",
+    description: "화이트, 핑크, 브라운 노이즈와 현재 근거의 한계를 비교합니다.",
+  },
+  {
+    href: "/blog/sounds-for-tinnitus-relief",
+    title: "이명 마스킹을 위한 사운드",
+    description: "부드러운 배경음, 안전한 청취 방법, 전문가 상담이 필요한 경우를 알아보세요.",
+  },
+  {
+    href: "/blog/white-noise-for-babies",
+    title: "아기를 위한 화이트 노이즈: 주의 깊은 사용법",
+    description: "더 안전한 수면 루틴을 위한 볼륨, 거리, 재생 시간 지침입니다.",
   },
 ];
 
@@ -124,7 +136,7 @@ export default function BlogPage() {
           {articles.map((article) => (
             <Link
               key={article.href}
-              href={article.href as any}
+              href={article.href as BlogHref}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Sons Relaxants Gratuits | Anti-Stress & Bien-être | Calma",
   description:
-    "Cherchez des sons relaxants ? Mélangez pluie, bruits de la nature et bruit blanc pour le calme et le bien-être. 100% gratuit, sans pub, fonctionne hors ligne.",
+    "Cherchez des sons relaxants ? Mélangez pluie, bruits de la nature et bruit blanc pour le calme et le bien-être. version gratuite disponible, fonctionne hors ligne.",
   keywords: [
     "application sons relaxants",
     "sons de relaxation",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "sons anti-stress",
     "bruits de nature pour méditation",
     "pluie et sons naturels",
-    "bien-être app sans pub",
+    "bien-être app sans abonnement",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/relaxing-sounds",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sons Relaxants Gratuits | Anti-Stress | Calma",
     description:
-    "Mélangez pluie, nature et bruit blanc pour la relaxation. 100% gratuit, sans pub.",
+    "Mélangez pluie, nature et bruit blanc pour la relaxation. version gratuite disponible.",
     url: "https://www.calmasounds.com/fr/relaxing-sounds",
     siteName: "Calma",
     locale: "fr_FR",
@@ -152,7 +152,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface mobile de l'application Calma montrant les catégories de sons relaxants"
               width={720}
               height={1600}
@@ -163,7 +163,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface de Calma pour personnaliser des paysages sonores ambiants"
               width={720}
               height={1600}
@@ -248,7 +248,7 @@ export default function RelaxingSoundsPage() {
               Calma est-elle gratuite ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, Calma est 100% gratuite, sans pub et fonctionne complètement hors ligne – aucun coût caché.
+              Oui, Calma est version gratuite disponible et fonctionne complètement hors ligne – aucun coût caché.
             </p>
           </div>
 
@@ -280,7 +280,7 @@ export default function RelaxingSoundsPage() {
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Appli de sons relaxants ?","acceptedAnswer":{"@type":"Answer","text":"Sons apaisants pour réduire le stress au quotidien."}},{"@type":"Question","name":"Calma est gratuite ?","acceptedAnswer":{"@type":"Answer","text":"Oui, 100% gratuite, sans pub, hors ligne."}},{"@type":"Question","name":"Quand utiliser Calma ?","acceptedAnswer":{"@type":"Answer","text":"Après le travail, yoga, méditation ou lecture."}},{"@type":"Question","name":"Créer ses propres mélanges ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mélanges personnalisés de pluie, nature et plus."}},{"@type":"Question","name":"Fonctionne hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Appli de sons relaxants ?","acceptedAnswer":{"@type":"Answer","text":"Sons apaisants pour réduire le stress au quotidien."}},{"@type":"Question","name":"Calma est gratuite ?","acceptedAnswer":{"@type":"Answer","text":"Oui, version gratuite disponible, hors ligne."}},{"@type":"Question","name":"Quand utiliser Calma ?","acceptedAnswer":{"@type":"Answer","text":"Après le travail, yoga, méditation ou lecture."}},{"@type":"Question","name":"Créer ses propres mélanges ?","acceptedAnswer":{"@type":"Answer","text":"Oui, mélanges personnalisés de pluie, nature et plus."}},{"@type":"Question","name":"Fonctionne hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
           />
         </div>
       </section>

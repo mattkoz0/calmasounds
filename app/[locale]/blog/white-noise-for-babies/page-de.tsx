@@ -105,7 +105,7 @@ export default function WhiteNoiseForBabiesPage() {
       </ArticleSection>
 
       <ArticleSection id="safety" title="Sicherheit: Lautstärke und Abstand">
-        <p>Nutzen Sie es sicher:</p><ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Leise:</strong> Maximal 50 Dezibel.</li><li><strong>Abstand:</strong> Mindestens 2 Meter vom Bett entfernt.</li></ul>
+        <p>Nutzen Sie es vorsichtig:</p><ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Leise:</strong> Beginnen Sie mit der niedrigsten nützlichen Lautstärke.</li><li><strong>Abstand und Zeit:</strong> Stellen Sie das Gerät möglichst weit vom Kopf entfernt auf und nutzen Sie einen Timer.</li></ul>
       </ArticleSection>
 
       <ArticleSection id="routine" title="Eine Schlafroutine aufbauen">
@@ -114,7 +114,7 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Häufig gestellte Fragen">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">Ist es sicher, das Rauschen die ganze Nacht spielen zu lassen?</h3><p className="mt-2 leading-7 text-white/70">Ja, solange die Lautstärke sicher ist (ca. 50 dB) und das Gerät mindestens 2 Meter entfernt steht.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">Ist es sicher, das Rauschen die ganze Nacht spielen zu lassen?</h3><p className="mt-2 leading-7 text-white/70">Gehen Sie nicht davon aus, dass Dauerbetrieb risikofrei ist. Die AAP rät zu größtmöglichem Abstand vom Kopf und kurzer Nutzung.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Welches Rauschen ist am besten für Babys?</h3><p className="mt-2 leading-7 text-white/70">Rosa Rauschen wird oft bevorzugt, da es sanfter ist als weißes Rauschen.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Wann sollte man aufhören, Rauschen für Babys zu verwenden?</h3><p className="mt-2 leading-7 text-white/70">Es gibt kein festes Alter. Sie können die Lautstärke allmählich reduzieren, wenn Sie möchten.</p></div>
         </div>
@@ -132,7 +132,7 @@ export default function WhiteNoiseForBabiesPage() {
                     "name": "Ist es sicher, das Rauschen die ganze Nacht spielen zu lassen?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Ja, solange die Lautstärke sicher ist (ca. 50 dB) und das Gerät mindestens 2 Meter entfernt steht."
+                              "text": "Dauerbetrieb sollte nicht als risikofrei gelten. Die AAP rät, das Gerät möglichst weit vom Kopf des Babys entfernt aufzustellen und nur kurz zu nutzen."
                     }
           },
           {

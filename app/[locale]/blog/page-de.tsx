@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
+import type { ComponentProps } from "react";
 import { Link } from "@/i18n/routing";
 import { pathnamesMapping } from "@/app/utils/seo";
+
+type BlogHref = ComponentProps<typeof Link>["href"];
 
 export const metadata: Metadata = {
   title: "Calma Blog | Ratgeber zu Schlaf, weißem Rauschen und Fokus",
@@ -98,8 +101,18 @@ const articles = [
   },
   {
     href: "/blog/best-color-noise-for-adhd",
-    title: "Welche Rauschfarbe ist am besten bei ADHS? Braunes vs. Weißes Rauschen",
-    description: "Erfahren Sie, warum braunes Rauschen bei ADHS oft bevorzugt wird, um Fokus zu finden und Überstimulation zu reduzieren.",
+    title: "Rauschfarben und ADHS: Was die Forschung zeigt",
+    description: "Vergleiche weißes, rosa und braunes Rauschen samt Grenzen der aktuellen Evidenz.",
+  },
+  {
+    href: "/blog/sounds-for-tinnitus-relief",
+    title: "Klänge zur Tinnitus-Maskierung",
+    description: "Vergleiche sanfte Hintergrundklänge, sicheres Hören und Hinweise für fachlichen Rat.",
+  },
+  {
+    href: "/blog/white-noise-for-babies",
+    title: "Weißes Rauschen für Babys: vorsichtige Anwendung",
+    description: "Hinweise zu Lautstärke, Abstand und Dauer für eine sicherere Schlafroutine.",
   },
 ];
 
@@ -176,7 +189,7 @@ export default function BlogPage() {
           {articles.map((article) => (
             <Link
               key={article.href}
-              href={article.href as any}
+              href={article.href as BlogHref}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>

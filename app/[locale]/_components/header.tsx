@@ -50,10 +50,10 @@ export default function Header() {
         </div>
 
         <nav className="hidden gap-6 text-sm text-white/70 md:flex" aria-label="Main navigation">
-          <Link href={"/#features" as any} className="transition hover:text-white">
+          <Link href={{ pathname: "/", hash: "features" }} className="transition hover:text-white">
             {t("features")}
           </Link>
-          <Link href={"/#faq" as any} className="transition hover:text-white">
+          <Link href={{ pathname: "/", hash: "faq" }} className="transition hover:text-white">
             {t("faq")}
           </Link>
           <Link href="/blog" className="transition hover:text-white">
@@ -62,7 +62,7 @@ export default function Header() {
           <Link href="/support" className="transition hover:text-white">
             {t("support")}
           </Link>
-          <Link href={"/#download" as any} className="transition hover:text-white">
+          <Link href={{ pathname: "/", hash: "download" }} className="transition hover:text-white">
             {t("download")}
           </Link>
         </nav>
@@ -107,6 +107,7 @@ export default function Header() {
               <div className="absolute right-0 mt-2 w-48 origin-top-right rounded-2xl border border-white/10 bg-slate-900 p-2 shadow-2xl backdrop-blur-xl animate-in fade-in zoom-in duration-200">
                 <a
                   href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                  data-cta-location="header_store_menu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10"
@@ -117,6 +118,7 @@ export default function Header() {
                 </a>
                 <a
                   href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                  data-cta-location="header_store_menu"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 rounded-xl px-4 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10"

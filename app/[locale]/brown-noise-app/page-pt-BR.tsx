@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App de Ruído Marrom Grátis para TDAH e Sono | Calma",
   description:
-    "Procurando ruído marrom profundo para TDAH, sono ou concentração? Misture ruído marrom com chuva e sons da natureza. 100% grátis, sem anúncios, funciona offline.",
+    "Procurando ruído marrom profundo para TDAH, sono ou concentração? Misture ruído marrom com chuva e sons da natureza. versão gratuita disponível, funciona offline.",
   keywords: [
     "aplicativo de ruído marrom",
     "ruído marrom para dormir",
@@ -214,7 +214,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface móvel do app Calma mostrando uma lista de sons para dormir e categorias de relaxamento"
               width={720}
               height={1600}
@@ -225,7 +225,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface do app de ruído marrom Calma para personalizar o ruído marrom para dormir e foco"
               width={720}
               height={1600}

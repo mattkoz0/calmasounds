@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "¿Qué sonidos son mejores para el tinnitus?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ruido blanco para zumbidos agudos, sonidos de la naturaleza para relajarse."
+            "text": "Las preferencias varían; pruebe ruido blanco, lluvia u otro fondo suave a un volumen cómodo."
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "¿Cómo funciona la terapia de sonido?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Reduce el contraste entre el silencio y el tinnitus, ayudando al cerebro a habituarse."
+            "text": "Puede reducir el contraste, distraer o apoyar la habituación en algunas personas; los resultados varían."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "¿Debo enmascarar completamente el tinnitus?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, los expertos recomiendan un enmascaramiento parcial."
+            "text": "No hay un nivel universal; evite intentar taparlo con sonido fuerte y consulte a un audiólogo."
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/es/tinnitus-sounds-app"
       topLinkLabel="Descargar App para Tinnitus Gratis"
       title="Mejores Sonidos para el Tinnitus: Guía de Terapia de Sonido"
-      intro="Vivir con tinnitus puede ser un desafío. La terapia de sonido es una de las formas más efectivas de manejar el zumbido en los oídos y entrenar al cerebro para ignorarlo."
+      intro="El tinnitus puede notarse más en silencio. Un sonido externo suave puede enmascararlo, distraer la atención o apoyar la habituación en algunas personas, pero no es una cura y la respuesta varía."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Descargar App para Tinnitus Gratis"
       secondaryCtaHref="/es/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">¿Qué sonidos son mejores para el tinnitus?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ruido blanco para zumbidos agudos, sonidos de la naturaleza para relajarse.</p>
+            <p className="mt-2 leading-7 text-white/70">Las preferencias varían; pruebe ruido blanco, lluvia u otro fondo suave a un volumen cómodo.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">¿Cómo funciona la terapia de sonido?</h3>
-            <p className="mt-2 leading-7 text-white/70">Reduce el contraste entre el silencio y el tinnitus, ayudando al cerebro a habituarse.</p>
+            <p className="mt-2 leading-7 text-white/70">Puede reducir el contraste, distraer o apoyar la habituación en algunas personas; los resultados varían.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">¿Debo enmascarar completamente el tinnitus?</h3>
-            <p className="mt-2 leading-7 text-white/70">No, los expertos recomiendan un enmascaramiento parcial.</p>
+            <p className="mt-2 leading-7 text-white/70">No hay un nivel universal; evite intentar taparlo con sonido fuerte y consulte a un audiólogo.</p>
           </div>
         </div>
       </ArticleSection>

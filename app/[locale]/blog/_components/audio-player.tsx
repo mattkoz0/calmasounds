@@ -19,14 +19,31 @@ export function AudioPlayer({
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const togglePlay = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
+  const togglePlay = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.pause();
+      setIsPlaying(false);
+      window.gtag?.("event", "audio_pause", {
+        audio_title: title,
+        audio_src: src,
+        page_path: window.location.pathname,
+      });
+      return;
+    }
+
+    try {
+      await audio.play();
+      setIsPlaying(true);
+      window.gtag?.("event", "audio_play", {
+        audio_title: title,
+        audio_src: src,
+        page_path: window.location.pathname,
+      });
+    } catch {
+      setIsPlaying(false);
     }
   };
 
@@ -54,7 +71,7 @@ export function AudioPlayer({
         {description && <p className="mt-1 text-sm text-white/70">{description}</p>}
       </div>
       
-      {/* Audio element is hidden. We use loop so it plays continuously to increase dwell time. */}
+      {/* The sample loops until the listener pauses it. */}
       <audio ref={audioRef} src={src} preload="none" loop />
     </div>
   );

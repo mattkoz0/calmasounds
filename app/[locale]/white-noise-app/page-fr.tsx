@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Meilleure App de Bruit Blanc Gratuite 2026 | Calma",
   description:
-    "Vous cherchez la meilleure appli de bruit blanc ? Mélangez bruit blanc, brun, rose et sons de la nature pour dormir, TDAH, bébés ou acouphènes. 100% gratuit, sans pub, fonctionne hors ligne.",
+    "Vous cherchez la meilleure appli de bruit blanc ? Mélangez bruit blanc, brun, rose et sons de la nature pour dormir, TDAH, bébés ou acouphènes. version gratuite disponible, fonctionne hors ligne.",
   keywords: [
     "application bruit blanc",
     "bruit blanc pour dormir",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Meilleure App de Bruit Blanc Gratuite | Sommeil, Bébés, TDAH | Calma",
     description:
-    "Mélangez bruit blanc, brun et rose pour dormir, TDAH, bébés ou acouphènes. 100% gratuit, sans pub.",
+    "Mélangez bruit blanc, brun et rose pour dormir, TDAH, bébés ou acouphènes. version gratuite disponible.",
     url: "https://www.calmasounds.com/fr/white-noise-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -81,7 +81,7 @@ const combinedJsonLd = {
             "name": "Quelle est la meilleure application gratuite de bruit blanc ?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Calma offre un environnement simple pour mélanger bruit blanc et sons de la nature. 100% gratuite, sans pub, fonctionne hors ligne."
+                "text": "Calma offre un environnement simple pour mélanger bruit blanc et sons de la nature. version gratuite disponible, fonctionne hors ligne."
             }
         },
         {
@@ -224,7 +224,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface de l'application Calma montrant les catégories de sons et de bruit blanc"
               width={720}
               height={1600}
@@ -235,7 +235,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface de personnalisation du bruit blanc pour le sommeil"
               width={720}
               height={1600}

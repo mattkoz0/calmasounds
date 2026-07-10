@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Kostenlose Baby Schlaf App | Weißes Rauschen für Babys | Calma",

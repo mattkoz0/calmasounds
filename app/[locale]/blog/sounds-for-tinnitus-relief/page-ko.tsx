@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "이명에 가장 좋은 소리는 무엇입니까?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "날카로운 울림에는 백색소음, 휴식에는 자연의 소리가 좋습니다."
+            "text": "선호는 개인마다 다릅니다. 낮은 볼륨의 화이트 노이즈, 빗소리 또는 다른 부드러운 배경음을 시도하세요."
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "소리 치료는 어떻게 작용합니까?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "침묵과 이명 사이의 대비를 줄여 뇌가 순응하도록 돕습니다."
+            "text": "일부 사람에게 대비를 줄이거나 주의를 돌리고 순응을 도울 수 있지만 결과는 다릅니다."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "이명을 완전히 마스킹해야 합니까?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "아니요, 전문가들은 부분적인 마스킹을 권장합니다."
+            "text": "모두에게 맞는 하나의 수준은 없습니다. 큰 소리로 덮지 말고 필요하면 청각 전문가와 상담하세요."
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/ko/tinnitus-sounds-app"
       topLinkLabel="무료 이명 앱 다운로드"
       title="이명 완화를 위한 최고의 소리: 소리 치료 가이드"
-      intro="소리 치료는 이명을 관리하는 가장 효과적인 방법 중 하나입니다. 배경 소음을 도입하여 이명을 마스킹하고 뇌가 이를 무시하도록 훈련시킬 수 있습니다."
+      intro="이명은 조용한 곳에서 더 크게 느껴질 수 있습니다. 낮은 배경음이 일부 사람에게 마스킹, 주의 전환 또는 순응을 도울 수 있지만 치료법은 아니며 반응은 개인마다 다릅니다."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="무료 이명 앱 다운로드"
       secondaryCtaHref="/ko/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">이명에 가장 좋은 소리는 무엇입니까?</h3>
-            <p className="mt-2 leading-7 text-white/70">날카로운 울림에는 백색소음, 휴식에는 자연의 소리가 좋습니다.</p>
+            <p className="mt-2 leading-7 text-white/70">선호는 개인마다 다릅니다. 낮은 볼륨의 화이트 노이즈, 빗소리 또는 다른 부드러운 배경음을 시도하세요.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">소리 치료는 어떻게 작용합니까?</h3>
-            <p className="mt-2 leading-7 text-white/70">침묵과 이명 사이의 대비를 줄여 뇌가 순응하도록 돕습니다.</p>
+            <p className="mt-2 leading-7 text-white/70">일부 사람에게 대비를 줄이거나 주의를 돌리고 순응을 도울 수 있지만 결과는 다릅니다.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">이명을 완전히 마스킹해야 합니까?</h3>
-            <p className="mt-2 leading-7 text-white/70">아니요, 전문가들은 부분적인 마스킹을 권장합니다.</p>
+            <p className="mt-2 leading-7 text-white/70">모두에게 맞는 하나의 수준은 없습니다. 큰 소리로 덮지 말고 필요하면 청각 전문가와 상담하세요.</p>
           </div>
         </div>
       </ArticleSection>

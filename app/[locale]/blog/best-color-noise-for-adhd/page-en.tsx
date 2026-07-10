@@ -3,9 +3,9 @@ import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
-  title: "Best Color Noise for ADHD: Brown vs White | Calma",
+  title: "Color Noise and ADHD: What Research Actually Shows | Calma",
   description:
-    "Learn how white, brown, and pink noise can help ADHD brains improve focus, block distractions, and find calm.",
+    "Compare white, pink and brown noise for ADHD, including what a 2024 meta-analysis found and where evidence is still missing.",
   keywords: [
     "what color noise is best for adhd",
     "brown noise vs white noise adhd",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/best-color-noise-for-adhd",
   },
   openGraph: {
-    title: "Best Color Noise for ADHD: Brown vs White | Calma",
+    title: "Color Noise and ADHD: What Research Actually Shows | Calma",
     description:
-    "Learn how white, brown, and pink noise can help ADHD brains improve focus, block distractions, and find calm.",
+    "Compare white, pink and brown noise for ADHD, including current evidence and its limits.",
     url: "https://www.calmasounds.com/blog/best-color-noise-for-adhd",
     siteName: "Calma",
     locale: "en_US",
@@ -29,18 +29,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Color Noise for ADHD: Brown vs White | Calma",
+    title: "Color Noise and ADHD: What Research Shows | Calma",
     description:
-    "Learn how white, brown, and pink noise can help ADHD brains improve focus, block distractions, and find calm.",
+    "Compare noise colors for ADHD and learn why personal testing matters.",
   },
 };
 
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "What Color Noise is Best for ADHD? Brown vs White Noise",
+  headline: "Color Noise and ADHD: What Does the Research Show?",
   description:
-    "Learn how white, brown, and pink noise can help ADHD brains improve focus, block distractions, and find calm.",
+    "Compare white, pink and brown noise for ADHD, including current evidence and its limits.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -61,69 +61,69 @@ export default function BestColorNoiseForADHDPage() {
       jsonLd={articleJsonLd}
       topLinkHref="/focus-sounds-app"
       topLinkLabel="Explore focus page"
-      title="What Color Noise is Best for ADHD? Brown vs White Noise"
-      intro="If you have ADHD, finding the right environment to study, work, or simply unwind can feel like a constant battle. Absolute silence is rarely the answer—it makes every tiny creak or distant conversation distracting. That is why so many neurodivergent individuals turn to sound masking. But when comparing brown noise vs white noise for ADHD, which one actually works best?"
+      title="Color Noise and ADHD: What Does the Research Show?"
+      intro="Some people with ADHD use steady background sound to make distractions less noticeable, but there is no single best noise color for everyone. Here is what research says about white and pink noise, why evidence for brown noise is still missing, and how to test sound without treating it as medical care."
       ctaHref="/focus-sounds-app"
       ctaLabel="Explore Focus Sounds App"
       secondaryCtaHref="/sound-mixer-app"
       secondaryCtaLabel="Mix Your Own Audio"
       tableOfContents={[
-        { id: "adhd-and-sound", title: "Best Color Noise for ADHD: Brown vs White | Calma" },
-        { id: "white-noise", title: "Best Color Noise for ADHD: Brown vs White | Calma" },
-        { id: "brown-noise", title: "Best Color Noise for ADHD: Brown vs White | Calma" },
-        { id: "pink-noise", title: "Best Color Noise for ADHD: Brown vs White | Calma" },
-        { id: "summary", title: "Best Color Noise for ADHD: Brown vs White | Calma" },
+        { id: "adhd-and-sound", title: "What the evidence says" },
+        { id: "white-noise", title: "White noise" },
+        { id: "brown-noise", title: "Brown noise" },
+        { id: "pink-noise", title: "Pink noise" },
+        { id: "summary", title: "How to choose" },
       ]}
       relatedArticles={[
         {
           href: "/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "Best Color Noise for ADHD: Brown vs White | Calma",
+          title: "Brown vs White vs Pink Noise",
           description:
-    "Learn how white, brown, and pink noise can help ADHD brains improve focus, block distractions, and find calm.",
+    "Learn how the sound profiles differ before building your mix.",
         },
         {
           href: "/blog/best-sounds-for-studying",
-          title: "Best Color Noise for ADHD: Brown vs White | Calma",
+          title: "Sounds for Studying",
           description:
-    "Learn how white, brown, and pink noise can help ADHD brains improve focus, block distractions, and find calm.",
+    "Compare steady noise, nature sound and instrumental options for study sessions.",
         },
       ]}
     >
-      <ArticleSection id="adhd-and-sound" title="Why does the ADHD brain need background sound?">
+      <ArticleSection id="adhd-and-sound" title="What does the evidence say about noise and ADHD?">
         <p>
-          To understand why color noises work, we have to understand how the ADHD brain processes stimulation. ADHD is often associated with under-arousal in the prefrontal cortex, the part of the brain responsible for executive functions like focus and impulse control.
+          A 2024 systematic review and meta-analysis covering 13 studies and 335 participants found a small improvement on laboratory attention tasks from white or pink noise among children and young adults with ADHD or elevated symptoms. The same review found a small negative effect in comparison groups without ADHD.
         </p>
         <p className="mt-4">
-          When the brain is under-stimulated, it constantly seeks out new, interesting stimuli. This is why you might find yourself distracted by a bird outside, a ticking clock, or your own thoughts when trying to read. 
+          Importantly, the review found no eligible studies of brown noise. It also called for more research on real-world outcomes and appropriate listening levels. That makes noise a personal environment choice, not a proven treatment.
         </p>
         <p className="mt-4">
-          Adding a constant, non-distracting background sound provides the brain with a baseline level of stimulation. This satisfies the brain's craving for input, allowing the prefrontal cortex to \"quiet down\" and focus on the task at hand. This concept is often referred to as <strong>stochastic resonance</strong>.
+          Read the <a className="text-emerald-300 underline underline-offset-4" href="https://pubmed.ncbi.nlm.nih.gov/38428577/" target="_blank" rel="noopener noreferrer">peer-reviewed review on PubMed</a> for the study details and limitations.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="white-noise" title="White Noise and ADHD: Good, but often too harsh">
+      <ArticleSection id="white-noise" title="White noise: broad masking, brighter sound">
         <p>
-          White noise contains all audible frequencies played at the same intensity. It sounds similar to a hissing radiator or television static. Because it covers the entire spectrum, it is excellent at masking sudden, distracting noises.
+          White noise spreads energy across the audible spectrum and sounds similar to radio static. Its broad profile can make intermittent environmental sounds less noticeable.
         </p>
         <p className="mt-4">
-          However, when discussing <em>what color noise is best for ADHD</em>, white noise often falls short. Many neurodivergent individuals have sensory processing sensitivities. The high-frequency hissing of pure white noise can feel abrasive, grating, and eventually overstimulating if listened to for long periods.
+          Some listeners find its high-frequency hiss uncomfortable, while others prefer it. Start quietly and stop if it adds irritation or makes the task harder.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="brown-noise" title="Brown Noise: The Overwhelming ADHD Favorite">
+      <ArticleSection id="brown-noise" title="Brown noise: popular, but not yet studied enough">
         <p>
-          If you spend time in ADHD communities online, you will quickly notice a clear winner: <strong>Brown noise</strong>. 
+          Brown noise is frequently discussed online because of its deeper, bass-heavy character. Popularity and personal reports, however, are not the same as clinical evidence.
         </p>
         <p className="mt-4">
           Brown noise has significantly more energy in the lower frequencies (the bass) and very little in the high frequencies. It sounds like a deep, rumbling waterfall or the muffled roar of an airplane cabin. 
         </p>
         <p className="mt-4">
-          <strong>Why is brown noise so effective for ADHD?</strong>
+          <strong>Why might someone prefer brown noise?</strong>
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
-          <li><strong>The \"Heavy Blanket\" Effect:</strong> Many describe brown noise as feeling like an acoustic weighted blanket. Its depth provides intense, comforting sensory input without being \"sharp\" or irritating.</li>
-          <li><strong>Quieting the Internal Monologue:</strong> The heavy, immersive nature of brown noise is incredibly effective at drowning out the racing, tangential thoughts that often disrupt focus.</li>
-          <li><strong>Sensory Friendly:</strong> Because it lacks the high-pitched hiss of white noise, you can listen to it for hours while studying or working without experiencing auditory fatigue.</li>
+          <li><strong>Less high-frequency energy:</strong> It may feel softer than white noise to listeners who dislike hiss.</li>
+          <li><strong>Steady masking:</strong> A continuous background can make some environmental changes less noticeable.</li>
+          <li><strong>Personal comfort:</strong> A deeper sound may simply be easier for some people to keep in the background.</li>
         </ul>
       </ArticleSection>
 
@@ -132,16 +132,16 @@ export default function BestColorNoiseForADHDPage() {
           If brown noise feels too deep or muffled for your liking, Pink noise is the perfect compromise. It has more bass than white noise but retains some of the higher frequencies, sounding very similar to a steady, heavy rainstorm. 
         </p>
         <p className="mt-4">
-          Pink noise is highly recommended for sleep, and some people with ADHD find it to be the perfect \"natural\" sounding background for reading.
+          Pink noise was included alongside white noise in the research review, but the average benefit was small and does not predict an individual response.
         </p>
       </ArticleSection>
 
       <ArticleSection id="summary" title="Conclusion: What color noise is best for ADHD?">
         <p>
-          If you are forced to pick just one, <strong>Brown noise is generally considered the best color noise for ADHD</strong> due to its deep, soothing, and non-irritating profile.
+          There is no evidence-based winner for every person. White and pink noise have limited evidence for a small average task-performance benefit in young people with ADHD; brown noise has not yet been tested adequately in eligible trials.
         </p>
         <p className="mt-4">
-          However, you do not have to choose just one. The most effective approach is to use an app like <strong>Calma</strong> to mix your own soundscape. You might find that a base layer of brown noise mixed with the sound of a crackling campfire and distant thunder provides the exact level of stimulation your brain needs to thrive today.
+          Test one quiet sound at a time during a repeatable task, compare it with silence, and keep what feels useful. Calma can help with that experiment, but it does not diagnose or treat ADHD.
         </p>
         <script
           type="application/ld+json"
@@ -155,7 +155,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "What color noise is best for ADHD?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Brown noise is generally considered the best color noise for ADHD. Its deep, low-frequency sound provides enough sensory input to calm racing thoughts without the distracting high-pitched static found in white noise."
+                    "text": "There is no single best noise color for ADHD. A 2024 meta-analysis found a small average benefit from white or pink noise on laboratory tasks in young people with ADHD or elevated symptoms, but found no eligible brown-noise studies."
                   }
                 },
                 {
@@ -163,7 +163,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Is brown noise better than white noise for ADHD?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes, many people with ADHD prefer brown noise over white noise because it feels like a heavy acoustic blanket. It masks distractions effectively while being less harsh and grating on the ears during long study or work sessions."
+                    "text": "Not according to current evidence. Some people personally prefer brown noise because it sounds deeper, but the 2024 review found no eligible brown-noise studies. Individual responses vary."
                   }
                 }
               ]

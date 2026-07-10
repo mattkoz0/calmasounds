@@ -151,7 +151,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Calma mobile app interface for creating custom sound mixes"
               width={720}
               height={1600}
@@ -162,7 +162,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Calma sound mixer interface for customizing ambient soundscapes"
               width={720}
               height={1600}

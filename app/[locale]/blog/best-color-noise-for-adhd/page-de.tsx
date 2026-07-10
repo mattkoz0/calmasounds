@@ -142,7 +142,7 @@ export default function BestColorNoiseForADHDPage() {
 
       <ArticleSection id="summary" title="Fazit: Welche Rauschfarbe ist am besten bei ADHS?">
         <p>
-          Wenn Sie sich für eine entscheiden müssen, wird <strong>braunes Rauschen aufgrund seines tiefen, beruhigenden und nicht irritierenden Profils im Allgemeinen als die beste Rauschfarbe bei ADHS angesehen</strong>.
+          Es gibt keine Rauschfarbe, die für alle Menschen mit ADHS am besten ist. Eine Übersichtsarbeit von 2024 fand einen kleinen durchschnittlichen Nutzen von weißem oder rosa Rauschen, aber keine geeigneten Studien zu braunem Rauschen.
         </p>
         <p className="mt-4">
           Sie müssen sich jedoch nicht nur für eine entscheiden. Der effektivste Ansatz besteht darin, eine App wie <strong>Calma</strong> zu verwenden, um Ihre eigene Klanglandschaft zu mischen. Möglicherweise stellen Sie fest, dass eine Grundschicht aus braunem Rauschen gemischt mit dem Knistern eines Lagerfeuers und fernem Donner genau das Maß an Stimulation bietet, das Ihr Gehirn heute benötigt, um erfolgreich zu sein.
@@ -159,7 +159,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Welche Rauschfarbe ist am besten bei ADHS?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Braunes Rauschen gilt allgemein als die beste Rauschfarbe bei ADHS. Sein tiefer, niederfrequenter Klang bietet genügend sensorische Stimulation, um rasende Gedanken zu beruhigen, ohne das ablenkende hochfrequente Zischen, das bei weißem Rauschen auftritt."
+                    "text": "Es gibt keine universell beste Rauschfarbe. Eine Übersichtsarbeit von 2024 fand einen kleinen durchschnittlichen Nutzen von weißem oder rosa Rauschen in Labortests, aber keine geeigneten Studien zu braunem Rauschen."
                   }
                 },
                 {
@@ -167,7 +167,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Ist braunes Rauschen besser als weißes Rauschen bei ADHS?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Ja, viele Menschen mit ADHS bevorzugen braunes Rauschen gegenüber weißem Rauschen, da es sich wie eine schwere akustische Decke anfühlt. Es überdeckt Ablenkungen effektiv und ist bei langen Lern- oder Arbeitssitzungen weniger hart und irritierend für die Ohren."
+                    "text": "Das ist derzeit nicht belegt. Manche bevorzugen den tieferen Klang, doch Reaktionen sind individuell und Rauschen ist keine ADHS-Behandlung."
                   }
                 }
               ]

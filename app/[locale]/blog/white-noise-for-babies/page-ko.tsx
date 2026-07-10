@@ -100,7 +100,7 @@ export default function WhiteNoiseForBabiesPage() {
       </ArticleSection>
 
       <ArticleSection id="safety" title="안전 최우선: 볼륨 및 거리">
-        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>낮은 볼륨:</strong> 50데시벨을 초과하지 않도록.</li><li><strong>거리 유지:</strong> 아기 침대에서 최소 2m 떨어져.</li></ul>
+        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>낮은 볼륨:</strong> 도움이 되는 가장 낮은 수준에서 시작하세요.</li><li><strong>거리와 시간:</strong> 기기를 머리에서 가능한 멀리 두고 타이머를 사용하세요.</li></ul>
       </ArticleSection>
 
       <ArticleSection id="routine" title="견고한 수면 루틴 만들기">
@@ -109,7 +109,7 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="자주 묻는 질문">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">밤새 백색 소음을 틀어놓는 것이 안전합니까?</h3><p className="mt-2 leading-7 text-white/70">네, 볼륨이 안전한 수준(약 50데시벨)이고 최소 2미터 떨어져 있다면 안전합니다.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">밤새 백색 소음을 틀어놓는 것이 안전합니까?</h3><p className="mt-2 leading-7 text-white/70">계속 재생해도 위험이 없다고 가정하지 마세요. AAP는 머리에서 가능한 멀리 두고 짧게 사용할 것을 권합니다.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">아기에게 가장 좋은 소음은 무엇입니까?</h3><p className="mt-2 leading-7 text-white/70">많은 부모가 더 부드러운 핑크 소음을 선호합니다.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">언제 백색 소음 사용을 중단해야 합니까?</h3><p className="mt-2 leading-7 text-white/70">엄격한 연령 제한은 없으며, 서서히 볼륨을 낮춰 중단할 수 있습니다.</p></div>
         </div>
@@ -127,7 +127,7 @@ export default function WhiteNoiseForBabiesPage() {
                     "name": "밤새 백색 소음을 틀어놓는 것이 안전합니까?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "네, 볼륨이 안전한 수준(약 50데시벨)이고 최소 2미터 떨어져 있다면 안전합니다."
+                              "text": "계속 재생해도 위험이 없다고 가정해서는 안 됩니다. AAP는 기기를 아기의 머리에서 가능한 멀리 두고 짧게 사용할 것을 권합니다."
                     }
           },
           {

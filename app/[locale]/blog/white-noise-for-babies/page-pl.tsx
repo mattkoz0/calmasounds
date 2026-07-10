@@ -100,7 +100,7 @@ export default function WhiteNoiseForBabiesPage() {
       </ArticleSection>
 
       <ArticleSection id="safety" title="Bezpieczeństwo: Głośność i Odległość">
-        <p>Uszy niemowlęcia wciąż się rozwijają. Korzystaj z szumu bezpiecznie:</p><ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Cicho:</strong> Dźwięk nie powinien przekraczać 50 decybeli (poziom cichej rozmowy).</li><li><strong>Bezpieczny dystans:</strong> Połóż telefon min. 2 metry od łóżeczka.</li></ul>
+        <p>Uszy niemowlęcia wciąż się rozwijają. Korzystaj z szumu ostrożnie:</p><ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Cicho:</strong> Zacznij od najniższej użytecznej głośności.</li><li><strong>Dystans i czas:</strong> Umieść urządzenie możliwie daleko od głowy i użyj timera.</li></ul>
       </ArticleSection>
 
       <ArticleSection id="routine" title="Zbuduj Wieczorną Rutynę">
@@ -109,7 +109,7 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Często Zadawane Pytania">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">Czy można odtwarzać szum przez całą noc?</h3><p className="mt-2 leading-7 text-white/70">Tak, o ile głośność jest ustawiona bezpiecznie (ok. 50 dB) a telefon leży co najmniej 2 metry od dziecka.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">Czy można odtwarzać szum przez całą noc?</h3><p className="mt-2 leading-7 text-white/70">Nie zakładaj, że ciągłe odtwarzanie jest pozbawione ryzyka. AAP zaleca trzymać urządzenie możliwie daleko od głowy i używać go krótko.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Jaki jest najlepszy dźwięk dla niemowlaka?</h3><p className="mt-2 leading-7 text-white/70">Ciągły i jednostajny. Wielu rodziców wybiera różowy szum (np. deszcz) ze względu na łagodniejsze brzmienie.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Kiedy przestać usypiać z szumem?</h3><p className="mt-2 leading-7 text-white/70">Nie ma górnej granicy. Szum można odstawić w każdej chwili, stopniowo ściszając go przez kilka tygodni.</p></div>
         </div>
@@ -127,7 +127,7 @@ export default function WhiteNoiseForBabiesPage() {
                     "name": "Czy można odtwarzać szum przez całą noc?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Tak, o ile głośność jest ustawiona bezpiecznie (ok. 50 dB) a telefon leży co najmniej 2 metry od dziecka."
+                              "text": "Nie należy zakładać, że ciągłe odtwarzanie jest pozbawione ryzyka. AAP zaleca umieścić urządzenie możliwie daleko od głowy dziecka i używać go krótko."
                     }
           },
           {

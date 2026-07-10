@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App de Ruido Marrón Gratis para TDAH y Sueño | Calma",
   description:
-    "¿Buscas ruido marrón profundo para TDAH, sueño o concentración? Mezcla ruido marrón con lluvia y sonidos de la naturaleza. App 100% gratis, sin anuncios, funciona offline.",
+    "¿Buscas ruido marrón profundo para TDAH, sueño o concentración? Mezcla ruido marrón con lluvia y sonidos de la naturaleza. App versión gratuita disponible, funciona offline.",
   keywords: [
     "app de ruido marrón",
     "ruido marrón para dormir",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App de Ruido Marrón Gratis | TDAH, Sueño y Concentración | Calma",
     description:
-    "¿Buscas ruido marrón profundo para TDAH, sueño o concentración? Mezcla con lluvia y sonidos de la naturaleza. 100% gratis, sin anuncios.",
+    "¿Buscas ruido marrón profundo para TDAH, sueño o concentración? Mezcla con lluvia y sonidos de la naturaleza. versión gratuita disponible.",
     url: "https://www.calmasounds.com/es/brown-noise-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -214,7 +214,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfaz de la app móvil Calma mostrando la lista de sonidos relajantes y categorías de sueño"
               width={720}
               height={1600}
@@ -225,7 +225,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interfaz de Calma personalizando diferentes tipos de ruido marrón"
               width={720}
               height={1600}

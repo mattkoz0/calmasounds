@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import type { ComponentProps } from "react";
 import { Link } from "@/i18n/routing";
 import { pathnamesMapping } from "@/app/utils/seo";
+
+type BlogHref = ComponentProps<typeof Link>["href"];
 
 export const metadata: Metadata = {
   title: "Calma Blog | Sleep, White Noise and Focus Guides",
@@ -187,7 +189,7 @@ export default function BlogPage() {
           {articles.map((article) => (
             <Link
               key={article.href}
-              href={article.href as any}
+              href={article.href as BlogHref}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>

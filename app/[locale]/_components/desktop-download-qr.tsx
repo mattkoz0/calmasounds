@@ -13,7 +13,6 @@ export default function DesktopDownloadQr() {
           width={130}
           height={130}
           className="rounded-xl"
-          priority
         />
       </div>
 

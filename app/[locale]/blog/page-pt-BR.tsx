@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import type { ComponentProps } from "react";
 import { Link } from "@/i18n/routing";
 import { pathnamesMapping } from "@/app/utils/seo";
+
+type BlogHref = ComponentProps<typeof Link>["href"];
 
 export const metadata: Metadata = {
   title: "Blog do Calma | Guias de Sono, Ruído Branco e Foco",
@@ -99,8 +101,18 @@ const articles = [
   },
   {
     href: "/blog/best-color-noise-for-adhd",
-    title: "Qual a melhor cor de ruído para o TDAH? Marrom vs Branco",
-    description: "Descubra por que o ruído marrom é frequentemente preferido sobre o ruído branco para TDAH, foco e superestimulação.",
+    title: "Cores de ruído e TDAH: o que a pesquisa mostra",
+    description: "Compare ruídos branco, rosa e marrom e conheça os limites das evidências atuais.",
+  },
+  {
+    href: "/blog/sounds-for-tinnitus-relief",
+    title: "Sons para mascaramento do zumbido",
+    description: "Compare sons suaves, cuidados de audição e quando procurar um profissional.",
+  },
+  {
+    href: "/blog/white-noise-for-babies",
+    title: "Ruído branco para bebês: uso cuidadoso",
+    description: "Orientações de volume, distância e duração para uma rotina de sono mais segura.",
   },
 ];
 
@@ -177,7 +189,7 @@ export default function BlogPage() {
           {articles.map((article) => (
             <Link
               key={article.href}
-              href={article.href as any}
+              href={article.href as BlogHref}
               className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
             >
               <h2 className="text-2xl font-semibold">{article.title}</h2>

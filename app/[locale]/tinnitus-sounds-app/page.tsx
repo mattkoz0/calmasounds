@@ -28,8 +28,8 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
   const {locale} = await params;
   const schema = (
     <SoftwareApplicationSchema 
-      name="Calma - Tinnitus Relief"
-      description="A beautifully simple app for tinnitus relief sounds and relaxation."
+      name="Calma - Tinnitus Sound Masking"
+      description="A sound mixer with white noise and nature sounds that can make tinnitus less noticeable for some listeners."
       applicationCategory="HealthApplication"
     />
   );

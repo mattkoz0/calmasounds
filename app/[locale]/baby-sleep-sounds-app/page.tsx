@@ -30,7 +30,7 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
   const schema = (
     <SoftwareApplicationSchema 
       name="Calma - Baby Sleep Sounds"
-      description="Help your baby fall asleep faster with gentle shushing, womb sounds, and continuous white noise."
+      description="Gentle shushing, womb sounds and continuous noise for a calmer bedtime sound environment."
       applicationCategory="HealthApplication"
     />
   );

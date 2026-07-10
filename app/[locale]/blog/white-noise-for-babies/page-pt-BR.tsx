@@ -105,7 +105,7 @@ export default function WhiteNoiseForBabiesPage() {
       </ArticleSection>
 
       <ArticleSection id="safety" title="Segurança: Volume e Distância">
-        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Volume baixo:</strong> Cerca de 50 decibéis.</li><li><strong>Distância:</strong> A pelo menos 2 metros do berço.</li></ul>
+        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Volume baixo:</strong> Comece no menor nível útil.</li><li><strong>Distância e tempo:</strong> Coloque o aparelho o mais longe possível da cabeça e use um timer.</li></ul>
       </ArticleSection>
 
       <ArticleSection id="routine" title="Construindo uma Rotina de Sono">
@@ -114,7 +114,7 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Perguntas Frequentes">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">É seguro deixar o ruído branco a noite toda?</h3><p className="mt-2 leading-7 text-white/70">Sim, desde que o volume seja seguro (cerca de 50 dB) e a 2 metros de distância.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">É seguro deixar o ruído branco a noite toda?</h3><p className="mt-2 leading-7 text-white/70">Não presuma que a reprodução contínua seja isenta de risco. A AAP orienta manter o aparelho longe da cabeça e usá-lo por pouco tempo.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Qual é o melhor ruído para um bebê?</h3><p className="mt-2 leading-7 text-white/70">O ruído rosa é muito popular por ser mais suave.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Quando parar de usar ruído branco?</h3><p className="mt-2 leading-7 text-white/70">Não há uma idade estrita. Você pode reduzir gradualmente o volume ao longo de semanas.</p></div>
         </div>
@@ -132,7 +132,7 @@ export default function WhiteNoiseForBabiesPage() {
                     "name": "É seguro deixar o ruído branco a noite toda?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Sim, desde que o volume seja seguro (cerca de 50 dB) e a 2 metros de distância."
+                              "text": "Não se deve presumir que a reprodução contínua seja isenta de risco. A AAP orienta colocar o aparelho o mais longe possível da cabeça do bebê e usá-lo por pouco tempo."
                     }
           },
           {

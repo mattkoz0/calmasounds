@@ -211,7 +211,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface de l'application Calma montrant les catégories de sons et de sons pour acouphènes"
               width={720}
               height={1600}
@@ -222,7 +222,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface de personnalisation du sons pour acouphènes pour le sommeil"
               width={720}
               height={1600}
@@ -298,7 +298,7 @@ export default function WhiteNoiseAppPage() {
               Existe-t-il une application gratuite pour les acouphènes ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, Calma est 100% gratuite, sans publicités et propose du bruit blanc, rose et brun pour masquer les acouphènes.
+              Oui, Calma est version gratuite disponible et propose du bruit blanc, rose et brun pour masquer les acouphènes.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">

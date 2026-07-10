@@ -105,7 +105,7 @@ export default function WhiteNoiseForBabiesPage() {
       </ArticleSection>
 
       <ArticleSection id="safety" title="Sécurité : Volume et Distance">
-        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Volume bas :</strong> Environ 50 décibels.</li><li><strong>Distance :</strong> À au moins 2 mètres du berceau.</li></ul>
+        <ul className="mt-4 list-disc pl-5 space-y-2"><li><strong>Volume bas :</strong> Commencez au niveau utile le plus faible.</li><li><strong>Distance et durée :</strong> Placez l'appareil aussi loin que possible de la tête et utilisez une minuterie.</li></ul>
       </ArticleSection>
 
       <ArticleSection id="routine" title="Créer une Routine de Sommeil">
@@ -114,7 +114,7 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Foire Aux Questions">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">Est-il sûr de laisser le bruit blanc toute la nuit ?</h3><p className="mt-2 leading-7 text-white/70">Oui, tant que le volume est bas (50 dB) et placé à au moins 2 mètres.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">Est-il sûr de laisser le bruit blanc toute la nuit ?</h3><p className="mt-2 leading-7 text-white/70">Ne supposez pas qu'une diffusion continue est sans risque. L'AAP conseille d'éloigner l'appareil de la tête et de l'utiliser peu de temps.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Quel est le meilleur bruit pour bébé ?</h3><p className="mt-2 leading-7 text-white/70">Le bruit rose est souvent le plus doux.</p></div>
 <div><h3 className="font-semibold text-lg text-emerald-400">Quand arrêter d'utiliser le bruit blanc ?</h3><p className="mt-2 leading-7 text-white/70">Il n'y a pas d'âge précis, on peut l'arrêter progressivement en baissant le volume.</p></div>
         </div>
@@ -132,7 +132,7 @@ export default function WhiteNoiseForBabiesPage() {
                     "name": "Est-il sûr de laisser le bruit blanc toute la nuit ?",
                     "acceptedAnswer": {
                               "@type": "Answer",
-                              "text": "Oui, tant que le volume est bas (50 dB) et placé à au moins 2 mètres."
+                              "text": "Une diffusion continue ne doit pas être présumée sans risque. L'AAP conseille de placer l'appareil aussi loin que possible de la tête et de l'utiliser peu de temps."
                     }
           },
           {

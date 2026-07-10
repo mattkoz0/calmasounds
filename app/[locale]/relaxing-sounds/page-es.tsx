@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Sonidos Relajantes Gratis para Estrés y Ansiedad | Calma",
   description:
-    "¿Necesitas relajarte? Mezcla sonidos de lluvia, naturaleza y ruido blanco para reducir el estrés y la ansiedad. App 100% gratis, sin anuncios, funciona offline.",
+    "¿Necesitas relajarte? Mezcla sonidos de lluvia, naturaleza y ruido blanco para reducir el estrés y la ansiedad. App versión gratuita disponible, funciona offline.",
   keywords: [
     "app de sonidos relajantes",
     "sonidos de relajación",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sonidos Relajantes Gratis | Estrés, Ansiedad y Sueño | Calma",
     description:
-    "Mezcla sonidos de lluvia, naturaleza y ruido blanco para reducir el estrés y la ansiedad. 100% gratis, sin anuncios.",
+    "Mezcla sonidos de lluvia, naturaleza y ruido blanco para reducir el estrés y la ansiedad. versión gratuita disponible.",
     url: "https://www.calmasounds.com/es/relaxing-sounds",
     siteName: "Calma",
     locale: "es_ES",
@@ -153,7 +153,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfaz de la aplicación móvil Calma para elegir categorías de sonido"
               width={720}
               height={1600}
@@ -164,7 +164,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interfaz Calma para personalizar paisajes sonoros relajantes"
               width={720}
               height={1600}

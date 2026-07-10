@@ -142,7 +142,7 @@ export default function BestColorNoiseForADHDPage() {
 
       <ArticleSection id="summary" title="Conclusion : Quelle couleur de bruit est la meilleure pour le TDAH ?">
         <p>
-          Si vous devez n'en choisir qu'un, <strong>le bruit brun est généralement considéré comme la meilleure couleur de bruit pour le TDAH</strong> en raison de son profil profond, apaisant et non irritant.
+          Il n'existe pas de couleur de bruit idéale pour toutes les personnes ayant un TDAH. Une synthèse de 2024 a trouvé un petit bénéfice moyen du bruit blanc ou rose, mais aucune étude admissible sur le bruit brun.
         </p>
         <p className="mt-4">
           Cependant, vous n'êtes pas obligé de n'en choisir qu'un. L'approche la plus efficace consiste à utiliser une application comme <strong>Calma</strong> pour mixer votre propre paysage sonore. Vous découvrirez peut-être qu'une couche de base de bruit brun mélangée au son d'un feu de camp crépitant et d'un tonnerre lointain fournit le niveau exact de stimulation dont votre cerveau a besoin aujourd'hui pour réussir.
@@ -159,7 +159,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Quelle couleur de bruit est la meilleure pour le TDAH ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le bruit brun est généralement considéré comme la meilleure couleur de bruit pour le TDAH. Son son profond à basse fréquence fournit suffisamment de stimulation sensorielle pour calmer les pensées qui s'emballent sans les sifflements aigus distrayants présents dans le bruit blanc."
+                    "text": "Il n'existe pas de couleur universellement idéale. Une synthèse de 2024 a trouvé un petit bénéfice moyen du bruit blanc ou rose dans des tâches de laboratoire, mais aucune étude admissible sur le bruit brun."
                   }
                 },
                 {
@@ -167,7 +167,7 @@ export default function BestColorNoiseForADHDPage() {
                   "name": "Le bruit brun est-il meilleur que le bruit blanc pour le TDAH ?",
                   "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Oui, de nombreuses personnes atteintes de TDAH préfèrent le bruit brun au bruit blanc car il donne l'impression d'être une lourde couverture acoustique. Il masque efficacement les distractions tout en étant moins agressif et grinçant pour les oreilles lors de longues sessions d'étude ou de travail."
+                    "text": "Les données actuelles ne le démontrent pas. Certaines personnes préfèrent sa tonalité grave, mais les réactions varient et le bruit ne traite pas le TDAH."
                   }
                 }
               ]

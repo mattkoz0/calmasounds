@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Best Free Brown Noise App for Sleep, ADHD & Focus | Calma",
+  title: "Brown Noise App: Mix 190+ Sleep & Focus Sounds | Calma",
   description:
-    "Brown noise is the #1 sound for ADHD focus and deep sleep. Calma lets you mix brown noise with rain, pink noise & nature sounds. Free, no ads, works offline. Try it now.",
+    "Mix brown noise with rain, pink noise and nature sounds. Explore 190+ sounds, offline playback and a free 3-layer mixer in Calma.",
   keywords: [
     "brown noise app",
     "brown noise for sleep",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/brown-noise-app",
   },
   openGraph: {
-    title: "Best Free Brown Noise App for Sleep, ADHD & Focus | Calma",
+    title: "Brown Noise App: Mix 190+ Sleep & Focus Sounds | Calma",
     description:
-    "Brown noise is the #1 sound for ADHD focus and deep sleep. Mix brown noise with rain & nature sounds. Free, no ads, works offline.",
+    "Mix brown noise with rain, pink noise and nature sounds. Explore 190+ sounds, offline playback and a free 3-layer mixer.",
     url: "https://www.calmasounds.com/brown-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free Brown Noise App for Sleep & ADHD | Calma",
+    title: "Brown Noise App: Mix 190+ Sounds | Calma",
     description:
-    "Brown noise is the #1 sound for ADHD focus and deep sleep. Free brown noise app with mixer. No ads, works offline.",
+    "Build a personal brown-noise soundscape with a free mixer, offline playback and 190+ sounds.",
   },
 };
 
@@ -102,7 +102,7 @@ const combinedJsonLd = {
             "name": "Does brown noise help with ADHD?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes. Brown noise's deep, consistent frequency provides enough background stimulation to satisfy the ADHD brain's need for input, without being distracting. This reduces the urge to seek other stimuli."
+                "text": "Responses vary. Research has found a small task-performance benefit from white and pink noise in some young people with ADHD, but the review found no eligible brown-noise studies. Brown noise is not an ADHD treatment."
             }
         },
         {
@@ -110,7 +110,7 @@ const combinedJsonLd = {
             "name": "Brown noise vs white noise — what's the difference?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "White noise contains all frequencies at equal volume, producing a bright static. Brown noise rolls off at higher frequencies, sounding deeper and warmer. Most adults prefer brown noise for sleep because it's less harsh during long exposure."
+                "text": "White noise has equal energy per frequency and sounds brighter. Brown noise reduces energy as frequency rises, so it sounds deeper and warmer. Which feels more comfortable is a personal preference."
             }
         }
     ]
@@ -214,7 +214,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
               width={720}
               height={1600}
@@ -225,7 +225,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Calma brown noise app interface for customizing brown noise for sleep and focus"
               width={720}
               height={1600}

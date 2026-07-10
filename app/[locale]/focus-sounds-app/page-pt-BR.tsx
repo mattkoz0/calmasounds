@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App Grátis de Sons para Foco | Estudo, TDAH e Deep Work | Calma",
   description:
-    "Procurando sons para concentração? O Calma oferece ruído marrom, chuva e paisagens sonoras personalizáveis para estudo, TDAH e deep work. 100% grátis, sem anúncios, offline.",
+    "Procurando sons para concentração? O Calma oferece ruído marrom, chuva e paisagens sonoras personalizáveis para estudo, TDAH e deep work. versão gratuita disponível, offline.",
   keywords: [
     "aplicativo de sons para foco",
     "aplicativo de foco",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "app foco grátis",
     "ruído marrom para TDAH",
     "sons para estudar",
-    "app concentração sem anúncios",
+    "app concentração sem assinatura",
     "deep work sons",
   ],
   alternates: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App Grátis Sons para Foco | Estudo e TDAH | Calma",
     description:
-    "Ruído marrom, chuva e sons personalizáveis para foco e estudo. 100% grátis, sem anúncios.",
+    "Ruído marrom, chuva e sons personalizáveis para foco e estudo. versão gratuita disponível.",
     url: "https://www.calmasounds.com/pt-BR/focus-sounds-app",
     siteName: "Calma",
     locale: "pt_BR",
@@ -152,7 +152,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface móvel do aplicativo Calma mostrando categorias de foco e concentração"
               width={720}
               height={1600}
@@ -163,7 +163,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface do Calma para personalizar paisagens sonoras de foco para estudos"
               width={720}
               height={1600}

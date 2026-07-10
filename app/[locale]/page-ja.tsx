@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Mejor App de Ruido Blanco Gratis 2026 | Calma",
   description:
-    "¿Buscas la mejor app de ruido blanco? Mezcla ruido blanco, marrón, rosa y sonidos de la naturaleza para dormir, TDAH, bebés o tinnitus. 100% gratis, sin anuncios, funciona offline.",
+    "¿Buscas la mejor app de ruido blanco? Mezcla ruido blanco, marrón, rosa y sonidos de la naturaleza para dormir, TDAH, bebés o tinnitus. versión gratuita disponible, funciona offline.",
   keywords: [
     "app de ruido blanco",
     "ruido blanco para dormir",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mejor App de Ruido Blanco Gratis 2026 | Dormir, TDAH, Bebés | Calma",
     description:
-    "¿Buscas la mejor app de ruido blanco? Mezcla ruido blanco, marrón, rosa y sonidos de la naturaleza para dormir, TDAH, bebés o tinnitus. 100% gratis, sin anuncios.",
+    "¿Buscas la mejor app de ruido blanco? Mezcla ruido blanco, marrón, rosa y sonidos de la naturaleza para dormir, TDAH, bebés o tinnitus. versión gratuita disponible.",
     url: "https://www.calmasounds.com/es/white-noise-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -80,7 +80,7 @@ const combinedJsonLd = {
             "name": "¿Cuál es la mejor aplicación gratuita de ruido blanco?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza. Es 100% gratis, sin anuncios y funciona offline."
+                "text": "Calma ofrece un entorno sencillo y sin distracciones para mezclar ruido blanco con sonidos de la naturaleza. Es versión gratuita disponible y funciona offline."
             }
         },
         {
@@ -222,7 +222,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfaz de la app móvil Calma mostrando la lista de sonidos relajantes y categorías de sueño"
               width={720}
               height={1600}
@@ -233,7 +233,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interfaz de Calma personalizando diferentes tipos de ruido blanco"
               width={720}
               height={1600}

@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "App de Bruit Brun Gratuite pour TDAH et Sommeil | Calma",
   description:
-    "Vous cherchez du bruit brun profond pour le TDAH, le sommeil ou la concentration ? Mélangez bruit brun avec pluie et sons de la nature. 100% gratuit, sans pub, fonctionne hors ligne.",
+    "Vous cherchez du bruit brun profond pour le TDAH, le sommeil ou la concentration ? Mélangez bruit brun avec pluie et sons de la nature. version gratuite disponible, fonctionne hors ligne.",
   keywords: [
     "application bruit brun",
     "bruit brun pour dormir",
@@ -215,7 +215,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface de l'application Calma montrant les catégories de sons et de bruit brun"
               width={720}
               height={1600}
@@ -226,7 +226,7 @@ export default function WhiteNoiseAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface de personnalisation du bruit brun pour le sommeil"
               width={720}
               height={1600}

@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "Welche Geräusche sind am besten bei Tinnitus?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Weißes Rauschen für hohes Pfeifen, Naturklänge zur Entspannung."
+            "text": "Vorlieben sind individuell; probieren Sie leises weißes Rauschen, Regen oder einen anderen sanften Hintergrund."
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "Wie funktioniert Klangtherapie?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sie verringert den Kontrast zwischen Stille und Tinnitus und fördert die Gewöhnung."
+            "text": "Sie kann den Kontrast verringern, ablenken oder bei manchen die Gewöhnung unterstützen; Ergebnisse variieren."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "Sollte man Tinnitus komplett übertönen?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nein, Experten empfehlen eine teilweise Maskierung zur Habituation."
+            "text": "Es gibt keinen universellen Pegel; vermeiden Sie lautes Übertönen und fragen Sie bei Bedarf einen Audiologen."
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/de/tinnitus-sounds-app"
       topLinkLabel="Kostenlose Tinnitus-App herunterladen"
       title="Beste Geräusche gegen Tinnitus: Ein Leitfaden zur Klangtherapie"
-      intro="Das Leben mit Tinnitus kann extrem herausfordernd sein. Klangtherapie ist eine der effektivsten Methoden, um das Ohrensausen zu bewältigen und das Gehirn zu trainieren, es zu ignorieren."
+      intro="Tinnitus kann in Stille auffälliger wirken. Leise externe Klänge können ihn bei manchen Menschen maskieren, ablenken oder Gewöhnung unterstützen, sind aber keine Heilung und wirken individuell."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Kostenlose Tinnitus-App herunterladen"
       secondaryCtaHref="/de/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Welche Geräusche sind am besten bei Tinnitus?</h3>
-            <p className="mt-2 leading-7 text-white/70">Weißes Rauschen für hohes Pfeifen, Naturklänge zur Entspannung.</p>
+            <p className="mt-2 leading-7 text-white/70">Vorlieben sind individuell; probieren Sie leises weißes Rauschen, Regen oder einen anderen sanften Hintergrund.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Wie funktioniert Klangtherapie?</h3>
-            <p className="mt-2 leading-7 text-white/70">Sie verringert den Kontrast zwischen Stille und Tinnitus und fördert die Gewöhnung.</p>
+            <p className="mt-2 leading-7 text-white/70">Sie kann den Kontrast verringern, ablenken oder bei manchen die Gewöhnung unterstützen; Ergebnisse variieren.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Sollte man Tinnitus komplett übertönen?</h3>
-            <p className="mt-2 leading-7 text-white/70">Nein, Experten empfehlen eine teilweise Maskierung zur Habituation.</p>
+            <p className="mt-2 leading-7 text-white/70">Es gibt keinen universellen Pegel; vermeiden Sie lautes Übertönen und fragen Sie bei Bedarf einen Audiologen.</p>
           </div>
         </div>
       </ArticleSection>

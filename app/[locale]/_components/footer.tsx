@@ -3,13 +3,16 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import type { ComponentProps } from "react";
+
+type LocalizedHref = Extract<ComponentProps<typeof Link>["href"], string>;
 
 export default function Footer() {
   const t = useTranslations("Footer");
   const navT = useTranslations("Navigation");
   const currentYear = new Date().getFullYear();
 
-  const footerLinks = [
+  const footerLinks: { name: string; href: LocalizedHref }[] = [
     { name: t("sleepSoundsApp"), href: "/sleep-sounds-app" },
     { name: t("relaxingSounds"), href: "/relaxing-sounds" },
     { name: t("focusSoundsApp"), href: "/focus-sounds-app" },
@@ -20,7 +23,7 @@ export default function Footer() {
     { name: t("soundMixerApp"), href: "/sound-mixer-app" },
   ];
 
-  const guideLinks = [
+  const guideLinks: { name: string; href: LocalizedHref }[] = [
     { name: t("rainVsWhiteNoise"), href: "/blog/rain-sounds-vs-white-noise" },
     { name: t("whiteNoiseForBabies"), href: "/blog/white-noise-for-babies" },
     { name: t("bestSoundsForSleep"), href: "/blog/best-sounds-for-sleep" },
@@ -58,7 +61,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-3 text-white/70">
             {footerLinks.map((link) => (
               <li key={link.href} className="flex">
-                <Link href={link.href as any} className="transition hover:text-white">
+                <Link href={link.href} className="transition hover:text-white">
                   {link.name}
                 </Link>
               </li>
@@ -73,7 +76,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-3 text-white/70">
             {guideLinks.map((link) => (
               <li key={link.name} className="flex">
-                <Link href={link.href as any} className="transition hover:text-white">
+                <Link href={link.href} className="transition hover:text-white">
                   {link.name}
                 </Link>
               </li>
@@ -96,6 +99,7 @@ export default function Footer() {
               </Link>
               <a
                 href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
+                data-cta-location="footer_store"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition hover:text-white"
@@ -104,6 +108,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
+                data-cta-location="footer_store"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="transition hover:text-white"

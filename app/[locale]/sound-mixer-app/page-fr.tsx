@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Mixeur de Sons Gratuit | Sommeil, Focus & Relaxation | Calma",
   description:
-    "Vous cherchez un mixeur de sons ? Mélangez bruit blanc, pluie et sons de la nature pour dormir, vous concentrer et vous détendre. 100% gratuit, sans publicités, hors ligne.",
+    "Vous cherchez un mixeur de sons ? Mélangez bruit blanc, pluie et sons de la nature pour dormir, vous concentrer et vous détendre. version gratuite disponible, hors ligne.",
   keywords: [
     "application mixage sonore",
     "mixeur de sons sommeil",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mixeur de Sons Gratuit | Sommeil & Focus | Calma",
     description:
-    "Mélangez bruit blanc, pluie et nature. 100% gratuit, sans publicités.",
+    "Mélangez bruit blanc, pluie et nature. version gratuite disponible.",
     url: "https://www.calmasounds.com/fr/sound-mixer-app",
     siteName: "Calma",
     locale: "fr_FR",
@@ -151,7 +151,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface mobile de l'application Calma montrant la création de mélanges personnalisés"
               width={720}
               height={1600}
@@ -162,7 +162,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface du mixeur Calma pour personnaliser les paysages sonores ambiants"
               width={720}
               height={1600}
@@ -247,7 +247,7 @@ export default function SoundMixerAppPage() {
               En quoi Calma se distingue ?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma est 100% gratuite, sans publicités, hors ligne et fondée sur la personnalisation – créez votre propre mix au lieu de choisir des pistes fixes.
+              Calma est version gratuite disponible, hors ligne et fondée sur la personnalisation – créez votre propre mix au lieu de choisir des pistes fixes.
             </p>
           </div>
 
@@ -279,7 +279,7 @@ export default function SoundMixerAppPage() {
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu’est-ce qu’un mixeur sonore ?","acceptedAnswer":{"@type":"Answer","text":"Combinez différents sons pour un environnement audio personnalisé."}},{"@type":"Question","name":"En quoi Calma se distingue ?","acceptedAnswer":{"@type":"Answer","text":"100% gratuite, sans pubs, hors ligne, avec mix personnalisables."}},{"@type":"Question","name":"Au-delà du sommeil ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pour étude, deep work, méditation et relaxation."}},{"@type":"Question","name":"Combien de sons à la fois ?","acceptedAnswer":{"@type":"Answer","text":"Plusieurs sons avec volume individuel."}},{"@type":"Question","name":"Fonctionne hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Qu’est-ce qu’un mixeur sonore ?","acceptedAnswer":{"@type":"Answer","text":"Combinez différents sons pour un environnement audio personnalisé."}},{"@type":"Question","name":"En quoi Calma se distingue ?","acceptedAnswer":{"@type":"Answer","text":"version gratuite disponibles, hors ligne, avec mix personnalisables."}},{"@type":"Question","name":"Au-delà du sommeil ?","acceptedAnswer":{"@type":"Answer","text":"Oui, pour étude, deep work, méditation et relaxation."}},{"@type":"Question","name":"Combien de sons à la fois ?","acceptedAnswer":{"@type":"Answer","text":"Plusieurs sons avec volume individuel."}},{"@type":"Question","name":"Fonctionne hors ligne ?","acceptedAnswer":{"@type":"Answer","text":"Oui, complètement sans internet."}}]}) }}
           />
         </div>
       </section>

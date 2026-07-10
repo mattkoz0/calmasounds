@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App Mezcladora de Sonidos Gratis | Dormir y Concentrarse | Calma",
   description:
-    "¿Buscas una app para mezclar sonidos? Combina ruido blanco, lluvia y naturaleza para dormir, concentrarte y relajarte. 100% gratis, sin anuncios, funciona offline.",
+    "¿Buscas una app para mezclar sonidos? Combina ruido blanco, lluvia y naturaleza para dormir, concentrarte y relajarte. versión gratuita disponible, funciona offline.",
   keywords: [
     "app mezcladora de sonidos",
     "mezclador de sonidos para dormir",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Mezcladora de Sonidos Gratis | Dormir y Concentrarse | Calma",
     description:
-    "Mezcla ruido blanco, lluvia y naturaleza. 100% gratis, sin anuncios.",
+    "Mezcla ruido blanco, lluvia y naturaleza. versión gratuita disponible.",
     url: "https://www.calmasounds.com/es/sound-mixer-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -149,7 +149,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfaz de la aplicación móvil de Calma para crear atmósferas personalizadas"
               width={720}
               height={1600}
@@ -160,7 +160,7 @@ export default function SoundMixerAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Mezclador de la aplicación de Calma"
               width={720}
               height={1600}
@@ -245,7 +245,7 @@ export default function SoundMixerAppPage() {
               ¿En qué se distingue Calma?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma es 100% gratis, sin anuncios, funciona offline y está diseñada para personalizar tus mezclas en lugar de elegir pistas fijas.
+              Calma es versión gratuita disponible, funciona offline y está diseñada para personalizar tus mezclas en lugar de elegir pistas fijas.
             </p>
           </div>
 
@@ -277,7 +277,7 @@ export default function SoundMixerAppPage() {
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app mezcladora de sonidos?","acceptedAnswer":{"@type":"Answer","text":"Combina sonidos como lluvia y ruido blanco para crear ambientes personalizados."}},{"@type":"Question","name":"¿En qué se distingue Calma?","acceptedAnswer":{"@type":"Answer","text":"100% gratis, sin anuncios, offline, con mezclas personalizables."}},{"@type":"Question","name":"¿Más que para dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí, para estudio, deep work, meditación y relajación."}},{"@type":"Question","name":"¿Cuántos sonidos a la vez?","acceptedAnswer":{"@type":"Answer","text":"Varios sonidos con volumen individual."}},{"@type":"Question","name":"¿Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sí, completamente sin internet."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app mezcladora de sonidos?","acceptedAnswer":{"@type":"Answer","text":"Combina sonidos como lluvia y ruido blanco para crear ambientes personalizados."}},{"@type":"Question","name":"¿En qué se distingue Calma?","acceptedAnswer":{"@type":"Answer","text":"versión gratuita disponible, offline, con mezclas personalizables."}},{"@type":"Question","name":"¿Más que para dormir?","acceptedAnswer":{"@type":"Answer","text":"Sí, para estudio, deep work, meditación y relajación."}},{"@type":"Question","name":"¿Cuántos sonidos a la vez?","acceptedAnswer":{"@type":"Answer","text":"Varios sonidos con volumen individual."}},{"@type":"Question","name":"¿Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sí, completamente sin internet."}}]}) }}
           />
         </div>
       </section>

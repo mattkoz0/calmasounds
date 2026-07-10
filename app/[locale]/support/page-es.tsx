@@ -1,6 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
@@ -26,21 +24,6 @@ export default function SupportPage() {
     }
   };
 
-  const footerLinks = [
-    { name: 'App sonidos para dormir', href: '/sleep-sounds-app' },
-    { name: 'Sonidos relajantes', href: '/relaxing-sounds' },
-    { name: 'App sonidos de concentración', href: '/focus-sounds-app' },
-    { name: 'App ruido blanco', href: '/white-noise-app' },
-    { name: 'App mezcladora', href: '/sound-mixer-app' },
-    { name: 'Ondas binaurales', href: '/blog/binaural-beats-for-sleep-and-focus' },
-  ];
-
-  const guideLinks = [
-    { name: 'Sonidos de lluvia vs ruido blanco', href: '/blog/rain-sounds-vs-white-noise' },
-    { name: 'Mejores sonidos para dormir', href: '/blog/best-sounds-for-sleep' },
-    { name: 'Rutinas para acostarse', href: '/blog/how-to-build-a-bedtime-routine' },
-    { name: 'Soporte', href: '/support' },
-  ];
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">

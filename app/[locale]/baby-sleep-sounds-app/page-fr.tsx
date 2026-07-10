@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Application Gratuite Sons Bébé | Bruit Blanc pour Bébés | Calma",
   description:
-    "Vous cherchez du bruit blanc pour votre bébé ? Calmez votre nouveau-né avec des sons doux, de la pluie et des fréquences utérines. 100% gratuite, sans publicités, hors ligne.",
+    "Vous cherchez du bruit blanc pour votre bébé ? Calmez votre nouveau-né avec des sons doux, de la pluie et des fréquences utérines. version gratuite disponible, hors ligne.",
   keywords: [
     "application sommeil bébé",
     "bruit blanc pour bébé",
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
     "app bruit blanc bébé gratuite",
     "sons du ventre maternel",
     "bruit brun bébé",
-    "app sommeil bébé sans pub",
+    "app sommeil bébé sans abonnement",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/fr/baby-sleep-sounds-app",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Application Gratuite Sons Bébé | Bruit Blanc | Calma",
     description:
-    "Bruit blanc, pluie et sons utérins pour le sommeil de bébé. 100% gratuite, sans publicités.",
+    "Bruit blanc, pluie et sons utérins pour le sommeil de bébé. version gratuite disponible.",
     url: "https://www.calmasounds.com/fr/baby-sleep-sounds-app",
     siteName: "Calma",
     locale: "fr_FR",

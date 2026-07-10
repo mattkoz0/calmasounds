@@ -147,7 +147,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfejs aplikacji mobilnej Calma pokazujący kategorie skupienia i koncentracji"
               width={720}
               height={1600}
@@ -158,7 +158,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interfejs Calmy do personalizacji pejzaży dźwiękowych do nauki"
               width={720}
               height={1600}

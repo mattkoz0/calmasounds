@@ -17,9 +17,17 @@ function compactLabel(value: string) {
     .slice(0, 60);
 }
 
+function getLinkLocation(anchor: HTMLAnchorElement) {
+  if (anchor.dataset.ctaLocation) return anchor.dataset.ctaLocation;
+  if (anchor.closest("header")) return "header";
+  if (anchor.closest("footer")) return "footer";
+  if (anchor.closest("article")) return "article";
+  return "page";
+}
+
 export default function ConversionTracking() {
   useEffect(() => {
-    const trackStoreClick = (event: MouseEvent) => {
+    const trackConversionClick = (event: MouseEvent) => {
       const target = event.target as Element | null;
       const anchor = target?.closest("a[href]") as HTMLAnchorElement | null;
       if (!anchor) return;
@@ -27,12 +35,24 @@ export default function ConversionTracking() {
       const destination = new URL(anchor.href, window.location.href);
       const isGooglePlay = destination.hostname === "play.google.com";
       const isAppStore = destination.hostname === "apps.apple.com";
-      if (!isGooglePlay && !isAppStore) return;
-
-      const store = isGooglePlay ? "google_play" : "app_store";
       const linkText = compactLabel(anchor.textContent || anchor.getAttribute("aria-label") || "cta");
       const pagePath = window.location.pathname;
       const content = compactLabel(`${pagePath}_${linkText}`);
+      const linkLocation = getLinkLocation(anchor);
+      const isDownloadPage = destination.origin === window.location.origin && /\/download\/?$/.test(destination.pathname);
+
+      if (anchor.dataset.ctaLocation || isDownloadPage) {
+        window.gtag?.("event", "cta_click", {
+          page_path: pagePath,
+          link_text: linkText,
+          link_location: linkLocation,
+          link_url: destination.pathname,
+        });
+      }
+
+      if (!isGooglePlay && !isAppStore) return;
+
+      const store = isGooglePlay ? "google_play" : "app_store";
 
       if (isGooglePlay && !destination.searchParams.has("referrer")) {
         const referrer = new URLSearchParams({
@@ -54,12 +74,12 @@ export default function ConversionTracking() {
         store,
         page_path: pagePath,
         link_text: linkText,
-        link_location: anchor.dataset.ctaLocation || "page",
+        link_location: linkLocation,
       });
     };
 
-    document.addEventListener("click", trackStoreClick, { capture: true });
-    return () => document.removeEventListener("click", trackStoreClick, { capture: true });
+    document.addEventListener("click", trackConversionClick, { capture: true });
+    return () => document.removeEventListener("click", trackConversionClick, { capture: true });
   }, []);
 
   return null;

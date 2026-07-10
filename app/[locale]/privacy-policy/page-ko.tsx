@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "개인정보 처리방침 | Calma",

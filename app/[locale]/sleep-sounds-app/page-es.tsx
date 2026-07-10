@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App de Sonidos para Dormir Gratis | Calma",
   description:
-    "¿Buscas la mejor app de sonidos para dormir? Mezcla ruido blanco, lluvia y sonidos de la naturaleza para dormir más rápido. 100% gratis, sin anuncios, funciona offline.",
+    "¿Buscas la mejor app de sonidos para dormir? Mezcla ruido blanco, lluvia y sonidos de la naturaleza para dormir más rápido. versión gratuita disponible, funciona offline.",
   keywords: [
     "app de sonidos para dormir",
     "app para dormir",
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/es/sleep-sounds-app",
   },
   openGraph: {
-    title: "App de Sonidos para Dormir Gratis | Sin Anuncios | Calma",
+    title: "App de Sonidos para Dormir Gratis y Offline | Calma",
     description:
-    "¿Buscas la mejor app de sonidos para dormir? Mezcla ruido blanco, lluvia y sonidos de la naturaleza para dormir más rápido. 100% gratis, sin anuncios, funciona offline.",
+    "¿Buscas la mejor app de sonidos para dormir? Mezcla ruido blanco, lluvia y sonidos de la naturaleza para dormir más rápido. versión gratuita disponible, funciona offline.",
     url: "https://www.calmasounds.com/es/sleep-sounds-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "App de Sonidos para Dormir Gratis | Calma",
     description:
-    "Mezcla ruido blanco, lluvia y sonidos de la naturaleza para dormir más rápido. 100% gratis, sin anuncios, funciona offline.",
+    "Mezcla ruido blanco, lluvia y sonidos de la naturaleza para dormir más rápido. versión gratuita disponible, funciona offline.",
   },
 };
 
@@ -152,7 +152,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfaz de la app móvil de Calma mostrando sonidos y categorías de relajación para dormir"
               width={720}
               height={1600}
@@ -163,7 +163,7 @@ export default function SleepSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interfaz de la app de Calma para personalizar audios para dormir"
               width={720}
               height={1600}
@@ -270,7 +270,7 @@ export default function SleepSoundsAppPage() {
             <p className="mt-3 leading-7 text-white/70">
               Calma se enfoca en paisajes sonoros personalizados, una interfaz simple
               y una sensación cálida y premium en lugar de abrumarte con muchísimas capas
-              de complejidad de audio. Es 100% gratis, sin anuncios y funciona offline.
+              de complejidad de audio. Es versión gratuita disponible y funciona offline.
             </p>
           </div>
 
@@ -303,7 +303,7 @@ export default function SleepSoundsAppPage() {
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app de sonidos para dormir?","acceptedAnswer":{"@type":"Answer","text":"Una app de sonidos para dormir te ayuda a reproducir audios relajantes diseñados para apoyar las rutinas a la hora de acostarse, la relajación y un estado mental más silencioso antes de dormir."}},{"@type":"Question","name":"¿En qué se diferencia Calma de otras aplicaciones de sueño?","acceptedAnswer":{"@type":"Answer","text":"Calma se enfoca en paisajes sonoros personalizados, una interfaz simple y una sensación cálida y premium. Es 100% gratis, sin anuncios y funciona offline."}},{"@type":"Question","name":"¿Puedo crear mi propia mezcla de sueño?","acceptedAnswer":{"@type":"Answer","text":"Sí. Calma está construida alrededor de la creación de tu propia mezcla de audio relajante en lugar de forzarte a escoger solo una pista prediseñada."}},{"@type":"Question","name":"¿Es seguro usar sonidos para dormir cada noche?","acceptedAnswer":{"@type":"Answer","text":"Sí, usar sonidos para dormir es completamente seguro si mantienes el volumen bajo. Muchos estudios muestran que el ruido constante de fondo mejora la calidad del sueño profundo. Con Calma puedes usar el temporizador de sueño."}},{"@type":"Question","name":"¿Qué sonidos son mejores para dormir rápido?","acceptedAnswer":{"@type":"Answer","text":"Los sonidos más efectivos son el ruido blanco, el ruido marrón y los sonidos de lluvia. Calma te permite mezclarlos todos juntos para crear el ambiente perfecto."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es una app de sonidos para dormir?","acceptedAnswer":{"@type":"Answer","text":"Una app de sonidos para dormir te ayuda a reproducir audios relajantes diseñados para apoyar las rutinas a la hora de acostarse, la relajación y un estado mental más silencioso antes de dormir."}},{"@type":"Question","name":"¿En qué se diferencia Calma de otras aplicaciones de sueño?","acceptedAnswer":{"@type":"Answer","text":"Calma se enfoca en paisajes sonoros personalizados, una interfaz simple y una sensación cálida y premium. Es versión gratuita disponible y funciona offline."}},{"@type":"Question","name":"¿Puedo crear mi propia mezcla de sueño?","acceptedAnswer":{"@type":"Answer","text":"Sí. Calma está construida alrededor de la creación de tu propia mezcla de audio relajante en lugar de forzarte a escoger solo una pista prediseñada."}},{"@type":"Question","name":"¿Es seguro usar sonidos para dormir cada noche?","acceptedAnswer":{"@type":"Answer","text":"Sí, usar sonidos para dormir es completamente seguro si mantienes el volumen bajo. Muchos estudios muestran que el ruido constante de fondo mejora la calidad del sueño profundo. Con Calma puedes usar el temporizador de sueño."}},{"@type":"Question","name":"¿Qué sonidos son mejores para dormir rápido?","acceptedAnswer":{"@type":"Answer","text":"Los sonidos más efectivos son el ruido blanco, el ruido marrón y los sonidos de lluvia. Calma te permite mezclarlos todos juntos para crear el ambiente perfecto."}}]}) }}
           />
         </div>
       </section>

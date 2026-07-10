@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "App de Sonidos para Concentración y TDAH | Calma",
   description:
-    "¿Necesitas concentrarte? Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. App 100% gratis, sin anuncios, funciona offline.",
+    "¿Necesitas concentrarte? Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. App versión gratuita disponible, funciona offline.",
   keywords: [
     "app de sonidos para la concentración",
     "app de enfoque",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "App de Sonidos para Concentración y TDAH | Calma",
     description:
-    "¿Necesitas concentrarte? Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. 100% gratis, sin anuncios.",
+    "¿Necesitas concentrarte? Mezcla ruido marrón, ruido blanco y lluvia para estudiar, trabajar o TDAH. versión gratuita disponible.",
     url: "https://www.calmasounds.com/es/focus-sounds-app",
     siteName: "Calma",
     locale: "es_ES",
@@ -152,7 +152,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interfaz de la app móvil Calma mostrando categorías de sonidos para concentración"
               width={720}
               height={1600}
@@ -163,7 +163,7 @@ export default function FocusSoundsAppPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interfaz de Calma para personalizar estudios y ambientes"
               width={720}
               height={1600}

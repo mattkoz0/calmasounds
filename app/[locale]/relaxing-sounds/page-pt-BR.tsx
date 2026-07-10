@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Sons Relaxantes Grátis | Anti-Estresse e Bem-Estar | Calma",
   description:
-    "Procurando sons relaxantes? Misture chuva, natureza e ruído branco para aliviar o estresse. 100% grátis, sem anúncios, funciona offline.",
+    "Procurando sons relaxantes? Misture chuva, natureza e ruído branco para aliviar o estresse. versão gratuita disponível, funciona offline.",
   keywords: [
     "aplicativo de sons relaxantes",
     "sons de relaxamento",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "sons anti-estresse",
     "sons da natureza para meditação",
     "chuva e sons naturais",
-    "bem-estar app sem anúncios",
+    "bem-estar app sem assinatura",
   ],
   alternates: {
     canonical: "https://www.calmasounds.com/pt-BR/relaxing-sounds",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Sons Relaxantes Grátis | Anti-Estresse | Calma",
     description:
-    "Misture chuva, natureza e ruído branco para relaxar. 100% grátis, sem anúncios.",
+    "Misture chuva, natureza e ruído branco para relaxar. versão gratuita disponível.",
     url: "https://www.calmasounds.com/pt-BR/relaxing-sounds",
     siteName: "Calma",
     locale: "pt_BR",
@@ -151,7 +151,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/1_en.png"
-              priority
+
               alt="Interface do aplicativo móvel Calma para escolha de categorias de sons relaxantes"
               width={720}
               height={1600}
@@ -162,7 +162,7 @@ export default function RelaxingSoundsPage() {
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
               src="/screenshots/2_en.png"
-              priority
+
               alt="Interface do Calma para personalização de paisagens sonoras de ambiente relaxante"
               width={720}
               height={1600}
@@ -247,7 +247,7 @@ export default function RelaxingSoundsPage() {
               O Calma é grátis?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim, o Calma é 100% grátis, sem anúncios e funciona completamente offline – sem custos ocultos.
+              Sim, o Calma é versão gratuita disponível e funciona completamente offline – PRO opcional com compra única.
             </p>
           </div>
 
@@ -279,7 +279,7 @@ export default function RelaxingSoundsPage() {
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"App de sons relaxantes?","acceptedAnswer":{"@type":"Answer","text":"Sons calmantes para aliviar o estresse."}},{"@type":"Question","name":"Calma é grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim, 100% grátis, sem anúncios, offline."}},{"@type":"Question","name":"Quando usar?","acceptedAnswer":{"@type":"Answer","text":"Trabalho, yoga, meditação ou leitura."}},{"@type":"Question","name":"Criar misturas?","acceptedAnswer":{"@type":"Answer","text":"Sim, misturas personalizadas de chuva, natureza e mais."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"App de sons relaxantes?","acceptedAnswer":{"@type":"Answer","text":"Sons calmantes para aliviar o estresse."}},{"@type":"Question","name":"Calma é grátis?","acceptedAnswer":{"@type":"Answer","text":"Sim, versão gratuita disponível, offline."}},{"@type":"Question","name":"Quando usar?","acceptedAnswer":{"@type":"Answer","text":"Trabalho, yoga, meditação ou leitura."}},{"@type":"Question","name":"Criar misturas?","acceptedAnswer":{"@type":"Answer","text":"Sim, misturas personalizadas de chuva, natureza e mais."}},{"@type":"Question","name":"Funciona offline?","acceptedAnswer":{"@type":"Answer","text":"Sim, completamente sem internet."}}]}) }}
           />
         </div>
       </section>

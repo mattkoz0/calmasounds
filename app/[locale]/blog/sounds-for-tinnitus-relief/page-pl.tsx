@@ -5,7 +5,7 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 const articleTitle = "Najlepsze Dźwięki na Szumy Uszne i Terapia Dźwiękiem | Calma";
-const articleDescription = "Odkryj, jak terapia dźwiękiem i szum biały mogą pomóc w leczeniu szumów usznych. Dowiedz się, jak maskować piski w uszach (Tinnitus).";
+const articleDescription = "Dowiedz się, jak ciche dźwięki tła mogą zmniejszać odczuwalność szumów usznych u części osób oraz kiedy skonsultować się ze specjalistą.";
 const articleUrl = "https://www.calmasounds.com/pl/blog/sounds-for-tinnitus-relief";
 
 export const metadata: Metadata = {
@@ -52,7 +52,7 @@ const articleJsonLd = {
           "name": "Jakie dźwięki są najlepsze na szumy uszne?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Szum biały na wysokie piski, szum deszczu do relaksu."
+            "text": "Preferencje są indywidualne; wypróbuj cichy biały szum, deszcz lub inne łagodne tło."
           }
         },
         {
@@ -60,7 +60,7 @@ const articleJsonLd = {
           "name": "Jak działa terapia dźwiękiem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Ułatwia mózgowi ignorowanie szumów usznych poprzez zmniejszenie kontrastu akustycznego."
+            "text": "Może zmniejszać kontrast, odwracać uwagę lub wspierać habituację u części osób; efekty są różne."
           }
         },
         {
@@ -68,7 +68,7 @@ const articleJsonLd = {
           "name": "Czy należy całkowicie zagłuszać szumy uszne?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Nie, eksperci zalecają częściowe maskowanie w celu osiągnięcia habituacji."
+            "text": "Nie ma jednego poziomu dla wszystkich; unikaj głośnego zagłuszania i skonsultuj podejście z audiologiem."
           }
         }
       ]
@@ -84,7 +84,7 @@ export default function SoundsForTinnitusReliefPage() {
       topLinkHref="/pl/tinnitus-sounds-app"
       topLinkLabel="Pobierz darmową aplikację na szumy uszne"
       title="Najlepsze Dźwięki na Szumy Uszne: Poradnik Terapii"
-      intro="Życie z szumami usznymi bywa trudne. Terapia dźwiękiem to najskuteczniejsza metoda na maskowanie szumów usznych i trening mózgu, by przestał na nie zwracać uwagę."
+      intro="Szumy uszne mogą być bardziej odczuwalne w ciszy. Cichy dźwięk tła może je maskować, odwracać uwagę lub wspierać habituację u części osób, ale nie jest lekarstwem i efekty są indywidualne."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Pobierz darmową aplikację na szumy uszne"
       secondaryCtaHref="/pl/tinnitus-sounds-app"
@@ -161,15 +161,15 @@ export default function SoundsForTinnitusReliefPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Jakie dźwięki są najlepsze na szumy uszne?</h3>
-            <p className="mt-2 leading-7 text-white/70">Szum biały na wysokie piski, szum deszczu do relaksu.</p>
+            <p className="mt-2 leading-7 text-white/70">Preferencje są indywidualne; wypróbuj cichy biały szum, deszcz lub inne łagodne tło.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Jak działa terapia dźwiękiem?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ułatwia mózgowi ignorowanie szumów usznych poprzez zmniejszenie kontrastu akustycznego.</p>
+            <p className="mt-2 leading-7 text-white/70">Może zmniejszać kontrast, odwracać uwagę lub wspierać habituację u części osób; efekty są różne.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Czy należy całkowicie zagłuszać szumy uszne?</h3>
-            <p className="mt-2 leading-7 text-white/70">Nie, eksperci zalecają częściowe maskowanie w celu osiągnięcia habituacji.</p>
+            <p className="mt-2 leading-7 text-white/70">Nie ma jednego poziomu dla wszystkich; unikaj głośnego zagłuszania i skonsultuj podejście z audiologiem.</p>
           </div>
         </div>
       </ArticleSection>

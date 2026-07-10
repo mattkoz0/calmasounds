@@ -1,6 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
 import ContactForm from './ContactForm';
 
 export const metadata: Metadata = {
@@ -26,21 +24,6 @@ export default function SupportPage() {
     }
   };
 
-  const footerLinks = [
-    { name: 'Sleep sounds app', href: '/sleep-sounds-app' },
-    { name: 'Relaxing sounds', href: '/relaxing-sounds' },
-    { name: 'Focus sounds app', href: '/focus-sounds-app' },
-    { name: 'White noise app', href: '/white-noise-app' },
-    { name: 'Sound mixer app', href: '/sound-mixer-app' },
-    { name: 'Binaural beats', href: '/blog/binaural-beats-for-sleep-and-focus' },
-  ];
-
-  const guideLinks = [
-    { name: 'Rain sounds vs white noise', href: '/blog/rain-sounds-vs-white-noise' },
-    { name: 'Best sounds for sleep', href: '/blog/best-sounds-for-sleep' },
-    { name: 'Bedtime routine guide', href: '/blog/how-to-build-a-bedtime-routine' },
-    { name: 'Support', href: '/support' },
-  ];
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
