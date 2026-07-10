@@ -114,7 +114,9 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Perguntas Frequentes">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">É seguro deixar o ruído branco a noite toda?</h3><p className="mt-2 leading-7 text-white/70">Sim, desde que o volume seja seguro (cerca de 50 dB) e a 2 metros de distância.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Qual é o melhor ruído para um bebê?</h3><p className="mt-2 leading-7 text-white/70">O ruído rosa é muito popular por ser mais suave.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Quando parar de usar ruído branco?</h3><p className="mt-2 leading-7 text-white/70">Não há uma idade estrita. Você pode reduzir gradualmente o volume ao longo de semanas.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">É seguro deixar o ruído branco a noite toda?</h3><p className="mt-2 leading-7 text-white/70">Sim, desde que o volume seja seguro (cerca de 50 dB) e a 2 metros de distância.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Qual é o melhor ruído para um bebê?</h3><p className="mt-2 leading-7 text-white/70">O ruído rosa é muito popular por ser mais suave.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Quando parar de usar ruído branco?</h3><p className="mt-2 leading-7 text-white/70">Não há uma idade estrita. Você pode reduzir gradualmente o volume ao longo de semanas.</p></div>
         </div>
       </ArticleSection>
 

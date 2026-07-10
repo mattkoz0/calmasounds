@@ -114,7 +114,9 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Foire Aux Questions">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">Est-il sûr de laisser le bruit blanc toute la nuit ?</h3><p className="mt-2 leading-7 text-white/70">Oui, tant que le volume est bas (50 dB) et placé à au moins 2 mètres.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Quel est le meilleur bruit pour bébé ?</h3><p className="mt-2 leading-7 text-white/70">Le bruit rose est souvent le plus doux.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Quand arrêter d'utiliser le bruit blanc ?</h3><p className="mt-2 leading-7 text-white/70">Il n'y a pas d'âge précis, on peut l'arrêter progressivement en baissant le volume.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">Est-il sûr de laisser le bruit blanc toute la nuit ?</h3><p className="mt-2 leading-7 text-white/70">Oui, tant que le volume est bas (50 dB) et placé à au moins 2 mètres.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Quel est le meilleur bruit pour bébé ?</h3><p className="mt-2 leading-7 text-white/70">Le bruit rose est souvent le plus doux.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Quand arrêter d'utiliser le bruit blanc ?</h3><p className="mt-2 leading-7 text-white/70">Il n'y a pas d'âge précis, on peut l'arrêter progressivement en baissant le volume.</p></div>
         </div>
       </ArticleSection>
 

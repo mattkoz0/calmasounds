@@ -56,7 +56,6 @@ const articleJsonLd = {
   },
   mainEntityOfPage: articleUrl,
   datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 const relatedArticles = [

@@ -53,7 +53,6 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/pl/blog/brown-noise-vs-white-noise-vs-pink-noise",
   datePublished: "2026-04-13",
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function NoiseColorsPage() {

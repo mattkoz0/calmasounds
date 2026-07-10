@@ -53,7 +53,6 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/pl/blog/benefits-of-nature-sounds-for-relaxation",
   datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function BenefitsOfNatureSoundsPage() {

@@ -102,6 +102,16 @@ const articles = [
     title: "What Color Noise is Best for ADHD?",
     description: "Explore why brown noise is often preferred over white noise for ADHD, focus, and overstimulation.",
   },
+  {
+    href: "/blog/sounds-for-tinnitus-relief",
+    title: "Sound Enrichment for Tinnitus",
+    description: "Learn how background sound may make tinnitus less noticeable and where the evidence remains limited.",
+  },
+  {
+    href: "/blog/white-noise-for-babies",
+    title: "White Noise for Babies: A Safer-Use Guide",
+    description: "Practical precautions for using steady background sound around babies and young children.",
+  },
 ];
 
 const blogJsonLd = {

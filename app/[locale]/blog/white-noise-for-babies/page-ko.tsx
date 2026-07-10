@@ -109,7 +109,9 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="자주 묻는 질문">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">밤새 백색 소음을 틀어놓는 것이 안전합니까?</h3><p className="mt-2 leading-7 text-white/70">네, 볼륨이 안전한 수준(약 50데시벨)이고 최소 2미터 떨어져 있다면 안전합니다.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">아기에게 가장 좋은 소음은 무엇입니까?</h3><p className="mt-2 leading-7 text-white/70">많은 부모가 더 부드러운 핑크 소음을 선호합니다.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">언제 백색 소음 사용을 중단해야 합니까?</h3><p className="mt-2 leading-7 text-white/70">엄격한 연령 제한은 없으며, 서서히 볼륨을 낮춰 중단할 수 있습니다.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">밤새 백색 소음을 틀어놓는 것이 안전합니까?</h3><p className="mt-2 leading-7 text-white/70">네, 볼륨이 안전한 수준(약 50데시벨)이고 최소 2미터 떨어져 있다면 안전합니다.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">아기에게 가장 좋은 소음은 무엇입니까?</h3><p className="mt-2 leading-7 text-white/70">많은 부모가 더 부드러운 핑크 소음을 선호합니다.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">언제 백색 소음 사용을 중단해야 합니까?</h3><p className="mt-2 leading-7 text-white/70">엄격한 연령 제한은 없으며, 서서히 볼륨을 낮춰 중단할 수 있습니다.</p></div>
         </div>
       </ArticleSection>
 

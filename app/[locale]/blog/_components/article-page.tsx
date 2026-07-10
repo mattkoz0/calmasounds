@@ -1,7 +1,6 @@
 "use client";
 
 import type { ReactNode } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import { useParams } from "next/navigation";
@@ -72,25 +71,71 @@ export function ArticlePage({
     return `https://www.calmasounds.com${prefix}${cleanPath}`;
   };
 
-  const enrichedJsonLd = {
-    ...jsonLd,
-    "author": {
-      "@type": "Person",
-      "name": "Calma Team",
-      "url": "https://www.calmasounds.com"
-    },
-    "publisher": {
+  const getLocalizedHref = (href: string) => {
+    if (/^https?:\/\//.test(href) || href.startsWith("#")) return href;
+
+    const cleanPath = href.replace(
+      /^\/(?:en|es|pl|de|fr|ko|ja|pt-BR)(?=\/|$)/,
+      ""
+    ) || "/";
+    const mappedPath = pathnamesMapping[cleanPath]?.[locale] ?? cleanPath;
+    return locale === "en" ? mappedPath : `/${locale}${mappedPath}`;
+  };
+
+  const articleUrl = slug
+    ? getLocalizedUrl(`/blog/${slug}`, locale)
+    : getLocalizedUrl("/blog", locale);
+  const rawEntities = Array.isArray(jsonLd["@graph"])
+    ? (jsonLd["@graph"] as Record<string, unknown>[])
+    : [jsonLd];
+  const entities = rawEntities.map((entity) => {
+    const { "@context": _context, ...rest } = entity;
+    void _context;
+    return rest;
+  });
+  const articleTypes = new Set(["Article", "BlogPosting", "NewsArticle"]);
+  const hasArticleEntity = entities.some((entity) =>
+    articleTypes.has(String(entity["@type"]))
+  );
+  const articleIdentity = {
+    author: {
       "@type": "Organization",
-      "name": "Calma",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.calmasounds.com/logo.png"
-      }
+      name: "Calma",
+      url: "https://www.calmasounds.com",
     },
-    "mainEntityOfPage": {
+    publisher: {
+      "@type": "Organization",
+      name: "Calma",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.calmasounds.com/logo.png",
+      },
+    },
+    image: "https://www.calmasounds.com/og-image.png",
+    mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": slug ? getLocalizedUrl(`/blog/${slug}`, locale) : getLocalizedUrl("/blog", locale)
-    }
+      "@id": articleUrl,
+    },
+  };
+  const enrichedEntities = hasArticleEntity
+    ? entities.map((entity) =>
+        articleTypes.has(String(entity["@type"]))
+          ? { ...entity, ...articleIdentity }
+          : entity
+      )
+    : [
+        {
+          "@type": "BlogPosting",
+          headline: title,
+          description: intro,
+          url: articleUrl,
+          ...articleIdentity,
+        },
+        ...entities,
+      ];
+  const enrichedJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": enrichedEntities,
   };
 
   const breadcrumbJsonLd = slug ? {
@@ -146,6 +191,13 @@ export function ArticlePage({
 
         <p className="mt-6 text-lg leading-8 text-white/70">{intro}</p>
 
+        <Link
+          href={getLocalizedHref(topLinkHref)}
+          className="mt-6 inline-flex items-center rounded-xl border border-emerald-400/25 bg-emerald-400/10 px-4 py-2 text-sm font-medium text-emerald-200 transition hover:bg-emerald-400/15"
+        >
+          {topLinkLabel} <span aria-hidden="true" className="ml-2">→</span>
+        </Link>
+
         {tableOfContents.length > 0 && (
           <nav className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6" aria-label="Table of contents">
             <p className="text-sm font-semibold uppercase tracking-wider text-white/40">In this guide</p>
@@ -173,13 +225,14 @@ export function ArticlePage({
 
             <div className="mt-6 flex flex-col gap-4 sm:flex-row w-full lg:justify-start">
               <a
-                href={ctaHref}
+                href={getLocalizedHref(ctaHref)}
+                data-cta-location="article_end"
                 className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:scale-[1.02]"
               >
                 {ctaLabel}
               </a>
               <a
-                href={secondaryCtaHref}
+                href={getLocalizedHref(secondaryCtaHref)}
                 className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
               >
                 {secondaryCtaLabel}
@@ -199,7 +252,7 @@ export function ArticlePage({
               {relatedArticles.map((article) => (
                 <a
                   key={article.href}
-                  href={article.href}
+                  href={getLocalizedHref(article.href)}
                   className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
                 >
                   <h3 className="text-lg font-medium">{article.title}</h3>

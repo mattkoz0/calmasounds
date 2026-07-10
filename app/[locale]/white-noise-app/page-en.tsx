@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Free White Noise App 2026 | Sleep, Focus, Babies & Tinnitus | Calma",
+  title: "Free White Noise App for Sleep & Focus | Calma",
   description:
-    "Looking for the best white noise app? Mix white noise, brown noise, pink noise & nature sounds for sleep, ADHD focus, babies, or tinnitus relief. 100% free, no ads, works offline.",
+    "Mix white, brown and pink noise with rain and nature sounds. Calma works offline on iOS and Android, with a free tier and no required subscription.",
   keywords: [
     "white noise app",
     "white noise for sleep",
@@ -22,9 +23,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/white-noise-app",
   },
   openGraph: {
-    title: "Best Free White Noise App 2026 | Sleep, Focus & Tinnitus | Calma",
+    title: "Free White Noise App for Sleep & Focus",
     description:
-    "Looking for the best white noise app? Mix white noise, brown noise, pink noise & nature sounds for sleep, focus, babies, or tinnitus relief. 100% free, no ads.",
+    "Mix white, brown and pink noise with rain. Works offline on iOS and Android with no required subscription.",
     url: "https://www.calmasounds.com/white-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free White Noise App | Sleep, Focus & Babies | Calma",
+    title: "Free White Noise App for Sleep & Focus | Calma",
     description:
-    "Mix white noise, brown noise & nature sounds for sleep, ADHD focus, babies, or tinnitus. 100% free, works offline.",
+    "Mix white, brown and pink noise with rain. Free tier, offline playback and no required subscription.",
   },
 };
 
@@ -50,11 +51,6 @@ const combinedJsonLd = {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
       }
     },
     {
@@ -84,7 +80,7 @@ const combinedJsonLd = {
             "name": "What is the best free white noise app?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up."
+                "text": "Calma offers a free tier for mixing white noise with nature sounds, works offline, and does not require a monthly or annual subscription. An optional one-time unlock adds premium features."
             }
         },
         {
@@ -100,7 +96,7 @@ const combinedJsonLd = {
             "name": "How to use a white noise app for studying?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "For studying, set a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD."
+                "text": "For studying, try a quiet, steady layer of white or brown noise and adjust it so it masks distractions without becoming distracting itself. Individual responses vary."
             }
         },
         {
@@ -108,7 +104,7 @@ const combinedJsonLd = {
             "name": "Is white noise safe for babies?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes, when used correctly. Keep the volume below 50 dB, place the device at least 2 meters from the crib, and use a sleep timer. Many pediatricians recommend white noise for babies."
+                "text": "For a baby, sound should be kept low and the device placed away from the crib. Ask a pediatric or hearing professional for guidance appropriate to your child."
             }
         },
         {
@@ -176,39 +172,38 @@ export default function WhiteNoiseAppPage() {
             Download on App Store
           </a>
 
-          <a
+          <Link
             href="/"
             className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
           >
             Back to homepage
-          </a>
+          </Link>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Support better sleep</h2>
+            <h2 className="text-2xl font-semibold">Mix noise colors and nature</h2>
             <p className="mt-4 leading-7 text-white/70">
-              White noise can help create a more stable sound background for
-              bedtime and a gentler transition into sleep.
+              Layer white, pink or brown noise with rain and nature sounds, then
+              adjust each sound to build a personal mix.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Reduce distracting noise</h2>
+            <h2 className="text-2xl font-semibold">Works offline</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Use a controlled audio layer to soften sudden sounds and create a
-              calmer environment around you.
+              Play and mix sounds without an internet connection on iOS and Android,
+              including while travelling or using airplane mode.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Keep it simple and calm</h2>
+            <h2 className="text-2xl font-semibold">No required subscription</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Calma is designed to feel elegant, clear and emotionally light,
-              helping white noise feel like part of a daily routine instead of a
-              technical tool.
+              Start with the free tier. Premium features use an optional one-time
+              lifetime unlock instead of a monthly or annual plan.
             </p>
           </div>
         </div>
@@ -280,7 +275,7 @@ export default function WhiteNoiseAppPage() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          <a
+          <Link
             href="/blog/white-noise-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -288,8 +283,8 @@ export default function WhiteNoiseAppPage() {
             <p className="mt-3 text-white/70">
               Discover how white noise can help create a stable bedtime environment and improve your rest.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -297,8 +292,8 @@ export default function WhiteNoiseAppPage() {
             <p className="mt-3 text-white/70">
               Explore the differences between white, pink, brown, and green noise to find your ideal sound.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/blog/best-free-white-noise-app"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -306,8 +301,8 @@ export default function WhiteNoiseAppPage() {
             <p className="mt-3 text-white/70">
               See how Calma compares to other white noise apps in features, sound quality, and value.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/blog/rain-sounds-vs-white-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -315,7 +310,7 @@ export default function WhiteNoiseAppPage() {
             <p className="mt-3 text-white/70">
               Which is better for your sleep: organic rain sounds or constant white noise?
             </p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -333,7 +328,7 @@ export default function WhiteNoiseAppPage() {
               What is the best free white noise app?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma offers a beautifully simple, distraction-free environment to mix white noise with nature sounds. It provides a robust free tier without intrusive ads that wake you up.
+              Calma offers a free tier for mixing white noise with nature sounds, works offline, and does not require a monthly or annual subscription. An optional one-time unlock adds premium features.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -349,7 +344,7 @@ export default function WhiteNoiseAppPage() {
               How to use a white noise app for studying?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              For studying, we recommend setting a steady base of white or brown noise, mixed with light rain. This masks household distractions and helps maintain focus, especially for ADHD.
+              Try a quiet, steady layer of white or brown noise and adjust it so it masks distractions without becoming distracting itself. Individual responses vary.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -357,7 +352,7 @@ export default function WhiteNoiseAppPage() {
               Is white noise safe for babies?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Yes, when used correctly. Keep the volume below 50 dB (softer than a quiet conversation), place the device at least 2 meters from the crib, and use a sleep timer so it doesn't play all night. Many pediatricians recommend white noise to help babies fall asleep and stay asleep longer.
+              For a baby, keep sound low, place the device away from the crib, and ask a pediatric or hearing professional for guidance appropriate to your child.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">

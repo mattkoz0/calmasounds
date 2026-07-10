@@ -9,12 +9,24 @@ export default function CookieConsent() {
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
     if (!consent) {
-      setShowBanner(true);
+      const timer = window.setTimeout(() => setShowBanner(true), 0);
+      return () => window.clearTimeout(timer);
     }
   }, []);
 
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
+    window.gtag?.("consent", "update", {
+      analytics_storage: "granted",
+    });
+    setShowBanner(false);
+  };
+
+  const declineCookies = () => {
+    localStorage.setItem("cookie-consent", "declined");
+    window.gtag?.("consent", "update", {
+      analytics_storage: "denied",
+    });
     setShowBanner(false);
   };
 
@@ -26,7 +38,7 @@ export default function CookieConsent() {
         <h2 className="text-lg font-semibold text-white">We use cookies</h2>
         <p className="mt-2 text-sm leading-6 text-white/70">
           Calma uses cookies to understand how you use our site and to improve
-          your experience. By clicking "Accept", you agree to our use of cookies
+          your experience. By clicking &quot;Accept&quot;, you agree to our use of cookies
           for analytics.{" "}
           <Link
             href="/privacy-policy"
@@ -44,7 +56,7 @@ export default function CookieConsent() {
             Accept
           </button>
           <button
-            onClick={() => setShowBanner(false)}
+            onClick={declineCookies}
             className="w-full rounded-2xl border border-white/15 bg-white/5 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-white/10 active:scale-95"
           >
             Decline

@@ -6,9 +6,9 @@ import { YouTubeEmbed } from "@/app/_components/youtube-embed";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Brown Noise vs White Noise: Which is Better for Sleep? | Calma",
+  title: "Brown vs White vs Pink Noise: Differences & Uses | Calma",
   description:
-    "Is brown noise better than white noise for sleep? Why does brown noise help ADHD? Discover the scientific differences between pink, brown, and white noise.",
+    "Compare white, pink and brown noise by frequency, sound and evidence for sleep or focus. Hear each sample and see what ADHD research actually tested.",
   keywords: [
     "brown noise vs white noise",
     "pink noise vs white noise",
@@ -49,7 +49,7 @@ const articleJsonLd = {
       "name": "Is brown noise better than white noise for sleep?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "For many people, yes. Brown noise is better than white noise for sleep if you find the high-pitched hissing of white noise irritating. Brown noise removes those high frequencies and sounds like a deep, rumbling waterfall, which is often more soothing for the nervous system."
+        "text": "There is no strong evidence that brown noise is universally better for sleep. It has relatively more low-frequency energy and may feel less bright than white noise, so preference and the sound environment matter."
       }
     },
     {
@@ -57,7 +57,7 @@ const articleJsonLd = {
       "name": "Why does brown noise help ADHD?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Brown noise helps people with ADHD because its deep, continuous rumble provides constant, low-level stimulation to the brain. This satisfies the brain's need for stimulation, preventing it from seeking out distractions, and allowing the person to focus deeply on a single task."
+        "text": "A 2024 meta-analysis found a small task-performance benefit from white and pink noise for young people with ADHD or elevated attention problems. It found no eligible studies of brown noise, so claims that brown noise specifically treats ADHD are not established."
       }
     },
     {
@@ -86,8 +86,8 @@ export default function NoiseColorsPage() {
       jsonLd={articleJsonLd}
       topLinkHref="/white-noise-app"
       topLinkLabel="Explore white noise page"
-      title="Brown Noise vs White Noise: Which is Better for Sleep & ADHD?"
-      intro="Not all 'white noise' is actually white. In the world of audio, sounds are categorized by 'colors' based on how energy is distributed across frequencies. Understanding the difference between White, Pink, Brown, and Green noise is the secret to choosing the right background for better sleep, deeper focus, or managing racing thoughts."
+      title="Brown Noise vs White Noise vs Pink Noise: What Is the Difference?"
+      intro="Noise colors describe how acoustic energy is distributed across frequencies. White noise is brighter, pink noise rolls off toward higher frequencies, and brown noise is deeper still. Hear each sample, compare the profiles, and see where evidence for sleep and attention is promising—and where popular claims go beyond the research."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Download Calma App Free"
       secondaryCtaHref="/sound-mixer-app"
@@ -185,19 +185,19 @@ export default function NoiseColorsPage() {
 
       <ArticleSection id="is-brown-better" title="Is brown noise better than white noise for sleep?">
         <p className="mt-4 leading-8 text-white/70">
-          For a vast majority of people, <strong>yes</strong>. While white noise is scientifically the best at blocking out sharp noises (like traffic), many people find its high-pitched hissing to be irritating or anxiety-inducing.
+          There is no evidence that brown noise is better for a vast majority of people. White noise covers a broad frequency range, while brown noise places much more energy in lower frequencies and can sound less bright.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Brown noise removes those sharp frequencies, resulting in a deep, soothing rumble. This deep frequency naturally signals safety to the nervous system and helps lower your heart rate, making it a superior choice if your primary goal is relaxation rather than purely blocking out noise.
+          That difference can affect preference and masking, but it does not prove that brown noise improves sleep. Reviews of continuous noise and sleep report mixed findings and low-certainty evidence, so use comfort and your actual environment as the deciding factors.
         </p>
       </ArticleSection>
 
       <ArticleSection id="adhd" title="Why does brown noise help ADHD?">
         <p className="mt-4 leading-8 text-white/70">
-          If you have ADHD, your brain is constantly seeking dopamine and stimulation, which leads to distraction. Brown noise acts as a continuous, low-level \"audio massage\" for the brain. By providing a steady stream of deep auditory stimulation, it satisfies the brain's craving for input. 
+          Research does not show that brown noise satisfies a dopamine need or treats ADHD. A 2024 meta-analysis found a small improvement on laboratory attention tasks from <strong>white and pink noise</strong> in children and young adults with ADHD or elevated attention problems.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Once the brain is satisfied by the heavy rumble of brown noise, it stops searching the environment for distractions, allowing you to hyper-focus on the task at hand (like studying or working).
+          Importantly, that review found no eligible studies of brown noise, did not establish changes in real-world ADHD symptoms, and found that white or pink noise could impair task performance in comparison groups without ADHD. Treat any noise color as an optional background preference, not therapy.
         </p>
       </ArticleSection>
 
@@ -220,12 +220,12 @@ export default function NoiseColorsPage() {
               <tr>
                 <td className="px-6 py-4 font-medium text-pink-300">Pink Noise</td>
                 <td className="px-6 py-4">Steady rain, rustling leaves</td>
-                <td className="px-6 py-4">Improving deep sleep, general relaxation.</td>
+                <td className="px-6 py-4">A softer broadband background; sleep evidence is mixed.</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 font-medium text-orange-300">Brown Noise</td>
                 <td className="px-6 py-4">Airplane cabin, distant thunder</td>
-                <td className="px-6 py-4">ADHD focus, calming racing thoughts, soothing babies.</td>
+                <td className="px-6 py-4">A deeper background sound; brown-noise ADHD evidence is lacking.</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 font-medium text-emerald-300">Green Noise</td>
@@ -258,11 +258,11 @@ export default function NoiseColorsPage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Is brown noise better than white noise for sleep?</h3>
-            <p className="mt-2 leading-7 text-white/70">For many people, yes. Brown noise removes high-pitched hissing, sounding like a deep waterfall, which is often more soothing for the nervous system.</p>
+            <p className="mt-2 leading-7 text-white/70">There is no universal winner. Brown noise sounds deeper and may be more comfortable for some listeners, but research does not establish it as better for sleep.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Why does brown noise help ADHD?</h3>
-            <p className="mt-2 leading-7 text-white/70">It provides constant, low-level stimulation. This satisfies the brain's need for input, preventing it from seeking distractions.</p>
+            <p className="mt-2 leading-7 text-white/70">A meta-analysis found a small task-performance benefit from white and pink noise for some young people with ADHD. It found no eligible brown-noise studies, so brown-noise-specific claims remain unproven.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">What is the difference between pink, brown, and white noise?</h3>
@@ -273,6 +273,21 @@ export default function NoiseColorsPage() {
             <p className="mt-2 leading-7 text-white/70">Green noise mimics a flowing river and is more balanced. Brown noise is deeper and typically better for intense focus and masking deep background sounds.</p>
           </div>
         </div>
+      </ArticleSection>
+
+      <ArticleSection id="sources" title="Evidence and sources">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/38428577/" target="_blank" rel="noopener noreferrer">
+              Nigg et al. — Meta-analysis of white and pink noise for task performance in ADHD
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/33007706/" target="_blank" rel="noopener noreferrer">
+              Riedy et al. — Noise as a sleep aid: a systematic review
+            </a>
+          </li>
+        </ul>
       </ArticleSection>
     </ArticlePage>
   );

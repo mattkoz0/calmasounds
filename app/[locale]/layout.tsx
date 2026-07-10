@@ -20,6 +20,7 @@ import Script from "next/script";
 import CookieConsent from "./_components/cookie-consent";
 import Header from "./_components/header";
 import Footer from "./_components/footer";
+import ConversionTracking from "./_components/conversion-tracking";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
@@ -115,10 +116,24 @@ export default async function RootLayout({
           {children}
           <Footer />
           <CookieConsent />
+          <ConversionTracking />
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
 
+        <Script id="google-consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            var analyticsConsent = localStorage.getItem('cookie-consent') === 'accepted' ? 'granted' : 'denied';
+            gtag('consent', 'default', {
+              analytics_storage: analyticsConsent,
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied'
+            });
+          `}
+        </Script>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DKG7861ZMZ"
           strategy="afterInteractive"

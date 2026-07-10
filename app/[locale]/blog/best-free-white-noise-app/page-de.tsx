@@ -51,7 +51,6 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",
   datePublished: "2026-05-04",
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function BestFreeWhiteNoiseAppPageDE() {

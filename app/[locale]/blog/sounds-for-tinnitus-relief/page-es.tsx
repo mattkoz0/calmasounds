@@ -43,7 +43,6 @@ const articleJsonLd = {
       "publisher": { "@type": "Organization", "name": "Calma" },
       "mainEntityOfPage": articleUrl,
       "datePublished": "2026-05-09",
-      "dateModified": new Date().toISOString().split('T')[0],
     },
     {
       "@type": "FAQPage",

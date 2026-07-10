@@ -114,7 +114,9 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Häufig gestellte Fragen">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">Ist es sicher, das Rauschen die ganze Nacht spielen zu lassen?</h3><p className="mt-2 leading-7 text-white/70">Ja, solange die Lautstärke sicher ist (ca. 50 dB) und das Gerät mindestens 2 Meter entfernt steht.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Welches Rauschen ist am besten für Babys?</h3><p className="mt-2 leading-7 text-white/70">Rosa Rauschen wird oft bevorzugt, da es sanfter ist als weißes Rauschen.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Wann sollte man aufhören, Rauschen für Babys zu verwenden?</h3><p className="mt-2 leading-7 text-white/70">Es gibt kein festes Alter. Sie können die Lautstärke allmählich reduzieren, wenn Sie möchten.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">Ist es sicher, das Rauschen die ganze Nacht spielen zu lassen?</h3><p className="mt-2 leading-7 text-white/70">Ja, solange die Lautstärke sicher ist (ca. 50 dB) und das Gerät mindestens 2 Meter entfernt steht.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Welches Rauschen ist am besten für Babys?</h3><p className="mt-2 leading-7 text-white/70">Rosa Rauschen wird oft bevorzugt, da es sanfter ist als weißes Rauschen.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Wann sollte man aufhören, Rauschen für Babys zu verwenden?</h3><p className="mt-2 leading-7 text-white/70">Es gibt kein festes Alter. Sie können die Lautstärke allmählich reduzieren, wenn Sie möchten.</p></div>
         </div>
       </ArticleSection>
 

@@ -109,7 +109,9 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="よくある質問">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">一晩中ホワイトノイズを流すのは安全ですか？</h3><p className="mt-2 leading-7 text-white/70">はい。音量が安全（約50デシベル）で、ベビーベッドから十分離れていれば安全です。</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">赤ちゃんに最適なノイズは何ですか？</h3><p className="mt-2 leading-7 text-white/70">耳に優しいピンクノイズを好む親が多いです。</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">いつ使用をやめるべきですか？</h3><p className="mt-2 leading-7 text-white/70">厳格な年齢はありません。数週間かけて徐々に音量を下げることができます。</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">一晩中ホワイトノイズを流すのは安全ですか？</h3><p className="mt-2 leading-7 text-white/70">はい。音量が安全（約50デシベル）で、ベビーベッドから十分離れていれば安全です。</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">赤ちゃんに最適なノイズは何ですか？</h3><p className="mt-2 leading-7 text-white/70">耳に優しいピンクノイズを好む親が多いです。</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">いつ使用をやめるべきですか？</h3><p className="mt-2 leading-7 text-white/70">厳格な年齢はありません。数週間かけて徐々に音量を下げることができます。</p></div>
         </div>
       </ArticleSection>
 

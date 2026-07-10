@@ -4,16 +4,12 @@ interface SoftwareApplicationSchemaProps {
   name: string;
   description: string;
   applicationCategory?: string;
-  ratingValue?: number;
-  ratingCount?: number;
 }
 
 export default function SoftwareApplicationSchema({
   name,
   description,
   applicationCategory = "HealthApplication",
-  ratingValue = 4.9,
-  ratingCount = 12450,
 }: SoftwareApplicationSchemaProps) {
   const schema = {
     "@context": "https://schema.org",
@@ -26,11 +22,6 @@ export default function SoftwareApplicationSchema({
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "USD"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": ratingValue.toString(),
-      "ratingCount": ratingCount.toString()
     }
   };
 

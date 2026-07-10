@@ -58,7 +58,6 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/fr/blog/best-sounds-for-studying",
   datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function BestSoundsForStudyingPage() {

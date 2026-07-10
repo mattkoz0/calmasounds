@@ -3,9 +3,9 @@ import Image from "next/image";
 import AiDefinition from "../_components/ai-definition";
 
 export const metadata: Metadata = {
-  title: "White Noise, Brown Noise, and Pink Noise App | Calma",
+  title: "Noise Color Mixer App: White, Pink & Brown | Calma",
   description:
-    "Discover the difference between white noise, brown noise, and pink noise. Calma is a premium sleep sounds app that lets you mix all colors of noise for sleep, focus, and ADHD.",
+    "Mix white, pink, brown and green noise with rain and nature sounds in Calma. Works offline on iOS and Android with no required subscription.",
   keywords: [
     "white noise app",
     "brown noise app",
@@ -17,9 +17,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/white-noise-brown-noise-pink-noise",
   },
   openGraph: {
-    title: "White Noise, Brown Noise, and Pink Noise App | Calma",
+    title: "Noise Color Mixer App: White, Pink & Brown | Calma",
     description:
-      "Discover the difference between white noise, brown noise, and pink noise. Calma is a premium sleep sounds app that lets you mix all colors of noise for sleep, focus, and ADHD.",
+      "Mix white, pink, brown and green noise with rain and nature sounds in one offline app.",
     url: "https://www.calmasounds.com/white-noise-brown-noise-pink-noise",
     siteName: "Calma",
     locale: "en_US",
@@ -102,11 +102,12 @@ export default function NoiseColorsAppPageEn() {
           The Colors of Sound
         </p>
         <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          White Noise, Brown Noise, and Pink Noise
+          Mix White, Pink, Brown, and Green Noise
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a comprehensive sound mixer app that includes high-quality recordings of all the essential noise colors. 
-          Discover the perfect frequency for your sleep, relaxation, or ADHD focus routine.
+          Calma is a sound mixer app with white, pink, brown and green noise.
+          Layer them with rain and nature sounds, adjust the volume of each track,
+          and keep listening offline without a required subscription.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">

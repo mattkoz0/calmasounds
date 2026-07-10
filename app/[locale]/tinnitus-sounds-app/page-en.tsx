@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Best Tinnitus Sound Masking App for Sleep (Free) | Calma",
+  title: "Tinnitus Sound Masking App for Sleep | Calma",
   description:
-    "Looking for the best app for ringing in ears? Calma lets you mix white noise, pink noise, and nature sounds to mask tinnitus. Free, works offline, no subscription.",
+    "Mix white, pink and nature sounds to make tinnitus less noticeable at bedtime. Calma works offline on iOS and Android and does not require a subscription.",
   keywords: [
     "tinnitus sounds app",
     "tinnitus sound masking app",
@@ -20,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/tinnitus-sounds-app",
   },
   openGraph: {
-    title: "Best Tinnitus Sound Masking App for Sleep & Relief",
+    title: "Tinnitus Sound Masking App for Sleep",
     description:
-      "Looking for a tinnitus relief app? Calma lets you mix white noise, pink noise, and nature sounds to mask ringing in your ears. Free, works offline.",
+      "Create a personalized background sound that may make tinnitus less noticeable at bedtime. Works offline on iOS and Android.",
     url: "https://www.calmasounds.com/tinnitus-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -30,31 +31,15 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Tinnitus Sound Masking App for Sleep & Relief",
+    title: "Tinnitus Sound Masking App for Sleep",
     description:
-      "Mix white noise and nature sounds to mask ringing in your ears. Free, works offline.",
+      "Mix white noise and nature sounds for a softer bedtime environment. Works offline.",
   },
 };
 
 const combinedJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "SoftwareApplication",
-      "name": "Calma - Sleep Sounds & Relax",
-      "applicationCategory": "HealthAndFitnessApplication",
-      "operatingSystem": "ANDROID, IOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
-      }
-    },
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
@@ -88,7 +73,7 @@ const combinedJsonLd = {
           "name": "What sounds are best for tinnitus?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Many people find high-frequency white noise or balanced pink noise most effective for masking ringing in the ears. However, personal preference varies, so Calma allows you to test and mix all color noises."
+            "text": "There is no single best sound for tinnitus. Some people prefer white or pink noise, while others prefer rain, waves or a fan. Calma lets you compare and mix several options at a comfortable volume."
           }
         },
         {
@@ -96,7 +81,7 @@ const combinedJsonLd = {
           "name": "Does white noise help tinnitus at night?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. Silence can make tinnitus seem louder. Creating a continuous background layer of ambient sound, like a gentle stream or white noise, provides your brain with alternative audio input to focus on, helping you sleep."
+            "text": "Background sound can make tinnitus less noticeable for some people, particularly in a quiet bedroom. Evidence varies, and sound masking is a management aid rather than a cure."
           }
         },
         {
@@ -104,7 +89,7 @@ const combinedJsonLd = {
           "name": "What is the best app for ringing in ears?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The best tinnitus app should let you customize your own sound mix, because every person's tinnitus is different. Calma lets you blend white noise, pink noise, brown noise, and nature sounds to find the exact combination."
+            "text": "A useful sound-masking app should be easy to adjust because preferences differ. Calma lets you blend white, pink and brown noise with nature sounds and save a comfortable background mix."
           }
         },
         {
@@ -112,7 +97,7 @@ const combinedJsonLd = {
           "name": "Does tinnitus sound therapy actually work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sound therapy is one of the most widely recommended approaches for tinnitus management. By providing your brain with alternative audio input, background sounds can reduce the perceived loudness of tinnitus and support habituation."
+            "text": "Sound enrichment may make tinnitus less noticeable for some people, but research has not established sound therapy as a universal treatment. Persistent or changing tinnitus should be discussed with a hearing professional."
           }
         }
       ]
@@ -133,12 +118,14 @@ export default function WhiteNoiseAppPage() {
         <p className="text-sm uppercase tracking-[0.25em] text-white/50">
           Tinnitus relief app
         </p>
-        <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">\n          Tinnitus Sounds App for Sleep and Calm\n        </h1>
+        <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
+          Tinnitus Sounds App for Sleep and Calm
+        </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a beautifully simple tinnitus relief sounds app that helps you create a
-          softer, more controlled sound environment for sleep, relaxation and
-          everyday calm. Whether you are searching for the <strong>best sound to go to sleep to</strong> or the <strong>best noise for studying</strong>, use Calma to support bedtime routines, reduce distracting
-          noise and build a more peaceful atmosphere around you.
+          Calma is a sound-masking app that lets you mix white, pink and brown noise
+          with rain and other nature sounds. The goal is not to treat tinnitus, but to
+          create a comfortable background that may make it less noticeable in a quiet
+          room or at bedtime.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -162,12 +149,12 @@ export default function WhiteNoiseAppPage() {
             Download on App Store
           </a>
 
-          <a
+          <Link
             href="/"
             className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
           >
             Back to homepage
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -176,7 +163,7 @@ export default function WhiteNoiseAppPage() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h2 className="text-2xl font-semibold">Support better sleep</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Tinnitus relief can help create a more stable sound background for
+              A steady background sound can make a quiet bedroom feel less stark and support
               bedtime and a gentler transition into sleep.
             </p>
           </div>
@@ -266,7 +253,7 @@ export default function WhiteNoiseAppPage() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-2">
-          <a
+          <Link
             href="/blog/sounds-for-tinnitus-relief"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -274,8 +261,8 @@ export default function WhiteNoiseAppPage() {
             <p className="mt-3 text-white/70">
               Learn which sounds and sound therapy techniques are most effective for managing tinnitus symptoms.
             </p>
-          </a>
-          <a
+          </Link>
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -283,7 +270,7 @@ export default function WhiteNoiseAppPage() {
             <p className="mt-3 text-white/70">
               Explore the differences between white, pink, brown, and green noise to find your ideal sound.
             </p>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -309,7 +296,7 @@ export default function WhiteNoiseAppPage() {
               What color noise is best for tinnitus?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Many people find high-frequency white noise or balanced pink noise most effective for masking ringing in the ears. However, personal preference varies, so Calma allows you to test and mix all color noises.
+              There is no single best option. Some people prefer white or pink noise, while others prefer rain, waves or a fan. Try sounds at a comfortable level and choose the least intrusive mix.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -317,7 +304,7 @@ export default function WhiteNoiseAppPage() {
               Can sound masking help with tinnitus at night?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Yes. Silence can make tinnitus seem louder. Creating a continuous background layer of ambient sound, like a gentle stream or rain, provides your brain with alternative audio input to focus on.
+              It may help some people by reducing the contrast between tinnitus and a quiet room. Sound masking is a management aid, not a cure, and results vary.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -325,7 +312,7 @@ export default function WhiteNoiseAppPage() {
               What is the best app for ringing in ears?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              The best tinnitus app should let you customize your own sound mix, because every person's tinnitus is different. Calma lets you blend white noise, pink noise, brown noise, and nature sounds to find the exact combination that masks your specific tinnitus frequency.
+              A useful app should be easy to personalize because listening preferences differ. Calma lets you blend white, pink and brown noise with nature sounds and save a comfortable mix.
             </p>
           </div>
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
@@ -333,9 +320,15 @@ export default function WhiteNoiseAppPage() {
               Does tinnitus sound therapy actually work?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sound therapy is one of the most widely recommended approaches for tinnitus management. By providing your brain with alternative audio input, background sounds can reduce the perceived loudness of tinnitus. Over time, this can also support habituation — where your brain learns to filter out the ringing.
+              Sound enrichment can make tinnitus less noticeable for some people, but research has not established it as a universal treatment. If tinnitus is persistent, one-sided, pulsing, or suddenly changes, seek advice from a hearing professional.
             </p>
           </div>
+        </div>
+
+        <div className="mt-8 rounded-3xl border border-amber-300/20 bg-amber-300/10 p-6 text-sm leading-7 text-white/70">
+          Calma is a wellness app, not a medical device. It does not diagnose or treat tinnitus. Read the
+          {" "}<a className="underline underline-offset-4 hover:text-white" href="https://www.nidcd.nih.gov/health/tinnitus" target="_blank" rel="noopener noreferrer">NIDCD tinnitus guidance</a>{" "}
+          or speak with a qualified hearing professional if symptoms concern you.
         </div>
       </section>
 
@@ -346,7 +339,7 @@ export default function WhiteNoiseAppPage() {
           </h2>
           <p className="mt-4 leading-7 text-white/70">
             Download Calma on Google Play and create a calmer sound environment
-            with tinnitus relief sounds and personalized soundscapes.
+            with adjustable sound masking and personalized soundscapes.
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">

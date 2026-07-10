@@ -55,8 +55,6 @@ const articleJsonLd = {
     name: "Calma",
   },
   mainEntityOfPage: "https://www.calmasounds.com/pt-BR/blog/green-noise-for-sleep",
-  datePublished: new Date().toISOString().split('T')[0],
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function GreenNoiseForSleepPage() {

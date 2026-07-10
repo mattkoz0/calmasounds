@@ -109,7 +109,9 @@ export default function WhiteNoiseForBabiesPage() {
 
       <ArticleSection id="faq" title="Często Zadawane Pytania">
         <div className="mt-6 space-y-6">
-          <div><h3 className="font-semibold text-lg text-emerald-400">Czy można odtwarzać szum przez całą noc?</h3><p className="mt-2 leading-7 text-white/70">Tak, o ile głośność jest ustawiona bezpiecznie (ok. 50 dB) a telefon leży co najmniej 2 metry od dziecka.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Jaki jest najlepszy dźwięk dla niemowlaka?</h3><p className="mt-2 leading-7 text-white/70">Ciągły i jednostajny. Wielu rodziców wybiera różowy szum (np. deszcz) ze względu na łagodniejsze brzmienie.</p></div>\n<div><h3 className="font-semibold text-lg text-emerald-400">Kiedy przestać usypiać z szumem?</h3><p className="mt-2 leading-7 text-white/70">Nie ma górnej granicy. Szum można odstawić w każdej chwili, stopniowo ściszając go przez kilka tygodni.</p></div>
+          <div><h3 className="font-semibold text-lg text-emerald-400">Czy można odtwarzać szum przez całą noc?</h3><p className="mt-2 leading-7 text-white/70">Tak, o ile głośność jest ustawiona bezpiecznie (ok. 50 dB) a telefon leży co najmniej 2 metry od dziecka.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Jaki jest najlepszy dźwięk dla niemowlaka?</h3><p className="mt-2 leading-7 text-white/70">Ciągły i jednostajny. Wielu rodziców wybiera różowy szum (np. deszcz) ze względu na łagodniejsze brzmienie.</p></div>
+<div><h3 className="font-semibold text-lg text-emerald-400">Kiedy przestać usypiać z szumem?</h3><p className="mt-2 leading-7 text-white/70">Nie ma górnej granicy. Szum można odstawić w każdej chwili, stopniowo ściszając go przez kilka tygodni.</p></div>
         </div>
       </ArticleSection>
 

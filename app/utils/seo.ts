@@ -147,5 +147,20 @@ export function getLocalizedMetadata(
   return {
     ...baseMetadata,
     alternates,
+    openGraph: {
+      ...baseMetadata.openGraph,
+      images: baseMetadata.openGraph?.images ?? [
+        {
+          url: "/og-image.png",
+          width: 1024,
+          height: 1024,
+          alt: "Calma sleep sounds and relaxation app",
+        },
+      ],
+    },
+    twitter: {
+      ...baseMetadata.twitter,
+      images: baseMetadata.twitter?.images ?? ["/og-image.png"],
+    },
   };
 }

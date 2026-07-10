@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <div className="flex items-center gap-3">
           <Link href="/" className="flex items-center" aria-label="Calma home - sleep sounds app">
             <Image
@@ -39,7 +39,7 @@ export default function Header() {
               alt="Calma Sounds logo - Sleep & Relax App"
               width={100}
               height={100}
-              className="h-[100px] w-[100px] object-contain"
+              className="h-16 w-16 object-contain sm:h-20 sm:w-20"
               priority
             />
           </Link>
@@ -67,7 +67,7 @@ export default function Header() {
           </Link>
         </nav>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2 sm:gap-4">
           <select
             defaultValue={locale}
             onChange={handleLanguageChange}
@@ -87,7 +87,7 @@ export default function Header() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-              className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 px-5 py-2 text-sm font-bold text-white shadow-[0_0_20px_-5px_rgba(16,185,129,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_-5px_rgba(16,185,129,0.5)] active:scale-95"
+              className="group relative inline-flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-emerald-500 to-teal-600 px-3 py-2 text-sm font-bold text-white shadow-[0_0_20px_-5px_rgba(16,185,129,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_0_25px_-5px_rgba(16,185,129,0.5)] active:scale-95 sm:px-5"
               aria-expanded={isDropdownOpen}
               aria-haspopup="true"
             >

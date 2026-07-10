@@ -51,7 +51,6 @@ const articleJsonLd = {
   },
   mainEntityOfPage: "https://www.calmasounds.com/pl/blog/rain-sounds-vs-white-noise",
   datePublished: "2026-03-25",
-  dateModified: new Date().toISOString().split('T')[0],
 };
 
 export default function RainSoundsVsWhiteNoisePage() {
