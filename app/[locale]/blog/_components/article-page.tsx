@@ -4,6 +4,7 @@ import Script from "next/script";
 import { getLocale } from "next-intl/server";
 import { pathnamesMapping } from "@/app/utils/seo";
 import DesktopDownloadQr from "../../_components/desktop-download-qr";
+import MoreApps from "../../_components/more-apps";
 
 type RelatedArticle = {
   href: string;
@@ -443,6 +444,7 @@ export async function ArticlePage({
           </section>
         )}
       </article>
+      <MoreApps locale={locale} variant="compact" />
     </main>
   );
 }

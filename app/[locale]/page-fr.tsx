@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
+import MoreApps from "./_components/more-apps";
 
 export const metadata: Metadata = {
   title: "Calma | Sons pour dormir, Bruit blanc, Relaxation et Concentration",
@@ -778,6 +779,8 @@ export default function Home() {
           </Link>
         </p>
       </section>
+
+      <MoreApps locale="fr" />
     </main>
   );
 }

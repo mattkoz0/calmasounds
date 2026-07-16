@@ -4,6 +4,7 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import type { ComponentProps } from "react";
+import { makerApps } from "./more-apps";
 
 type LocalizedHref = Extract<ComponentProps<typeof Link>["href"], string>;
 
@@ -87,7 +88,25 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-6 px-6 py-8 text-sm text-white/50 sm:flex-row">
-          <p>{t("allRightsReserved", { year: currentYear })}</p>
+          <div className="flex flex-col items-center gap-2 sm:items-start">
+            <p>{t("allRightsReserved", { year: currentYear })}</p>
+            <p>
+              {t("moreFromMaker")}:{" "}
+              {makerApps.map((app, index) => (
+                <span key={app.url}>
+                  {index > 0 && " · "}
+                  <a
+                    href={app.url}
+                    target="_blank"
+                    rel="noopener"
+                    className="transition hover:text-white"
+                  >
+                    {app.name}
+                  </a>
+                </span>
+              ))}
+            </p>
+          </div>
 
           <div className="flex flex-col items-center gap-4 sm:items-end">
             <div className="flex flex-wrap items-center justify-center gap-6">

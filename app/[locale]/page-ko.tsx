@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
+import MoreApps from "./_components/more-apps";
 
 export const metadata: Metadata = {
   title: "Calma | 수면 유도 소리, 백색소음, 휴식 및 집중",
@@ -514,6 +515,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <MoreApps locale="ko" />
     </main>
   );
 }

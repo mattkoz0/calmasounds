@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
+import MoreApps from "./_components/more-apps";
 
 export const metadata: Metadata = {
   title: "Free Sleep Sounds App — Offline, No Subscription | Calma",
@@ -1018,6 +1019,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <MoreApps locale="en" />
     </main>
   );
 }

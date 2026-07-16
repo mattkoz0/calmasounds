@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
+import MoreApps from "./_components/more-apps";
 
 export const metadata: Metadata = {
   title: "Calma | App de Sons para Dormir, Ruído Branco e Foco",
@@ -877,6 +878,8 @@ export default function Home() {
           </Link>
         </p>
       </section>
+
+      <MoreApps locale="pt-BR" />
     </main>
   );
 }
