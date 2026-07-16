@@ -1,161 +1,201 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import { YouTubeEmbed } from "@/app/_components/youtube-embed";
-
+import { ArticlePage } from "../_components/article-page";
+import { ArticleSection } from "../_components/article-section";
+import { AudioPlayer } from "../_components/audio-player";
+const articleUrl = "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus";
+const articleTitle = "Sonidos de lluvia para dormir y concentrarse: evidencia y consejos | Calma";
+const articleDescription = "La lluvia puede enmascarar el ruido de fondo cambiante, pero no es un tratamiento probado para dormir o para el TDAH. Explore la evidencia y desarrolle una rutina de escucha m\u00E1s estable.";
 export const metadata: Metadata = {
-  title: "Por qué los Sonidos de Lluvia son el Secreto Definitivo para Dormir Mejor y Concentrarse | Blog de Calma",
-  description:
-    "Descubre por qué los sonidos constantes de lluvia son perfectos para calmar tu mente, combatir el insomnio y mantenerte concentrado durante el trabajo profundo. Conoce la ciencia detrás de ello.",
-  alternates: {
-    canonical: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
-  },
-  openGraph: {
-    title: "Por qué los Sonidos de Lluvia son el Secreto Definitivo para Dormir Mejor y Concentrarse",
-    description:
-      "Descubre por qué los sonidos constantes de lluvia son perfectos para calmar tu mente, combatir el insomnio y mantenerte concentrado.",
-    url: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
-    siteName: "Calma",
-    locale: "es_ES",
-    type: "article",
-  },
+    title: articleTitle,
+    description: articleDescription,
+    keywords: [
+        "sonidos de lluvia para dormir",
+        "sonidos de lluvia para concentrarse",
+        "ruido de lluvia para dormir",
+        "sonidos de lluvia para estudiar",
+        "\u00BFLa lluvia te ayuda a dormir?",
+        "ambiente de lluvia",
+    ],
+    alternates: { canonical: articleUrl },
+    openGraph: {
+        title: articleTitle,
+        description: articleDescription,
+        url: articleUrl,
+        siteName: "Calma",
+        locale: "es_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: articleTitle,
+        description: articleDescription,
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Por qué los Sonidos de Lluvia son el Secreto Definitivo para Dormir Mejor y Concentrarse",
-  description:
-    "Descubre por qué los sonidos constantes de lluvia son perfectos para calmar tu mente, combatir el insomnio y mantenerte concentrado durante el trabajo profundo.",
-  author: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://www.calmasounds.com/logo.png",
-    },
-  },
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
-  },
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Sonidos de lluvia para dormir y concentrarse: evidencia y consejos pr\u00E1cticos",
+    description: articleDescription,
+    mainEntityOfPage: articleUrl,
+    author: { "@type": "Organization", name: "Calma" },
+    publisher: { "@type": "Organization", name: "Calma" },
 };
-
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Inicio",
-      item: "https://www.calmasounds.com/es",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Blog",
-      item: "https://www.calmasounds.com/es/blog",
-    },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Sonidos de Lluvia para Dormir y Concentración",
-      item: "https://www.calmasounds.com/blog/rain-sounds-for-better-sleep-and-focus",
-    },
-  ],
-};
-
 export default function RainSoundsBlogPage() {
-  return (
-    <main className="min-h-screen bg-slate-950 text-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(articleJsonLd),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd),
-        }}
-      />
+    return (<ArticlePage slug="rain-sounds-for-better-sleep-and-focus" jsonLd={articleJsonLd} title="Sonidos de lluvia para dormir y concentrarse: ¿qué pueden hacer realmente?" intro="La lluvia constante puede hacer que el tráfico, las voces y los ruidos domésticos sean menos perceptibles. También puede parecer más fácil ignorarlo que lo estático. Esas son razones prácticas para intentarlo, pero la lluvia no es un tratamiento comprobado para el insomnio o el TDAH, y las grabaciones dramáticas pueden distraer más que ayudar." topLinkHref="/nature-sounds-app" topLinkLabel="Explora la aplicación de sonidos de la naturaleza" ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" ctaLabel="Prueba sonidos de lluvia en Calma" secondaryCtaHref="/sound-mixer-app" secondaryCtaLabel="Explora la mezcla de sonido" tableOfContents={[
+            { id: "what-rain-is", title: "\u00BFQu\u00E9 tipo de ruido es la lluvia?" },
+            { id: "sleep", title: "Evidencia de lluvia y sue\u00F1o" },
+            { id: "focus", title: "Lluvia y evidencia de enfoque." },
+            { id: "choose", title: "Elige una grabaci\u00F3n \u00FAtil" },
+            { id: "routines", title: "Rutinas de sue\u00F1o y concentraci\u00F3n." },
+            { id: "mistakes", title: "Errores comunes" },
+            { id: "sources", title: "Evidencia y fuentes" },
+        ]} relatedArticles={[
+            {
+                href: "/blog/rain-sounds-vs-white-noise",
+                title: "\u00BFLa lluvia es ruido blanco?",
+                description: "Compare la lluvia, el ruido blanco y el ruido rosa con muestras de audio.",
+            },
+            {
+                href: "/blog/best-sounds-for-sleep",
+                title: "Los mejores sonidos para dormir",
+                description: "Utilice una gu\u00EDa de decisiones para comparar los colores de la lluvia y el ruido.",
+            },
+            {
+                href: "/blog/best-sounds-for-studying",
+                title: "Los mejores sonidos para estudiar",
+                description: "Compare sonido constante, ambiente natural y m\u00FAsica instrumental.",
+            },
+        ]}>
+      <ArticleSection id="what-rain-is" title="¿Qué tipo de ruido es la lluvia?">
+        <p>
+          La lluvia no es una señal acústica fija. La lluvia ligera sobre las hojas, la lluvia intensa sobre un tejado y una tormenta distante tienen diferentes espectros y cambios con el tiempo. Muchas grabaciones constantes suenan como ruido rosa porque las frecuencias más bajas transportan más energía que el silbido superior, pero la ubicación y el procesamiento del micrófono pueden cambiar ese equilibrio.
+        </p>
+        <p className="mt-4">
+          Para dormir y concentrarse, la etiqueta de color importa menos que la estabilidad. Una grabación útil no tiene truenos repentinos, cantos de pájaros cercanos, movimientos estéreo abruptos ni límites de bucle obvios.
+        </p>
+        <AudioPlayer src="/rain.m4a" title="Muestra de lluvia constante" description="Escuche la textura sin eventos nítidos ni cambios dramáticos de volumen." colorClass="bg-blue-500/20 text-blue-300"/>
+      </ArticleSection>
 
-      <article className="mx-auto max-w-3xl px-6 py-16">
-        <div className="mb-8">
-          <Link
-            href="/blog"
-            className="inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-white/80"
-          >
-            ← Volver al Blog
-          </Link>
+      <ArticleSection id="sleep" title="¿Los sonidos de la lluvia te ayudan a dormir?">
+        <p>
+          El mecanismo más potente es el enmascaramiento: la lluvia constante reduce el contraste entre la habitación y el tráfico intermitente, las tuberías o las voces. La investigación sobre el ruido continuo de banda ancha muestra resultados mixtos. Un pequeño estudio cruzado aleatorio encontró un inicio del sueño más rápido en un modelo de insomnio temporal, mientras que una revisión sistemática de 38 estudios calificó la evidencia general del ruido continuo como de certeza muy baja.
+        </p>
+        <p className="mt-4">
+          Esos hallazgos se refieren al sonido de banda ancha en general, no a la lluvia específicamente. La lluvia puede seguir siendo una opción cómoda, pero las afirmaciones de que aumenta de forma fiable el sueño profundo o “apaga” el cerebro van más allá de la evidencia.
+        </p>
+        <div className="mt-6 rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5">
+          <p className="font-semibold text-emerald-100">Es más probable que la lluvia sea útil cuando...</p>
+          <p className="mt-2 text-sm leading-6 text-white/70">
+            su dormitorio contiene sonidos impredecibles y una suave capa de lluvia hace que esos cambios sean menos perceptibles sin convertirse en una molestia en sí misma.
+          </p>
         </div>
+      </ArticleSection>
 
-        <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
-          Por qué los Sonidos de Lluvia son el Secreto Definitivo para Dormir Mejor y Concentrarse
-        </h1>
-        
-        <div className="mt-8">
-          {/* YouTube Shorts Embed */}
-          <div className="flex justify-center mb-8">
-            <div className="aspect-[9/16] w-full max-w-[350px] overflow-hidden rounded-2xl border border-white/10 shadow-2xl">
-              <YouTubeEmbed
-                videoId="ds-fFkoWBUo"
-                title="YouTube video player"
-              />
-            </div>
+      <ArticleSection id="focus" title="¿Puede la lluvia mejorar la concentración o el estudio?">
+        <p>
+          La evidencia directa de que la lluvia mejora los estudios en el mundo real es limitada. Los estudios de sonidos naturales miden con más frecuencia la recuperación del estrés a corto plazo o el estado de ánimo que las puntuaciones de los exámenes, el trabajo sostenido o los síntomas del TDAH. Un metanálisis realizado en 2024 encontró posibles efectos restauradores de la exposición al sonido natural, pero los hallazgos cognitivos no fueron consistentes y los estudios difirieron sustancialmente.
+        </p>
+        <p className="mt-4">
+          En la práctica, la lluvia puede ayudar cuando enmascara cambios de discurso o de oficina sin tener contenido semántico. Puede doler cuando la grabación contiene truenos, pájaros o un ritmo que llama la atención repetidamente. Trátelo como una variable del espacio de trabajo, no como una garantía de productividad.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection id="choose" title="Cómo elegir una grabación de lluvia que permanezca en segundo plano">
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[650px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Función de grabación</th>
+                <th className="px-4 py-3">Dormir</th>
+                <th className="px-4 py-3">Enfoque</th>
+                <th className="px-4 py-3">Por qué es importante</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">nivel estable</td>
+                <td className="px-4 py-3">Prefiero</td>
+                <td className="px-4 py-3">Prefiero</td>
+                <td className="px-4 py-3">Menos cambios llamativos</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Trueno</td>
+                <td className="px-4 py-3">Generalmente evitar</td>
+                <td className="px-4 py-3">Úselo solo si está realmente distante</td>
+                <td className="px-4 py-3">Los picos agudos pueden derrotar el enmascaramiento</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Pájaros o voces</td>
+                <td className="px-4 py-3">evitar</td>
+                <td className="px-4 py-3">Evitar para tareas de idiomas.</td>
+                <td className="px-4 py-3">Distintos eventos llaman la atención</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Bucle suave</td>
+                <td className="px-4 py-3">Esencial</td>
+                <td className="px-4 py-3">importante</td>
+                <td className="px-4 py-3">Una costura repetida se vuelve predecible.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="routines" title="Dos rutinas sencillas de sonido de lluvia para probar">
+        <div className="grid gap-5 md:grid-cols-2">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 className="font-semibold text-white">Para la hora de dormir</h3>
+            <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-white/70">
+              <li>Coloque un altavoz lejos de su cabeza.</li>
+              <li>Comience en el nivel audible más bajo.</li>
+              <li>Utilice la misma grabación constante durante tres noches.</li>
+              <li>Pruebe con un temporizador si solo necesita sonido mientras se asienta.</li>
+            </ol>
           </div>
-
-          <p className="mt-6 text-lg leading-8 text-white/80">
-            Es universalmente reconocido que el constante repiqueteo de las gotas de lluvia contra una ventana crea una atmósfera excepcionalmente reconfortante. Pero más allá de sentirse acogedor, hay evidencia científica real que respalda los beneficios de los <strong>sonidos de lluvia</strong>. Ya sea que luches por conciliar el sueño en la noche o te encuentres distraído mientras intentas estudiar, la incorporación de paisajes sonoros naturales puede mejorar tus rutinas profundamente.
-          </p>
-
-          <h2 className="mt-12 text-3xl font-semibold">La Magia Detrás de los Sonidos para Dormir</h2>
-          <p className="mt-6 text-lg leading-8 text-white/80">
-            Nuestros cerebros buscan patrones de forma natural. El ruido rítmico y no amenazante de la lluvia cayendo crea una manta continua de audio—frecuentemente comparado con el ruido rosa. Esta manta acústica enmascara ruidos perturbadores del fondo (como el tráfico repentino, el ladrido de un perro o un vecino ruidoso) que de otro modo te despertarían de sobresalto. 
-            <strong> Los sonidos para dormir</strong> construidos a partir de bucles de verdadera lluvia ayudan a tu cerebro a sentirse seguro, facilitando la transición suave hacia ciclos de sueño profundo.
-          </p>
-
-          <h2 className="mt-12 text-3xl font-semibold">Por Qué los Sonidos de Concentración Te Mantienen en tu Zona</h2>
-          <p className="mt-6 text-lg leading-8 text-white/80">
-            Aunque el silencio total pueda parecer ideal para la concentración, una habitación completamente silenciosa irónicamente puede hacer que pequeños ruidos de fondo resulten mucho más distractivos. Aquí es donde entran los <strong>sonidos de concentración</strong>. La lluvia actúa como una máscara sonora activa. Escuchar el ambiente constante y delicado de una tormenta reduce el nivel de alerta del cerebro frente a interrupciones súbitas. Para individuos que estudian, leen, o trabajan durante largas jornadas—especialmente aquellos lidiando con TDAH—una llovizna muy sutil y gentil supone una firme y gran ancla auditiva constante que promueve la concentración continua sin atraer en ningún momento la atención consciente.
-          </p>
-
-          <h2 className="mt-12 text-3xl font-semibold">Creación de Tu Ritual Personal</h2>
-          <p className="mt-6 text-lg leading-8 text-white/80">
-            No todas las grabaciones de lluvia se crean de la misma manera. Mientras algunas personas optan y prefieren dejarse llevar bajo estrepitosas y exageradas e intensas tormentas, a muchas otras les gusta e invita más al dormirse, el simple sonido de una plácida y tranquila agua sobre las hojas. Esa la verdadera belleza tras las aplicaciones y mezcladoras más modernas actualmente al conseguir habilitar esa opción a amoldar tus propios entornos y dotarles sus distintas capas. Solo a base de mezclar unos grandiosos y limpios de ruidos extraños y con buena calidad como son los <strong>sonidos de lluvia</strong>  a los y uniéndolos luego a tu medida los apacibles de un suave piano o al viento sutil, tú ya conseguirás diseñar a tu antojo el verdadero resguardo exacto y tu total área y recinto y un remanso natural del pleno confort.
-          </p>
-
-          <div className="mt-12 rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h3 className="text-2xl font-semibold">¿Estás Listo para Mejorar tu Sueño y Concentración?</h3>
-            <p className="mt-4 leading-7 text-white/70">
-              La aplicación Calma ofrece elaboradas mezclas de sonido y lluvias cuidadosamente diseñados junto con opciones e íntegras de capas de ruido blanco. Construye tus entornos de sonido a medida y ten el de y tu del a para y y del en para t u c r in x a k and And f m t o en and d Un the q By l by un And to j x z To s From b f s b Of y to y Un for
-            </p>
-            <div className="mt-6 flex justify-center sm:justify-start">
-              <a
-                href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex"
-                aria-label="Descargar la App Calma en Google Play"
-              >
-                <Image
-                  src="/google-play-badge.png"
-                  alt="Consíguelo en Google Play"
-                  width={240}
-                  height={93}
-                  className="h-[60px] w-auto object-contain"
-                />
-              </a>
-            </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <h3 className="font-semibold text-white">Para un trabajo concentrado</h3>
+            <ol className="mt-3 list-decimal space-y-2 pl-5 text-sm text-white/70">
+              <li>Elija una tarea repetible de 25 minutos.</li>
+              <li>Compara una sesión con lluvia y otra en silencio.</li>
+              <li>Mantenga el volumen por debajo del nivel del habla o la instrucción.</li>
+              <li>Realice un seguimiento del trabajo completado y de los errores, no solo del estado de ánimo.</li>
+            </ol>
           </div>
         </div>
-      </article>
-    </main>
-  );
+      </ArticleSection>
+
+      <ArticleSection id="mistakes" title="Errores comunes que hacen que la lluvia sea menos útil">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li><strong>Subiéndolo para cubrirlo todo:</strong> el enmascaramiento no requiere dominar la habitación.</li>
+          <li><strong>Elegir una tormenta cinematográfica:</strong> Los truenos y el viento dramático son interesantes, precisamente por eso pueden interrumpir el sueño o el trabajo.</li>
+          <li><strong>Cambiando la mezcla cada noche:</strong> El cambio constante hace que sea difícil aprender qué es lo que realmente ayuda.</li>
+          <li><strong>Suponiendo que la relajación es igual al rendimiento:</strong> Sentirse más tranquilo no significa automáticamente leer más rápido o cometer menos errores.</li>
+        </ul>
+      </ArticleSection>
+
+      <ArticleSection id="sources" title="Evidencia y fuentes">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/33007706/" target="_blank" rel="noopener noreferrer">
+              Revisión sistemática del ruido continuo como ayuda para dormir.
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/29312136/" target="_blank" rel="noopener noreferrer">
+              Estudio cruzado aleatorio del sonido de banda ancha y el inicio del sueño
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/38373459/" target="_blank" rel="noopener noreferrer">
+              Metanálisis de la exposición al sonido natural y los resultados de la recuperación.
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/30999690/" target="_blank" rel="noopener noreferrer">
+              Un estudio controlado no encuentra ninguna ventaja clara en la recuperación del estrés gracias al sonido de los pájaros
+            </a>
+          </li>
+        </ul>
+      </ArticleSection>
+    </ArticlePage>);
 }

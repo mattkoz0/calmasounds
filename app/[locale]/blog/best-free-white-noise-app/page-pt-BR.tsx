@@ -1,228 +1,165 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
-import Image from "next/image";
-
 export const metadata: Metadata = {
-  title: "O melhor aplicativo de ruído branco grátis para dormir | Calma",
-  description:
-    "Procurando uma alternativa ao Calm ou BetterSleep? Descubra por que o Calma é o melhor aplicativo de ruído branco 100% gratuito para dormir e relaxar.",
-  keywords: [
-    "melhor app de ruído branco",
-    "app de sons para dormir grátis",
-    "alternativa ao calm grátis",
-    "bettersleep alternativa",
-    "ruído branco grátis",
-    "app para dormir",
-    "calma app",
-    "app para dormir melhor",
-    "promover sono profundo",
-    "ajuda para adormecer",
-    "sons calmantes noite",
-    "melhorar qualidade do sono"
-  ],
-  alternates: {
-    canonical: "https://www.calmasounds.com/pt-BR/blog/best-free-white-noise-app",
-  },
-  openGraph: {
-    title: "O melhor aplicativo de ruído branco grátis para dormir | Calma",
-    description:
-      "Procurando uma alternativa ao Calm ou BetterSleep? Descubra por que o Calma é o melhor aplicativo de ruído branco 100% gratuito para dormir.",
-    url: "https://www.calmasounds.com/pt-BR/blog/best-free-white-noise-app",
-    siteName: "Calma",
-    locale: "pt_BR",
-    type: "article",
-  },
+    title: "Melhor aplicativo gratuito de ru\u00EDdo branco: o que procurar | Calma",
+    description: "Compare aplicativos, m\u00E1quinas e streaming de ru\u00EDdo branco. Verifique o \u00E1udio offline, loops suaves, temporizadores, mixagem e pre\u00E7os honestos antes de escolher.",
+    keywords: [
+        "melhor aplicativo para ru\u00EDdo branco",
+        "sons de dormir gr\u00E1tis",
+        "aplicativo criador de ru\u00EDdo branco",
+        "aplicativo gratuito de ru\u00EDdo branco",
+        "melhor aplicativo gratuito de ru\u00EDdo branco",
+        "aplicativo calma",
+    ],
+    alternates: {
+        canonical: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    },
+    openGraph: {
+        title: "Melhor aplicativo gratuito de ru\u00EDdo branco: o que procurar | Calma",
+        description: "Uma lista de verifica\u00E7\u00E3o pr\u00E1tica para comparar aplicativos, m\u00E1quinas e op\u00E7\u00F5es de streaming gratuitos de ru\u00EDdo branco.",
+        url: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+        siteName: "Calma",
+        locale: "en_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Melhor aplicativo gratuito de ru\u00EDdo branco: o que procurar | Calma",
+        description: "Compare \u00E1udio offline, loops suaves, temporizadores, mixagem e pre\u00E7os antes de escolher um aplicativo de som para dormir.",
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "O melhor aplicativo de ruído branco grátis para dormir",
-  description:
-    "Descubra por que o Calma é a alternativa gratuita perfeita aos aplicativos pagos como Calm e BetterSleep.",
-  author: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/pt-BR/blog/best-free-white-noise-app",
-  datePublished: "2026-05-04",
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Melhor aplicativo gratuito de ru\u00EDdo branco para dormir",
+    description: "Um guia pr\u00E1tico para comparar aplicativos gratuitos de ru\u00EDdo branco, m\u00E1quinas dedicadas e op\u00E7\u00F5es de streaming para dormir.",
+    author: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    publisher: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    mainEntityOfPage: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    datePublished: "2026-05-04",
+    dateModified: "2026-05-04",
 };
-
-export default function BestFreeWhiteNoiseAppPagePTBR() {
-  return (
-    <ArticlePage
-      slug="best-free-white-noise-app"
-      jsonLd={articleJsonLd}
-      topLinkHref="/pt-BR/white-noise-app"
-      topLinkLabel="Descobrir o app de ruído branco"
-      title="O melhor app de ruído branco grátis para o sono"
-      intro="Com milhares de aplicativos de som no mercado, encontrar o melhor aplicativo de ruído branco gratuito pode ser assustador. Muitas opções populares como Calm ou BetterSleep agora exigem assinaturas mensais caras. Se você procura sons gratuitos para dormir que realmente ajudem PRO opcional com compra única, aqui está o motivo pelo qual o Calma é a alternativa definitiva."
-      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-      ctaLabel="Baixar o Calma grátis"
-      secondaryCtaHref="/pt-BR/sound-mixer-app"
-      secondaryCtaLabel="Explorar o mixer de sons"
-      tableOfContents={[
-        { id: "por-que-usar-app", title: "Por que usar um app para dormir?" },
-        { id: "calma-vs-concorrencia", title: "Alternativas grátis ao Calm e BetterSleep" },
-        { id: "por-que-calma", title: "Por que o Calma é a melhor escolha" },
-        { id: "primeiro-mix", title: "Como criar sua primeira mixagem" },
-        { id: "faq", title: "Perguntas Frequentes (FAQ)" },
-      ]}
-      relatedArticles={[
-        {
-          href: "/pt-BR/blog/white-noise-for-sleep",
-          title: "Ruído branco para dormir",
-          description: "Descubra como o ruído branco ajuda você a adormecer mais rápido.",
-        },
-        {
-          href: "/pt-BR/blog/best-sounds-for-sleep",
-          title: "Os melhores sons para dormir",
-          description: "Descubra quais sons de fundo são os mais eficazes.",
-        },
-      ]}
-    >
-      <ArticleSection id="por-que-usar-app" title="Por que usar um app para dormir em vez do YouTube?">
-        <p className="mt-4 leading-8 text-white/70">
-          É tentador colocar um vídeo de 8 horas no YouTube com sons de chuva. No entanto, transmitir vídeos esgota a bateria, requer conexão com a internet e pode interromper seu sono com anúncios altos e repentinos.
+export default function BestFreeWhiteNoiseAppPage() {
+    return (<ArticlePage slug="best-free-white-noise-app" jsonLd={articleJsonLd} topLinkHref="/white-noise-app" topLinkLabel="Explorar a página de ruído branco" title="Como escolher o melhor aplicativo gratuito de ruído branco" intro="O melhor aplicativo de ruído branco não é aquele com a lista de recursos mais longa. É aquele que toca com segurança à noite, parece natural para você, explica o que é grátis e fica fora do caminho. Este guia compara aplicativos com máquinas dedicadas e streaming e, em seguida, fornece uma lista de verificação repetível para avaliar qualquer opção, incluindo Calma." ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" ctaLabel="Baixe Calma gratuitamente" secondaryCtaHref="/sound-mixer-app" secondaryCtaLabel="Explore o aplicativo de mixagem de som" tableOfContents={[
+            { id: "why-use-an-app", title: "Aplicativo x m\u00E1quina x streaming" },
+            { id: "what-free-means", title: "O que \u201Cgr\u00E1tis\u201D deveria significar" },
+            { id: "what-to-look-for", title: "Lista de verifica\u00E7\u00E3o de avalia\u00E7\u00E3o de sete pontos" },
+            { id: "why-calma", title: "Onde a Calma se encaixa" },
+            { id: "how-to-start", title: "Uma compara\u00E7\u00E3o de sete noites" },
+        ]} relatedArticles={[
+            {
+                href: "/blog/white-noise-for-sleep",
+                title: "Ru\u00EDdo branco para dormir",
+                description: "Aprenda como o ru\u00EDdo branco pode ajud\u00E1-lo a adormecer mais r\u00E1pido e a permanecer dormindo por mais tempo.",
+            },
+            {
+                href: "/blog/best-sounds-for-sleep",
+                title: "Melhores sons para dormir",
+                description: "Descubra quais sons de fundo s\u00E3o mais eficazes para as rotinas da hora de dormir.",
+            },
+        ]}>
+      <ArticleSection id="why-use-an-app" title="Aplicativo de ruído branco versus máquina versus streaming">
+        <p>
+          Cada formato resolve um problema diferente. Uma máquina dedicada oferece controles físicos e mantém o telefone fora do quarto. O streaming é conveniente para audição ocasional, mas depende da conectividade e do comportamento da plataforma. Um aplicativo offline é portátil e pode fornecer mais controle sobre mixagem, temporizadores e níveis de som individuais.
         </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Um <strong>aplicativo de ruído branco</strong> dedicado funciona offline, consome pouca bateria e é executado perfeitamente em segundo plano com a tela bloqueada.
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Opção</th>
+                <th className="px-4 py-3">Melhor para</th>
+                <th className="px-4 py-3">Troca</th>
+                <th className="px-4 py-3">Verifique antes de dormir</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Aplicativo off-line</td>
+                <td className="px-4 py-3">Viagens, mixagens personalizadas, temporizadores</td>
+                <td className="px-4 py-3">Usa seu telefone e bateria</td>
+                <td className="px-4 py-3">Reprodução em segundo plano e acesso offline</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Máquina de som</td>
+                <td className="px-4 py-3">Uma rotina fixa de cabeceira</td>
+                <td className="px-4 py-3">Dispositivo extra, menos combinações</td>
+                <td className="px-4 py-3">Layout dos botões e volume mínimo</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Transmissão</td>
+                <td className="px-4 py-3">Tentando um som ocasionalmente</td>
+                <td className="px-4 py-3">Alterações na rede, nos anúncios ou na reprodução</td>
+                <td className="px-4 py-3">Interrupções e configurações de reprodução automática</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="what-free-means" title="O que “aplicativo de ruído branco gratuito” realmente significa?">
+        <p>
+          “Gratuito” pode significar uma versão básica permanente, um teste curto, reprodução suportada por anúncios ou um download que só se torna útil após a assinatura. Nenhum desses modelos está automaticamente errado, mas a diferença deve ser visível antes de você criar um hábito de dormir em torno do aplicativo.
+        </p>
+        <p className="mt-4">
+          Verifique quais sons, camadas de mixer, temporizadores e recursos off-line permanecem disponíveis sem pagamento. Verifique também se o acesso premium é uma assinatura ou uma compra única. Uma limitação clara é mais fácil de avaliar do que uma grande biblioteca escondida atrás de um ensaio pouco claro.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="calma-vs-concorrencia" title="Alternativas grátis ao Calm e BetterSleep">
-        <p className="mt-4 leading-8 text-white/70">
-          Aplicativos como <em>Calm</em> e <em>BetterSleep</em> são fantásticos, mas têm um preço. Muitos usuários descobrem que a maioria dos sons relaxantes estão bloqueados por um paywall. Se você não quer gastar entre R$ 200 e R$ 300 por ano, precisa de uma verdadeira alternativa.
+      <ArticleSection id="what-to-look-for" title="Uma lista de verificação de sete pontos para comparar aplicativos de som para dormir">
+        <p>
+          Avalie o comportamento do qual você realmente dependerá à noite, não apenas o número de sons mostrados na listagem da loja:
         </p>
-        <p className="mt-4 leading-8 text-white/70">
-          É aí que entra o Calma. Ao contrário da concorrência cara, o Calma foi criado com a ideia de que a higiene básica do sono deve ser acessível. É a melhor alternativa para quem não quer abrir mão da qualidade, mas evita assinaturas.
-        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <li><strong>Loops suaves:</strong> Ouça cliques, mudanças repentinas ou uma reinicialização óbvia após alguns minutos.</li>
+          <li><strong>Nível gratuito útil:</strong> Confirme o que permanece disponível após o término de qualquer avaliação.</li>
+          <li><strong>Reprodução off-line:</strong> Teste no modo avião antes de confiar nele durante a viagem.</li>
+          <li><strong>Reprodução em segundo plano:</strong> Bloqueie a tela e confirme se o áudio continua conforme o esperado.</li>
+          <li><strong>Mistura independente:</strong> Se você sobrepor sons, cada fonte deverá ter seu próprio controle de volume.</li>
+          <li><strong>Comportamento do temporizador:</strong> Verifique se a reprodução para abruptamente ou desaparece e se o cronômetro funciona com a tela bloqueada.</li>
+          <li><strong>Interface de baixo atrito:</strong> Você deverá ser capaz de retomar uma mixagem familiar sem navegar em telas brilhantes ou complicadas à noite.</li>
+        </ul>
       </ArticleSection>
 
-      <ArticleSection id="por-que-calma" title="Por que o Calma é o melhor app de ruído branco grátis">
-        <p className="mt-4 leading-8 text-white/70">
-          Criamos o <strong>Calma</strong> porque estávamos cansados de aplicativos de sono supercomplicados e caros. Eis o que torna o Calma tão especial:
+      <ArticleSection id="why-calma" title="Onde o Calma se encaixa nesta lista de verificação">
+        <p>
+          Calma foi projetado para pessoas que valorizam a mixagem personalizada e o uso offline em vez do rastreamento do sono, histórias ou uma plataforma baseada em conta. Seu mixer gratuito suporta três camadas simultâneas e a biblioteca completa contém mais de 190 sons. O acesso premium está disponível como desbloqueio único e vitalício, em vez de uma assinatura recorrente.
         </p>
         <div className="mt-6 space-y-4">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">1. Sem assinaturas mensais</h3>
-            <p className="mt-2 text-sm text-white/70">Desfrute de uma enorme biblioteca de sons para dormir de forma totalmente gratuita, sem pedidos chatos de cartão de crédito.</p>
+            <h3 className="font-semibold text-emerald-400">1. Controles adequados para a noite</h3>
+            <p className="mt-2 text-sm text-white/70">Uma interface escura mantém o mixer de som visualmente simples quando você retorna a ele à noite.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">2. Mixer de som avançado</h3>
-            <p className="mt-2 text-sm text-white/70">Misture até 10 sons (ex: chuva, ruído marrom e vento) e ajuste o volume de cada elemento individualmente.</p>
+            <h3 className="font-semibold text-emerald-400">2. Camadas sonoras independentes</h3>
+            <p className="mt-2 text-sm text-white/70">Misture cores sonoras com chuva ou natureza e ajuste cada camada de forma independente. O mixer gratuito suporta três camadas.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">3. Modo offline e timer</h3>
-            <p className="mt-2 text-sm text-white/70">Coloque seu telefone no modo avião. O Calma funciona totalmente offline e para a reprodução automaticamente.</p>
+            <h3 className="font-semibold text-emerald-400">3. Reprodução offline sem taxas recorrentes</h3>
+            <p className="mt-2 text-sm text-white/70">Os sons funcionam sem uma conexão ativa, e os usuários que desejam acesso premium podem escolher um desbloqueio vitalício em vez de um plano mensal.</p>
           </div>
         </div>
       </ArticleSection>
 
-      <ArticleSection id="primeiro-mix" title="Como criar sua primeira mixagem">
-        <p className="mt-4 leading-8 text-white/70">
-          Para iniciantes, recomendamos uma combinação de <strong>Ruído Rosa</strong> (60% de volume) e <strong>Chuva Leve</strong> (40% de volume). Isso cria uma manta acústica que disfarça ruídos incômodos com eficácia.
+      <ArticleSection id="how-to-start" title="Use uma comparação de sete noites em vez de adivinhar">
+        <p>
+          Comece com um som em um nível baixo e confortável, em vez de uma mixagem complexa. Use o mesmo som por três noites, depois tente uma opção diferente por três noites e mantenha uma noite tranquila como comparação quando seu ambiente permitir.
         </p>
-        <div className="mt-8 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-            aria-label="Baixar o aplicativo Calma"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Disponível no Google Play"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <li>Registre o tempo aproximado para se acomodar, os despertares lembrados e o conforto matinal.</li>
+          <li>Mantenha o volume e a posição do alto-falante consistentes.</li>
+          <li>Se um loop se tornar perceptível ou irritante, esse aplicativo ou som não é adequado.</li>
+          <li>Não interprete uma noite excepcionalmente boa ou ruim como prova.</li>
+        </ul>
+        <p className="mt-4">
+          O sono varia naturalmente, por isso o objetivo não é um diagnóstico científico. É escolher a configuração menos intrusiva que torne o seu quarto mais previsível.
+        </p>
       </ArticleSection>
-
-      <ArticleSection id="faq" title="Perguntas Frequentes (FAQ)">
-        <div className="mt-6 space-y-6">
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Existe um app de ruído branco totalmente gratuito?</h3>
-            <p className="mt-2 leading-7 text-white/70">Sim, o Calma é um excelente aplicativo totalmente gratuito que oferece ruído branco, rosa e marrom sem assinaturas ocultas.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">O Calma é melhor que o Calm ou BetterSleep?</h3>
-            <p className="mt-2 leading-7 text-white/70">Se você procura uma alternativa simples e gratuita, sem caras mensalidades, o Calma oferece qualidade de áudio comparável e um mixer superior.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Posso usar o aplicativo sem internet?</h3>
-            <p className="mt-2 leading-7 text-white/70">Com certeza. O Calma funciona perfeitamente no modo avião ou offline, economizando bateria e evitando interrupções.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Quais ruídos são os melhores para dormir?</h3>
-            <p className="mt-2 leading-7 text-white/70">Estudos mostram que sons constantes como ruído rosa, ruído marrom ou chuva intensa são os mais eficazes para bloquear barulhos.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">O aplicativo consome muita bateria à noite?</h3>
-            <p className="mt-2 leading-7 text-white/70">Não, o Calma é otimizado para usar o mínimo de bateria com a tela apagada. Além disso, você pode ativar o timer de sono.</p>
-          </div>
-        </div>
-      </ArticleSection>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Existe um app de ruído branco totalmente gratuito?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Sim, o Calma é um excelente aplicativo totalmente gratuito que oferece ruído branco, rosa e marrom sem assinaturas ocultas."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "O Calma é melhor que o Calm ou BetterSleep?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Se você procura uma alternativa simples e gratuita, sem caras mensalidades, o Calma oferece qualidade de áudio comparável e um mixer superior."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Posso usar o aplicativo sem internet?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Com certeza. O Calma funciona perfeitamente no modo avião ou offline, economizando bateria e evitando interrupções."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Quais ruídos são os melhores para dormir?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Estudos mostram que sons constantes como ruído rosa, ruído marrom ou chuva intensa são os mais eficazes para bloquear barulhos."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "O aplicativo consome muita bateria à noite?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Não, o Calma é otimizado para usar o mínimo de bateria com a tela apagada. Além disso, você pode ativar o timer de sono."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </ArticlePage>
-  );
+    </ArticlePage>);
 }

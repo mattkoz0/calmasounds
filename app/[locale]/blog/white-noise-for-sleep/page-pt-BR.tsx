@@ -2,159 +2,155 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
-import Image from "next/image";
-
-const articleTitle = "Por que o ruído branco ajuda a dormir? (2026) | Calma";
-const articleDescription =
-  "O ruído branco ajuda a dormir? Descubra como ele mascara distrações, melhora a qualidade do sono profundo e as diferenças para o ruído rosa.";
-const articleUrl = "https://www.calmasounds.com/pt-BR/blog/white-noise-for-sleep";
-
+const articleTitle = "Por que o ru\u00EDdo branco ajuda voc\u00EA a dormir? Evid\u00EAncias e Limites | Calma";
+const articleDescription = "O ru\u00EDdo branco pode mascarar a mudan\u00E7a dos sons do quarto, mas as evid\u00EAncias do sono s\u00E3o confusas. Aprenda como funciona, quais testes foram encontrados e como ouvir com cautela.";
+const articleUrl = "https://www.calmasounds.com/blog/white-noise-for-sleep";
 export const metadata: Metadata = {
-  title: articleTitle,
-  description: articleDescription,
-  keywords: [
-    "ruido branco para dormir",
-    "por que o ruido branco ajuda a dormir",
-    "ruido branco sono",
-    "ruido branco para bebê",
-    "melhor ruido branco para dormir",
-    "calma blog",
-  ],
-  robots: {
-    index: true,
-    follow: true,
-  },
-  alternates: {
-    canonical: articleUrl,
-  },
-  openGraph: {
     title: articleTitle,
     description: articleDescription,
-    url: articleUrl,
-    siteName: "Calma",
-    locale: "pt_BR",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: articleTitle,
-    description: articleDescription,
-  },
+    keywords: [
+        "ru\u00EDdo branco para dormir",
+        "por que o ru\u00EDdo branco ajuda voc\u00EA a dormir",
+        "som de ru\u00EDdo branco para dormir",
+        "ru\u00EDdo branco para ajudar a dormir",
+        "melhor ru\u00EDdo branco para dormir",
+        "o ru\u00EDdo branco ajuda voc\u00EA a dormir",
+        "calma blog",
+    ],
+    robots: {
+        index: true,
+        follow: true,
+    },
+    alternates: {
+        canonical: articleUrl,
+    },
+    openGraph: {
+        title: articleTitle,
+        description: articleDescription,
+        url: articleUrl,
+        siteName: "Calma",
+        locale: "en_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: articleTitle,
+        description: articleDescription,
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "Por que o ruído branco ajuda a dormir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O ruído branco ajuda a dormir elevando a linha de base do som ambiente no seu quarto. Isso reduz o contraste entre o silêncio e os ruídos repentinos (como trânsito ou ronco), tornando menos provável que seu cérebro os registre como ameaças e o acorde."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "O que é exatamente o ruído branco para dormir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "O ruído branco é um som contínuo que contém todas as frequências audíveis em intensidade igual, semelhante à estática de TV ou a um ventilador. Cria um ambiente de áudio previsível que mascara interrupções."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "É melhor o ruído branco ou o ruído rosa para dormir?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Muitos estudos sugerem que o ruído rosa (que soa como chuva constante) pode ser melhor para o sono profundo porque seu equilíbrio de frequência é mais suave para o ouvido humano. No entanto, o ruído branco é geralmente melhor para mascarar distrações muito agudas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "É seguro dormir com ruído branco todas as noites?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sim, dormir com ruído branco todas as noites é geralmente seguro para adultos quando o volume fica abaixo de 60 dB (o nível de uma conversa tranquila). Coloque a fonte de som a pelo menos 2 metros da sua cabeça."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Você pode ficar viciado em dormir com ruído branco?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Você não fica fisicamente viciado, mas pode formar um forte hábito psicológico. Seu cérebro aprende a associar o som ao sono. Se você quiser parar de usá-lo, o melhor é diminuir gradualmente o volume ao longo de algumas semanas."
-      }
-    }
-  ]
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Por que o ru\u00EDdo branco ajuda voc\u00EA a dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O ru\u00EDdo branco pode ajudar, reduzindo o contraste entre o som de fundo constante e ru\u00EDdos repentinos, como tr\u00E1fego ou portas. Este efeito de mascaramento pode tornar as perturba\u00E7\u00F5es menos percept\u00EDveis, mas os estudos n\u00E3o mostram que melhora o sono de todas as pessoas."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "O que \u00E9 exatamente o ru\u00EDdo branco para dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O ru\u00EDdo branco t\u00E9cnico tem pot\u00EAncia igual por hertz e soa como est\u00E1tico. Muitos ventiladores e condicionadores de ar s\u00E3o sons de banda larga, em vez de ru\u00EDdo matematicamente branco, mas ainda podem fornecer um fundo de mascaramento est\u00E1vel."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "O ru\u00EDdo branco ou rosa \u00E9 melhor para dormir?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A pesquisa n\u00E3o estabelece um vencedor universal. O ru\u00EDdo rosa soa mais suave porque cont\u00E9m menos energia de alta frequ\u00EAncia, enquanto o ru\u00EDdo branco fornece um mascaramento mais amplo de alta frequ\u00EAncia. O conforto e o ambiente do quarto s\u00E3o importantes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "\u00C9 seguro dormir com ru\u00EDdo branco todas as noites?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mantenha o ru\u00EDdo branco no n\u00EDvel mais baixo e confort\u00E1vel que atenda ao seu prop\u00F3sito e coloque a fonte longe de sua cabe\u00E7a. Pare se causar desconforto, zumbido ou sono insatisfat\u00F3rio. N\u00E3o existe um volume ou dist\u00E2ncia \u00FAnico que se adapte a todos os dispositivos e ambientes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Voc\u00EA pode ficar viciado em dormir com ru\u00EDdo branco?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "O ru\u00EDdo branco n\u00E3o \u00E9 considerado fisicamente viciante, mas pode se tornar parte de uma rotina aprendida na hora de dormir. Se n\u00E3o quiser mais, diminua o n\u00EDvel ou diminua o cron\u00F4metro gradualmente."
+            }
+        }
+    ]
 };
-
 const relatedArticles = [
-  {
-    href: "/pt-BR/blog/rain-sounds-vs-white-noise",
-    title: "Sons de Chuva vs Ruído Branco",
-    description: "Compare as diferenças práticas e emocionais entre a chuva natural e a estática artificial.",
-  },
-  {
-    href: "/pt-BR/blog/best-sounds-for-sleep",
-    title: "Os Melhores Sons para Dormir",
-    description: "Explore diferentes estilos de som para o sono, do ruído rosa às ondas do oceano.",
-  },
+    {
+        href: "/blog/rain-sounds-vs-white-noise",
+        title: "Sons de chuva versus ru\u00EDdo branco",
+        description: "Compare a sensa\u00E7\u00E3o emocional e as diferen\u00E7as pr\u00E1ticas entre a chuva natural e a est\u00E1tica artificial.",
+    },
+    {
+        href: "/blog/best-sounds-for-sleep",
+        title: "Melhores sons para dormir",
+        description: "Explore diferentes estilos de sons para dormir, desde ru\u00EDdo rosa at\u00E9 ondas do mar.",
+    },
 ];
-
-export default function WhiteNoiseForSleepPagePTBR() {
-  return (
-    <ArticlePage
-      slug="white-noise-for-sleep"
-      jsonLd={articleJsonLd}
-      topLinkHref="/pt-BR/white-noise-app"
-      topLinkLabel="Explorar app de ruído branco"
-      title="Por que o ruído branco ajuda a dormir? A ciência explicada"
-      intro="O ruído branco para dormir tornou-se um fenômeno global. De adultos estressados vivendo em cidades movimentadas a pais tentando fazer seus recém-nascidos dormirem a noite toda, milhões dependem desse 'chiado' constante para adormecer. Mas como funciona realmente? Melhora a qualidade do seu sono profundo ou é apenas uma ferramenta para bloquear o ronco do parceiro?"
-      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-      ctaLabel="Baixar App Calma Grátis"
-      secondaryCtaHref="/pt-BR/white-noise-app"
-      secondaryCtaLabel="Explorar player de ruído"
-      tableOfContents={[
-        { id: "how-it-works", title: "Como o mascaramento de som melhora o sono" },
-        { id: "what-is-it", title: "O que é exatamente o ruído branco?" },
-        { id: "comparison-table", title: "Branco vs Rosa vs Marrom" },
-        { id: "best-practices", title: "Como usar com segurança" },
-        { id: "faq", title: "Perguntas Frequentes (FAQ)" },
-      ]}
-      relatedArticles={relatedArticles}
-    >
-      <ArticleSection id="how-it-works" title="Como o mascaramento de som melhora o sono">
+export default function WhiteNoiseForSleepPage() {
+    return (<ArticlePage slug="white-noise-for-sleep" jsonLd={articleJsonLd} topLinkHref="/white-noise-app" topLinkLabel="Explore o aplicativo de ruído branco" title="Por que o ruído branco ajuda você a dormir? A Ciência Explicada" intro="O ruído branco pode tornar o som de um quarto imprevisível mais consistente, o que pode ajudar quando o trânsito, os vizinhos ou as portas interrompem o sono. Isso não significa que aprofunde o sono ou funcione para todos. Aqui está o mecanismo de mascaramento, a evidência mais forte de ambos os lados e uma forma cautelosa de decidir se é adequado ao seu quarto." ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" ctaLabel="Baixe o aplicativo Calma gratuitamente" secondaryCtaHref="/white-noise-app" secondaryCtaLabel="Explore o reprodutor de ruído branco" tableOfContents={[
+            { id: "how-it-works", title: "Como o mascaramento de som pode reduzir a interrup\u00E7\u00E3o" },
+            { id: "evidence", title: "O que os estudos do sono descobriram" },
+            { id: "what-is-it", title: "O que exatamente \u00E9 o ru\u00EDdo branco?" },
+            { id: "comparison-table", title: "Ru\u00EDdo branco vs rosa vs marrom" },
+            { id: "best-practices", title: "Como us\u00E1-lo com seguran\u00E7a" },
+            { id: "faq", title: "Perguntas frequentes" },
+            { id: "sources", title: "Evid\u00EAncias e fontes" },
+        ]} relatedArticles={relatedArticles}>
+      <ArticleSection id="how-it-works" title="Como o mascaramento de som pode reduzir as perturbações do sono">
         <p className="mt-4 leading-8 text-white/70">
-          O ruído branco não bloqueia os sons apenas por ser alto; ele funciona através de um fenômeno chamado <strong>mascaramento de som</strong>. Quando você está dormindo, seu cérebro continua a processar sons para alertá-lo do perigo. O que o acorda não é necessariamente o volume de um ruído (como uma porta batendo), mas a mudança repentina do silêncio para o ruído.
+          O ruído branco não precisa superar uma perturbação. Através <strong>mascaramento de som</strong>, um fundo estável reduz o contraste entre a sala e um som intermitente. O fechamento de uma porta pode, portanto, destacar-se menos contra o ruído silencioso de banda larga do que contra o quase silêncio.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Como o ruído branco contém todas as frequências, ele essencialmente preenche o silêncio. Ele eleva a linha de base do ruído de fundo para que sons repentinos se misturem e não acionem a resposta de \"despertar\" do cérebro. Isso ajuda você a permanecer nos estágios mais profundos do sono.
+          O mascaramento é mais relevante quando a alteração do som ambiente é o problema. Não pode resolver um quarto desconfortável, um horário inconsistente, apneia do sono, dor ou insónia causada por factores não relacionados com o ruído.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="what-is-it" title="O que é exatamente o ruído branco?">
-        <p className="mt-4 leading-8 text-white/70">
-          Na física, o ruído branco é um som que contém todas as frequências dentro do alcance da audição humana (entre 20 e 20.000 hertz) tocadas em uma intensidade igual. Porque contém todas as frequências simultaneamente, soa como um chiado, semelhante à estática da televisão ou um ventilador.
+      <ArticleSection id="evidence" title="O ruído branco melhora o sono? O que os estudos descobriram">
+        <p>
+          Um estudo cruzado randomizado testou o som de banda larga em 18 jovens adultos saudáveis que foram convidados a ir para a cama 90 minutos mais cedo do que o habitual – um modelo de dificuldade temporária em adormecer. A boa condição encurtou o tempo médio para o sono estável no estágio 2 de 19 para 13 minutos, uma redução relativa de 38%. Isso é interessante, mas foi um experimento pequeno e artificial, e não um ensaio em pessoas com insônia crônica.
         </p>
-        <AudioPlayer 
-          src="/white_noise.m4a" 
-          title="Verdadeiro Ruído Branco" 
-          description="Um som consistente que bloqueia ruídos agudos e repentinos."
-          colorClass="bg-slate-500/20 text-slate-300"
-        />
+        <p className="mt-4">
+          Uma revisão sistemática examinou 38 estudos sobre ruído branco contínuo ou ruído de banda larga semelhante. Os resultados variaram entre sono melhorado e sono interrompido, e os autores classificaram a evidência de benefício como de certeza muito baixa porque as medições do som, dos participantes e do sono variaram substancialmente.
+        </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5">
+            <p className="font-semibold text-emerald-100">Uso mais plausível</p>
+            <p className="mt-2 text-sm leading-6 text-white/70">Mascarar tráfego intermitente, ruído doméstico ou vizinho em um nível baixo.</p>
+          </div>
+          <div className="rounded-2xl border border-amber-300/20 bg-amber-300/10 p-5">
+            <p className="font-semibold text-amber-100">O que não está estabelecido</p>
+            <p className="mt-2 text-sm leading-6 text-white/70">Esse ruído contínuo aprofunda o sono, trata a insônia ou beneficia todos os ouvintes.</p>
+          </div>
+        </div>
       </ArticleSection>
 
-      <ArticleSection id="comparison-table" title="Ruído Branco vs Rosa vs Marrom para Dormir">
+      <ArticleSection id="what-is-it" title="O que exatamente é o ruído branco?">
         <p className="mt-4 leading-8 text-white/70">
-          Nem todo \"ruído branco\" é realmente branco. Na engenharia de áudio, os sons contínuos são categorizados em cores com base em seu equilíbrio de frequência.
+          Na física, o ruído branco é um som que contém todas as frequências dentro da faixa da audição humana (entre 20 hertz e 20.000 hertz) reproduzidas com igual intensidade. Como contém todas as frequências simultaneamente, soa como um ruído de “silêncio”, semelhante à estática da televisão, ao rádio desafinado ou ao zumbido de um ventilador.
+        </p>
+        <AudioPlayer src="/white_noise.m4a" title="Ruído Branco Puro" description="Um som consistente e de espectro total que bloqueia ruídos agudos." colorClass="bg-slate-500/20 text-slate-300"/>
+      </ArticleSection>
+
+      <ArticleSection id="comparison-table" title="Ruído branco vs rosa vs marrom para dormir">
+        <p className="mt-4 leading-8 text-white/70">
+          Nem todo “ruído branco” é tecnicamente branco. As cores do ruído descrevem o equilíbrio de frequência. A diferença muda a sensação de cada som, mas a pesquisa não identifica uma cor como universalmente melhor para dormir.
         </p>
         <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
           <table className="w-full text-left text-sm text-white/70">
             <thead className="bg-slate-800/50 text-white">
               <tr>
-                <th className="px-6 py-4 font-semibold">Cor do Ruído</th>
-                <th className="px-6 py-4 font-semibold">Foco da Frequência</th>
+                <th className="px-6 py-4 font-semibold">Cor do ruído</th>
+                <th className="px-6 py-4 font-semibold">Foco de frequência</th>
                 <th className="px-6 py-4 font-semibold">Melhor usado para</th>
               </tr>
             </thead>
@@ -162,17 +158,17 @@ export default function WhiteNoiseForSleepPagePTBR() {
               <tr>
                 <td className="px-6 py-4 font-medium text-slate-300">Ruído Branco</td>
                 <td className="px-6 py-4">Igual em todas as frequências.</td>
-                <td className="px-6 py-4">Mascarar ruídos imprevisíveis (ronco, cães latindo).</td>
+                <td className="px-6 py-4">Mascarar ruídos agudos e imprevisíveis (roncos, latidos de cães).</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 font-medium text-pink-300">Ruído Rosa</td>
-                <td className="px-6 py-4">Frequências mais baixas (como chuva).</td>
-                <td className="px-6 py-4">Melhorar o sono profundo e a retenção de memória.</td>
+                <td className="px-6 py-4">Frequências mais baixas aumentadas (parece chuva).</td>
+                <td className="px-6 py-4">Um fundo mais suave para ouvintes que não gostam de chiados.</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 font-medium text-orange-300">Ruído Marrom</td>
-                <td className="px-6 py-4">Apenas frequências mais profundas (como um trovão distante).</td>
-                <td className="px-6 py-4">Criar uma atmosfera segura; ótimo para TDAH.</td>
+                <td className="px-6 py-4">Apenas frequências mais profundas (soa como um trovão distante).</td>
+                <td className="px-6 py-4">Um fundo mais profundo escolhido principalmente pelo conforto.</td>
               </tr>
             </tbody>
           </table>
@@ -181,55 +177,59 @@ export default function WhiteNoiseForSleepPagePTBR() {
 
       <ArticleSection id="best-practices" title="Como usar o ruído branco com segurança">
         <p className="mt-4 leading-8 text-white/70">
-          Embora seja incrivelmente útil, é importante usá-lo corretamente para evitar a fadiga auditiva:
+          Se você testar o ruído branco, use o mínimo de som necessário para a sala, em vez de considerar uma reprodução mais alta como mais eficaz:
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li><strong>Mantenha o volume seguro:</strong> O som deve atuar como um zumbido de fundo. Mantenha o volume em torno de 50 a 60 decibéis (o volume de uma conversa tranquila).</li>
-          <li><strong>Atenção à distância:</strong> Nunca coloque um telefone diretamente ao lado da sua cabeça. Mantenha-o a pelo menos 2 metros de distância.</li>
-          <li><strong>Experimente com \"cores\":</strong> Se o ruído branco parecer muito agudo, tente o Ruído Rosa ou o Ruído Marrom.</li>
+          <li><strong>Comece na configuração audível mais baixa:</strong> Aumente apenas o suficiente para suavizar o contraste da perturbação que você está tentando mascarar.</li>
+          <li><strong>Mantenha a fonte longe de sua cabeça:</strong> Um alto-falante em outro lugar da sala geralmente cria um fundo mais uniforme do que um telefone ao lado do travesseiro.</li>
+          <li><strong>Teste um cronômetro:</strong> Se o som só for útil durante a acomodação, não há razão para supor que ele deva funcionar a noite toda.</li>
+          <li><strong>Compare com uma noite tranquila:</strong> Pare se notar mais despertares, desconforto, cansaço matinal ou toques.</li>
         </ul>
-        <div className="mt-12 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Baixar App Calma Grátis"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
       </ArticleSection>
 
-      <ArticleSection id="faq" title="Perguntas Frequentes (FAQ)">
+      <ArticleSection id="faq" title="Perguntas frequentes (FAQ)">
         <div className="mt-6 space-y-6">
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Por que o ruído branco ajuda a dormir?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ele eleva o som ambiente no quarto, reduzindo o contraste entre o silêncio e ruídos repentinos, evitando que seu cérebro acorde com distrações.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">Por que o ruído branco ajuda você a dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Pode reduzir o contraste entre uma sala estável e ruídos repentinos, tornando o tráfego ou as portas menos perceptíveis. As evidências não mostram que isso ajuda a todos.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">O que é exatamente o ruído branco para dormir?</h3>
-            <p className="mt-2 leading-7 text-white/70">É um som contínuo contendo todas as frequências audíveis em intensidade igual, criando um ambiente previsível.</p>
+            <p className="mt-2 leading-7 text-white/70">O ruído branco técnico tem potência igual por hertz e soa como estático. Ventiladores e condicionadores de ar geralmente são sons de banda larga, em vez de ruído matematicamente branco.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">É melhor o ruído branco ou o ruído rosa para dormir?</h3>
-            <p className="mt-2 leading-7 text-white/70">O ruído rosa (como a chuva) é frequentemente melhor para o sono profundo. O ruído branco é melhor para bloquear sons agudos e altos, como ronco.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">O ruído branco ou rosa é melhor para dormir?</h3>
+            <p className="mt-2 leading-7 text-white/70">Nenhum dos dois é universalmente melhor. O ruído rosa soa mais suave porque tem menos energia de alta frequência; o ruído branco pode fornecer um mascaramento mais amplo. Preferência e meio ambiente são importantes.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">É seguro dormir com ruído branco todas as noites?</h3>
-            <p className="mt-2 leading-7 text-white/70">Sim, é seguro para adultos se o volume for mantido abaixo de 60 dB e o telefone ficar a pelo menos 2 metros da sua cabeça.</p>
+            <p className="mt-2 leading-7 text-white/70">Use o nível confortável mais baixo, mantenha a fonte longe de sua cabeça e pare se causar desconforto, zumbido ou sono insatisfatório.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Você pode ficar viciado em dormir com ruído branco?</h3>
-            <p className="mt-2 leading-7 text-white/70">Não fisicamente, mas psicologicamente. Para parar, diminua o volume gradualmente ao longo de algumas semanas em vez de parar abruptamente.</p>
+            <p className="mt-2 leading-7 text-white/70">Não é considerado fisicamente viciante, mas pode se tornar parte de uma rotina aprendida na hora de dormir. Abaixe o volume ou diminua o cronômetro gradualmente se quiser parar.</p>
           </div>
         </div>
       </ArticleSection>
-    </ArticlePage>
-  );
+
+      <ArticleSection id="sources" title="Evidências e fontes">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/29312136/" target="_blank" rel="noopener noreferrer">
+              Estudo cruzado randomizado de som de banda larga e dificuldade transitória em adormecer
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/33007706/" target="_blank" rel="noopener noreferrer">
+              Revisão sistemática: ruído contínuo como auxílio para dormir
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9163611/" target="_blank" rel="noopener noreferrer">
+              Revisão do ruído branco e rosa para o sono em populações variadas
+            </a>
+          </li>
+        </ul>
+      </ArticleSection>
+    </ArticlePage>);
 }

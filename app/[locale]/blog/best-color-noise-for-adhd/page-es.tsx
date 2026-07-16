@@ -1,180 +1,246 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
-
 export const metadata: Metadata = {
-  title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
-  description:
-    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
-  keywords: [
-    "qué color de ruido es mejor para el tdah",
-    "ruido marron vs ruido blanco tdah",
-    "ruido marron tdah",
-    "ruido blanco para tdah",
-    "ruido rosa tdah",
-    "calma blog",
-    "app para dormir mejor",
-    "promover sueño profundo",
-    "ayuda para conciliar el sueño",
-    "sonidos relajantes noche",
-    "mejorar calidad del sueño",
-  ],
-  alternates: {
-    canonical: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
-  },
-  openGraph: {
-    title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
-    description:
-    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
-    url: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
-    siteName: "Calma",
-    locale: "es_ES",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
-    description:
-    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
-  },
+    title: "Ruido de color y TDAH: lo que realmente muestran las investigaciones | Calma",
+    description: "Compare el ruido blanco, rosa y marr\u00F3n para el TDAH, incluido lo que encontr\u00F3 un metan\u00E1lisis de 2024 y d\u00F3nde a\u00FAn falta evidencia.",
+    keywords: [
+        "\u00BFQu\u00E9 color de ruido es mejor para el TDAH?",
+        "ruido marr\u00F3n vs ruido blanco tdah",
+        "ruido marr\u00F3n tdah",
+        "ruido blanco para el TDAH",
+        "ruido rosa tdah",
+        "El mejor ruido para estudiar el TDAH.",
+        "blog de calma",
+    ],
+    alternates: {
+        canonical: "https://www.calmasounds.com/blog/best-color-noise-for-adhd",
+    },
+    openGraph: {
+        title: "Ruido de color y TDAH: lo que realmente muestran las investigaciones | Calma",
+        description: "Compare el ruido blanco, rosa y marr\u00F3n para el TDAH, incluida la evidencia actual y sus l\u00EDmites.",
+        url: "https://www.calmasounds.com/blog/best-color-noise-for-adhd",
+        siteName: "Calma",
+        locale: "es_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Ruido de color y TDAH: lo que muestran las investigaciones | Calma",
+        description: "Compare los colores de ruido para el TDAH y descubra por qu\u00E9 son importantes las pruebas personales.",
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco",
-  description:
-    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
-  author: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/es/blog/best-color-noise-for-adhd",
-  datePublished: "2026-05-04",
-  dateModified: "2026-05-04",
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Ruido de color y TDAH: \u00BFQu\u00E9 muestran las investigaciones?",
+    description: "Compare el ruido blanco, rosa y marr\u00F3n para el TDAH, incluida la evidencia actual y sus l\u00EDmites.",
+    author: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    publisher: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    mainEntityOfPage: "https://www.calmasounds.com/blog/best-color-noise-for-adhd",
+    datePublished: "2026-05-04",
+    dateModified: "2026-05-04",
 };
-
 export default function BestColorNoiseForADHDPage() {
-  return (
-    <ArticlePage
-      slug="best-color-noise-for-adhd"
-      jsonLd={articleJsonLd}
-      topLinkHref="/es/focus-sounds-app"
-      topLinkLabel="Explorar página de concentración"
-      title="¿Qué color de ruido es mejor para el TDAH? Ruido marrón vs blanco"
-      intro="Si tienes TDAH, encontrar el entorno adecuado para estudiar, trabajar o simplemente relajarse puede parecer una batalla constante. El silencio absoluto rara vez es la respuesta: hace que cada pequeño crujido o conversación distante sea una distracción. Por eso muchas personas neurodivergentes recurren al enmascaramiento de sonido. Pero al comparar el ruido marrón vs el ruido blanco para el TDAH, ¿cuál funciona realmente mejor?"
-      ctaHref="/es/focus-sounds-app"
-      ctaLabel="Explorar App de Sonidos para Concentración"
-      secondaryCtaHref="/es/sound-mixer-app"
-      secondaryCtaLabel="Mezcla tu propio audio"
-      tableOfContents={[
-        { id: "adhd-and-sound", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
-        { id: "white-noise", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
-        { id: "brown-noise", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
-        { id: "pink-noise", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
-        { id: "summary", title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco" },
-      ]}
-      relatedArticles={[
-        {
-          href: "/es/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
-          description:
-    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
-        },
-        {
-          href: "/es/blog/best-sounds-for-studying",
-          title: "Mejor Ruido de Color para TDAH: Marrón vs Blanco",
-          description:
-    "Aprenda cómo el ruido blanco, marrón y rosa puede ayudar al TDAH a mejorar el enfoque y reducir las distracciones.",
-        },
-      ]}
-    >
-      <ArticleSection id="adhd-and-sound" title="¿Por qué el cerebro con TDAH necesita sonido de fondo?">
+    return (<ArticlePage slug="best-color-noise-for-adhd" jsonLd={articleJsonLd} topLinkHref="/focus-sounds-app" topLinkLabel="Explorar la página de enfoque" title="Ruido de color y TDAH: ¿Qué muestran las investigaciones?" intro="Algunas personas con TDAH utilizan un sonido de fondo constante para que las distracciones sean menos notorias, pero no existe un color de ruido mejor para todos. Esto es lo que dicen las investigaciones sobre el ruido blanco y rosa, por qué aún faltan pruebas del ruido marrón y cómo probar el sonido sin tratarlo como atención médica." ctaHref="/focus-sounds-app" ctaLabel="Explora la aplicación Focus Sounds" secondaryCtaHref="/sound-mixer-app" secondaryCtaLabel="Mezcla tu propio audio" tableOfContents={[
+            { id: "adhd-and-sound", title: "Lo que dice la evidencia" },
+            { id: "noise-colors", title: "\u00BFQu\u00E9 significan realmente los colores?" },
+            { id: "white-noise", title: "ruido blanco" },
+            { id: "brown-noise", title: "Ruido marr\u00F3n" },
+            { id: "pink-noise", title: "ruido rosa" },
+            { id: "personal-test", title: "Una prueba de comparaci\u00F3n pr\u00E1ctica" },
+            { id: "summary", title: "Qu\u00E9 significan (y no significan) los hallazgos" },
+            { id: "sources", title: "Evidencia y fuentes" },
+        ]} relatedArticles={[
+            {
+                href: "/blog/brown-noise-vs-white-noise-vs-pink-noise",
+                title: "Ruido marr\u00F3n vs blanco vs rosa",
+                description: "Descubra en qu\u00E9 se diferencian los perfiles de sonido antes de crear su mezcla.",
+            },
+            {
+                href: "/blog/best-sounds-for-studying",
+                title: "Sonidos para estudiar",
+                description: "Compare ruido constante, sonidos de la naturaleza y opciones instrumentales para sesiones de estudio.",
+            },
+        ]}>
+      <ArticleSection id="adhd-and-sound" title="¿Qué dice la evidencia sobre el ruido y el TDAH?">
         <p>
-          Para entender por qué funcionan los ruidos de colores, debemos entender cómo el cerebro con TDAH procesa la estimulación. El TDAH a menudo se asocia con una baja activación en la corteza prefrontal, la parte del cerebro responsable de funciones ejecutivas como la concentración y el control de impulsos.
+          Una revisión sistemática y un metanálisis de 2024 que abarcó 13 estudios y 335 participantes encontraron una pequeña mejora en las tareas de atención de laboratorio a partir del ruido blanco o rosa entre niños y adultos jóvenes con TDAH o síntomas elevados. La misma revisión encontró un pequeño efecto negativo en los grupos de comparación sin TDAH.
         </p>
         <p className="mt-4">
-          Cuando el cerebro no está lo suficientemente estimulado, busca constantemente estímulos nuevos e interesantes. Es por eso que podrías distraerte con un pájaro afuera, un reloj que hace tictac o tus propios pensamientos al intentar leer.
+          Es importante destacar que la revisión no encontró estudios elegibles sobre el ruido marrón. También pidió más investigación sobre los resultados del mundo real y los niveles de escucha apropiados. Eso hace que el ruido sea una elección del entorno personal, no un tratamiento probado.
         </p>
         <p className="mt-4">
-          Agregar un sonido de fondo constante y sin distracciones proporciona al cerebro un nivel básico de estimulación. Esto satisface el deseo de información del cerebro, permitiendo que la corteza prefrontal \"se calme\" y se concentre en la tarea en cuestión. Este concepto a menudo se conoce como <strong>resonancia estocástica</strong>.
+          Lea el <a className="text-emerald-300 underline underline-offset-4" href="https://pubmed.ncbi.nlm.nih.gov/38428577/" target="_blank" rel="noopener noreferrer">revisión revisada por pares en PubMed</a> para conocer los detalles y limitaciones del estudio.
+        </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p className="text-2xl font-semibold text-emerald-300">13</p>
+            <p className="mt-1 text-sm text-white/70">estudios elegibles</p>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p className="text-2xl font-semibold text-emerald-300">335</p>
+            <p className="mt-1 text-sm text-white/70">participantes en el análisis del TDAH</p>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p className="text-2xl font-semibold text-emerald-300">pequeño</p>
+            <p className="mt-1 text-sm text-white/70">beneficio promedio de desempeño de la tarea</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="noise-colors" title="¿Qué significan realmente el ruido blanco, rosa y marrón?">
+        <p>
+          Los colores describen cómo se distribuye la energía del sonido a través de frecuencias, no un estado de ánimo, un diagnóstico o una frecuencia cerebral especial. El ruido blanco tiene la misma potencia por hercio, por lo que sus frecuencias superiores suenan prominentes. El ruido rosa pierde energía a medida que aumenta la frecuencia y, a menudo, se asemeja a una lluvia constante. El ruido marrón se hace aún más pronunciado, produciendo un estruendo más profundo.
+        </p>
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[620px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">sonido</th>
+                <th className="px-4 py-3">Carácter típico</th>
+                <th className="px-4 py-3">Evidencia en la revisión de 2024</th>
+                <th className="px-4 py-3">Razón para probarlo</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">blanco</td>
+                <td className="px-4 py-3">Brillante, como estático</td>
+                <td className="px-4 py-3">La mayoría de las pruebas elegibles.</td>
+                <td className="px-4 py-3">Amplio enmascaramiento de sonidos cambiantes.</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">rosa</td>
+                <td className="px-4 py-3">Más suave, parecido a la lluvia</td>
+                <td className="px-4 py-3">Incluido, pero en muchas menos observaciones.</td>
+                <td className="px-4 py-3">Menos silbido de alta frecuencia</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">marrón</td>
+                <td className="px-4 py-3">Profundo, como una cascada</td>
+                <td className="px-4 py-3">No hay estudios elegibles</td>
+                <td className="px-4 py-3">Comodidad personal, superioridad no demostrada.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="white-noise" title="Ruido blanco: enmascaramiento amplio, sonido más brillante">
+        <p>
+          El ruido blanco propaga energía a través del espectro audible y suena similar a la estática de la radio. Su amplio perfil puede hacer que los sonidos ambientales intermitentes sean menos perceptibles.
+        </p>
+        <p className="mt-4">
+          Algunos oyentes encuentran incómodo su silbido de alta frecuencia, mientras que otros lo prefieren. Comience en silencio y deténgase si eso aumenta la irritación o dificulta la tarea.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="white-noise" title="Ruido blanco y TDAH: Bueno, pero a menudo demasiado duro">
+      <ArticleSection id="brown-noise" title="Ruido marrón: popular, pero aún no lo suficientemente estudiado">
         <p>
-          El ruido blanco contiene todas las frecuencias audibles reproducidas a la misma intensidad. Suena similar al siseo de un radiador o a la estática del televisor. Debido a que cubre todo el espectro, es excelente para enmascarar ruidos repentinos y molestos.
+          El ruido marrón se habla con frecuencia en línea debido a su carácter más profundo y con graves intensos. Sin embargo, la popularidad y los informes personales no son lo mismo que la evidencia clínica.
         </p>
         <p className="mt-4">
-          Sin embargo, al discutir <em>qué color de ruido es mejor para el TDAH</em>, el ruido blanco a menudo se queda corto. Muchas personas neurodivergentes tienen sensibilidades de procesamiento sensorial. El siseo de alta frecuencia del ruido blanco puro puede sentirse abrasivo, chirriante y eventualmente sobreestimulante si se escucha durante períodos prolongados.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="brown-noise" title="Ruido marrón: El abrumador favorito para el TDAH">
-        <p>
-          Si pasas tiempo en comunidades de TDAH en línea, rápidamente notarás a un claro ganador: el <strong>ruido marrón</strong>.
+          El ruido marrón tiene mucha más energía en las frecuencias más bajas (los graves) y muy poca en las frecuencias altas. Suena como una cascada profunda y retumbante o el rugido ahogado de la cabina de un avión.
         </p>
         <p className="mt-4">
-          El ruido marrón tiene significativamente más energía en las frecuencias más bajas (los graves) y muy poca en las altas frecuencias. Suena como una cascada profunda y retumbante o el rugido ahogado de la cabina de un avión.
-        </p>
-        <p className="mt-4">
-          <strong>¿Por qué el ruido marrón es tan efectivo para el TDAH?</strong>
+          <strong>¿Por qué alguien podría preferir el ruido marrón?</strong>
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
-          <li><strong>El efecto \"Manta Pesada\":</strong> Muchos describen el ruido marrón como una manta acústica pesada. Su profundidad proporciona una información sensorial intensa y reconfortante sin ser \"aguda\" o irritante.</li>
-          <li><strong>Silenciar el monólogo interno:</strong> La naturaleza pesada e inmersiva del ruido marrón es increíblemente efectiva para ahogar los pensamientos acelerados y tangenciales que a menudo interrumpen la concentración.</li>
-          <li><strong>Agradable a los sentidos:</strong> Debido a que carece del siseo agudo del ruido blanco, puedes escucharlo durante horas mientras estudias o trabajas sin experimentar fatiga auditiva.</li>
+          <li><strong>Menos energía de alta frecuencia:</strong> Puede parecer más suave que el ruido blanco para los oyentes a quienes no les gustan los silbido.</li>
+          <li><strong>Enmascaramiento constante:</strong> Un fondo continuo puede hacer que algunos cambios ambientales sean menos perceptibles.</li>
+          <li><strong>Comodidad personal:</strong> Un sonido más profundo puede simplemente ser más fácil para algunas personas mantenerlo en segundo plano.</li>
         </ul>
       </ArticleSection>
 
-      <ArticleSection id="pink-noise" title="Ruido rosa: El punto medio">
+      <ArticleSection id="pink-noise" title="Ruido rosa: el término medio">
         <p>
-          Si el ruido marrón se siente demasiado profundo o amortiguado para tu gusto, el ruido rosa es el compromiso perfecto. Tiene más graves que el ruido blanco pero retiene algunas de las frecuencias más altas, sonando muy similar a una lluvia constante y fuerte.
+          Si el ruido marrón se siente demasiado profundo o apagado, el ruido rosa ofrece un perfil de frecuencia media. Tiene menos energía de frecuencia superior que el ruido blanco pero más que el ruido marrón y puede parecerse a una tormenta intensa y constante.
         </p>
         <p className="mt-4">
-          El ruido rosa es muy recomendable para dormir, y algunas personas con TDAH descubren que es el fondo con un sonido más \"natural\" para leer.
+          El ruido rosa se incluyó junto con el ruido blanco en la revisión de la investigación, pero el beneficio promedio fue pequeño y no predice una respuesta individual.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="summary" title="Conclusión: ¿Qué color de ruido es mejor para el TDAH?">
+      <ArticleSection id="personal-test" title="Una forma práctica de probar el ruido durante el trabajo de enfoque.">
         <p>
-          No existe un color de ruido que sea el mejor para todas las personas con TDAH. Una revisión de 2024 halló un beneficio medio pequeño para el ruido blanco o rosa, pero no encontró estudios elegibles sobre ruido marrón.
+          Una preferencia puede resultar convincente y al mismo tiempo estar determinada por la tarea, la hora del día o las expectativas. Una pequeña comparación repetible es más útil que elegir el color con las afirmaciones más fuertes en línea.
+        </p>
+        <ol className="mt-4 list-decimal space-y-3 pl-5 text-white/70">
+          <li>Elija una tarea repetible de 20 minutos, como revisión, tarjetas didácticas o un conjunto de problemas de práctica.</li>
+          <li>Complételo una vez en silencio y otra vez con un sonido constante a un nivel bajo y cómodo.</li>
+          <li>Mantenga la habitación, la dificultad de la tarea y la hora del día lo más similares posible.</li>
+          <li>Registre los elementos completados, los errores y una puntuación simple de distracción del 1 al 5.</li>
+          <li>Repita varios días antes de decidirse. Deténgase si el sonido le provoca fatiga, irritación o zumbidos.</li>
+        </ol>
+        <p className="mt-4">
+          Este es un experimento en el espacio de trabajo, no una evaluación o tratamiento del TDAH. Un sonido que ayuda con la lectura repetitiva aún puede interferir con el aprendizaje del idioma, la conversación o el razonamiento complejo.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection id="summary" title="Qué significan (y no significan) los hallazgos">
+        <p>
+          No existe un ganador basado en evidencia para todas las personas. El ruido blanco y el rosa tienen evidencia limitada de un pequeño beneficio promedio en el desempeño de tareas en jóvenes con TDAH; El ruido marrón aún no se ha probado adecuadamente en ensayos elegibles.
         </p>
         <p className="mt-4">
-          Sin embargo, no tienes que elegir solo uno. El enfoque más efectivo es usar una aplicación como <strong>Calma</strong> para mezclar tu propio paisaje sonoro. Es posible que descubras que una capa base de ruido marrón mezclada con el sonido del fuego crepitante y un trueno distante proporciona el nivel exacto de estimulación que tu cerebro necesita para prosperar hoy.
+          Pruebe un sonido suave a la vez durante una tarea repetible, compárelo con el silencio y quédese con lo que le parezca útil. Calma puede ayudar con ese experimento, pero no diagnostica ni trata el TDAH.
         </p>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
+        <div className="mt-6 rounded-2xl border border-amber-300/20 bg-amber-300/10 p-5">
+          <p className="font-semibold text-amber-100">La limitación importante</p>
+          <p className="mt-2 text-sm leading-6 text-white/70">
+            Los estudios midieron tareas breves de laboratorio, principalmente en niños y adultos jóvenes. No muestran que el ruido reduzca los síntomas centrales del TDAH, reemplace la atención establecida o mejore el desempeño escolar y laboral durante meses.
+          </p>
+        </div>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
             __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "¿Qué color de ruido es mejor para el TDAH?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No existe un color universalmente mejor. Una revisión de 2024 encontró un beneficio medio pequeño del ruido blanco o rosa en tareas de laboratorio, pero ningún estudio elegible sobre ruido marrón."
-                  }
-                },
-                {
-                  "@type": "Question",
-                  "name": "¿Es el ruido marrón mejor que el ruido blanco para el TDAH?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No lo demuestra la evidencia actual. Algunas personas prefieren su sonido más grave, pero la respuesta es individual y el ruido no es un tratamiento para el TDAH."
-                  }
-                }
-              ]
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "\u00BFQu\u00E9 ruido de color es mejor para el TDAH?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No existe un mejor color de ruido para el TDAH. Un metan\u00E1lisis de 2024 encontr\u00F3 un peque\u00F1o beneficio promedio del ruido blanco o rosa en tareas de laboratorio en j\u00F3venes con TDAH o s\u00EDntomas elevados, pero no encontr\u00F3 estudios elegibles sobre ruido marr\u00F3n."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "\u00BFEs el ruido marr\u00F3n mejor que el ruido blanco para el TDAH?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No seg\u00FAn la evidencia actual. Algunas personas personalmente prefieren el ruido marr\u00F3n porque suena m\u00E1s profundo, pero la revisi\u00F3n de 2024 no encontr\u00F3 estudios elegibles sobre ruido marr\u00F3n. Las respuestas individuales var\u00EDan."
+                        }
+                    }
+                ]
             })
-          }}
-        />
+        }}/>
       </ArticleSection>
-    </ArticlePage>
-  );
+
+      <ArticleSection id="sources" title="Evidencia y fuentes">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/38428577/" target="_blank" rel="noopener noreferrer">
+              Revisión sistemática y metanálisis del ruido blanco y rosa para el desempeño de tareas en el TDAH
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/17683456/" target="_blank" rel="noopener noreferrer">
+              Estudio experimental de ruido blanco y rendimiento cognitivo en niños con TDAH
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/25393410/" target="_blank" rel="noopener noreferrer">
+              Estudio que compara las respuestas al ruido blanco en todos los niveles de atención
+            </a>
+          </li>
+        </ul>
+      </ArticleSection>
+    </ArticlePage>);
 }

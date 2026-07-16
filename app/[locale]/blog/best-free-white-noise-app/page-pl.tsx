@@ -1,155 +1,165 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
-import Image from "next/image";
-
 export const metadata: Metadata = {
-  title: "Najlepsza darmowa aplikacja z białym szumem do snu w 2026 | Calma",
-  description:
-    "Szukasz najlepszej darmowej aplikacji z białym szumem, która pomoże Ci zasnąć? Odkryj, dlaczego Calma to idealny wybór.",
-  keywords: [
-    "najlepsza aplikacja biały szum",
-    "darmowe dźwięki do snu",
-    "aplikacja z białym szumem",
-    "biały szum za darmo",
-    "calma aplikacja",
-  ],
-  alternates: {
-    canonical: "https://www.calmasounds.com/pl/blog/best-free-white-noise-app",
-  },
-  openGraph: {
-    title: "Najlepsza darmowa aplikacja z białym szumem do snu w 2026 | Calma",
-    description:
-      "Szukasz najlepszej darmowej aplikacji z białym szumem, która pomoże Ci zasnąć? Odkryj, dlaczego Calma to idealny wybór.",
-    url: "https://www.calmasounds.com/pl/blog/best-free-white-noise-app",
-    siteName: "Calma",
-    locale: "pl_PL",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Najlepsza darmowa aplikacja z białym szumem do snu w 2026 | Calma",
-    description:
-      "Szukasz najlepszej darmowej aplikacji z białym szumem, która pomoże Ci zasnąć? Odkryj, dlaczego Calma to idealny wybór.",
-  },
+    title: "Najlepsza darmowa aplikacja do bia\u0142ego szumu: na co zwr\u00F3ci\u0107 uwag\u0119 | Calma",
+    description: "Por\u00F3wnaj aplikacje, maszyny i transmisj\u0119 strumieniow\u0105 z bia\u0142ym szumem. Zanim dokonasz wyboru, sprawd\u017A d\u017Awi\u0119k offline, p\u0142ynne p\u0119tle, timery, miksowanie i uczciw\u0105 cen\u0119.",
+    keywords: [
+        "najlepsza aplikacja do bia\u0142ego szumu",
+        "darmowe d\u017Awi\u0119ki do spania",
+        "aplikacja do tworzenia bia\u0142ego szumu",
+        "bezp\u0142atna aplikacja bia\u0142ego szumu",
+        "najlepsza darmowa aplikacja do bia\u0142ego szumu",
+        "aplikacja spokojna",
+    ],
+    alternates: {
+        canonical: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    },
+    openGraph: {
+        title: "Najlepsza darmowa aplikacja do bia\u0142ego szumu: na co zwr\u00F3ci\u0107 uwag\u0119 | Calma",
+        description: "Praktyczna lista kontrolna do por\u00F3wnywania bezp\u0142atnych aplikacji, maszyn i opcji przesy\u0142ania strumieniowego z bia\u0142ym szumem.",
+        url: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+        siteName: "Calma",
+        locale: "pl_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Najlepsza darmowa aplikacja do bia\u0142ego szumu: na co zwr\u00F3ci\u0107 uwag\u0119 | Calma",
+        description: "Por\u00F3wnaj d\u017Awi\u0119k offline, p\u0142ynne p\u0119tle, timery, miksowanie i ceny, zanim wybierzesz aplikacj\u0119 d\u017Awi\u0119kow\u0105 do snu.",
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Najlepsza darmowa aplikacja z białym szumem do snu w 2026",
-  description:
-    "Szukasz najlepszej darmowej aplikacji z białym szumem, która pomoże Ci zasnąć? Odkryj, dlaczego Calma to idealny wybór.",
-  author: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/pl/blog/best-free-white-noise-app",
-  datePublished: "2026-05-04",
-  dateModified: "2026-05-04",
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Najlepsza darmowa aplikacja do bia\u0142ego szumu do snu",
+    description: "Praktyczny przewodnik po por\u00F3wnaniu bezp\u0142atnych aplikacji bia\u0142ego szumu, dedykowanych maszyn i opcji przesy\u0142ania strumieniowego do snu.",
+    author: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    publisher: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    mainEntityOfPage: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    datePublished: "2026-05-04",
+    dateModified: "2026-05-04",
 };
-
 export default function BestFreeWhiteNoiseAppPage() {
-  return (
-    <ArticlePage
-      slug="best-free-white-noise-app"
-      jsonLd={articleJsonLd}
-      topLinkHref="/pl/white-noise-app"
-      topLinkLabel="Poznaj stronę o białym szumie"
-      title="Najlepsza darmowa aplikacja z białym szumem do snu"
-      intro="Przy tysiącach aplikacji dźwiękowych dostępnych na rynku, znalezienie najlepszej darmowej aplikacji z białym szumem może przytłaczać. Wiele z nich jest zalanych inwazyjnymi reklamami, skomplikowanymi interfejsami lub wymaga drogich subskrypcji tylko po to, by posłuchać podstawowych dźwięków deszczu. Jeśli szukasz darmowych dźwięków do snu, które naprawdę pomogą Ci się zrelaksować, oto na co powinieneś zwrócić uwagę i dlaczego Calma wyróżnia się jako ostateczne rozwiązanie."
-      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-      ctaLabel="Pobierz Calma za darmo"
-      secondaryCtaHref="/pl/sound-mixer-app"
-      secondaryCtaLabel="Poznaj mikser dźwięków"
-      tableOfContents={[
-        { id: "why-use-an-app", title: "Dlaczego aplikacja zamiast YouTube?" },
-        { id: "what-to-look-for", title: "Cechy świetnej aplikacji do snu" },
-        { id: "why-calma", title: "Dlaczego Calma to najlepszy wybór" },
-        { id: "how-to-start", title: "Jak zacząć miksować dźwięki" },
-      ]}
-      relatedArticles={[
-        {
-          href: "/pl/blog/white-noise-for-sleep",
-          title: "Biały szum do snu",
-          description:
-            "Dowiedz się, jak biały szum może pomóc Ci szybciej zasnąć i utrzymać głęboki sen.",
-        },
-        {
-          href: "/pl/blog/best-sounds-for-sleep",
-          title: "Najlepsze dźwięki do snu",
-          description:
-            "Odkryj, które dźwięki w tle są najbardziej efektywne podczas wieczornych rutyn.",
-        },
-      ]}
-    >
-      <ArticleSection id="why-use-an-app" title="Dlaczego warto używać aplikacji zamiast YouTube?">
+    return (<ArticlePage slug="best-free-white-noise-app" jsonLd={articleJsonLd} topLinkHref="/white-noise-app" topLinkLabel="Przeglądaj stronę dotyczącą białego szumu" title="Jak wybrać najlepszą bezpłatną aplikację White Noise" intro="Najlepsza aplikacja do białego szumu to nie ta z najdłuższą listą funkcji. To ten, który może niezawodnie grać w nocy, brzmi naturalnie, wyjaśnia, co jest darmowe i nie przeszkadza. W tym przewodniku porównano aplikacje z dedykowanymi maszynami i transmisją strumieniową, a następnie przedstawiono powtarzalną listę kontrolną do oceny dowolnej opcji – w tym Calmy." ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" ctaLabel="Pobierz Calmę za darmo" secondaryCtaHref="/sound-mixer-app" secondaryCtaLabel="Poznaj aplikację do miksowania dźwięku" tableOfContents={[
+            { id: "why-use-an-app", title: "Aplikacja vs maszyna vs streaming" },
+            { id: "what-free-means", title: "Co powinno oznacza\u0107 \u201Ebezp\u0142atne\u201D." },
+            { id: "what-to-look-for", title: "Siedmiopunktowa lista kontrolna oceny" },
+            { id: "why-calma", title: "Gdzie pasuje Calma" },
+            { id: "how-to-start", title: "Por\u00F3wnanie siedmiu nocy" },
+        ]} relatedArticles={[
+            {
+                href: "/blog/white-noise-for-sleep",
+                title: "Bia\u0142y szum na sen",
+                description: "Dowiedz si\u0119, jak bia\u0142y szum mo\u017Ce pom\u00F3c Ci szybciej zasn\u0105\u0107 i d\u0142u\u017Cej spa\u0107.",
+            },
+            {
+                href: "/blog/best-sounds-for-sleep",
+                title: "Najlepsze d\u017Awi\u0119ki do snu",
+                description: "Odkryj, kt\u00F3re d\u017Awi\u0119ki t\u0142a s\u0105 najskuteczniejsze w rutynowych czynno\u015Bciach przed snem.",
+            },
+        ]}>
+      <ArticleSection id="why-use-an-app" title="Aplikacja białego szumu vs maszyna vs streaming">
         <p>
-          Kuszące jest włączenie 8-godzinnego wideo z dźwiękami deszczu na YouTube. Jednak to rozwiązanie ma istotne wady. Odtwarzanie wideo wyczerpuje baterię, wymaga aktywnego połączenia z internetem i – co najgorsze – może przerwać sen głośnymi, nagłymi reklamami w środku nocy.
+          Każdy format rozwiązuje inny problem. Dedykowana maszyna zapewnia fizyczną kontrolę i utrzymuje telefon poza sypialnią. Przesyłanie strumieniowe jest wygodne w przypadku okazjonalnego słuchania, ale zależy od łączności i zachowania platformy. Aplikacja offline jest przenośna i może zapewnić większą kontrolę nad miksowaniem, timerami i indywidualnymi poziomami dźwięku.
+        </p>
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Opcja</th>
+                <th className="px-4 py-3">Najlepsze dla</th>
+                <th className="px-4 py-3">Kompromis</th>
+                <th className="px-4 py-3">Sprawdź przed snem</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Aplikacja offline</td>
+                <td className="px-4 py-3">Podróże, niestandardowe miksy, timery</td>
+                <td className="px-4 py-3">Wykorzystuje Twój telefon i baterię</td>
+                <td className="px-4 py-3">Odtwarzanie w tle i dostęp offline</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Maszyna dźwiękowa</td>
+                <td className="px-4 py-3">Stała rutyna przy łóżku</td>
+                <td className="px-4 py-3">Dodatkowe urządzenie, mniej kombinacji</td>
+                <td className="px-4 py-3">Układ przycisków i minimalna głośność</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Transmisja strumieniowa</td>
+                <td className="px-4 py-3">Od czasu do czasu próbuję jakiegoś dźwięku</td>
+                <td className="px-4 py-3">Zmiany w sieci, reklamach lub odtwarzaniu</td>
+                <td className="px-4 py-3">Ustawienia przerw i autoodtwarzania</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="what-free-means" title="Co właściwie powinna oznaczać „bezpłatna aplikacja białego szumu”?">
+        <p>
+          „Bezpłatna” może oznaczać stałą wersję podstawową, krótką wersję próbną, odtwarzanie z reklamami lub pobieranie, które staje się przydatne dopiero po wykupieniu subskrypcji. Żaden z tych modeli nie jest automatycznie błędny, ale różnica powinna być widoczna, zanim wyrobisz sobie nawyk zasypiania wokół aplikacji.
         </p>
         <p className="mt-4">
-          Dedykowana <strong>aplikacja z białym szumem</strong> działa w trybie offline, zużywa minimum baterii i działa płynnie w tle, gdy ekran jest zablokowany. Zapewnia to o wiele bardziej stabilne i niezawodne środowisko dla nieprzerwanego odpoczynku.
+          Sprawdź, które dźwięki, warstwy miksera, timery i funkcje offline pozostają dostępne bez płatności. Sprawdź także, czy dostęp premium jest subskrypcją, czy jednorazowym zakupem. Łatwiej ocenić wyraźne ograniczenie niż dużą bibliotekę ukrytą za niejasnym procesem.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="what-to-look-for" title="Co czyni aplikację do snu wspaniałą?">
+      <ArticleSection id="what-to-look-for" title="Siedmiopunktowa lista kontrolna do porównywania aplikacji dźwiękowych do snu">
         <p>
-          Oceniając aplikacje oferujące <em>darmowe dźwięki do snu</em>, powinieneś nadać priorytet następującym funkcjom:
+          Oceń zachowanie, na którym faktycznie będziesz polegać w nocy, a nie tylko liczbę dźwięków pokazywanych na stronie sklepu:
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
-          <li><strong>Wysoka jakość dźwięku:</strong> Dźwięki nie powinny brzmieć, jakby były nagrane starym telefonem. Muszą być wyraźne i płynnie się zapętlać bez zauważalnego \"skoku\" po restarcie utworu.</li>
-          <li><strong>Tworzenie własnych miksów:</strong> Najlepsze aplikacje pozwalają na miksowanie wielu dźwięków jednocześnie. Możesz chcieć połączyć szum brązowy z łagodną burzą i trzaskającym ogniem.</li>
-          <li><strong>Działanie offline:</strong> Nie powinieneś potrzebować Wi-Fi, aby zasnąć. Dobra aplikacja pobiera dźwięki bezpośrednio na urządzenie.</li>
-          <li><strong>Wyłącznik czasowy (Timer):</strong> Aplikacja powinna automatycznie przyciszać się i zamykać po ustalonym czasie, aby oszczędzać baterię.</li>
+          <li><strong>Gładkie pętle:</strong> Słuchaj kliknięć, nagłych zmian lub oczywistego ponownego uruchomienia po kilku minutach.</li>
+          <li><strong>Przydatny darmowy poziom:</strong> Potwierdź, co pozostanie dostępne po zakończeniu okresu próbnego.</li>
+          <li><strong>Odtwarzanie offline:</strong> Zanim zaczniesz na nim polegać w podróży, przetestuj go w trybie samolotowym.</li>
+          <li><strong>Odtwarzanie w tle:</strong> Zablokuj ekran i potwierdź, że dźwięk jest kontynuowany zgodnie z oczekiwaniami.</li>
+          <li><strong>Niezależne mieszanie:</strong> Jeśli nakładasz dźwięki na siebie, każde źródło powinno mieć własną regulację głośności.</li>
+          <li><strong>Zachowanie timera:</strong> Sprawdź, czy odtwarzanie nie zatrzymuje się nagle lub nie zanika oraz czy timer działa przy zablokowanym ekranie.</li>
+          <li><strong>Interfejs o niskim tarciu:</strong> Powinieneś być w stanie wznowić znajomy miks bez poruszania się w nocy na jasnych lub skomplikowanych ekranach.</li>
         </ul>
       </ArticleSection>
 
-      <ArticleSection id="why-calma" title="Dlaczego Calma to najlepsza darmowa aplikacja z białym szumem">
+      <ArticleSection id="why-calma" title="Gdzie Calma mieści się na tej liście kontrolnej">
         <p>
-          Stworzyliśmy <strong>Calma</strong>, ponieważ mieliśmy dość aplikacji do snu, które były zbyt skomplikowane lub blokowały podstawowe funkcje za paywallem. Oto dlaczego Calma stała się aplikacją pierwszego wyboru dla tysięcy osób szukających lepszego odpoczynku:
+          Calma jest przeznaczona dla osób, które cenią niestandardowe miksowanie i korzystanie w trybie offline zamiast śledzenia snu, historii lub platformy opartej na koncie. Jego darmowy mikser obsługuje trzy jednoczesne warstwy, a pełna biblioteka zawiera ponad 190 dźwięków. Dostęp premium jest dostępny w formie jednorazowego odblokowania na całe życie, a nie cyklicznej subskrypcji.
         </p>
         <div className="mt-6 space-y-4">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">1. Piękny design bez rozpraszaczy</h3>
-            <p className="mt-2 text-sm text-white/70">Nasz interfejs w trybie ciemnym został zaprojektowany specjalnie z myślą o użytkowaniu w nocy. Brak jasnych kolorów czy zagmatwanych menu, które mogłyby Cię rozbudzić.</p>
+            <h3 className="font-semibold text-emerald-400">1. Sterowanie przyjazne nocą</h3>
+            <p className="mt-2 text-sm text-white/70">Ciemny interfejs sprawia, że mikser dźwięku jest wizualnie prosty, gdy wracasz do niego w nocy.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">2. Zaawansowany mikser dźwięków</h3>
-            <p className="mt-2 text-sm text-white/70">Stwórz idealne otoczenie, łącząc do 10 dźwięków jednocześnie. Dostosuj głośność wiatru niezależnie od deszczu czy bazowego białego szumu.</p>
+            <h3 className="font-semibold text-emerald-400">2. Niezależne warstwy dźwiękowe</h3>
+            <p className="mt-2 text-sm text-white/70">Połącz kolory szumu z deszczem lub naturą i dostosuj każdą warstwę niezależnie. Darmowy mikser obsługuje trzy warstwy.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">3. Ogromna biblioteka darmowych dźwięków</h3>
-            <p className="mt-2 text-sm text-white/70">Od klasycznego białego, różowego i brązowego szumu, przez głęboką atmosferę lasu i fale oceanu, po techniki oddechowe – masz tu wszystko, czego potrzebujesz.</p>
+            <h3 className="font-semibold text-emerald-400">3. Odtwarzanie offline bez stałych opłat</h3>
+            <p className="mt-2 text-sm text-white/70">Dźwięki działają bez aktywnego połączenia, a użytkownicy, którzy chcą dostępu premium, mogą wybrać odblokowanie na całe życie zamiast planu miesięcznego.</p>
           </div>
         </div>
       </ArticleSection>
 
-      <ArticleSection id="how-to-start" title="Jak zacząć budować swój miks">
+      <ArticleSection id="how-to-start" title="Zamiast zgadywać, użyj porównania siedmiu nocy">
         <p>
-          Jeśli dopiero zaczynasz przygodę z dźwiękami do snu, polecamy zacząć od prostych połączeń. Spróbuj zmieszać <strong>Różowy Szum</strong> (na 60% głośności) z <strong>Lekkim deszczem</strong> (na 40% głośności). To tworzy wysoce efektywny koc akustyczny, który maskuje zewnętrzne zakłócenia, pozostając jednocześnie miękkim i naturalnym.
+          Zacznij od jednego dźwięku na niskim, wygodnym poziomie, a nie od złożonego miksu. Używaj tego samego dźwięku przez trzy noce, następnie wypróbuj inną opcję przez trzy noce i zachowaj jedną spokojną noc jako porównanie, jeśli pozwala na to otoczenie.
         </p>
-        <div className="mt-8 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-            aria-label="Pobierz aplikację Calma z Google Play"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Pobierz z Google Play"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <li>Zapisz przybliżony czas uspokojenia się, zapamiętane przebudzenia i poranny komfort.</li>
+          <li>Utrzymuj spójną głośność i pozycję głośników.</li>
+          <li>Jeśli pętla stanie się zauważalna lub irytująca, ta aplikacja lub dźwięk nie będzie dla Ciebie odpowiedni.</li>
+          <li>Nie interpretuj jednej wyjątkowo dobrej lub złej nocy jako dowodu.</li>
+        </ul>
+        <p className="mt-4">
+          Sen różni się naturalnie, więc celem nie jest diagnoza naukowa. Należy wybrać najmniej inwazyjną konfigurację, która sprawi, że Twoja sypialnia będzie bardziej przewidywalna.
+        </p>
       </ArticleSection>
-    </ArticlePage>
-  );
+    </ArticlePage>);
 }

@@ -1,228 +1,165 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
-import Image from "next/image";
-
 export const metadata: Metadata = {
-  title: "Die beste kostenlose White-Noise-App für besseren Schlaf | Calma",
-  description:
-    "Suchen Sie eine Alternative zu Calm oder BetterSleep? Entdecken Sie, warum Calma die beste 100% kostenlose White-Noise-App zum Schlafen und Entspannen ist.",
-  keywords: [
-    "beste white noise app kostenlos",
-    "kostenlose schlaf app",
-    "calm alternative kostenlos",
-    "bettersleep alternative gratis",
-    "weißes rauschen app gratis",
-    "schlafgeräusche app",
-    "calma app",
-    "besser schlafen App",
-    "Tiefschlaf fördern",
-    "Einschlafhilfe",
-    "beruhigende Geräusche",
-    "Schlafqualität verbessern"
-  ],
-  alternates: {
-    canonical: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",
-  },
-  openGraph: {
-    title: "Die beste kostenlose White-Noise-App für besseren Schlaf | Calma",
-    description:
-      "Suchen Sie eine Alternative zu Calm oder BetterSleep? Entdecken Sie, warum Calma die beste 100% kostenlose White-Noise-App zum Schlafen ist.",
-    url: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",
-    siteName: "Calma",
-    locale: "de_DE",
-    type: "article",
-  },
+    title: "Beste kostenlose App f\u00FCr wei\u00DFes Rauschen: Worauf Sie achten sollten | Calma",
+    description: "Vergleichen Sie Apps, Maschinen und Streaming mit wei\u00DFem Rauschen. \u00DCberpr\u00FCfen Sie Offline-Audio, reibungslose Loops, Timer, Mischung und ehrliche Preise, bevor Sie sich entscheiden.",
+    keywords: [
+        "beste App f\u00FCr wei\u00DFes Rauschen",
+        "kostenlose Schlafger\u00E4usche",
+        "App zum Erzeugen von wei\u00DFem Rauschen",
+        "kostenlose App f\u00FCr wei\u00DFes Rauschen",
+        "beste kostenlose App f\u00FCr wei\u00DFes Rauschen",
+        "Calma-App",
+    ],
+    alternates: {
+        canonical: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    },
+    openGraph: {
+        title: "Beste kostenlose App f\u00FCr wei\u00DFes Rauschen: Worauf Sie achten sollten | Calma",
+        description: "Eine praktische Checkliste zum Vergleich kostenloser Apps, Ger\u00E4te und Streaming-Optionen f\u00FCr wei\u00DFes Rauschen.",
+        url: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+        siteName: "Calma",
+        locale: "en_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Beste kostenlose App f\u00FCr wei\u00DFes Rauschen: Worauf Sie achten sollten | Calma",
+        description: "Vergleichen Sie Offline-Audio, Smooth Loops, Timer, Mischung und Preise, bevor Sie sich f\u00FCr eine Sleep-Sound-App entscheiden.",
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Die beste kostenlose White-Noise-App für besseren Schlaf",
-  description:
-    "Entdecken Sie, warum Calma die perfekte kostenlose Alternative zu kostenpflichtigen Apps wie Calm und BetterSleep ist.",
-  author: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/de/blog/best-free-white-noise-app",
-  datePublished: "2026-05-04",
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: "Beste kostenlose White Noise-App zum Schlafen",
+    description: "Ein praktischer Leitfaden zum Vergleich kostenloser Apps f\u00FCr wei\u00DFes Rauschen, dedizierter Ger\u00E4te und Streaming-Optionen f\u00FCr den Schlaf.",
+    author: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    publisher: {
+        "@type": "Organization",
+        name: "Calma",
+    },
+    mainEntityOfPage: "https://www.calmasounds.com/blog/best-free-white-noise-app",
+    datePublished: "2026-05-04",
+    dateModified: "2026-05-04",
 };
-
-export default function BestFreeWhiteNoiseAppPageDE() {
-  return (
-    <ArticlePage
-      slug="best-free-white-noise-app"
-      jsonLd={articleJsonLd}
-      topLinkHref="/de/white-noise-app"
-      topLinkLabel="White-Noise-App entdecken"
-      title="Die beste kostenlose White-Noise-App für den Schlaf"
-      intro="Mit Tausenden von Sound-Apps auf dem Markt kann die Suche nach der besten kostenlosen White-Noise-App überwältigend sein. Viele beliebte Optionen wie Calm oder BetterSleep erfordern mittlerweile teure monatliche Abonnements. Wenn Sie nach kostenlosen Schlafgeräuschen suchen, die wirklich helfen, ohne versteckte Kosten zu verursachen, zeigen wir Ihnen hier, warum Calma die ultimative Alternative ist."
-      ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-      ctaLabel="Calma kostenlos herunterladen"
-      secondaryCtaHref="/de/sound-mixer-app"
-      secondaryCtaLabel="Sound-Mixer entdecken"
-      tableOfContents={[
-        { id: "warum-app", title: "Warum eine Schlaf-App nutzen?" },
-        { id: "calma-vs-konkurrenz", title: "Kostenlose Alternativen zu Calm & BetterSleep" },
-        { id: "warum-calma", title: "Warum Calma die beste Wahl ist" },
-        { id: "erster-mix", title: "Wie Sie Ihren ersten Mix erstellen" },
-        { id: "faq", title: "Häufig gestellte Fragen (FAQ)" },
-      ]}
-      relatedArticles={[
-        {
-          href: "/de/blog/white-noise-for-sleep",
-          title: "Weißes Rauschen zum Schlafen",
-          description: "Erfahren Sie, wie weißes Rauschen Ihnen hilft, schneller einzuschlafen.",
-        },
-        {
-          href: "/de/blog/best-sounds-for-sleep",
-          title: "Die besten Geräusche zum Einschlafen",
-          description: "Entdecken Sie, welche Hintergrundgeräusche am effektivsten sind.",
-        },
-      ]}
-    >
-      <ArticleSection id="warum-app" title="Warum eine Schlaf-App anstelle von YouTube nutzen?">
-        <p className="mt-4 leading-8 text-white/70">
-          Es ist verlockend, einfach ein 8-stündiges YouTube-Video mit Regengeräuschen zu laden. Das Streamen von Videos verbraucht jedoch viel Akku, erfordert eine Internetverbindung und kann Ihren Schlaf durch plötzliche, laute Werbung unterbrechen.
+export default function BestFreeWhiteNoiseAppPage() {
+    return (<ArticlePage slug="best-free-white-noise-app" jsonLd={articleJsonLd} topLinkHref="/white-noise-app" topLinkLabel="Entdecken Sie die Seite „Weißes Rauschen“." title="So wählen Sie die beste kostenlose App für weißes Rauschen aus" intro="Die beste App für weißes Rauschen ist nicht die mit der längsten Funktionsliste. Es ist das Gerät, das nachts zuverlässig spielt, für Sie natürlich klingt, erklärt, was kostenlos ist und Ihnen nicht im Weg steht. Dieser Leitfaden vergleicht Apps mit dedizierten Maschinen und Streaming und bietet Ihnen dann eine wiederholbare Checkliste zur Bewertung aller Optionen – einschließlich Calma." ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" ctaLabel="Laden Sie Calma kostenlos herunter" secondaryCtaHref="/sound-mixer-app" secondaryCtaLabel="Entdecken Sie die Soundmixer-App" tableOfContents={[
+            { id: "why-use-an-app", title: "App vs. Maschine vs. Streaming" },
+            { id: "what-free-means", title: "Was \u201Ekostenlos\u201C bedeuten sollte" },
+            { id: "what-to-look-for", title: "Checkliste zur Bewertung in sieben Punkten" },
+            { id: "why-calma", title: "Wo Calma passt" },
+            { id: "how-to-start", title: "Ein Sieben-N\u00E4chte-Vergleich" },
+        ]} relatedArticles={[
+            {
+                href: "/blog/white-noise-for-sleep",
+                title: "Wei\u00DFes Rauschen zum Schlafen",
+                description: "Erfahren Sie, wie wei\u00DFes Rauschen Ihnen helfen kann, schneller einzuschlafen und l\u00E4nger durchzuschlafen.",
+            },
+            {
+                href: "/blog/best-sounds-for-sleep",
+                title: "Beste Ger\u00E4usche zum Schlafen",
+                description: "Entdecken Sie, welche Hintergrundger\u00E4usche f\u00FCr die Schlafenszeitroutine am effektivsten sind.",
+            },
+        ]}>
+      <ArticleSection id="why-use-an-app" title="White Noise App vs. Maschine vs. Streaming">
+        <p>
+          Jedes Format löst ein anderes Problem. Eine spezielle Maschine bietet physische Kontrollen und hält das Telefon vom Schlafzimmer fern. Streaming eignet sich für gelegentliches Hören, hängt jedoch von der Konnektivität und dem Plattformverhalten ab. Eine Offline-App ist portabel und bietet mehr Kontrolle über Mixing, Timer und individuelle Tonpegel.
         </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Eine dedizierte <strong>White-Noise-App</strong> funktioniert offline, verbraucht minimalen Akku und läuft nahtlos im Hintergrund bei gesperrtem Bildschirm.
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Option</th>
+                <th className="px-4 py-3">Am besten für</th>
+                <th className="px-4 py-3">Kompromiss</th>
+                <th className="px-4 py-3">Überprüfen Sie dies vor dem Zubettgehen</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Offline-App</td>
+                <td className="px-4 py-3">Reisen, individuelle Mischungen, Timer</td>
+                <td className="px-4 py-3">Verwendet Ihr Telefon und Ihren Akku</td>
+                <td className="px-4 py-3">Hintergrundwiedergabe und Offline-Zugriff</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Soundmaschine</td>
+                <td className="px-4 py-3">Eine feste Routine am Krankenbett</td>
+                <td className="px-4 py-3">Zusätzliches Gerät, weniger Kombinationen</td>
+                <td className="px-4 py-3">Tastenlayout und Mindestlautstärke</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Streaming</td>
+                <td className="px-4 py-3">Probiere gelegentlich einen Ton aus</td>
+                <td className="px-4 py-3">Netzwerk-, Anzeigen- oder Wiedergabeänderungen</td>
+                <td className="px-4 py-3">Unterbrechungen und Autoplay-Einstellungen</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="what-free-means" title="Was soll eigentlich „kostenlose App für weißes Rauschen“ bedeuten?">
+        <p>
+          „Kostenlos“ kann eine dauerhafte Basisversion, eine kurze Testversion, eine werbefinanzierte Wiedergabe oder einen Download bedeuten, der erst nach Abschluss eines Abonnements nützlich wird. Keines dieser Modelle ist automatisch falsch, aber der Unterschied sollte sichtbar sein, bevor Sie eine Gewohnheit zur Schlafenszeit rund um die App entwickeln.
+        </p>
+        <p className="mt-4">
+          Prüfen Sie, welche Sounds, Mixer-Layer, Timer und Offline-Funktionen weiterhin ohne Bezahlung verfügbar sind. Prüfen Sie auch, ob es sich beim Premium-Zugang um ein Abonnement oder einen einmaligen Kauf handelt. Eine klare Einschränkung ist leichter zu bewerten als eine große Bibliothek, die sich hinter einem unklaren Versuch verbirgt.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="calma-vs-konkurrenz" title="Kostenlose Alternativen zu Calm & BetterSleep">
-        <p className="mt-4 leading-8 text-white/70">
-          Apps wie <em>Calm</em> und <em>BetterSleep</em> sind fantastisch, aber sie haben ihren Preis. Viele Nutzer stellen fest, dass die meisten entspannenden Klänge hinter einer Bezahlschranke (Paywall) gesperrt sind. Wenn Sie nicht 60-80 € pro Jahr für ein Abonnement ausgeben möchten, benötigen Sie eine echte Alternative.
+      <ArticleSection id="what-to-look-for" title="Eine Sieben-Punkte-Checkliste zum Vergleich von Schlafgeräusch-Apps">
+        <p>
+          Bewerten Sie das Verhalten, auf das Sie nachts tatsächlich angewiesen sind, und nicht nur die Anzahl der im Store-Eintrag angezeigten Geräusche:
         </p>
-        <p className="mt-4 leading-8 text-white/70">
-          Genau hier setzt Calma an. Im Gegensatz zur teuren Konkurrenz wurde Calma mit der Idee entwickelt, dass grundlegende Schlafhygiene zugänglich sein sollte. Es ist die beste Alternative für Nutzer, die keine Kompromisse bei der Qualität eingehen wollen, aber Abofallen meiden.
-        </p>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <li><strong>Glatte Schleifen:</strong> Achten Sie auf Klickgeräusche, plötzliche Änderungen oder einen offensichtlichen Neustart nach einigen Minuten.</li>
+          <li><strong>Nützliches kostenloses Kontingent:</strong> Bestätigen Sie, was nach Ablauf einer Testversion weiterhin verfügbar ist.</li>
+          <li><strong>Offline-Wiedergabe:</strong> Testen Sie den Flugmodus, bevor Sie sich auf Reisen darauf verlassen.</li>
+          <li><strong>Hintergrundwiedergabe:</strong> Sperren Sie den Bildschirm und bestätigen Sie, dass die Audiowiedergabe wie erwartet fortgesetzt wird.</li>
+          <li><strong>Unabhängiges Mischen:</strong> Wenn Sie Sounds überlagern, sollte jede Quelle über einen eigenen Lautstärkeregler verfügen.</li>
+          <li><strong>Timerverhalten:</strong> Überprüfen Sie, ob die Wiedergabe abrupt stoppt oder ausblendet und ob der Timer bei gesperrtem Bildschirm funktioniert.</li>
+          <li><strong>Reibungsarme Schnittstelle:</strong> Sie sollten in der Lage sein, eine vertraute Mischung fortzusetzen, ohne nachts durch helle oder komplizierte Bildschirme navigieren zu müssen.</li>
+        </ul>
       </ArticleSection>
 
-      <ArticleSection id="warum-calma" title="Warum Calma die beste kostenlose White-Noise-App ist">
-        <p className="mt-4 leading-8 text-white/70">
-          Wir haben <strong>Calma</strong> entwickelt, weil wir die überkomplizierten und teuren Schlaf-Apps satt hatten. Das macht Calma so besonders:
+      <ArticleSection id="why-calma" title="Wo Calma in diese Checkliste passt">
+        <p>
+          Calma wurde für Menschen entwickelt, die Wert auf individuelles Mischen und Offline-Nutzung legen gegenüber Schlaf-Tracking, Geschichten oder einer kontobasierten Plattform. Sein kostenloser Mixer unterstützt drei gleichzeitige Ebenen und die vollständige Bibliothek enthält mehr als 190 Sounds. Der Premium-Zugang ist als einmalige lebenslange Freischaltung und nicht als wiederkehrendes Abonnement verfügbar.
         </p>
         <div className="mt-6 space-y-4">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">1. Keine monatlichen Abos</h3>
-            <p className="mt-2 text-sm text-white/70">Genießen Sie eine riesige Bibliothek an Schlafgeräuschen völlig kostenlos, ohne lästige Kreditkartenabfragen beim Start.</p>
+            <h3 className="font-semibold text-emerald-400">1. Nachtfreundliche Steuerung</h3>
+            <p className="mt-2 text-sm text-white/70">Eine dunkle Benutzeroberfläche sorgt dafür, dass der Soundmixer optisch einfach bleibt, wenn Sie nachts darauf zurückgreifen.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">2. Erweiterter Sound-Mixer</h3>
-            <p className="mt-2 text-sm text-white/70">Mischen Sie bis zu 10 Klänge (z.B. Regen, braunes Rauschen und Wind) und passen Sie die Lautstärke jedes einzelnen Elements individuell an.</p>
+            <h3 className="font-semibold text-emerald-400">2. Unabhängige Klangebenen</h3>
+            <p className="mt-2 text-sm text-white/70">Mischen Sie Rauschfarben mit Regen oder Natur und passen Sie jede Ebene unabhängig an. Der kostenlose Mixer unterstützt drei Schichten.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">3. Offline-Modus & Timer</h3>
-            <p className="mt-2 text-sm text-white/70">Schalten Sie Ihr Handy in den Flugmodus. Calma funktioniert komplett offline und beendet die Wiedergabe automatisch dank des integrierten Timers.</p>
+            <h3 className="font-semibold text-emerald-400">3. Offline-Wiedergabe ohne wiederkehrende Gebühren</h3>
+            <p className="mt-2 text-sm text-white/70">Sounds funktionieren ohne aktive Verbindung und Benutzer, die Premium-Zugang wünschen, können eine lebenslange Freischaltung anstelle eines monatlichen Plans wählen.</p>
           </div>
         </div>
       </ArticleSection>
 
-      <ArticleSection id="erster-mix" title="Wie Sie Ihren ersten Mix erstellen">
-        <p className="mt-4 leading-8 text-white/70">
-          Für Anfänger empfehlen wir eine Kombination aus <strong>Rosa Rauschen</strong> (60% Lautstärke) und <strong>Leichtem Regen</strong> (40% Lautstärke). Dies schafft eine akustische Decke, die störende Außengeräusche effektiv maskiert.
+      <ArticleSection id="how-to-start" title="Nutzen Sie einen Sieben-Nächte-Vergleich, anstatt zu raten">
+        <p>
+          Beginnen Sie mit einem Sound auf einem niedrigen, angenehmen Pegel und nicht mit einer komplexen Mischung. Verwenden Sie drei Nächte lang den gleichen Ton, probieren Sie dann drei Nächte lang eine andere Option aus und verbringen Sie eine ruhige Nacht als Vergleich, wenn Ihre Umgebung dies zulässt.
         </p>
-        <div className="mt-8 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-            aria-label="Calma App herunterladen"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Get it on Google Play"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <li>Notieren Sie die ungefähre Eingewöhnungszeit, erinnern Sie sich an das Erwachen und den morgendlichen Komfort.</li>
+          <li>Halten Sie Lautstärke und Lautsprecherposition konsistent.</li>
+          <li>Wenn eine Schleife auffällig oder irritierend wird, passt die App oder der Sound nicht.</li>
+          <li>Betrachten Sie eine ungewöhnlich gute oder schlechte Nacht nicht als Beweis.</li>
+        </ul>
+        <p className="mt-4">
+          Der Schlaf variiert von Natur aus, daher ist das Ziel keine wissenschaftliche Diagnose. Es geht darum, die am wenigsten aufdringliche Einrichtung zu wählen, die Ihr Schlafzimmer vorhersehbarer macht.
+        </p>
       </ArticleSection>
-
-      <ArticleSection id="faq" title="Häufig gestellte Fragen (FAQ)">
-        <div className="mt-6 space-y-6">
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Gibt es eine völlig kostenlose White-Noise-App?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ja, Calma ist eine hervorragende, komplett kostenlose App, die weiße, rosa und braune Rauschgeräusche ohne versteckte Abonnements anbietet.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Ist Calma besser als Calm oder BetterSleep?</h3>
-            <p className="mt-2 leading-7 text-white/70">Wenn Sie nach einer unkomplizierten, kostenlosen Alternative ohne teure monatliche Gebühren suchen, bietet Calma vergleichbare Audioqualität und einen hervorragenden Sound-Mixer – ideal für preisbewusste Nutzer.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Kann ich die App offline nutzen?</h3>
-            <p className="mt-2 leading-7 text-white/70">Absolut. Calma funktioniert vollständig im Offline- bzw. Flugmodus, sodass Sie nicht durch Benachrichtigungen gestört werden und Akku sparen.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Welche Geräusche helfen am besten beim Einschlafen?</h3>
-            <p className="mt-2 leading-7 text-white/70">Studien zeigen, dass konstante Geräusche wie rosa Rauschen, braunes Rauschen oder tiefer Regen am effektivsten sind, um Hintergrundlärm zu blockieren.</p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-lg text-emerald-400">Verbraucht die App viel Akku in der Nacht?</h3>
-            <p className="mt-2 leading-7 text-white/70">Nein, Calma ist so optimiert, dass es bei ausgeschaltetem Bildschirm nur minimale Akkukapazität beansprucht. Zusätzlich können Sie den Sleep-Timer aktivieren.</p>
-          </div>
-        </div>
-      </ArticleSection>
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "Gibt es eine völlig kostenlose White-Noise-App?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Ja, Calma ist eine hervorragende, komplett kostenlose App, die weiße, rosa und braune Rauschgeräusche ohne versteckte Abonnements anbietet."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Ist Calma besser als Calm oder BetterSleep?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Wenn Sie nach einer unkomplizierten, kostenlosen Alternative ohne teure monatliche Gebühren suchen, bietet Calma vergleichbare Audioqualität und einen hervorragenden Sound-Mixer – ideal für preisbewusste Nutzer."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Kann ich die App offline nutzen?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Absolut. Calma funktioniert vollständig im Offline- bzw. Flugmodus, sodass Sie nicht durch Benachrichtigungen gestört werden und Akku sparen."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Welche Geräusche helfen am besten beim Einschlafen?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Studien zeigen, dass konstante Geräusche wie rosa Rauschen, braunes Rauschen oder tiefer Regen am effektivsten sind, um Hintergrundlärm zu blockieren."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "Verbraucht die App viel Akku in der Nacht?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Nein, Calma ist so optimiert, dass es bei ausgeschaltetem Bildschirm nur minimale Akkukapazität beansprucht. Zusätzlich können Sie den Sleep-Timer aktivieren."
-                }
-              }
-            ]
-          })
-        }}
-      />
-    </ArticlePage>
-  );
+    </ArticlePage>);
 }

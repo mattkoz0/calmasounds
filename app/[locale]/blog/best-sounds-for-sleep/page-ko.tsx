@@ -2,219 +2,236 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
-
 export const metadata: Metadata = {
-  title: "숙면을 위한 최고의 소리 (2026년판) | 과학적 근거에 기반한 수면 소리 | Calma 블로그",
-  description:
-    "백색 소음부터 부드러운 빗소리까지, 숙면을 위한 최고의 소리들을 알아보고 과학적인 수면의 원리와 깊은 잠을 위한 취침 루틴을 확인하세요.",
-  keywords: [
-    "숙면 소리",
-    "잠잘때 듣는 소리",
-    "최고의 수면 소리",
-    "빗소리 잠",
-    "백색소음 수면",
-    "칼마 블로그",
-  ],
-  alternates: {
-    canonical: "https://www.calmasounds.com/ko/blog/best-sounds-for-sleep",
-  },
-  openGraph: {
-    title: "숙면을 위한 최고의 소리 (2026년판) | 과학적 근거에 기반한 수면 소리 | Calma 블로그",
-    description:
-      "백색 소음부터 부드러운 빗소리까지, 숙면을 위한 최고의 소리들을 알아보고 과학적인 수면의 원리와 깊은 잠을 위한 취침 루틴을 확인하세요.",
-    url: "https://www.calmasounds.com/ko/blog/best-sounds-for-sleep",
-    siteName: "Calma",
-    locale: "ko_KR",
-    type: "article",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "숙면을 위한 최고의 소리 (2026년판) | 과학적 근거에 기반한 수면 소리",
-    description:
-      "백색 소음부터 부드러운 빗소리까지, 숙면을 위한 최고의 소리들을 알아보고 과학적인 수면의 원리와 깊은 잠을 위한 취침 루틴을 확인하세요.",
-  },
+    title: "\uC218\uBA74\uC744 \uC704\uD55C \uCD5C\uACE0\uC758 \uC18C\uB9AC: \uBE44, \uBC31\uC0C9 \uBC0F \uAC08\uC0C9 \uC18C\uC74C | Calma",
+    description: "\uC218\uBA74\uC744 \uC704\uD55C \uBE44, \uBC31\uC0C9 \uC18C\uC74C, \uAC08\uC0C9 \uC18C\uC74C\uC744 \uBE44\uAD50\uD558\uACE0, \uAC01 \uC0D8\uD50C\uC744 \uB4E3\uACE0, \uC5F0\uAD6C\uAC00 \uBC24\uC5D0 \uC9C0\uC18D\uB418\uB294 \uC18C\uB9AC\uC5D0 \uB300\uD574 \uBCF4\uC5EC \uC8FC\uB294 \uAC83\uACFC \uBCF4\uC5EC\uC8FC\uC9C0 \uC54A\uB294 \uAC83\uC744 \uC54C\uC544\uBCF4\uC138\uC694.",
+    keywords: [
+        "\uC218\uBA74\uC744 \uC704\uD55C \uCD5C\uACE0\uC758 \uC18C\uB9AC",
+        "\uC7A0\uC790\uAE30 \uC88B\uC740 \uC18C\uB9AC",
+        "\uC7A0\uC774 \uB354 \uC798 \uC624\uB294 \uAC83 \uAC19\uB2E4",
+        "\uC7A0\uC5D0 \uB3C4\uC6C0\uC774 \uB418\uB294 \uC18C\uB9AC",
+        "\uCD5C\uACE0\uC758 \uC218\uBA74 \uC18C\uB9AC",
+        "\uC5B4\uB5A4 \uC18C\uB9AC\uAC00 \uB2F9\uC2E0\uC744 \uC7A0\uB4E4\uAC8C \uD558\uB294\uC9C0",
+        "\uC7A0\uC5D0 \uB3C4\uC6C0\uC774 \uB418\uB294 \uC18C\uB9AC",
+        "Calma \uC571",
+    ],
+    alternates: {
+        canonical: "https://www.calmasounds.com/blog/best-sounds-for-sleep",
+    },
+    openGraph: {
+        title: "\uC218\uBA74\uC744 \uC704\uD55C \uCD5C\uACE0\uC758 \uC18C\uB9AC: \uBE44, \uBC31\uC0C9 \uC18C\uC74C \uB610\uB294 \uAC08\uC0C9 \uC18C\uC74C?",
+        description: "\uBE44, \uBC31\uC0C9 \uC18C\uC74C, \uAC08\uC0C9 \uC18C\uC74C\uC744 \uBE44\uAD50\uD558\uACE0 \uAC01 \uC0D8\uD50C\uC744 \uB4E3\uACE0 \uC218\uBA74 \uC5F0\uAD6C\uAC00 \uC2E4\uC81C\uB85C \uBB34\uC5C7\uC744 \uBCF4\uC5EC\uC8FC\uB294\uC9C0 \uD655\uC778\uD558\uC138\uC694.",
+        url: "https://www.calmasounds.com/blog/best-sounds-for-sleep",
+        siteName: "Calma",
+        locale: "en_US",
+        type: "article",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "\uC218\uBA74\uC744 \uC704\uD55C \uCD5C\uACE0\uC758 \uC18C\uB9AC: \uBE44, \uBC31\uC0C9 \uC18C\uC74C \uB610\uB294 \uAC08\uC0C9 \uC18C\uC74C?",
+        description: "\uC138 \uAC00\uC9C0 \uC778\uAE30 \uC218\uBA74 \uC18C\uB9AC\uB97C \uC624\uB514\uC624 \uC0D8\uD50C \uBC0F \uC99D\uAC70 \uC778\uC2DD \uC548\uB0B4\uC640 \uBE44\uAD50\uD574 \uBCF4\uC138\uC694.",
+    },
 };
-
 const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "숙면을 위한 최고의 소리: 편안한 수면 오디오를 위한 궁극의 가이드",
-  description:
-    "백색 소음부터 부드러운 빗소리까지, 숙면을 위한 최고의 소리들을 알아보고 과학적인 수면의 원리와 깊은 잠을 위한 취침 루틴을 확인하세요.",
-  author: {
-    "@type": "Organization",
-    name: "Calma Team",
-  },
-  publisher: {
-    "@type": "Organization",
-    name: "Calma",
-  },
-  mainEntityOfPage: "https://www.calmasounds.com/ko/blog/best-sounds-for-sleep",
-  datePublished: "2026-03-25",
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "\uC5B4\uB5A4 \uC18C\uB9AC\uAC00 \uB2F9\uC2E0\uC744 \uC7A0\uB4E4\uAC8C \uD558\uB098\uC694?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "\uBCF4\uD3B8\uC801\uC778 \uCD5C\uACE0\uC758 \uC218\uBA74 \uC18C\uB9AC\uB294 \uC5C6\uC2B5\uB2C8\uB2E4. \uAFB8\uC900\uD55C \uC18C\uB9AC\uB294 \uBC30\uACBD\uC758 \uCE68\uBB35\uACFC \uAC11\uC791\uC2A4\uB7EC\uC6B4 \uC18C\uC74C \uC0AC\uC774\uC758 \uB300\uBE44\uB97C \uC904\uC77C \uC218 \uC788\uC9C0\uB9CC \uC120\uD638\uB3C4, \uBCFC\uB968 \uBC0F \uCE68\uC2E4 \uD658\uACBD\uC774 \uBAA8\uB450 \uC911\uC694\uD569\uB2C8\uB2E4."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "\uC7A0\uC790\uAE30 \uC88B\uC740 \uC18C\uB9AC\uB294 \uBB34\uC5C7\uC785\uB2C8\uAE4C?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "\uACC4\uC18D \uB0B4\uB9AC\uB294 \uBE44, \uBA3C \uACF3\uC758 \uB1CC\uC6B0, \uD30C\uB3C4, \uBC31\uC0C9 \uC18C\uC74C, \uAC08\uC0C9 \uC18C\uC74C\uC744 \uD3EC\uD568\uD558\uC5EC \uC7A0\uC5D0 \uC88B\uC740 \uC18C\uB9AC\uC785\uB2C8\uB2E4. \uD575\uC2EC\uC740 \uC77C\uAD00\uC131\uC785\uB2C8\uB2E4. \uAFB8\uC900\uD55C \uC18C\uB9AC\uB294 \uC2E0\uACBD\uACC4\uB97C \uC774\uC644\uC2DC\uD0A4\uB294 \uB370 \uB3C4\uC6C0\uC774 \uB418\uB294 \uC74C\uD5A5 \uB2F4\uC694\uB97C \uC0DD\uC131\uD569\uB2C8\uB2E4."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "\uC5B4\uB5A4 \uC18C\uC74C\uC774 \uC7A0\uC744 \uB354 \uC798 \uC790\uB3C4\uB85D \uB3C4\uC640\uC8FC\uB098\uC694?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "\uBC31\uC0C9\uC18C\uC74C\uC740 \uB113\uC740 \uC8FC\uD30C\uC218 \uBC94\uC704\uB97C \uD3EC\uAD04\uD558\uB294 \uBC18\uBA74, \uBE44\uC640 \uAC08\uC0C9\uC18C\uC74C\uC740 \uB354 \uBD80\uB4DC\uB7FD\uAC70\uB098 \uB354 \uAE4A\uAC8C \uB4E4\uB9BD\uB2C8\uB2E4. \uC218\uBA74\uC744 \uC704\uD55C \uC9C0\uC18D\uC801\uC778 \uC18C\uC74C\uC5D0 \uB300\uD55C \uC5F0\uAD6C\uAC00 \uD63C\uD569\uB418\uC5B4 \uC788\uC73C\uBBC0\uB85C \uD658\uACBD\uC5D0 \uB9DE\uB294 \uBC29\uD574\uAC00 \uAC00\uC7A5 \uC801\uC740 \uC18C\uB9AC\uB97C \uC120\uD0DD\uD558\uC138\uC694."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "\uBC24\uC0C8\uB3C4\uB85D \uC18C\uB9AC\uB97C \uD2C0\uACE0 \uC790\uB3C4 \uAD1C\uCC2E\uB098\uC694?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "\uD3B8\uC548\uD558\uACE0 \uB0AE\uC740 \uB808\uBCA8\uB85C \uC7AC\uC0DD\uC744 \uC720\uC9C0\uD558\uACE0, \uC218\uBA74\uC744 \uBC29\uD574\uD558\uAC70\uB098 \uBD88\uD3B8\uD568\uC744 \uC720\uBC1C\uD558\uB294 \uACBD\uC6B0 \uC911\uC9C0\uD558\uC2ED\uC2DC\uC624. \uBC24\uC0C8 \uACC4\uC18D\uB418\uB294 \uC18C\uC74C\uC5D0 \uB300\uD55C \uC99D\uAC70\uB294 \uC81C\uD55C\uC801\uC774\uBA70 \uAC1C\uC778\uC758 \uCCAD\uB825\uC774\uB098 \uAC74\uAC15\uC0C1\uC758 \uD544\uC694 \uC0AC\uD56D\uC5D0\uB294 \uC804\uBB38\uAC00\uC758 \uC870\uC5B8\uC774 \uD544\uC694\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4."
+            }
+        }
+    ]
 };
-
 export default function BestSoundsForSleepPage() {
-  return (
-    <ArticlePage
-      slug="best-sounds-for-sleep"
-      jsonLd={articleJsonLd}
-      topLinkHref="/ko/sleep-sounds-app"
-      topLinkLabel="수면 앱 둘러보기"
-      title="숙면을 위한 최고의 소리: 몸과 마음을 이완하는 방법"
-      intro="나에게 맞는 수면 소리를 찾는 것은 밤의 질을 완전히 바꾸어 놓을 수 있습니다. 어떤 사람들은 부드러운 빗소리에 즉각적으로 이완되는 반면, 다른 사람들은 외부 소음을 차단하는 백색소음을 선호하고, 또 어떤 사람들은 차분하고 낮게 깔리는 브라운노이즈를 선호합니다. 숙면을 위한 최고의 소리는 모든 사람에게 동일하지 않습니다. 당신이 처한 환경, 신경계, 그리고 하루의 긴장을 풀고 안전하다고 느낄 수 있게 도와주는 소리가 무엇인지에 따라 다릅니다."
-      ctaHref="/ko/sleep-sounds-app"
-      ctaLabel="나만의 수면 소리 믹스하기"
-      secondaryCtaHref="/ko/white-noise-app"
-      secondaryCtaLabel="백색소음 앱 체험하기"
-      tableOfContents={[
-        { id: "why-sounds-help", title: "소리가 숙면을 돕는 과학적 이유" },
-        { id: "white-noise", title: "백색소음: 완벽한 소음 차단" },
-        { id: "pink-brown-noise", title: "핑크노이즈 & 브라운노이즈: 더 깊은 휴식" },
-        { id: "nature-sounds", title: "자연의 소리와 빗소리: 정서적 안정감" },
-        { id: "how-to-choose", title: "나에게 가장 잘 맞는 수면 소리 선택법" },
-        { id: "faq", title: "자주 묻는 질문 (FAQ)" },
-      ]}
-      relatedArticles={[
-        {
-          href: "/ko/blog/rain-sounds-vs-white-noise",
-          title: "빗소리 vs 백색소음",
-          description:
-            "자연스러운 빗소리와 일정한 백색소음이 주는 정서적 편안함과 실질적인 차이를 비교해 보세요.",
-        },
-        {
-          href: "/ko/blog/brown-noise-vs-white-noise-vs-pink-noise",
-          title: "다양한 색상의 노이즈 가이드",
-          description:
-            "백색소음, 핑크소음, 브라운소음의 차이점과 이들이 뇌에 미치는 영향에 대해 깊이 알아봅니다.",
-        },
-      ]}
-    >
-      <ArticleSection id="why-sounds-help" title="소리가 숙면을 돕는 과학적 이유">
+    return (<ArticlePage slug="best-sounds-for-sleep" jsonLd={articleJsonLd} title="수면을 위한 최고의 소리: 비, 백색 소음, 또는 갈색 소음?" intro="모두를 잠들게 만드는 소리 하나는 없습니다. 안정적인 배경은 조용한 방과 갑작스러운 소음 사이의 대비를 줄여줄 수 있으며, 친숙한 비는 단순히 더 편안함을 느낄 수 있습니다. 아래 세 가지 인기 있는 옵션을 비교하고 각 샘플을 듣고 증거를 약속이 아닌 가이드로 사용하십시오." topLinkHref="/sleep-sounds-app" topLinkLabel="수면 앱 살펴보기" ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" ctaLabel="Calma 무료 다운로드" secondaryCtaHref="/white-noise-app" secondaryCtaLabel="백색소음 앱 살펴보기" tableOfContents={[
+            { id: "what-makes-you-sleep", title: "\uC5B4\uB5A4 \uC18C\uB9AC\uAC00 \uB2F9\uC2E0\uC744 \uC7A0\uB4E4\uAC8C \uD558\uB098\uC694?" },
+            { id: "best-sounds", title: "\uC7A0\uB4E4\uAE30 \uC88B\uC740 \uC18C\uB9AC 3\uAC00\uC9C0" },
+            { id: "decision-guide", title: "\uCE68\uC2E4 \uBB38\uC81C\uB85C \uC120\uD0DD" },
+            { id: "how-to-mix", title: "\uB354 \uB098\uC740 \uD734\uC2DD\uC744 \uC704\uD574 \uC18C\uB9AC\uB97C \uD63C\uD569\uD558\uB294 \uBC29\uBC95" },
+            { id: "seven-night-test", title: "7\uBC15 \uBE44\uAD50" },
+            { id: "faq", title: "\uC790\uC8FC \uBB3B\uB294 \uC9C8\uBB38" },
+            { id: "sources", title: "\uC99D\uAC70 \uBC0F \uCD9C\uCC98" },
+        ]} relatedArticles={[
+            {
+                href: "/blog/rain-sounds-vs-white-noise",
+                title: "\uBE44\uC640 \uBC31\uC0C9\uC18C\uC74C",
+                description: "\uC5B4\uB290 \uAC83\uC774 \uB354 \uB098\uC740 \uC218\uBA74\uC5D0 \uB3C4\uC6C0\uC774 \uB41C\uB2E4\uB294 \uAC83\uC774 \uACFC\uD559\uC801\uC73C\uB85C \uC785\uC99D\uB418\uC5C8\uC2B5\uB2C8\uAE4C?",
+            },
+            {
+                href: "/blog/brown-noise-vs-white-noise-vs-pink-noise",
+                title: "\uB178\uC774\uC988 \uC0C9\uC0C1 \uC124\uBA85",
+                description: "\uD770\uC0C9, \uBD84\uD64D\uC0C9, \uAC08\uC0C9, \uB179\uC0C9 \uC7A1\uC74C\uC744 \uC774\uD574\uD569\uB2C8\uB2E4.",
+            },
+        ]}>
+      <ArticleSection id="what-makes-you-sleep" title="어떤 소리가 당신을 잠들게 하나요? 사운드 마스킹의 과학">
         <p className="mt-4 leading-8 text-white/70">
-          잠을 자려는 방에 소리를 더한다는 것이 모순처럼 느껴질 수 있습니다. 그러나 완전한 침묵이 항상 최선의 수면 환경은 아닙니다. 아주 조용한 방에서 우리 뇌는 반려견의 짖는 소리, 문 닫히는 소리, 혹은 차가 지나가는 소리 등 주변의 갑작스러운 소음 변화에 더욱 민감하게 반응하게 됩니다.
+          청력은 수면 중에도 반응을 유지하므로 깨어난 기억이 없을 때에도 갑작스러운 변화가 각성을 유발할 수 있습니다. 따라서 수면 소리의 유용한 특징은 추상적으로 "편안함"을 주는 것이 아니라 안정적이고 새로운 정점이나 변화를 일으키지 않는다는 것입니다.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          효과적인 수면 소리는 <strong>사운드 마스킹(소음 차단 효과)</strong>이라는 과정을 통해 작동합니다. 일정하고 예측 가능한 배경음을 유지하면, 방 안의 고요함과 갑작스러운 소음 간의 차이가 크게 줄어듭니다. 뇌는 이러한 돌발 소음을 더 이상 위협이나 방해 요소로 인식하지 않기 때문에 깨지 않고 깊은 잠을 유지할 수 있습니다.
+          <strong>사운드 마스킹</strong> 간헐적인 소음의 대비를 줄일 수 있을 만큼 배경 레벨을 높입니다. 방에 교통 상황, 음성 또는 집안 소리가 포함되어 있을 때 가장 관련성이 높습니다. 침실이 이미 조용한 경우 소리를 추가해도 아무런 이점이 없으며 또 다른 방해가 될 수 있습니다.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="white-noise" title="백색소음: 완벽한 소음 차단">
+      <ArticleSection id="best-sounds" title="잠들기 좋은 소리 3가지">
+        <div className="mt-8 space-y-12">
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">1. Deep Rain (핑크 노이즈)</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              많은 꾸준한 비 녹음에는 핑크 노이즈와 유사한 스펙트럼이 있으며, 백색 소음보다 낮은 주파수에서 상대적으로 더 많은 에너지가 있습니다. 정확한 프로필은 강수량과 기록에 따라 다르며, 연구에서는 비가 보편적인 수면 보조제로 확립되지 않았습니다.
+            </p>
+            <AudioPlayer src="/rain.m4a" title="깊은 비" description="꾸준한 소음과 비교하기 위한 질감이 있는 비와 같은 옵션입니다." colorClass="bg-blue-500/20 text-blue-300"/>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">2. 진정한 백색소음</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              백색소음은 헤르츠당 동일한 전력을 가지며 무선 잡음과 유사한 소리를 냅니다. 넓은 스펙트럼은 간헐적인 소리의 대비를 줄이는 데 도움이 될 수 있지만, 수면 개선 여부는 청취자와 환경에 따라 다릅니다.
+            </p>
+            <AudioPlayer src="/white_noise.m4a" title="백색소음" description="간헐적으로 주의를 산만하게 만드는 넓고 밝은 마스킹 사운드입니다." colorClass="bg-slate-500/20 text-slate-300"/>
+          </div>
+
+          <div>
+            <h3 className="text-xl font-bold text-white mb-3">3. 브라운 노이즈</h3>
+            <p className="mb-4 leading-8 text-white/70">
+              브라운 노이즈는 핑크 노이즈보다 더 가파르게 고주파수를 롤오프하여 먼 폭포와 유사한 깊은 울림을 생성합니다. 온라인에서 인기가 있지만 갈색 소음이 ADHD 치료나 우수한 수면 소리로 입증되지 않았다는 증거가 있습니다.
+            </p>
+            <AudioPlayer src="/brown_noise.m4a" title="브라운 노이즈" description="주로 편안함을 위해 선택된 깊고 저주파에 중점을 둔 사운드입니다." colorClass="bg-orange-500/20 text-orange-300"/>
+          </div>
+
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="decision-guide" title="침실의 문제에 맞는 소리를 선택하세요">
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">상황</th>
+                <th className="px-4 py-3">테스트할 첫 번째 옵션</th>
+                <th className="px-4 py-3">왜?</th>
+                <th className="px-4 py-3">조심하세요</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">날카로운 교통 소음이나 집안 소리</td>
+                <td className="px-4 py-3">조용한 백색소음</td>
+                <td className="px-4 py-3">넓은 주파수 범위</td>
+                <td className="px-4 py-3">고주파 히스가 짜증스러워짐</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">당신은 정적을 싫어합니다</td>
+                <td className="px-4 py-3">비가 계속 내리거나 핑크 노이즈가 발생함</td>
+                <td className="px-4 py-3">더 부드러운 고주파수</td>
+                <td className="px-4 py-3">천둥, 새 또는 명백한 루프 변경</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">당신은 깊은 소리를 선호합니다</td>
+                <td className="px-4 py-3">브라운 노이즈</td>
+                <td className="px-4 py-3">덜 밝고 베이스가 강조된 캐릭터</td>
+                <td className="px-4 py-3">베이스 진동 또는 스피커 왜곡</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">방은 이미 조용해요</td>
+                <td className="px-4 py-3">침묵</td>
+                <td className="px-4 py-3">해결해야 할 마스킹 문제가 없습니다.</td>
+                <td className="px-4 py-3">습관적으로만 소리 추가하기</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="how-to-mix" title="더 나은 잠을 잘 수 있도록 소음을 혼합하는 방법">
         <p className="mt-4 leading-8 text-white/70">
-          백색소음(White Noise)은 아마도 가장 널리 알려진 수면 소리일 것입니다. 이는 인간이 들을 수 있는 모든 주파수를 동일한 강도로 재생하는 소리로, 선풍기 소리나 TV 유선 신호가 없을 때 나는 '쉬-' 하는 소리와 유사합니다. 전체 주파수 대역을 덮기 때문에 외부에서 발생하는 광범위한 소음을 차단하는 데 매우 효과적입니다.
+          일부 청취자는 안정된 사운드를 선호합니다. 다른 사람들은 소량의 믹스를 선호합니다. Calma를 사용하면 더 많은 사운드가 자동으로 더 좋아질 것이라고 가정하지 않고도 레이어를 비교하고 개인 사운드스케이프를 저장할 수 있습니다.
         </p>
-        <AudioPlayer 
-          src="/white_noise.m4a" 
-          title="백색소음 샘플" 
-          description="고음역대 소음을 효과적으로 차단하는 균일하고 일정한 전체 스펙트럼의 백색소음입니다."
-          colorClass="bg-slate-500/20 text-slate-300"
-        />
         <p className="mt-4 leading-8 text-white/70">
-          <strong>추천 대상:</strong> 도심 지역 거주자, 잠귀가 밝은 사람, 혹은 호텔처럼 소음 수준을 제어하기 힘든 곳에서 주무셔야 하는 분들입니다. 돌발 소음으로부터 수면을 보호하는 가장 안정적인 수단을 찾고 계신다면 백색소음이 최고의 선택이 될 수 있습니다.
+          테스트할 믹스 중 하나는 조용한 베이스입니다. <strong>갈색 소음</strong> 적은 양으로 <strong>비</strong>. 그런 다음 레이어 하나를 제거합니다. 단순한 버전이 잘 작동한다면 그대로 유지하세요. 복잡성은 수면에 도움이 되지 않습니다.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="pink-brown-noise" title="핑크노이즈 & 브라운노이즈: 더 깊은 휴식">
-        <p className="mt-4 leading-8 text-white/70">
-          백색소음이 너무 날카롭거나 귀에 거슬린다고 느끼신다면 <strong>핑크노이즈(Pink Noise)</strong>나 <strong>브라운노이즈(Brown Noise)</strong>가 훌륭한 대안이 될 수 있습니다. 핑크노이즈는 저주파 영역을 좀 더 강조하여 일정한 빗소리나 바람 소리와 비슷하게 들립니다. 브라운노이즈는 고주파를 거의 차단하고 저주파를 더욱 깊게 강조하여, 멀리서 들리는 폭포 소리나 비행기 기내 소음처럼 낮고 묵직하게 웅웅거리는 소리를 만들어 냅니다.
+      <ArticleSection id="seven-night-test" title="실제로 유용한 7박 비교">
+        <p>
+          잠은 밤마다 바뀌기 때문에 단 한 번의 인상도 신뢰할 수 없습니다. 밤이 나빠질 때마다 소리를 바꾸는 대신 짧은 일기로 옵션을 비교하십시오.
         </p>
-        <AudioPlayer 
-          src="/brown_noise.m4a" 
-          title="브라운노이즈 샘플" 
-          description="생각이 많고 활동적인 뇌를 차분하게 가라앉히는 데 적합한 깊고 묵직한 저주파 소리입니다."
-          colorClass="bg-orange-500/20 text-orange-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          최근 연구에 따르면, 핑크노이즈는 우리의 뇌파와 동기화되어 깊은 수면(서파 수면)의 질을 향상시키는 데 기여할 수 있습니다. 한편, 브라운노이즈는 잠들기 전에 꼬리를 물고 이어지는 잡념과 불안을 차분하게 가라앉히고자 하는 분들에게 큰 사랑을 받고 있습니다.
-        </p>
+        <ol className="mt-4 list-decimal space-y-3 pl-5 text-white/70">
+          <li>3일 밤 동안 일관된 낮은 레벨에서 하나의 사운드를 사용합니다.</li>
+          <li>비슷한 실내 조건에서 3박 동안 두 번째 사운드를 사용하세요.</li>
+          <li>현실적으로는 하룻밤을 조용히 지내는 것을 기본으로 삼으세요.</li>
+          <li>예상 정착 시간, 기억된 각성 시간, 아침에 얼마나 쉬었는지 기록하세요.</li>
+          <li>가장 일관된 결과를 얻을 수 있는 최소한의 방해 설정을 선택하십시오. 처음 들었을 때 가장 마음에 들었던 사운드일 필요는 없습니다.</li>
+        </ol>
       </ArticleSection>
 
-      <ArticleSection id="nature-sounds" title="자연의 소리와 빗소리: 정서적 안정감">
-        <p className="mt-4 leading-8 text-white/70">
-          많은 사람들에게 기계적인 소음이나 인위적인 백색소음은 편안하게 들리지 않습니다. 여기서 힘을 발휘하는 것이 바로 자연의 소리입니다. 빗소리, 잔잔한 파도 소리, 혹은 장작이 타는 소리는 소음 차단 효과와 더불어 깊은 정서적 위안을 함께 제공합니다.
-        </p>
-        <AudioPlayer 
-          src="/rain.m4a" 
-          title="잔잔한 빗소리" 
-          description="침실을 아늑하고 안전한 공간으로 만들어 주는 부드럽고 일정한 빗소리입니다."
-          colorClass="bg-blue-500/20 text-blue-300"
-        />
-        <p className="mt-4 leading-8 text-white/70">
-          인류는 본능적으로 빗소리를 안전한 피난처에 머물고 있다는 신호로 받아들이도록 진화해 옴에 따라, 위협적이지 않은 자연스러운 소리는 자율신경계를 이완 상태로 유도합니다. 따라서 스트레스와 긴장으로 잠 못 이루는 밤에 가장 적합한 수면 소리 중 하나입니다.
-        </p>
-      </ArticleSection>
-
-      <ArticleSection id="how-to-choose" title="나에게 가장 잘 맞는 수면 소리 선택법">
-        <p className="mt-4 leading-8 text-white/70">
-          수면의 질을 높이기 위한 단 하나의 정답은 없습니다. 나에게 최적화된 수면 소리를 찾기 위해 아래 가이드를 활용해 보세요:
-        </p>
-        <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li><strong>수면 방해의 원인 파악하기:</strong> 외부 소음(도로 교통음, 가족의 코골이 등)이 문제라면 백색소음이나 핑크노이즈가 효과적입니다. 반대로 내면의 스트레스(생각과 걱정 등)가 원인이라면 브라운노이즈나 자연의 소리가 더 좋습니다.</li>
-          <li><strong>나만의 환경음 만들기:</strong> <a href="/ko/sleep-sounds-app" className="text-emerald-400 hover:underline">Calma 앱</a>에서는 하나의 소리만을 고집할 필요가 없습니다. 깊은 브라운노이즈와 부드러운 빗소리를 혼합하여 소음 차단과 정서적 완화의 두 가지 효과를 동시에 누릴 수 있습니다.</li>
-          <li><strong>안전한 볼륨 유지하기:</strong> 수면 소리는 항상 조용한 배경음이어야 합니다. 청력을 보호하고 수면 중 뇌가 과도하게 자극받는 것을 방지하기 위해 볼륨은 50데시벨 이하(조용한 대화 소리 정도)로 유지하세요.</li>
-          <li><strong>며칠 동안 관찰하기:</strong> 뇌가 새로운 수면 루틴과 소리에 완전히 익숙해지기까지는 시간이 걸릴 수 있습니다. 특정 소리가 자신에게 맞는지 판단하기 전에 최소 3일 밤 정도는 연속으로 테스트해 보시는 것을 권장합니다.</li>
-        </ul>
-      </ArticleSection>
-
-      <ArticleSection id="faq" title="자주 묻는 질문 (FAQ)">
+      <ArticleSection id="faq" title="자주 묻는 질문(FAQ)">
         <div className="mt-6 space-y-6">
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">잠들 때 가장 효과적인 릴랙싱 사운드는 무엇인가요?</h3>
-            <p className="mt-2 leading-7 text-white/70">사람마다 다를 수 있지만, 다양한 연구와 사용자 만족도 분석에 따르면 자연의 음향적 안정감을 그대로 모사한 '부드럽고 일정한 빗소리', '핑크노이즈', 그리고 '잔잔한 해변의 파도 소리'가 가장 널리 선호되는 이완 사운드로 꼽힙니다.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">어떤 소리가 당신을 잠들게 하나요?</h3>
+            <p className="mt-2 leading-7 text-white/70">보편적인 최고의 수면 소리는 없습니다. 꾸준한 소리는 침묵과 갑작스러운 소음 사이의 대비를 줄일 수 있지만 선호도, 볼륨 및 침실 환경이 모두 중요합니다.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">밤새도록 백색소음을 켜놓고 자는 것이 건강에 해롭지 않나요?</h3>
-            <p className="mt-2 leading-7 text-white/70">볼륨이 안전한 수준(50~60dB 이하)으로 조절되어 있다면, 성인이 밤새도록 백색소음을 듣는 것은 대체로 안전합니다. 다만 소리가 너무 크면 청각적 피로를 유발할 수 있으므로 주의해야 합니다.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">잠자기 좋은 소리는 무엇입니까?</h3>
+            <p className="mt-2 leading-7 text-white/70">유용한 옵션에는 꾸준한 비, 파도, 백색 소음 및 갈색 소음이 포함될 수 있습니다. 일관성은 라벨보다 더 중요합니다. 갑작스러운 천둥, 새, 목소리 또는 명백한 루프 변경을 피하십시오.</p>
           </div>
           <div>
-            <h3 className="font-semibold text-lg text-emerald-400">잡념이 너무 많아서 잠이 안 올 때도 소리가 도움이 되나요?</h3>
-            <p className="mt-2 leading-7 text-white/70">네, 큰 도움이 됩니다. 브라운노이즈와 같이 낮고 일정한 주파수 소리는 뇌의 지각적 주의를 적절히 만족시키면서도 자극적이지 않아, 꼬리를 무는 걱정이나 생각으로부터 뇌의 관심을 다른 곳으로 돌리고 이완되도록 돕습니다.</p>
+            <h3 className="font-semibold text-lg text-emerald-400">어떤 소음이 잠을 더 잘 자도록 도와주나요?</h3>
+            <p className="mt-2 leading-7 text-white/70">백색소음은 폭넓은 마스킹 효과를 제공하는 반면 비와 갈색소음은 더 부드럽거나 더 깊게 들립니다. 연구가 혼합되어 있으므로 환경에 가장 적합한 옵션을 선택하십시오.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold text-lg text-emerald-400">밤새도록 소리를 틀고 자도 괜찮나요?</h3>
+            <p className="mt-2 leading-7 text-white/70">편안하고 낮은 레벨로 재생을 유지하고, 수면을 방해하거나 불편함을 유발하는 경우 중지하십시오. 밤새도록 소리가 필요하지 않은 경우 취침 타이머가 유용합니다.</p>
           </div>
         </div>
       </ArticleSection>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-              {
-                "@type": "Question",
-                "name": "잠들 때 가장 효과적인 릴랙싱 사운드는 무엇인가요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "사람마다 다를 수 있지만, 다양한 연구와 사용자 만족도 분석에 따르면 자연의 음향적 안정감을 그대로 모사한 '부드럽고 일정한 빗소리', '핑크노이즈', 그리고 '잔잔한 해변의 파도 소리'가 가장 널리 선호되는 이완 사운드로 꼽힙니다."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "밤새도록 백색소음을 켜놓고 자는 것이 건강에 해롭지 않나요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "볼륨이 안전한 수준(50~60dB 이하)으로 조절되어 있다면, 성인이 밤새도록 백색소음을 듣는 것은 대체로 안전합니다. 다만 소리가 너무 크면 청각적 피로를 유발할 수 있으므로 주의해야 합니다."
-                }
-              },
-              {
-                "@type": "Question",
-                "name": "잡념이 너무 많아서 잠이 안 올 때도 소리가 도움이 되나요?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "네, 큰 도움이 됩니다. 브라운노이즈와 같이 낮고 일정한 주파수 소리는 뇌의 지각적 주의를 적절히 만족시키면서도 자극적이지 않아, 꼬리를 무는 걱정이나 생각으로부터 뇌의 관심을 다른 곳으로 돌리고 이완되도록 돕습니다."
-                }
-              }
-            ]
-          })
-        }}
-      />
-      
-      <div className="mt-16 pt-8 border-t border-white/10 flex items-center gap-4">
-        <div className="h-12 w-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-300 font-bold text-xl">CT</div>
-        <div>
-          <p className="font-semibold text-white">Calma 팀 작성</p>
-          <p className="text-sm text-white/60">더 조용하고 편안한 밤을 위해 건강한 수면 습관 및 사운드 디자인 노하우를 제공하는 수면 위생 전문가 팀입니다.</p>
-        </div>
-      </div>
-    </ArticlePage>
-  );
+      <ArticleSection id="sources" title="증거 및 출처">
+        <ul className="mt-4 space-y-3 text-sm leading-7 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/29312136/" target="_blank" rel="noopener noreferrer">
+              Messineoet al. — 광대역 소리 및 수면 시작에 대한 무작위 교차 연구
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/33007706/" target="_blank" rel="noopener noreferrer">
+              Riedyet al. — 수면 보조제로서의 소음: 체계적인 검토
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9163611/" target="_blank" rel="noopener noreferrer">
+              Capezutiet al. — 수면을 위한 화이트 노이즈와 핑크 노이즈의 체계적인 검토
+            </a>
+          </li>
+        </ul>
+      </ArticleSection>
+    </ArticlePage>);
 }
