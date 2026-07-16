@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Best Free Sound Mixer App for Sleep, Relaxation & Focus | Calma",
+  title: "Free Sound Mixer App — Custom Sleep Sounds | Calma",
   description:
     "Create custom sound mixes with white noise, rain, brown noise & nature sounds. Calma is a free sound mixer app for sleep, relaxation and focus. No subscription, works offline.",
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/sound-mixer-app",
   },
   openGraph: {
-    title: "Best Free Sound Mixer App for Sleep, Relaxation & Focus | Calma",
+    title: "Free Sound Mixer App — Custom Sleep Sounds | Calma",
     description:
     "Create custom sound mixes with white noise, rain, brown noise & nature sounds. Free sound mixer app for sleep, relaxation and focus. No subscription.",
     url: "https://www.calmasounds.com/sound-mixer-app",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free Sound Mixer App for Sleep & Focus | Calma",
+    title: "Free Sound Mixer App — Custom Sleep Sounds | Calma",
     description:
     "Create custom sound mixes with white noise, rain & nature sounds. Free sound mixer app for sleep, relaxation and focus.",
   },

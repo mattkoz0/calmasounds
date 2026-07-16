@@ -22,6 +22,15 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: "/:path*.m4a",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value: "noindex, nofollow",
+          },
+        ],
+      },
+      {
         source: "/(.*)",
         headers: [
           {

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 
@@ -239,15 +239,13 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start w-full">
-            <a
-              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Descargar la app Calma en Google Play (abre en ventana nueva)"
+            <Link
+              href="/download"
+              data-cta-location="home_hero"
               className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
             >
               Comienza tu Rutina Gratis
-            </a>
+            </Link>
 
             <a
               href="#features"
@@ -550,7 +548,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/sleep-sounds-app"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -567,9 +565,9 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explorar página de sueño →
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/relaxing-sounds"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -586,9 +584,9 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explorar página de relajación →
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/focus-sounds-app"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -605,7 +603,7 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explorar página de enfoque →
             </span>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -623,7 +621,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/blog/rain-sounds-for-better-sleep-and-focus"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -631,9 +629,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Por qué el constante sonido de la lluvia es perfecto para calmar tu mente.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -641,9 +639,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Lluvia, ruido blanco y paisajes sonoros más suaves para la hora de acostarse.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-studying"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -651,7 +649,7 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Descubre qué sonidos pueden ayudar a la concentración y el enfoque.
             </p>
-          </a>
+          </Link>
         </div>
       </section>
       
@@ -711,7 +709,7 @@ export default function Home() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
           >
@@ -730,7 +728,7 @@ export default function Home() {
                 d="9 5l7 7-7 7"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -850,31 +848,31 @@ export default function Home() {
           </div>
           <p className="mt-4 text-sm text-white/60">
             ¿Buscas una página dedicada para dormir?{" "}
-            <a
+            <Link
               href="/sleep-sounds-app"
               className="text-white underline underline-offset-4 transition hover:text-white/80"
             >
               Explora nuestra página de sonidos para dormir
-            </a>
+            </Link>
           </p>
 
           <p className="mt-3 text-sm text-white/60">
             ¿Buscas más ideas para la hora de dormir?{" "}
-            <a
+            <Link
               href="/blog/best-sounds-for-sleep"
               className="text-white underline underline-offset-4 transition hover:text-white/80"
             >
               Lee nuestra guía rápida de los mejores sonidos para dormir
-            </a>
+            </Link>
           </p>
           <p className="mt-3 text-sm text-white/60">
             ¿Sientes curiosidad por los audios del tipo ondas cerebrales?{" "}
-            <a
+            <Link
               href="/blog/binaural-beats-for-sleep-and-focus"
               className="text-white underline underline-offset-4 transition hover:text-white/80"
             >
               Lee nuestra guía sobre beats binaurales
-            </a>
+            </Link>
           </p>
         </div>
       </section>
@@ -897,7 +895,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -926,9 +924,9 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-sleep"
             className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -957,9 +955,9 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/how-to-build-a-bedtime-routine"
             className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -988,7 +986,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
     </main>

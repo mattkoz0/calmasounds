@@ -61,6 +61,7 @@ const articleJsonLd = {
 export default function BinauralBeatsArticlePage() {
   return (
     <ArticlePage
+      slug="binaural-beats-for-sleep-and-focus"
       jsonLd={articleJsonLd}
       topLinkHref="/pt-BR/focus-sounds-app"
       topLinkLabel="Explore a página de foco"

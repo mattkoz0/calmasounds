@@ -67,7 +67,7 @@ export function AudioPlayer({
         {isPlaying ? <FaPause size={20} /> : <FaPlay size={20} className="ml-1" />}
       </button>
       <div className="flex-1">
-        <h4 className="text-lg font-semibold text-white">{title}</h4>
+        <h3 className="text-lg font-semibold text-white">{title}</h3>
         {description && <p className="mt-1 text-sm text-white/70">{description}</p>}
       </div>
       

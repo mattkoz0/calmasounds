@@ -4,9 +4,9 @@ import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
 
 export const metadata: Metadata = {
-  title: "Benefits of Nature Sounds for Relaxation | Calma",
+  title: "Benefits of Nature Sounds for Stress and Relaxation | Calma",
   description:
-    "Discover how nature sounds like ocean waves, rain, and forest audio can reduce stress, lower cortisol, and improve deep relaxation.",
+    "Explore research-backed benefits of rain, ocean and forest sounds for relaxation, stress recovery and focus, plus practical ways to listen.",
   keywords: [
     "nature sounds",
     "relaxing sounds for sleep",
@@ -20,9 +20,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
   },
   openGraph: {
-    title: "Benefits of Nature Sounds for Relaxation | Calma",
+    title: "Benefits of Nature Sounds for Stress and Relaxation | Calma",
     description:
-      "Discover how nature sounds like ocean waves, rain, and forest audio can reduce stress, lower cortisol, and improve deep relaxation.",
+      "Explore research-backed benefits of rain, ocean and forest sounds for relaxation, stress recovery and focus, plus practical ways to listen.",
     url: "https://www.calmasounds.com/blog/benefits-of-nature-sounds-for-relaxation",
     siteName: "Calma",
     locale: "en_US",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Benefits of Nature Sounds for Relaxation",
+    title: "Benefits of Nature Sounds for Stress and Relaxation",
     description:
-      "Discover how nature sounds like ocean waves, rain, and forest audio can reduce stress and improve deep relaxation.",
+      "Explore the potential benefits of rain, ocean and forest sounds for relaxation, stress recovery and focus.",
   },
 };
 
@@ -41,7 +41,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "The Science and Benefits of Nature Sounds for Deep Relaxation",
   description:
-    "Discover how nature sounds like ocean waves, rain, and forest audio can reduce stress, lower cortisol, and improve deep relaxation.",
+    "Explore research-backed benefits of rain, ocean and forest sounds for relaxation, stress recovery and focus, plus practical ways to listen.",
   author: {
     "@type": "Organization",
     name: "Calma Team",

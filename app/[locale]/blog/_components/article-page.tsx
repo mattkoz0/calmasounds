@@ -1,9 +1,7 @@
-"use client";
-
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Script from "next/script";
-import { useParams } from "next/navigation";
+import { getLocale } from "next-intl/server";
 import { pathnamesMapping } from "@/app/utils/seo";
 import DesktopDownloadQr from "../../_components/desktop-download-qr";
 
@@ -41,7 +39,36 @@ const homeTranslations: Record<string, string> = {
   "pt-BR": "Início",
 };
 
-export function ArticlePage({
+const articleUiTranslations: Record<string, { published: string; updated: string; contents: string; related: string }> = {
+  en: { published: "Published", updated: "Updated", contents: "In this guide", related: "Related articles" },
+  pl: { published: "Opublikowano", updated: "Zaktualizowano", contents: "W tym poradniku", related: "Powiązane artykuły" },
+  es: { published: "Publicado", updated: "Actualizado", contents: "En esta guía", related: "Artículos relacionados" },
+  de: { published: "Veröffentlicht", updated: "Aktualisiert", contents: "In diesem Ratgeber", related: "Ähnliche Artikel" },
+  fr: { published: "Publié", updated: "Mis à jour", contents: "Dans ce guide", related: "Articles associés" },
+  ko: { published: "게시일", updated: "업데이트", contents: "이 가이드의 내용", related: "관련 글" },
+  ja: { published: "公開日", updated: "更新日", contents: "このガイドの内容", related: "関連記事" },
+  "pt-BR": { published: "Publicado", updated: "Atualizado", contents: "Neste guia", related: "Artigos relacionados" },
+};
+
+const editorialDates: Record<string, { published: string; modified: string }> = {
+  "benefits-of-nature-sounds-for-relaxation": { published: "2026-04-07", modified: "2026-07-10" },
+  "best-color-noise-for-adhd": { published: "2026-05-04", modified: "2026-07-10" },
+  "best-free-white-noise-app": { published: "2026-05-04", modified: "2026-05-12" },
+  "best-sounds-for-sleep": { published: "2026-03-16", modified: "2026-07-10" },
+  "best-sounds-for-studying": { published: "2026-03-16", modified: "2026-07-10" },
+  "binaural-beats-for-sleep-and-focus": { published: "2026-03-23", modified: "2026-05-12" },
+  "brown-noise-vs-white-noise-vs-pink-noise": { published: "2026-04-13", modified: "2026-07-10" },
+  "green-noise-for-sleep": { published: "2026-04-19", modified: "2026-07-10" },
+  "guided-breathing-techniques": { published: "2026-03-30", modified: "2026-05-12" },
+  "how-to-build-a-bedtime-routine": { published: "2026-03-16", modified: "2026-04-21" },
+  "rain-sounds-for-better-sleep-and-focus": { published: "2026-04-17", modified: "2026-06-06" },
+  "rain-sounds-vs-white-noise": { published: "2026-03-16", modified: "2026-07-16" },
+  "sounds-for-tinnitus-relief": { published: "2026-05-09", modified: "2026-07-10" },
+  "white-noise-for-babies": { published: "2026-05-18", modified: "2026-07-10" },
+  "white-noise-for-sleep": { published: "2026-03-16", modified: "2026-07-05" },
+};
+
+export async function ArticlePage({
   jsonLd,
   ctaHref,
   ctaLabel,
@@ -58,8 +85,13 @@ export function ArticlePage({
   slug,
   tableOfContents = [],
 }: ArticlePageProps & { tableOfContents?: { id: string; title: string }[] }) {
-  const params = useParams();
-  const locale = (params?.locale as string) || "en";
+  const locale = await getLocale();
+  const ui = articleUiTranslations[locale] ?? articleUiTranslations.en;
+  const dates = slug ? editorialDates[slug] : undefined;
+  const formatDate = (date: string) =>
+    new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "numeric" }).format(
+      new Date(`${date}T12:00:00Z`)
+    );
 
   const getLocalizedUrl = (path: string, currentLocale: string) => {
     let cleanPath = path;
@@ -72,7 +104,15 @@ export function ArticlePage({
   };
 
   const getLocalizedHref = (href: string) => {
-    if (/^https?:\/\//.test(href) || href.startsWith("#")) return href;
+    if (href.startsWith("#")) return href;
+    if (/^https?:\/\//.test(href)) {
+      const destination = new URL(href);
+      const isStore = destination.hostname === "play.google.com" || destination.hostname === "apps.apple.com";
+      if (!isStore) return href;
+      const prefix = locale === "en" ? "" : `/${locale}`;
+      const content = slug ?? "article";
+      return `${prefix}/download?utm_source=website&utm_medium=article&utm_campaign=organic_conversion&utm_content=${encodeURIComponent(content)}`;
+    }
 
     const cleanPath = href.replace(
       /^\/(?:en|es|pl|de|fr|ko|ja|pt-BR)(?=\/|$)/,
@@ -116,6 +156,7 @@ export function ArticlePage({
       "@type": "WebPage",
       "@id": articleUrl,
     },
+    ...(dates ? { datePublished: dates.published, dateModified: dates.modified } : {}),
   };
   const enrichedEntities = hasArticleEntity
     ? entities.map((entity) =>
@@ -191,6 +232,16 @@ export function ArticlePage({
 
         <p className="mt-6 text-lg leading-8 text-white/70">{intro}</p>
 
+        {dates && (
+          <p className="mt-4 text-sm text-white/60">
+            {ui.published}: <time dateTime={dates.published}>{formatDate(dates.published)}</time>
+            {dates.modified !== dates.published && (
+              <> · {ui.updated}: <time dateTime={dates.modified}>{formatDate(dates.modified)}</time></>
+            )}
+            {" · "}Calma Editorial Team
+          </p>
+        )}
+
         <Link
           href={getLocalizedHref(topLinkHref)}
           data-cta-location="article_top"
@@ -201,7 +252,7 @@ export function ArticlePage({
 
         {tableOfContents.length > 0 && (
           <nav className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6" aria-label="Table of contents">
-            <p className="text-sm font-semibold uppercase tracking-wider text-white/40">In this guide</p>
+            <p className="text-sm font-semibold uppercase tracking-wider text-white/60">{ui.contents}</p>
             <ul className="mt-4 grid gap-3 sm:grid-cols-2">
               {tableOfContents.map((item) => (
                 <li key={item.id}>
@@ -225,20 +276,20 @@ export function ArticlePage({
             <p className="mt-4 leading-8 text-white/70">{ctaText}</p>
 
             <div className="mt-6 flex flex-col gap-4 sm:flex-row w-full lg:justify-start">
-              <a
+              <Link
                 href={getLocalizedHref(ctaHref)}
                 data-cta-location="article_end"
                 className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:scale-[1.02]"
               >
                 {ctaLabel}
-              </a>
-              <a
+              </Link>
+              <Link
                 href={getLocalizedHref(secondaryCtaHref)}
                 data-cta-location="article_end_secondary"
                 className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-medium text-white transition hover:bg-white/10"
               >
                 {secondaryCtaLabel}
-              </a>
+              </Link>
             </div>
           </div>
           <div className="hidden lg:col-span-4 lg:flex lg:justify-center lg:w-full">
@@ -248,11 +299,11 @@ export function ArticlePage({
 
         {relatedArticles.length > 0 && (
           <section className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Related articles</h2>
+            <h2 className="text-2xl font-semibold">{ui.related}</h2>
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2">
               {relatedArticles.map((article) => (
-                <a
+                <Link
                   key={article.href}
                   href={getLocalizedHref(article.href)}
                   className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10"
@@ -261,7 +312,7 @@ export function ArticlePage({
                   <p className="mt-2 text-sm leading-6 text-white/70">
                     {article.description}
                   </p>
-                </a>
+                </Link>
               ))}
             </div>
           </section>

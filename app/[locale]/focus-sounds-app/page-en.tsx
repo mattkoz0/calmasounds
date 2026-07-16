@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Focus Sounds App for Studying, ADHD & Deep Work | Calma",
+  title: "Focus Sounds App for Study & ADHD — Free | Calma",
   description:
     "Can't focus? Calma helps you create custom brown noise, white noise & ambient soundscapes for studying, ADHD focus, and deep work. Free app, no subscription, works offline.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/focus-sounds-app",
   },
   openGraph: {
-    title: "Focus Sounds App for Studying, ADHD & Deep Work | Calma",
+    title: "Focus Sounds App for Study & ADHD — Free | Calma",
     description:
     "Can't focus? Calma helps you create custom brown noise, white noise & ambient soundscapes for studying, ADHD focus, and deep work. Free app, no subscription.",
     url: "https://www.calmasounds.com/focus-sounds-app",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Focus Sounds App for Studying, ADHD & Deep Work | Calma",
+    title: "Focus Sounds App for Study & ADHD — Free | Calma",
     description:
     "Can't focus? Create custom brown noise & ambient soundscapes for studying, ADHD focus, and deep work with Calma.",
   },

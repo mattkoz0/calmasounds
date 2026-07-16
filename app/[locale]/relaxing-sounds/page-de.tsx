@@ -84,7 +84,6 @@ export default function RelaxingSoundsPage() {
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Calma im Google Play Store herunterladen (öffnet in neuem Fenster)"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
             Download bei Google Play
@@ -94,7 +93,6 @@ export default function RelaxingSoundsPage() {
             href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Calma im App Store herunterladen (öffnet in neuem Fenster)"
             className="rounded-2xl bg-white px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.02]"
           >
             Download im App Store

@@ -4,6 +4,24 @@ import { pathnamesMapping } from "@/app/utils/seo";
 const BASE_URL = "https://www.calmasounds.com";
 const locales = ["en", "es", "pl", "de", "fr", "ko", "ja", "pt-BR"] as const;
 
+const routeModifiedDates: Partial<Record<string, string>> = {
+  "/blog/benefits-of-nature-sounds-for-relaxation": "2026-07-10",
+  "/blog/best-color-noise-for-adhd": "2026-07-10",
+  "/blog/best-free-white-noise-app": "2026-05-12",
+  "/blog/best-sounds-for-sleep": "2026-07-10",
+  "/blog/best-sounds-for-studying": "2026-07-10",
+  "/blog/binaural-beats-for-sleep-and-focus": "2026-05-12",
+  "/blog/brown-noise-vs-white-noise-vs-pink-noise": "2026-07-10",
+  "/blog/green-noise-for-sleep": "2026-07-10",
+  "/blog/guided-breathing-techniques": "2026-05-12",
+  "/blog/how-to-build-a-bedtime-routine": "2026-04-21",
+  "/blog/rain-sounds-for-better-sleep-and-focus": "2026-06-06",
+  "/blog/rain-sounds-vs-white-noise": "2026-07-16",
+  "/blog/sounds-for-tinnitus-relief": "2026-07-10",
+  "/blog/white-noise-for-babies": "2026-07-10",
+  "/blog/white-noise-for-sleep": "2026-07-05",
+};
+
 const routes = [
   "",
   "/blog",
@@ -64,6 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return routes.flatMap((route) =>
     locales.map((locale) => ({
       url: `${BASE_URL}${localizedPath(route, locale)}`,
+      ...(routeModifiedDates[route] ? { lastModified: routeModifiedDates[route] } : {}),
       alternates: {
         languages: languageAlternates(route),
       },

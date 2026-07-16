@@ -5,9 +5,9 @@ import { AudioPlayer } from "../_components/audio-player";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Is Rain White Noise? White vs Pink Noise Explained | Calma",
+  title: "Is Rain White Noise? Hear the Difference | Calma",
   description:
-    "Is rain white noise? Usually not. Compare rain, pink noise and white noise, hear both samples, and choose a sound for sleep or masking distractions.",
+    "Compare real rain, white noise and pink noise with audio samples. Hear the difference and choose a sound for sleep or masking distractions.",
   keywords: [
     "is rain considered white noise",
     "is rain white noise",
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
   },
   openGraph: {
-    title: "Is Rain White Noise? White vs Pink Noise Explained",
+    title: "Is Rain White Noise? Hear the Difference in 30 Seconds",
     description:
-      "Rain often has a pink-noise-like spectrum rather than a white-noise spectrum. Compare both and hear the difference.",
+      "Compare rain, white noise and pink noise with free audio samples and hear the difference for yourself.",
     url: "https://www.calmasounds.com/blog/rain-sounds-vs-white-noise",
     siteName: "Calma",
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Is Rain White Noise? White vs Pink Noise Explained",
+    title: "Is Rain White Noise? Hear the Difference in 30 Seconds",
     description:
       "Compare rain, pink noise and white noise with clear explanations and free audio samples.",
   },
@@ -92,8 +92,8 @@ export default function RainSoundsVsWhiteNoisePage() {
     <ArticlePage
       slug="rain-sounds-vs-white-noise"
       jsonLd={articleJsonLd}
-      title="Is Rain White Noise? (White vs Pink Noise Explained)"
-      intro="If you use rain at bedtime, you may wonder whether it is technically white noise. Usually it is not: white noise has a flat power spectrum, while many steady rain recordings are closer to pink noise. The exact answer depends on the rainfall and recording. Hear both samples below and compare how they sound."
+      title="Is Rain White Noise? Hear the Difference"
+      intro="Usually, no. White noise has a flat power spectrum, while many steady rain recordings sound closer to pink noise. Because every rainfall and recording is different, the fastest way to understand the distinction is to hear the two samples below."
       topLinkHref="/nature-sounds-app"
       topLinkLabel="Explore nature sounds app"
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
@@ -127,19 +127,33 @@ export default function RainSoundsVsWhiteNoisePage() {
         },
       ]}
     >
-      <ArticleSection id="is-rain-white-noise" title="Is rain considered white noise? (The Scientific Answer)">
+      <ArticleSection id="is-rain-white-noise" title="Is rain considered white noise? The short answer">
         <p className="mt-4 leading-8 text-white/70">
           The short answer is: <strong>usually no.</strong> White noise has a flat power spectrum. Many steady rain recordings put relatively more energy in lower frequencies and therefore sound closer to <strong>pink noise</strong>, but rain is not one fixed signal and its spectrum varies.
         </p>
+        <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5">
+          <p className="font-semibold text-emerald-100">Take the 30-second listening test</p>
+          <p className="mt-2 text-sm leading-6 text-white/70">
+            Play each sample for about 15 seconds at the same comfortable volume. Rain should sound more natural and textured; white noise should sound brighter and more uniform.
+          </p>
+        </div>
         <p className="mt-4 leading-8 text-white/70">
           In everyday conversation, “white noise” is often used as a catch-all term for continuous background sound. Acoustically, the label depends on the distribution of energy across frequencies. Rainfall intensity, surfaces, room acoustics, microphones and audio processing can all change the result.
         </p>
-        <AudioPlayer 
-          src="/rain.m4a" 
-          title="Steady Rain (Pink Noise)" 
-          description="Notice the deep, natural, atmospheric sound that promotes emotional comfort."
-          colorClass="bg-blue-500/20 text-blue-300"
-        />
+        <div className="grid gap-4 md:grid-cols-2">
+          <AudioPlayer
+            src="/rain.m4a"
+            title="Steady rain"
+            description="Natural, textured and often pink-noise-like."
+            colorClass="bg-blue-500/20 text-blue-300"
+          />
+          <AudioPlayer
+            src="/white_noise.m4a"
+            title="True white noise"
+            description="Bright, uniform and steady across frequencies."
+            colorClass="bg-slate-500/20 text-slate-300"
+          />
+        </div>
         <p className="mt-4 leading-8 text-white/70">
           Rain sounds are organic and gentle. For most people, they create a cozy, emotional association with rest, comfort, and safety—often harkening back to childhood memories of being indoors during a storm.
         </p>
@@ -149,12 +163,6 @@ export default function RainSoundsVsWhiteNoisePage() {
         <p className="mt-4 leading-8 text-white/70">
           True white noise is much more neutral and constant. Technically speaking, white noise contains <strong>all audible frequencies played at an equal intensity</strong>. Because the high frequencies are just as loud as the low frequencies, it sounds somewhat like television static or a hissing fan.
         </p>
-        <AudioPlayer 
-          src="/white_noise.m4a" 
-          title="True White Noise" 
-          description="A continuous, full-spectrum hissing sound that aggressively blocks out distractions."
-          colorClass="bg-slate-500/20 text-slate-300"
-        />
         <p className="mt-4 leading-8 text-white/70">
           Instead of sounding like a real environment, white noise creates a steady background hiss. Because it covers a broad frequency range, it can reduce the contrast between a room’s background and intermittent sounds. That does not make it universally better for sleep: systematic reviews report mixed, generally low-certainty evidence for continuous noise as a sleep aid.
         </p>

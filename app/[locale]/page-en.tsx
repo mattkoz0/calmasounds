@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 
 export const metadata: Metadata = {
-  title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
+  title: "Free Sleep Sounds App — Offline, No Subscription | Calma",
   description:
-    "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
+    "Mix rain, nature sounds, white noise and brown noise for sleep or focus. Calma works offline, has a free version and requires no subscription.",
   alternates: {
     canonical: "https://www.calmasounds.com",
   },
   openGraph: {
-    title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
+    title: "Free Sleep Sounds App — Offline, No Subscription | Calma",
     description:
       "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
     url: "https://www.calmasounds.com",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Calma | Sleep Sounds App for Relaxation, White Noise and Focus",
+    title: "Free Sleep Sounds App — Offline, No Subscription | Calma",
     description:
       "Calma is a sleep sounds app for relaxation, white noise and focus. Create personalized soundscapes for better sleep, calmer evenings and deeper concentration.",
   },
@@ -236,15 +236,13 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start w-full">
-            <a
-              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Download Calma App on Google Play Store (opens in a new window)"
+            <Link
+              href="/download"
+              data-cta-location="home_hero"
               className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
             >
               Start Your Free Routine
-            </a>
+            </Link>
 
             <a
               href="#features"
@@ -548,7 +546,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/sleep-sounds-app"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -565,9 +563,9 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explore sleep page →
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/relaxing-sounds"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -584,9 +582,9 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explore relaxing page →
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/focus-sounds-app"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -603,7 +601,7 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               Explore focus page →
             </span>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -621,7 +619,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/blog/rain-sounds-for-better-sleep-and-focus"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -629,9 +627,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Why steady rain sounds are perfect for calming your mind.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -639,9 +637,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Rain, white noise and softer soundscapes for bedtime.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-studying"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -649,9 +647,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Discover which sounds may help concentration and focus.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/white-noise-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -659,9 +657,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               How white noise masks distractions and improves deep sleep.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/sounds-for-tinnitus-relief"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -669,9 +667,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Sound therapy techniques for managing tinnitus at night.
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-color-noise-for-adhd"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -679,7 +677,7 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               Why brown noise is the top choice for ADHD focus and flow.
             </p>
-          </a>
+          </Link>
         </div>
       </section>
       
@@ -739,7 +737,7 @@ export default function Home() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
           >
@@ -758,7 +756,7 @@ export default function Home() {
                 d="9 5l7 7-7 7"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -880,31 +878,31 @@ export default function Home() {
         </div>
           <p className="mt-4 text-sm text-white/60">
             Looking for a dedicated sleep page?{" "}
-            <a
+            <Link
               href="/sleep-sounds-app"
               className="text-white underline underline-offset-4 transition hover:text-white/80"
             >
               Explore our sleep sounds app page
-            </a>
+            </Link>
           </p>
 
           <p className="mt-3 text-sm text-white/60">
             Looking for more bedtime ideas?{" "}
-            <a
+            <Link
               href="/blog/best-sounds-for-sleep"
               className="text-white underline underline-offset-4 transition hover:text-white/80"
             >
               Read our guide to the best sounds for sleep
-            </a>
+            </Link>
           </p>
           <p className="mt-3 text-sm text-white/60">
             Curious about brainwave-style audio?{" "}
-            <a
+            <Link
               href="/blog/binaural-beats-for-sleep-and-focus"
               className="text-white underline underline-offset-4 transition hover:text-white/80"
             >
               Read our binaural beats guide
-            </a>
+            </Link>
           </p>
       </section>
       <section className="mx-auto max-w-6xl px-6 py-24">
@@ -926,7 +924,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -955,9 +953,9 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-sleep"
             className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -986,9 +984,9 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/how-to-build-a-bedtime-routine"
             className="group flex flex-col rounded-[2rem] border border-white/10 bg-white/5 p-8 transition hover:bg-white/10"
           >
@@ -1017,7 +1015,7 @@ export default function Home() {
                 />
               </svg>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
     </main>

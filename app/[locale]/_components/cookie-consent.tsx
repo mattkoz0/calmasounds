@@ -16,9 +16,7 @@ export default function CookieConsent() {
 
   const acceptCookies = () => {
     localStorage.setItem("cookie-consent", "accepted");
-    window.gtag?.("consent", "update", {
-      analytics_storage: "granted",
-    });
+    window.dispatchEvent(new CustomEvent("calma:analytics-consent", { detail: { accepted: true } }));
     setShowBanner(false);
   };
 
@@ -27,6 +25,7 @@ export default function CookieConsent() {
     window.gtag?.("consent", "update", {
       analytics_storage: "denied",
     });
+    window.dispatchEvent(new CustomEvent("calma:analytics-consent", { detail: { accepted: false } }));
     setShowBanner(false);
   };
 

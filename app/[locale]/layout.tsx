@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-import Script from "next/script";
 import CookieConsent from "./_components/cookie-consent";
 import Header from "./_components/header";
 import Footer from "./_components/footer";
 import ConversionTracking from "./_components/conversion-tracking";
+import AnalyticsLoader from "./_components/analytics-loader";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 
@@ -106,8 +106,6 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="dns-prefetch" href="https://play.google.com" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
@@ -117,35 +115,10 @@ export default async function RootLayout({
           <Footer />
           <CookieConsent />
           <ConversionTracking />
+          <AnalyticsLoader />
         </NextIntlClientProvider>
         <Analytics />
         <SpeedInsights />
-
-        <Script id="google-consent-default" strategy="beforeInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            var analyticsConsent = localStorage.getItem('cookie-consent') === 'accepted' ? 'granted' : 'denied';
-            gtag('consent', 'default', {
-              analytics_storage: analyticsConsent,
-              ad_storage: 'denied',
-              ad_user_data: 'denied',
-              ad_personalization: 'denied'
-            });
-          `}
-        </Script>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-DKG7861ZMZ"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-DKG7861ZMZ');
-          `}
-        </Script>
       </body>
     </html>
   );

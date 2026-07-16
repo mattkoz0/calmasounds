@@ -55,9 +55,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">
             {t("product")}
-          </h4>
+          </h2>
           <ul className="mt-4 space-y-3 text-white/70">
             {footerLinks.map((link) => (
               <li key={link.href} className="flex">
@@ -70,9 +70,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/50">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.2em] text-white/60">
             {t("guides")}
-          </h4>
+          </h2>
           <ul className="mt-4 space-y-3 text-white/70">
             {guideLinks.map((link) => (
               <li key={link.name} className="flex">
@@ -126,7 +126,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 text-white/40">
+            <div className="flex flex-wrap items-center justify-center gap-4 text-white/60">
               <a
                 href="https://www.tiktok.com/@.calma.app"
                 target="_blank"

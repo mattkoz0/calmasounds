@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Link } from "@/i18n/routing";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 
@@ -236,15 +237,13 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start w-full">
-            <a
-              href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Google Play StoreからCalmaアプリをダウンロード（新しいウィンドウで開きます）"
+            <Link
+              href="/download"
+              data-cta-location="home_hero"
               className="rounded-2xl bg-emerald-500 px-6 py-3 font-semibold text-white transition hover:scale-[1.02] hover:bg-emerald-400 shadow-lg shadow-emerald-500/20"
             >
               無料のルーティンを始める
-            </a>
+            </Link>
 
             <a
               href="#features"
@@ -532,7 +531,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/sleep-sounds-app"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -548,9 +547,9 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               睡眠ページを見る →
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/relaxing-sounds"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -566,9 +565,9 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               リラックスページを見る →
             </span>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/focus-sounds-app"
             className="group rounded-3xl border border-white/10 bg-white/5 p-8 transition hover:border-white/20 hover:bg-white/[0.07]"
           >
@@ -584,7 +583,7 @@ export default function Home() {
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
               集中ページを見る →
             </span>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -602,7 +601,7 @@ export default function Home() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          <a
+          <Link
             href="/blog/rain-sounds-for-better-sleep-and-focus"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -610,9 +609,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               一定の雨の音が心を落ち着かせるのに最適な理由。
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-sleep"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -620,9 +619,9 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               雨、ホワイトノイズ、就寝時のより柔らかなサウンドスケープ。
             </p>
-          </a>
+          </Link>
 
-          <a
+          <Link
             href="/blog/best-sounds-for-studying"
             className="rounded-3xl border border-white/10 bg-white/5 p-6 transition hover:bg-white/10"
           >
@@ -630,7 +629,7 @@ export default function Home() {
             <p className="mt-3 text-sm leading-6 text-white/70">
               集中力とフォーカスを高める可能性のある音の種類を見つけましょう。
             </p>
-          </a>
+          </Link>
         </div>
       </section>
       
@@ -690,7 +689,7 @@ export default function Home() {
         </div>
 
         <div className="mt-12 text-center">
-          <a
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="inline-flex items-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-medium text-white transition hover:bg-white/10"
           >
@@ -709,7 +708,7 @@ export default function Home() {
                 d="9 5l7 7-7 7"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -825,31 +824,31 @@ export default function Home() {
         </div>
         <p className="mt-4 text-sm text-white/60">
           専用の睡眠ページをお探しですか？{" "}
-          <a
+          <Link
             href="/sleep-sounds-app"
             className="text-white underline underline-offset-4 transition hover:text-white/80"
           >
             睡眠音アプリのページを見る
-          </a>
+          </Link>
         </p>
 
         <p className="mt-3 text-sm text-white/60">
           就寝時のアイデアをさらに探していますか？{" "}
-          <a
+          <Link
             href="/blog/best-sounds-for-sleep"
             className="text-white underline underline-offset-4 transition hover:text-white/80"
           >
             睡眠に最適な音のガイドを読む
-          </a>
+          </Link>
         </p>
         <p className="mt-3 text-sm text-white/60">
           ノイズの色についてもっと知りたいですか？{" "}
-          <a
+          <Link
             href="/blog/brown-noise-vs-white-noise-vs-pink-noise"
             className="text-white underline underline-offset-4 transition hover:text-white/80"
           >
             ホワイトノイズ、ピンクノイズ、ブラウンノイズの違いを読む
-          </a>
+          </Link>
         </p>
       </section>
     </main>
