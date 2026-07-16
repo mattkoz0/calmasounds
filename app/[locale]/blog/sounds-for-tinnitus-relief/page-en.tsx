@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
-import Image from "next/image";
 
 const articleTitle = "Sounds for Tinnitus Masking: A Practical Guide | Calma";
 const articleDescription =
@@ -107,11 +106,15 @@ export default function SoundsForTinnitusReliefPage() {
       secondaryCtaLabel="Learn more about the app"
       tableOfContents={[
         { id: "what-is-sound-therapy", title: "How Sound Therapy Works" },
+        { id: "evidence", title: "What clinical research found" },
         { id: "white-noise", title: "White Noise for Sharp Ringing" },
         { id: "brown-noise", title: "Brown Noise for Relaxation" },
         { id: "nature-sounds", title: "Nature Sounds & Water" },
-        { id: "habituation", title: "The Secret to Tinnitus Habituation" },
+        { id: "habituation", title: "Masking and habituation" },
+        { id: "safe-test", title: "A cautious listening test" },
+        { id: "medical-care", title: "When to seek medical care" },
         { id: "faq", title: "Frequently Asked Questions" },
+        { id: "sources", title: "Evidence and sources" },
       ]}
       relatedArticles={[
         {
@@ -122,7 +125,7 @@ export default function SoundsForTinnitusReliefPage() {
         {
           href: "/blog/white-noise-for-sleep",
           title: "White Noise for Sleep",
-          description: "Learn how sound masking improves the quality of your deep sleep.",
+          description: "Learn how masking works and why sleep evidence remains mixed.",
         }
       ]}
     >
@@ -131,6 +134,21 @@ export default function SoundsForTinnitusReliefPage() {
           <strong>Sound therapy</strong> adds neutral or pleasant external audio. According to the U.S. National Institute on Deafness and Other Communication Disorders, it may work by masking tinnitus, helping a person become accustomed to it or providing a distraction. A smartphone sound generator can be used as an aid for relaxation or sleep.
         </p>
         <p className="mt-4 leading-8 text-white/70">Read the <a className="text-emerald-300 underline underline-offset-4" href="https://www.nidcd.nih.gov/health/tinnitus" target="_blank" rel="noopener noreferrer">NIDCD tinnitus guide</a>, and speak with a clinician or audiologist about persistent symptoms.</p>
+      </ArticleSection>
+
+      <ArticleSection id="evidence" title="What does clinical research say about tinnitus sound therapy?">
+        <p>
+          The evidence is more nuanced than “sound cures tinnitus.” A Cochrane review found that hearing aids, sound generators and combination devices may produce little or no difference in tinnitus severity compared with one another. The authors also emphasized that the available trials were limited and did not prove that sound is useless.
+        </p>
+        <p className="mt-4">
+          A multicenter randomized trial of 151 people compared full tinnitus retraining therapy, counselling with placebo sound generators and standard care. All groups improved over 18 months, but the conventional sound generators did not produce a clear advantage over the other approaches. This suggests that education, support and time may matter alongside the sound itself.
+        </p>
+        <div className="mt-6 rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5">
+          <p className="font-semibold text-emerald-100">A realistic expectation</p>
+          <p className="mt-2 text-sm leading-6 text-white/70">
+            Background sound can be a practical coping tool—especially in quiet rooms or at bedtime—but it should not be presented as a cure or guaranteed long-term treatment.
+          </p>
+        </div>
       </ArticleSection>
 
       <ArticleSection id="white-noise" title="White Noise for Sharp Ringing">
@@ -163,30 +181,35 @@ export default function SoundsForTinnitusReliefPage() {
         />
       </ArticleSection>
 
-      <ArticleSection id="habituation" title="The Secret: Partial Masking and Habituation">
+      <ArticleSection id="habituation" title="Masking, partial masking and habituation are different goals">
         <p className="mt-4 leading-8 text-white/70">
           Avoid turning sound up simply to overpower tinnitus. Loud listening can damage hearing and may make symptoms more intrusive.
         </p>
         <p className="mt-4 leading-8 text-white/70">
           Habituation-based programs combine low-level sound with counselling, but the plan and mixing level should be individualized. If you want to use sound therapeutically rather than simply as a quiet bedtime background, an audiologist can help.
         </p>
-        
-        <div className="mt-12 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Download Calma App for Free"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
+      </ArticleSection>
+
+      <ArticleSection id="safe-test" title="A cautious way to test background sound">
+        <ol className="list-decimal space-y-3 pl-5 text-white/70">
+          <li>Begin with a speaker rather than headphones when practical, especially for longer bedtime listening.</li>
+          <li>Choose one neutral option—rain, waves, white noise or brown noise—and start at the lowest clearly audible level.</li>
+          <li>Aim to reduce contrast with the room, not to drown out tinnitus completely.</li>
+          <li>Listen for 10–15 minutes and note comfort, irritation and how often attention returns to tinnitus.</li>
+          <li>Stop if the sound feels sharp, causes discomfort or appears to worsen symptoms.</li>
+        </ol>
+        <p className="mt-4">
+          Pitch matching is not required for ordinary background sound. Personalized therapeutic protocols are different and should be designed with a qualified clinician.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection id="medical-care" title="When tinnitus needs medical evaluation">
+        <p>
+          Arrange medical or audiology assessment when tinnitus is persistent, distressing or affecting sleep and concentration. Seek prompt care when it begins suddenly, follows an injury, occurs with sudden hearing loss, is only on one side, pulses with your heartbeat, or comes with significant dizziness or neurological symptoms.
+        </p>
+        <p className="mt-4">
+          A hearing test can identify hearing loss and help separate everyday sound enrichment from treatment that needs professional supervision. An app cannot determine the cause of tinnitus.
+        </p>
       </ArticleSection>
 
       <ArticleSection id="faq" title="Frequently Asked Questions (FAQ)">
@@ -208,6 +231,26 @@ export default function SoundsForTinnitusReliefPage() {
             <p className="mt-2 leading-7 text-white/70">Any loud or uncomfortable sound can harm hearing or aggravate symptoms. Keep the level low and stop if symptoms worsen.</p>
           </div>
         </div>
+      </ArticleSection>
+
+      <ArticleSection id="sources" title="Evidence and sources">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://www.nidcd.nih.gov/health/tinnitus" target="_blank" rel="noopener noreferrer">
+              National Institute on Deafness and Other Communication Disorders: tinnitus overview
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD013094.pub2/full" target="_blank" rel="noopener noreferrer">
+              Cochrane review of sound therapy devices for tinnitus
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/31120533/" target="_blank" rel="noopener noreferrer">
+              Randomized trial of tinnitus retraining therapy, sound generators and standard care
+            </a>
+          </li>
+        </ul>
       </ArticleSection>
     </ArticlePage>
   );

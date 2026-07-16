@@ -69,10 +69,13 @@ export default function BestColorNoiseForADHDPage() {
       secondaryCtaLabel="Mix Your Own Audio"
       tableOfContents={[
         { id: "adhd-and-sound", title: "What the evidence says" },
+        { id: "noise-colors", title: "What the colors actually mean" },
         { id: "white-noise", title: "White noise" },
         { id: "brown-noise", title: "Brown noise" },
         { id: "pink-noise", title: "Pink noise" },
-        { id: "summary", title: "How to choose" },
+        { id: "personal-test", title: "A practical comparison test" },
+        { id: "summary", title: "What the findings do—and do not—mean" },
+        { id: "sources", title: "Evidence and sources" },
       ]}
       relatedArticles={[
         {
@@ -99,6 +102,58 @@ export default function BestColorNoiseForADHDPage() {
         <p className="mt-4">
           Read the <a className="text-emerald-300 underline underline-offset-4" href="https://pubmed.ncbi.nlm.nih.gov/38428577/" target="_blank" rel="noopener noreferrer">peer-reviewed review on PubMed</a> for the study details and limitations.
         </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-3">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p className="text-2xl font-semibold text-emerald-300">13</p>
+            <p className="mt-1 text-sm text-white/70">eligible studies</p>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p className="text-2xl font-semibold text-emerald-300">335</p>
+            <p className="mt-1 text-sm text-white/70">participants in the ADHD analysis</p>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+            <p className="text-2xl font-semibold text-emerald-300">Small</p>
+            <p className="mt-1 text-sm text-white/70">average task-performance benefit</p>
+          </div>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="noise-colors" title="What do white, pink and brown noise actually mean?">
+        <p>
+          The colors describe how sound energy is distributed across frequencies—not a mood, diagnosis or special brain frequency. White noise has equal power per hertz, so its upper frequencies sound prominent. Pink noise loses energy as frequency rises and often resembles steady rain. Brown noise rolls off even more steeply, producing a deeper rumble.
+        </p>
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[620px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Sound</th>
+                <th className="px-4 py-3">Typical character</th>
+                <th className="px-4 py-3">Evidence in the 2024 review</th>
+                <th className="px-4 py-3">Reason to test it</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">White</td>
+                <td className="px-4 py-3">Bright, static-like</td>
+                <td className="px-4 py-3">Most of the eligible evidence</td>
+                <td className="px-4 py-3">Broad masking of changing sounds</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Pink</td>
+                <td className="px-4 py-3">Softer, rain-like</td>
+                <td className="px-4 py-3">Included, but in far fewer observations</td>
+                <td className="px-4 py-3">Less high-frequency hiss</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Brown</td>
+                <td className="px-4 py-3">Deep, waterfall-like</td>
+                <td className="px-4 py-3">No eligible studies</td>
+                <td className="px-4 py-3">Personal comfort, not proven superiority</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </ArticleSection>
 
       <ArticleSection id="white-noise" title="White noise: broad masking, brighter sound">
@@ -129,20 +184,42 @@ export default function BestColorNoiseForADHDPage() {
 
       <ArticleSection id="pink-noise" title="Pink Noise: The Middle Ground">
         <p>
-          If brown noise feels too deep or muffled for your liking, Pink noise is the perfect compromise. It has more bass than white noise but retains some of the higher frequencies, sounding very similar to a steady, heavy rainstorm. 
+          If brown noise feels too deep or muffled, pink noise offers a middle frequency profile. It has less upper-frequency energy than white noise but more than brown noise, and can resemble a steady, heavy rainstorm.
         </p>
         <p className="mt-4">
           Pink noise was included alongside white noise in the research review, but the average benefit was small and does not predict an individual response.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="summary" title="Conclusion: What color noise is best for ADHD?">
+      <ArticleSection id="personal-test" title="A practical way to test noise during focus work">
+        <p>
+          A preference can feel convincing while still being shaped by the task, time of day or expectation. A small repeatable comparison is more useful than choosing the color with the strongest online claims.
+        </p>
+        <ol className="mt-4 list-decimal space-y-3 pl-5 text-white/70">
+          <li>Choose one repeatable 20-minute task, such as proofreading, flash cards or a practice problem set.</li>
+          <li>Complete it once in quiet and once with one steady sound at a low, comfortable level.</li>
+          <li>Keep the room, task difficulty and time of day as similar as practical.</li>
+          <li>Record completed items, mistakes and a simple 1–5 distraction score.</li>
+          <li>Repeat on several days before deciding. Stop if the sound creates fatigue, irritation or ringing.</li>
+        </ol>
+        <p className="mt-4">
+          This is a workspace experiment, not an ADHD assessment or treatment. A sound that helps with repetitive reading may still interfere with language learning, conversation or complex reasoning.
+        </p>
+      </ArticleSection>
+
+      <ArticleSection id="summary" title="What the findings do—and do not—mean">
         <p>
           There is no evidence-based winner for every person. White and pink noise have limited evidence for a small average task-performance benefit in young people with ADHD; brown noise has not yet been tested adequately in eligible trials.
         </p>
         <p className="mt-4">
           Test one quiet sound at a time during a repeatable task, compare it with silence, and keep what feels useful. Calma can help with that experiment, but it does not diagnose or treat ADHD.
         </p>
+        <div className="mt-6 rounded-2xl border border-amber-300/20 bg-amber-300/10 p-5">
+          <p className="font-semibold text-amber-100">The important limitation</p>
+          <p className="mt-2 text-sm leading-6 text-white/70">
+            The studies measured short laboratory tasks, mostly in children and young adults. They do not show that noise reduces core ADHD symptoms, replaces established care or improves school and work performance over months.
+          </p>
+        </div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -170,6 +247,26 @@ export default function BestColorNoiseForADHDPage() {
             })
           }}
         />
+      </ArticleSection>
+
+      <ArticleSection id="sources" title="Evidence and sources">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/38428577/" target="_blank" rel="noopener noreferrer">
+              Systematic review and meta-analysis of white and pink noise for task performance in ADHD
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/17683456/" target="_blank" rel="noopener noreferrer">
+              Experimental study of white noise and cognitive performance in children with ADHD
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/25393410/" target="_blank" rel="noopener noreferrer">
+              Study comparing responses to white noise across attention levels
+            </a>
+          </li>
+        </ul>
       </ArticleSection>
     </ArticlePage>
   );

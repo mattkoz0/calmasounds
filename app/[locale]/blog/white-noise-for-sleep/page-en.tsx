@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
-import Image from "next/image";
 
-const articleTitle = "Why Does White Noise Help You Sleep? (2026 Guide) | Calma";
+const articleTitle = "Why Does White Noise Help You Sleep? Evidence & Limits | Calma";
 const articleDescription =
-  "Does white noise help you sleep? Learn how white noise masks distractions, improves deep sleep quality, and the differences between white, pink, and brown noise.";
+  "White noise may mask changing bedroom sounds, but sleep evidence is mixed. Learn how it works, what trials found and how to listen cautiously.";
 const articleUrl = "https://www.calmasounds.com/blog/white-noise-for-sleep";
 
 export const metadata: Metadata = {
@@ -52,7 +51,7 @@ const articleJsonLd = {
       "name": "Why does white noise help you sleep?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White noise helps you sleep by raising the baseline of ambient sound in your room. This reduces the contrast between silence and sudden noises (like traffic, snoring, or doors), so your brain is less likely to register them as threats and wake you up. It essentially creates a consistent acoustic blanket."
+        "text": "White noise may help by reducing the contrast between steady background sound and sudden noises such as traffic or doors. This masking effect can make disruptions less noticeable, but studies do not show that it improves sleep for everyone."
       }
     },
     {
@@ -60,7 +59,7 @@ const articleJsonLd = {
       "name": "What is white noise for sleep exactly?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "White noise for sleep is a continuous sound containing all audible frequencies at equal intensity, similar to static, a humming fan, or an air conditioner. It creates a predictable audio environment that masks sudden disruptions and helps your brain relax into deeper sleep stages."
+        "text": "Technical white noise has equal power per hertz and sounds like static. Many fans and air conditioners are broadband sounds rather than mathematically white noise, but they can still provide a steady masking background."
       }
     },
     {
@@ -68,7 +67,7 @@ const articleJsonLd = {
       "name": "Is white or pink noise better for sleep?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Many studies suggest that pink noise (which sounds like steady rain) might be better for improving deep, slow-wave sleep because its frequency balance is softer on the human ear. However, white noise is generally better for masking extremely sharp, high-pitched distractions."
+        "text": "Research does not establish a universal winner. Pink noise sounds softer because it contains less high-frequency energy, while white noise provides broader high-frequency masking. Comfort and the bedroom environment matter."
       }
     },
     {
@@ -76,7 +75,7 @@ const articleJsonLd = {
       "name": "Is it safe to sleep with white noise every night?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes, sleeping with white noise every night is generally safe for adults when the volume stays below 60 dB (roughly the level of a quiet conversation). Place the sound source at least 2 meters from your head."
+        "text": "Keep white noise at the lowest comfortable level that serves its purpose and place the source away from your head. Stop if it causes discomfort, ringing or poorer sleep. There is no single volume or distance that suits every device and room."
       }
     },
     {
@@ -84,7 +83,7 @@ const articleJsonLd = {
       "name": "Can you get addicted to sleeping with white noise?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You don't become physically addicted to white noise, but you can form a strong psychological habit. Your brain learns to associate the sound with sleep. If you want to stop using it, it's best to gradually lower the volume over a few weeks."
+        "text": "White noise is not considered physically addictive, but it can become part of a learned bedtime routine. If you no longer want it, lower the level or shorten the timer gradually."
       }
     }
   ]
@@ -111,27 +110,48 @@ export default function WhiteNoiseForSleepPage() {
       topLinkHref="/white-noise-app"
       topLinkLabel="Explore white noise app"
       title="Why Does White Noise Help You Sleep? The Science Explained"
-      intro="White noise for sleep has become a global phenomenon. From stressed adults living in bustling cities to parents trying to get their newborns to sleep through the night, millions of people rely on that steady, static 'hiss' to drift off. But how does it actually work? Does it improve the quality of your deep sleep, or is it just a tool to block out a snoring partner?"
+      intro="White noise can make an unpredictable bedroom sound more consistent, which may help when traffic, neighbors or doors interrupt sleep. That does not mean it deepens sleep or works for everyone. Here is the masking mechanism, the strongest evidence on both sides and a cautious way to decide whether it suits your room."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Download Calma App for Free"
       secondaryCtaHref="/white-noise-app"
       secondaryCtaLabel="Explore white noise player"
       tableOfContents={[
-        { id: "how-it-works", title: "How sound masking improves sleep" },
+        { id: "how-it-works", title: "How sound masking may reduce disruption" },
+        { id: "evidence", title: "What sleep studies found" },
         { id: "what-is-it", title: "What exactly is white noise?" },
         { id: "comparison-table", title: "White vs Pink vs Brown Noise" },
         { id: "best-practices", title: "How to use it safely" },
         { id: "faq", title: "Frequently Asked Questions" },
+        { id: "sources", title: "Evidence and sources" },
       ]}
       relatedArticles={relatedArticles}
     >
-      <ArticleSection id="how-it-works" title="How sound masking improves sleep">
+      <ArticleSection id="how-it-works" title="How sound masking may reduce sleep disruption">
         <p className="mt-4 leading-8 text-white/70">
-          White noise doesn't just block sounds by being loud; it works through a phenomenon called <strong>sound masking</strong>. When you are asleep, your brain continues to process sounds to alert you to danger. What wakes you up isn't necessarily the volume of a noise (like a door slamming), but the sudden change from silence to noise.
+          White noise does not need to overpower a disturbance. Through <strong>sound masking</strong>, a steady background reduces the contrast between the room and an intermittent sound. A door closing may therefore stand out less against quiet broadband noise than against near-silence.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Because white noise contains all frequencies, it essentially fills in the silence. It raises the baseline of background noise so that sudden sounds—like traffic, a barking dog, or a snoring partner—blend in and fail to trigger your brain's \"wake up\" response. This helps you stay in the deepest, most restorative stages of sleep.
+          Masking is most relevant when changing environmental sound is the problem. It cannot fix an uncomfortable room, an inconsistent schedule, sleep apnea, pain or insomnia driven by factors unrelated to noise.
         </p>
+      </ArticleSection>
+
+      <ArticleSection id="evidence" title="Does white noise improve sleep? What the studies found">
+        <p>
+          One randomized crossover study tested broadband sound in 18 healthy young adults asked to go to bed 90 minutes earlier than usual—a model of temporary difficulty falling asleep. The sound condition shortened the median time to stable stage-2 sleep from 19 to 13 minutes, a 38% relative reduction. That is interesting, but it was a small, artificial experiment rather than a trial in people with chronic insomnia.
+        </p>
+        <p className="mt-4">
+          A systematic review examined 38 studies of continuous white or similar broadband noise. Results ranged from improved to disrupted sleep, and the authors rated the evidence for benefit as very low certainty because sound, participants and sleep measurements varied substantially.
+        </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className="rounded-2xl border border-emerald-400/20 bg-emerald-400/10 p-5">
+            <p className="font-semibold text-emerald-100">Most plausible use</p>
+            <p className="mt-2 text-sm leading-6 text-white/70">Masking intermittent traffic, household or neighbor noise at a low level.</p>
+          </div>
+          <div className="rounded-2xl border border-amber-300/20 bg-amber-300/10 p-5">
+            <p className="font-semibold text-amber-100">What is not established</p>
+            <p className="mt-2 text-sm leading-6 text-white/70">That continuous noise deepens sleep, treats insomnia or benefits every listener.</p>
+          </div>
+        </div>
       </ArticleSection>
 
       <ArticleSection id="what-is-it" title="What exactly is white noise?">
@@ -148,7 +168,7 @@ export default function WhiteNoiseForSleepPage() {
 
       <ArticleSection id="comparison-table" title="White vs Pink vs Brown Noise for Sleep">
         <p className="mt-4 leading-8 text-white/70">
-          Not all \"white noise\" is actually white. In audio engineering, continuous sounds are categorized into colors based on their frequency balance. Choosing the right color is crucial for a good night's sleep.
+          Not all \"white noise\" is technically white. Noise colors describe frequency balance. The difference changes how each sound feels, but research does not identify one color as universally best for sleep.
         </p>
         <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
           <table className="w-full text-left text-sm text-white/70">
@@ -168,12 +188,12 @@ export default function WhiteNoiseForSleepPage() {
               <tr>
                 <td className="px-6 py-4 font-medium text-pink-300">Pink Noise</td>
                 <td className="px-6 py-4">Lower frequencies boosted (sounds like rain).</td>
-                <td className="px-6 py-4">Improving deep slow-wave sleep and memory retention.</td>
+                <td className="px-6 py-4">A softer background for listeners who dislike hiss.</td>
               </tr>
               <tr>
                 <td className="px-6 py-4 font-medium text-orange-300">Brown Noise</td>
                 <td className="px-6 py-4">Deepest frequencies only (sounds like distant thunder).</td>
-                <td className="px-6 py-4">Creating a cozy, safe atmosphere; great for ADHD.</td>
+                <td className="px-6 py-4">A deeper background chosen mainly for comfort.</td>
               </tr>
             </tbody>
           </table>
@@ -182,54 +202,59 @@ export default function WhiteNoiseForSleepPage() {
 
       <ArticleSection id="best-practices" title="How to use white noise safely">
         <p className="mt-4 leading-8 text-white/70">
-          While white noise is incredibly helpful, it's important to use it correctly to avoid hearing fatigue or dependency:
+          If you test white noise, use the least sound needed for the room rather than treating louder playback as more effective:
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
-          <li><strong>Keep the volume safe:</strong> The sound should act as a background hum, not a concert. Keep the volume around 50-60 decibels (roughly the volume of a quiet conversation or a running shower).</li>
-          <li><strong>Mind the distance:</strong> Never place a phone or white noise machine directly next to your head. Keep it at least 6-7 feet (2 meters) away, preferably across the room.</li>
-          <li><strong>Experiment with \"colors\":</strong> If pure white noise sounds too sharp or hissy, try Pink Noise or Brown Noise instead.</li>
+          <li><strong>Start at the lowest audible setting:</strong> Increase only enough to soften the contrast of the disturbance you are trying to mask.</li>
+          <li><strong>Keep the source away from your head:</strong> A speaker elsewhere in the room usually creates a more even background than a phone beside the pillow.</li>
+          <li><strong>Test a timer:</strong> If sound is only useful while settling, there is no reason to assume it must run all night.</li>
+          <li><strong>Compare with a quiet night:</strong> Stop if you notice more awakenings, discomfort, morning fatigue or ringing.</li>
         </ul>
-        <div className="mt-12 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Download Calma App for Free"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
       </ArticleSection>
 
       <ArticleSection id="faq" title="Frequently Asked Questions (FAQ)">
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Why does white noise help you sleep?</h3>
-            <p className="mt-2 leading-7 text-white/70">It raises the baseline of ambient sound in your room. This reduces the contrast between silence and sudden noises, so your brain is less likely to register them as threats and wake you up.</p>
+            <p className="mt-2 leading-7 text-white/70">It may reduce the contrast between a steady room and sudden noises, making traffic or doors less noticeable. Evidence does not show that it helps everyone.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">What is white noise for sleep exactly?</h3>
-            <p className="mt-2 leading-7 text-white/70">It is a continuous sound containing all audible frequencies at equal intensity, similar to static or a humming fan. It creates a predictable audio environment.</p>
+            <p className="mt-2 leading-7 text-white/70">Technical white noise has equal power per hertz and sounds like static. Fans and air conditioners are usually broadband sounds rather than mathematically white noise.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Is white or pink noise better for sleep?</h3>
-            <p className="mt-2 leading-7 text-white/70">Pink noise (which sounds like steady rain) might be better for deep sleep because it's softer on the ear. White noise is better for masking extremely sharp, high-pitched distractions.</p>
+            <p className="mt-2 leading-7 text-white/70">Neither is universally better. Pink noise sounds softer because it has less high-frequency energy; white noise may provide broader masking. Preference and environment matter.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Is it safe to sleep with white noise every night?</h3>
-            <p className="mt-2 leading-7 text-white/70">Yes, it is generally safe for adults when the volume stays below 60 dB. Place the sound source at least 2 meters from your head.</p>
+            <p className="mt-2 leading-7 text-white/70">Use the lowest comfortable level, keep the source away from your head and stop if it causes discomfort, ringing or poorer sleep.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Can you get addicted to sleeping with white noise?</h3>
-            <p className="mt-2 leading-7 text-white/70">You don't become physically addicted, but you can form a strong psychological habit. If you want to stop, lower the volume gradually over a few weeks.</p>
+            <p className="mt-2 leading-7 text-white/70">It is not considered physically addictive, but it can become part of a learned bedtime routine. Lower the volume or shorten the timer gradually if you want to stop.</p>
           </div>
         </div>
+      </ArticleSection>
+
+      <ArticleSection id="sources" title="Evidence and sources">
+        <ul className="list-disc space-y-3 pl-5 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/29312136/" target="_blank" rel="noopener noreferrer">
+              Randomized crossover study of broadband sound and transient difficulty falling asleep
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/33007706/" target="_blank" rel="noopener noreferrer">
+              Systematic review: continuous noise as a sleep aid
+            </a>
+          </li>
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9163611/" target="_blank" rel="noopener noreferrer">
+              Review of white and pink noise for sleep in varied populations
+            </a>
+          </li>
+        </ul>
       </ArticleSection>
     </ArticlePage>
   );

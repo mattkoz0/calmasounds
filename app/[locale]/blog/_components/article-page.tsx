@@ -52,21 +52,71 @@ const articleUiTranslations: Record<string, { published: string; updated: string
 
 const editorialDates: Record<string, { published: string; modified: string }> = {
   "benefits-of-nature-sounds-for-relaxation": { published: "2026-04-07", modified: "2026-07-10" },
-  "best-color-noise-for-adhd": { published: "2026-05-04", modified: "2026-07-10" },
-  "best-free-white-noise-app": { published: "2026-05-04", modified: "2026-05-12" },
-  "best-sounds-for-sleep": { published: "2026-03-16", modified: "2026-07-10" },
+  "best-color-noise-for-adhd": { published: "2026-05-04", modified: "2026-07-16" },
+  "best-free-white-noise-app": { published: "2026-05-04", modified: "2026-07-16" },
+  "best-sounds-for-sleep": { published: "2026-03-16", modified: "2026-07-16" },
   "best-sounds-for-studying": { published: "2026-03-16", modified: "2026-07-10" },
   "binaural-beats-for-sleep-and-focus": { published: "2026-03-23", modified: "2026-05-12" },
   "brown-noise-vs-white-noise-vs-pink-noise": { published: "2026-04-13", modified: "2026-07-10" },
   "green-noise-for-sleep": { published: "2026-04-19", modified: "2026-07-10" },
   "guided-breathing-techniques": { published: "2026-03-30", modified: "2026-05-12" },
   "how-to-build-a-bedtime-routine": { published: "2026-03-16", modified: "2026-04-21" },
-  "rain-sounds-for-better-sleep-and-focus": { published: "2026-04-17", modified: "2026-06-06" },
+  "rain-sounds-for-better-sleep-and-focus": { published: "2026-04-17", modified: "2026-07-16" },
   "rain-sounds-vs-white-noise": { published: "2026-03-16", modified: "2026-07-16" },
-  "sounds-for-tinnitus-relief": { published: "2026-05-09", modified: "2026-07-10" },
+  "sounds-for-tinnitus-relief": { published: "2026-05-09", modified: "2026-07-16" },
   "white-noise-for-babies": { published: "2026-05-18", modified: "2026-07-10" },
-  "white-noise-for-sleep": { published: "2026-03-16", modified: "2026-07-05" },
+  "white-noise-for-sleep": { published: "2026-03-16", modified: "2026-07-16" },
 };
+
+const articleTopicClusters = [
+  {
+    name: "Sleep sounds and routines",
+    slugs: ["best-sounds-for-sleep", "white-noise-for-sleep", "how-to-build-a-bedtime-routine", "white-noise-for-babies"],
+    links: [
+      { href: "/blog/best-sounds-for-sleep", title: "Best Sounds for Sleep" },
+      { href: "/blog/white-noise-for-sleep", title: "White Noise for Sleep" },
+      { href: "/blog/how-to-build-a-bedtime-routine", title: "Build a Bedtime Routine" },
+      { href: "/blog/white-noise-for-babies", title: "White Noise for Babies" },
+    ],
+  },
+  {
+    name: "Noise colors explained",
+    slugs: ["rain-sounds-vs-white-noise", "brown-noise-vs-white-noise-vs-pink-noise", "green-noise-for-sleep", "best-free-white-noise-app"],
+    links: [
+      { href: "/blog/rain-sounds-vs-white-noise", title: "Rain vs White Noise" },
+      { href: "/blog/brown-noise-vs-white-noise-vs-pink-noise", title: "Brown vs White vs Pink Noise" },
+      { href: "/blog/green-noise-for-sleep", title: "Green Noise Explained" },
+      { href: "/blog/best-free-white-noise-app", title: "Choosing a White Noise App" },
+    ],
+  },
+  {
+    name: "Focus sounds and ADHD",
+    slugs: ["best-sounds-for-studying", "best-color-noise-for-adhd", "binaural-beats-for-sleep-and-focus"],
+    links: [
+      { href: "/blog/best-sounds-for-studying", title: "Best Sounds for Studying" },
+      { href: "/blog/best-color-noise-for-adhd", title: "Color Noise and ADHD" },
+      { href: "/blog/binaural-beats-for-sleep-and-focus", title: "Binaural Beats: Evidence & Limits" },
+    ],
+  },
+  {
+    name: "Nature sound and relaxation",
+    slugs: ["benefits-of-nature-sounds-for-relaxation", "rain-sounds-for-better-sleep-and-focus", "guided-breathing-techniques"],
+    links: [
+      { href: "/blog/benefits-of-nature-sounds-for-relaxation", title: "Benefits of Nature Sounds" },
+      { href: "/blog/rain-sounds-for-better-sleep-and-focus", title: "Rain for Sleep and Focus" },
+      { href: "/blog/guided-breathing-techniques", title: "Guided Breathing Techniques" },
+    ],
+  },
+  {
+    name: "Tinnitus and sound enrichment",
+    slugs: ["sounds-for-tinnitus-relief"],
+    links: [
+      { href: "/blog/sounds-for-tinnitus-relief", title: "Tinnitus Sound Enrichment Guide" },
+      { href: "/blog/white-noise-for-sleep", title: "White Noise: How Masking Works" },
+      { href: "/blog/brown-noise-vs-white-noise-vs-pink-noise", title: "Compare Noise Colors" },
+    ],
+  },
+] as const;
 
 export async function ArticlePage({
   jsonLd,
@@ -88,6 +138,9 @@ export async function ArticlePage({
   const locale = await getLocale();
   const ui = articleUiTranslations[locale] ?? articleUiTranslations.en;
   const dates = slug ? editorialDates[slug] : undefined;
+  const topicCluster = locale === "en" && slug
+    ? articleTopicClusters.find((cluster) => (cluster.slugs as readonly string[]).includes(slug))
+    : undefined;
   const formatDate = (date: string) =>
     new Intl.DateTimeFormat(locale, { year: "numeric", month: "long", day: "numeric" }).format(
       new Date(`${date}T12:00:00Z`)
@@ -249,6 +302,27 @@ export async function ArticlePage({
         >
           {topLinkLabel} <span aria-hidden="true" className="ml-2">→</span>
         </Link>
+
+        {topicCluster && (
+          <nav className="mt-8 rounded-2xl border border-emerald-400/20 bg-emerald-400/5 p-5" aria-label="Related topic path">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-emerald-300">Topic path</p>
+            <p className="mt-2 font-semibold text-white">{topicCluster.name}</p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {topicCluster.links.map((link) => {
+                const isCurrent = link.href === `/blog/${slug}`;
+                return isCurrent ? (
+                  <span key={link.href} aria-current="page" className="rounded-full bg-white px-3 py-1.5 text-sm font-medium text-slate-950">
+                    {link.title}
+                  </span>
+                ) : (
+                  <Link key={link.href} href={link.href} className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-white/75 transition hover:bg-white/10 hover:text-white">
+                    {link.title}
+                  </Link>
+                );
+              })}
+            </div>
+          </nav>
+        )}
 
         {tableOfContents.length > 0 && (
           <nav className="mt-10 rounded-2xl border border-white/10 bg-white/5 p-6" aria-label="Table of contents">

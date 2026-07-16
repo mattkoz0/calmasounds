@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
 import { AudioPlayer } from "../_components/audio-player";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Best Sounds for Sleep: Rain, White & Brown Noise | Calma",
@@ -93,8 +92,11 @@ export default function BestSoundsForSleepPage() {
       tableOfContents={[
         { id: "what-makes-you-sleep", title: "What sound makes you sleep?" },
         { id: "best-sounds", title: "The 3 best sounds to sleep to" },
+        { id: "decision-guide", title: "Choose by bedroom problem" },
         { id: "how-to-mix", title: "How to mix sounds for better rest" },
+        { id: "seven-night-test", title: "A seven-night comparison" },
         { id: "faq", title: "Frequently Asked Questions" },
+        { id: "sources", title: "Evidence and sources" },
       ]}
       relatedArticles={[
         {
@@ -111,10 +113,10 @@ export default function BestSoundsForSleepPage() {
     >
       <ArticleSection id="what-makes-you-sleep" title="What sound makes you sleep? The science of sound masking">
         <p className="mt-4 leading-8 text-white/70">
-          Your brain never actually turns off its hearing, even during deep sleep. It is an evolutionary defense mechanism designed to wake you up if danger approaches. The problem? Your brain treats a door slamming or a dog barking with the same alarm.
+          Hearing remains responsive during sleep, so a sudden change can trigger an arousal even when you do not remember waking. The useful feature of a sleep sound is therefore not that it is “relaxing” in the abstract, but that it is stable and does not introduce new peaks or changes.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          The best sound to make you sleep is one that utilizes <strong>sound masking</strong>. Sound masking works by raising the ambient background noise level of a room, which reduces the contrast between total silence and a sudden, sharp noise. Good sounds to sleep to are always steady, continuous, and lack sudden changes in pitch or volume.
+          <strong>Sound masking</strong> raises the background level enough to reduce the contrast of intermittent noise. It is most relevant when the room contains traffic, voices or household sounds. If the bedroom is already quiet, adding sound may offer no benefit and can become another disturbance.
         </p>
       </ArticleSection>
 
@@ -129,7 +131,7 @@ export default function BestSoundsForSleepPage() {
             <AudioPlayer 
               src="/rain.m4a" 
               title="Deep Rain" 
-              description="A cozy, emotional sound that naturally calms the nervous system."
+              description="A textured, rain-like option to compare with steady noise."
               colorClass="bg-blue-500/20 text-blue-300"
             />
           </div>
@@ -142,7 +144,7 @@ export default function BestSoundsForSleepPage() {
             <AudioPlayer 
               src="/white_noise.m4a" 
               title="White Noise" 
-              description="The ultimate acoustic wall for blocking out sharp, sudden sounds."
+              description="A broad, bright masking sound for intermittent distractions."
               colorClass="bg-slate-500/20 text-slate-300"
             />
           </div>
@@ -155,11 +157,52 @@ export default function BestSoundsForSleepPage() {
             <AudioPlayer 
               src="/brown_noise.m4a" 
               title="Brown Noise" 
-              description="A deep, rumbling sound perfect for intense focus and calming an overactive mind."
+              description="A deep, low-frequency-weighted sound chosen mainly for comfort."
               colorClass="bg-orange-500/20 text-orange-300"
             />
           </div>
 
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="decision-guide" title="Choose a sound by the problem in your bedroom">
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Situation</th>
+                <th className="px-4 py-3">First option to test</th>
+                <th className="px-4 py-3">Why</th>
+                <th className="px-4 py-3">Watch for</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Sharp traffic or household sounds</td>
+                <td className="px-4 py-3">Quiet white noise</td>
+                <td className="px-4 py-3">Broad frequency coverage</td>
+                <td className="px-4 py-3">High-frequency hiss becoming irritating</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">You dislike static</td>
+                <td className="px-4 py-3">Steady rain or pink noise</td>
+                <td className="px-4 py-3">Softer high frequencies</td>
+                <td className="px-4 py-3">Thunder, birds or obvious loop changes</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">You prefer deep sound</td>
+                <td className="px-4 py-3">Brown noise</td>
+                <td className="px-4 py-3">Less bright, bass-weighted character</td>
+                <td className="px-4 py-3">Bass vibration or speaker distortion</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">The room is already quiet</td>
+                <td className="px-4 py-3">Silence</td>
+                <td className="px-4 py-3">No masking problem to solve</td>
+                <td className="px-4 py-3">Adding sound only out of habit</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </ArticleSection>
 
@@ -168,25 +211,21 @@ export default function BestSoundsForSleepPage() {
           Some listeners prefer one steady sound; others prefer a low-volume mix. Calma lets you compare layers and save a personal soundscape without assuming that more sounds are automatically better.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          One mix to test is a “sandwich” approach: start with a quiet base of <strong>Brown Noise</strong>, add <strong>Rain</strong>, then adjust or remove layers until the result feels unobtrusive.
+          One mix to test is a quiet base of <strong>brown noise</strong> with a small amount of <strong>rain</strong>. Then remove one layer. If the simpler version works just as well, keep it—complexity is not a sleep benefit.
         </p>
-        <div className="mt-8 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-            aria-label="Download Calma App Free"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Get it on Google Play"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
+      </ArticleSection>
+
+      <ArticleSection id="seven-night-test" title="A seven-night comparison that is actually useful">
+        <p>
+          Sleep changes from night to night, so a single impression is unreliable. Compare options with a short diary rather than switching sounds whenever a night goes badly.
+        </p>
+        <ol className="mt-4 list-decimal space-y-3 pl-5 text-white/70">
+          <li>Use one sound at a consistent low level for three nights.</li>
+          <li>Use a second sound for three nights under similar room conditions.</li>
+          <li>When practical, keep one night quiet as a baseline.</li>
+          <li>Record estimated settling time, remembered awakenings and how rested you feel in the morning.</li>
+          <li>Choose the least intrusive setup with the most consistent result—not necessarily the sound you liked most on first listen.</li>
+        </ol>
       </ArticleSection>
 
       <ArticleSection id="faq" title="Frequently Asked Questions (FAQ)">
@@ -197,7 +236,7 @@ export default function BestSoundsForSleepPage() {
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">What are good sounds to sleep to?</h3>
-            <p className="mt-2 leading-7 text-white/70">Good sounds to sleep to include steady rain, distant thunderstorms, ocean waves, white noise, and brown noise. The key is consistency—steady sounds create an acoustic blanket that helps the nervous system relax.</p>
+            <p className="mt-2 leading-7 text-white/70">Useful options can include steady rain, ocean waves, white noise and brown noise. Consistency matters more than the label: avoid sudden thunder, birds, voices or obvious loop changes.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Which noises help you sleep better?</h3>
@@ -212,6 +251,11 @@ export default function BestSoundsForSleepPage() {
 
       <ArticleSection id="sources" title="Evidence and sources">
         <ul className="mt-4 space-y-3 text-sm leading-7 text-white/70">
+          <li>
+            <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/29312136/" target="_blank" rel="noopener noreferrer">
+              Messineo et al. — Randomized crossover study of broadband sound and sleep onset
+            </a>
+          </li>
           <li>
             <a className="underline underline-offset-4 hover:text-white" href="https://pubmed.ncbi.nlm.nih.gov/33007706/" target="_blank" rel="noopener noreferrer">
               Riedy et al. — Noise as a sleep aid: a systematic review

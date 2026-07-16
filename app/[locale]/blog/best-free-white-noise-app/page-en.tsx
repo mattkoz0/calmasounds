@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
 import { ArticleSection } from "../_components/article-section";
-import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Best Free White Noise App for Sleep in 2026 | Calma Blog",
+  title: "Best Free White Noise App: What to Look For | Calma",
   description:
-    "Looking for a free white noise app? Discover how Calma helps you mix sleep sounds, rain and calming audio for rest and focus.",
+    "Compare white noise apps, machines and streaming. Check offline audio, smooth loops, timers, mixing and honest pricing before choosing.",
   keywords: [
     "best app for white noise",
     "free sleeping sounds",
@@ -19,9 +18,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/blog/best-free-white-noise-app",
   },
   openGraph: {
-    title: "Best Free White Noise App for Sleep in 2026 | Calma Blog",
+    title: "Best Free White Noise App: What to Look For | Calma",
     description:
-      "Looking for a free white noise app? Discover how Calma helps you mix sleep sounds, rain and calming audio for rest and focus.",
+      "A practical checklist for comparing free white noise apps, machines and streaming options.",
     url: "https://www.calmasounds.com/blog/best-free-white-noise-app",
     siteName: "Calma",
     locale: "en_US",
@@ -29,9 +28,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free White Noise App for Sleep in 2026 | Calma Blog",
+    title: "Best Free White Noise App: What to Look For | Calma",
     description:
-      "Looking for a free white noise app? Discover how Calma helps you mix sleep sounds, rain and calming audio for rest and focus.",
+      "Compare offline audio, smooth loops, timers, mixing and pricing before choosing a sleep sound app.",
   },
 };
 
@@ -40,7 +39,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Best Free White Noise App for Sleep",
   description:
-    "Looking for the best free white noise app to help you fall asleep? Discover why Calma is the perfect choice for soothing sleep sounds, rain, and deep focus.",
+    "A practical guide to comparing free white noise apps, dedicated machines and streaming options for sleep.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -61,17 +60,18 @@ export default function BestFreeWhiteNoiseAppPage() {
       jsonLd={articleJsonLd}
       topLinkHref="/white-noise-app"
       topLinkLabel="Explore white noise page"
-      title="The Best Free White Noise App for Sleep"
-      intro="With thousands of sound apps on the market, finding the best free white noise app can feel overwhelming. Many options are flooded with intrusive ads, complex interfaces, or require expensive subscriptions just to listen to basic rain sounds. If you are looking for free sleeping sounds that genuinely help you relax, here is what you should look for—and why Calma stands out as the ultimate white noise maker app."
+      title="How to Choose the Best Free White Noise App"
+      intro="The best white noise app is not the one with the longest feature list. It is the one that can play reliably at night, sounds natural to you, explains what is free and stays out of the way. This guide compares apps with dedicated machines and streaming, then gives you a repeatable checklist for evaluating any option—including Calma."
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Download Calma for Free"
       secondaryCtaHref="/sound-mixer-app"
       secondaryCtaLabel="Explore sound mixer app"
       tableOfContents={[
-        { id: "why-use-an-app", title: "Why use a white noise app?" },
-        { id: "what-to-look-for", title: "What makes a great sleep app?" },
-        { id: "why-calma", title: "Why Calma is the best choice" },
-        { id: "how-to-start", title: "How to start building your mix" },
+        { id: "why-use-an-app", title: "App vs machine vs streaming" },
+        { id: "what-free-means", title: "What “free” should mean" },
+        { id: "what-to-look-for", title: "Seven-point evaluation checklist" },
+        { id: "why-calma", title: "Where Calma fits" },
+        { id: "how-to-start", title: "A seven-night comparison" },
       ]}
       relatedArticles={[
         {
@@ -88,68 +88,101 @@ export default function BestFreeWhiteNoiseAppPage() {
         },
       ]}
     >
-      <ArticleSection id="why-use-an-app" title="Why use a white noise app instead of YouTube?">
+      <ArticleSection id="why-use-an-app" title="White noise app vs machine vs streaming">
         <p>
-          It is tempting to just load up an 8-hour YouTube video of rain sounds. However, there are significant drawbacks. Streaming video drains your battery, requires an active internet connection, and—worst of all—can interrupt your sleep with loud, sudden advertisements in the middle of the night.
+          Each format solves a different problem. A dedicated machine offers physical controls and keeps the phone out of the bedroom. Streaming is convenient for occasional listening but depends on connectivity and platform behavior. An offline app is portable and can provide more control over mixing, timers and individual sound levels.
+        </p>
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[680px] border-collapse text-left text-sm">
+            <thead>
+              <tr className="border-b border-white/15 text-white">
+                <th className="px-4 py-3">Option</th>
+                <th className="px-4 py-3">Best for</th>
+                <th className="px-4 py-3">Trade-off</th>
+                <th className="px-4 py-3">Check before bedtime</th>
+              </tr>
+            </thead>
+            <tbody className="text-white/70">
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Offline app</td>
+                <td className="px-4 py-3">Travel, custom mixes, timers</td>
+                <td className="px-4 py-3">Uses your phone and battery</td>
+                <td className="px-4 py-3">Background playback and offline access</td>
+              </tr>
+              <tr className="border-b border-white/10">
+                <td className="px-4 py-3 font-medium text-white">Sound machine</td>
+                <td className="px-4 py-3">A fixed bedside routine</td>
+                <td className="px-4 py-3">Extra device, fewer combinations</td>
+                <td className="px-4 py-3">Button layout and minimum volume</td>
+              </tr>
+              <tr>
+                <td className="px-4 py-3 font-medium text-white">Streaming</td>
+                <td className="px-4 py-3">Trying a sound occasionally</td>
+                <td className="px-4 py-3">Network, ads or playback changes</td>
+                <td className="px-4 py-3">Interruptions and autoplay settings</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </ArticleSection>
+
+      <ArticleSection id="what-free-means" title="What should “free white noise app” actually mean?">
+        <p>
+          “Free” can mean a permanent basic version, a short trial, ad-supported playback or a download that becomes useful only after subscribing. None of those models is automatically wrong, but the difference should be visible before you build a bedtime habit around the app.
         </p>
         <p className="mt-4">
-          A dedicated <strong>white noise maker app</strong> works offline, uses minimal battery, and runs seamlessly in the background while your screen is locked. It provides a much more stable and reliable environment for uninterrupted rest.
+          Check which sounds, mixer layers, timers and offline features remain available without payment. Also check whether premium access is a subscription or a one-time purchase. A clear limitation is easier to evaluate than a large library hidden behind an unclear trial.
         </p>
       </ArticleSection>
 
-      <ArticleSection id="what-to-look-for" title="What makes a great free sleep app?">
+      <ArticleSection id="what-to-look-for" title="A seven-point checklist for comparing sleep sound apps">
         <p>
-          When evaluating apps for <em>free sleeping sounds</em>, you should prioritize the following features:
+          Evaluate the behavior you will actually depend on at night, not only the number of sounds shown in the store listing:
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
-          <li><strong>High-Quality Audio:</strong> The sounds shouldn't sound like they were recorded on an old phone. They need to be crisp and loop seamlessly without an obvious \"jump\" when the track restarts.</li>
-          <li><strong>Custom Mixing:</strong> The best apps allow you to mix multiple sounds together. You might want the steady hum of brown noise layered with a gentle thunderstorm and crackling fire.</li>
-          <li><strong>Offline Access:</strong> You shouldn't need Wi-Fi to fall asleep. A good app downloads the sounds directly to your device.</li>
-          <li><strong>Sleep Timer:</strong> The app should automatically fade out and close after a set time to save battery life.</li>
+          <li><strong>Smooth loops:</strong> Listen for clicks, sudden changes or an obvious restart after several minutes.</li>
+          <li><strong>Useful free tier:</strong> Confirm what remains available after any trial ends.</li>
+          <li><strong>Offline playback:</strong> Test in airplane mode before relying on it while traveling.</li>
+          <li><strong>Background playback:</strong> Lock the screen and confirm that audio continues as expected.</li>
+          <li><strong>Independent mixing:</strong> If you layer sounds, each source should have its own volume control.</li>
+          <li><strong>Timer behavior:</strong> Check whether playback stops abruptly or fades, and whether the timer works with the screen locked.</li>
+          <li><strong>Low-friction interface:</strong> You should be able to resume a familiar mix without navigating bright or complicated screens at night.</li>
         </ul>
       </ArticleSection>
 
-      <ArticleSection id="why-calma" title="Why Calma is the best free white noise app">
+      <ArticleSection id="why-calma" title="Where Calma fits in this checklist">
         <p>
-          We built <strong>Calma</strong> because we were tired of sleep apps that felt overly complicated or locked essential features behind a paywall. Here is why Calma has become the go-to app for thousands of people looking for better rest:
+          Calma is designed for people who value custom mixing and offline use over sleep tracking, stories or an account-based platform. Its free mixer supports three simultaneous layers, and the full library contains more than 190 sounds. Premium access is available as a one-time lifetime unlock rather than a recurring subscription.
         </p>
         <div className="mt-6 space-y-4">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">1. Beautiful, Distraction-Free Design</h3>
-            <p className="mt-2 text-sm text-white/70">Our dark-mode interface is designed specifically for nighttime use. There are no bright colors or confusing menus to wake you up.</p>
+            <h3 className="font-semibold text-emerald-400">1. Night-friendly controls</h3>
+            <p className="mt-2 text-sm text-white/70">A dark interface keeps the sound mixer visually simple when you return to it at night.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">2. Powerful Sound Mixer</h3>
-            <p className="mt-2 text-sm text-white/70">Create your perfect environment by blending up to 10 sounds at once. Adjust the volume of the wind independently from the rain or the white noise base.</p>
+            <h3 className="font-semibold text-emerald-400">2. Independent sound layers</h3>
+            <p className="mt-2 text-sm text-white/70">Blend noise colors with rain or nature and adjust each layer independently. The free mixer supports three layers.</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <h3 className="font-semibold text-emerald-400">3. A Massive Library of Free Sleeping Sounds</h3>
-            <p className="mt-2 text-sm text-white/70">From classic white, pink, and brown noise to deep forest ambiance, ocean waves, and guided breathing exercises—you have everything you need.</p>
+            <h3 className="font-semibold text-emerald-400">3. Offline playback without recurring fees</h3>
+            <p className="mt-2 text-sm text-white/70">Sounds work without an active connection, and users who want premium access can choose a lifetime unlock instead of a monthly plan.</p>
           </div>
         </div>
       </ArticleSection>
 
-      <ArticleSection id="how-to-start" title="How to start building your mix">
+      <ArticleSection id="how-to-start" title="Use a seven-night comparison instead of guessing">
         <p>
-          If you are new to sleep soundscapes, we recommend starting simple. Try combining a base layer of <strong>Pink Noise</strong> (at 60% volume) with <strong>Light Rain</strong> (at 40% volume). This creates a highly effective acoustic blanket that masks outside disturbances while remaining soft and natural.
+          Start with one sound at a low, comfortable level rather than a complex mix. Use the same sound for three nights, then try a different option for three nights and keep one quiet night as a comparison when your environment allows it.
         </p>
-        <div className="mt-8 flex justify-center">
-          <a
-            href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex transition hover:scale-105"
-            aria-label="Download Calma App from Google Play"
-          >
-            <Image
-              src="/google-play-badge.png"
-              alt="Get it on Google Play"
-              width={240}
-              height={93}
-              className="h-[60px] w-auto object-contain"
-            />
-          </a>
-        </div>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
+          <li>Record approximate time to settle, remembered awakenings and morning comfort.</li>
+          <li>Keep volume and speaker position consistent.</li>
+          <li>If a loop becomes noticeable or irritating, that app or sound is not a good fit.</li>
+          <li>Do not interpret one unusually good or bad night as proof.</li>
+        </ul>
+        <p className="mt-4">
+          Sleep varies naturally, so the goal is not a scientific diagnosis. It is to choose the least intrusive setup that makes your bedroom more predictable.
+        </p>
       </ArticleSection>
     </ArticlePage>
   );
