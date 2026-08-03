@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Best Free Sleep Sounds App | White Noise & Nature Sounds | Calma",
+  title: "Sleep Sounds App — Free, Offline & No Subscription | Calma",
   description:
-    "Looking for the best sleep sounds app? Mix white noise, rain, brown noise & nature sounds to build a personalized bedtime routine. Free, offline, no subscription. Download Calma now.",
+    "Mix white noise, rain, brown noise and nature sounds for bedtime. Calma offers a free version, works offline and requires no subscription.",
   keywords: [
     "sleep sounds app",
     "sleep app",
@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/sleep-sounds-app",
   },
   openGraph: {
-    title: "Best Free Sleep Sounds App | White Noise & Nature Sounds | Calma",
+    title: "Sleep Sounds App — Free, Offline & No Subscription | Calma",
     description:
-    "Looking for the best sleep sounds app? Mix white noise, rain, brown noise & nature sounds to build a personalized bedtime routine. Free, offline, no subscription.",
+      "Mix white noise, rain, brown noise and nature sounds for bedtime. Free version, offline playback and no required subscription.",
     url: "https://www.calmasounds.com/sleep-sounds-app",
     siteName: "Calma",
     locale: "en_US",
@@ -31,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Free Sleep Sounds App | White Noise & Nature Sounds | Calma",
+    title: "Sleep Sounds App — Free & Offline | Calma",
     description:
-    "Looking for the best sleep sounds app? Mix white noise, rain & nature sounds for a personalized bedtime routine. Free, offline.",
+      "Mix white noise, rain and nature sounds for bedtime. Free version, offline playback and no required subscription.",
   },
 };
 
@@ -70,13 +70,12 @@ export default function SleepSoundsAppPage() {
           Sleep sounds app
         </p>
         <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          A sleep sounds app for calmer nights and better bedtime routines
+          A free sleep sounds app with offline sound mixing
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a beautifully simple sleep sounds app that helps you create
-          personalized soundscapes for bedtime, evening wind-down and deeper
-          rest. Mix relaxing sounds, build your own atmosphere and make your
-          nightly routine feel softer and more consistent.
+          Mix white noise, brown noise, rain and nature sounds into a bedtime
+          soundscape you control. Calma offers a free version, works without
+          Wi-Fi or mobile data and does not require a monthly subscription.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -120,18 +119,18 @@ export default function SleepSoundsAppPage() {
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Relax before sleep</h2>
+            <h2 className="text-2xl font-semibold">Listen completely offline</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Use calming soundscapes to slow down after busy days and create a
-              more peaceful transition into sleep.
+              Use your saved sounds without Wi-Fi or mobile data, including in
+              airplane mode or anywhere a stable connection is unavailable.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Keep your routine simple</h2>
+            <h2 className="text-2xl font-semibold">Skip the monthly subscription</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Calma is designed to feel clear, elegant and easy to come back to
-              every night without friction or overwhelm.
+              Start with the free version and choose a one-time lifetime unlock
+              if you want premium features—without monthly or annual billing.
             </p>
           </div>
         </div>
@@ -296,12 +295,15 @@ export default function SleepSoundsAppPage() {
               Are sleep sound apps safe to use every night?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Yes, sleep sound apps are safe for nightly use as long as the volume stays below 60 dB (about the level of a quiet conversation). Over time, your brain associates the sound with sleep, making it easier to fall asleep quickly. Keep your phone at least 2 meters from your head.
+              Keep playback quiet and place the speaker away from your head.
+              Stop or reduce the volume if the sound causes discomfort, ringing
+              or more disrupted sleep. Anyone with hearing concerns should ask a
+              qualified hearing professional for individual guidance.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a sleep sounds app?","acceptedAnswer":{"@type":"Answer","text":"A sleep sounds app helps you play calming audio designed to support bedtime routines, relaxation and a quieter mental state before sleep."}},{"@type":"Question","name":"How is Calma different from other sleep apps?","acceptedAnswer":{"@type":"Answer","text":"Calma focuses on personalized soundscapes, a simple interface and a calm premium feel instead of overwhelming you with too many layers of complexity."}},{"@type":"Question","name":"Can I build my own sleep mix?","acceptedAnswer":{"@type":"Answer","text":"Yes. Calma is designed around creating your own relaxing audio mix rather than only choosing one fixed track."}},{"@type":"Question","name":"What is the best free sleep sounds app?","acceptedAnswer":{"@type":"Answer","text":"The best free sleep sounds app lets you customize your own sound mixes. Calma offers a generous free tier with white noise, brown noise, rain, and nature sounds without ads. It works offline and doesn't require a subscription."}},{"@type":"Question","name":"Are sleep sound apps safe to use every night?","acceptedAnswer":{"@type":"Answer","text":"Yes, sleep sound apps are safe for nightly use as long as the volume stays below 60 dB. Over time, your brain associates the sound with sleep, making it easier to fall asleep quickly."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a sleep sounds app?","acceptedAnswer":{"@type":"Answer","text":"A sleep sounds app helps you play calming audio designed to support bedtime routines, relaxation and a quieter mental state before sleep."}},{"@type":"Question","name":"How is Calma different from other sleep apps?","acceptedAnswer":{"@type":"Answer","text":"Calma focuses on personalized soundscapes, a simple interface and a calm premium feel instead of overwhelming you with too many layers of complexity."}},{"@type":"Question","name":"Can I build my own sleep mix?","acceptedAnswer":{"@type":"Answer","text":"Yes. Calma is designed around creating your own relaxing audio mix rather than only choosing one fixed track."}},{"@type":"Question","name":"What is the best free sleep sounds app?","acceptedAnswer":{"@type":"Answer","text":"The best free sleep sounds app lets you customize your own sound mixes. Calma offers a generous free tier with white noise, brown noise, rain, and nature sounds without ads. It works offline and doesn't require a subscription."}},{"@type":"Question","name":"Are sleep sound apps safe to use every night?","acceptedAnswer":{"@type":"Answer","text":"Keep playback quiet and place the speaker away from your head. Stop or reduce the volume if the sound causes discomfort, ringing or more disrupted sleep. Anyone with hearing concerns should ask a qualified hearing professional for individual guidance."}}]}) }}
           />
         </div>
       </section>

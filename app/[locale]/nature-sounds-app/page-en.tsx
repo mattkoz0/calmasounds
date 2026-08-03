@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Free Nature Sounds App for Sleep & Relaxation | Rain, Forest, Ocean | Calma",
+  title: "Nature Sounds App for Sleep — Free & Offline | Calma",
   description:
-    "Relax with nature sounds — rain, forest, ocean waves, birds & more. Calma is a free nature sounds app that lets you mix sounds for sleep, relaxation and calm. No subscription, works offline.",
+    "Mix rain, ocean, forest and other nature sounds for sleep or relaxation. Calma works offline and offers a free version without a subscription.",
   keywords: [
     "nature sounds app",
     "nature sounds for sleep",
@@ -56,7 +56,7 @@ const breadcrumbJsonLd = {
   ]
 };
 
-export default function WhiteNoiseAppPage() {
+export default function NatureSoundsAppPage() {
   return (
     <main className="min-h-screen bg-slate-950 text-white">
       <script
@@ -70,13 +70,13 @@ export default function WhiteNoiseAppPage() {
           Nature sounds app
         </p>
         <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          A nature sounds app for better sleep and a calmer audio environment
+          A nature sounds app for sleep and relaxation
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a beautifully simple nature sounds app that helps you create a
-          softer, more controlled sound environment for sleep, relaxation and
-          everyday calm. Whether you are searching for the <strong>best sound to go to sleep to</strong> or the <strong>best noise for studying</strong>, use Calma to support bedtime routines, reduce distracting
-          noise and build a more peaceful atmosphere around you.
+          Mix steady rain, ocean waves, forest ambience and other nature sounds
+          into a soundscape that fits your bedtime or relaxation routine. Calma
+          works offline, lets you control each layer separately and offers a free
+          version without a monthly subscription.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
@@ -112,27 +112,28 @@ export default function WhiteNoiseAppPage() {
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Support better sleep</h2>
+            <h2 className="text-2xl font-semibold">Mix nature sounds your way</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Nature sounds can help create a more stable sound background for
-              bedtime and a gentler transition into sleep.
+              Combine rain, ocean, forest and other ambient layers, then adjust
+              each sound independently instead of relying on one fixed track.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Reduce distracting noise</h2>
+            <h2 className="text-2xl font-semibold">Listen completely offline</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Use a controlled audio layer to soften sudden sounds and create a
-              calmer environment around you.
+              Once the app is installed, your sounds remain available without
+              Wi-Fi or mobile data—useful at bedtime, while travelling or in
+              airplane mode.
             </p>
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Keep it simple and calm</h2>
+            <h2 className="text-2xl font-semibold">Avoid another subscription</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Calma is designed to feel elegant, clear and emotionally light,
-              helping nature sounds feel like part of a daily routine instead of a
-              technical tool.
+              Start with the free version. If you want premium features, Calma
+              offers a one-time lifetime unlock instead of a monthly or annual
+              payment.
             </p>
           </div>
         </div>
@@ -288,7 +289,10 @@ export default function WhiteNoiseAppPage() {
               What are the best nature sounds for sleeping?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              The most effective nature sounds for sleep include steady rain, gentle ocean waves, flowing streams, and soft wind through trees. These sounds work by providing constant, non-threatening audio that masks sudden environmental disruptions. Many people find combining nature sounds with brown or pink noise creates the ideal sleep atmosphere.
+              Common options include steady rain, gentle ocean waves, flowing
+              water and soft wind through trees. A consistent recording may make
+              sudden environmental sounds less noticeable, but there is no single
+              best choice for every listener.
             </p>
           </div>
 
@@ -297,12 +301,15 @@ export default function WhiteNoiseAppPage() {
               Why do nature sounds help with relaxation?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Our brains are evolutionarily wired to associate nature sounds with safety. Hearing rain, birdsong, or flowing water signals that the environment is calm and unthreatened. This triggers your parasympathetic nervous system, lowering heart rate and reducing cortisol levels naturally.
+              Familiar, steady nature recordings can feel pleasant and may mask
+              distracting changes in the room. Responses vary, so treat them as
+              an optional part of a calming routine rather than a treatment or a
+              guaranteed way to improve sleep.
             </p>
           </div>
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a nature sounds app?","acceptedAnswer":{"@type":"Answer","text":"A nature sounds app helps create a steady background sound that can support sleep, relaxation and a calmer sound environment."}},{"@type":"Question","name":"Can nature sounds help with sleep?","acceptedAnswer":{"@type":"Answer","text":"Many people use nature sounds to make bedtime feel calmer and reduce the impact of distracting sounds in the environment."}},{"@type":"Question","name":"Is Calma only for nature sounds?","acceptedAnswer":{"@type":"Answer","text":"No. Calma also supports sleep sounds, relaxing soundscapes and focus-oriented audio mixes."}},{"@type":"Question","name":"What are the best nature sounds for sleeping?","acceptedAnswer":{"@type":"Answer","text":"The most effective nature sounds for sleep include steady rain, gentle ocean waves, flowing streams, and soft wind through trees. These sounds mask sudden environmental disruptions. Combining nature sounds with brown or pink noise creates the ideal sleep atmosphere."}},{"@type":"Question","name":"Why do nature sounds help with relaxation?","acceptedAnswer":{"@type":"Answer","text":"Our brains are evolutionarily wired to associate nature sounds with safety. Hearing rain, birdsong, or flowing water signals that the environment is calm, triggering your parasympathetic nervous system and lowering heart rate."}}]}) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify({"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a nature sounds app?","acceptedAnswer":{"@type":"Answer","text":"A nature sounds app helps create a steady background sound that can support sleep, relaxation and a calmer sound environment."}},{"@type":"Question","name":"Can nature sounds help with sleep?","acceptedAnswer":{"@type":"Answer","text":"Many people use nature sounds to make bedtime feel calmer and reduce the impact of distracting sounds in the environment."}},{"@type":"Question","name":"Is Calma only for nature sounds?","acceptedAnswer":{"@type":"Answer","text":"No. Calma also supports sleep sounds, relaxing soundscapes and focus-oriented audio mixes."}},{"@type":"Question","name":"What are the best nature sounds for sleeping?","acceptedAnswer":{"@type":"Answer","text":"Common options include steady rain, gentle ocean waves, flowing water and soft wind through trees. A consistent recording may make sudden environmental sounds less noticeable, but there is no single best choice for every listener."}},{"@type":"Question","name":"Why do nature sounds help with relaxation?","acceptedAnswer":{"@type":"Answer","text":"Familiar, steady nature recordings can feel pleasant and may mask distracting changes in the room. Responses vary, so they are best treated as an optional part of a calming routine rather than a treatment."}}]}) }}
           />
         </div>
       </section>

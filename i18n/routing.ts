@@ -83,6 +83,7 @@ export const routing = defineRouting({
     '/calma-vs-calm': '/calma-vs-calm',
     '/download': '/download',
     '/offline-sleep-sounds-app': '/offline-sleep-sounds-app',
+    '/press': '/press',
     '/privacy-policy': '/privacy-policy',
     '/terms-of-service': '/terms-of-service',
     '/support': '/support',

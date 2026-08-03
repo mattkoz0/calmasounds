@@ -20,7 +20,13 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
   else if (locale === 'ja') baseMetadata = (await import('./page-ja')).metadata;
   else if (locale === 'pt-BR') baseMetadata = (await import('./page-pt-BR')).metadata;
   else baseMetadata = (await import('./page-en')).metadata;
-  return getLocalizedMetadata(locale, "/support", baseMetadata);
+  return {
+    ...getLocalizedMetadata(locale, "/support", baseMetadata),
+    robots: {
+      index: false,
+      follow: true,
+    },
+  };
 }
 
 export default async function Page({params}: {params: Promise<{locale: string}>}) {

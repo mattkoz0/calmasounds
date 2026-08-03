@@ -72,6 +72,53 @@ w tygodniach** — złe metadane i zero ocen.
 
 Dlatego kolejność wysiłku odwraca się o 180°.
 
+### 1.2 Aktualizacja GSC — 2026-08-03
+
+Nowy eksport obejmuje **2026-05-02 → 2026-08-01**. Źródłem prawdy dla sum jest
+`Wykres.csv`: **25 705 wyświetleń, 40 kliknięć, CTR 0,156 %, średnia pozycja
+26,0**. To niewielka poprawa względem poprzedniego, w dużej części
+nakładającego się okna (24 902 / 31 / 0,12 % / ~30), a nie dowód trwałego
+trendu. Lepsze porównanie krótkoterminowe daje ostatnie 14 dni z poprzednimi
+14 dniami: **3 598 vs 3 308 wyświetleń (+8,8 %), 11 vs 8 kliknięć (+37,5 %),
+CTR 0,306 % vs 0,242 %, pozycja 30,8 vs 33,4**.
+
+W dniach 16–19 czerwca wystąpił jednorazowy skok do 8 992 wyświetleń bez
+kliknięcia. Nie wolno używać go jako baseline'u wzrostu ani spadku. Rytm
+końca lipca jest stabilniejszy: około 200–400 wyświetleń i 0–2 kliknięcia
+dziennie.
+
+**Walidacja eksportu:** pliki wymiarowe GSC nie sumują się identycznie.
+`Strony.csv` pokazuje 28 132 wyświetlenia i 41 kliknięć, a `Zapytania.csv`
+tylko 18 103 i 5 (1000 wierszy, anonimizacja i limit eksportu). Dlatego:
+
+- sumy i trend bierzemy z `Wykres.csv`;
+- `Strony.csv`, `Zapytania.csv`, kraje i urządzenia służą do ustalania
+  kolejności, nie do raportowania łącznego wyniku;
+- przed zmianą tytułu konkretnej strony potrzebny jest raport GSC z dwoma
+  wymiarami **Strona + Zapytanie** dla ostatnich 28 dni i poprzednich 28 dni.
+
+Najważniejsze sygnały z nowego eksportu:
+
+| Sygnał | Dane | Decyzja |
+|---|---:|---|
+| Pytania „czy deszcz to biały szum” | 7 159 wyśw., 0 kliknięć | Nie rozbudowywać; intencja kończy się w SERP-ie |
+| `/blog/rain-sounds-vs-white-noise` | 9 466 wyśw., poz. 9,29, 0 kliknięć | Utrzymać, bez dalszej inwestycji poza jednym testem snippetu |
+| `/sound-mixer-app` | 595 wyśw., poz. 6,23, 5 kliknięć, CTR 0,84 % | Najlepszy EN quick win; chronić temat i testować snippet |
+| `/es/sleep-sounds-app` | 356 wyśw., poz. 9,17, 6 kliknięć, CTR 1,69 % | Najmocniejszy wzór lokalizacji; wzmacniać linkami ES |
+| `/focus-sounds-app` | 378 wyśw., poz. 10,34, CTR 0,26 % | Blisko top 10; optymalizacja tytułu/sekcji po raporcie Strona + Zapytanie |
+| `/nature-sounds-app` | 455 wyśw., poz. 17,35, CTR 0,44 % | Rozbudować dopasowanie do `nature sounds app` |
+| EN: white noise / tinnitus / sleep | poz. 22–49, duży wolumen, CTR 0,06–0,12 % | Najpierw lepsze landingi i linkowanie, nie nowe artykuły |
+| Pozostałe locale łącznie | mały wolumen, zwykle wyższy CTR niż EN | Priorytet ES; punktowe poprawki DE/PT-BR/FR, bez masowej produkcji |
+
+Klaster fraz zawierających `app` ma co najmniej **3 489 wyświetleń i 2
+kliknięcia**. To ważniejsza pula niż kolejne pytania definicyjne. Widoczne
+okazje to m.in. `sleep sounds app` (poz. 26,86), `nature sounds app` (20,56),
+`brown noise app` (26,05), `best free white noise app` (28,96) i
+`focus sounds app` (16,35). Aktualny SERP potwierdza też, że Calma jest już
+indeksowana jako zwykły wynik dla `sound mixer app`, obok bezpośrednich
+konkurentów. Ten landing jest więc stroną do obrony i wzmocnienia, nie do
+łączenia z ogólnym `/sleep-sounds-app`.
+
 ---
 
 ## 2. Podział wysiłku
@@ -210,17 +257,173 @@ w prostym arkuszu: adresat, data, odpowiedź, efekt.
 - **Nie piszemy 52 artykułów rocznie w 8 wersjach.** To 416 plików. Rachunek
   z §1 tego nie uzasadnia.
 
-### 5.2 Co robimy — utrzymanie i naprawy
+### 5.2 Co robimy — sprint SEO po eksporcie 2026-08-03
 
-Kolejka, po jednej pozycji na miesiąc, w tej kolejności:
+Nie wykonujemy już kolejki „jedno dowolne zadanie miesięcznie”. Najpierw
+zamykamy pomiar i szybkie poprawki na stronach, które już mają widoczność.
+Nowa kolejność:
 
-| # | Zadanie | Uzasadnienie |
-|---|---|---|
-| 1 | **Rozstrzygnij kanibalizację kolorów szumu** — landing `/white-noise-brown-noise-pink-noise` stoi na poz. **14,7**, artykuł `/blog/brown-noise-vs-white-noise-vs-pink-noise` na **67,2** przy 1 953 wyświetleniach. Google wybrał landing. Przeprofiluj artykuł albo scal i `301` | Największa strata przy najmniejszym koszcie |
-| 2 | **Dodaj wyraźne CTA do sklepu w czterech najczęściej wyświetlanych artykułach** | 15 tys. wyświetleń/kwartał przechodzi przez strony, które nic nie sprzedają |
-| 3 | **Audyt `title`/`description` pod mobilny SERP** (≤60 zn., fraza z przodu, obietnica zamiast opisu) | Jednorazowo, 15 artykułów |
-| 4 | **Rozbuduj `/blog/best-sounds-for-sleep`** (2 883 wyśw., poz. 41,8) | Realny popyt, płytka strona |
-| 5 | Nowe artykuły z Załącznika A — **maks. 1/miesiąc**, tylko long-tail i porównania | Podtrzymanie, nie ekspansja |
+#### P0 — ten tydzień: pomiar i indeksacja
+
+1. **Wyeksportuj GSC Strona + Zapytanie**, osobno dla ostatnich 28 dni i
+   poprzednich 28 dni, Search type: Web. Dla pięciu najważniejszych landingów
+   (`/sound-mixer-app`, `/focus-sounds-app`, `/nature-sounds-app`,
+   `/sleep-sounds-app`, `/white-noise-app`) zapisz 10 głównych fraz, pozycję,
+   CTR i urządzenie. Obecny eksport nie pozwala wiarygodnie przypisać frazy do
+   URL-a.
+2. **Oczyść indeks z adresów użytkowych:** ustaw spójne `noindex,follow` dla
+   `/bio`, `/terms-of-service`, `/privacy-policy` i `/support`, a następnie
+   usuń je z sitemap. Obecnie samo `/bio` ma 152 wyświetlenia, regulamin 73,
+   prawie wszystko bez kliknięć. `/press` zostaje indeksowalny, bo wspiera
+   outreach i sygnały encji.
+3. **Zablokuj indeksowanie wyników optymalizatora obrazów** `/_next/image`
+   przez `X-Robots-Tag: noindex` (bez blokowania źródłowych obrazów i image
+   sitemap). Eksport zawiera cztery takie URL-e jako wyniki Web. Po wdrożeniu
+   sprawdź nagłówek przez `curl` i inspekcję URL w GSC.
+4. **Nie zmieniaj jeszcze pięciu tytułów naraz.** Zanotuj datę każdego deploya
+   i testuj jedną rodzinę URL-i przez minimum 14 dni; inaczej nie da się
+   przypisać efektu.
+
+**Status 2026-08-03:** punkty 2–3 wdrożone i zweryfikowane na produkcyjnym
+buildzie (`noindex, follow` dla stron użytkowych, brak tych tras w sitemap,
+`X-Robots-Tag: noindex` dla `/_next/image`; `/press` pozostał w sitemap).
+Dodano też brakującą trasę `/press` do `next-intl`; pełny crawl 256 URL-i
+sitemap zakończył się wynikiem: 0 błędów HTTP, 0 `noindex`, 0 brakujących i 0
+zduplikowanych canonicali.
+Punkt 1 wykonany: raporty Strona + Zapytanie zapisano w
+`gsc_data/page_queries/`. Wnioski: `/sound-mixer-app` poprawił CTR z 0,62 % do
+3,67 % i nie wymaga zmiany; fraza `focus sounds app` poprawiła pozycję z 18,29
+do 15,31; `/es/sleep-sounds-app` utrzymuje CTR 1,82 %. Te trzy strony zostają
+bez zmian. `/sleep-sounds-app` urósł z 222 do 493 wyświetleń, ale nadal ma 0
+kliknięć; to następny kontrolowany test.
+
+#### P1 — następne 2 tygodnie: strony na granicy top 10
+
+1. **Broń `/sound-mixer-app` (poz. 6,23):** po raporcie Strona + Zapytanie
+   przetestuj krótszy title z frazą na początku i wyróżnikiem produktu
+   (`offline`, `mix`, `no subscription`). Nie zmieniaj slugu ani canonicala.
+   Dodaj 3–5 kontekstowych linków do tej strony z artykułów o śnie, nauce i
+   kolorach szumu, z różnymi naturalnymi anchorami.
+
+   **Decyzja 2026-08-03:** nie zmieniać snippetu. W porównaniu 28/28 dni CTR
+   wzrósł z 0,62 % do 3,67 %, a kliknięcia z 1 do 4. Obserwować i chronić URL.
+2. **Przepchnij `/focus-sounds-app` (10,34) do top 10:** dopasuj H1 i pierwsze
+   100 słów do faktycznych fraz z raportu; dodaj linki z
+   `/blog/best-sounds-for-studying`, artykułu ADHD i strony miksera. Zachowaj
+   ostrożny język YMYL — bez obietnic leczenia ADHD.
+3. **Wzmocnij `/es/sleep-sounds-app`:** dodaj linki z hiszpańskiego home,
+   huba bloga i 2–3 tematycznie najbliższych artykułów. To obecnie najlepsza
+   kombinacja wolumenu i CTR w locale; nie przepisywać działającego snippetu.
+4. **Test CTR tylko na realnych okazjach:** `/fr/blog/best-free-white-noise-app`
+   (155 wyśw., poz. 9,05, 0 kliknięć), `/offline-sleep-sounds-app` (82 / 9,96 /
+   0) oraz `/pt-BR/white-noise-app` (83 / 10,0 / 0). Najpierw potwierdź frazę
+   w raporcie Strona + Zapytanie, potem zmień title i description w danym
+   locale.
+
+5. **Test EN `/sleep-sounds-app` rozpoczęty 2026-08-03:** 493 wyświetlenia vs
+   222 w poprzednim okresie, 0 kliknięć w obu. Frazy dominujące: `sleep sounds
+   app` (112), `free sleep sounds app` (48), `sleep noise app` (44). Title,
+   description, H1 i intro dopasowano do intencji `free`, `offline` i `no
+   subscription`; zmieniono trzy sekcje korzyści i ostrożnościowe FAQ. Nie
+   zmieniać ponownie przez minimum 14 dni.
+
+### 5.2.1 Handoff tygodnia — stan na 2026-08-03
+
+**Materiały źródłowe:** pełny eksport GSC znajduje się w `gsc_data/`, a
+porównania 28/28 dni dla sześciu landingów w `gsc_data/page_queries/`.
+
+**Wykonane w kodzie:**
+
+- `noindex, follow` dla `/bio`, `/privacy-policy`, `/terms-of-service` i
+  `/support` we wszystkich locale;
+- usunięcie powyższych stron użytkowych z sitemap;
+- `X-Robots-Tag: noindex` dla `/_next/image` bez blokowania źródłowych obrazów;
+- dodanie brakującej trasy `/press` do routingu `next-intl`;
+- optymalizacja EN `/nature-sounds-app` pod `nature sounds app`, z komunikacją
+  miksera, offline i braku subskrypcji oraz bez niepopartych obietnic zdrowotnych;
+- optymalizacja EN `/sleep-sounds-app` pod `sleep sounds app`, `free sleep
+  sounds app` i `sleep noise app`, również z poprawionym FAQ/schema;
+- daty modyfikacji obu landingów ustawione na 2026-08-03 w sitemap;
+- dodany powtarzalny test `npm run seo:audit` (`tools/audit-seo.ps1`).
+
+**Zweryfikowane:** `npm run lint`, `npm run build` i `git diff --check`
+przechodzą. Crawl obejmuje 256 URL-i sitemap: 0 odpowiedzi innych niż 200,
+0 stron `noindex`, 0 brakujących canonicali i 0 zduplikowanych canonicali.
+
+**Świadome decyzje „bez zmian”:**
+
+- `/sound-mixer-app` — CTR 0,62 % → 3,67 %, kliknięcia 1 → 4; chronić wynik;
+- `/focus-sounds-app` — `focus sounds app` poprawiło pozycję 18,29 → 15,31;
+- `/es/sleep-sounds-app` — CTR 1,82 %, działającego snippetu nie przepisywać;
+- `/white-noise-app` — frazy są głównie na pozycjach 25–40; obecnie problemem
+  jest ranking/autorytet, nie brak dokładnej frazy w title i H1;
+- `/blog/rain-sounds-vs-white-noise` — wysoka widoczność na pytania yes/no,
+  ale 0 kliknięć; nie inwestować kolejnej pracy w ten klaster.
+
+**Pozostało po publikacji:**
+
+1. Wdrożyć aktualny stan repozytorium na produkcję i zapisać dokładną datę oraz
+   godzinę deploya.
+2. W GSC ponownie przesłać `https://www.calmasounds.com/sitemap.xml`.
+3. W Inspekcji URL poprosić o indeksację `/nature-sounds-app` i
+   `/sleep-sounds-app`.
+4. Nie zmieniać title, description, H1 ani głównej treści tych dwóch landingów
+   przez minimum 14 pełnych dni od deploya.
+
+**Następny przegląd:** 17–18 sierpnia 2026, o ile deploy nastąpi 3 sierpnia.
+Jeżeli wdrożenie będzie później, termin przesunąć tak, aby objąć 14 pełnych dni.
+Porównać dla obu testowanych URL-i: kliknięcia, wyświetlenia, CTR i pozycję dla
+tych samych zapytań oraz urządzeń. Nie wyciągać wniosków wyłącznie ze średniej
+pozycji strony. Pełna decyzja o utrzymaniu lub cofnięciu zmian dopiero po
+porównaniu 28 dni przed/po.
+
+**Zamrożone do następnego pomiaru:** nowe artykuły, masowe zmiany metadata,
+scalanie artykułu o kolorach szumu i kolejne przebudowy landingów. Wyjątek:
+awaria, błędny canonical, przypadkowy `noindex`, 404 lub inny defekt techniczny.
+
+#### P2 — 30 dni: landingi komercyjne na pozycjach 17–39
+
+1. **Rozbuduj `/nature-sounds-app`** pod faktyczne zastosowania i warianty
+   `nature sounds app` / `nature sound app`; dodaj porównanie funkcji, sekcję
+   offline/mikser i linki z treści o deszczu, oceanie i lesie. Cel: z poz. 17,35
+   do top 10, nie tylko poprawa CTR.
+
+   **Test EN rozpoczęty 2026-08-03:** skrócony title z frazą na początku,
+   dopasowane H1 i intro, dodane wyróżniki `mix`, `offline` i brak subskrypcji;
+   usunięte poboczne frazy o nauce oraz niepoparte obietnice zdrowotne z FAQ.
+   Nie zmieniać ponownie do końca 14-dniowego okna obserwacji.
+2. **Zbuduj klastry linków do istniejących landingów:**
+   `/sleep-sounds-app` (21,9), `/brown-noise-app` (23,07),
+   `/white-noise-app` (33,17) i `/tinnitus-sounds-app` (38,74). Każdy artykuł
+   informacyjny ma wskazywać jeden główny landing; landing linkuje z powrotem
+   tylko do 2–4 najlepszych poradników. Unikamy siatki „wszystko do wszystkiego”.
+3. **Rozstrzygnij kanibalizację kolorów szumu:** landing
+   `/white-noise-brown-noise-pink-noise` ma poz. 16,69, a artykuł porównawczy
+   66,08 przy 2 184 wyświetleniach. Landing przejmuje temat porównania. Artykuł
+   przeprofiluj na intencję edukacyjną (jak wybrać i testować kolor) albo scal
+   do landingu i zastosuj `301`; decyzję podejmij po raporcie Strona + Zapytanie.
+4. **Nie rozbudowuj klastra tinnitus samą objętością.** Ma co najmniej 1 536
+   wyświetleń i tylko 1 kliknięcie, a główne strony są na pozycjach 29–46.
+   Najpierw popraw architekturę, dopasowanie intencji i zaufanie/YMYL; nowe
+   teksty dopiero po wzroście istniejących URL-i.
+
+#### P3 — 60–90 dni: treść i autorytet
+
+1. Publikuj **maksymalnie 1–2 nowe klastry miesięcznie**, nie pojedyncze
+   osierocone teksty. Pierwszeństwo mają zapytania komercyjne i porównawcze,
+   dla których raport Strona + Zapytanie pokaże pozycję 11–30. Temat bez
+   potwierdzonego popytu nie wyprzedza naprawy strony już widocznej.
+2. Zdobądź linki i wzmianki do `/sound-mixer-app`, strony głównej i press kitu
+   przez rankingi aplikacji (§4). To trudniejszy do skopiowania sygnał niż
+   kolejny artykuł definicyjny.
+3. Po 28 dniach raportuj osobno: kliknięcia non-brand, CTR landingów
+   komercyjnych, liczbę fraz w top 10 i top 20 oraz kliknięcia do sklepów.
+   Nie raportuj sukcesu samym wzrostem wyświetleń.
+
+**Warunek zakończenia sprintu:** żadna zmiana nie jest uznana za sukces bez
+porównania 28 dni przed/po, z uwzględnieniem urządzenia i kraju. Cel pierwszego
+cyklu: utrzymać `/sound-mixer-app` w top 10, wprowadzić co najmniej dwa kolejne
+landingi do top 10 i podnieść 28-dniowy CTR całej witryny powyżej **0,35 %**.
 
 ### 5.3 Zasady redakcyjne (bez zmian — działają)
 

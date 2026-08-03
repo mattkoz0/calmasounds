@@ -5,6 +5,8 @@ const BASE_URL = "https://www.calmasounds.com";
 const locales = ["en", "es", "pl", "de", "fr", "ko", "ja", "pt-BR"] as const;
 
 const routeModifiedDates: Partial<Record<string, string>> = {
+  "/nature-sounds-app": "2026-08-03",
+  "/sleep-sounds-app": "2026-08-03",
   "/blog/benefits-of-nature-sounds-for-relaxation": "2026-07-10",
   "/blog/best-color-noise-for-adhd": "2026-07-16",
   "/blog/best-free-white-noise-app": "2026-07-16",
@@ -30,7 +32,6 @@ const routes = [
   "/focus-sounds-app",
   "/white-noise-app",
   "/sound-mixer-app",
-  "/bio",
   "/press",
   "/blog/benefits-of-nature-sounds-for-relaxation",
   "/blog/rain-sounds-vs-white-noise",
@@ -56,9 +57,6 @@ const routes = [
   "/calma-vs-bettersleep",
   "/calma-vs-calm",
   "/white-noise-brown-noise-pink-noise",
-  "/privacy-policy",
-  "/terms-of-service",
-  "/support",
 ] as const;
 
 function localizedPath(route: string, locale: string) {
