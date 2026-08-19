@@ -370,16 +370,94 @@ przechodzą. Crawl obejmuje 256 URL-i sitemap: 0 odpowiedzi innych niż 200,
 4. Nie zmieniać title, description, H1 ani głównej treści tych dwóch landingów
    przez minimum 14 pełnych dni od deploya.
 
-**Następny przegląd:** 17–18 sierpnia 2026, o ile deploy nastąpi 3 sierpnia.
-Jeżeli wdrożenie będzie później, termin przesunąć tak, aby objąć 14 pełnych dni.
-Porównać dla obu testowanych URL-i: kliknięcia, wyświetlenia, CTR i pozycję dla
-tych samych zapytań oraz urządzeń. Nie wyciągać wniosków wyłącznie ze średniej
-pozycji strony. Pełna decyzja o utrzymaniu lub cofnięciu zmian dopiero po
-porównaniu 28 dni przed/po.
-
 **Zamrożone do następnego pomiaru:** nowe artykuły, masowe zmiany metadata,
 scalanie artykułu o kolorach szumu i kolejne przebudowy landingów. Wyjątek:
 awaria, błędny canonical, przypadkowy `noindex`, 404 lub inny defekt techniczny.
+
+### 5.2.2 Wynik przeglądu 14-dniowego — 2026-08-19
+
+**Deploy potwierdzony.** Odpytanie produkcji 2026-08-19 pokazuje na obu
+landingach nowe tytuły z testu, status 200, `index, follow` i poprawny
+canonical. Data deploya: **2026-08-03**. Okna porównania: **19.07–01.08**
+(przed) vs **04–17.08** (po) — po 14 pełnych dni, bez dnia deploya.
+Dane: `gsc_data/{komputer,mobilne,tablet}/`, z podziałem na urządzenia.
+
+**Tło całej witryny** (suma `Wykres.csv` z trzech urządzeń):
+
+| Okres | Wyświetlenia | Kliknięcia | CTR |
+|---|---:|---:|---:|
+| 19.07–01.08 | 3 598 | 11 | 0,306 % |
+| 04–17.08 | 3 055 | 8 | 0,262 % |
+| **Zmiana** | **−15,1 %** | **−27,3 %** | −0,044 pp |
+
+Cały serwis spadł w tym okresie. To jest właściwy mianownik — bez niego każdy
+spadek na pojedynczej stronie wygląda groźniej, niż jest.
+
+**Wynik obu testowanych landingów:**
+
+| URL | Wyświetlenia | Kliknięcia | Poz. ważona | Udział w pokrytych wyśw. |
+|---|---:|---:|---:|---:|
+| `/sleep-sounds-app` | 227 → 59 (**−74,0 %**) | 0 → 0 | 27,13 → 24,18 | 10,57 % → 3,57 % |
+| `/nature-sounds-app` | 29 → 7 (−75,9 %) | 0 → 0 | 21,03 → 21,00 | 1,35 % → 0,42 % |
+
+**Wnioski:**
+
+1. **`/sleep-sounds-app` — test nieudany.** Spadek −74 % przy tle −15,1 %.
+   Udział strony w pokrytych wyświetleniach spadł trzykrotnie, więc to nie jest
+   efekt trendu serwisu, tylko regres tej konkretnej strony. Cel testu —
+   kliknięcia — nie został osiągnięty: **0 przed i 0 po**. Zgodnie z §6 to jest
+   raport o porażce, nawet gdyby pozycja wyglądała lepiej.
+2. **Mechanizm: zawężenie footprintu zapytań.** Przed zmianą desktop notował
+   **54 różne frazy**, w tym `night sounds app` na poz. 18,38 — najlepszej
+   w całym zestawie. Po zmianie mobile ma już tylko 4 frazy. `sleep noise app`
+   (12 wyśw.) zniknął całkowicie, `sleep sounds app` spadł 30 → 3. Przepisanie
+   pod `free` / `offline` / `no subscription` odcięło ogon zapytań, nie
+   dokładając ani jednego kliknięcia.
+3. **Poprawy pozycji nie traktować jako sukcesu.** Wzrost 27,13 → 24,18 jest
+   w znacznej części artefaktem składu: strona straciła wyświetlenia na
+   niżej rankujących frazach, więc średnia sama się podniosła. Mobile stoi
+   płasko (26,55 → 26,60), poprawa siedzi wyłącznie w desktopie
+   (27,39 → 23,69). Bez raportu Strona + Zapytanie za okres „po" nie da się
+   rozdzielić realnego wzrostu od efektu składu i **nie będzie takiego
+   raportu** — dalszego eksportu nie zbieramy.
+4. **`/nature-sounds-app` — brak rozstrzygnięcia i nie warto go szukać.**
+   29 → 7 wyświetleń to szum statystyczny; przy takich wolumenach żadna
+   decyzja nie jest uprawniona. Pozycja stoi płasko (21,03 → 21,00).
+   Strona nie wymaga cofania zmian ani dalszej pracy.
+
+**Ograniczenia tego pomiaru — świadomie zaakceptowane:**
+
+- `Strony.csv` pokrywa 66 % / 64 % wyświetleń desktopowych i 48 % / 37,5 %
+  mobilnych (anonimizacja GSC). Dlatego wnioski opieramy na **udziale
+  w wyświetleniach pokrytych**, nie na liczbach bezwzględnych.
+- Żadne kliknięcie w obu okresach nie zostało przypisane do konkretnej strony
+  w eksporcie — wszystkie 11 i 8 kliknięć siedzi poniżej progu anonimizacji.
+- Brak wymiaru Strona + Zapytanie za okres „po", więc analiza fraz opiera się
+  na eksporcie z 15 sierpnia (`gsc_data/page_queries/`).
+- Porównanie 28 dni przed/po nie zostanie wykonane. Decyzję podejmujemy na
+  danych 14/14, przyjmując wyższy margines błędu.
+
+**Decyzje:**
+
+1. **Przywrócić szerokość tematyczną `/sleep-sounds-app`** — jedna edycja:
+   oddać w treści (H2, sekcje, FAQ) warianty `sleep noise app`,
+   `night sounds app`, `sleeping sounds app`, które strona obsługiwała przed
+   3 sierpnia. **Nie ruszać title ani description** — desktopowa poprawa
+   pozycji jest niepewna, ale nie ma powodu jej ryzykować.
+2. **Po tej edycji zamknąć temat obu landingów.** Dwa tygodnie testu dały zero
+   kliknięć na stronie, która nigdy żadnego nie miała. Kolejna iteracja tej
+   samej strony nie jest uzasadniona rachunkiem z §1.
+3. **P1 i P2 dla pozostałych landingów zostają zamrożone.** Nie uruchamiamy
+   testów `/focus-sounds-app`, ES-owych linków ani testów CTR na FR/PT-BR,
+   dopóki kanał 1 (§3) nie ruszy. Pomiar właśnie pokazał, ile kosztuje cykl
+   testowy i ile daje.
+4. **Priorytet przechodzi na §3.2 i §3.3** — metadane w sklepach i mechanizm
+   próśb o ocenę. To jest zgodne z regułą nadrzędną z §2: dopóki aplikacja ma
+   mniej niż 100 ocen, priorytet 4 nie zabiera czasu priorytetom 1–3.
+
+**Czego nie robimy:** nie zbieramy dalszych eksportów GSC pod te dwa testy,
+nie cofamy metadanych `/nature-sounds-app`, nie przepisujemy po raz trzeci
+żadnego z tych landingów.
 
 #### P2 — 30 dni: landingi komercyjne na pozycjach 17–39
 
