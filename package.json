@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seo:audit": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit-seo.ps1"
+    "seo:audit": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit-seo.ps1",
+    "seo:triage": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/triage-index-urls.ps1"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
