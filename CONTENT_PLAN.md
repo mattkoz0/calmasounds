@@ -74,6 +74,12 @@ Dlatego kolejność wysiłku odwraca się o 180°.
 
 ### 1.2 Aktualizacja GSC — 2026-08-03
 
+> **Nowszy pomiar istnieje.** Ta sekcja opisuje eksport z sierpnia i zostaje
+> jako zapis rozumowania, ale aktualne liczby i decyzje są w **§5.2.3
+> (przegląd 2026-09-09)**. Dwie tezy stąd zostały tam zrewidowane: „priorytet
+> ES" (wyprzedziły go `pt-BR` i `fr`) oraz traktowanie sumy wyświetleń jako
+> jednej liczby (klaster rain trzeba wydzielać).
+
 Nowy eksport obejmuje **2026-05-02 → 2026-08-01**. Źródłem prawdy dla sum jest
 `Wykres.csv`: **25 705 wyświetleń, 40 kliknięć, CTR 0,156 %, średnia pozycja
 26,0**. To niewielka poprawa względem poprzedniego, w dużej części
@@ -459,6 +465,14 @@ spadek na pojedynczej stronie wygląda groźniej, niż jest.
 nie cofamy metadanych `/nature-sounds-app`, nie przepisujemy po raz trzeci
 żadnego z tych landingów.
 
+**Status decyzji 1 — wykonane 2026-08-19** (commit `6742f40`). W
+[app/[locale]/sleep-sounds-app/page-en.tsx](app/[locale]/sleep-sounds-app/page-en.tsx)
+wróciły `sleep noise app`, `night sounds app` i `sleeping sounds app` — w
+keywords, w treści sekcji i w dwóch pytaniach FAQ (również w `FAQPage` schema).
+Title i description nietknięte, zgodnie z decyzją. `lastModified` dla
+`/sleep-sounds-app` ustawione na 2026-08-19 w [app/sitemap.ts](app/sitemap.ts).
+Temat obu landingów zamknięty — decyzja 2 obowiązuje.
+
 #### P2 — 30 dni: landingi komercyjne na pozycjach 17–39
 
 1. **Rozbuduj `/nature-sounds-app`** pod faktyczne zastosowania i warianty
@@ -502,6 +516,181 @@ nie cofamy metadanych `/nature-sounds-app`, nie przepisujemy po raz trzeci
 porównania 28 dni przed/po, z uwzględnieniem urządzenia i kraju. Cel pierwszego
 cyklu: utrzymać `/sound-mixer-app` w top 10, wprowadzić co najmniej dwa kolejne
 landingi do top 10 i podnieść 28-dniowy CTR całej witryny powyżej **0,35 %**.
+
+### 5.2.3 Przegląd miesięczny — 2026-09-09
+
+**Źródło:** `gsc_data/2026-09-09/` — skuteczność (Web, 2026-06-07 → 2026-09-06)
+i raport indeksowania (do 2026-09-04). Poprzedni przegląd: 2026-08-19.
+
+**Suma z `Wykres.csv`: 29 282 wyświetlenia, 62 kliknięcia, CTR 0,212 %,
+średnia pozycja 31,9.** Poprzedni eksport dawał 25 705 / 40 / 0,156 % / 26,0,
+ale okna nachodzą na siebie w około dwóch trzecich — to nie jest czysty pomiar
+i nie należy go tak raportować. Walidacja jak poprzednio: `Strony.csv` pokazuje
+30 197 wyświetleń, `Zapytania.csv` tylko 19 035 i 4 kliknięcia (1000 wierszy,
+anonimizacja). Sumy bierzemy z `Wykres.csv`, pliki wymiarowe służą do kolejności.
+
+**Czysty pomiar 14/14:**
+
+| Okres | Wyświetlenia | Kliknięcia | CTR | Poz. |
+|---|---:|---:|---:|---:|
+| 10–23.08 | 3 433 | 12 | 0,350 % | 35,4 |
+| 24.08–06.09 | 3 392 | **18** | **0,531 %** | 36,6 |
+
+To **pierwszy raport w historii tego dokumentu, w którym kliknięcia rosną przy
+płaskich wyświetleniach** — odwrotność wzorca porażki z §6. 28-dniowy cel CTR
+ze „Warunku zakończenia sprintu" (> 0,35 %) jest na tym oknie przekroczony.
+Zastrzeżenie, bez którego ten wniosek jest nieuczciwy: 12 vs 18 kliknięć to
+liczby, przy których pojedynczy dobry tydzień wygląda jak trend. Potwierdzenie
+albo obalenie przyjdzie w przeglądzie październikowym, nie wcześniej.
+
+#### Odkrycie tego przeglądu: EN jest kanałem o zerowym CTR
+
+| Locale | Wyświetlenia | Kliknięcia | CTR |
+|---|---:|---:|---:|
+| en | 26 663 | 17 | **0,06 %** |
+| fr | 715 | 10 | 1,40 % |
+| pt-BR | 949 | 9 | 0,95 % |
+| es | 770 | 9 | 1,17 % |
+| de | 357 | 7 | 1,96 % |
+| ja | 327 | 5 | 1,53 % |
+| ko | 154 | 3 | 1,95 % |
+| pl | 262 | 2 | 0,76 % |
+
+**Non-EN to 11,7 % wyświetleń i 72,6 % kliknięć** — 3 534 wyświetlenia i 45
+z 62 kliknięć. Po krajach Brazylia jest
+pierwsza (11 kliknięć przy 947 wyświetleniach, poz. 10,88) przed USA
+(6 kliknięć przy 16 664 wyświetleniach, poz. 24,71). Wielka Brytania:
+2 572 wyświetlenia, 2 kliknięcia, poz. 43,49.
+
+Wewnątrz EN podział jest jeszcze ostrzejszy:
+
+| Segment EN | Wyświetlenia | Kliknięcia | CTR |
+|---|---:|---:|---:|
+| blog | 18 969 | 3 | 0,016 % |
+| landingi i strona główna | 7 694 | 14 | 0,182 % |
+
+Sam `/blog/rain-sounds-vs-white-noise` to **10 122 wyświetlenia, 0 kliknięć,
+poz. 9,33** — 35 % wyświetleń całego serwisu. Co więcej, w `Zapytania.csv`
+**6 020 z 6 075 wyświetleń w pozycjach 1–10 (99,1 %) to klaster rain**; cała
+reszta top 10 to 55 wyświetleń na 11 frazach, wśród których nie ma ani jednej
+komercyjnej. Innymi słowy: **poza klastrem, którego świadomie nie monetyzujemy,
+nie mamy w EN żadnej widoczności w top 10.** §5.1 mówiło „nie inwestować" —
+ten pomiar to potwierdza mocniej niż sierpniowy.
+
+174 z 209 stron w eksporcie (21 568 wyświetleń) nie ma ani jednego kliknięcia.
+
+**Urządzenia** — rozjazd, który się pogłębił:
+
+| Urządzenie | Wyświetlenia | Kliknięcia | CTR | Poz. |
+|---|---:|---:|---:|---:|
+| Mobile | 14 315 | 45 | 0,31 % | 13,81 |
+| Desktop | 14 829 | 13 | 0,09 % | 39,39 |
+| Tablet | 138 | 4 | 2,90 % | 12,17 |
+
+Desktop to połowa wyświetleń na pozycji 39 — to on ciągnie średnią pozycję
+serwisu w dół i to on odpowiada za pogorszenie 26,0 → 31,9. Nie jest to regres
+stron, które faktycznie klikają.
+
+**Drobny sygnał, wart odnotowania bez wyciągania wniosków:** pojawiły się
+pierwsze zapytania brandowe — `calma app` (poz. 6,5), `audio calma` (poz. 5),
+`calma relax` (poz. 1,5). Łącznie 7 wyświetleń. §1 pisało „ruch brandowy nie
+istnieje"; teraz istnieje śladowo. To za mało na jakąkolwiek decyzję.
+
+#### Indeksowanie — jedyny nowy sygnał techniczny
+
+241 zindeksowanych, 108 niezindeksowanych (349 znanych adresów). Szczyt
+indeksacji był 2026-08-14 przy 253 stronach; od tego czasu −12. Sitemap to
+32 trasy × 8 locale = **256 URL-i**.
+
+| Przyczyna | Strony | Weryfikacja |
+|---|---:|---|
+| Zeskanowana, jeszcze nie zindeksowana | **42** | **Niepowodzenie** |
+| Strona zawiera przekierowanie | 33 | nie rozpoczęto |
+| Wykluczona tagiem `noindex` | 13 | nie rozpoczęto |
+| Wykryta – obecnie niezindeksowana | 16 | powodzenie |
+| Duplikat, Google wybrał inną kanoniczną | 2 | nie rozpoczęto |
+| Alternatywna z prawidłową kanoniczną | 1 | nie rozpoczęto |
+| Duplikat, brak oznaczenia kanonicznej | 1 | powodzenie |
+
+Dwie pozycje mają znane, niegroźne wyjaśnienie:
+
+- **13 × `noindex`** to nasze strony użytkowe. Pełna pula to
+  `/bio`, `/privacy-policy`, `/terms-of-service`, `/support` i `/download`
+  (ten ostatni ma `index: false` w `generateMetadata`) × 8 locale = **40 URL-i**.
+  Google potwierdził dotąd 13 — reszta dojdzie przy kolejnych crawlach. To jest
+  zamierzony efekt P0 z 2026-08-03, nie usterka.
+- **33 × przekierowanie** — najbardziej prawdopodobne źródło to
+  `localePrefix: 'as-needed'` w [i18n/routing.ts:7](i18n/routing.ts#L7):
+  adresy `/en/*` przekierowują na `/*`. Drugie źródło to przekierowanie apex →
+  `www` z [next.config.ts](next.config.ts). Oba są poprawne. **Hipoteza wymaga
+  potwierdzenia listą URL-i**, bo jeśli w tych 33 siedzi trasa z sitemapy, to
+  jest to nasz błąd.
+
+**Otwarta pozycja: 42 strony „zeskanowane, ale nie zindeksowane" ze statusem
+weryfikacji `Niepowodzenie`.** To jest około 16 % sitemapy. Nieudana weryfikacja
+oznacza, że Google sprawdził po naszym zgłoszeniu i problem nadal występuje —
+czyli defekt techniczny, a to jest wprost wyjątek od zamrożenia z §5.2.1.
+Eksport CSV nie zawiera listy adresów; trzeba ją wyciągnąć z interfejsu GSC.
+
+#### Lista do sprawdzenia w GSC (jedyne zadanie tego tygodnia po stronie www)
+
+Raport: **Indeksowanie stron → kliknij przyczynę → Eksportuj → arkusz „Tabela".**
+Dla każdej z trzech przyczyn wyeksportuj listę i zapisz do
+`gsc_data/2026-09-09/indeksowanie/urls/` (instrukcja i nazwy plików są
+w [README](gsc_data/2026-09-09/indeksowanie/urls/README.md) w tym katalogu).
+Potem uruchom:
+
+```
+npm run seo:triage -- -Csv "gsc_data/2026-09-09/indeksowanie/urls/*.csv"
+```
+
+[tools/triage-index-urls.ps1](tools/triage-index-urls.ps1) porówna adresy
+z żywą sitemapą i podzieli je na `InSitemap` (prawdziwy problem),
+`EnPrefix` / `Apex` / `NoindexRoute` (znany, zamierzony szum) oraz `Other`
+(stare slugi i parametry — do obejrzenia). To zdejmuje z tej listy całą pracę
+ręczną poza samą Inspekcją URL.
+
+1. **„Strona zeskanowana, ale jeszcze nie zindeksowana" (42).** Rozdziel na:
+   - adresy **obecne w sitemapie** (32 trasy × 8 locale) — to są prawdziwe
+     problemy; sprawdź w Inspekcji URL, czy Google widzi status 200,
+     `index, follow` i canonical wskazujący na samego siebie;
+   - adresy **spoza sitemapy** — jeśli to `/en/*`, warianty z parametrami albo
+     stare slugi, to szum i nie wymagają pracy.
+   Jeśli w sitemapie siedzi więcej niż kilka adresów, sprawdź, czy nie
+   koncentrują się w jednym locale albo w jednym katalogu (`/blog/*`).
+2. **„Strona zawiera przekierowanie" (33).** Jedyne pytanie: **czy którykolwiek
+   z tych adresów występuje w `app/sitemap.ts`?** Jeśli tak — sitemap podaje
+   Google adresy przekierowujące i to naprawiamy. Jeśli to wyłącznie `/en/*`
+   i apex → `www`, zamykamy temat bez zmian w kodzie.
+3. **„Wykryta – obecnie niezindeksowana" (16).** Tu weryfikacja przeszła
+   pomyślnie, więc sprawdzamy tylko, czy to nie są nowsze locale artykułów,
+   które nigdy nie zostały zeskanowane.
+
+Kryterium zakończenia: wiemy, ile z 42 adresów jest w sitemapie, i mamy dla
+nich jedną z dwóch odpowiedzi — „defekt, naprawiamy X" albo „brak defektu,
+Google po prostu nie chce indeksować, zostawiamy". Sam fakt niezaindeksowania
+strony o zerowym potencjale kliknięć **nie** jest powodem do pracy.
+
+#### Decyzje
+
+1. **Zamrożenie P1/P2 zostaje w mocy.** Nic w tych danych nie uzasadnia
+   powrotu do przepisywania landingów. Wzrost kliknięć przyszedł z locale,
+   których nie dotykaliśmy.
+2. **`/blog/rain-sounds-vs-white-noise` domykamy jako pozycję martwą.**
+   35 % wyświetleń, 0 kliknięć, 99 % naszej widoczności w top 10. Nie
+   przepisujemy, nie usuwamy, nie linkujemy do niego więcej — i **nie liczymy
+   go do KPI wyświetleń**. Od tego przeglądu raportujemy wyświetlenia
+   z klastrem i bez niego.
+3. **§5.6 zaktualizowane** — kolejność locale wynikająca z tego eksportu
+   zastępuje poprzednią, opartą na 31 kliknięciach.
+4. **Priorytet pozostaje przy §3.2 i §3.3.** Trzeci przegląd z rzędu pokazuje
+   to samo: strona daje kilkadziesiąt kliknięć kwartalnie, a aplikacja ma
+   nadal 0 ocen. Reguła nadrzędna z §2 obowiązuje bez zmian.
+
+**Czego nie robimy:** nie uruchamiamy testów CTR na `fr` / `pt-BR` / `de` tylko
+dlatego, że mają wysoki CTR — przy 357–949 wyświetleniach każdy test ma za mały
+mianownik, żeby cokolwiek rozstrzygnąć. Nie przepisujemy EN bloga. Nie
+zwiększamy liczby artykułów.
 
 ### 5.3 Zasady redakcyjne (bez zmian — działają)
 
@@ -557,14 +746,17 @@ redakcyjny (Q&A na pytania yes/no) wart porzucenia, patrz §5.1.
 
 ### 5.5 Higiena techniczna
 
-- `app/[locale]/test/` — jeśli to pozostałość, usuń albo dodaj `noindex`.
-- `/press` jest w `routes` w [app/sitemap.ts:34](app/sitemap.ts#L34), ale
-  **nie ma go** w `pathnames` w `routing.ts` ani w `pathnamesMapping`
-  w `seo.ts`. Do sprawdzenia, czy 8 wersji językowych faktycznie działa —
-  press kit jest teraz częścią kanału 2 (§4), więc musi być sprawny.
+- ~~`app/[locale]/test/` — jeśli to pozostałość, usuń albo dodaj `noindex`.~~
+  **Zamknięte:** katalogu nie ma w repo.
+- ~~`/press` jest w `routes` w `app/sitemap.ts`, ale nie ma go w `pathnames`
+  w `routing.ts`.~~ **Zamknięte 2026-08-03:** trasa jest w
+  [i18n/routing.ts:86](i18n/routing.ts#L86).
 - Przy każdym nowym artykule: wszystkie 8 wersji muszą wskazywać na siebie
   w hreflang (robi to `getLocalizedMetadata` + `sitemap.ts`, ale tylko jeśli
   trasa jest w obu miejscach).
+- Repetytorium: `npm run seo:audit` sprawdza crawl całej sitemapy (status,
+  `noindex`, canonical), a `npm run seo:triage` klasyfikuje adresy z raportu
+  indeksowania GSC (§5.2.3).
 
 ### 5.6 Polityka językowa
 
@@ -572,12 +764,22 @@ redakcyjny (Q&A na pytania yes/no) wart porzucenia, patrz §5.1.
 - Publikujemy komplet 8 wersji naraz — publikacja „tylko EN" zostawia dziury
   w hreflang.
 - Slugi tłumaczymy dla `pl/de/es/fr/pt-BR`; `ko/ja` zostają na slugu EN.
-- **Priorytet ręcznego przeglądu: `es`.** Hiszpański dał 645 wyświetleń
-  i **7 z 31 kliknięć serwisu** (CTR 1,1 % — ~9× średnia).
-  `/es/sleep-sounds-app` to druga najklikańsza strona w całym serwisie.
-  Polski dał **52 wyświetlenia i 1 kliknięcie** — nie inwestuj tam czasu
-  redakcyjnego tylko dlatego, że to nasz język.
-- Kolejność uwagi wg danych: **en → es → fr / pt-BR → ja / ko / de → pl.**
+- **Priorytet ręcznego przeglądu: `pt-BR`, `fr`, `es`** — aktualizacja
+  2026-09-09 (§5.2.3). Poprzednia wersja tego punktu stawiała `es` na czele na
+  podstawie 31 kliknięć całego serwisu; przy 62 kliknięciach obraz jest inny:
+  `fr` (10), `pt-BR` (9) i `es` (9) idą łeb w łeb, a Brazylia jest pierwszym
+  krajem serwisu po kliknięciach — przed USA. Polski nadal jest ostatni
+  (262 wyświetlenia, 2 kliknięcia) — nie inwestuj tam czasu redakcyjnego tylko
+  dlatego, że to nasz język.
+- **EN to nie jest priorytet numer jeden, mimo 91 % wyświetleń.** Angielski ma
+  CTR **0,06 %** i daje 17 z 62 kliknięć; osiem locale non-EN daje 45 kliknięć
+  z 11,7 % wyświetleń. Traktuj EN jako kanał, w którym mamy zasięg bez wartości,
+  dopóki nie ruszy kanał 1 (§3).
+- Kolejność uwagi wg danych (2026-09-09):
+  **pt-BR / fr / es → de → ja / ko → en → pl.**
+  `en` stoi nisko świadomie: nie dlatego, że jest mało ważny, tylko dlatego, że
+  jego problemem jest ranking i SERP (§1.1), a nie jakość tłumaczenia, którą
+  ręczny przegląd może poprawić.
 
 ---
 
@@ -595,12 +797,25 @@ redakcyjny (Q&A na pytania yes/no) wart porzucenia, patrz §5.1.
 
 **Metryki pomocnicze (GSC)** — baseline 2026-04-20 → 2026-07-19:
 24 902 wyświetlenia · 31 kliknięć · CTR 0,12 % · poz. ~30.
+Ostatni odczyt 2026-06-07 → 2026-09-06 (§5.2.3):
+29 282 wyświetlenia · **62 kliknięcia** · CTR 0,212 % · poz. 31,9.
+Okna nachodzą na siebie, więc to nie jest porównanie rok do roku — czystym
+pomiarem jest 14/14 z §5.2.3 (18 vs 12 kliknięć przy płaskich wyświetleniach).
 
 - **CTR, nie wyświetlenia.** Wyświetlenia urosły 25× i nie dały ani jednego
   kliknięcia więcej. Raport, w którym rosną wyświetlenia a stoją kliknięcia,
   jest raportem o porażce.
-- **Mobile osobno** — mobile poz. 14,4 / 22 klik., desktop poz. 37,0 / 7 klik.
-- **`es` osobno** — najwyższy CTR w serwisie.
+- **Wyświetlenia raportujemy z klastrem rain i bez niego** (decyzja z §5.2.3).
+  `/blog/rain-sounds-vs-white-noise` to 10 122 z 29 282 wyświetleń i 0 kliknięć;
+  wliczanie go do wzrostu zafałszowuje każdy odczyt. Bez klastra ostatni okres
+  to ~19 160 wyświetleń przy tych samych 62 kliknięciach, czyli CTR **~0,32 %**.
+  (Odjęcie miesza źródła — 10 122 pochodzi ze `Strony.csv`, suma z `Wykres.csv`
+  — więc traktuj tę wartość jako rząd wielkości, nie jako pomiar.)
+- **Mobile osobno** — ostatni odczyt: mobile poz. 13,81 / 45 klik. / CTR 0,31 %,
+  desktop poz. 39,39 / 13 klik. / CTR 0,09 %. Desktop to połowa wyświetleń
+  i jedna piąta kliknięć — to on psuje średnią pozycję serwisu.
+- **Non-EN osobno** — osiem locale poza `en` daje 11,7 % wyświetleń i **72,6 %
+  kliknięć** (45 z 62). To jest właściwy podział, a nie „`es` osobno".
 - Cel 6 mies. dla strony: CTR **0,8 %**, ~120 kliknięć/mies.
 
 > **Rytm przeglądu:** raz w miesiącu. Najpierw sklepy, potem GSC. Jeśli po

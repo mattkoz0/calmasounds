@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "seo:audit": "node tools/audit-seo.mjs",
-    "seo:audit:ai": "node tools/audit-seo.mjs --ai"
+    "seo:audit:ai": "node tools/audit-seo.mjs --ai",
+    "seo:triage": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/triage-index-urls.ps1"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
