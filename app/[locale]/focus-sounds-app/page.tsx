@@ -28,9 +28,7 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
   const {locale} = await params;
   
   const schema = (
-    <SoftwareApplicationSchema 
-      name="Calma - Focus Sounds"
-      description="Improve concentration and study better with a dedicated focus sounds app featuring binaural beats and tailored noise colors."
+    <SoftwareApplicationSchema
       applicationCategory="ProductivityApplication"
     />
   );

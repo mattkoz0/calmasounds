@@ -38,17 +38,6 @@ const combinedJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
-      "name": "Calma - Sleep Sounds & Relax",
-      "applicationCategory": "HealthAndFitnessApplication",
-      "operatingSystem": "ANDROID, IOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    },
-    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -61,7 +50,7 @@ const combinedJsonLd = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "App de Alívio do Zumbido",
+      "name": metadata.title,
       "item": "https://www.calmasounds.com/pt-BR/tinnitus-sounds-app"
     }
   ]

@@ -28,9 +28,7 @@ export default async function Page({params}: {params: Promise<{locale: string}>}
   const {locale} = await params;
   
   const schema = (
-    <SoftwareApplicationSchema 
-      name="Calma - Sleep Sounds"
-      description="A calming sleep sounds app with white noise and gentle nature soundscapes to help you fall asleep faster."
+    <SoftwareApplicationSchema
       applicationCategory="HealthApplication"
     />
   );

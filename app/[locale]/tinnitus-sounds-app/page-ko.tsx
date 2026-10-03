@@ -35,17 +35,6 @@ const combinedJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "SoftwareApplication",
-      "name": "Calma - Sleep Sounds & Relax",
-      "applicationCategory": "HealthAndFitnessApplication",
-      "operatingSystem": "ANDROID, IOS",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    },
-    {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
@@ -58,7 +47,7 @@ const combinedJsonLd = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "백색소음 앱",
+      "name": metadata.title,
       "item": "https://www.calmasounds.com/ko/tinnitus-sounds-app"
     }
   ]

@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import Script from "next/script";
 import { getLocale } from "next-intl/server";
+import { PRODUCT } from "@/app/utils/product";
 import { pathnamesMapping } from "@/app/utils/seo";
 import DesktopDownloadQr from "../../_components/desktop-download-qr";
 import MoreApps from "../../_components/more-apps";
@@ -243,12 +243,17 @@ export async function ArticlePage({
     articleTypes.has(String(entity["@type"]))
   );
   const articleIdentity = {
+    "@id": `${articleUrl}#article`,
+    inLanguage: locale,
+    mentions: { "@id": PRODUCT.appId },
     author: {
+      "@id": PRODUCT.organizationId,
       "@type": "Organization",
       name: "Calma",
       url: "https://www.calmasounds.com",
     },
     publisher: {
+      "@id": PRODUCT.organizationId,
       "@type": "Organization",
       name: "Calma",
       logo: {
@@ -311,16 +316,16 @@ export async function ArticlePage({
 
   return (
     <main className="min-h-screen bg-slate-950 text-white">
-      <Script
+      <script
         id="article-jsonld"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(enrichedJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(enrichedJsonLd).replace(/</g, "\\u003c") }}
       />
       {breadcrumbJsonLd && (
-        <Script
+        <script
           id="breadcrumb-jsonld"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c") }}
         />
       )}
 

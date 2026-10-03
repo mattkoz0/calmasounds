@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "seo:audit": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit-seo.ps1"
+    "seo:audit": "node tools/audit-seo.mjs",
+    "seo:audit:ai": "node tools/audit-seo.mjs --ai"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

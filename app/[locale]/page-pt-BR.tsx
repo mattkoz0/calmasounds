@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { productCopy } from "@/app/utils/product-copy";
+import { PRODUCT, getSoftwareApplicationSchema } from "@/app/utils/product";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 import MoreApps from "./_components/more-apps";
@@ -32,47 +34,24 @@ export const metadata: Metadata = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": PRODUCT.websiteId,
+  publisher: { "@id": PRODUCT.organizationId },
+  about: { "@id": PRODUCT.appId },
+  inLanguage: "pt-BR",
   name: "Calma",
   url: "https://www.calmasounds.com/pt-BR",
   description:
     "O Calma é um app de sons para dormir para relaxamento, ruído branco e foco. Crie paisagens sonoras personalizadas para um sono melhor, noites mais calmas e concentração mais profunda.",
 };
 
-const softwareAppJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Calma App",
-  sameAs: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
-    "https://www.youtube.com/@CalmaApp",
-    "https://www.tiktok.com/@.calma.app",
-    "https://www.instagram.com/calma.app.official",
-    "https://www.facebook.com/profile.php?id=61580760185966"
-  ],
-  applicationCategory: "HealthApplication",
-  applicationSubCategory: "Sleep and Relaxation",
-  operatingSystem: "Android 8.0 and up",
-  url: "https://www.calmasounds.com/pt-BR",
-  downloadUrl: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-  ],
-  description:
-    "App de sons para dormir, ruído branco, relaxamento e foco com paisagens sonoras personalizadas.",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-  },
-  softwareVersion: "1.0.0",
-};
+const softwareAppJsonLd = getSoftwareApplicationSchema("pt-BR");
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": PRODUCT.organizationId,
   name: "Calma",
-  url: "https://www.calmasounds.com/pt-BR",
+  url: PRODUCT.url,
   logo: "https://www.calmasounds.com/logo.png",
   contactPoint: {
     "@type": "ContactPoint",
@@ -139,7 +118,7 @@ const faqJsonLd = {
       name: "O Calma funciona offline?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Sim, o Calma funciona completamente offline. Você pode misturar e ouvir seus sons sem estar conectado à internet.",
+        text: productCopy["pt-BR"].offlineText,
       },
     },
     {
@@ -151,18 +130,6 @@ const faqJsonLd = {
       },
     },
   ],
-};
-
-const videoJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  name: "Demonstração do App Calma",
-  description: "Assista ao Calma em movimento, desde a mixagem de som imersiva até os recursos premium de bem-estar projetados para sono, relaxamento e foco.",
-  thumbnailUrl: "https://www.calmasounds.com/screenshots/3_en.png",
-  uploadDate: "2026-03-30T09:00:00Z",
-  duration: "PT34S",
-  contentUrl: "https://www.calmasounds.com/demo.mp4",
-  embedUrl: "https://www.calmasounds.com/demo.mp4"
 };
 
 const breadcrumbJsonLd = {
@@ -180,7 +147,7 @@ const breadcrumbJsonLd = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="home-page min-h-screen bg-slate-950 text-white">
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
@@ -208,22 +175,11 @@ export default function Home() {
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
-                __html: JSON.stringify(videoJsonLd),
-              }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
                 __html: JSON.stringify(breadcrumbJsonLd),
               }}
             />
 
-      <AiDefinition 
-        title="O que é o Calma?" 
-        description="O Calma é um aplicativo de sons para dormir e relaxar que permite aos usuários criar paisagens sonoras personalizadas misturando chuva, oceano, ruído branco, ruído marrom, sons da natureza e ambiente. Perfeito para dormir, relaxar, focar e para rotinas noturnas. O Calma oferece acesso vitalício com um único pagamento sem necessidade de assinatura." 
-      />
-
-      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
+      <section className="mx-auto flex home-hero min-h-[64vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
         <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
           <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
             Calma • Sons para Dormir & Relaxar
@@ -305,6 +261,8 @@ export default function Home() {
         </div>
       </section>
 
+      <AiDefinition showFacts />
+
       <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-16 text-center">
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
@@ -356,13 +314,15 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl shadow-black/20">
+        <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-[2rem] border border-emerald-300/15 bg-slate-900/70 p-2 shadow-2xl shadow-black/20 sm:p-3">
           <video
-            className="h-auto w-full rounded-[1.5rem]"
+            className="aspect-video h-auto w-full rounded-[1.5rem] bg-slate-950 object-contain"
+            width={1920}
+            height={1080}
             controls
             preload="metadata"
             playsInline
-            poster="/screenshots/3_en.png"
+            poster="/demo-poster.jpg"
             title="Vídeo de demonstração do aplicativo Calma"
             aria-label="Vídeo de demonstração do aplicativo Calma"
           >
@@ -653,7 +613,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      
+
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
@@ -785,7 +745,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">O Calma funciona offline?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Sim, o Calma funciona completamente offline. Você pode misturar e ouvir seus sons sem estar conectado à internet.
+              {productCopy["pt-BR"].offlineText}
             </p>
           </div>
 

@@ -118,7 +118,7 @@ export function getLocalizedMetadata(
   path: string,
   baseMetadata: Metadata
 ): Metadata {
-  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  const cleanPath = path === "" || path === "/" ? "" : (path.startsWith("/") ? path : `/${path}`).replace(/\/$/, "");
   const url = (p: string) => `https://www.calmasounds.com${p}`;
 
   const getPathForLocale = (loc: string) => {
@@ -149,6 +149,7 @@ export function getLocalizedMetadata(
     alternates,
     openGraph: {
       ...baseMetadata.openGraph,
+      url: alternates.canonical,
       images: baseMetadata.openGraph?.images ?? [
         {
           url: "/og-image.png",
