@@ -52,8 +52,8 @@ export default function RainSoundsBlogPage() {
       jsonLd={articleJsonLd}
       title="Rain Sounds for Sleep and Focus: What Can They Actually Do?"
       intro="Steady rain can make traffic, voices and household sounds less noticeable. It may also feel easier to ignore than static. Those are practical reasons to try it—but rain is not a proven insomnia or ADHD treatment, and dramatic recordings can be more distracting than helpful."
-      topLinkHref="/nature-sounds-app"
-      topLinkLabel="Explore nature sounds app"
+      topLinkHref="/rain-sounds-app"
+      topLinkLabel="Explore the rain sounds app"
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Try rain sounds in Calma"
       secondaryCtaHref="/sound-mixer-app"

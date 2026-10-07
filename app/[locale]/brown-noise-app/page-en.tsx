@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { AudioPlayer } from "../blog/_components/audio-player";
 
 export const metadata: Metadata = {
-  title: "Brown Noise App: Mix 190+ Sleep & Focus Sounds | Calma",
+  title: "Brown Noise App — Free Offline Mixer | Calma",
   description:
     "Mix brown noise with rain, pink noise and nature sounds. Explore 190+ sounds, offline playback and a free 3-layer mixer in Calma.",
   keywords: [
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "https://www.calmasounds.com/brown-noise-app",
   },
   openGraph: {
-    title: "Brown Noise App: Mix 190+ Sleep & Focus Sounds | Calma",
+    title: "Brown Noise App — Free Offline Mixer | Calma",
     description:
     "Mix brown noise with rain, pink noise and nature sounds. Explore 190+ sounds, offline playback and a free 3-layer mixer.",
     url: "https://www.calmasounds.com/brown-noise-app",
@@ -36,6 +37,11 @@ export const metadata: Metadata = {
     "Build a personal brown-noise soundscape with a free mixer, offline playback and 190+ sounds.",
   },
 };
+
+const playbackFaqs = [
+  { question: "Does Calma play brown noise offline?", answer: "Yes. Calma supports offline playback. Check that your chosen sounds are available in the app before disconnecting." },
+  { question: "What is included in the free brown noise app?", answer: "The free version supports mixing up to three sound layers with individual volume controls. PRO is an optional one-time unlock for premium features and up to six layers; no recurring subscription is required." },
+];
 
 const combinedJsonLd = {
   "@context": "https://schema.org",
@@ -73,6 +79,7 @@ const combinedJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+        ...playbackFaqs.map(item => ({ "@type": "Question", name: item.question, acceptedAnswer: { "@type": "Answer", text: item.answer } })),
         {
             "@type": "Question",
             "name": "What is a brown noise app?",
@@ -132,17 +139,18 @@ export default function WhiteNoiseAppPage() {
           Brown noise app
         </p>
         <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          A brown noise app for better sleep and a calmer audio environment
+          A brown noise app with offline playback and custom mixes
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a beautifully simple brown noise app that helps you create a
-          softer, more controlled sound environment for sleep, relaxation and
-          everyday calm. Whether you are searching for the <strong>best sound to go to sleep to</strong> or the <strong>best noise for studying</strong>, use Calma to support bedtime routines, reduce distracting
-          noise and build a more peaceful atmosphere around you.
+          Mix deep brown noise with rain or nature sounds for a background you
+          control. Start with Calma’s free three-layer mixer on iPhone or Android,
+          set each volume separately and use a fade-out sleep timer. Offline
+          playback and an optional one-time PRO unlock mean no required recurring subscription.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
           <a
+            data-cta-location="hero"
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
@@ -153,6 +161,7 @@ export default function WhiteNoiseAppPage() {
           </a>
 
           <a
+            data-cta-location="hero"
             href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
             target="_blank"
             rel="noopener noreferrer"
@@ -190,11 +199,11 @@ export default function WhiteNoiseAppPage() {
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Keep it simple and calm</h2>
+            <h2 className="text-2xl font-semibold">Play brown noise offline</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Calma is designed to feel elegant, clear and emotionally light,
-              helping brown noise feel like part of a daily routine instead of a
-              technical tool.
+              Keep your chosen sounds available in the app and listen without
+              continuous streaming. Check your mix before travelling, then use
+              it without Wi-Fi or mobile data.
             </p>
           </div>
         </div>
@@ -206,13 +215,14 @@ export default function WhiteNoiseAppPage() {
             App preview
           </p>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            See the calming experience inside Calma
+            See the brown noise mixer inside Calma
           </h2>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/1_en.png"
 
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
@@ -224,6 +234,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/2_en.png"
 
               alt="Calma brown noise app interface for customizing brown noise for sleep and focus"
@@ -235,6 +246,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma sleep sounds mixer interface"
               width={720}
@@ -245,6 +257,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma sound mixer interface for creating custom brown noise mixes"
               width={720}
@@ -314,6 +327,10 @@ export default function WhiteNoiseAppPage() {
         </div>
 
         <div className="space-y-6">
+          {playbackFaqs.map(item => <div key={item.question} className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">{item.question}</h3>
+            <p className="mt-3 leading-7 text-white/70">{item.answer}</p>
+          </div>)}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
               What is a brown noise app?
@@ -349,7 +366,7 @@ export default function WhiteNoiseAppPage() {
               Does brown noise help with ADHD?
             </h3>
             <p className="mt-3 leading-7 text-white/70">
-              Yes — brown noise has become one of the most popular tools in the ADHD community. Its deep, consistent frequency provides enough background stimulation to satisfy the brain's need for input, without being distracting. This helps reduce the urge to seek out other stimuli (like checking your phone or switching tasks).
+              Responses vary. Research has found a small task-performance benefit from white and pink noise in some young people with ADHD, but the review found no eligible brown-noise studies. Brown noise is not an ADHD treatment.
             </p>
           </div>
 
@@ -365,6 +382,12 @@ export default function WhiteNoiseAppPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-3xl px-6 py-8">
+        <h2 className="text-2xl font-semibold">Hear brown noise before you download</h2>
+        <AudioPlayer src="/brown_noise.m4a" title="Brown noise sample" description="Play at a comfortable volume and compare the sound with your own preferences." />
+        <p className="mt-4 leading-7 text-white/70">Try layering it with <a href="/rain-sounds-app" className="underline underline-offset-4">rain sounds</a>, or compare <a href="/pink-noise-app" className="underline underline-offset-4">pink noise</a> for a different texture.</p>
+      </section>
+
       <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12">
           <h2 className="text-3xl font-semibold sm:text-4xl">
@@ -377,6 +400,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
+            data-cta-location="end"
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
@@ -386,6 +410,7 @@ export default function WhiteNoiseAppPage() {
               Google Play
             </a>
             <a
+            data-cta-location="end"
               href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
               target="_blank"
               rel="noopener noreferrer"

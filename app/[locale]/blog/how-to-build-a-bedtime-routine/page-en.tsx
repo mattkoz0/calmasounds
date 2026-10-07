@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ArticlePage } from "../_components/article-page";
+import { ArticleSection } from "../_components/article-section";
 
 export const metadata: Metadata = {
   title: "How to Build a Bedtime Routine | Calma Blog",
@@ -156,6 +157,9 @@ export default function BedtimeRoutineArticlePage() {
           return to it consistently.
         </p>
       </section>
+      <ArticleSection id="try-sleep-app" title="Build your own bedtime mix">
+        <p className="mt-4 leading-8 text-white/70">Use Calma’s <a href="/sleep-sounds-app" className="underline underline-offset-4">free sleep sounds app</a> to choose up to three layers, adjust their volumes and set a fade-out timer. Try <a href="/rain-sounds-app" className="underline underline-offset-4">rain sounds</a> for a steady background.</p>
+      </ArticleSection>
     </ArticlePage>
   );
 }

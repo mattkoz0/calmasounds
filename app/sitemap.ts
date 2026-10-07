@@ -77,7 +77,7 @@ function languageAlternates(route: string) {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return routes.flatMap((route) =>
+  const localizedEntries = routes.flatMap((route) =>
     locales.map((locale) => ({
       url: `${BASE_URL}${localizedPath(route, locale)}`,
       ...(routeModifiedDates[route] ? { lastModified: routeModifiedDates[route] } : {}),
@@ -86,4 +86,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     }))
   );
+  const englishSoundPages = ["/rain-sounds-app", "/pink-noise-app"].map((path) => ({
+    url: `${BASE_URL}${path}`,
+    lastModified: "2026-10-07",
+    alternates: { languages: { en: `${BASE_URL}${path}`, "x-default": `${BASE_URL}${path}` } },
+  }));
+  return [...localizedEntries, ...englishSoundPages];
 }

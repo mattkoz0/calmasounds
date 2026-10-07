@@ -94,8 +94,8 @@ export default function RainSoundsVsWhiteNoisePage() {
       jsonLd={articleJsonLd}
       title="Is Rain White Noise? Hear the Difference"
       intro="Usually, no. White noise has a flat power spectrum, while many steady rain recordings sound closer to pink noise. Because every rainfall and recording is different, the fastest way to understand the distinction is to hear the two samples below."
-      topLinkHref="/nature-sounds-app"
-      topLinkLabel="Explore nature sounds app"
+      topLinkHref="/rain-sounds-app"
+      topLinkLabel="Explore the rain sounds app"
       ctaHref="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
       ctaLabel="Download Calma App Free"
       secondaryCtaHref="/white-noise-app"

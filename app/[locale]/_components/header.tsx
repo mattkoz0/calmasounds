@@ -16,7 +16,8 @@ export default function Header() {
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const nextLocale = e.target.value;
-    router.replace(pathname, { locale: nextLocale });
+    const englishOnlyPage = pathname === "/rain-sounds-app" || pathname === "/pink-noise-app";
+    router.replace(englishOnlyPage && nextLocale !== "en" ? "/" : pathname, { locale: nextLocale });
   };
 
   useEffect(() => {

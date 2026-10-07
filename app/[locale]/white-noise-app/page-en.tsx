@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { AudioPlayer } from "../blog/_components/audio-player";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -39,6 +40,11 @@ export const metadata: Metadata = {
   },
 };
 
+const playbackFaqs = [
+  { question: "Does the white noise app work offline?", answer: "Yes. Calma supports offline playback on iPhone and Android. Check that the sounds you want are available in the app before going offline." },
+  { question: "What is included in the free white noise app?", answer: "The free version supports mixing up to three sound layers with individual volume controls. PRO is an optional one-time unlock for premium features and up to six layers; no recurring subscription is required." },
+];
+
 const combinedJsonLd = {
   "@context": "https://schema.org",
   "@graph": [
@@ -75,6 +81,7 @@ const combinedJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
+        ...playbackFaqs.map(item => ({ "@type": "Question", name: item.question, acceptedAnswer: { "@type": "Answer", text: item.answer } })),
         {
             "@type": "Question",
             "name": "What is the best free white noise app?",
@@ -142,17 +149,18 @@ export default function WhiteNoiseAppPage() {
           White noise app
         </p>
         <h1 className="mt-4 text-4xl font-bold leading-tight sm:text-5xl">
-          A white noise app for better sleep and a calmer audio environment
+          A free white noise app with offline playback and custom mixing
         </h1>
         <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-white/70 sm:text-lg">
-          Calma is a beautifully simple white noise app that helps you create a
-          softer, more controlled sound environment for sleep, relaxation and
-          everyday calm. Whether you are searching for the <strong>best sound to go to sleep to</strong> or the <strong>best noise for studying</strong>, use Calma to support bedtime routines, reduce distracting
-          noise and build a more peaceful atmosphere around you.
+          Play a steady layer of white noise, then blend it with rain, pink noise
+          or nature sounds. Calma lets you adjust each layer separately instead
+          of relying on one fixed recording. Try the free three-layer mixer on
+          iPhone or Android, listen offline and use a fade-out timer without a required subscription.
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
           <a
+            data-cta-location="hero"
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
@@ -163,6 +171,7 @@ export default function WhiteNoiseAppPage() {
           </a>
 
           <a
+            data-cta-location="hero"
             href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
             target="_blank"
             rel="noopener noreferrer"
@@ -222,6 +231,7 @@ export default function WhiteNoiseAppPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/1_en.png"
 
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
@@ -233,6 +243,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/2_en.png"
 
               alt="Calma white noise app interface for customizing white noise for sleep and focus"
@@ -244,6 +255,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma sleep sounds mixer interface"
               width={720}
@@ -254,6 +266,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma sound mixer interface for creating custom white noise mixes"
               width={720}
@@ -323,6 +336,10 @@ export default function WhiteNoiseAppPage() {
         </div>
 
         <div className="space-y-6">
+          {playbackFaqs.map(item => <div key={item.question} className="rounded-3xl border border-white/10 bg-white/5 p-8">
+            <h3 className="text-xl font-semibold">{item.question}</h3>
+            <p className="mt-3 leading-7 text-white/70">{item.answer}</p>
+          </div>)}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">
               What is the best free white noise app?
@@ -375,6 +392,12 @@ export default function WhiteNoiseAppPage() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-3xl px-6 py-8">
+        <h2 className="text-2xl font-semibold">Hear white noise before you download</h2>
+        <AudioPlayer src="/white_noise.m4a" title="White noise sample" description="Play at a comfortable volume and choose the texture that suits you." />
+        <p className="mt-4 leading-7 text-white/70">Compare <a href="/pink-noise-app" className="underline underline-offset-4">pink noise</a> or try <a href="/rain-sounds-app" className="underline underline-offset-4">rain sounds</a> as another layer.</p>
+      </section>
+
       <section className="mx-auto max-w-4xl px-6 py-16 text-center">
         <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/10 to-white/5 p-10 shadow-2xl shadow-black/20 sm:p-12">
           <h2 className="text-3xl font-semibold sm:text-4xl">
@@ -387,6 +410,7 @@ export default function WhiteNoiseAppPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
+            data-cta-location="end"
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
@@ -396,6 +420,7 @@ export default function WhiteNoiseAppPage() {
               Google Play
             </a>
             <a
+            data-cta-location="end"
               href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
               target="_blank"
               rel="noopener noreferrer"

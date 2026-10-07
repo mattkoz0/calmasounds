@@ -268,6 +268,9 @@ export default function BestSoundsForSleepPage() {
           </li>
         </ul>
       </ArticleSection>
+      <ArticleSection id="try-sleep-app" title="Build your own bedtime mix">
+        <p className="mt-4 leading-8 text-white/70">Try Calma’s <a href="/sleep-sounds-app" className="underline underline-offset-4">free sleep sounds app</a> to combine up to three layers, adjust their volumes and set a fade-out timer. Explore <a href="/rain-sounds-app" className="underline underline-offset-4">rain sounds</a> as a starting point.</p>
+      </ArticleSection>
     </ArticlePage>
   );
 }

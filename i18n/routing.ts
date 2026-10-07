@@ -73,6 +73,8 @@ export const routing = defineRouting({
     '/focus-sounds-app': '/focus-sounds-app',
     '/white-noise-app': '/white-noise-app',
     '/brown-noise-app': '/brown-noise-app',
+    '/rain-sounds-app': '/rain-sounds-app',
+    '/pink-noise-app': '/pink-noise-app',
     '/nature-sounds-app': '/nature-sounds-app',
     '/tinnitus-sounds-app': '/tinnitus-sounds-app',
     '/sound-mixer-app': '/sound-mixer-app',

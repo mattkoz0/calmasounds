@@ -84,6 +84,7 @@ export default function SleepSoundsAppPage() {
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
           <a
+            data-cta-location="hero"
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
@@ -94,6 +95,7 @@ export default function SleepSoundsAppPage() {
           </a>
 
           <a
+            data-cta-location="hero"
             href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
             target="_blank"
             rel="noopener noreferrer"
@@ -133,8 +135,9 @@ export default function SleepSoundsAppPage() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h2 className="text-2xl font-semibold">Skip the monthly subscription</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Start with the free version and choose a one-time lifetime unlock
-              if you want premium features—without monthly or annual billing.
+              Start with up to three sound layers and individual volume controls
+              in the free version. Choose an optional one-time PRO unlock for
+              premium features and up to six layers—without monthly or annual billing.
             </p>
           </div>
         </div>
@@ -182,6 +185,7 @@ export default function SleepSoundsAppPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/1_en.png"
 
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
@@ -193,6 +197,7 @@ export default function SleepSoundsAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/2_en.png"
 
               alt="Calma sleep sounds app interface for customizing audio for bedtime"
@@ -204,6 +209,7 @@ export default function SleepSoundsAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma sleep sounds mixer showing various ambient sound layers"
               width={720}
@@ -214,6 +220,7 @@ export default function SleepSoundsAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma sound mixer interface for creating custom sleep mixes"
               width={720}
@@ -376,6 +383,7 @@ export default function SleepSoundsAppPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
+            data-cta-location="end"
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
@@ -385,6 +393,7 @@ export default function SleepSoundsAppPage() {
               Google Play
             </a>
             <a
+            data-cta-location="end"
               href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
               target="_blank"
               rel="noopener noreferrer"

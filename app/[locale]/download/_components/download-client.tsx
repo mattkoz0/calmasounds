@@ -18,8 +18,8 @@ export default function DownloadClient() {
     const searchParams = new URLSearchParams(window.location.search);
     
     const utmSource = searchParams.get("utm_source") || "website";
-    const utmMedium = searchParams.get("utm_medium") || "qr";
-    const utmCampaign = searchParams.get("utm_campaign") || "desktop_download";
+    const utmMedium = searchParams.get("utm_medium") || "referral";
+    const utmCampaign = searchParams.get("utm_campaign") || "website_download";
     const utmContent = searchParams.get("utm_content") || "";
 
     const isIos = /iPad|iPhone|iPod/.test(userAgent) && !legacyWindow.MSStream;

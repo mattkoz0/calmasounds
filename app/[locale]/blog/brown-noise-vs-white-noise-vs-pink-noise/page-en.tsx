@@ -289,6 +289,9 @@ export default function NoiseColorsPage() {
           </li>
         </ul>
       </ArticleSection>
+      <ArticleSection id="try-noise-apps" title="Try each noise color in Calma">
+        <p className="mt-4 leading-8 text-white/70">Compare the <a href="/white-noise-app" className="underline underline-offset-4">white noise app</a>, <a href="/brown-noise-app" className="underline underline-offset-4">brown noise app</a> and <a href="/pink-noise-app" className="underline underline-offset-4">pink noise app</a>. Each sound can become one layer of a custom mix, with its own volume control.</p>
+      </ArticleSection>
     </ArticlePage>
   );
 }

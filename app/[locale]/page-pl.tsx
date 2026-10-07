@@ -389,6 +389,7 @@ export default function Home() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Interfejs aplikacji mobilnej Calma pokazujący listę dźwięków do snu i kategorii relaksacyjnych"
               width={720}
@@ -399,6 +400,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Interfejs miksera dźwięków Calma do personalizacji białego szumu do snu i koncentracji"
               width={720}
@@ -409,6 +411,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/5_en.png"
               alt="Zrzut ekranu aplikacji Calma 3"
               width={720}
@@ -419,6 +422,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/7_en.png"
               alt="Interfejs miksera dźwięków Calma do tworzenia niestandardowych miksów białego szumu"
               width={720}

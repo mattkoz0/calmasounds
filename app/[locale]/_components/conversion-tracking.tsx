@@ -57,16 +57,16 @@ export default function ConversionTracking() {
       if (isGooglePlay && !destination.searchParams.has("referrer")) {
         const referrer = new URLSearchParams({
           utm_source: "website",
-          utm_medium: "organic_landing",
-          utm_campaign: "seo",
+          utm_medium: "referral",
+          utm_campaign: "website_download",
           utm_content: content,
         });
         destination.searchParams.set("referrer", referrer.toString());
       }
 
       if (isAppStore) {
-        destination.searchParams.set("pt", "127453443");
-        destination.searchParams.set("ct", content || "seo");
+        if (!destination.searchParams.has("pt")) destination.searchParams.set("pt", "127453443");
+        if (!destination.searchParams.has("ct")) destination.searchParams.set("ct", content || "website_download");
       }
 
       anchor.href = destination.toString();

@@ -327,6 +327,7 @@ export default function Home() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/1_en.png"
               alt="Calma 앱 인터페이스 - 다양한 사운드 카테고리"
               width={720}
@@ -337,6 +338,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/2_en.png"
               priority
               alt="Calma 앱 인터페이스 - 사운드 믹서 커스터마이징"
@@ -348,6 +350,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma 앱 인터페이스 - 몰입형 오디오 레이어"
               width={720}
@@ -358,6 +361,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma 앱 인터페이스 - 저장된 믹스 관리"
               width={720}

@@ -339,6 +339,16 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 py-10" aria-label="Explore sound apps">
+        <h2 className="text-2xl font-semibold">Choose a sound for your mix</h2>
+        <div className="mt-6 flex flex-wrap gap-4">
+          <Link href="/rain-sounds-app" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-4 hover:bg-white/10">Rain sounds app</Link>
+          <Link href="/pink-noise-app" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-4 hover:bg-white/10">Pink noise app</Link>
+          <Link href="/brown-noise-app" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-4 hover:bg-white/10">Brown noise app</Link>
+          <Link href="/white-noise-app" className="rounded-2xl border border-white/15 bg-white/5 px-6 py-4 hover:bg-white/10">White noise app</Link>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
@@ -386,6 +396,7 @@ export default function Home() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
               width={720}
@@ -396,6 +407,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma sound mixer interface for customizing white noise for sleep and focus"
               width={720}
@@ -406,6 +418,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/5_en.png"
               alt="Calma app screenshot 3"
               width={720}
@@ -416,6 +429,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/7_en.png"
               alt="Calma sound mixer interface for creating custom white noise mixes"
               width={720}

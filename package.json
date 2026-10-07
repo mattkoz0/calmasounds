@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "seo:audit": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/audit-seo.ps1",
+    "seo:verify": "node tools/verify-seo.mjs",
     "seo:triage": "powershell -NoProfile -ExecutionPolicy Bypass -File tools/triage-index-urls.ps1"
   },
   "dependencies": {

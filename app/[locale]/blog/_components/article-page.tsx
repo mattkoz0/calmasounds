@@ -1,7 +1,7 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import Script from "next/script";
-import { getLocale } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { pathnamesMapping } from "@/app/utils/seo";
 import DesktopDownloadQr from "../../_components/desktop-download-qr";
 import MoreApps from "../../_components/more-apps";
@@ -186,6 +186,8 @@ export async function ArticlePage({
   tableOfContents = [],
 }: ArticlePageProps & { tableOfContents?: { id: string; title: string }[] }) {
   const locale = await getLocale();
+  const downloadT = await getTranslations("Download");
+  const isStoreCta = /^https:\/\/(?:play\.google\.com|apps\.apple\.com)\//.test(ctaHref);
   const ui = articleUiTranslations[locale] ?? articleUiTranslations.en;
   const dates = slug ? editorialDates[slug] : undefined;
   const topicCluster = slug
@@ -216,7 +218,7 @@ export async function ArticlePage({
       if (!isStore) return href;
       const prefix = locale === "en" ? "" : `/${locale}`;
       const content = slug ?? "article";
-      return `${prefix}/download?utm_source=website&utm_medium=article&utm_campaign=organic_conversion&utm_content=${encodeURIComponent(content)}`;
+      return `${prefix}/download?utm_source=website&utm_medium=article&utm_campaign=website_download&utm_content=${encodeURIComponent(content)}`;
     }
 
     const cleanPath = href.replace(
@@ -401,14 +403,21 @@ export async function ArticlePage({
             <h2 className="text-2xl font-semibold">{ctaTitle}</h2>
             <p className="mt-4 leading-8 text-white/70">{ctaText}</p>
 
-            <div className="mt-6 flex flex-col gap-4 sm:flex-row w-full lg:justify-start">
-              <Link
+            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap w-full lg:justify-start">
+              {isStoreCta ? <>
+                <a href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923" data-cta-location="article_end" target="_blank" rel="noopener noreferrer" className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:bg-emerald-100">
+                  {downloadT("appStore")}
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma" data-cta-location="article_end" target="_blank" rel="noopener noreferrer" className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:bg-emerald-100">
+                  {downloadT("googlePlay")}
+                </a>
+              </> : <Link
                 href={getLocalizedHref(ctaHref)}
                 data-cta-location="article_end"
                 className="rounded-2xl bg-white px-6 py-3 text-center font-medium text-slate-950 transition hover:scale-[1.02]"
               >
                 {ctaLabel}
-              </Link>
+              </Link>}
               <Link
                 href={getLocalizedHref(secondaryCtaHref)}
                 data-cta-location="article_end_secondary"

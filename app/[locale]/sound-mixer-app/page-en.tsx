@@ -81,6 +81,7 @@ export default function SoundMixerAppPage() {
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
           <a
+            data-cta-location="hero"
             href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
             target="_blank"
             rel="noopener noreferrer"
@@ -91,6 +92,7 @@ export default function SoundMixerAppPage() {
           </a>
 
           <a
+            data-cta-location="hero"
             href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
             target="_blank"
             rel="noopener noreferrer"
@@ -107,6 +109,15 @@ export default function SoundMixerAppPage() {
             Back to homepage
           </a>
         </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-12">
+        <h2 className="text-3xl font-semibold">Build your mix in three steps</h2>
+        <ol className="mt-6 list-decimal space-y-4 pl-6 leading-8 text-white/70">
+          <li>Choose a starting sound, such as <a href="/rain-sounds-app" className="underline">rain</a>, <a href="/brown-noise-app" className="underline">brown noise</a> or <a href="/pink-noise-app" className="underline">pink noise</a>.</li>
+          <li>Add another layer and adjust each volume until the balance feels comfortable.</li>
+          <li>Set the sleep timer for a gradual fade-out. Check that your chosen sounds are available before going offline.</li>
+        </ol>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
@@ -128,10 +139,11 @@ export default function SoundMixerAppPage() {
           </div>
 
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <h2 className="text-2xl font-semibold">Keep the experience elegant</h2>
+            <h2 className="text-2xl font-semibold">Use your phone as a sound machine</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Calma is designed to feel clear, warm and premium, so building a
-              sound mix feels intuitive instead of technical.
+              Start with up to three layers in the free version, control each
+              volume and set a fade-out timer. An optional one-time PRO unlock
+              supports up to six layers without recurring billing.
             </p>
           </div>
         </div>
@@ -143,13 +155,14 @@ export default function SoundMixerAppPage() {
             App preview
           </p>
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-            See the mixer experience inside Calma
+            Build a mix with individual volume controls
           </h2>
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/1_en.png"
 
               alt="Calma mobile app interface for creating custom sound mixes"
@@ -161,6 +174,7 @@ export default function SoundMixerAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/2_en.png"
 
               alt="Calma sound mixer interface for customizing ambient soundscapes"
@@ -172,6 +186,7 @@ export default function SoundMixerAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma interface showing multiple audio layers for personalized relaxation"
               width={720}
@@ -182,6 +197,7 @@ export default function SoundMixerAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma sound mixer controls for sleep and focus audio"
               width={720}
@@ -318,6 +334,7 @@ export default function SoundMixerAppPage() {
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <a
+            data-cta-location="end"
               href="https://play.google.com/store/apps/details?id=pl.mitysoft.calma"
               target="_blank"
               rel="noopener noreferrer"
@@ -327,6 +344,7 @@ export default function SoundMixerAppPage() {
               Google Play
             </a>
             <a
+            data-cta-location="end"
               href="https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
               target="_blank"
               rel="noopener noreferrer"

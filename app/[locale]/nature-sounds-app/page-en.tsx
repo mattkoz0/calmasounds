@@ -152,6 +152,7 @@ export default function NatureSoundsAppPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/1_en.png"
 
               alt="Calma mobile app interface showing a list of sleep sounds and relaxation categories"
@@ -163,6 +164,7 @@ export default function NatureSoundsAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/2_en.png"
 
               alt="Calma nature sounds app interface for customizing nature sounds for sleep and focus"
@@ -174,6 +176,7 @@ export default function NatureSoundsAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Calma sleep sounds mixer interface"
               width={720}
@@ -184,6 +187,7 @@ export default function NatureSoundsAppPage() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Calma sound mixer interface for creating custom nature sounds mixes"
               width={720}

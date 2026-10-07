@@ -389,6 +389,7 @@ export default function Home() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/3_en.png"
               alt="Interfaz de la aplicación móvil Calma mostrando una lista de sonidos para dormir y categorías de relajación"
               width={720}
@@ -399,6 +400,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/4_en.png"
               alt="Interfaz del mezclador de sonidos Calma para personalizar ruido blanco para dormir y concentrarse"
               width={720}
@@ -409,6 +411,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/5_en.png"
               alt="Captura de pantalla de la app Calma 3"
               width={720}
@@ -419,6 +422,7 @@ export default function Home() {
 
           <div className="overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-3">
             <Image
+              sizes="(max-width: 640px) calc(100vw - 74px), (max-width: 1024px) calc((100vw - 124px) / 2), 232px"
               src="/screenshots/7_en.png"
               alt="Interfaz del mezclador de sonidos Calma para crear mezclas de ruido blanco personalizadas"
               width={720}

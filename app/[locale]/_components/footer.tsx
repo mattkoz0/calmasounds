@@ -1,7 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import type { ComponentProps } from "react";
 import { makerApps } from "./more-apps";
@@ -11,6 +11,7 @@ type LocalizedHref = Extract<ComponentProps<typeof Link>["href"], string>;
 export default function Footer() {
   const t = useTranslations("Footer");
   const navT = useTranslations("Navigation");
+  const locale = useLocale();
   const currentYear = new Date().getFullYear();
 
   const footerLinks: { name: string; href: LocalizedHref }[] = [
@@ -19,6 +20,10 @@ export default function Footer() {
     { name: t("focusSoundsApp"), href: "/focus-sounds-app" },
     { name: t("whiteNoiseApp"), href: "/white-noise-app" },
     { name: t("brownNoiseApp"), href: "/brown-noise-app" },
+    ...(locale === "en" ? [
+      { name: "Rain sounds app", href: "/rain-sounds-app" as const },
+      { name: "Pink noise app", href: "/pink-noise-app" as const },
+    ] : []),
     { name: t("natureSoundsApp"), href: "/nature-sounds-app" },
     { name: t("tinnitusSoundsApp"), href: "/tinnitus-sounds-app" },
     { name: t("soundMixerApp"), href: "/sound-mixer-app" },
