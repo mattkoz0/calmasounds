@@ -1,34 +1,15 @@
-import React from "react";
-
-interface SoftwareApplicationSchemaProps {
-  name: string;
-  description: string;
-  applicationCategory?: string;
-}
+import { useLocale } from "next-intl";
+import { getSoftwareApplicationSchema } from "@/app/utils/product";
 
 export default function SoftwareApplicationSchema({
-  name,
-  description,
   applicationCategory = "HealthApplication",
-}: SoftwareApplicationSchemaProps) {
-  const schema = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": name,
-    "description": description,
-    "applicationCategory": applicationCategory,
-    "operatingSystem": "iOS, Android",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    }
-  };
-
+}: { applicationCategory?: string }) {
+  const locale = useLocale();
+  const schema = getSoftwareApplicationSchema(locale, applicationCategory);
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, "\\u003c") }}
     />
   );
 }

@@ -53,8 +53,6 @@ export default function DownloadPage() {
   return (
     <>
       <SoftwareApplicationSchema
-        name="Calma - Sleep Sounds & Relaxation"
-        description="Beautifully simple app for sleep, relaxation, focus and personalized soundscapes."
       />
       <DownloadClient />
     </>

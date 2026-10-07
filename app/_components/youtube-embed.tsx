@@ -16,7 +16,7 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
     return (
       <iframe
         className="h-full w-full"
-        src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+        src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1`}
         title={title}
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
@@ -25,9 +25,11 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
   }
 
   return (
-    <div
+    <button
+      type="button"
+      aria-label={title}
       onClick={() => setIsPlaying(true)}
-      className="group relative h-full w-full cursor-pointer bg-slate-900"
+      className="group relative h-full w-full cursor-pointer overflow-hidden border-0 bg-slate-900 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-emerald-400"
     >
       <Image
         src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
@@ -35,7 +37,7 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
         fill
         sizes="(max-width: 350px) 100vw, 350px"
         className="object-cover transition-transform duration-300 group-hover:scale-105"
-        priority
+        loading="lazy"
       />
       {/* Dark tint overlay */}
       <div className="absolute inset-0 bg-black/20 transition-colors duration-300 group-hover:bg-black/35" />
@@ -45,6 +47,6 @@ export function YouTubeEmbed({ videoId, title }: YouTubeEmbedProps) {
           <FaPlay size={20} className="ml-1" />
         </div>
       </div>
-    </div>
+    </button>
   );
 }

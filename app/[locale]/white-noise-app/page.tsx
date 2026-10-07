@@ -27,9 +27,7 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
 export default async function Page({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
   const schema = (
-    <SoftwareApplicationSchema 
-      name="Calma - White Noise"
-      description="A beautifully simple white noise app for sleep, relaxation and building a calmer audio environment."
+    <SoftwareApplicationSchema
       applicationCategory="HealthApplication"
     />
   );

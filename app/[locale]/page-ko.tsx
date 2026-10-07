@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { productCopy } from "@/app/utils/product-copy";
+import { PRODUCT, getSoftwareApplicationSchema } from "@/app/utils/product";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 import MoreApps from "./_components/more-apps";
@@ -32,47 +34,24 @@ export const metadata: Metadata = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": PRODUCT.websiteId,
+  publisher: { "@id": PRODUCT.organizationId },
+  about: { "@id": PRODUCT.appId },
+  inLanguage: "ko",
   name: "Calma",
   url: "https://www.calmasounds.com/ko",
   description:
     "Calma는 수면 유도 소리, 백색소음 및 휴식 앱입니다. 더 나은 숙면과 깊은 집중을 위해 나만의 사운드스케이프를 만드세요.",
 };
 
-const softwareAppJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Calma App",
-  sameAs: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
-    "https://www.youtube.com/@CalmaApp",
-    "https://www.tiktok.com/@.calma.app",
-    "https://www.instagram.com/calma.app.official",
-    "https://www.facebook.com/profile.php?id=61580760185966"
-  ],
-  applicationCategory: "HealthApplication",
-  applicationSubCategory: "Sleep and Relaxation",
-  operatingSystem: "Android 8.0 and up",
-  url: "https://www.calmasounds.com/ko",
-  downloadUrl: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-  ],
-  description:
-    "맞춤형 사운드스케이프를 통한 수면 유도 소리, 백색소음, 휴식 및 집중.",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "KRW",
-  },
-  softwareVersion: "1.0.0",
-};
+const softwareAppJsonLd = getSoftwareApplicationSchema("ko");
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": PRODUCT.organizationId,
   name: "Calma",
-  url: "https://www.calmasounds.com/ko",
+  url: PRODUCT.url,
   logo: "https://www.calmasounds.com/logo.png",
   contactPoint: {
     "@type": "ContactPoint",
@@ -139,7 +118,7 @@ const faqJsonLd = {
       name: "Calma는 오프라인에서 작동하나요?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "네, Calma는 완전히 오프라인에서 작동합니다. 인터넷 연결 없이도 소리를 믹스하고 들을 수 있습니다.",
+        text: productCopy["ko"].offlineText,
       },
     },
     {
@@ -168,7 +147,7 @@ const breadcrumbJsonLd = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="home-page min-h-screen bg-slate-950 text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
@@ -190,12 +169,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
 
-      <AiDefinition 
-        title="Calma란 무엇인가요?" 
-        description="Calma는 사용자가 비, 바다, 백색소음, 갈색소음, 자연의 소리 및 주변음을 혼합하여 맞춤형 사운드스케이프를 만들 수 있는 수면 및 휴식 소리 앱입니다. 수면, 휴식, 집중 및 저녁 루틴에 적합합니다. Calma는 구독할 필요 없이 단일 결제로 평생 액세스를 제공합니다." 
-      />
-
-      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
+      <section className="mx-auto flex home-hero min-h-[64vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
         <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
           <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
             Calma • 수면 유도 소리 & 휴식
@@ -206,7 +180,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-            Calma는 숙면과 집중력 향상을 위해 나만의 맞춤형 사운드스케이프를 만들 수 있는 
+            Calma는 숙면과 집중력 향상을 위해 나만의 맞춤형 사운드스케이프를 만들 수 있는
             심플하고 우아한 도구입니다. 당신의 일상에 평온함을 더해 보세요.
           </p>
 
@@ -277,6 +251,8 @@ export default function Home() {
         </div>
       </section>
 
+      <AiDefinition showFacts />
+
       <section id="features" className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
@@ -291,7 +267,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold text-white">맞춤형 사운드 믹서</h3>
             <p className="mt-4 leading-7 text-white/70">
-              빗소리, 바람소리, 백색소음 등을 자유롭게 조합하여 당신에게 
+              빗소리, 바람소리, 백색소음 등을 자유롭게 조합하여 당신에게
               가장 편안한 소리 환경을 디자인하세요.
             </p>
           </div>
@@ -299,7 +275,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold text-white">심플한 사용자 경험</h3>
             <p className="mt-4 leading-7 text-white/70">
-              복잡한 메뉴 대신 직관적인 인터페이스로 누구나 쉽게 
+              복잡한 메뉴 대신 직관적인 인터페이스로 누구나 쉽게
               나만의 휴식 시간을 가질 수 있습니다.
             </p>
           </div>
@@ -307,7 +283,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold text-white">모든 순간을 위한 동반자</h3>
             <p className="mt-4 leading-7 text-white/70">
-              숙면 유도는 물론, 명상, 독서, 요가, 공부 등 일상의 
+              숙면 유도는 물론, 명상, 독서, 요가, 공부 등 일상의
               모든 집중과 휴식의 순간에 함께합니다.
             </p>
           </div>
@@ -460,7 +436,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Calma는 오프라인에서 작동하나요?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              네, Calma는 완전히 오프라인에서 작동합니다. 인터넷 연결 없이도 소리를 믹스하고 들을 수 있습니다.
+              {productCopy["ko"].offlineText}
             </p>
           </div>
 

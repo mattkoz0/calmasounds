@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { productCopy } from "@/app/utils/product-copy";
+import { PRODUCT, getSoftwareApplicationSchema } from "@/app/utils/product";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 import MoreApps from "./_components/more-apps";
@@ -32,47 +34,24 @@ export const metadata: Metadata = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": PRODUCT.websiteId,
+  publisher: { "@id": PRODUCT.organizationId },
+  about: { "@id": PRODUCT.appId },
+  inLanguage: "fr",
   name: "Calma",
   url: "https://www.calmasounds.com/fr",
   description:
     "Calma est une application de sons pour dormir, de bruit blanc et de relaxation. Créez des paysages sonores personnalisés pour un meilleur sommeil et une concentration profonde.",
 };
 
-const softwareAppJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Calma App",
-  sameAs: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
-    "https://www.youtube.com/@CalmaApp",
-    "https://www.tiktok.com/@.calma.app",
-    "https://www.instagram.com/calma.app.official",
-    "https://www.facebook.com/profile.php?id=61580760185966"
-  ],
-  applicationCategory: "HealthApplication",
-  applicationSubCategory: "Sleep and Relaxation",
-  operatingSystem: "Android 8.0 and up",
-  url: "https://www.calmasounds.com/fr",
-  downloadUrl: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-  ],
-  description:
-    "Sons pour le sommeil, bruit blanc, relaxation et concentration avec des paysages sonores personnalisés.",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-  },
-  softwareVersion: "1.0.0",
-};
+const softwareAppJsonLd = getSoftwareApplicationSchema("fr");
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": PRODUCT.organizationId,
   name: "Calma",
-  url: "https://www.calmasounds.com/fr",
+  url: PRODUCT.url,
   logo: "https://www.calmasounds.com/logo.png",
   contactPoint: {
     "@type": "ContactPoint",
@@ -139,7 +118,7 @@ const faqJsonLd = {
       name: "Calma fonctionne-t-elle hors ligne ?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Oui, Calma fonctionne complètement hors ligne. Vous pouvez mélanger et écouter vos sons sans être connecté à Internet.",
+        text: productCopy["fr"].offlineText,
       },
     },
     {
@@ -151,18 +130,6 @@ const faqJsonLd = {
       },
     },
   ],
-};
-
-const videoJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  name: "Démo de l'application Calma",
-  description: "Découvrez Calma en action, du mixage sonore immersif aux fonctionnalités bien-être premium conçues pour le sommeil, la relaxation et la concentration.",
-  thumbnailUrl: "https://www.calmasounds.com/screenshots/3_en.png",
-  uploadDate: "2026-03-30T09:00:00Z",
-  duration: "PT34S",
-  contentUrl: "https://www.calmasounds.com/demo.mp4",
-  embedUrl: "https://www.calmasounds.com/demo.mp4"
 };
 
 const breadcrumbJsonLd = {
@@ -180,7 +147,7 @@ const breadcrumbJsonLd = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="home-page min-h-screen bg-slate-950 text-white">
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
@@ -208,22 +175,11 @@ export default function Home() {
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
-                __html: JSON.stringify(videoJsonLd),
-              }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
                 __html: JSON.stringify(breadcrumbJsonLd),
               }}
             />
 
-      <AiDefinition 
-        title="Qu'est-ce que Calma ?" 
-        description="Calma est une application de sons pour le sommeil et la relaxation qui permet aux utilisateurs de créer des paysages sonores personnalisés en mélangeant la pluie, l'océan, le bruit blanc, le bruit brun, les sons de la nature et l'ambiance. Parfaite pour dormir, se détendre, se concentrer et pour les routines nocturnes. Calma offre un accès à vie via un paiement unique sans avoir besoin d'abonnement." 
-      />
-
-      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
+      <section className="mx-auto flex home-hero min-h-[64vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
         <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
           <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
             Calma • Sons pour dormir & Relax
@@ -305,6 +261,8 @@ export default function Home() {
         </div>
       </section>
 
+      <AiDefinition showFacts />
+
       <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-16 text-center">
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
@@ -351,18 +309,20 @@ export default function Home() {
             Découvrez Calma en action
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Découvrez l'interface de Calma, du mixage sonore immersif aux fonctionnalités 
+            Découvrez l'interface de Calma, du mixage sonore immersif aux fonctionnalités
             bien-être conçues pour le sommeil, la détente et la concentration.
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl shadow-black/20">
+        <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-[2rem] border border-emerald-300/15 bg-slate-900/70 p-2 shadow-2xl shadow-black/20 sm:p-3">
           <video
-            className="h-auto w-full rounded-[1.5rem]"
+            className="aspect-video h-auto w-full rounded-[1.5rem] bg-slate-950 object-contain"
+            width={1920}
+            height={1080}
             controls
             preload="metadata"
             playsInline
-            poster="/screenshots/3_en.png"
+            poster="/demo-poster.jpg"
             title="Vidéo démo de l'application Calma"
             aria-label="Vidéo démo de l'application Calma"
           >
@@ -381,7 +341,7 @@ export default function Home() {
             Une interface simple et épurée
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Explorez l'interface élégante de Calma et voyez comment l'application vous aide 
+            Explorez l'interface élégante de Calma et voyez comment l'application vous aide
             à créer des ambiances apaisantes pour votre quotidien.
           </p>
         </div>
@@ -442,7 +402,7 @@ export default function Home() {
             Plus que de simples sons
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Calma va au-delà de la simple écoute avec des fonctionnalités immersives conçues pour 
+            Calma va au-delà de la simple écoute avec des fonctionnalités immersives conçues pour
             rendre vos routines plus personnelles et mémorables.
           </p>
         </div>
@@ -456,7 +416,7 @@ export default function Home() {
               Expérimentez avec des fréquences immersives
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Découvrez des expériences sonores avancées conçues pour le sommeil, la concentration 
+              Découvrez des expériences sonores avancées conçues pour le sommeil, la concentration
               et une déconnexion mentale profonde.
             </p>
           </div>
@@ -469,7 +429,7 @@ export default function Home() {
               Respirez à un rythme apaisant
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Un guide visuel doux vous aide à transformer l'application en un véritable rituel 
+              Un guide visuel doux vous aide à transformer l'application en un véritable rituel
               de relaxation, pas seulement un lecteur audio.
             </p>
           </div>
@@ -482,7 +442,7 @@ export default function Home() {
               Un moment de calme et de découverte
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Ajoutez une touche de merveille à votre routine avec une fonctionnalité qui rend 
+              Ajoutez une touche de merveille à votre routine avec une fonctionnalité qui rend
               votre calme quotidien plus significatif.
             </p>
           </div>
@@ -498,7 +458,7 @@ export default function Home() {
             Une expérience sereine, pensée pour vous
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Calma est conçue pour être élégante et fluide. Elle vous aide à créer un meilleur 
+            Calma est conçue pour être élégante et fluide. Elle vous aide à créer un meilleur
             environnement sonore sans distractions ni complexité inutile.
           </p>
         </div>
@@ -507,7 +467,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Créez votre propre atmosphère</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Mélangez les sons selon votre humeur et votre routine. Calma offre une expérience 
+              Mélangez les sons selon votre humeur et votre routine. Calma offre une expérience
               beaucoup plus personnelle que les applications audio standards.
             </p>
           </div>
@@ -515,7 +475,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Sentez-vous apaisé, pas submergé</h3>
             <p className="mt-4 leading-7 text-white/70">
-              L'interface est pensée pour favoriser le calme. Chaque écran vise la simplicité 
+              L'interface est pensée pour favoriser le calme. Chaque écran vise la simplicité
               et l'immersion pour un usage quotidien sans friction.
             </p>
           </div>
@@ -523,7 +483,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Une application, plusieurs rituels</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Utilisez Calma pour dormir, décompresser le soir, travailler ou simplement 
+              Utilisez Calma pour dormir, décompresser le soir, travailler ou simplement
               avoir un fond sonore relaxant pendant votre journée.
             </p>
           </div>
@@ -531,7 +491,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Un design premium et chaleureux</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Calma allie un look soigné à un ton émotionnel doux, faisant de l'application 
+              Calma allie un look soigné à un ton émotionnel doux, faisant de l'application
               un endroit où l'on aime revenir chaque jour.
             </p>
           </div>
@@ -547,7 +507,7 @@ export default function Home() {
             Découvrez Calma par intention
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Explorez les pages dédiées au sommeil, à la relaxation et à la concentration 
+            Explorez les pages dédiées au sommeil, à la relaxation et à la concentration
             pour trouver l'aspect de Calma qui convient le mieux à votre routine.
           </p>
         </div>
@@ -564,7 +524,7 @@ export default function Home() {
               App de sons sommeil
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Découvrez comment Calma favorise des nuits plus calmes et des routines 
+              Découvrez comment Calma favorise des nuits plus calmes et des routines
               de coucher personnalisées.
             </p>
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
@@ -583,7 +543,7 @@ export default function Home() {
               Sons relaxants
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Découvrez un aspect plus doux de Calma conçu pour des soirées paisibles 
+              Découvrez un aspect plus doux de Calma conçu pour des soirées paisibles
               et des rituels quotidiens calmes.
             </p>
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
@@ -602,7 +562,7 @@ export default function Home() {
               App de sons concentration
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Découvrez comment Calma aide à créer un environnement plus calme pour 
+              Découvrez comment Calma aide à créer un environnement plus calme pour
               le travail profond et l'étude.
             </p>
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
@@ -670,7 +630,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Qu'est-ce que Calma ?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma est une application de mixage sonore conçue pour vous aider à mieux dormir, 
+              Calma est une application de mixage sonore conçue pour vous aider à mieux dormir,
               à vous détendre plus facilement et à rester concentré grâce à des mélanges audio personnalisés.
             </p>
           </div>
@@ -678,7 +638,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">À qui s'adresse Calma ?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma s'adresse à tous ceux qui souhaitent une routine de coucher plus calme, un 
+              Calma s'adresse à tous ceux qui souhaitent une routine de coucher plus calme, un
               moment de paix après le travail ou un fond sonore favorisant l'étude.
             </p>
           </div>
@@ -686,7 +646,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Puis-je créer mon propre mix sonore ?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui. Calma est bâtie sur l'idée de créer votre propre environnement sonore relaxant 
+              Oui. Calma est bâtie sur l'idée de créer votre propre environnement sonore relaxant
               au lieu d'écouter une seule piste statique.
             </p>
           </div>
@@ -694,7 +654,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Calma est-elle disponible ?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma est disponible sur Android et iOS, avec des améliorations continues 
+              Calma est disponible sur Android et iOS, avec des améliorations continues
               prévues au fil du temps.
             </p>
           </div>
@@ -709,7 +669,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Calma fonctionne-t-elle hors ligne ?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Oui, Calma fonctionne complètement hors ligne. Vous pouvez mélanger et écouter vos sons sans être connecté à Internet.
+              {productCopy["fr"].offlineText}
             </p>
           </div>
 
@@ -732,7 +692,7 @@ export default function Home() {
               Téléchargez Calma et créez une routine plus douce
             </h2>
             <p className="mt-4 leading-7 text-white/70">
-              Créez des paysages sonores personnalisés pour un meilleur sommeil, des soirées 
+              Créez des paysages sonores personnalisés pour un meilleur sommeil, des soirées
               plus calmes et une concentration accrue avec une application simple et élégante.
             </p>
 

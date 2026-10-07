@@ -103,7 +103,7 @@ export default function SoundLanding({ kind, locale }: { kind: SoundKind; locale
     ],
   };
   return <main className="min-h-screen bg-slate-950 text-white">
-    <SoftwareApplicationSchema name="Calma — Sleep Sounds & Relaxation" description={sound.description} />
+    <SoftwareApplicationSchema />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
     <section className="mx-auto max-w-5xl px-6 py-16 text-center">
       <p className="text-sm uppercase tracking-[0.2em] text-emerald-300">{kind === "rain" ? "Rain sounds app" : "Pink noise app"}</p>

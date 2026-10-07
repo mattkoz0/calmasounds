@@ -52,7 +52,7 @@ const combinedJsonLd = {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Tinnitus Relief App",
+          "name": metadata.title,
           "item": "https://www.calmasounds.com/tinnitus-sounds-app"
         }
       ]

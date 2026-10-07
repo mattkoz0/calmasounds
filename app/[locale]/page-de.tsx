@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { productCopy } from "@/app/utils/product-copy";
+import { PRODUCT, getSoftwareApplicationSchema } from "@/app/utils/product";
 import AiDefinition from "./_components/ai-definition";
 import DesktopDownloadQr from "./_components/desktop-download-qr";
 import MoreApps from "./_components/more-apps";
@@ -32,47 +34,24 @@ export const metadata: Metadata = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": PRODUCT.websiteId,
+  publisher: { "@id": PRODUCT.organizationId },
+  about: { "@id": PRODUCT.appId },
+  inLanguage: "de",
   name: "Calma",
   url: "https://www.calmasounds.com/de",
   description:
     "Calma ist eine Schlaf-App für Entspannung, weißes Rauschen und Fokus. Erstellen Sie personalisierte Klanglandschaften für besseren Schlaf, ruhigere Abende und tiefere Konzentration.",
 };
 
-const softwareAppJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Calma App",
-  sameAs: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923",
-    "https://www.youtube.com/@CalmaApp",
-    "https://www.tiktok.com/@.calma.app",
-    "https://www.instagram.com/calma.app.official",
-    "https://www.facebook.com/profile.php?id=61580760185966"
-  ],
-  applicationCategory: "HealthApplication",
-  applicationSubCategory: "Sleep and Relaxation",
-  operatingSystem: "Android 8.0 and up",
-  url: "https://www.calmasounds.com/de",
-  downloadUrl: [
-    "https://play.google.com/store/apps/details?id=pl.mitysoft.calma",
-    "https://apps.apple.com/us/app/calma-sleep-sounds-relax/id6761824923"
-  ],
-  description:
-    "Schlafklänge, weißes Rauschen, Entspannung und Fokus App mit personalisierten Klanglandschaften.",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "EUR",
-  },
-  softwareVersion: "1.0.0",
-};
+const softwareAppJsonLd = getSoftwareApplicationSchema("de");
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": PRODUCT.organizationId,
   name: "Calma",
-  url: "https://www.calmasounds.com/de",
+  url: PRODUCT.url,
   logo: "https://www.calmasounds.com/logo.png",
   contactPoint: {
     "@type": "ContactPoint",
@@ -139,7 +118,7 @@ const faqJsonLd = {
       name: "Funktioniert Calma auch offline?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja, Calma funktioniert komplett offline. Sie können Ihre Klänge mischen und anhören, ohne mit dem Internet verbunden zu sein.",
+        text: productCopy["de"].offlineText,
       },
     },
     {
@@ -151,18 +130,6 @@ const faqJsonLd = {
       },
     },
   ],
-};
-
-const videoJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "VideoObject",
-  name: "Calma App Demo",
-  description: "Erlebe Calma in Aktion – von immersivem Sound-Mixing bis hin zu Premium-Wellness-Funktionen für Schlaf, Entspannung und Fokus.",
-  thumbnailUrl: "https://www.calmasounds.com/screenshots/3_en.png",
-  uploadDate: "2026-03-30T09:00:00Z",
-  duration: "PT34S",
-  contentUrl: "https://www.calmasounds.com/demo.mp4",
-  embedUrl: "https://www.calmasounds.com/demo.mp4"
 };
 
 const breadcrumbJsonLd = {
@@ -180,7 +147,7 @@ const breadcrumbJsonLd = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="home-page min-h-screen bg-slate-950 text-white">
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
@@ -208,22 +175,11 @@ export default function Home() {
             <script
               type="application/ld+json"
               dangerouslySetInnerHTML={{
-                __html: JSON.stringify(videoJsonLd),
-              }}
-            />
-            <script
-              type="application/ld+json"
-              dangerouslySetInnerHTML={{
                 __html: JSON.stringify(breadcrumbJsonLd),
               }}
             />
 
-      <AiDefinition 
-        title="Was ist Calma?" 
-        description="Calma ist eine Schlaf- und Entspannungs-App, mit der Benutzer personalisierte Klanglandschaften erstellen können, indem sie Regen, Ozean, weißes Rauschen, braunes Rauschen, Naturklänge und Ambiente mischen. Perfekt für Schlaf, Entspannung, Konzentration und Abendroutinen. Calma bietet einen lebenslangen Zugang durch eine einmalige Zahlung, ohne dass Abonnements erforderlich sind." 
-      />
-
-      <section className="mx-auto flex min-h-[78vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
+      <section className="mx-auto flex home-hero min-h-[64vh] max-w-6xl flex-col items-center justify-center px-6 py-16 text-center lg:grid lg:grid-cols-12 lg:gap-12 lg:text-left lg:items-center">
         <div className="lg:col-span-8 flex flex-col items-center lg:items-start text-center lg:text-left justify-center">
           <span className="mb-6 rounded-full border border-white/15 bg-white/5 px-4 py-1 text-sm text-white/80">
             Calma • Schlafklänge & Entspannung
@@ -305,6 +261,8 @@ export default function Home() {
         </div>
       </section>
 
+      <AiDefinition showFacts />
+
       <section className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-16 text-center">
         <div className="mt-16 grid w-full max-w-5xl gap-6 md:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 text-left">
@@ -313,7 +271,7 @@ export default function Home() {
             </p>
             <h2 className="mt-3 text-xl font-semibold">Schlafklänge & Regen-Ambiente</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
-              Erstelle Abend-Mixe mit Regengeräuschen, Ambient-Texturen und beruhigenden Hintergründen, 
+              Erstelle Abend-Mixe mit Regengeräuschen, Ambient-Texturen und beruhigenden Hintergründen,
               die dir helfen, natürlich abzuschalten.
             </p>
           </div>
@@ -324,7 +282,7 @@ export default function Home() {
             </p>
             <h2 className="mt-3 text-xl font-semibold">Naturklänge für tiefe Erholung</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
-              Nutze beruhigende Klanglandschaften, um deinen Geist zurückzusetzen, 
+              Nutze beruhigende Klanglandschaften, um deinen Geist zurückzusetzen,
               Umgebungsgeräusche zu reduzieren und eine sanftere Routine zu etablieren.
             </p>
           </div>
@@ -335,7 +293,7 @@ export default function Home() {
             </p>
             <h2 className="mt-3 text-xl font-semibold">Brown Noise & Fokus-Klänge</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
-              Gestalte dein eigenes Hintergrund-Audio zum Lernen, Lesen und für konzentriertes Arbeiten 
+              Gestalte dein eigenes Hintergrund-Audio zum Lernen, Lesen und für konzentriertes Arbeiten
               – ganz ohne visuelle Ablenkungen.
             </p>
           </div>
@@ -351,18 +309,20 @@ export default function Home() {
             Erlebe Calma in Aktion
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Sieh dir an, wie sich Calma anfühlt – von intuitiven Mixen bis hin zu 
+            Sieh dir an, wie sich Calma anfühlt – von intuitiven Mixen bis hin zu
             hochwertigen Funktionen für Schlaf, Entspannung und Fokus.
           </p>
         </div>
 
-        <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 p-3 shadow-2xl shadow-black/20">
+        <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-[2rem] border border-emerald-300/15 bg-slate-900/70 p-2 shadow-2xl shadow-black/20 sm:p-3">
           <video
-            className="h-auto w-full rounded-[1.5rem]"
+            className="aspect-video h-auto w-full rounded-[1.5rem] bg-slate-950 object-contain"
+            width={1920}
+            height={1080}
             controls
             preload="metadata"
             playsInline
-            poster="/screenshots/3_en.png"
+            poster="/demo-poster.jpg"
             title="Calma App Demo Video"
             aria-label="Calma App Demo Video"
           >
@@ -381,7 +341,7 @@ export default function Home() {
             Ein Blick in die App
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Entdecke das schlichte Design von Calma und sieh, wie die App dir hilft, 
+            Entdecke das schlichte Design von Calma und sieh, wie die App dir hilft,
             beruhigende Klanglandschaften für jeden Moment zu gestalten.
           </p>
         </div>
@@ -442,7 +402,7 @@ export default function Home() {
             Mehr als nur Klänge
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Calma bietet weit mehr als einfache Wiedergabe – entdecke Funktionen, 
+            Calma bietet weit mehr als einfache Wiedergabe – entdecke Funktionen,
             die deine tägliche Routine persönlicher und wertvoller machen.
           </p>
         </div>
@@ -456,7 +416,7 @@ export default function Home() {
               Stimme dich ein mit immersiven Audio-Experimenten
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Erfahre eine neue Tiefe der Ruhe mit Klangerlebnissen, die speziell für 
+              Erfahre eine neue Tiefe der Ruhe mit Klangerlebnissen, die speziell für
               Schlaf, Fokus und mentalen Reset entwickelt wurden.
             </p>
           </div>
@@ -469,7 +429,7 @@ export default function Home() {
               Atme in einem sanfteren Rhythmus
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Sanfte visuelle Anleitungen verwandeln die App in ein echtes Beruhigungsritual, 
+              Sanfte visuelle Anleitungen verwandeln die App in ein echtes Beruhigungsritual,
               das über passives Zuhören hinausgeht.
             </p>
           </div>
@@ -482,7 +442,7 @@ export default function Home() {
               Ein stiller Moment der Entdeckung
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Verleihe deinem Tag einen Hauch von Magie mit einer Funktion, die 
+              Verleihe deinem Tag einen Hauch von Magie mit einer Funktion, die
               tägliche Ruhe spielerisch und emotional belohnend macht.
             </p>
           </div>
@@ -498,7 +458,7 @@ export default function Home() {
             Ein bewussteres Erlebnis, mit Absicht gestaltet
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Calma ist darauf ausgelegt, sich elegant, fokussiert und emotional leicht anzufühlen. 
+            Calma ist darauf ausgelegt, sich elegant, fokussiert und emotional leicht anzufühlen.
             Es hilft dir, eine bessere Umgebung zu schaffen – ohne Reibung oder Ballast.
           </p>
         </div>
@@ -507,7 +467,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Erschaffe deine eigene Atmosphäre</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Mische Klänge basierend auf deiner Stimmung und deinem Moment. Calma bietet 
+              Mische Klänge basierend auf deiner Stimmung und deinem Moment. Calma bietet
               dir eine persönlichere Erfahrung als Standard-Apps.
             </p>
           </div>
@@ -515,7 +475,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Mehr Ruhe, weniger Stress</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Das Interface unterstützt deine Ruhe, nicht deine Ablenkung. Jeder Screen 
+              Das Interface unterstützt deine Ruhe, nicht deine Ablenkung. Jeder Screen
               ist darauf ausgelegt, einfach und einladend zu sein.
             </p>
           </div>
@@ -523,7 +483,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Eine App, viele tägliche Rituale</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Nutze Calma zum Einschlafen, zum Entspannen am Abend, bei der Arbeit 
+              Nutze Calma zum Einschlafen, zum Entspannen am Abend, bei der Arbeit
               oder einfach, wenn du eine sanftere Akustik für deinen Tag brauchst.
             </p>
           </div>
@@ -531,7 +491,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-white/8 to-white/4 p-8">
             <h3 className="text-2xl font-semibold">Hochwertig und warm gestaltet</h3>
             <p className="mt-4 leading-7 text-white/70">
-              Calma kombiniert einen polierten Look mit einem sanften emotionalen Ton, 
+              Calma kombiniert einen polierten Look mit einem sanften emotionalen Ton,
               damit du dich in der App sofort wohlfühlst.
             </p>
           </div>
@@ -547,7 +507,7 @@ export default function Home() {
             Passend zu deiner Intention
           </h2>
           <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/70">
-            Besuche unsere spezialisierten Seiten für Schlaf, Entspannung oder Fokus, 
+            Besuche unsere spezialisierten Seiten für Schlaf, Entspannung oder Fokus,
             um die Seite von Calma zu finden, die am besten zu dir passt.
           </p>
         </div>
@@ -564,7 +524,7 @@ export default function Home() {
               Schlaf-App
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Erfahre, wie Calma friedlichere Nächte, Abendroutinen und 
+              Erfahre, wie Calma friedlichere Nächte, Abendroutinen und
               personalisierte Schlaflandschaften unterstützt.
             </p>
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
@@ -583,7 +543,7 @@ export default function Home() {
               Entspannende Klänge
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Besuche eine sanftere Seite von Calma für ruhige Abende, 
+              Besuche eine sanftere Seite von Calma für ruhige Abende,
               mentalen Reset und tägliche Wohlfühlmomente.
             </p>
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
@@ -602,7 +562,7 @@ export default function Home() {
               Fokus-App
             </h3>
             <p className="mt-4 leading-7 text-white/70">
-              Sieh dir an, wie Calma eine ruhigere Umgebung für Deep Work, 
+              Sieh dir an, wie Calma eine ruhigere Umgebung für Deep Work,
               Konzentration und Lernphasen schafft.
             </p>
             <span className="mt-6 inline-block text-sm text-white transition group-hover:text-white/80">
@@ -657,7 +617,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      
+
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="mb-12 text-center">
           <p className="text-sm uppercase tracking-[0.25em] text-white/50">
@@ -749,7 +709,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Was ist Calma?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma ist eine Sound-Mixer-App, die dir hilft, besser zu schlafen, 
+              Calma ist eine Sound-Mixer-App, die dir hilft, besser zu schlafen,
               dich leichter zu entspannen und fokussiert zu bleiben.
             </p>
           </div>
@@ -757,7 +717,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Für wen ist Calma gedacht?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Calma ist für alle, die eine ruhigere Abendroutine, eine friedlichere Pause 
+              Calma ist für alle, die eine ruhigere Abendroutine, eine friedlichere Pause
               oder fokussiertes Lernen und Arbeiten suchen.
             </p>
           </div>
@@ -765,7 +725,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Kann ich meine eigenen Mixe erstellen?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja. Calma basiert auf der Idee, deine eigene Klangumgebung zu gestalten, 
+              Ja. Calma basiert auf der Idee, deine eigene Klangumgebung zu gestalten,
               statt nur starren Titeln zuzuhören.
             </p>
           </div>
@@ -787,7 +747,7 @@ export default function Home() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h3 className="text-xl font-semibold">Funktioniert Calma auch offline?</h3>
             <p className="mt-3 leading-7 text-white/70">
-              Ja, Calma funktioniert komplett offline. Sie können Ihre Klänge mischen und anhören, ohne mit dem Internet verbunden zu sein.
+              {productCopy["de"].offlineText}
             </p>
           </div>
 
@@ -810,7 +770,7 @@ export default function Home() {
               Lade Calma herunter und starte deine neue Routine
             </h2>
             <p className="mt-4 leading-7 text-white/70">
-              Erstelle personalisierte Klanglandschaften für besseren Schlaf, ruhigere Abende 
+              Erstelle personalisierte Klanglandschaften für besseren Schlaf, ruhigere Abende
               und tieferen Fokus mit einer schlichten App für jeden Tag.
             </p>
 

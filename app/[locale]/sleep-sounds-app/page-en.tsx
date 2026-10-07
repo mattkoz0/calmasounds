@@ -127,7 +127,7 @@ export default function SleepSoundsAppPage() {
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
             <h2 className="text-2xl font-semibold">Listen completely offline</h2>
             <p className="mt-4 leading-7 text-white/70">
-              Use your saved sounds without Wi-Fi or mobile data, including in
+              All sounds are available immediately after installation, without Wi-Fi or mobile data, including in
               airplane mode or anywhere a stable connection is unavailable.
             </p>
           </div>
