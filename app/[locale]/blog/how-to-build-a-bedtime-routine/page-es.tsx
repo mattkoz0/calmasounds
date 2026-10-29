@@ -71,114 +71,102 @@ export default function BedtimeRoutineArticlePage() {
 
       topLinkHref="/sleep-sounds-app"
       topLinkLabel="Explorar sonidos para dormir"
-      title="Cómo construir una rutina de noche que sea realmente relajante"
-      intro="Una buena rutina a la hora de dormir no tiene por qué ser repetidamente complicada o estructurada para ser perfecta; sino que deber ser, principalmente, algo realista, repetible, además de lo suficientemente sencilla para ayudar a relajar a tu cuerpo y a tu mente de la dura desconexión diaria e indicarle que el día ha llegado a su fin. Las más sencillas señales consistentes a menudo funcionan mejor que pretender intentar rutinas ambiciosas y tediosas que sólo lograrás seguir una vez cada mucho tiempo."
+      title="Cómo crear una rutina para dormir que de verdad te relaje"
+      intro="Una buena rutina para dormir no tiene que ser complicada ni perfecta. Lo más importante es que sea realista, fácil de repetir y lo bastante relajante como para ayudar a tu mente y a tu cuerpo a desconectar del día. Las señales pequeñas y constantes suelen funcionar mejor que las rutinas ambiciosas que solo sigues una vez."
       ctaHref="/sleep-sounds-app"
-      ctaLabel="Explorar app para dormir"
+      ctaLabel="Explorar la app para dormir"
       secondaryCtaHref="/blog/best-sounds-for-sleep"
-      secondaryCtaLabel="Leer sobre los mejores sonidos"
-      ctaTitle="Explora las rutinas de sueño con Calma"
-      ctaText="Calma te ayuda a crear y promover rutinas más suaves y profundas para dormir mediante sonidos y atmósferas ambientales ideales orientadas a tu tarde-noche."
+      secondaryCtaLabel="Leer sobre los mejores sonidos para dormir"
+      ctaTitle="Explora rutinas para dormir con Calma"
+      ctaText="Calma te ayuda a crear rutinas nocturnas más suaves con paisajes sonoros personalizados, audio relajante y un ambiente tranquilo por la noche."
       relatedArticles={[
         {
           href: "/blog/best-sounds-for-sleep",
-          title: "Los Mejores Sonidos para Dormir",
+          title: "Los mejores sonidos para dormir",
           description:
-            "Explora qué estilos de sonido para dormir pueden ayudar a relajarse de diferente forma según la persona.",
+            "Descubre qué tipos de sonidos para dormir pueden ayudar a cada persona a relajarse.",
         },
         {
           href: "/blog/white-noise-for-sleep",
-          title: "Ruido Blanco para Dormir",
+          title: "Ruido blanco para dormir",
           description:
-            "Aprende cuándo el ruido blanco puede ayudarte a crear un ambiente de sueño mucho más relajado o calmado.",
+            "Cuándo el ruido blanco puede ayudarte a crear un ambiente más tranquilo antes de dormir.",
         },
       ]}
     >
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-2xl font-semibold">Comienza antes de lo que crees</h2>
+        <h2 className="text-2xl font-semibold">Empieza antes de lo que crees</h2>
         <p className="mt-4 leading-8 text-white/70">
-          Una rutina para la hora de dormir no comienza exactamente en el mismo
-          fomento en que tu cabeza está apoyada sobre tu almohada; realmente, 
-          empieza con algo previo, un ritual y una manera específica de cerrar y
-          despedir a tu tarde o anochecer. Incluso si lo reduces a una corta
-          ventana preparatoria que precede al sueño, ese margen de inactividad
-          guiada podría facilitar completamente que todo tu sistema nervioso
-          inicie un viraje o ralentice a un modo mucho más calmado.
+          Una rutina para dormir no empieza cuando apoyas la cabeza en la
+          almohada, sino con la forma en que cierras la tarde. Incluso un breve
+          periodo de transición antes de dormir puede ayudar a tu sistema
+          nervioso a pasar a un modo más tranquilo.
         </p>
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
         <h2 className="text-2xl font-semibold">
-          Reduce gradualmente los estímulos
+          Reduce los estímulos poco a poco
         </h2>
         <p className="mt-4 leading-8 text-white/70">
-          El objetivo no consiste en generar el mayor silencio sepulcral en el
-          menor tiempo o lapso en tan sólo un instante. El objetivo principal es
-          reducir o rebajar paulatinamente el sobreestímulo de ruido y
-          exaltación del cuerpo hasta llegar al reposo natural. Luces tenues, una 
-          entrada menor de estímulos sobre la mente y un entorno auditivo apacible,
-          pueden todos ellos ayudar sinergéticamente para propiciar y conformar
-          una perfecta inducción u oscilación relajante y un estado general lo
-          más pacífico hacia una óptima noche.
+          El objetivo no es conseguir silencio de golpe, sino bajar los
+          estímulos con suavidad. Una luz más tenue, menos información que
+          procesar y un audio más tranquilo pueden ayudar a que la transición
+          hacia el sueño sea más natural.
         </p>
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-2xl font-semibold">Recurre a señales coherentes</h2>
+        <h2 className="text-2xl font-semibold">Usa señales constantes</h2>
         <p className="mt-4 leading-8 text-white/70">
-          En esto, sí que pesa bastante la repetición; es clave. Acostumbrarse a lo que
-          se hace y no variar los detalles, permite, o mejor resulta y es en todo
-          su beneficio para condicionarte en las horas finales de tus atardeceres
-          o anocheceres si se mantienen con tenacidad y ahínco las pautas fijadas. Es
-          es cuando a nivel neuro-sináptico todo queda asumido e instado en una mayor
-          acogida en toda la experiencia. Resulta así igual de clave e imperante para tu
-          persona ya contar como fondo recurrente y regularizado idéntico del mejor
-          sonido. Para los demás, esto consistirá en emplear una sucesión de idéntica
-          ejecución consecutivas sin un aparente nivel o mínimo esmero o alteración de
-          pasos en su particular noche a la hora del descanso.
+          La repetición importa. Cuando tus noches incluyen las mismas señales
+          relajantes una y otra vez, tu cerebro empieza a reconocerlas como
+          parte del proceso de dormir. Puede ser el mismo paisaje sonoro, el
+          mismo orden de actividades o el mismo pequeño ritual cada noche.
         </p>
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-2xl font-semibold">Mantén siempre una rutina simple</h2>
+        <h2 className="text-2xl font-semibold">Mantén la rutina sencilla</h2>
         <p className="mt-4 leading-8 text-white/70">
-          La mejor de las rutinas por obviedad no deja nunca de resultar y ser
-          la que te sientas capacitado a ser asiduo, o dicho por otros, la que es capaz de
-          repetirse con la mayor y predispuesta regularidad. Establecida por simpleza,
-          sólo requeriría contar como máximo al final de la jornada tres únicos
-          puntos de pasos que conllevan y dirijan hacia toda tu relajación, esto resulta 
-          normalmente ser en un sentido superlativo e imperiosamente fuerte al equipararlo
-          a todas las demás rutinas si resultan o son sumamente muy extenuantes o confusas
-          puesto a que simularían a un forzamiento tal, cual fuesen la pesada tarea por
-          obligación para no descuidarla y sentir que algo malo va a pasarte.
+          La mejor rutina para dormir es la que puedes repetir de verdad. Una
+          rutina con dos o tres pasos relajantes suele funcionar mejor que una
+          secuencia complicada que se siente como una tarea pendiente.
         </p>
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-2xl font-semibold">El sonido da forma y ayuda al estado anímico</h2>
+        <h2 className="text-2xl font-semibold">El sonido ayuda a crear el ambiente</h2>
         <p className="mt-4 leading-8 text-white/70">
-          Cualquier tipo de audio reconfortante incide e instiga a que las horas más bajas, o la hora de la cama llegue y se sienta de forma y calado más consciente e interiorizada; y en muchas personas incitará en la respuesta positiva. Dependiendo del tipo de necesidad requeridas los unos preferentemente decantan con ahínco por el ruido sordo característico lluvia como el favorito, la otra proporción de individuos son afines por toda clase y uso continuado y extenso enfocado hacia ruido blanco y para algunos lo óptimo termina recayendo ante el ambiente de los fondos paisajísticos más suaves y distendidos. Cual sea el pretexto no hay para buscar tener por fuerza que escoger como fin exclusivo a una, sino disponer a poder acomodar aquel recinto y en lograr hacerlo como de manera general por si llegara y funcionara propiciándole a usted todo lo de sentirse emocional o tranquilamente refugiado lo debido en este, o lo idóneamente de ser de por si a su medida apto a poder descansar sobre el.
+          Un audio relajante puede hacer que la hora de dormir se sienta más
+          intencionada. Algunas personas responden mejor al sonido de la
+          lluvia, otras prefieren el ruido blanco y otras eligen paisajes
+          sonoros ambientales más suaves. No se trata de imponer una única
+          respuesta, sino de crear un entorno que se sienta seguro y lo
+          bastante tranquilo para desconectar.
         </p>
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
         <h2 className="text-2xl font-semibold">
-          Cómo se puede hacer la más simple de las rutinas
+          Cómo puede ser una rutina sencilla
         </h2>
         <ul className="mt-4 space-y-3 text-white/70">
-          <li>• Baje todas la intensidad lumínica y limite al extremo cualquier posible sobreexcitación mental o sensorial con acciones muy participativas como los móviles o jugar con sus mascota en el tiempo colindante hacia la pernocta.</li>
-          <li>• De su entorno selecione de forma recurrente hacia alguna textura predilecta de sonidos relajantes; como ruido blanco constante e uniforme al ir a dormirse, para ayudar mejor.</li>
-          <li>• Repita de de la mimas formas con consistencia diaria idéntica o sin la menor variación sus costumbres menores de menor escala y detalle durante o lo largo toda la noche y atardeceres precedentes, pues este, su último aspecto no podrá, ser subestimando lo absoluto ni olvidado.</li>
+          <li>• Baja la luz y reduce los estímulos activos.</li>
+          <li>• Elige un paisaje sonoro relajante o una mezcla de audio para dormir.</li>
+          <li>• Repite los mismos pasos pequeños cada noche.</li>
           <li>
-            • Céntrese en adoptar las medidas de calma en lugar de la auto presión, su premisa siempre residirá más abriendo pase, fomentando un terreno llano donde en todo aquello prime por encima del sentimiento de lograr ser inamovible o todo impolutamente perfecto e inconmensurable.
+            • Mantén un tono amable en lugar de intentar hacerlo todo perfecto.
           </li>
         </ul>
       </section>
 
       <section className="rounded-3xl border border-white/10 bg-white/5 p-8">
-        <h2 className="text-2xl font-semibold">Apunta a la calma, no exijas perfección</h2>
+        <h2 className="text-2xl font-semibold">Busca la calma, no la perfección</h2>
         <p className="mt-4 leading-8 text-white/70">
-          Toda regla antes a las buenas noches impuesta sobre esto al menos debe, y esta su finalidad primera brindarte total ayuda, reconfort y su firme cometido para ayudarte con este paso que es por sobre todo necesario nunca resultar que le ocasione ninguna sobrecarga o lo opuesto de presiones a cualquier grado por la expectativa. Esto va muy bien enfocado o atañe directamente proporcional ante todas ellas, lo de ser consecuentes y a cuanto parezca de un nivel tan o lo mayor posible relajado y un clima donde con una fluidez emocional no resulte estresado en hacerlo se presentará un modo por el las noches el seguirle asiduamente parezca que no supone y llega tan liviano para usted siendo sumamente consistente durante un prolongado o gran abanico o margen por varios o muchísimos años de forma constante.
+          Una rutina para dormir debe ayudarte, no presionarte. Cuanto más
+          realista y amable sea, más fácil te resultará volver a ella con
+          constancia.
         </p>
       </section>
     </ArticlePage>

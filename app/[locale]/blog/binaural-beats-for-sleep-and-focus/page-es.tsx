@@ -5,7 +5,7 @@ import { ArticleSection } from "../_components/article-section";
 export const metadata: Metadata = {
   title: "Ondas Binaurales para el Sueño y la Concentración | Blog de Calma",
   description:
-    "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y logar un restablecimiento mental profundo.",
+    "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y lograr un descanso mental más profundo.",
   keywords: [
     "ondas binaurales para el sueño y la concentración",
     "ondas binaurales para dormir",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ondas Binaurales para el Sueño y la Concentración | Blog de Calma",
     description:
-      "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y logar un restablecimiento mental profundo.",
+      "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y lograr un descanso mental más profundo.",
     url: "https://www.calmasounds.com/blog/binaural-beats-for-sleep-and-focus",
     siteName: "Calma",
     locale: "es_ES",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ondas Binaurales para el Sueño y la Concentración | Blog de Calma",
     description:
-      "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y logar un restablecimiento mental profundo.",
+      "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y lograr un descanso mental más profundo.",
   },
 };
 
@@ -43,7 +43,7 @@ const articleJsonLd = {
   "@type": "Article",
   headline: "Ondas Binaurales para el Sueño y la Concentración",
   description:
-    "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y logar un restablecimiento mental profundo.",
+    "Descubre qué son los ritmos binaurales y cómo pueden ayudar a mejorar tu sueño, concentración y lograr un descanso mental más profundo.",
   author: {
     "@type": "Organization",
     name: "Calma",
@@ -96,35 +96,31 @@ export default function BinauralBeatsArticlePage() {
           auriculares para que el efecto funcione como se espera.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          En términos prácticos, las personas experimentan visualmente estas
-          ondas binaurales no como una melodía tradicional de canciones o un
-          sonido ambiental típico, sino más bien como una sutil capa tenue
-          de audio de fondo.
+          En la práctica, muchas personas perciben los ritmos binaurales como
+          una capa sutil de audio de fondo, más que como una melodía tradicional
+          o un sonido ambiental.
         </p>
       </ArticleSection>
 
-      <ArticleSection title="¿Por qué usarlos para dormir?">
+      <ArticleSection title="¿Por qué se usan para dormir?">
         <p className="mt-4 leading-8 text-white/70">
-          Algunos oyentes las exploran como herramienta parte de un ritual
-          antes de acostarse porque se sienten más inmersivas y constantes, 
-          además de lograr focalizar y descansar la mente. Pueden generar una
-          sensación de escucha intencional que se percibe diferente que simples
-          sonidos de lluvia o ruido blanco.
+          Algunas personas los prueban como parte de su ritual antes de
+          acostarse porque resultan envolventes, constantes y ayudan a centrar
+          la mente. Crean una sensación de escucha intencional distinta de la
+          que producen los sonidos de lluvia o el ruido blanco.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Para lograr dormir adecuadamente, el atractivo suele ser menos un tema de
-          entretenimiento y más ayudar al estado de tu mente a alejarse del ruido, el
-          ajetreo diario y ayudarle a que deje de dar vueltas y divagar sin control.
+          Para dormir, su atractivo no suele estar en el entretenimiento, sino
+          en ayudar a la mente a salir de un estado ajetreado y disperso.
         </p>
       </ArticleSection>
 
-      <ArticleSection title="¿Por qué la gente las usa para concentrarse?">
+      <ArticleSection title="¿Por qué se usan para concentrarse?">
         <p className="mt-4 leading-8 text-white/70">
-          En entornos de alta concentración, los tonos binaurales los utilizan
-          con frecuencia personas que desean un sonido de fondo más controlado e
-          inmersivo que el audio ambiental ordinario o canciones al uso. Algunos
-          encuentran que estos tipos de ritmos los ayudan bastante y aminoran
-          la sensación de desorden mental o estrés. Son idóneas a ratos de lectura profunda.
+          Para concentrarse, los ritmos binaurales suelen atraer a quienes
+          buscan un fondo más controlado y envolvente que el audio ambiental
+          habitual. Algunas personas sienten que este tipo de sonido reduce la
+          sensación de desorden mental mientras trabajan, leen o estudian.
         </p>
       </ArticleSection>
 
@@ -137,35 +133,31 @@ export default function BinauralBeatsArticlePage() {
           se requiere ser más proactivo e intencional en la forma en que se utilizan.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Eso los hace especialmente interesantes para las personas que desean
-          explorar algo más allá de los paisajes sonoros tradicionales orientados
-          simplemente a conciliar el sueño y descansar mejor.
+          Por eso resultan especialmente interesantes para quienes quieren
+          explorar algo más allá de los paisajes sonoros tradicionales para
+          dormir o concentrarse.
         </p>
       </ArticleSection>
 
-      <ArticleSection title="Cómo explorarlas de forma más tranquila">
+      <ArticleSection title="Cómo probarlas de forma más tranquila">
         <ul className="mt-4 space-y-3 text-white/70">
           <li>
-            • Usa siempre auriculares que cubran bien tus oídos, porque el
-            efecto en sí recae completamente sobre tener unos tonos muy bien
-            segmentados para cada oído.
+            • Usa auriculares, porque el efecto depende de que cada oído reciba
+            un tono distinto.
           </li>
-          <li>• Intenta que el volumen sea bajo, moderado antes que fuerte e intenso.</li>
-          <li>• Pónlas a prueba con un solo objetivo a la vez: intentar relajarse y dormir o bien enfocarse y estudiar algo importante.</li>
-          <li>• Date algunas sesiones antes de decidir precipitadamente si se adaptan a ti y el entorno idóneo que necesitas.</li>
+          <li>• Mantén un volumen suave, no intenso.</li>
+          <li>• Pruébalas con un solo objetivo cada vez: dormir o concentrarte.</li>
+          <li>• Date unas cuantas sesiones antes de decidir si te convienen.</li>
         </ul>
       </ArticleSection>
 
       <ArticleSection title="No todo el mundo reacciona de la misma manera">
         <p className="mt-4 leading-8 text-white/70">
-          Como con la mayoría de rituales, escanear y probar diferentes entornos y
-          opciones en una experiencia completamente única para cada persona. 
-          Unas pocas disfrutan casi instantáneamente descubriendo lo inmersivo de las
-          ondas binaurales y otras terminan abrumándose, por lo que deciden apostar
-          por ambientes y opciones tradicionales por considerarlas menos abstractas. 
-          Lo más importante es curiosear y explorar qué es lo que más efecto surte, y
-          todo ello alejado sin expectativas poco fundamentadas, así evitar frustración 
-          por parte tuya.
+          Como con la mayoría de los rituales de audio, la experiencia es
+          personal. Algunas personas disfrutan enseguida de este tipo de
+          escucha, mientras que otras prefieren entornos sonoros más familiares
+          como la lluvia, las texturas ambientales o el ruido blanco. Lo mejor
+          es probar con curiosidad y sin presión.
         </p>
       </ArticleSection>
     </ArticlePage>
