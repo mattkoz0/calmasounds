@@ -156,7 +156,7 @@ export default function BestSoundsForStudyingPage() {
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li><strong>Musik mit Songtexten:</strong> Menschliche Stimmen ziehen unsere Aufmerksamkeit naturgemäß auf sich, da unser Gehirn auf die Verarbeitung von Sprache programmiert ist. Das Hören von Texten beansprucht die Sprachzentren Ihres Gehirns und konkurriert direkt mit Lese- oder Schreibaufgaben.</li>
-          <li><strong>Komplexe klassische Musik:</strong> Obwohl der \"Mozart-Effekt\" bekannt ist, können sehr dynamische klassische Stücke mit plötzlichen Lautstärkeänderungen und komplexen Melodien stark ablenken. Wenn Sie Musik bevorzugen, wählen Sie minimalistische Ambient-Tracks oder \"Lo-Fi-Beats\".</li>
+          <li><strong>Komplexe klassische Musik:</strong> Obwohl der &quot;Mozart-Effekt&quot; bekannt ist, können sehr dynamische klassische Stücke mit plötzlichen Lautstärkeänderungen und komplexen Melodien stark ablenken. Wenn Sie Musik bevorzugen, wählen Sie minimalistische Ambient-Tracks oder &quot;Lo-Fi-Beats&quot;.</li>
           <li><strong>Podcasts oder Radio:</strong> Ähnlich wie Musik mit Gesang erfordert das gesprochene Wort aktives Zuhören, wodurch weniger kognitive Kapazität für Ihre eigentliche Arbeit übrig bleibt.</li>
         </ul>
       </ArticleSection>

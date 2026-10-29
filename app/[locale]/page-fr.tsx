@@ -190,9 +190,9 @@ export default function Home() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
-            Calma is a beautifully simple sleep sounds and relaxation app that helps
-            you create personalized audio mixes for better sleep, calmer evenings and
-            deeper focus.
+            Calma est une application de sons pour dormir et de relaxation d’une grande
+            simplicité, qui vous aide à créer des mixages audio personnalisés pour mieux
+            dormir, passer des soirées plus calmes et vous concentrer plus profondément.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start w-full">

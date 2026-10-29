@@ -101,7 +101,7 @@ export default function BenefitsOfNatureSoundsPage() {
           Before synthetic audio generators were invented, our ancestors relied on the rhythmic and constant soundscapes provided safely by nature. Organic sounds inherently carry varied frequencies that function similarly to white, pink, or brown noise, but with an added psychological benefit.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Because the human brain evolved alongside natural environments, the lack of sudden, erratic changes in atmospheric sounds indicates a \"safe\" space. Listening to nature actually lowers sympathetic nervous system activity (your \"fight or flight\" response) and increases parasympathetic activity (your \"rest and digest\" state).
+          Because the human brain evolved alongside natural environments, the lack of sudden, erratic changes in atmospheric sounds indicates a &quot;safe&quot; space. Listening to nature actually lowers sympathetic nervous system activity (your &quot;fight or flight&quot; response) and increases parasympathetic activity (your &quot;rest and digest&quot; state).
         </p>
       </ArticleSection>
 

@@ -102,7 +102,7 @@ export default function BenefitsOfNatureSoundsPage() {
           Zanim wymyślono syntetyczne generatory audio, ludzkość polegała na rytmicznym i stałym środowisku akustycznym zapewnianym przez przyrodę. Organiczne dźwięki naturalnie przenoszą zróżnicowane częstotliwości, które działają podobnie do białego, różowego czy brązowego szumu, ale posiadają dodatkowy, ogromny atut psychologiczny.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Ponieważ ludzki mózg ewoluował w naturalnym środowisku, brak nagłych, chaotycznych zmian w dźwiękach otoczenia (jak np. złamana gałąź czy krzyk) sygnalizuje \"bezpieczną\" przestrzeń. Słuchanie natury aktywnie obniża aktywność współczulnego układu nerwowego (reakcja \"walcz lub uciekaj\") i zwiększa aktywność przywspółczulną (stan głębokiego relaksu i regeneracji).
+          Ponieważ ludzki mózg ewoluował w naturalnym środowisku, brak nagłych, chaotycznych zmian w dźwiękach otoczenia (jak np. złamana gałąź czy krzyk) sygnalizuje &quot;bezpieczną&quot; przestrzeń. Słuchanie natury aktywnie obniża aktywność współczulnego układu nerwowego (reakcja &quot;walcz lub uciekaj&quot;) i zwiększa aktywność przywspółczulną (stan głębokiego relaksu i regeneracji).
         </p>
       </ArticleSection>
 

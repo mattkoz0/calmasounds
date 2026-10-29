@@ -92,7 +92,7 @@ export default function GreenNoiseForSleepPage() {
     >
       <ArticleSection title="Qu'est-ce que le bruit vert exactement ?">
         <p>
-          Comme les couleurs de la lumière, le bruit se décline en \"couleurs\" basées sur la façon dont l'énergie est répartie sur différentes fréquences. Alors que le bruit blanc contient toutes les fréquences à égale intensité (ressemblant à la statique d'une télévision ou au sifflement d'un ventilateur), le bruit vert se concentre spécifiquement sur le centre du spectre des fréquences.
+          Comme les couleurs de la lumière, le bruit se décline en &quot;couleurs&quot; basées sur la façon dont l'énergie est répartie sur différentes fréquences. Alors que le bruit blanc contient toutes les fréquences à égale intensité (ressemblant à la statique d'une télévision ou au sifflement d'un ventilateur), le bruit vert se concentre spécifiquement sur le centre du spectre des fréquences.
         </p>
         <p>
           Il élimine les sifflements aigus et discordants et les grondements agressifs et profonds. Le résultat est un profil sonore qui ressemble étroitement au bourdonnement ambiant du monde naturel - pensez à une chute d'eau à courte distance, à une brise océanique constante ou à des feuilles qui bruissent constamment dans le vent.
@@ -105,7 +105,7 @@ export default function GreenNoiseForSleepPage() {
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
           <li>
-            <strong>Confort évolutif :</strong> Le cerveau humain a évolué dans des environnements naturels, pas dans des chambres modernes et silencieuses. Les fréquences trouvées dans le bruit vert signalent la \"sécurité\" au système nerveux, aidant à réduire un esprit hyperactif et à abaisser naturellement les niveaux de stress avant de se coucher.
+            <strong>Confort évolutif :</strong> Le cerveau humain a évolué dans des environnements naturels, pas dans des chambres modernes et silencieuses. Les fréquences trouvées dans le bruit vert signalent la &quot;sécurité&quot; au système nerveux, aidant à réduire un esprit hyperactif et à abaisser naturellement les niveaux de stress avant de se coucher.
           </li>
           <li>
             <strong>Masquage acoustique :</strong> Tout comme les autres couleurs de bruit, le bruit vert élève le niveau sonore ambiant de votre pièce. Cette couverture sonore continue masque efficacement les bruits soudains de la maison, les aboiements de chiens ou la circulation extérieure qui pourraient autrement vous réveiller en sursaut.

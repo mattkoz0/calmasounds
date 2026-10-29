@@ -93,10 +93,10 @@ export default function BestSoundsForStudyingPage() {
     >
       <ArticleSection id="why-sound-helps" title="Why does sound help us focus?">
         <p className="mt-4 leading-8 text-white/70">
-          In a completely silent room, every little noise—a creaking chair, a passing car, a cough from the next room—becomes a distraction. Our brains are hardwired to notice sudden changes in the acoustic environment as potential threats or points of interest, constantly pulling us out of \"deep work\" or \"flow state\".
+          In a completely silent room, every little noise—a creaking chair, a passing car, a cough from the next room—becomes a distraction. Our brains are hardwired to notice sudden changes in the acoustic environment as potential threats or points of interest, constantly pulling us out of &quot;deep work&quot; or &quot;flow state&quot;.
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Background audio helps by <strong>masking</strong> these sudden interruptions. By providing a continuous, predictable blanket of sound, the \"delta\" (difference) between silence and a sudden noise is reduced, meaning your brain can ignore it and stay focused on the textbook or screen in front of you.
+          Background audio helps by <strong>masking</strong> these sudden interruptions. By providing a continuous, predictable blanket of sound, the &quot;delta&quot; (difference) between silence and a sudden noise is reduced, meaning your brain can ignore it and stay focused on the textbook or screen in front of you.
         </p>
       </ArticleSection>
 
@@ -151,7 +151,7 @@ export default function BestSoundsForStudyingPage() {
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li><strong>Music with lyrics:</strong> Human voices naturally draw our attention because our brains are programmed to process language. Listening to lyrics engages the language centers of your brain, directly competing with reading or writing tasks.</li>
-          <li><strong>Complex classical music:</strong> While the \"Mozart Effect\" is famous, highly dynamic classical pieces with sudden volume changes and complex melodies can actually be highly distracting. If you prefer music, opt for minimalist, repetitive ambient tracks or \"Lo-Fi beats\".</li>
+          <li><strong>Complex classical music:</strong> While the &quot;Mozart Effect&quot; is famous, highly dynamic classical pieces with sudden volume changes and complex melodies can actually be highly distracting. If you prefer music, opt for minimalist, repetitive ambient tracks or &quot;Lo-Fi beats&quot;.</li>
           <li><strong>Podcasts or talk radio:</strong> Similar to lyrical music, spoken word demands active listening, leaving less cognitive capacity for your actual work.</li>
         </ul>
       </ArticleSection>
@@ -164,7 +164,7 @@ export default function BestSoundsForStudyingPage() {
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Why does brown noise help with ADHD focus?</h3>
-            <p className="mt-2 leading-7 text-white/70">People with ADHD often have under-stimulated brains that seek out distractions. Brown noise provides a constant, low-frequency \"blanket\" of non-intrusive stimulation that satisfies the brain, allowing it to focus on the primary task without wandering.</p>
+            <p className="mt-2 leading-7 text-white/70">People with ADHD often have under-stimulated brains that seek out distractions. Brown noise provides a constant, low-frequency &quot;blanket&quot; of non-intrusive stimulation that satisfies the brain, allowing it to focus on the primary task without wandering.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Can listening to rain help you study?</h3>

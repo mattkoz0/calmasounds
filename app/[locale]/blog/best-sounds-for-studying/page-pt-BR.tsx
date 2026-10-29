@@ -156,7 +156,7 @@ export default function BestSoundsForStudyingPage() {
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li><strong>Músicas com letra:</strong> Vozes humanas atraem nossa atenção naturalmente porque nossos cérebros são programados para processar linguagem. Ouvir letras ativa os centros de linguagem do seu cérebro, competindo diretamente com tarefas de leitura ou escrita.</li>
-          <li><strong>Música clássica complexa:</strong> Embora o \"Efeito Mozart\" seja famoso, peças clássicas muito dinâmicas, com mudanças bruscas de volume e melodias complexas, podem distrair bastante. Se preferir música, opte por faixas ambientais minimalistas e repetitivas ou \"Lo-Fi beats\".</li>
+          <li><strong>Música clássica complexa:</strong> Embora o &quot;Efeito Mozart&quot; seja famoso, peças clássicas muito dinâmicas, com mudanças bruscas de volume e melodias complexas, podem distrair bastante. Se preferir música, opte por faixas ambientais minimalistas e repetitivas ou &quot;Lo-Fi beats&quot;.</li>
           <li><strong>Podcasts ou rádio de entrevistas:</strong> Semelhante às músicas com letra, a palavra falada exige audição ativa, deixando menos capacidade cognitiva para o seu trabalho real.</li>
         </ul>
       </ArticleSection>

@@ -153,7 +153,7 @@ export default function NoiseColorsPageFR() {
 
       <ArticleSection id="adhd" title="Pourquoi le bruit marron aide-t-il le TDAH ?">
         <p className="mt-4 leading-8 text-white/70">
-          Le bruit marron agit comme un \"massage audio\" continu pour le cerveau. En fournissant une stimulation auditive constante, il satisfait le désir d'information du cerveau.
+          Le bruit marron agit comme un &quot;massage audio&quot; continu pour le cerveau. En fournissant une stimulation auditive constante, il satisfait le désir d'information du cerveau.
         </p>
       </ArticleSection>
 

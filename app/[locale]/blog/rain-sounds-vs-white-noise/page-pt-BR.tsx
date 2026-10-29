@@ -147,7 +147,7 @@ export default function RainSoundsVsWhiteNoisePagePTBR() {
       <ArticleSection id="when-to-choose-rain" title="Quando os sons da chuva são a melhor escolha">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li>Você deseja uma atmosfera de sono aconchegante e natural.</li>
-          <li>Você sofre de ansiedade e precisa de um som que indique \"segurança\".</li>
+          <li>Você sofre de ansiedade e precisa de um som que indique &quot;segurança&quot;.</li>
           <li>Você acha o chiado agudo do verdadeiro ruído branco irritante.</li>
         </ul>
       </ArticleSection>

@@ -154,7 +154,7 @@ export default function NoiseColorsPageES() {
 
       <ArticleSection id="adhd" title="¿Por qué el ruido marrón ayuda con el TDAH?">
         <p className="mt-4 leading-8 text-white/70">
-          El ruido marrón actúa como un \"masaje de audio\" continuo para el cerebro. Al proporcionar un flujo constante de estimulación auditiva, satisface el deseo de información del cerebro, permitiendo concentrarse.
+          El ruido marrón actúa como un &quot;masaje de audio&quot; continuo para el cerebro. Al proporcionar un flujo constante de estimulación auditiva, satisface el deseo de información del cerebro, permitiendo concentrarse.
         </p>
       </ArticleSection>
 

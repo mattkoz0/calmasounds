@@ -156,7 +156,7 @@ export default function WhiteNoiseForSleepPage() {
 
       <ArticleSection id="what-is-it" title="What exactly is white noise?">
         <p className="mt-4 leading-8 text-white/70">
-          In physics, white noise is a sound that contains every frequency within the range of human hearing (between 20 hertz and 20,000 hertz) played at an equal intensity. Because it contains all frequencies simultaneously, it sounds like a \"shushing\" noise, similar to television static, an untuned radio, or a humming fan.
+          In physics, white noise is a sound that contains every frequency within the range of human hearing (between 20 hertz and 20,000 hertz) played at an equal intensity. Because it contains all frequencies simultaneously, it sounds like a &quot;shushing&quot; noise, similar to television static, an untuned radio, or a humming fan.
         </p>
         <AudioPlayer 
           src="/white_noise.m4a" 
@@ -168,7 +168,7 @@ export default function WhiteNoiseForSleepPage() {
 
       <ArticleSection id="comparison-table" title="White vs Pink vs Brown Noise for Sleep">
         <p className="mt-4 leading-8 text-white/70">
-          Not all \"white noise\" is technically white. Noise colors describe frequency balance. The difference changes how each sound feels, but research does not identify one color as universally best for sleep.
+          Not all &quot;white noise&quot; is technically white. Noise colors describe frequency balance. The difference changes how each sound feels, but research does not identify one color as universally best for sleep.
         </p>
         <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
           <table className="w-full text-left text-sm text-white/70">

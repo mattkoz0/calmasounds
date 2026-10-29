@@ -115,14 +115,14 @@ export default function RainSoundsVsWhiteNoisePage() {
           colorClass="bg-slate-500/20 text-slate-300"
         />
         <p className="mt-4 leading-8 text-white/70">
-          Jeśli nagłe, losowe dźwięki – takie jak ruch uliczny, chrapanie partnera lub głośni sąsiedzi – często przerywają Twój spokój, udowodniono naukowo, że biały szum jest znacznie skuteczniejszy od miękkich dźwięków otoczenia w procesie zwanym \"maskowaniem dźwięku\".
+          Jeśli nagłe, losowe dźwięki – takie jak ruch uliczny, chrapanie partnera lub głośni sąsiedzi – często przerywają Twój spokój, udowodniono naukowo, że biały szum jest znacznie skuteczniejszy od miękkich dźwięków otoczenia w procesie zwanym &quot;maskowaniem dźwięku&quot;.
         </p>
       </ArticleSection>
 
       <ArticleSection id="kiedy-wybrac-deszcz" title="Kiedy szum deszczu może być lepszym wyborem?">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li>Zależy Ci na przytulnej, emocjonalnej i naturalnej atmosferze snu.</li>
-          <li>Cierpisz na stany lękowe i potrzebujesz dźwięku sygnalizującego mózgowi \"bezpieczeństwo\".</li>
+          <li>Cierpisz na stany lękowe i potrzebujesz dźwięku sygnalizującego mózgowi &quot;bezpieczeństwo&quot;.</li>
           <li>Twoja wieczorna rutyna polega na powolnym, łagodnym wyciszeniu.</li>
           <li>Wolisz audio, które wydaje się mniej techniczne, a bardziej organiczne i angażujące wyobraźnię.</li>
         </ul>
@@ -150,7 +150,7 @@ export default function RainSoundsVsWhiteNoisePage() {
         <div className="mt-6 space-y-6">
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Czy deszcz jest uważany za biały szum?</h3>
-            <p className="mt-2 leading-7 text-white/70">Ściśle rzecz biorąc, deszcz nie jest czystym białym szumem. Prawdziwy biały szum zawiera wszystkie częstotliwości o równej intensywności. Dźwięki deszczu z natury mają więcej energii w niższych rejestrach, co czyni je bliższymi \"różowemu szumowi\". Jednak w mowie potocznej ludzie często używają terminu \"biały szum\" do opisania każdego uspokajającego dźwięku tła.</p>
+            <p className="mt-2 leading-7 text-white/70">Ściśle rzecz biorąc, deszcz nie jest czystym białym szumem. Prawdziwy biały szum zawiera wszystkie częstotliwości o równej intensywności. Dźwięki deszczu z natury mają więcej energii w niższych rejestrach, co czyni je bliższymi &quot;różowemu szumowi&quot;. Jednak w mowie potocznej ludzie często używają terminu &quot;biały szum&quot; do opisania każdego uspokajającego dźwięku tła.</p>
           </div>
           <div>
             <h3 className="font-semibold text-lg text-emerald-400">Czy dźwięk deszczu to to samo co biały szum?</h3>

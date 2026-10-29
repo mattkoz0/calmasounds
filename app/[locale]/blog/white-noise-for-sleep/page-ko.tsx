@@ -136,14 +136,14 @@ export default function WhiteNoiseForSleepPage() {
 
       <ArticleSection id="what-is-it" title="백색소음이란 정확히 무엇인가요?">
         <p className="mt-4 leading-8 text-white/70">
-          물리학에서 백색소음은 사람이 들을 수 있는 범위(20~20,000Hz) 내의 모든 주파수를 동일한 강도로 포함하는 소리입니다. 모든 주파수가 동시에 포함되어 있기 때문에 텔레비전 잡음, 조정되지 않은 라디오 또는 윙윙거리는 팬과 유사한 \"쉿\" 소음처럼 들립니다.
+          물리학에서 백색소음은 사람이 들을 수 있는 범위(20~20,000Hz) 내의 모든 주파수를 동일한 강도로 포함하는 소리입니다. 모든 주파수가 동시에 포함되어 있기 때문에 텔레비전 잡음, 조정되지 않은 라디오 또는 윙윙거리는 팬과 유사한 &quot;쉿&quot; 소음처럼 들립니다.
         </p>
         <AudioPlayer src="/white_noise.m4a" title="순수 백색소음" description="날카로운 소음을 차단하는 일관된 풀 스펙트럼 사운드." colorClass="bg-slate-500/20 text-slate-300"/>
       </ArticleSection>
 
       <ArticleSection id="comparison-table" title="수면을 위한 백색 잡음 vs 분홍색 vs 갈색 잡음">
         <p className="mt-4 leading-8 text-white/70">
-          모든 \"백색 소음\"이 기술적으로 흰색인 것은 아닙니다. 노이즈 색상은 주파수 균형을 나타냅니다. 차이에 따라 각 소리의 느낌이 달라지지만, 연구에서는 한 가지 색상이 보편적으로 수면에 가장 적합한 것으로 식별하지 않습니다.
+          모든 &quot;백색 소음&quot;이 기술적으로 흰색인 것은 아닙니다. 노이즈 색상은 주파수 균형을 나타냅니다. 차이에 따라 각 소리의 느낌이 달라지지만, 연구에서는 한 가지 색상이 보편적으로 수면에 가장 적합한 것으로 식별하지 않습니다.
         </p>
         <div className="mt-6 overflow-hidden rounded-2xl border border-white/10 bg-slate-900/50">
           <table className="w-full text-left text-sm text-white/70">

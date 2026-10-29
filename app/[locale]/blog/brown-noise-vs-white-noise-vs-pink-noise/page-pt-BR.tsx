@@ -153,7 +153,7 @@ export default function NoiseColorsPagePTBR() {
 
       <ArticleSection id="adhd" title="Por que o ruído marrom ajuda no TDAH?">
         <p className="mt-4 leading-8 text-white/70">
-          O ruído marrom age como uma \"massagem de áudio\" contínua para o cérebro. Ao fornecer um fluxo constante de estimulação auditiva, satisfaz o desejo de informação do cérebro, permitindo concentração.
+          O ruído marrom age como uma &quot;massagem de áudio&quot; contínua para o cérebro. Ao fornecer um fluxo constante de estimulação auditiva, satisfaz o desejo de informação do cérebro, permitindo concentração.
         </p>
       </ArticleSection>
 

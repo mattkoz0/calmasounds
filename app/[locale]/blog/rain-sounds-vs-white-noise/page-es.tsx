@@ -122,7 +122,7 @@ export default function RainSoundsVsWhiteNoisePageES() {
           La respuesta corta es: <strong>No, la lluvia no es técnicamente ruido blanco.</strong> Los sonidos de lluvia natural se consideran en realidad <strong>ruido rosa</strong>. 
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          En la conversación cotidiana, a menudo usamos el término \"ruido blanco\" como un término general para cualquier sonido de fondo continuo. Sin embargo, desde un punto de vista acústico, el ruido rosa (como la lluvia) contiene todas las frecuencias, pero pone más energía en las frecuencias bajas y profundas. Esto hace que la lluvia suene mucho más suave y orgánica.
+          En la conversación cotidiana, a menudo usamos el término &quot;ruido blanco&quot; como un término general para cualquier sonido de fondo continuo. Sin embargo, desde un punto de vista acústico, el ruido rosa (como la lluvia) contiene todas las frecuencias, pero pone más energía en las frecuencias bajas y profundas. Esto hace que la lluvia suene mucho más suave y orgánica.
         </p>
         <AudioPlayer 
           src="/rain.m4a" 
@@ -147,7 +147,7 @@ export default function RainSoundsVsWhiteNoisePageES() {
       <ArticleSection id="when-to-choose-rain" title="Cuándo los sonidos de lluvia son la mejor opción">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li>Desea un ambiente de sueño más emocional, acogedor y natural.</li>
-          <li>Sufre de ansiedad y necesita un sonido que indique \"seguridad\" a su sistema nervioso.</li>
+          <li>Sufre de ansiedad y necesita un sonido que indique &quot;seguridad&quot; a su sistema nervioso.</li>
           <li>Encuentra irritante el siseo agudo del verdadero ruido blanco.</li>
         </ul>
       </ArticleSection>

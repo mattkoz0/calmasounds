@@ -87,7 +87,7 @@ export default function GreenNoiseForSleepPage() {
     >
       <ArticleSection title="What exactly is green noise?">
         <p>
-          Like the colors of light, noise comes in \"colors\" based on how the energy is distributed across different frequencies. While white noise contains all frequencies at equal intensity (sounding like television static or a hissing fan), green noise focuses specifically on the center of the frequency spectrum.
+          Like the colors of light, noise comes in &quot;colors&quot; based on how the energy is distributed across different frequencies. While white noise contains all frequencies at equal intensity (sounding like television static or a hissing fan), green noise focuses specifically on the center of the frequency spectrum.
         </p>
         <p>
           It cuts out the jarring high-pitched hisses and the aggressively deep, low rumbles. The result is a sound profile that closely resembles the ambient hum of the natural world—think of a rushing waterfall from a short distance, a steady ocean breeze, or leaves rustling consistently in the wind.
@@ -100,7 +100,7 @@ export default function GreenNoiseForSleepPage() {
         </p>
         <ul className="mt-4 list-disc space-y-2 pl-5 text-white/70">
           <li>
-            <strong>Evolutionary Comfort:</strong> Human brains evolved in natural environments, not in silent, modern bedrooms. The frequencies found in green noise signal \"safety\" to the nervous system, helping to reduce an overactive mind and naturally lower stress levels before bed.
+            <strong>Evolutionary Comfort:</strong> Human brains evolved in natural environments, not in silent, modern bedrooms. The frequencies found in green noise signal &quot;safety&quot; to the nervous system, helping to reduce an overactive mind and naturally lower stress levels before bed.
           </li>
           <li>
             <strong>Acoustic Masking:</strong> Just like other noise colors, green noise raises your room's ambient sound floor. This continuous blanket of sound effectively masks sudden structural house noises, barking dogs, or traffic outside that might otherwise jolt you awake.

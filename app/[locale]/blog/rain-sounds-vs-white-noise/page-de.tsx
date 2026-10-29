@@ -123,7 +123,7 @@ export default function RainSoundsVsWhiteNoisePageDE() {
           Die kurze Antwort lautet: <strong>Nein, Regen ist technisch gesehen kein weißes Rauschen.</strong> Natürliche Regengeräusche werden eigentlich als <strong>rosa Rauschen</strong> betrachtet. 
         </p>
         <p className="mt-4 leading-8 text-white/70">
-          Umgangssprachlich wird der Begriff \"weißes Rauschen\" oft für jedes konstante Geräusch verwendet. Aus akustischer Sicht gibt es jedoch einen Unterschied. Rosa Rauschen (wie Regen) enthält zwar alle Frequenzen, hat aber mehr Energie in den tiefen Frequenzen. Dadurch klingt es weicher, tiefer und natürlicher.
+          Umgangssprachlich wird der Begriff &quot;weißes Rauschen&quot; oft für jedes konstante Geräusch verwendet. Aus akustischer Sicht gibt es jedoch einen Unterschied. Rosa Rauschen (wie Regen) enthält zwar alle Frequenzen, hat aber mehr Energie in den tiefen Frequenzen. Dadurch klingt es weicher, tiefer und natürlicher.
         </p>
         <AudioPlayer 
           src="/rain.m4a" 
@@ -148,7 +148,7 @@ export default function RainSoundsVsWhiteNoisePageDE() {
       <ArticleSection id="when-to-choose-rain" title="Wann Regengeräusche die bessere Wahl sind">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li>Sie wünschen sich eine gemütliche, natürliche Schlafatmosphäre.</li>
-          <li>Sie möchten Ängste lindern und Ihrem Nervensystem \"Sicherheit\" signalisieren.</li>
+          <li>Sie möchten Ängste lindern und Ihrem Nervensystem &quot;Sicherheit&quot; signalisieren.</li>
           <li>Sie empfinden das hohe Zischen des echten weißen Rauschens als störend.</li>
         </ul>
       </ArticleSection>

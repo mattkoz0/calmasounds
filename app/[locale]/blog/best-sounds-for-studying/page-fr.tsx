@@ -156,7 +156,7 @@ export default function BestSoundsForStudyingPage() {
         </p>
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li><strong>La musique avec des paroles :</strong> Les voix humaines attirent naturellement notre attention parce que nos cerveaux sont programmés pour traiter le langage. Écouter des paroles sollicite les centres linguistiques de votre cerveau, ce qui entre directement en concurrence avec vos tâches de lecture ou d'écriture.</li>
-          <li><strong>La musique classique complexe :</strong> Bien que \"l'effet Mozart\" soit réputé, les morceaux classiques très dynamiques avec des changements brusques de volume et des mélodies complexes peuvent être très distrayants. Si vous préférez la musique, optez pour des morceaux ambient minimalistes et répétitifs ou des \"Lo-Fi beats\".</li>
+          <li><strong>La musique classique complexe :</strong> Bien que &quot;l'effet Mozart&quot; soit réputé, les morceaux classiques très dynamiques avec des changements brusques de volume et des mélodies complexes peuvent être très distrayants. Si vous préférez la musique, optez pour des morceaux ambient minimalistes et répétitifs ou des &quot;Lo-Fi beats&quot;.</li>
           <li><strong>Les podcasts ou la radio :</strong> Tout comme la musique avec paroles, la parole parlée exige une écoute active, laissant moins de capacité cognitive pour votre travail réel.</li>
         </ul>
       </ArticleSection>

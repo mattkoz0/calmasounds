@@ -147,7 +147,7 @@ export default function RainSoundsVsWhiteNoisePageFR() {
       <ArticleSection id="when-to-choose-rain" title="Quand choisir les bruits de pluie">
         <ul className="mt-4 space-y-3 text-white/70 list-disc pl-5">
           <li>Vous voulez une atmosphère de sommeil naturelle et confortable.</li>
-          <li>Vous souffrez d'anxiété et avez besoin d'un son qui signale la \"sécurité\".</li>
+          <li>Vous souffrez d'anxiété et avez besoin d'un son qui signale la &quot;sécurité&quot;.</li>
           <li>Vous trouvez le sifflement aigu du bruit blanc irritant.</li>
         </ul>
       </ArticleSection>
