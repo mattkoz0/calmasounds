@@ -1,0 +1,9 @@
+Przyczyna,Źródło,Weryfikacja,Strony
+Strona zawiera przekierowanie,Strona internetowa,Nie rozpoczęto,36
+Strona wykluczona za pomocą tagu „noindex”,Strona internetowa,Nie rozpoczęto,19
+Nie znaleziono (404),Strona internetowa,Nie rozpoczęto,2
+Alternatywna strona zawierająca prawidłowy tag strony kanonicznej,Strona internetowa,Nie rozpoczęto,1
+"Strona zeskanowana, ale jeszcze nie zindeksowana",Systemy Google,Nie rozpoczęto,99
+"Duplikat, wyszukiwarka Google wybrała inną stronę kanoniczną niż użytkownik",Systemy Google,Nie rozpoczęto,2
+"Duplikat, użytkownik nie oznaczył strony kanonicznej",Strona internetowa,Powodzenie,1
+Strona wykryta – obecnie niezindeksowana,Systemy Google,Powodzenie,18
